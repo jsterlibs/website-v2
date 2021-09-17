@@ -12,6 +12,10 @@
     "get-libraries": {
       "cmd": "deno run --unstable scripts/get-libraries.ts",
       "watch": true
+    },
+    "get-library": {
+      "cmd": "deno run --unstable scripts/get-library.ts",
+      "watch": true
     }
   },
   "imap": "import_map.json"
