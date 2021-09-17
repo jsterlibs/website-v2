@@ -1,0 +1,14 @@
+{
+  "allow": ["env", "read", "write", "net"],
+  "scripts": {
+    "start": {
+      "cmd": "deno run --unstable mod.ts",
+      "watch": true
+    },
+    "get-categories": {
+      "cmd": "deno run --unstable scripts/get-categories.ts",
+      "watch": true
+    }
+  },
+  "imap": "import_map.json"
+}
