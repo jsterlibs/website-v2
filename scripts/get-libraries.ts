@@ -1,4 +1,5 @@
 import { cheerio } from "cheerio";
+import { last } from "./utils.ts";
 
 const getLibraries = async (category: string) => {
   const res = await fetch("https://jster.net/" + category);
@@ -9,7 +10,7 @@ const getLibraries = async (category: string) => {
   $(".repo .well a").each(function (_, e) {
     const library = $(e).attr("href");
 
-    library && libraries.push(library);
+    library && libraries.push(last<string>(library.split("/")));
   });
 
   return libraries;

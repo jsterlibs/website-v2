@@ -2,6 +2,7 @@
 import { ensureDirSync } from "fs";
 import { join } from "path";
 import { getLibraries } from "./get-libraries.ts";
+import { getJsonSync, last } from "./utils.ts";
 
 const writeCategories = async (inputDirectory: string) => {
   console.log("Writing categories");
@@ -23,14 +24,6 @@ const writeCategories = async (inputDirectory: string) => {
     );
   }
 };
-
-function getJsonSync(filePath: string) {
-  return JSON.parse(Deno.readTextFileSync(filePath));
-}
-
-function last<O>(array: O[]) {
-  return array[array.length - 1];
-}
 
 if (import.meta.main) {
   if (Deno.args.length < 1) {
