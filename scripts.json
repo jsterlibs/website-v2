@@ -27,6 +27,20 @@
     "watch:get-library": {
       "cmd": "deno run --unstable scripts/get-library.ts",
       "watch": true
+    },
+    "write-categories": {
+      "cmd": "deno run --unstable scripts/write-categories.ts"
+    },
+    "watch:write-categories": {
+      "cmd": "deno run --unstable scripts/write-categories.ts",
+      "watch": true
+    },
+    "write-libraries": {
+      "cmd": "deno run --unstable scripts/write-libraries.ts"
+    },
+    "watch:write-libraries": {
+      "cmd": "deno run --unstable scripts/write-libraries.ts",
+      "watch": true
     }
   },
   "imap": "import_map.json"
