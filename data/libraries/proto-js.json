@@ -1,0 +1,1 @@
+{"description":"Proto.js – prototypes as classes\n\nThe core idea of Proto.js is that many things become simpler in JavaScript if you make the prototype the class and not the constructor.","logo":"/images/repo.png","name":"Proto.js ","links":{"site":"http://www.2ality.com/2011/06/prototypes-as-classes.html","github":"https://github.com/rauschma/proto-js"},"tags":[]}

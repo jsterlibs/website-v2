@@ -1,0 +1,1 @@
+{"description":"A fast, reliable asset pipeline, supporting constant-time rebuilds and compact build definitions. Comparable to the Rails asset pipeline in scope, though it runs on Node and is backend-agnostic.","logo":"/images/repo.png","name":"Broccoli","links":{"github":"https://github.com/joliss/broccoli"},"tags":[]}

@@ -1,0 +1,1 @@
+{"description":"Landslide generates a slideshow using the slides that power the html5-slides presentation. Requires Python  with jinja2 and pygments modules for code blocks syntax coloration.","logo":"/images/repo.png","name":"Landslide","links":{"github":"https://github.com/adamzap/landslide"},"tags":["python"]}

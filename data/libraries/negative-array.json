@@ -1,0 +1,1 @@
+{"description":"Negative array index support using ES6 Proxy.\n\nvar a=[1,2,3]; a[-1] //=> 3","logo":"/images/repo.png","name":"negative-array","links":{"site":"http://sindresorhus.com/negative-array","github":"https://github.com/sindresorhus/negative-array"},"tags":["array","bower","component","es6","harmony","index","indice","negative","npm","proxies","proxy","reverse"]}

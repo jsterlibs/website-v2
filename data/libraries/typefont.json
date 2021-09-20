@@ -1,0 +1,1 @@
+{"description":"An artificial intelligence written entirely in JavaScript that recognises the font of a text in a image using image processing libraries and the Tesseract optical character recognition engine.","logo":"/images/repo.png","name":"Typefont","links":{"github":"https://github.com/Sirvasile/Typefont"},"tags":["ai","detection","font","javascript"]}

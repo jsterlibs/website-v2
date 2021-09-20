@@ -1,0 +1,1 @@
+{"description":"Provides a Value constructor used to create numbers similar to ranges that can be safely modified within specified boundaries.","logo":"/images/repo.png","name":"valuejs","links":{"github":"https://github.com/karolk/valuejs"},"tags":["max","min","range.","step","value"]}

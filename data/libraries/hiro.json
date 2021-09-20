@@ -1,0 +1,1 @@
+{"description":"Hiro is a small yet powerful testing framework designed with third-party JavaScript applications in mind. It runs each test suite in a separate iframe sandbox, preventing global state leaks and conflicts.","logo":"/images/repo.png","name":"Hiro","links":{"site":"http://hirojs.com/","github":"https://github.com/antonkovalyov/hiro"},"tags":[]}

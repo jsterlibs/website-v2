@@ -13,7 +13,7 @@ const getLibrary = async (libraryName: string) => {
   });
 
   return {
-    description: $(".desc").text(),
+    description: $(".desc").text().trim(),
     logo: $(".full_logo img").attr("src"),
     name: $("h1").text(),
     links: {
@@ -25,7 +25,7 @@ const getLibrary = async (libraryName: string) => {
 };
 
 if (import.meta.main) {
-  console.log(await getLibrary("jquery"));
+  console.log(await getLibrary("yui"));
 }
 
 export { getLibrary };

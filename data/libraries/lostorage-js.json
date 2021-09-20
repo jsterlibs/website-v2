@@ -1,0 +1,1 @@
+{"description":"loStorage.js uses the HTML5 localStorage and sessionStorage APIs to provide a persistant client-side storage, mainly targeted at web apps. It has a cookie.js like interface.","logo":"/images/repo.png","name":"loStorage.js","links":{"github":"https://github.com/js-coder/lostorage.js"},"tags":[]}

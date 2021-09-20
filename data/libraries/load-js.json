@@ -1,0 +1,1 @@
+{"description":"load.js is a micro JS lazy-loader\n\nBuilt on top of chain.js, it allows you to lazy load your JS scripts sequentially or in parallel and handle complex dependency chains.","logo":"https://avatars0.githubusercontent.com/u/17699091?v=3","name":"load.js ","links":{"github":"https://github.com/chriso/load.js"},"tags":[]}

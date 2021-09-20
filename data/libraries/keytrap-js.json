@@ -1,0 +1,1 @@
+{"description":"This is a simple abstraction for dealing with issues around trapping keyboard input in the browser.\nRequires jquery (tested with 1.3.2 but may work with earlier versions.)","logo":"/images/repo.png","name":"keytrap.js","links":{"github":"https://github.com/brendan/keytrapjs"},"tags":["jquery"]}

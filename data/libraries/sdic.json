@@ -1,0 +1,1 @@
+{"description":"SDIC - Simple Dependency Injection Container. Dependency injection container with auto-injection of module dependencies (by parameter names).","logo":"/images/repo.png","name":"SDIC","links":{"site":"https://www.npmjs.com/package/sdic","github":"https://github.com/josefzamrzla/sdic"},"tags":["container","dependency","injection"]}

@@ -1,0 +1,1 @@
+{"description":"Provides a JavaScript source file preprocessor, e.g. to build different versions of a library. It's for example used to build ProtoBuf.js (its build and main script are quite good examples).","logo":"/images/repo.png","name":"Preprocessor.js","links":{"github":"https://github.com/dcodeIO/Preprocessor.js"},"tags":[]}

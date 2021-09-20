@@ -1,0 +1,1 @@
+{"description":"QuickCheck is a fairly new testing concept that came out of the Haskell community. The goal of QuickCheck is to save time when writing unit tests.\n\nA port of the QuickCheck probabilistic unit testing concept to JavaScript","logo":"/images/repo.png","name":"qc.js","links":{"site":"http://willowbend.cx/","github":"https://github.com/urso/qc.js"},"tags":[]}
