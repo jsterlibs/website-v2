@@ -14,10 +14,10 @@ async function serve(port: number) {
 
   const siteTitle = "JSter – JavaScript Catalog";
   const document: Component = getJsonSync("./site.json");
+  const stylesheet = getStyleSheet();
 
   app.use((context) => {
     try {
-      const stylesheet = getStyleSheet();
       const body = renderComponent({
         element: "main",
         children: [document],
