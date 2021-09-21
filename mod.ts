@@ -1,21 +1,56 @@
-import { Application } from "oak";
+import { Application, RouteParams, Router, RouterContext } from "oak";
 import { setup, tw } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
+import LiveReload from "livereload";
 import { getJsonSync } from "utils";
+import { ServerRequest } from "http/server";
 import * as components from "./components.ts";
 import type { Attributes, Component } from "./components.ts";
 
 type Meta = Record<string, string>;
 
-async function serve(port: number) {
-  const app = new Application();
+function oakAdapterForliveReload(live: LiveReload) {
+  return (context: RouterContext<RouteParams>) =>
+    live.handle(
+      {
+        conn: context.socket,
+        headers: context.request.headers,
+        url: context.request.url.pathname,
+        respond({ body, headers }: { body: string; headers: Headers }) {
+          context.response.headers = headers;
+          context.response.body = body;
+        },
+      } as unknown as ServerRequest,
+    );
+}
 
+async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
   const siteTitle = "JSter – JavaScript Catalog";
   const document: Component = getJsonSync("./site.json");
   const stylesheet = getStyleSheet();
 
+  const live = new LiveReload({
+    base: ".",
+    exclude: ["*.css"],
+    serve: false,
+    port,
+  });
+
+  const router = new Router();
+  router
+    .get("/ping", (context) => {
+      context.response.body = "Pong";
+    })
+    // TODO: Make this work with oak or find another solution
+    // .get("/livereload", oakAdapterForliveReload(live))
+    .get("/livereload/client.js", oakAdapterForliveReload(live));
+
+  const app = new Application();
+
+  app.use(router.routes());
+  app.use(router.allowedMethods());
   app.use((context) => {
     try {
       const body = renderComponent({
@@ -27,7 +62,7 @@ async function serve(port: number) {
 
       context.response.headers.set("Content-Type", "text/html; charset=UTF-8");
       context.response.body = new TextEncoder().encode(
-        htmlTemplate({ title: siteTitle, head: styleTag, body }),
+        htmlTemplate({ title: siteTitle, head: styleTag, body, port }),
       );
     } catch (err) {
       console.error(err);
@@ -92,11 +127,12 @@ function getClass(kls: Component["class"], props: Component["props"]) {
 
 // TODO: Extract script + link bits (too specific)
 function htmlTemplate(
-  { title, meta, head, body }: {
+  { title, meta, head, body, port }: {
     title: string;
     meta?: Meta;
     head?: string;
     body?: string;
+    port: number;
   },
 ) {
   return `<html>
@@ -109,6 +145,7 @@ function htmlTemplate(
     ${head || ""}
   </head>
   <body>${body || ""}</body>
+  <script type="text/javascript" src="http://localhost:${port}/livereload/client.js"></script>
 </html>`;
 }
 
