@@ -1,28 +1,11 @@
-import { Application, RouteParams, Router, RouterContext } from "oak";
+import { Application } from "oak";
 import { setup, tw } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
-import LiveReload from "livereload";
 import { getJsonSync } from "utils";
-import { ServerRequest } from "http/server";
 import * as components from "./components.ts";
 import type { Attributes, Component } from "./components.ts";
 
 type Meta = Record<string, string>;
-
-function oakAdapterForliveReload(live: LiveReload) {
-  return (context: RouterContext<RouteParams>) =>
-    live.handle(
-      {
-        conn: context.socket,
-        headers: context.request.headers,
-        url: context.request.url.pathname,
-        respond({ body, headers }: { body: string; headers: Headers }) {
-          context.response.headers = headers;
-          context.response.body = body;
-        },
-      } as unknown as ServerRequest,
-    );
-}
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
@@ -31,26 +14,8 @@ async function serve(port: number) {
   const document: Component = getJsonSync("./site.json");
   const stylesheet = getStyleSheet();
 
-  const live = new LiveReload({
-    base: ".",
-    exclude: ["*.css"],
-    serve: false,
-    port,
-  });
-
-  const router = new Router();
-  router
-    .get("/ping", (context) => {
-      context.response.body = "Pong";
-    })
-    // TODO: Make this work with oak or find another solution
-    // .get("/livereload", oakAdapterForliveReload(live))
-    .get("/livereload/client.js", oakAdapterForliveReload(live));
-
   const app = new Application();
 
-  app.use(router.routes());
-  app.use(router.allowedMethods());
   app.use((context) => {
     try {
       const body = renderComponent({
@@ -62,7 +27,7 @@ async function serve(port: number) {
 
       context.response.headers.set("Content-Type", "text/html; charset=UTF-8");
       context.response.body = new TextEncoder().encode(
-        htmlTemplate({ title: siteTitle, head: styleTag, body, port }),
+        htmlTemplate({ title: siteTitle, head: styleTag, body }),
       );
     } catch (err) {
       console.error(err);
@@ -127,25 +92,24 @@ function getClass(kls: Component["class"], props: Component["props"]) {
 
 // TODO: Extract script + link bits (too specific)
 function htmlTemplate(
-  { title, meta, head, body, port }: {
+  { title, meta, head, body }: {
     title: string;
     meta?: Meta;
     head?: string;
     body?: string;
-    port: number;
   },
 ) {
   return `<html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${title || ""}</title>
-    <script type="text/javascript" src="https://unpkg.com/sidewind@3.2.1/dist/sidewind.umd.production.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.0.1/dist/base.min.css" />
     ${generateMeta(meta)}
     ${head || ""}
   </head>
   <body>${body || ""}</body>
-  <script type="text/javascript" src="http://localhost:${port}/livereload/client.js"></script>
 </html>`;
 }
 
