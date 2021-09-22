@@ -6,6 +6,7 @@
     "path": "https://deno.land/std@0.107.0/path/mod.ts",
     "style-vendorizer": "https://unpkg.com/style-vendorizer@2.1.1/dist/esm/bundle.min.mjs",
     "twind": "https://unpkg.com/twind@0.16.16/twind.js",
+    "twind-colors": "https://unpkg.com/twind@0.16.16/colors/colors.js",
     "twind-sheets": "https://unpkg.com/twind@0.16.16/sheets/sheets.js",
     "utils": "./scripts/utils.ts"
   }

@@ -1,6 +1,7 @@
 import { Application } from "oak";
 import { setup, tw } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
+import * as colors from "twind-colors";
 import { getJsonSync } from "utils";
 import * as components from "./components.ts";
 import type { Attributes, Component } from "./components.ts";
@@ -20,7 +21,7 @@ async function serve(port: number) {
     try {
       const body = renderComponent({
         element: "main",
-        children: [document],
+        children: Array.isArray(document) ? document : [document],
       });
 
       const styleTag = getStyleTag(stylesheet);
@@ -127,7 +128,7 @@ function generateMeta(meta?: Meta) {
 function getStyleSheet() {
   const sheet = virtualSheet();
 
-  setup({ sheet });
+  setup({ sheet, theme: { colors } });
 
   return sheet;
 }

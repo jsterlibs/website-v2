@@ -1,36 +1,202 @@
-{
-  "element": "stack",
-  "class": "m-4",
-  "props": {
-    "direction": "row",
-    "spacing": "4"
-  },
-  "attributes": {
-    "x-state": "false"
-  },
-  "children": [
-    {
-      "element": "box",
-      "class": "bg-blue-200 p-2",
-      "children": [
-        "Value:",
-        {
-          "element": "box",
-          "as": "span",
-          "attributes": {
-            "x": "state"
+[
+  {
+    "element": "flex",
+    "as": "nav",
+    "class": "justify-between p-4 bg-gray-100",
+    "children": [
+      {
+        "element": "flex",
+        "as": "div",
+        "class": "gap-4",
+        "children": [
+          {
+            "element": "a",
+            "children": "JSter",
+            "attributes": {
+              "href": "/"
+            }
+          },
+          {
+            "element": "a",
+            "children": "Blog",
+            "attributes": {
+              "href": "/blog/"
+            }
+          },
+          {
+            "element": "a",
+            "children": "Catalog",
+            "attributes": {
+              "href": "/catalog/"
+            }
+          },
+          {
+            "element": "a",
+            "children": "About",
+            "attributes": {
+              "href": "/about/"
+            }
+          },
+          {
+            "element": "a",
+            "children": "Add library",
+            "attributes": {
+              "href": "/add-library/"
+            }
           }
-        }
-      ]
-    },
-    {
-      "element": "box",
-      "as": "button",
-      "class": "bg-yellow-200 p-2",
-      "children": "Change value",
-      "attributes": {
-        "onclick": "setState(v => !v)"
+        ]
+      },
+      {
+        "element": "flex",
+        "as": "div",
+        "class": "gap-4",
+        "children": [
+          {
+            "element": "a",
+            "children": "@jsterlibs",
+            "attributes": {
+              "href": "https://twitter.com/jsterlibs"
+            }
+          },
+          {
+            "element": "a",
+            "children": "Mailing list",
+            "attributes": {
+              "href": "http://eepurl.com/zB_g5"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  },
+  {
+    "element": "box",
+    "as": "main",
+    "class": "py-4",
+    "children": [
+      {
+        "element": "div",
+        "class": "container mx-auto",
+        "children": "main content goes here"
+      }
+    ]
+  },
+  {
+    "element": "box",
+    "as": "footer",
+    "class": "bg-violet-200 py-4",
+    "children": [
+      {
+        "element": "flex",
+        "as": "div",
+        "props": { "direction": "column" },
+        "class": "container mx-auto gap-4",
+        "children": [
+          {
+            "element": "flex",
+            "as": "section",
+            "class": "justify-between",
+            "children": [
+              {
+                "element": "flex",
+                "as": "div",
+                "props": {
+                  "direction": "column"
+                },
+                "children": [
+                  {
+                    "element": "h2",
+                    "children": "New additions"
+                  },
+                  {
+                    "element": "ul",
+                    "children": [
+                      {
+                        "element": "li",
+                        "children": "TODO"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "element": "flex",
+                "as": "div",
+                "props": {
+                  "direction": "column"
+                },
+                "children": [
+                  {
+                    "element": "h2",
+                    "children": "Selected library"
+                  },
+                  {
+                    "element": "div",
+                    "children": "Demo library"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "element": "section",
+            "class": "grid grid-cols-3",
+            "children": [
+              {
+                "element": "flex",
+                "as": "div",
+                "props": {
+                  "direction": "column"
+                },
+                "children": [
+                  {
+                    "element": "h2",
+                    "children": "JSter is..."
+                  },
+                  {
+                    "element": "div",
+                    "children": "JSter is a community-driven catalog of the most useful javascript libraries. Find the right tool for a work and do it effectively."
+                  }
+                ]
+              },
+              {
+                "element": "flex",
+                "as": "div",
+                "props": {
+                  "direction": "column"
+                },
+                "children": [
+                  {
+                    "element": "h2",
+                    "children": "Navigation"
+                  },
+                  {
+                    "element": "div",
+                    "children": "TODO"
+                  }
+                ]
+              },
+              {
+                "element": "flex",
+                "as": "div",
+                "props": {
+                  "direction": "column"
+                },
+                "children": [
+                  {
+                    "element": "h2",
+                    "children": "Credits"
+                  },
+                  {
+                    "element": "div",
+                    "children": "JSter was created by passionate web developers Juho Vepsäläinen and Codegyre Developers Team (Michael Bodnarchuk and Nick Palamarchuk)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
