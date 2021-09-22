@@ -1,3 +1,5 @@
+[![vr scripts](https://badges.velociraptor.run/flat.svg)](https://velociraptor.run)
+
 # JSter - Website v2
 
 TODO
