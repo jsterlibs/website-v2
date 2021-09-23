@@ -12,7 +12,10 @@ type Component = {
   // Data bindings
   __bind?: string;
   __children?: string | Component[];
-  __foreach?: string;
+  __foreach?: {
+    field: string;
+    render: string | Component[];
+  };
 };
 
 export type { Attributes, Component, Props };

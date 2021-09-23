@@ -44,10 +44,12 @@ async function serve(port: number) {
   await app.listen({ port });
 }
 
+type Context = Record<string, unknown> | Record<string, unknown>[];
+
 function renderComponent(
   component: Component | string,
   components: Components,
-  data: Record<string, unknown> | Record<string, unknown>[],
+  context: Context,
 ): string {
   if (typeof component === "string") {
     return component;
@@ -56,11 +58,11 @@ function renderComponent(
   const foundComponent = components[component.component!];
 
   if (foundComponent) {
-    return renderComponent({ children: foundComponent }, components, data);
+    return renderComponent({ children: foundComponent }, components, context);
   }
 
   if (component.__bind) {
-    data = getJsonSync(component.__bind);
+    context = getJsonSync(component.__bind);
   }
 
   const foundPrimitive =
@@ -73,22 +75,33 @@ function renderComponent(
   let children: string | undefined;
 
   // TODO: Add field specific bindings
-  if (component.__children && data) {
+  if (component.__children && context) {
     const boundChildren = component.__children;
 
     if (typeof boundChildren === "string") {
       // @ts-ignore: TODO: How to type this?
-      children = data[boundChildren];
+      children = context[boundChildren];
     } else {
-      children = (Array.isArray(data) ? data : [data]).flatMap((d) =>
+      children = (Array.isArray(context) ? context : [context]).flatMap((d) =>
         boundChildren.map((c) => renderComponent(c, components, d))
       )
         .join("");
     }
+  } else if (component.__foreach) {
+    const { field, render } = component.__foreach;
+
+    // @ts-ignore: TODO: How to type this?
+    const childrenToRender = context[field];
+
+    children = childrenToRender.flatMap((c: Context) =>
+      Array.isArray(render)
+        ? render.map((r) => renderComponent(r, components, c))
+        : renderComponent(render, components, c)
+    ).join("");
   } else {
     children = Array.isArray(component.children)
       ? component.children.map((component) =>
-        renderComponent(component, components, data)
+        renderComponent(component, components, context)
       ).join("")
       : component.children;
   }
