@@ -1,16 +1,5 @@
 import { isObject } from "utils";
-
-type Props = Record<string, string | undefined>;
-// deno-lint-ignore no-explicit-any
-type Attributes = Record<string, any>;
-type Component = {
-  element: string; // TODO: Only valid DOM elements and components
-  as?: string; // TODO: Only valid DOM elements
-  children?: string | Component[];
-  class?: string | ((props?: Props) => string);
-  props?: Props;
-  attributes?: Attributes | ((props?: Props) => Attributes);
-};
+import type { Component } from "./types.ts";
 
 const box: Component = {
   element: "div",
@@ -94,5 +83,4 @@ function defaultValue(
   return `${mediaQuery ? mediaQuery + ":" : ""}${prefix}-${value}`;
 }
 
-export type { Attributes, Component };
 export { box, flex, stack };

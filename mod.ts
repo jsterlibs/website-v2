@@ -3,18 +3,19 @@ import { setup, tw } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
 import { getJsonSync } from "utils";
-import * as components from "./components.ts";
-import type { Attributes, Component } from "./components.ts";
+import * as primitives from "./primitives.ts";
+import type { Attributes, Component } from "./types.ts";
 
 type Meta = Record<string, string>;
+type Components = Record<string, Component[]>;
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
   const siteTitle = "JSter – JavaScript Catalog";
   const document: Component = getJsonSync("./site.json");
+  const components: Components = getJsonSync("./components.json");
   const stylesheet = getStyleSheet();
-
   const app = new Application();
 
   app.use((context) => {
@@ -22,7 +23,7 @@ async function serve(port: number) {
       const body = renderComponent({
         element: "main",
         children: Array.isArray(document) ? document : [document],
-      });
+      }, components);
 
       const styleTag = getStyleTag(stylesheet);
 
@@ -40,30 +41,55 @@ async function serve(port: number) {
   await app.listen({ port });
 }
 
-function renderComponent(component: Component | string): string {
+function renderComponent(
+  component: Component | string,
+  components: Components,
+): string {
   if (typeof component === "string") {
     return component;
   }
 
-  const foundComponent =
-    (components as Record<string, Component>)[component.element];
+  const foundComponent = components[component.component!];
+
+  if (foundComponent) {
+    return renderComponent({ children: foundComponent }, components);
+  }
+
+  const foundPrimitive =
+    (primitives as Record<string, Component>)[component.element!];
   const element = component.as
     ? component.as
-    : foundComponent
-    ? foundComponent.element
+    : foundPrimitive
+    ? foundPrimitive.element
     : component.element;
   const children = Array.isArray(component.children)
-    ? component.children.map(renderComponent).join("")
+    ? component.children.map((component) =>
+      renderComponent(component, components)
+    ).join("")
     : component.children;
 
-  return `<${element}${
+  return wrapInElement(
+    element,
     generateAttributes({
       ...(typeof component.attributes === "function"
         ? component.attributes(component.props)
         : component.attributes),
-      class: getClasses(foundComponent, component),
-    })
-  }>${children}</${element}>`;
+      class: getClasses(foundPrimitive, component),
+    }),
+    children,
+  );
+}
+
+function wrapInElement(
+  element: Component["element"],
+  attributes: string,
+  children?: string,
+): string {
+  if (!element) {
+    return children || "";
+  }
+
+  return `<${element}${attributes}>${children}</${element}>`;
 }
 
 function generateAttributes(attributes: Attributes) {

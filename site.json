@@ -17,32 +17,7 @@
             }
           },
           {
-            "element": "a",
-            "children": "Blog",
-            "attributes": {
-              "href": "/blog/"
-            }
-          },
-          {
-            "element": "a",
-            "children": "Catalog",
-            "attributes": {
-              "href": "/catalog/"
-            }
-          },
-          {
-            "element": "a",
-            "children": "About",
-            "attributes": {
-              "href": "/about/"
-            }
-          },
-          {
-            "element": "a",
-            "children": "Add library",
-            "attributes": {
-              "href": "/add-library/"
-            }
+            "component": "navigation"
           }
         ]
       },
@@ -171,8 +146,14 @@
                     "children": "Navigation"
                   },
                   {
-                    "element": "div",
-                    "children": "TODO"
+                    "element": "flex",
+                    "as": "div",
+                    "class": "gap-4",
+                    "children": [
+                      {
+                        "component": "navigation"
+                      }
+                    ]
                   }
                 ]
               },
