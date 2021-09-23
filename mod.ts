@@ -70,17 +70,21 @@ function renderComponent(
     : foundPrimitive
     ? foundPrimitive.element
     : component.element;
-  let children;
+  let children: string | undefined;
 
   // TODO: Add field specific bindings
   if (component.__children && data) {
-    const boundChildren = Array.isArray(component.__children)
-      ? component.__children
-      : [component.__children];
-    children = (Array.isArray(data) ? data : [data]).flatMap((d) =>
-      boundChildren.map((c) => renderComponent(c, components, d))
-    )
-      .join("");
+    const boundChildren = component.__children;
+
+    if (typeof boundChildren === "string") {
+      // @ts-ignore: TODO: How to type this?
+      children = data[boundChildren];
+    } else {
+      children = (Array.isArray(data) ? data : [data]).flatMap((d) =>
+        boundChildren.map((c) => renderComponent(c, components, d))
+      )
+        .join("");
+    }
   } else {
     children = Array.isArray(component.children)
       ? component.children.map((component) =>
