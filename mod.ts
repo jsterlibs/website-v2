@@ -7,7 +7,7 @@ import * as primitives from "./primitives.ts";
 import type { Attributes, Component } from "./types.ts";
 
 type Meta = Record<string, string>;
-type Components = Record<string, Component[]>;
+type Components = Record<string, Component[] | Component>;
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
@@ -58,7 +58,22 @@ function renderComponent(
   const foundComponent = components[component.component!];
 
   if (foundComponent) {
-    return renderComponent({ children: foundComponent }, components, context);
+    return renderComponent(
+      {
+        children: Array.isArray(foundComponent) ? foundComponent : [{
+          ...component,
+          ...foundComponent,
+          // TODO: See if class can be reduced to a string
+          class: joinClasses(
+            component.class as string,
+            foundComponent.class as string,
+          ),
+          component: "",
+        }],
+      },
+      components,
+      context,
+    );
   }
 
   if (component.__bind) {
@@ -115,6 +130,18 @@ function renderComponent(
     }, context),
     children,
   );
+}
+
+function joinClasses(a?: string, b?: string) {
+  if (a) {
+    if (b) {
+      return `${a} ${b}`;
+    }
+
+    return a;
+  }
+
+  return b || "";
 }
 
 function wrapInElement(

@@ -42,12 +42,10 @@
       ]
     }
   ],
-  "subscribe": [
-    {
-      "element": "div",
-      "children": "Subscription widget goes here"
-    }
-  ],
+  "link": {
+    "element": "a",
+    "class": "underline"
+  },
   "navigation": [
     {
       "element": "a",
@@ -76,6 +74,12 @@
       "attributes": {
         "href": "/add-library/"
       }
+    }
+  ],
+  "subscribe": [
+    {
+      "element": "div",
+      "children": "Subscription widget goes here"
     }
   ]
 }

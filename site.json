@@ -10,7 +10,7 @@
         "class": "gap-4 font-thin",
         "children": [
           {
-            "element": "a",
+            "component": "link",
             "children": "JSter",
             "class": "font-bold",
             "attributes": {
