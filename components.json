@@ -1,8 +1,40 @@
 {
   "all-categories": [
     {
-      "element": "div",
-      "children": "All categories go here"
+      "element": "ul",
+      "children": [
+        {
+          "element": "flex",
+          "as": "li",
+          "class": "gap-4",
+          "children": [
+            {
+              "element": "h2",
+              "children": "Essentials",
+              "class": "px-4 py-2 w-1/6 text-right border-r-8 border-fuchsia-600"
+            },
+            {
+              "element": "ul",
+              "class": "p-4 w-5/6",
+              "children": [
+                {
+                  "element": "flex",
+                  "as": "li",
+                  "children": [
+                    {
+                      "element": "a",
+                      "children": "Application Frameworks",
+                      "attributes": {
+                        "href": "/category/application-frameworks"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "subscribe": [
