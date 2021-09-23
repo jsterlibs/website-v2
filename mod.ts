@@ -74,7 +74,6 @@ function renderComponent(
     : component.element;
   let children: string | undefined;
 
-  // TODO: Add field specific bindings
   if (component.__children && context) {
     const boundChildren = component.__children;
 
@@ -113,7 +112,7 @@ function renderComponent(
         ? component.attributes(component.props)
         : component.attributes),
       class: getClasses(foundPrimitive, component),
-    }),
+    }, context),
     children,
   );
 }
@@ -130,8 +129,15 @@ function wrapInElement(
   return `<${element}${attributes}>${children}</${element}>`;
 }
 
-function generateAttributes(attributes: Attributes) {
-  const ret = Object.entries(attributes).map(([k, v]) => v && `${k}="${v}"`)
+function generateAttributes(attributes: Attributes, context: Context) {
+  const ret = Object.entries(attributes).map(([k, v]) => {
+    if (k.startsWith("__")) {
+      // @ts-ignore: TODO: How to type this?
+      return `${k.slice(2)}="${context[v]}"`;
+    }
+
+    return v && `${k}="${v}"`;
+  })
     .filter(Boolean).join(
       " ",
     );
