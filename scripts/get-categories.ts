@@ -4,19 +4,20 @@ const getCategories = async () => {
   const res = await fetch("https://jster.net");
   const html = await res.text();
   const $ = cheerio.load(html);
-  const categories: string[] = [];
+  const categories: { title: string; url: string }[] = [];
 
   $(".category a").each(function (_, e) {
-    const category = $(e).attr("href");
+    const title = $(e).text();
+    const url = $(e).attr("href");
 
-    category && categories.push(category);
+    url && categories.push({ title, url });
   });
 
   return categories;
 };
 
 if (import.meta.main) {
-  console.log(await getCategories());
+  console.log(JSON.stringify(await getCategories(), null, 2));
 }
 
 export { getCategories };

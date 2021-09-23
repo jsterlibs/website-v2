@@ -12,7 +12,7 @@ const writeCategories = async (inputDirectory: string) => {
   ensureDirSync(outputDirectory);
 
   for (const category of categories) {
-    const libraries = await getLibraries(category);
+    const libraries = await getLibraries(category.url);
     const categoryPath = join(
       outputDirectory,
       last<string>(category.split("/")) + ".json",
