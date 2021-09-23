@@ -9,6 +9,10 @@ type Component = {
   class?: string | ((props?: Props) => string);
   props?: Props;
   attributes?: Attributes | ((props?: Props) => Attributes);
+  // Data bindings
+  __bind?: string;
+  __children?: string | Component[];
+  __foreach?: string;
 };
 
 export type { Attributes, Component, Props };

@@ -2,7 +2,8 @@
   "all-categories": [
     {
       "element": "ul",
-      "children": [
+      "__bind": "./data/parent-categories.json",
+      "__children": [
         {
           "element": "flex",
           "as": "li",
@@ -10,22 +11,23 @@
           "children": [
             {
               "element": "h2",
-              "children": "Essentials",
+              "__children": "title",
               "class": "px-4 py-2 w-1/6 text-right border-r-8 border-fuchsia-600"
             },
             {
               "element": "ul",
               "class": "p-4 w-5/6",
-              "children": [
+              "__foreach": "children",
+              "__render": [
                 {
                   "element": "flex",
                   "as": "li",
                   "children": [
                     {
                       "element": "a",
-                      "children": "Application Frameworks",
+                      "__children": "title",
                       "attributes": {
-                        "href": "/category/application-frameworks"
+                        "__href": "url"
                       }
                     }
                   ]

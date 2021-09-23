@@ -20,11 +20,14 @@ async function serve(port: number) {
 
   app.use((context) => {
     try {
-      const body = renderComponent({
-        element: "main",
-        children: Array.isArray(document) ? document : [document],
-      }, components);
-
+      const body = renderComponent(
+        {
+          element: "main",
+          children: Array.isArray(document) ? document : [document],
+        },
+        components,
+        [],
+      );
       const styleTag = getStyleTag(stylesheet);
 
       context.response.headers.set("Content-Type", "text/html; charset=UTF-8");
@@ -44,6 +47,7 @@ async function serve(port: number) {
 function renderComponent(
   component: Component | string,
   components: Components,
+  data: Record<string, unknown> | Record<string, unknown>[],
 ): string {
   if (typeof component === "string") {
     return component;
@@ -52,7 +56,11 @@ function renderComponent(
   const foundComponent = components[component.component!];
 
   if (foundComponent) {
-    return renderComponent({ children: foundComponent }, components);
+    return renderComponent({ children: foundComponent }, components, data);
+  }
+
+  if (component.__bind) {
+    data = getJsonSync(component.__bind);
   }
 
   const foundPrimitive =
@@ -62,11 +70,24 @@ function renderComponent(
     : foundPrimitive
     ? foundPrimitive.element
     : component.element;
-  const children = Array.isArray(component.children)
-    ? component.children.map((component) =>
-      renderComponent(component, components)
-    ).join("")
-    : component.children;
+  let children;
+
+  // TODO: Add field specific bindings
+  if (component.__children && data) {
+    const boundChildren = Array.isArray(component.__children)
+      ? component.__children
+      : [component.__children];
+    children = (Array.isArray(data) ? data : [data]).flatMap((d) =>
+      boundChildren.map((c) => renderComponent(c, components, d))
+    )
+      .join("");
+  } else {
+    children = Array.isArray(component.children)
+      ? component.children.map((component) =>
+        renderComponent(component, components, data)
+      ).join("")
+      : component.children;
+  }
 
   return wrapInElement(
     element,
