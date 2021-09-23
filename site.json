@@ -28,14 +28,14 @@
         "class": "gap-4 font-light",
         "children": [
           {
-            "element": "a",
+            "component": "link",
             "children": "@jsterlibs",
             "attributes": {
               "href": "https://twitter.com/jsterlibs"
             }
           },
           {
-            "element": "a",
+            "component": "link",
             "children": "Mailing list",
             "attributes": {
               "href": "http://eepurl.com/zB_g5"

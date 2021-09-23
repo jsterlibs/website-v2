@@ -26,7 +26,7 @@
                     "class": "inline",
                     "children": [
                       {
-                        "element": "a",
+                        "component": "link",
                         "__children": "title",
                         "attributes": {
                           "__href": "url"
@@ -48,28 +48,28 @@
   },
   "navigation": [
     {
-      "element": "a",
+      "component": "link",
       "children": "Blog",
       "attributes": {
         "href": "/blog/"
       }
     },
     {
-      "element": "a",
+      "component": "link",
       "children": "Catalog",
       "attributes": {
         "href": "/catalog/"
       }
     },
     {
-      "element": "a",
+      "component": "link",
       "children": "About",
       "attributes": {
         "href": "/about/"
       }
     },
     {
-      "element": "a",
+      "component": "link",
       "children": "Add library",
       "attributes": {
         "href": "/add-library/"
