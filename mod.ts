@@ -170,9 +170,19 @@ function htmlTemplate(
     body?: string;
   },
 ) {
-  return `<html>
+  return `<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TODO" />
+    <meta name="keywords" content="TODO" />
+    <meta property="og:site_name" content="TODO" />
+    <meta property="og:title" content="TODO" />
+    <meta property="og:description" content="TODO" />
+    <meta property="twitter:title" content="TODO" />
+    <meta property="twitter:description" content="TODO" />
+    <meta property="twitter:site" content="TODO" />
     <title>${title || ""}</title>
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
