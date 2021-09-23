@@ -52,7 +52,14 @@
       {
         "element": "div",
         "class": "container mx-auto",
-        "children": "main content goes here"
+        "children": [
+          {
+            "component": "subscribe"
+          },
+          {
+            "component": "all-categories"
+          }
+        ]
       }
     ]
   },

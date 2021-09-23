@@ -1,4 +1,16 @@
 {
+  "all-categories": [
+    {
+      "element": "div",
+      "children": "All categories go here"
+    }
+  ],
+  "subscribe": [
+    {
+      "element": "div",
+      "children": "Subscription widget goes here"
+    }
+  ],
   "navigation": [
     {
       "element": "a",
