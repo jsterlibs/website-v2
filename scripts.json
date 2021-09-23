@@ -15,6 +15,13 @@
       "cmd": "deno run --unstable scripts/get-categories.ts",
       "watch": true
     },
+    "get-parent-categories": {
+      "cmd": "deno run --unstable scripts/get-parent-categories.ts"
+    },
+    "watch:get-parent-categories": {
+      "cmd": "deno run --unstable scripts/get-parent-categories.ts",
+      "watch": true
+    },
     "get-libraries": {
       "cmd": "deno run --unstable scripts/get-libraries.ts"
     },
