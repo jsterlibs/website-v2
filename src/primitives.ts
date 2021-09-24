@@ -1,5 +1,5 @@
 import { isObject } from "utils";
-import type { Component } from "./types.ts";
+import type { Component } from "../types.ts";
 
 const box: Component = {
   element: "div",
