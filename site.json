@@ -1,13 +1,11 @@
 [
   {
-    "element": "flex",
-    "as": "nav",
-    "class": "justify-between p-4 bg-gray-100",
+    "element": "nav",
+    "class": "flex justify-between p-4 bg-gray-100",
     "children": [
       {
-        "element": "flex",
-        "as": "div",
-        "class": "gap-4 font-thin",
+        "element": "div",
+        "class": "flex gap-4 font-thin",
         "children": [
           {
             "component": "link",
@@ -23,9 +21,8 @@
         ]
       },
       {
-        "element": "flex",
-        "as": "div",
-        "class": "gap-4 font-light",
+        "element": "div",
+        "class": "flex gap-4 font-light",
         "children": [
           {
             "component": "link",
@@ -46,8 +43,7 @@
     ]
   },
   {
-    "element": "box",
-    "as": "main",
+    "element": "main",
     "class": "py-4",
     "children": [
       {
@@ -65,27 +61,20 @@
     ]
   },
   {
-    "element": "box",
-    "as": "footer",
+    "element": "footer",
     "class": "bg-violet-200 py-4 font-light",
     "children": [
       {
-        "element": "flex",
-        "as": "div",
-        "props": { "direction": "column" },
-        "class": "container mx-auto gap-4",
+        "element": "div",
+        "class": "flex flex-col container mx-auto gap-4",
         "children": [
           {
-            "element": "flex",
-            "as": "section",
-            "class": "justify-between",
+            "element": "section",
+            "class": "flex justify-between",
             "children": [
               {
-                "element": "flex",
-                "as": "div",
-                "props": {
-                  "direction": "column"
-                },
+                "element": "div",
+                "class": "flex flex-col",
                 "children": [
                   {
                     "element": "h2",
@@ -103,11 +92,8 @@
                 ]
               },
               {
-                "element": "flex",
-                "as": "div",
-                "props": {
-                  "direction": "column"
-                },
+                "element": "div",
+                "class": "flex flex-col",
                 "children": [
                   {
                     "element": "h2",
@@ -126,11 +112,8 @@
             "class": "grid grid-cols-3 gap-4",
             "children": [
               {
-                "element": "flex",
-                "as": "div",
-                "props": {
-                  "direction": "column"
-                },
+                "element": "div",
+                "class": "flex flex-col",
                 "children": [
                   {
                     "element": "h2",
@@ -144,20 +127,16 @@
                 ]
               },
               {
-                "element": "flex",
-                "as": "div",
-                "props": {
-                  "direction": "column"
-                },
+                "element": "div",
+                "class": "flex flex-col",
                 "children": [
                   {
                     "element": "h2",
                     "children": "Navigation"
                   },
                   {
-                    "element": "flex",
-                    "as": "div",
-                    "class": "gap-4 font-thin",
+                    "element": "div",
+                    "class": "flex gap-4 font-thin",
                     "children": [
                       {
                         "component": "navigation"
@@ -167,11 +146,8 @@
                 ]
               },
               {
-                "element": "flex",
-                "as": "div",
-                "props": {
-                  "direction": "column"
-                },
+                "element": "div",
+                "class": "flex flex-col",
                 "children": [
                   {
                     "element": "h2",

@@ -3,12 +3,10 @@ type Props = Record<string, string | undefined>;
 type Attributes = Record<string, any>;
 type Component = {
   component?: string;
-  element?: string; // TODO: Only valid DOM elements and components
-  as?: string; // TODO: Only valid DOM elements
+  element?: string; // TODO: Only valid DOM element names
   children?: string | Component[];
-  class?: string | ((props?: Props) => string);
-  props?: Props;
-  attributes?: Attributes | ((props?: Props) => Attributes);
+  class?: string;
+  attributes?: Attributes;
   // Data bindings
   __bind?: string;
   __children?: string | Component[];

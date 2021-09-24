@@ -1,6 +1,5 @@
 import { tw } from "twind";
 import { getJsonSync } from "utils";
-import * as primitives from "./primitives.ts";
 import type { Attributes, Component, Components } from "../types.ts";
 
 type Context = Record<string, unknown> | Record<string, unknown>[];
@@ -39,13 +38,6 @@ function renderComponent(
     context = getJsonSync(component.__bind);
   }
 
-  const foundPrimitive =
-    (primitives as Record<string, Component>)[component.element!];
-  const element = component.as
-    ? component.as
-    : foundPrimitive
-    ? foundPrimitive.element
-    : component.element;
   let children: string | undefined;
 
   if (component.__children && context) {
@@ -80,12 +72,10 @@ function renderComponent(
   }
 
   return wrapInElement(
-    element,
+    component.element,
     generateAttributes({
-      ...(typeof component.attributes === "function"
-        ? component.attributes(component.props)
-        : component.attributes),
-      class: getClasses(foundPrimitive, component),
+      ...component.attributes,
+      class: component.class && tw(component.class),
     }, context),
     children,
   );
@@ -129,22 +119,6 @@ function generateAttributes(attributes: Attributes, context: Context) {
     );
 
   return ret.length > 0 ? " " + ret : "";
-}
-
-function getClasses(baseComponent: Component, component: Component) {
-  const baseClass = baseComponent &&
-    getClass(baseComponent.class, component.props);
-  const componentClass = getClass(component.class, component.props);
-
-  return `${baseClass ? baseClass + " " : ""}${componentClass}`;
-}
-
-function getClass(kls: Component["class"], props: Component["props"]) {
-  if (typeof kls === "function") {
-    return tw(kls(props));
-  }
-
-  return kls ? tw(kls) : "";
 }
 
 export { renderComponent };
