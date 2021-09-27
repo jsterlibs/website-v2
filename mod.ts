@@ -60,13 +60,25 @@ async function serve(port: number) {
     // TODO
     .get("/category/:id", (context) => {
       if (context.params && context.params.id) {
-        context.response.body = context.params.id;
+        // context.response.body = context.params.id;
+
+        // TODO: Add lookup + context
+        renderPage({
+          pagePath: "./pages/[category].json",
+          title: getTitle("Category"),
+        })(context);
       }
     })
     // TODO
     .get("/library/:id", (context) => {
       if (context.params && context.params.id) {
-        context.response.body = context.params.id;
+        // context.response.body = context.params.id;
+
+        // TODO: Add lookup + context
+        renderPage({
+          pagePath: "./pages/[library].json",
+          title: getTitle("Library"),
+        })(context);
       }
     });
 
