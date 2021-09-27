@@ -5,12 +5,19 @@ const getLibraries = async (category: string) => {
   const res = await fetch("https://jster.net/" + category);
   const html = await res.text();
   const $ = cheerio.load(html);
-  const libraries: string[] = [];
+  const libraries: { title: string; url: string }[] = [];
 
   $(".repo .well a").each(function (_, e) {
     const library = $(e).attr("href");
 
-    library && libraries.push(last<string>(library.split("/")));
+    if (!library) {
+      return;
+    }
+
+    const title = $("h3", e).text().trim();
+    const url = last<string>(library.split("/"));
+
+    url && libraries.push({ title, url });
   });
 
   return libraries;

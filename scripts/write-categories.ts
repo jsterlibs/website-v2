@@ -15,7 +15,7 @@ const writeCategories = async (inputDirectory: string) => {
     const libraries = await getLibraries(category.url);
     const categoryPath = join(
       outputDirectory,
-      last<string>(category.split("/")) + ".json",
+      last<string>(category.url.split("/")) + ".json",
     );
 
     Deno.writeTextFileSync(
