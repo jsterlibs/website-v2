@@ -40,6 +40,10 @@
       ]
     }
   ],
+  "h1": {
+    "element": "h1",
+    "class": "prose lg:prose-xl"
+  },
   "link": {
     "element": "a",
     "class": "underline"

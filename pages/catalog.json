@@ -4,20 +4,14 @@
   },
   {
     "element": "main",
-    "class": "py-4",
+    "class": "py-4 mx-auto max-w-5xl",
     "children": [
       {
-        "element": "header",
-        "class": "mx-auto max-w-5xl",
-        "children": [
-          {
-            "element": "h1",
-            "children": "Catalog"
-          },
-          {
-            "component": "all-categories"
-          }
-        ]
+        "component": "h1",
+        "children": "Catalog"
+      },
+      {
+        "component": "all-categories"
       }
     ]
   },

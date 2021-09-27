@@ -4,17 +4,15 @@
   },
   {
     "element": "main",
-    "class": "py-4",
+    "class": "py-4 mx-auto max-w-5xl prose lg:prose-xl",
     "children": [
       {
-        "element": "header",
-        "class": "mx-auto max-w-5xl",
-        "children": [
-          {
-            "element": "h1",
-            "children": "About"
-          }
-        ]
+        "component": "h1",
+        "children": "About"
+      },
+      {
+        "element": "p",
+        "children": "About text goes here"
       }
     ]
   },

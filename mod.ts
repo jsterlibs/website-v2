@@ -3,6 +3,7 @@ import type { RouteParams, RouterContext } from "oak";
 import { setup } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
+import typography from "twind-typography";
 import { getJsonSync } from "utils";
 import { renderComponent } from "./src/renderComponent.ts";
 import type { Component, Components } from "./types.ts";
@@ -50,7 +51,7 @@ async function serve(port: number) {
       }),
     )
     .get(
-      "/blog",
+      "/add-library",
       renderPage({
         pagePath: "./pages/add-library.json",
         title: getTitle("Add library"),
@@ -163,7 +164,7 @@ function generateMeta(meta?: Meta) {
 function getStyleSheet() {
   const sheet = virtualSheet();
 
-  setup({ sheet, theme: { colors } });
+  setup({ sheet, theme: { colors }, plugins: { ...typography() } });
 
   return sheet;
 }
