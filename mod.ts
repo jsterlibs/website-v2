@@ -15,6 +15,9 @@ async function serve(port: number) {
 
   const components: Components = getJsonSync("./components.json");
   const stylesheet = getStyleSheet();
+  const mode = "development";
+  const renderPage = getPageRenderer({ components, stylesheet, mode });
+  const getTitle = (title: string) => `JSter – ${title}`;
 
   const router = new Router();
   router
@@ -22,29 +25,44 @@ async function serve(port: number) {
       "/",
       renderPage({
         pagePath: "./pages/index.json",
-        components,
-        stylesheet,
-        title: "JSter - JavaScript Catalog",
-        mode: "development",
+        title: getTitle("JavaScript Catalog"),
       }),
     )
-    .get("/blog", (context) => {
-      context.response.body = "blog goes here";
-    })
-    .get("./catalog", (context) => {
-      context.response.body = "catalog goes here";
-    })
-    .get("./about", (context) => {
-      context.response.body = "about goes here";
-    })
-    .get("./add-library", (context) => {
-      context.response.body = "add library goes here";
-    })
+    .get(
+      "/blog",
+      renderPage({
+        pagePath: "./pages/blog.json",
+        title: getTitle("Blog"),
+      }),
+    )
+    .get(
+      "/catalog",
+      renderPage({
+        pagePath: "./pages/catalog.json",
+        title: getTitle("Catalog"),
+      }),
+    )
+    .get(
+      "/about",
+      renderPage({
+        pagePath: "./pages/about.json",
+        title: getTitle("About"),
+      }),
+    )
+    .get(
+      "/blog",
+      renderPage({
+        pagePath: "./pages/add-library.json",
+        title: getTitle("Add library"),
+      }),
+    )
+    // TODO
     .get("./category/:id", (context) => {
       if (context.params && context.params.id) {
         context.response.body = context.params.id;
       }
     })
+    // TODO
     .get("./library/:id", (context) => {
       if (context.params && context.params.id) {
         context.response.body = context.params.id;
@@ -58,45 +76,46 @@ async function serve(port: number) {
   await app.listen({ port });
 }
 
-function renderPage(
-  { pagePath, components, stylesheet, title, mode }: {
-    pagePath: string;
+function getPageRenderer(
+  { components, stylesheet, mode }: {
     components: Components;
     stylesheet: ReturnType<typeof getStyleSheet>;
-    title: string;
     mode: Mode;
   },
 ) {
-  return (context: RouterContext<RouteParams, Record<string, unknown>>) => {
-    const document: Component = getJsonSync(pagePath);
+  return ({ title, pagePath }: {
+    title: string;
+    pagePath: string;
+  }) =>
+    (context: RouterContext<RouteParams, Record<string, unknown>>) => {
+      const document: Component = getJsonSync(pagePath);
 
-    try {
-      const body = renderComponent(
-        {
-          element: "main",
-          children: Array.isArray(document) ? document : [document],
-        },
-        components,
-        [],
-      );
-      const styleTag = getStyleTag(stylesheet);
+      try {
+        const body = renderComponent(
+          {
+            element: "main",
+            children: Array.isArray(document) ? document : [document],
+          },
+          components,
+          [],
+        );
+        const styleTag = getStyleTag(stylesheet);
 
-      context.response.headers.set(
-        "Content-Type",
-        "text/html; charset=UTF-8",
-      );
-      context.response.body = new TextEncoder().encode(
-        htmlTemplate({ title, head: styleTag, body, mode }),
-      );
-    } catch (err) {
-      console.error(err);
+        context.response.headers.set(
+          "Content-Type",
+          "text/html; charset=UTF-8",
+        );
+        context.response.body = new TextEncoder().encode(
+          htmlTemplate({ title, head: styleTag, body, mode }),
+        );
+      } catch (err) {
+        console.error(err);
 
-      context.response.body = new TextEncoder().encode(err.stack);
-    }
-  };
+        context.response.body = new TextEncoder().encode(err.stack);
+      }
+    };
 }
 
-// TODO: Extract script + link bits (too specific)
 function htmlTemplate(
   { title, meta, head, body, mode }: {
     title: string;

@@ -1,0 +1,24 @@
+[
+  {
+    "component": "main-navigation"
+  },
+  {
+    "element": "main",
+    "class": "py-4",
+    "children": [
+      {
+        "element": "header",
+        "class": "mx-auto max-w-5xl",
+        "children": [
+          {
+            "element": "h1",
+            "children": "Blog"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "main-footer"
+  }
+]
