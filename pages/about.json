@@ -7,12 +7,17 @@
     "class": "py-4 mx-auto max-w-5xl prose lg:prose-xl",
     "children": [
       {
-        "component": "h1",
+        "element": "h1",
         "children": "About"
       },
       {
+        "element": "h2",
+        "children": "What is JSter?"
+      },
+      {
         "element": "p",
-        "children": "About text goes here"
+        "transformWith": "markdown",
+        "children": "JSter is a catalog of frontend JavaScript libraries. We also maintain [a blog](/blog/) and publish [a monthly newsletter](http://eepurl.com/zB_g5). If you want to find a library for some specific purpose, we probably have something for you."
       }
     ]
   },

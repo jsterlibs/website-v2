@@ -7,6 +7,7 @@ type Component = {
   children?: string | Component[];
   class?: string;
   attributes?: Attributes;
+  transformWith?: "markdown";
   // Data bindings
   __bind?: string;
   __children?: string | Component[];

@@ -1,5 +1,6 @@
 import { tw } from "twind";
 import { getJsonSync } from "utils";
+import { Marked } from "markdown";
 import type { Attributes, Component, Components } from "../types.ts";
 
 type Context = Record<string, unknown> | Record<string, unknown>[];
@@ -77,8 +78,16 @@ function renderComponent(
       ...component.attributes,
       class: component.class && tw(component.class),
     }, context),
-    children,
+    transform(children, component?.transformWith),
   );
+}
+
+function transform(children?: string, transformWith?: string) {
+  if (transformWith === "markdown" && typeof children === "string") {
+    return Marked.parse(children).content;
+  }
+
+  return children || "";
 }
 
 function joinClasses(a?: string, b?: string) {
