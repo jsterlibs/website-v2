@@ -13,6 +13,9 @@
           {
             "element": "h1",
             "children": "Catalog"
+          },
+          {
+            "component": "all-categories"
           }
         ]
       }
