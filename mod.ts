@@ -7,6 +7,7 @@ import { getJsonSync } from "utils";
 import { renderComponent } from "./src/renderComponent.ts";
 import type { Component, Components } from "./types.ts";
 
+type Mode = "development" | "production";
 type Meta = Record<string, string>;
 
 async function serve(port: number) {
@@ -24,6 +25,7 @@ async function serve(port: number) {
         components,
         stylesheet,
         title: "JSter - JavaScript Catalog",
+        mode: "development",
       }),
     )
     .get("/blog", (context) => {
@@ -57,11 +59,12 @@ async function serve(port: number) {
 }
 
 function renderPage(
-  { pagePath, components, stylesheet, title }: {
+  { pagePath, components, stylesheet, title, mode }: {
     pagePath: string;
     components: Components;
     stylesheet: ReturnType<typeof getStyleSheet>;
     title: string;
+    mode: Mode;
   },
 ) {
   return (context: RouterContext<RouteParams, Record<string, unknown>>) => {
@@ -83,7 +86,7 @@ function renderPage(
         "text/html; charset=UTF-8",
       );
       context.response.body = new TextEncoder().encode(
-        htmlTemplate({ title, head: styleTag, body }),
+        htmlTemplate({ title, head: styleTag, body, mode }),
       );
     } catch (err) {
       console.error(err);
@@ -95,11 +98,12 @@ function renderPage(
 
 // TODO: Extract script + link bits (too specific)
 function htmlTemplate(
-  { title, meta, head, body }: {
+  { title, meta, head, body, mode }: {
     title: string;
     meta?: Meta;
     head?: string;
     body?: string;
+    mode: Mode;
   },
 ) {
   return `<!DOCTYPE html>
@@ -117,7 +121,8 @@ function htmlTemplate(
     <meta property="twitter:site" content="TODO" />
     <title>${title || ""}</title>
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    ${mode === "development" &&
+    '<script type="text/javascript" src="https://livejs.com/live.js"></script>'}
     ${generateMeta(meta)}
     ${head || ""}
   </head>
