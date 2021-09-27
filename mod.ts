@@ -58,13 +58,13 @@ async function serve(port: number) {
       }),
     )
     // TODO
-    .get("./category/:id", (context) => {
+    .get("/category/:id", (context) => {
       if (context.params && context.params.id) {
         context.response.body = context.params.id;
       }
     })
     // TODO
-    .get("./library/:id", (context) => {
+    .get("/library/:id", (context) => {
       if (context.params && context.params.id) {
         context.response.body = context.params.id;
       }
