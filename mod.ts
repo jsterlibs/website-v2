@@ -118,7 +118,6 @@ function htmlTemplate(
     <title>${title || ""}</title>
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.0.1/dist/base.min.css" />
     ${generateMeta(meta)}
     ${head || ""}
   </head>
