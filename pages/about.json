@@ -26,7 +26,7 @@
       {
         "element": "p",
         "transformWith": "markdown",
-        "children": "JSter is a spiritual successor to JSwiki established by Juho Vepsäläinen. JSter started out as a collaboration between Juho and the Codegyre development team: Michael Bodnarchuk and Nick Palamarchuk. We took the technology they had developed for Symfohub and then retrofitted it."
+        "children": "JSter is a spiritual successor to [JSwiki](https://github.com/bebraw/jswiki/wiki) established by [Juho Vepsäläinen](https://github.com/bebraw/). JSter started out as a collaboration between Juho and the Codegyre development team: Michael Bodnarchuk and Nick Palamarchuk. We took the technology they had developed for Symfohub and then retrofitted it. After that, Juho rewrote the site on top of a Deno based stack."
       },
       {
         "element": "h2",
