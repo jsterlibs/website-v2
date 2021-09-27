@@ -1,4 +1,5 @@
 import { Application, Router } from "oak";
+import type { RouteParams, RouterContext } from "oak";
 import { setup } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
@@ -11,38 +12,20 @@ type Meta = Record<string, string>;
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
-  const siteTitle = "JSter – JavaScript Catalog";
-  const document: Component = getJsonSync("./pages/index.json");
   const components: Components = getJsonSync("./components.json");
   const stylesheet = getStyleSheet();
 
   const router = new Router();
   router
-    .get("/", (context) => {
-      try {
-        const body = renderComponent(
-          {
-            element: "main",
-            children: Array.isArray(document) ? document : [document],
-          },
-          components,
-          [],
-        );
-        const styleTag = getStyleTag(stylesheet);
-
-        context.response.headers.set(
-          "Content-Type",
-          "text/html; charset=UTF-8",
-        );
-        context.response.body = new TextEncoder().encode(
-          htmlTemplate({ title: siteTitle, head: styleTag, body }),
-        );
-      } catch (err) {
-        console.error(err);
-
-        context.response.body = new TextEncoder().encode(err.stack);
-      }
-    })
+    .get(
+      "/",
+      renderPage({
+        pagePath: "./pages/index.json",
+        components,
+        stylesheet,
+        title: "JSter - JavaScript Catalog",
+      }),
+    )
     .get("/blog", (context) => {
       context.response.body = "blog goes here";
     })
@@ -71,6 +54,43 @@ async function serve(port: number) {
   app.use(router.allowedMethods());
 
   await app.listen({ port });
+}
+
+function renderPage(
+  { pagePath, components, stylesheet, title }: {
+    pagePath: string;
+    components: Components;
+    stylesheet: ReturnType<typeof getStyleSheet>;
+    title: string;
+  },
+) {
+  return (context: RouterContext<RouteParams, Record<string, unknown>>) => {
+    const document: Component = getJsonSync(pagePath);
+
+    try {
+      const body = renderComponent(
+        {
+          element: "main",
+          children: Array.isArray(document) ? document : [document],
+        },
+        components,
+        [],
+      );
+      const styleTag = getStyleTag(stylesheet);
+
+      context.response.headers.set(
+        "Content-Type",
+        "text/html; charset=UTF-8",
+      );
+      context.response.body = new TextEncoder().encode(
+        htmlTemplate({ title, head: styleTag, body }),
+      );
+    } catch (err) {
+      console.error(err);
+
+      context.response.body = new TextEncoder().encode(err.stack);
+    }
+  };
 }
 
 // TODO: Extract script + link bits (too specific)
