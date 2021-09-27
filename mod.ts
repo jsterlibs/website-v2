@@ -1,4 +1,4 @@
-import { Application } from "oak";
+import { Application, Router } from "oak";
 import { setup } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
@@ -12,33 +12,63 @@ async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
   const siteTitle = "JSter – JavaScript Catalog";
-  const document: Component = getJsonSync("./site.json");
+  const document: Component = getJsonSync("./pages/index.json");
   const components: Components = getJsonSync("./components.json");
   const stylesheet = getStyleSheet();
+
+  const router = new Router();
+  router
+    .get("/", (context) => {
+      try {
+        const body = renderComponent(
+          {
+            element: "main",
+            children: Array.isArray(document) ? document : [document],
+          },
+          components,
+          [],
+        );
+        const styleTag = getStyleTag(stylesheet);
+
+        context.response.headers.set(
+          "Content-Type",
+          "text/html; charset=UTF-8",
+        );
+        context.response.body = new TextEncoder().encode(
+          htmlTemplate({ title: siteTitle, head: styleTag, body }),
+        );
+      } catch (err) {
+        console.error(err);
+
+        context.response.body = new TextEncoder().encode(err.stack);
+      }
+    })
+    .get("/blog", (context) => {
+      context.response.body = "blog goes here";
+    })
+    .get("./catalog", (context) => {
+      context.response.body = "catalog goes here";
+    })
+    .get("./about", (context) => {
+      context.response.body = "about goes here";
+    })
+    .get("./add-library", (context) => {
+      context.response.body = "add library goes here";
+    })
+    .get("./category/:id", (context) => {
+      if (context.params && context.params.id) {
+        context.response.body = context.params.id;
+      }
+    })
+    .get("./library/:id", (context) => {
+      if (context.params && context.params.id) {
+        context.response.body = context.params.id;
+      }
+    });
+
   const app = new Application();
-
-  app.use((context) => {
-    try {
-      const body = renderComponent(
-        {
-          element: "main",
-          children: Array.isArray(document) ? document : [document],
-        },
-        components,
-        [],
-      );
-      const styleTag = getStyleTag(stylesheet);
-
-      context.response.headers.set("Content-Type", "text/html; charset=UTF-8");
-      context.response.body = new TextEncoder().encode(
-        htmlTemplate({ title: siteTitle, head: styleTag, body }),
-      );
-    } catch (err) {
-      console.error(err);
-
-      context.response.body = new TextEncoder().encode(err.stack);
-    }
-  });
+  app.use(router.routes());
+  app.use(router.allowedMethods());
 
   await app.listen({ port });
 }
