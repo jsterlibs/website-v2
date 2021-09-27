@@ -4,7 +4,7 @@
   },
   {
     "element": "main",
-    "class": "py-4 mx-auto max-w-5xl prose lg:prose-xl",
+    "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
     "children": [
       {
         "element": "h1",
@@ -18,6 +18,24 @@
         "element": "p",
         "transformWith": "markdown",
         "children": "JSter is a catalog of frontend JavaScript libraries. We also maintain [a blog](/blog/) and publish [a monthly newsletter](http://eepurl.com/zB_g5). If you want to find a library for some specific purpose, we probably have something for you."
+      },
+      {
+        "element": "h2",
+        "children": "Origin"
+      },
+      {
+        "element": "p",
+        "transformWith": "markdown",
+        "children": "JSter is a spiritual successor to JSwiki established by Juho Vepsäläinen. JSter started out as a collaboration between Juho and the Codegyre development team: Michael Bodnarchuk and Nick Palamarchuk. We took the technology they had developed for Symfohub and then retrofitted it."
+      },
+      {
+        "element": "h2",
+        "children": "Feedback"
+      },
+      {
+        "element": "p",
+        "transformWith": "markdown",
+        "children": "You can get in touch by using [Twitter](https://twitter.com/jsterlibs) or [email](bebraw@gmail.com)."
       }
     ]
   },
