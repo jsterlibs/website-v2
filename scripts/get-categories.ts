@@ -29,4 +29,3 @@ if (import.meta.main) {
 }
 
 export { getCategories, selectCategories };
-export type { Category };

@@ -17,7 +17,7 @@
         },
         {
           "component": "all-categories",
-          "__bind": "./data/parent-categories.json"
+          "__bind": "parentCategories"
         }
       ]
     },

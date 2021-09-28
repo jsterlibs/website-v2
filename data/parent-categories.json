@@ -3,38 +3,47 @@
     "title": "Essentials",
     "children": [
       {
+        "id": "application-frameworks",
         "title": "Application Frameworks",
         "url": "/category/application-frameworks"
       },
       {
+        "id": "mobile-frameworks",
         "title": "Mobile Frameworks",
         "url": "/category/mobile-frameworks"
       },
       {
+        "id": "mvc-frameworks",
         "title": "MVC Frameworks",
         "url": "/category/mvc-frameworks"
       },
       {
+        "id": "realtime-frameworks",
         "title": "Realtime Frameworks",
         "url": "/category/realtime-frameworks"
       },
       {
+        "id": "desktop-gui",
         "title": "Desktop GUI",
         "url": "/category/desktop-gui"
       },
       {
+        "id": "serverside-libraries",
         "title": "ServerSide Libraries",
         "url": "/category/serverside-libraries"
       },
       {
+        "id": "testing-frameworks",
         "title": "Testing Frameworks",
         "url": "/category/testing-frameworks"
       },
       {
+        "id": "templating-engines",
         "title": "Templating Engines",
         "url": "/category/templating-engines"
       },
       {
+        "id": "loaders",
         "title": "Loaders",
         "url": "/category/loaders"
       }
@@ -44,46 +53,57 @@
     "title": "UI",
     "children": [
       {
+        "id": "ui-frameworks",
         "title": "UI Frameworks",
         "url": "/category/ui-frameworks"
       },
       {
+        "id": "windows-modals-popups",
         "title": "Windows, Modals, Popups",
         "url": "/category/windows-modals-popups"
       },
       {
+        "id": "keyboard-wrappers",
         "title": "Keyboard Wrappers",
         "url": "/category/keyboard-wrappers"
       },
       {
+        "id": "form-widgets",
         "title": "Form Widgets",
         "url": "/category/form-widgets"
       },
       {
+        "id": "ui-components",
         "title": "UI Components",
         "url": "/category/ui-components"
       },
       {
+        "id": "sliders",
         "title": "Sliders & Galleries",
         "url": "/category/sliders"
       },
       {
+        "id": "notifications",
         "title": "Notifications",
         "url": "/category/notifications"
       },
       {
+        "id": "wysiwyg-editors",
         "title": "WYSIWYG Editors",
         "url": "/category/wysiwyg-editors"
       },
       {
+        "id": "touch",
         "title": "Touch",
         "url": "/category/touch"
       },
       {
+        "id": "layout",
         "title": "Layout",
         "url": "/category/layout"
       },
       {
+        "id": "tours-guides",
         "title": "Tours & Guides",
         "url": "/category/tours-guides"
       }
@@ -93,26 +113,32 @@
     "title": "Multimedia",
     "children": [
       {
+        "id": "game-engines",
         "title": "Game Engines",
         "url": "/category/game-engines"
       },
       {
+        "id": "physics-libraries",
         "title": "Physics Libraries",
         "url": "/category/physics-libraries"
       },
       {
+        "id": "animation-libraries",
         "title": "Animation Libraries",
         "url": "/category/animation-libraries"
       },
       {
+        "id": "audio-libraries",
         "title": "Audio Libraries",
         "url": "/category/audio-libraries"
       },
       {
+        "id": "presentation-libraries",
         "title": "Presentation Libraries",
         "url": "/category/presentation-libraries"
       },
       {
+        "id": "video-players",
         "title": "Video Players",
         "url": "/category/video-players"
       }
@@ -122,26 +148,32 @@
     "title": "Graphics",
     "children": [
       {
+        "id": "canvas-wrappers",
         "title": "Canvas Wrappers",
         "url": "/category/canvas-wrappers"
       },
       {
+        "id": "webgl",
         "title": "WebGL",
         "url": "/category/webgl"
       },
       {
+        "id": "image-manipulation",
         "title": "Image Manipulation",
         "url": "/category/image-manipulation"
       },
       {
+        "id": "visualization-libraries",
         "title": "Visualization Libraries",
         "url": "/category/visualization-libraries"
       },
       {
+        "id": "color-libraries",
         "title": "Color Libraries",
         "url": "/category/color-libraries"
       },
       {
+        "id": "mapping-libraries",
         "title": "Mapping Libraries",
         "url": "/category/mapping-libraries"
       }
@@ -151,26 +183,32 @@
     "title": "Data",
     "children": [
       {
+        "id": "data-structures",
         "title": "Data Structures",
         "url": "/category/data-structures"
       },
       {
+        "id": "date-libraries",
         "title": "Date Libraries",
         "url": "/category/date-libraries"
       },
       {
+        "id": "storage-libraries",
         "title": "Storage Libraries",
         "url": "/category/storage-libraries"
       },
       {
+        "id": "validation",
         "title": "Validation",
         "url": "/category/validation"
       },
       {
+        "id": "strings",
         "title": "Strings",
         "url": "/category/strings"
       },
       {
+        "id": "file-formats",
         "title": "File Formats",
         "url": "/category/file-formats"
       }
@@ -180,34 +218,42 @@
     "title": "Development",
     "children": [
       {
+        "id": "package-managers",
         "title": "Package Managers",
         "url": "/category/package-managers"
       },
       {
+        "id": "timing",
         "title": "Timing",
         "url": "/category/timing"
       },
       {
+        "id": "toolkits",
         "title": "Toolkits",
         "url": "/category/toolkits"
       },
       {
+        "id": "code-protection",
         "title": "Code Protection",
         "url": "/category/code-protection"
       },
       {
+        "id": "compilers-and-parsers",
         "title": "Language Compilers",
         "url": "/category/compilers-and-parsers"
       },
       {
+        "id": "debugging-tools",
         "title": "Debugging Tools",
         "url": "/category/debugging-tools"
       },
       {
+        "id": "documentation-tools",
         "title": "Documentation Tools",
         "url": "/category/documentation-tools"
       },
       {
+        "id": "build-utilities",
         "title": "Build Utilities",
         "url": "/category/build-utilities"
       }
@@ -217,34 +263,42 @@
     "title": "Utilities",
     "children": [
       {
+        "id": "async-control-flow-event",
         "title": "Async, Control Flow, Event",
         "url": "/category/async-control-flow-event"
       },
       {
+        "id": "class-system",
         "title": "Class System",
         "url": "/category/class-system"
       },
       {
+        "id": "i18n-l10n",
         "title": "I18n And L10n",
         "url": "/category/i18n-l10n"
       },
       {
+        "id": "dom",
         "title": "DOM",
         "url": "/category/dom"
       },
       {
+        "id": "functional-programming",
         "title": "Functional Programming",
         "url": "/category/functional-programming"
       },
       {
+        "id": "math-libraries",
         "title": "Math Libraries",
         "url": "/category/math-libraries"
       },
       {
+        "id": "routing",
         "title": "Routing",
         "url": "/category/routing"
       },
       {
+        "id": "selector-libraries",
         "title": "Selector Libraries",
         "url": "/category/selector-libraries"
       }
@@ -254,18 +308,22 @@
     "title": "Applications",
     "children": [
       {
+        "id": "html5-applications",
         "title": "Html5 Applications",
         "url": "/category/html5-applications"
       },
       {
+        "id": "static-site-generators",
         "title": "Static Site Generators",
         "url": "/category/static-site-generators"
       },
       {
+        "id": "code-editors",
         "title": "Code Editors",
         "url": "/category/code-editors"
       },
       {
+        "id": "prototyping-design",
         "title": "Design And Prototyping",
         "url": "/category/prototyping-design"
       }

@@ -29,6 +29,7 @@ type Library = {
   tags: string[];
 };
 type DataContext = Record<string, unknown> | Record<string, unknown>[];
+type ParentCategory = { title: string; children: Category[] };
 
 export type {
   Attributes,
@@ -37,5 +38,6 @@ export type {
   Components,
   DataContext,
   Library,
+  ParentCategory,
   Props,
 };

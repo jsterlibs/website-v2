@@ -1,5 +1,4 @@
 import { tw } from "twind";
-import { getJsonSync } from "utils";
 import { Marked } from "markdown";
 import type {
   Attributes,
@@ -20,7 +19,8 @@ function renderComponent(
   const foundComponent = components[component.component!];
 
   if (component.__bind) {
-    context = getJsonSync(component.__bind);
+    // @ts-ignore The assumption is that context exists
+    context = context[component.__bind];
   }
 
   if (foundComponent) {

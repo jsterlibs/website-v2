@@ -12,6 +12,7 @@ import type {
   Components,
   DataContext,
   Library,
+  ParentCategory,
 } from "./types.ts";
 
 type Mode = "development" | "production";
@@ -21,6 +22,9 @@ type SiteMeta = { siteName: string };
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
+  const parentCategories: ParentCategory[] = getJsonSync(
+    "./data/parent-categories.json",
+  );
   const categories: Category[] = getJsonSync("./data/categories.json");
   const components: Components = getJsonSync("./components.json");
   const stylesheet = getStyleSheet();
@@ -31,6 +35,7 @@ async function serve(port: number) {
     stylesheet,
     mode,
     siteMeta,
+    sharedData: { parentCategories },
   });
 
   const router = new Router();
@@ -69,14 +74,15 @@ async function serve(port: number) {
 }
 
 function getPageRenderer(
-  { components, stylesheet, mode, siteMeta }: {
+  { components, stylesheet, mode, siteMeta, sharedData }: {
     components: Components;
     stylesheet: ReturnType<typeof getStyleSheet>;
     mode: Mode;
     siteMeta: SiteMeta;
+    sharedData: DataContext;
   },
 ) {
-  return (pagePath: string, dataContext?: DataContext) =>
+  return (pagePath: string, pageData?: DataContext) =>
     (
       oakContext: RouterContext<RouteParams, Record<string, unknown>>,
     ) => {
@@ -91,7 +97,7 @@ function getPageRenderer(
             children: Array.isArray(page) ? page : [page],
           },
           components,
-          dataContext || [],
+          { ...sharedData, ...pageData },
         );
         const styleTag = getStyleTag(stylesheet);
 
@@ -102,8 +108,7 @@ function getPageRenderer(
         oakContext.response.body = new TextEncoder().encode(
           htmlTemplate({
             siteMeta,
-            // TODO: Apply bindings (__)
-            meta: applyData(meta, dataContext),
+            meta: applyData(meta, { ...sharedData, ...pageData }),
             head: styleTag,
             body,
             mode,
