@@ -1,22 +1,28 @@
-[
-  {
-    "component": "main-navigation"
+{
+  "meta": {
+    "title": "Blog",
+    "description": "Relevant JavaScript news"
   },
-  {
-    "element": "main",
-    "class": "py-4 mx-auto max-w-5xl prose lg:prose-xl",
-    "children": [
-      {
-        "component": "h1",
-        "children": "Blog"
-      },
-      {
-        "element": "p",
-        "children": "TODO"
-      }
-    ]
-  },
-  {
-    "component": "main-footer"
-  }
-]
+  "page": [
+    {
+      "component": "main-navigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-5xl prose lg:prose-xl",
+      "children": [
+        {
+          "component": "h1",
+          "children": "Blog"
+        },
+        {
+          "element": "p",
+          "children": "TODO"
+        }
+      ]
+    },
+    {
+      "component": "main-footer"
+    }
+  ]
+}

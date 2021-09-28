@@ -10,6 +10,7 @@ import type { Component, Components } from "./types.ts";
 
 type Mode = "development" | "production";
 type Meta = Record<string, string>;
+type SiteMeta = { siteName: string };
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
@@ -17,56 +18,28 @@ async function serve(port: number) {
   const components: Components = getJsonSync("./components.json");
   const stylesheet = getStyleSheet();
   const mode = "development";
-  const renderPage = getPageRenderer({ components, stylesheet, mode });
-  const getTitle = (title: string) => `JSter – ${title}`;
+  const siteMeta = { siteName: "Jster" };
+  const renderPage = getPageRenderer({
+    components,
+    stylesheet,
+    mode,
+    siteMeta,
+  });
 
   const router = new Router();
   router
-    .get(
-      "/",
-      renderPage({
-        pagePath: "./pages/index.json",
-        title: getTitle("JavaScript Catalog"),
-      }),
-    )
-    .get(
-      "/blog",
-      renderPage({
-        pagePath: "./pages/blog.json",
-        title: getTitle("Blog"),
-      }),
-    )
-    .get(
-      "/catalog",
-      renderPage({
-        pagePath: "./pages/catalog.json",
-        title: getTitle("Catalog"),
-      }),
-    )
-    .get(
-      "/about",
-      renderPage({
-        pagePath: "./pages/about.json",
-        title: getTitle("About"),
-      }),
-    )
-    .get(
-      "/add-library",
-      renderPage({
-        pagePath: "./pages/add-library.json",
-        title: getTitle("Add library"),
-      }),
-    )
+    .get("/", renderPage("./pages/index.json"))
+    .get("/blog", renderPage("./pages/blog.json"))
+    .get("/catalog", renderPage("./pages/catalog.json"))
+    .get("/about", renderPage("./pages/about.json"))
+    .get("/add-library", renderPage("./pages/add-library.json"))
     // TODO
     .get("/category/:id", (context) => {
       if (context.params && context.params.id) {
         // context.response.body = context.params.id;
 
         // TODO: Add lookup + context
-        renderPage({
-          pagePath: "./pages/[category].json",
-          title: getTitle("Category"),
-        })(context);
+        renderPage("./pages/[category].json")(context);
       }
     })
     // TODO
@@ -75,10 +48,7 @@ async function serve(port: number) {
         // context.response.body = context.params.id;
 
         // TODO: Add lookup + context
-        renderPage({
-          pagePath: "./pages/[library].json",
-          title: getTitle("Library"),
-        })(context);
+        renderPage("./pages/[library].json")(context);
       }
     });
 
@@ -90,24 +60,24 @@ async function serve(port: number) {
 }
 
 function getPageRenderer(
-  { components, stylesheet, mode }: {
+  { components, stylesheet, mode, siteMeta }: {
     components: Components;
     stylesheet: ReturnType<typeof getStyleSheet>;
     mode: Mode;
+    siteMeta: SiteMeta;
   },
 ) {
-  return ({ title, pagePath }: {
-    title: string;
-    pagePath: string;
-  }) =>
+  return (pagePath: string) =>
     (context: RouterContext<RouteParams, Record<string, unknown>>) => {
-      const document: Component = getJsonSync(pagePath);
+      const { meta, page }: { meta: Meta; page: Component } = getJsonSync(
+        pagePath,
+      );
 
       try {
         const body = renderComponent(
           {
-            element: "main",
-            children: Array.isArray(document) ? document : [document],
+            element: "main", // TODO: Not correct
+            children: Array.isArray(page) ? page : [page],
           },
           components,
           [],
@@ -119,7 +89,13 @@ function getPageRenderer(
           "text/html; charset=UTF-8",
         );
         context.response.body = new TextEncoder().encode(
-          htmlTemplate({ title, head: styleTag, body, mode }),
+          htmlTemplate({
+            siteMeta,
+            meta: meta || {},
+            head: styleTag,
+            body,
+            mode,
+          }),
         );
       } catch (err) {
         console.error(err);
@@ -129,29 +105,32 @@ function getPageRenderer(
     };
 }
 
-function htmlTemplate(
-  { title, meta, head, body, mode }: {
-    title: string;
-    meta?: Meta;
-    head?: string;
-    body?: string;
-    mode: Mode;
-  },
-) {
+function htmlTemplate({ siteMeta, meta, head, body, mode }: {
+  siteMeta: SiteMeta;
+  meta: Meta;
+  head?: string;
+  body?: string;
+  mode: Mode;
+}) {
+  const siteName = siteMeta.siteName || "";
+  const title = meta.title || "";
+  const description = meta.description || "";
+  const keywords = meta.keywords || "";
+
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TODO" />
-    <meta name="keywords" content="TODO" />
-    <meta property="og:site_name" content="TODO" />
-    <meta property="og:title" content="TODO" />
-    <meta property="og:description" content="TODO" />
-    <meta property="twitter:title" content="TODO" />
-    <meta property="twitter:description" content="TODO" />
-    <meta property="twitter:site" content="TODO" />
-    <title>${title || ""}</title>
+    <meta name="description" content="${description}" />
+    <meta name="keywords" content="${keywords}" />
+    <meta property="og:site_name" content="${siteName}" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+    <meta property="twitter:title" content="${title}" />
+    <meta property="twitter:description" content="${description}" />
+    <meta property="twitter:site" content="${siteName}" />
+    <title>${title}</title>
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
     ${mode === "development" &&
     '<script type="text/javascript" src="https://livejs.com/live.js"></script>'}

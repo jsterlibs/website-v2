@@ -1,27 +1,33 @@
-[
-  {
-    "component": "main-navigation"
+{
+  "meta": {
+    "title": "JavaScript Catalog",
+    "description": "JSter catalogues JavaScript libraries per purpose"
   },
-  {
-    "element": "main",
-    "class": "py-4",
-    "children": [
-      {
-        "element": "div",
-        "class": "mx-auto max-w-5xl",
-        "children": [
-          {
-            "component": "subscribe"
-          },
-          {
-            "component": "all-categories",
-            "__bind": "./data/parent-categories.json"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "component": "main-footer"
-  }
-]
+  "page": [
+    {
+      "component": "main-navigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4",
+      "children": [
+        {
+          "element": "div",
+          "class": "mx-auto max-w-5xl",
+          "children": [
+            {
+              "component": "subscribe"
+            },
+            {
+              "component": "all-categories",
+              "__bind": "./data/parent-categories.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "main-footer"
+    }
+  ]
+}

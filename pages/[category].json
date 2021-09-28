@@ -1,22 +1,28 @@
-[
-  {
-    "component": "main-navigation"
+{
+  "meta": {
+    "title": "TODO",
+    "description": "TODO"
   },
-  {
-    "element": "main",
-    "class": "py-4 mx-auto max-w-5xl",
-    "children": [
-      {
-        "component": "h1",
-        "children": "Category"
-      },
-      {
-        "component": "all-categories",
-        "__bind": "./data/parent-categories.json"
-      }
-    ]
-  },
-  {
-    "component": "main-footer"
-  }
-]
+  "page": [
+    {
+      "component": "main-navigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-5xl",
+      "children": [
+        {
+          "component": "h1",
+          "children": "Category"
+        },
+        {
+          "component": "all-categories",
+          "__bind": "./data/parent-categories.json"
+        }
+      ]
+    },
+    {
+      "component": "main-footer"
+    }
+  ]
+}

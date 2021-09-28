@@ -1,22 +1,28 @@
-[
-  {
-    "component": "main-navigation"
+{
+  "meta": {
+    "title": "Add library",
+    "description": "Add a library to the catalogue"
   },
-  {
-    "element": "main",
-    "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
-    "children": [
-      {
-        "component": "h1",
-        "children": "Add library"
-      },
-      {
-        "element": "p",
-        "children": "TODO"
-      }
-    ]
-  },
-  {
-    "component": "main-footer"
-  }
-]
+  "page": [
+    {
+      "component": "main-navigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
+      "children": [
+        {
+          "component": "h1",
+          "children": "Add library"
+        },
+        {
+          "element": "p",
+          "children": "TODO"
+        }
+      ]
+    },
+    {
+      "component": "main-footer"
+    }
+  ]
+}
