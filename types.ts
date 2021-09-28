@@ -16,6 +16,6 @@ type Component = {
     render: string | Component[];
   };
 };
-type Components = Record<string, Component[] | Component>;
+type Components = Record<string, Component>;
 
 export type { Attributes, Component, Components, Props };

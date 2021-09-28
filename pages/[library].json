@@ -11,7 +11,8 @@
         "children": "Library"
       },
       {
-        "component": "all-categories"
+        "component": "all-categories",
+        "__bind": "./data/parent-categories.json"
       }
     ]
   },

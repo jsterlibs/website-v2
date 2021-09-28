@@ -14,7 +14,8 @@
             "component": "subscribe"
           },
           {
-            "component": "all-categories"
+            "component": "all-categories",
+            "__bind": "./data/parent-categories.json"
           }
         ]
       }

@@ -2,7 +2,6 @@
   "all-categories": [
     {
       "element": "ul",
-      "__bind": "./data/parent-categories.json",
       "__children": [
         {
           "element": "li",

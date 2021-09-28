@@ -16,6 +16,10 @@ function renderComponent(
 
   const foundComponent = components[component.component!];
 
+  if (component.__bind) {
+    context = getJsonSync(component.__bind);
+  }
+
   if (foundComponent) {
     return renderComponent(
       {
@@ -33,10 +37,6 @@ function renderComponent(
       components,
       context,
     );
-  }
-
-  if (component.__bind) {
-    context = getJsonSync(component.__bind);
   }
 
   let children: string | undefined;
