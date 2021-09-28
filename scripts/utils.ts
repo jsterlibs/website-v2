@@ -1,3 +1,5 @@
+import * as path from "path";
+
 function getJsonSync(filePath: string) {
   return JSON.parse(Deno.readTextFileSync(filePath));
 }
@@ -25,4 +27,24 @@ function get<O = Record<string, unknown>>(dataContext: O, key: string): string {
   return value as unknown as string;
 }
 
-export { get, getJsonSync, isObject, last };
+function dir(p: string) {
+  const ret = [];
+
+  for (const { name } of Deno.readDirSync(p)) {
+    ret.push({ path: path.join(p, name), name });
+  }
+
+  return ret;
+}
+
+function zipToObject<R>(arr: [string, R][]) {
+  const ret: Record<string, R> = {};
+
+  arr.forEach(([k, v]) => {
+    ret[k] = v;
+  });
+
+  return ret;
+}
+
+export { dir, get, getJsonSync, isObject, last, zipToObject };

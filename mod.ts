@@ -4,7 +4,7 @@ import { setup } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
 import typography from "twind-typography";
-import { get, getJsonSync } from "utils";
+import { dir, get, getJsonSync, zipToObject } from "utils";
 import { renderComponent } from "./src/renderComponent.ts";
 import type {
   Category,
@@ -27,6 +27,9 @@ async function serve(port: number) {
   );
   const categories: Category[] = getJsonSync("./data/categories.json");
   const components: Components = getJsonSync("./components.json");
+  const libraries = getLibraries(
+    "./data/libraries",
+  );
   const stylesheet = getStyleSheet();
   const mode = "development";
   const siteMeta = { siteName: "Jster" };
@@ -38,6 +41,7 @@ async function serve(port: number) {
     sharedData: { parentCategories },
   });
 
+  // TODO: Generate routes based on the pages directory
   const router = new Router();
   router
     .get("/", renderPage("./pages/index.json"))
@@ -48,28 +52,44 @@ async function serve(port: number) {
     .get("/category/:id", (context) => {
       const id = context.params.id;
 
-      if (id) {
-        const category = categories.find((c) => c.id === id);
-        const libraries: Library[] = getJsonSync(`data/categories/${id}.json`);
-
-        renderPage("./pages/[category].json", { category, libraries })(context);
+      if (!id) {
+        return;
       }
+
+      // TODO: Maybe this is better as a lookup as well
+      const category = categories.find((c) => c.id === id);
+      const libraries: Library[] = getJsonSync(`data/categories/${id}.json`);
+
+      renderPage("./pages/[category].json", { category, libraries })(context);
     })
-    // TODO
     .get("/library/:id", (context) => {
       const id = context.params.id;
 
-      if (id) {
-        // TODO: Add lookup + context
-        renderPage("./pages/[library].json")(context);
+      if (!id) {
+        return;
+      }
+
+      const library = libraries[id];
+
+      if (library) {
+        renderPage("./pages/[library].json", { library })(context);
       }
     });
 
   const app = new Application();
+
   app.use(router.routes());
   app.use(router.allowedMethods());
 
   await app.listen({ port });
+}
+
+function getLibraries(
+  p: string,
+): Record<string, Library> {
+  return zipToObject<Library>(
+    dir(p).map(({ name, path }) => [name.split(".")[0], getJsonSync(path)]),
+  );
 }
 
 function getPageRenderer(

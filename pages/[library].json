@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TODO",
-    "description": "TODO"
+    "__title": "library.name",
+    "__description": "library.description"
   },
   "page": [
     {
@@ -9,15 +9,15 @@
     },
     {
       "element": "main",
-      "class": "py-4 mx-auto max-w-5xl",
+      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
       "children": [
         {
           "component": "h1",
-          "children": "Library"
+          "__children": "library.name"
         },
         {
-          "component": "all-categories",
-          "__bind": "parentCategories"
+          "element": "p",
+          "__children": "library.description"
         }
       ]
     },
