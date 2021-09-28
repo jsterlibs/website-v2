@@ -4,7 +4,7 @@ import { setup } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
 import typography from "twind-typography";
-import { getJsonSync, isObject } from "utils";
+import { get, getJsonSync } from "utils";
 import { renderComponent } from "./src/renderComponent.ts";
 import type {
   Category,
@@ -126,29 +126,13 @@ function applyData(meta: Meta, dataContext?: DataContext) {
 
   Object.entries(meta).forEach(([k, v]) => {
     if (k.startsWith("__") && dataContext) {
-      ret[k.slice(2)] = get(dataContext, v);
+      ret[k.slice(2)] = get<DataContext>(dataContext, v);
     } else {
       ret[k] = v;
     }
   });
 
   return ret;
-}
-
-function get(dataContext: DataContext, key: string): string {
-  let value = dataContext;
-
-  // TODO: What if the lookup fails?
-  key.split(".").forEach((k) => {
-    if (isObject(value)) {
-      // TODO: How to type
-      // @ts-ignore Recursive until it finds the root
-      value = value[k];
-    }
-  });
-
-  // TODO: How to type
-  return value as unknown as string;
 }
 
 function htmlTemplate({ siteMeta, meta, head, body, mode }: {

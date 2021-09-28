@@ -1,5 +1,6 @@
 import { tw } from "twind";
 import { Marked } from "markdown";
+import { get } from "utils";
 import type {
   Attributes,
   Component,
@@ -49,7 +50,7 @@ function renderComponent(
 
     if (typeof boundChildren === "string") {
       // @ts-ignore: TODO: How to type this?
-      children = context[boundChildren];
+      children = get(context, boundChildren);
     } else {
       children = (Array.isArray(context) ? context : [context]).flatMap((d) =>
         boundChildren.map((c) => renderComponent(c, components, d))

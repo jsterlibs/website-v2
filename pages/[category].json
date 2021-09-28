@@ -13,7 +13,8 @@
       "children": [
         {
           "component": "h1",
-          "children": "Category"
+          "class": "mb-4",
+          "__children": "category.title"
         },
         {
           "component": "all-libraries",

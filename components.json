@@ -42,14 +42,15 @@
   "all-libraries": [
     {
       "element": "ul",
+      "class": "grid grid-cols-3 gap-8",
       "__children": [
         {
           "element": "li",
-          "class": "flex gap-4 border-b last:border-b-0",
+          "class": "my-4",
           "children": [
             {
               "component": "link",
-              "class": "",
+              "class": "w-full bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
               "__children": "title",
               "attributes": {
                 "__href": "url"
