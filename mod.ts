@@ -6,7 +6,7 @@ import * as colors from "twind-colors";
 import typography from "twind-typography";
 import { getJsonSync } from "utils";
 import { renderComponent } from "./src/renderComponent.ts";
-import type { Component, Components } from "./types.ts";
+import type { Category, Component, Components, Library } from "./types.ts";
 
 type Mode = "development" | "production";
 type Meta = Record<string, string>;
@@ -15,6 +15,7 @@ type SiteMeta = { siteName: string };
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
+  const categories: Category[] = getJsonSync("./data/categories.json");
   const components: Components = getJsonSync("./components.json");
   const stylesheet = getStyleSheet();
   const mode = "development";
@@ -35,8 +36,14 @@ async function serve(port: number) {
     .get("/add-library", renderPage("./pages/add-library.json"))
     // TODO
     .get("/category/:id", (context) => {
-      if (context.params && context.params.id) {
-        // context.response.body = context.params.id;
+      const id = context.params.id;
+
+      if (id) {
+        const category = categories.find((c) => c.id === id);
+        // TODO: Get category too
+        const libraries: Library[] = getJsonSync(`data/categories/${id}.json`);
+
+        console.log("category", category, "libraries", libraries);
 
         // TODO: Add lookup + context
         renderPage("./pages/[category].json")(context);
@@ -44,9 +51,9 @@ async function serve(port: number) {
     })
     // TODO
     .get("/library/:id", (context) => {
-      if (context.params && context.params.id) {
-        // context.response.body = context.params.id;
+      const id = context.params.id;
 
+      if (id) {
         // TODO: Add lookup + context
         renderPage("./pages/[library].json")(context);
       }

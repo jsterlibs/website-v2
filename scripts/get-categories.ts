@@ -1,6 +1,6 @@
 import { Cheerio, cheerio, Root } from "cheerio";
-
-type Category = { title: string; url: string };
+import { last } from "./utils.ts";
+import type { Category } from "../types.ts";
 
 const getCategories = async () => {
   const res = await fetch("https://jster.net");
@@ -16,8 +16,9 @@ const selectCategories = ($: Root, $e: Cheerio) => {
   $e.each(function (_, e) {
     const title = $(e).text();
     const url = $(e).attr("href");
+    const id = last(url?.split("/") || []);
 
-    url && categories.push({ title, url });
+    url && categories.push({ id, title, url });
   });
 
   return categories;

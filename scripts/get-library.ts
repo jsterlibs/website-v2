@@ -1,6 +1,7 @@
 import { cheerio } from "cheerio";
+import type { Library } from "../types.ts";
 
-const getLibrary = async (libraryName: string) => {
+const getLibrary = async (libraryName: string): Promise<Library> => {
   const res = await fetch("https://jster.net/library/" + libraryName);
   const html = await res.text();
   const $ = cheerio.load(html);

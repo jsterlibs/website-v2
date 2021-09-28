@@ -17,5 +17,16 @@ type Component = {
   };
 };
 type Components = Record<string, Component>;
+type Category = { id: string; title: string; url: string };
+type Library = {
+  description: string;
+  logo?: string;
+  name: string;
+  links: {
+    site?: string;
+    github?: string;
+  };
+  tags: string[];
+};
 
-export type { Attributes, Component, Components, Props };
+export type { Attributes, Category, Component, Components, Library, Props };
