@@ -112,7 +112,6 @@ function getPageRenderer(
       try {
         const body = renderComponent(
           {
-            element: "main", // TODO: Not correct
             children: Array.isArray(page) ? page : [page],
           },
           components,
