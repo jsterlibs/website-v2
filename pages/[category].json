@@ -16,8 +16,8 @@
           "children": "Category"
         },
         {
-          "component": "all-categories",
-          "__bind": "parentCategories"
+          "component": "all-libraries",
+          "__bind": "libraries"
         }
       ]
     },

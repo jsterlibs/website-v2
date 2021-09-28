@@ -45,7 +45,6 @@ async function serve(port: number) {
     .get("/catalog", renderPage("./pages/catalog.json"))
     .get("/about", renderPage("./pages/about.json"))
     .get("/add-library", renderPage("./pages/add-library.json"))
-    // TODO
     .get("/category/:id", (context) => {
       const id = context.params.id;
 

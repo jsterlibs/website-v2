@@ -39,6 +39,27 @@
       ]
     }
   ],
+  "all-libraries": [
+    {
+      "element": "ul",
+      "__children": [
+        {
+          "element": "li",
+          "class": "flex gap-4 border-b last:border-b-0",
+          "children": [
+            {
+              "component": "link",
+              "class": "",
+              "__children": "title",
+              "attributes": {
+                "__href": "url"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "h1": {
     "element": "h1",
     "class": "prose lg:prose-xl"
