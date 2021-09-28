@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TODO",
-    "description": "TODO"
+    "__title": "category.title",
+    "__description": "category.description"
   },
   "page": [
     {

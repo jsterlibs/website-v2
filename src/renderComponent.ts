@@ -1,14 +1,17 @@
 import { tw } from "twind";
 import { getJsonSync } from "utils";
 import { Marked } from "markdown";
-import type { Attributes, Component, Components } from "../types.ts";
-
-type Context = Record<string, unknown> | Record<string, unknown>[];
+import type {
+  Attributes,
+  Component,
+  Components,
+  DataContext,
+} from "../types.ts";
 
 function renderComponent(
   component: Component | string,
   components: Components,
-  context: Context,
+  context: DataContext,
 ): string {
   if (typeof component === "string") {
     return component;
@@ -59,7 +62,7 @@ function renderComponent(
     // @ts-ignore: TODO: How to type this?
     const childrenToRender = context[field];
 
-    children = childrenToRender.flatMap((c: Context) =>
+    children = childrenToRender.flatMap((c: DataContext) =>
       Array.isArray(render)
         ? render.map((r) => renderComponent(r, components, c))
         : renderComponent(render, components, c)
@@ -114,7 +117,7 @@ function wrapInElement(
   return `<${element}${attributes}>${children}</${element}>`;
 }
 
-function generateAttributes(attributes: Attributes, context: Context) {
+function generateAttributes(attributes: Attributes, context: DataContext) {
   const ret = Object.entries(attributes).map(([k, v]) => {
     if (k.startsWith("__")) {
       // @ts-ignore: TODO: How to type this?

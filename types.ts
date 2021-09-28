@@ -28,5 +28,14 @@ type Library = {
   };
   tags: string[];
 };
+type DataContext = Record<string, unknown> | Record<string, unknown>[];
 
-export type { Attributes, Category, Component, Components, Library, Props };
+export type {
+  Attributes,
+  Category,
+  Component,
+  Components,
+  DataContext,
+  Library,
+  Props,
+};

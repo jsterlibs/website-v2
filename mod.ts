@@ -4,9 +4,15 @@ import { setup } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
 import typography from "twind-typography";
-import { getJsonSync } from "utils";
+import { getJsonSync, isObject } from "utils";
 import { renderComponent } from "./src/renderComponent.ts";
-import type { Category, Component, Components, Library } from "./types.ts";
+import type {
+  Category,
+  Component,
+  Components,
+  DataContext,
+  Library,
+} from "./types.ts";
 
 type Mode = "development" | "production";
 type Meta = Record<string, string>;
@@ -40,13 +46,9 @@ async function serve(port: number) {
 
       if (id) {
         const category = categories.find((c) => c.id === id);
-        // TODO: Get category too
         const libraries: Library[] = getJsonSync(`data/categories/${id}.json`);
 
-        console.log("category", category, "libraries", libraries);
-
-        // TODO: Add lookup + context
-        renderPage("./pages/[category].json")(context);
+        renderPage("./pages/[category].json", { category, libraries })(context);
       }
     })
     // TODO
@@ -74,8 +76,10 @@ function getPageRenderer(
     siteMeta: SiteMeta;
   },
 ) {
-  return (pagePath: string) =>
-    (context: RouterContext<RouteParams, Record<string, unknown>>) => {
+  return (pagePath: string, dataContext?: DataContext) =>
+    (
+      oakContext: RouterContext<RouteParams, Record<string, unknown>>,
+    ) => {
       const { meta, page }: { meta: Meta; page: Component } = getJsonSync(
         pagePath,
       );
@@ -87,18 +91,19 @@ function getPageRenderer(
             children: Array.isArray(page) ? page : [page],
           },
           components,
-          [],
+          dataContext || [],
         );
         const styleTag = getStyleTag(stylesheet);
 
-        context.response.headers.set(
+        oakContext.response.headers.set(
           "Content-Type",
           "text/html; charset=UTF-8",
         );
-        context.response.body = new TextEncoder().encode(
+        oakContext.response.body = new TextEncoder().encode(
           htmlTemplate({
             siteMeta,
-            meta: meta || {},
+            // TODO: Apply bindings (__)
+            meta: applyData(meta, dataContext),
             head: styleTag,
             body,
             mode,
@@ -107,9 +112,39 @@ function getPageRenderer(
       } catch (err) {
         console.error(err);
 
-        context.response.body = new TextEncoder().encode(err.stack);
+        oakContext.response.body = new TextEncoder().encode(err.stack);
       }
     };
+}
+
+function applyData(meta: Meta, dataContext?: DataContext) {
+  const ret: Meta = {};
+
+  Object.entries(meta).forEach(([k, v]) => {
+    if (k.startsWith("__") && dataContext) {
+      ret[k.slice(2)] = get(dataContext, v);
+    } else {
+      ret[k] = v;
+    }
+  });
+
+  return ret;
+}
+
+function get(dataContext: DataContext, key: string): string {
+  let value = dataContext;
+
+  // TODO: What if the lookup fails?
+  key.split(".").forEach((k) => {
+    if (isObject(value)) {
+      // TODO: How to type
+      // @ts-ignore Recursive until it finds the root
+      value = value[k];
+    }
+  });
+
+  // TODO: How to type
+  return value as unknown as string;
 }
 
 function htmlTemplate({ siteMeta, meta, head, body, mode }: {
