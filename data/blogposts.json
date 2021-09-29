@@ -1,0 +1,1268 @@
+[
+  {
+    "id": "top-7-backbone-alternatives",
+    "title": "Top 7 Backbone Alternatives",
+    "url": "/blog/top-7-backbone-alternatives",
+    "date": "2012-12-03 16:26:13"
+  },
+  {
+    "id": "javascript-color-pickers",
+    "title": "JavaScript Color Pickers",
+    "url": "/blog/javascript-color-pickers",
+    "date": "2012-12-06 12:00:55"
+  },
+  {
+    "id": "js-alternatives-coffeescript-dart-typescript",
+    "title": "The Others: CoffeeScript, Dart, TypeScript...",
+    "url": "/blog/js-alternatives-coffeescript-dart-typescript",
+    "date": "2012-12-10 14:20:40"
+  },
+  {
+    "id": "webgl-3d-engines-and-tools",
+    "title": "WebGL 3D Engines and Tools",
+    "url": "/blog/webgl-3d-engines-and-tools",
+    "date": "2012-12-17 17:48:08"
+  },
+  {
+    "id": "javascript-libraries-started-in-2012",
+    "title": "Top 12 JavaScript Libraries Started in 2012",
+    "url": "/blog/javascript-libraries-started-in-2012",
+    "date": "2012-12-26 18:21:11"
+  },
+  {
+    "id": "brief-overview-of-html5-canvas-libraries",
+    "title": "Brief Overview of HTML5 Canvas Libraries",
+    "url": "/blog/brief-overview-of-html5-canvas-libraries",
+    "date": "2013-01-11 15:38:00"
+  },
+  {
+    "id": "javascript-storage-libraries-explored",
+    "title": "JavaScript Storage Libraries Explored",
+    "url": "/blog/javascript-storage-libraries-explored",
+    "date": "2013-01-28 14:33:45"
+  },
+  {
+    "id": "why-should-you-use-client-side-mvc-framework",
+    "title": "Why Should You Use Client-Side MVC Framework?",
+    "url": "/blog/why-should-you-use-client-side-mvc-framework",
+    "date": "2013-02-06 11:37:40"
+  },
+  {
+    "id": "batman-js-mvc-for-superheroes",
+    "title": "Batman.js: Advanced Guide for Superheroes",
+    "url": "/blog/batman-js-mvc-for-superheroes",
+    "date": "2013-02-11 12:15:16"
+  },
+  {
+    "id": "web-ui-frameworks-worth-a-try",
+    "title": "Web UI Frameworks Worth a Try",
+    "url": "/blog/web-ui-frameworks-worth-a-try",
+    "date": "2013-03-06 17:45:52"
+  },
+  {
+    "id": "mienfield-author-interview",
+    "title": "How to build Minesweeper MMO? An interview with Mienfield.com author",
+    "url": "/blog/mienfield-author-interview",
+    "date": "2013-03-13 14:24:55"
+  },
+  {
+    "id": "monthly-jster-march-2013",
+    "title": "Monthly JSter #1: Trending Libraries on March 2013",
+    "url": "/blog/monthly-jster-march-2013",
+    "date": "2013-03-21 16:20:11"
+  },
+  {
+    "id": "templating-javascript-mustache-jade-transparency",
+    "title": "Templating in JavaScript - Featuring Mustache, Jade, Transparency",
+    "url": "/blog/templating-javascript-mustache-jade-transparency",
+    "date": "2013-03-29 19:17:02"
+  },
+  {
+    "id": "html5-presentation-impress-reveal-deck-bespoke",
+    "title": "Enhance Your Next Presentation with HTML5",
+    "url": "/blog/html5-presentation-impress-reveal-deck-bespoke",
+    "date": "2013-04-12 16:38:17"
+  },
+  {
+    "id": "tools-to-package-your-html5-app-for-mobile-devices",
+    "title": "Tools to Package Your HTML5 App for Mobile Devices",
+    "url": "/blog/tools-to-package-your-html5-app-for-mobile-devices",
+    "date": "2013-04-22 18:17:11"
+  },
+  {
+    "id": "chaplin-brunch-author-interview",
+    "title": "Interview with Paul Miller: maker of Chaplin and Brunch",
+    "url": "/blog/chaplin-brunch-author-interview",
+    "date": "2013-04-25 16:42:52"
+  },
+  {
+    "id": "Esa-Matti-Suuronen-interview-underscore-string",
+    "title": "Interview with Esa-Matti Suuronen, developer of underscore.string",
+    "url": "/blog/Esa-Matti-Suuronen-interview-underscore-string",
+    "date": "2013-04-29 17:29:03"
+  },
+  {
+    "id": "monthly-jster-april-2013",
+    "title": "Monthly JSter #2: News of April 2013",
+    "url": "/blog/monthly-jster-april-2013",
+    "date": "2013-05-03 02:51:16"
+  },
+  {
+    "id": "html5-prototyping-services",
+    "title": "Simpler Web Design with HTML5 Prototyping Services",
+    "url": "/blog/html5-prototyping-services",
+    "date": "2013-05-07 15:44:12"
+  },
+  {
+    "id": "cross-browser-kango-extensions-and-backbone",
+    "title": "Building Cross-Browser Extensions with Kango and Backbone",
+    "url": "/blog/cross-browser-kango-extensions-and-backbone",
+    "date": "2013-05-09 15:34:23"
+  },
+  {
+    "id": "batman-js-interview-with-nick-small-shopify",
+    "title": "Fighting crimes with Batman.js - Interview with Nick Small of Shopify",
+    "url": "/blog/batman-js-interview-with-nick-small-shopify",
+    "date": "2013-05-20 13:22:40"
+  },
+  {
+    "id": "monthly-jster-may-2013",
+    "title": "Monthly JSter #3: News of May 2013",
+    "url": "/blog/monthly-jster-may-2013",
+    "date": "2013-06-07 13:22:45"
+  },
+  {
+    "id": "monthly-jster-june-2013",
+    "title": "Monthly JSter #4: News of June 2013",
+    "url": "/blog/monthly-jster-june-2013",
+    "date": "2013-07-01 20:35:10"
+  },
+  {
+    "id": "leveling-up-with-html5-games-contests",
+    "title": "Leveling Up with HTML5 Games Contests",
+    "url": "/blog/leveling-up-with-html5-games-contests",
+    "date": "2013-07-18 18:42:41"
+  },
+  {
+    "id": "monthly-jster-july-2013",
+    "title": "Monthly JSter #5: News of July 2013",
+    "url": "/blog/monthly-jster-july-2013",
+    "date": "2013-08-01 16:34:02"
+  },
+  {
+    "id": "javascript-data-structures",
+    "title": "Get Most Out of JavaScript Data Structures",
+    "url": "/blog/javascript-data-structures",
+    "date": "2013-08-24 19:45:10"
+  },
+  {
+    "id": "sorted-maps-in-javascript",
+    "title": "Sorted Maps in JavaScript",
+    "url": "/blog/sorted-maps-in-javascript",
+    "date": "2013-08-26 22:31:02"
+  },
+  {
+    "id": "monthly-jster-august-2013",
+    "title": "Monthly JSter #6: News of August 2013",
+    "url": "/blog/monthly-jster-august-2013",
+    "date": "2013-09-02 15:03:34"
+  },
+  {
+    "id": "taming-big-data-with-udi-falkson",
+    "title": "Taming Big Data - Interview with Udi Falkson of iknow.io",
+    "url": "/blog/taming-big-data-with-udi-falkson",
+    "date": "2013-09-19 14:18:16"
+  },
+  {
+    "id": "monthly-jster-september-2013",
+    "title": "Monthly JSter #7: News of September 2013",
+    "url": "/blog/monthly-jster-september-2013",
+    "date": "2013-10-02 10:01:18"
+  },
+  {
+    "id": "monthly-jster-october-2013-part-1",
+    "title": "Monthly JSter #8: News of October 2013",
+    "url": "/blog/monthly-jster-october-2013-part-1",
+    "date": "2013-10-16 11:38:22"
+  },
+  {
+    "id": "monthly-jster-october-2013-part-2",
+    "title": "Monthly JSter #9: News of October 2013",
+    "url": "/blog/monthly-jster-october-2013-part-2",
+    "date": "2013-11-01 22:23:20"
+  },
+  {
+    "id": "instant_zepto",
+    "title": "Book Review - Instant Zepto.js by Ian Pointer",
+    "url": "/blog/instant_zepto",
+    "date": "2013-11-06 12:47:25"
+  },
+  {
+    "id": "monthly-jster-november-2013-part-1",
+    "title": "Monthly JSter #10: News of November 2013",
+    "url": "/blog/monthly-jster-november-2013-part-1",
+    "date": "2013-11-15 15:15:45"
+  },
+  {
+    "id": "monthly-jster-november-2013-part-2",
+    "title": "Monthly JSter #11: News of November 2013",
+    "url": "/blog/monthly-jster-november-2013-part-2",
+    "date": "2013-12-01 15:12:49"
+  },
+  {
+    "id": "develop-static-site-generators",
+    "title": "Learn to Develop Static Site Generators",
+    "url": "/blog/develop-static-site-generators",
+    "date": "2013-12-14 01:01:08"
+  },
+  {
+    "id": "monthly-jster-december-2013-part-1",
+    "title": "Monthly JSter #12: News of December 2013",
+    "url": "/blog/monthly-jster-december-2013-part-1",
+    "date": "2013-12-19 01:58:06"
+  },
+  {
+    "id": "monthly-jster-december-2013-part-2",
+    "title": "Monthly JSter #13: News of December 2013",
+    "url": "/blog/monthly-jster-december-2013-part-2",
+    "date": "2014-01-02 04:18:31"
+  },
+  {
+    "id": "monthly-jster-january-2014-part-1",
+    "title": "Monthly JSter #14: News of January 2014",
+    "url": "/blog/monthly-jster-january-2014-part-1",
+    "date": "2014-01-20 04:12:43"
+  },
+  {
+    "id": "monthly-jster-january-2014-part-2",
+    "title": "Monthly JSter #15: News of January 2014",
+    "url": "/blog/monthly-jster-january-2014-part-2",
+    "date": "2014-02-06 13:39:31"
+  },
+  {
+    "id": "monthly-jster-february-2014-part-1",
+    "title": "JSter #16: News of February 2014 - Part 1",
+    "url": "/blog/monthly-jster-february-2014-part-1",
+    "date": "2014-02-20 08:12:20"
+  },
+  {
+    "id": "monthly-jster-february-2014-part-2",
+    "title": "JSter #17: News of February 2014 - Part 2",
+    "url": "/blog/monthly-jster-february-2014-part-2",
+    "date": "2014-03-02 08:15:36"
+  },
+  {
+    "id": "monthly-jster-march-2014-part-1",
+    "title": "JSter #18: News of March 2014 - Part 1",
+    "url": "/blog/monthly-jster-march-2014-part-1",
+    "date": "2014-03-16 10:41:54"
+  },
+  {
+    "id": "monthly-jster-march-2014-part-2",
+    "title": "JSter #19: News of March 2014 - Part 2",
+    "url": "/blog/monthly-jster-march-2014-part-2",
+    "date": "2014-04-01 04:53:13"
+  },
+  {
+    "id": "monthly-jster-april-2014-part-1",
+    "title": "JSter #20: News of April 2014 - Part 1",
+    "url": "/blog/monthly-jster-april-2014-part-1",
+    "date": "2014-04-15 06:08:46"
+  },
+  {
+    "id": "monthly-jster-april-2014-part-2",
+    "title": "JSter #21: News of April 2014 - Part 2",
+    "url": "/blog/monthly-jster-april-2014-part-2",
+    "date": "2014-05-01 13:53:22"
+  },
+  {
+    "id": "monthly-jster-may-2014-part-1",
+    "title": "JSter #22: News of May 2014 - Part 1",
+    "url": "/blog/monthly-jster-may-2014-part-1",
+    "date": "2014-05-15 10:12:14"
+  },
+  {
+    "id": "monthly-jster-may-2014-part-2",
+    "title": "JSter #23: News of May 2014 - Part 2",
+    "url": "/blog/monthly-jster-may-2014-part-2",
+    "date": "2014-06-03 05:09:34"
+  },
+  {
+    "id": "monthly-jster-june-2014-part-1",
+    "title": "JSter #24: News of June 2014 - Part 1",
+    "url": "/blog/monthly-jster-june-2014-part-1",
+    "date": "2014-06-16 05:45:06"
+  },
+  {
+    "id": "monthly-jster-june-2014-part-2",
+    "title": "JSter #25: News of June 2014 - Part 2",
+    "url": "/blog/monthly-jster-june-2014-part-2",
+    "date": "2014-07-01 05:57:56"
+  },
+  {
+    "id": "monthly-jster-july-2014-part-1",
+    "title": "JSter #26: News of July 2014 - Part 1",
+    "url": "/blog/monthly-jster-july-2014-part-1",
+    "date": "2014-07-16 12:49:35"
+  },
+  {
+    "id": "monthly-jster-july-2014-part-2",
+    "title": "JSter #27: News of July 2014 - Part 2",
+    "url": "/blog/monthly-jster-july-2014-part-2",
+    "date": "2014-08-01 09:55:18"
+  },
+  {
+    "id": "monthly-jster-august-2014-part-1",
+    "title": "JSter #28: News of August 2014 - Part 1",
+    "url": "/blog/monthly-jster-august-2014-part-1",
+    "date": "2014-08-16 12:33:01"
+  },
+  {
+    "id": "monthly-jster-august-2014-part-2",
+    "title": "JSter #29: News of August 2014 - Part 2",
+    "url": "/blog/monthly-jster-august-2014-part-2",
+    "date": "2014-09-01 01:58:16"
+  },
+  {
+    "id": "monthly-jster-september-2014-part-1",
+    "title": "JSter #30: News of September 2014 - Part 1",
+    "url": "/blog/monthly-jster-september-2014-part-1",
+    "date": "2014-09-16 12:32:14"
+  },
+  {
+    "id": "monthly-jster-september-2014-part-2",
+    "title": "JSter #31: News of September 2014 - Part 2",
+    "url": "/blog/monthly-jster-september-2014-part-2",
+    "date": "2014-10-01 15:10:32"
+  },
+  {
+    "id": "best-chrome-apps-for-devs",
+    "title": "5 of the Best Chrome Apps Available Today for Web Developers",
+    "url": "/blog/best-chrome-apps-for-devs",
+    "date": "2014-10-05 13:22:38"
+  },
+  {
+    "id": "monthly-jster-october-2014-part-1",
+    "title": "JSter #32: News of October 2014 - Part 1",
+    "url": "/blog/monthly-jster-october-2014-part-1",
+    "date": "2014-10-15 12:50:33"
+  },
+  {
+    "id": "monthly-jster-october-2014-part-2",
+    "title": "JSter #33: News of October 2014 - Part 2",
+    "url": "/blog/monthly-jster-october-2014-part-2",
+    "date": "2014-11-02 11:23:38"
+  },
+  {
+    "id": "monthly-jster-november-2014-part-1",
+    "title": "JSter #34: News of November 2014 - Part 1",
+    "url": "/blog/monthly-jster-november-2014-part-1",
+    "date": "2014-11-16 08:37:02"
+  },
+  {
+    "id": "developing-games-where-to-start",
+    "title": "Developing Games in JavaScript – Where to Start?",
+    "url": "/blog/developing-games-where-to-start",
+    "date": "2014-11-24 14:13:33"
+  },
+  {
+    "id": "monthly-jster-november-2014-part-2",
+    "title": "JSter #35: News of November 2014 - Part 2",
+    "url": "/blog/monthly-jster-november-2014-part-2",
+    "date": "2014-12-01 12:03:33"
+  },
+  {
+    "id": "monthly-jster-december-2014-part-1",
+    "title": "JSter #36: News of December 2014 - Part 1",
+    "url": "/blog/monthly-jster-december-2014-part-1",
+    "date": "2014-12-15 14:39:04"
+  },
+  {
+    "id": "monthly-jster-december-2014-part-2",
+    "title": "JSter #37: News of December 2014 - Part 2",
+    "url": "/blog/monthly-jster-december-2014-part-2",
+    "date": "2015-01-02 06:55:59"
+  },
+  {
+    "id": "monthly-jster-january-2015-part-1",
+    "title": "JSter #38: News of January 2015 - Part 1",
+    "url": "/blog/monthly-jster-january-2015-part-1",
+    "date": "2015-01-15 03:58:27"
+  },
+  {
+    "id": "monthly-jster-january-2015-part-2",
+    "title": "JSter #39: News of January 2015 - Part 2",
+    "url": "/blog/monthly-jster-january-2015-part-2",
+    "date": "2015-02-03 03:34:33"
+  },
+  {
+    "id": "monthly-jster-february-2015-part-1",
+    "title": "JSter #40: News of February 2015 - Part 1",
+    "url": "/blog/monthly-jster-february-2015-part-1",
+    "date": "2015-02-16 03:17:10"
+  },
+  {
+    "id": "quick-tips-for-html5-game-developers",
+    "title": "Quick Tips for HTML5 Game Developers",
+    "url": "/blog/quick-tips-for-html5-game-developers",
+    "date": "2015-03-01 14:51:59"
+  },
+  {
+    "id": "monthly-jster-february-2015-part-2",
+    "title": "JSter #41: News of February 2015 - Part 2",
+    "url": "/blog/monthly-jster-february-2015-part-2",
+    "date": "2015-03-02 03:51:11"
+  },
+  {
+    "id": "monthly-jster-march-2015-part-1",
+    "title": "JSter #42: News of March 2015 - Part 1",
+    "url": "/blog/monthly-jster-march-2015-part-1",
+    "date": "2015-03-16 03:58:25"
+  },
+  {
+    "id": "javascript-mobile-frameworks",
+    "title": "Which JavaScript Frameworks to Use for Mobile Development?",
+    "url": "/blog/javascript-mobile-frameworks",
+    "date": "2015-03-22 14:42:24"
+  },
+  {
+    "id": "monthly-jster-march-2015-part-2",
+    "title": "JSter #43: News of March 2015 - Part 2",
+    "url": "/blog/monthly-jster-march-2015-part-2",
+    "date": "2015-04-01 04:08:23"
+  },
+  {
+    "id": "monthly-jster-april-2015-part-1",
+    "title": "JSter #44: News of April 2015 - Part 1",
+    "url": "/blog/monthly-jster-april-2015-part-1",
+    "date": "2015-04-15 02:40:02"
+  },
+  {
+    "id": "react-native-is-the-future",
+    "title": "React Native: The Future of Mobile App Development",
+    "url": "/blog/react-native-is-the-future",
+    "date": "2015-04-17 03:27:49"
+  },
+  {
+    "id": "monthly-jster-april-2015-part-2",
+    "title": "JSter #45: News of April 2015 - Part 2",
+    "url": "/blog/monthly-jster-april-2015-part-2",
+    "date": "2015-05-01 01:56:26"
+  },
+  {
+    "id": "learn-to-create-spas-with-react-and-om",
+    "title": "How to use React and Om to make a Single Page Application",
+    "url": "/blog/learn-to-create-spas-with-react-and-om",
+    "date": "2015-05-04 05:48:45"
+  },
+  {
+    "id": "monthly-jster-may-2015-part-1",
+    "title": "JSter #46: News of May 2015 - Part 1",
+    "url": "/blog/monthly-jster-may-2015-part-1",
+    "date": "2015-05-16 08:54:26"
+  },
+  {
+    "id": "monthly-jster-may-2015-part-2",
+    "title": "JSter #47: News of May 2015 - Part 2",
+    "url": "/blog/monthly-jster-may-2015-part-2",
+    "date": "2015-06-02 08:17:54"
+  },
+  {
+    "id": "monthly-jster-june-2015-part-1",
+    "title": "JSter #48: News of June 2015 - Part 1",
+    "url": "/blog/monthly-jster-june-2015-part-1",
+    "date": "2015-06-15 06:21:47"
+  },
+  {
+    "id": "speed-you-up-your-web-development",
+    "title": "10 Web Development Tools to Speed You Up",
+    "url": "/blog/speed-you-up-your-web-development",
+    "date": "2015-06-21 13:51:57"
+  },
+  {
+    "id": "7-mobile-ui-frameworks",
+    "title": "7 Useful HTML5 UI Frameworks For Mobile App Development",
+    "url": "/blog/7-mobile-ui-frameworks",
+    "date": "2015-06-30 09:29:41"
+  },
+  {
+    "id": "monthly-jster-june-2015-part-2",
+    "title": "JSter #49: News of June 2015 - Part 2",
+    "url": "/blog/monthly-jster-june-2015-part-2",
+    "date": "2015-07-01 04:43:41"
+  },
+  {
+    "id": "7-hassle-free-tools",
+    "title": "7 Tools for Hassle Free JavaScript Development",
+    "url": "/blog/7-hassle-free-tools",
+    "date": "2015-07-06 05:19:59"
+  },
+  {
+    "id": "monthly-jster-july-2015-part-1",
+    "title": "JSter #50: News of July 2015 - Part 1",
+    "url": "/blog/monthly-jster-july-2015-part-1",
+    "date": "2015-07-17 02:09:46"
+  },
+  {
+    "id": "mobile-framework-guide",
+    "title": "A Complete Guide on Developing Cross Platform Mobile Apps",
+    "url": "/blog/mobile-framework-guide",
+    "date": "2015-07-21 01:36:04"
+  },
+  {
+    "id": "monthly-jster-july-2015-part-2",
+    "title": "JSter #51: News of July 2015 - Part 2",
+    "url": "/blog/monthly-jster-july-2015-part-2",
+    "date": "2015-08-02 14:20:56"
+  },
+  {
+    "id": "monthly-jster-august-2015-part-1",
+    "title": "JSter #52: News of August 2015 - Part 1",
+    "url": "/blog/monthly-jster-august-2015-part-1",
+    "date": "2015-08-17 04:43:12"
+  },
+  {
+    "id": "monthly-jster-august-2015-part-2",
+    "title": "JSter #53: News of August 2015 - Part 2",
+    "url": "/blog/monthly-jster-august-2015-part-2",
+    "date": "2015-09-01 01:39:28"
+  },
+  {
+    "id": "mobile-application-trends",
+    "title": "Mobile Application UI: 6 Definitive Trends in 2015",
+    "url": "/blog/mobile-application-trends",
+    "date": "2015-09-11 02:11:37"
+  },
+  {
+    "id": "monthly-jster-september-2015-part-1",
+    "title": "JSter #54: News of September 2015 - Part 1",
+    "url": "/blog/monthly-jster-september-2015-part-1",
+    "date": "2015-09-15 04:35:20"
+  },
+  {
+    "id": "monthly-jster-september-2015-part-2",
+    "title": "JSter #55: News of September 2015 - Part 2",
+    "url": "/blog/monthly-jster-september-2015-part-2",
+    "date": "2015-10-01 15:48:09"
+  },
+  {
+    "id": "monthly-jster-october-2015-part-1",
+    "title": "JSter #56: News of October 2015 - Part 1",
+    "url": "/blog/monthly-jster-october-2015-part-1",
+    "date": "2015-10-16 02:54:59"
+  },
+  {
+    "id": "monthly-jster-october-2015-part-2",
+    "title": "JSter #57: News of October 2015 - Part 2",
+    "url": "/blog/monthly-jster-october-2015-part-2",
+    "date": "2015-11-02 07:25:00"
+  },
+  {
+    "id": "monthly-jster-november-2015-part-1",
+    "title": "JSter #58: News of November 2015 - Part 1",
+    "url": "/blog/monthly-jster-november-2015-part-1",
+    "date": "2015-11-16 04:38:46"
+  },
+  {
+    "id": "monthly-jster-november-2015-part-2",
+    "title": "JSter #59: News of November 2015 - Part 2",
+    "url": "/blog/monthly-jster-november-2015-part-2",
+    "date": "2015-12-01 06:50:35"
+  },
+  {
+    "id": "monthly-jster-december-2015-part-1",
+    "title": "JSter #60: News of December 2015 - Part 1",
+    "url": "/blog/monthly-jster-december-2015-part-1",
+    "date": "2015-12-16 05:27:47"
+  },
+  {
+    "id": "monthly-jster-december-2015-part-2",
+    "title": "JSter #61: News of December 2015 - Part 2",
+    "url": "/blog/monthly-jster-december-2015-part-2",
+    "date": "2016-01-03 03:49:02"
+  },
+  {
+    "id": "monthly-jster-january-2016-part-1",
+    "title": "JSter #62: News of January 2016 - Part 1",
+    "url": "/blog/monthly-jster-january-2016-part-1",
+    "date": "2016-01-18 11:32:46"
+  },
+  {
+    "id": "monthly-jster-january-2016-part-2",
+    "title": "JSter #63: News of January 2016 - Part 2",
+    "url": "/blog/monthly-jster-january-2016-part-2",
+    "date": "2016-02-01 02:58:10"
+  },
+  {
+    "id": "monthly-jster-february-2016-part-1",
+    "title": "JSter #64: News of February 2016 - Part 1",
+    "url": "/blog/monthly-jster-february-2016-part-1",
+    "date": "2016-02-16 12:45:11"
+  },
+  {
+    "id": "react-vs-preact",
+    "title": "React and Preact: Differences, Pros and Cons",
+    "url": "/blog/react-vs-preact",
+    "date": "2016-02-20 03:55:11"
+  },
+  {
+    "id": "monthly-jster-february-2016-part-2",
+    "title": "JSter #65: News of February 2016 - Part 2",
+    "url": "/blog/monthly-jster-february-2016-part-2",
+    "date": "2016-03-01 02:29:11"
+  },
+  {
+    "id": "monthly-jster-march-2016-part-1",
+    "title": "JSter #66: News of March 2016 - Part 1",
+    "url": "/blog/monthly-jster-march-2016-part-1",
+    "date": "2016-03-16 03:43:13"
+  },
+  {
+    "id": "monthly-jster-march-2016-part-2",
+    "title": "JSter #67: News of March 2016 - Part 2",
+    "url": "/blog/monthly-jster-march-2016-part-2",
+    "date": "2016-04-03 12:57:59"
+  },
+  {
+    "id": "monthly-jster-april-2016-part-1",
+    "title": "JSter #68: News of April 2016 - Part 1",
+    "url": "/blog/monthly-jster-april-2016-part-1",
+    "date": "2016-04-18 13:01:16"
+  },
+  {
+    "id": "monthly-jster-april-2016-part-2",
+    "title": "JSter #69: News of April 2016 - Part 2",
+    "url": "/blog/monthly-jster-april-2016-part-2",
+    "date": "2016-05-03 10:45:15"
+  },
+  {
+    "id": "monthly-jster-may-2016-part-1",
+    "title": "JSter #70: News of May 2016 - Part 1",
+    "url": "/blog/monthly-jster-may-2016-part-1",
+    "date": "2016-05-17 03:10:20"
+  },
+  {
+    "id": "monthly-jster-may-2016-part-2",
+    "title": "JSter #71: News of May 2016 - Part 2",
+    "url": "/blog/monthly-jster-may-2016-part-2",
+    "date": "2016-06-03 03:32:23"
+  },
+  {
+    "id": "understanding-cors",
+    "title": "Understanding CORS",
+    "url": "/blog/understanding-cors",
+    "date": "2016-06-07 09:01:26"
+  },
+  {
+    "id": "monthly-jster-june-2016-part-1",
+    "title": "JSter #72: News of June 2016 - Part 1",
+    "url": "/blog/monthly-jster-june-2016-part-1",
+    "date": "2016-06-17 04:02:14"
+  },
+  {
+    "id": "monthly-jster-june-2016-part-2",
+    "title": "JSter #73: News of June 2016 - Part 2",
+    "url": "/blog/monthly-jster-june-2016-part-2",
+    "date": "2016-07-04 02:37:11"
+  },
+  {
+    "id": "monthly-jster-july-2016-part-1",
+    "title": "JSter #74: News of July 2016 - Part 1",
+    "url": "/blog/monthly-jster-july-2016-part-1",
+    "date": "2016-07-17 10:12:54"
+  },
+  {
+    "id": "monthly-jster-july-2016-part-2",
+    "title": "JSter #75: News of July 2016 - Part 2",
+    "url": "/blog/monthly-jster-july-2016-part-2",
+    "date": "2016-08-03 08:48:03"
+  },
+  {
+    "id": "monthly-jster-august-2016-part-1",
+    "title": "JSter #76: News of August 2016 - Part 1",
+    "url": "/blog/monthly-jster-august-2016-part-1",
+    "date": "2016-08-18 06:46:59"
+  },
+  {
+    "id": "monthly-jster-august-2016-part-2",
+    "title": "JSter #77: News of August 2016 - Part 2",
+    "url": "/blog/monthly-jster-august-2016-part-2",
+    "date": "2016-09-02 08:12:59"
+  },
+  {
+    "id": "mobile-application-trends-2016",
+    "title": "Mobile Application UI: 6 Definitive Trends in 2016",
+    "url": "/blog/mobile-application-trends-2016",
+    "date": "2016-09-12 09:16:39"
+  },
+  {
+    "id": "monthly-jster-september-2016-part-1",
+    "title": "JSter #78: News of September 2016 - Part 1",
+    "url": "/blog/monthly-jster-september-2016-part-1",
+    "date": "2016-09-19 02:12:48"
+  },
+  {
+    "id": "monthly-jster-september-2016-part-2",
+    "title": "JSter #79: News of September 2016 - Part 2",
+    "url": "/blog/monthly-jster-september-2016-part-2",
+    "date": "2016-10-03 07:13:55"
+  },
+  {
+    "id": "monthly-jster-october-2016-part-1",
+    "title": "JSter #80: News of October 2016 - Part 1",
+    "url": "/blog/monthly-jster-october-2016-part-1",
+    "date": "2016-10-16 04:04:58"
+  },
+  {
+    "id": "monthly-jster-october-2016-part-2",
+    "title": "JSter #81: News of October 2016 - Part 2",
+    "url": "/blog/monthly-jster-october-2016-part-2",
+    "date": "2016-11-01 14:00:35"
+  },
+  {
+    "id": "monthly-jster-november-2016-part-1",
+    "title": "JSter #82: News of November 2016 - Part 1",
+    "url": "/blog/monthly-jster-november-2016-part-1",
+    "date": "2016-11-16 07:30:26"
+  },
+  {
+    "id": "monthly-jster-november-2016-part-2",
+    "title": "JSter #83: News of November 2016 - Part 2",
+    "url": "/blog/monthly-jster-november-2016-part-2",
+    "date": "2016-12-02 03:17:50"
+  },
+  {
+    "id": "monthly-jster-december-2016-part-1",
+    "title": "JSter #84: News of December 2016 - Part 1",
+    "url": "/blog/monthly-jster-december-2016-part-1",
+    "date": "2016-12-19 10:24:41"
+  },
+  {
+    "id": "jster-january-2017-part-1",
+    "title": "JSter #85: News of January 2017 - Part 1",
+    "url": "/blog/jster-january-2017-part-1",
+    "date": "2017-01-04 03:14:21"
+  },
+  {
+    "id": "jster-january-2017-part-2",
+    "title": "JSter #86: News of January 2017 - Part 2",
+    "url": "/blog/jster-january-2017-part-2",
+    "date": "2017-01-19 10:11:10"
+  },
+  {
+    "id": "jster-87",
+    "title": "JSter #87: Libraries and more",
+    "url": "/blog/jster-87",
+    "date": "2017-02-04 10:55:05"
+  },
+  {
+    "id": "jster-88",
+    "title": "JSter #88: Libraries and bits",
+    "url": "/blog/jster-88",
+    "date": "2017-02-19 06:18:52"
+  },
+  {
+    "id": "jster-89",
+    "title": "JSter #89: Libraries and bits",
+    "url": "/blog/jster-89",
+    "date": "2017-03-02 03:25:35"
+  },
+  {
+    "id": "jster-90",
+    "title": "JSter #90: Libraries, articles, and doodads",
+    "url": "/blog/jster-90",
+    "date": "2017-03-18 04:12:40"
+  },
+  {
+    "id": "jster-91",
+    "title": "JSter #91: Libraries, tutorials, and more",
+    "url": "/blog/jster-91",
+    "date": "2017-04-01 02:20:25"
+  },
+  {
+    "id": "jster-92",
+    "title": "JSter #92: Libraries, and more",
+    "url": "/blog/jster-92",
+    "date": "2017-04-16 10:34:09"
+  },
+  {
+    "id": "jster-93",
+    "title": "JSter #93: Techniques, and more",
+    "url": "/blog/jster-93",
+    "date": "2017-05-03 12:24:16"
+  },
+  {
+    "id": "jster-94",
+    "title": "JSter #94: Libraries, and more",
+    "url": "/blog/jster-94",
+    "date": "2017-05-16 11:25:03"
+  },
+  {
+    "id": "jster-95",
+    "title": "JSter #95: Tour, libraries, and more",
+    "url": "/blog/jster-95",
+    "date": "2017-06-03 02:30:51"
+  },
+  {
+    "id": "jster-96",
+    "title": "JSter #96: Libraries and more",
+    "url": "/blog/jster-96",
+    "date": "2017-06-17 14:26:05"
+  },
+  {
+    "id": "jster-97",
+    "title": "JSter #97: Libraries and more",
+    "url": "/blog/jster-97",
+    "date": "2017-07-02 13:56:30"
+  },
+  {
+    "id": "jster-98",
+    "title": "JSter #98: Libraries, techniques, and more",
+    "url": "/blog/jster-98",
+    "date": "2017-07-18 04:05:21"
+  },
+  {
+    "id": "jster-99",
+    "title": "JSter #99: Libraries, articles, interviews, and more",
+    "url": "/blog/jster-99",
+    "date": "2017-08-01 05:33:44"
+  },
+  {
+    "id": "jster-100",
+    "title": "JSter #100: Libraries, articles, and more",
+    "url": "/blog/jster-100",
+    "date": "2017-08-17 10:42:02"
+  },
+  {
+    "id": "jster-101",
+    "title": "JSter #101: Libraries, and more",
+    "url": "/blog/jster-101",
+    "date": "2017-09-04 14:36:52"
+  },
+  {
+    "id": "jster-102",
+    "title": "JSter #102: Libraries, and more",
+    "url": "/blog/jster-102",
+    "date": "2017-09-16 02:47:55"
+  },
+  {
+    "id": "jster-103",
+    "title": "JSter #103: Libraries, Articles, techniques, and more",
+    "url": "/blog/jster-103",
+    "date": "2017-10-02 10:38:40"
+  },
+  {
+    "id": "jster-104",
+    "title": "JSter #104: Libraries, Articles, and more",
+    "url": "/blog/jster-104",
+    "date": "2017-10-16 08:48:52"
+  },
+  {
+    "id": "jster-105",
+    "title": "JSter #105: Libraries, Articles, and more",
+    "url": "/blog/jster-105",
+    "date": "2017-11-01 05:53:53"
+  },
+  {
+    "id": "jster-106",
+    "title": "JSter #106: Libraries, Articles, and more",
+    "url": "/blog/jster-106",
+    "date": "2017-11-20 05:33:43"
+  },
+  {
+    "id": "jster-107",
+    "title": "JSter #107: Libraries, Articles, and more",
+    "url": "/blog/jster-107",
+    "date": "2017-12-04 11:05:21"
+  },
+  {
+    "id": "jster-108",
+    "title": "JSter #108: Libraries, Techniques, and more",
+    "url": "/blog/jster-108",
+    "date": "2017-12-15 05:40:07"
+  },
+  {
+    "id": "jster-109",
+    "title": "JSter #109: Libraries, articles, the usual",
+    "url": "/blog/jster-109",
+    "date": "2018-01-15 05:58:41"
+  },
+  {
+    "id": "jster-110",
+    "title": "JSter #110: Libraries, Articles, the Usual",
+    "url": "/blog/jster-110",
+    "date": "2018-02-14 03:58:22"
+  },
+  {
+    "id": "jster-111",
+    "title": "JSter #111: Libraries, the Usual",
+    "url": "/blog/jster-111",
+    "date": "2018-02-16 11:13:28"
+  },
+  {
+    "id": "jster-112",
+    "title": "JSter #112: Libraries, the Usual",
+    "url": "/blog/jster-112",
+    "date": "2018-03-07 11:07:10"
+  },
+  {
+    "id": "jster-113",
+    "title": "JSter #113: Libraries and Techniques Mostly",
+    "url": "/blog/jster-113",
+    "date": "2018-03-19 17:28:22"
+  },
+  {
+    "id": "jster-114",
+    "title": "JSter #114: Libraries, data structures, and more",
+    "url": "/blog/jster-114",
+    "date": "2018-04-05 13:25:47"
+  },
+  {
+    "id": "jster-115",
+    "title": "JSter #115: Libraries, the usual",
+    "url": "/blog/jster-115",
+    "date": "2018-04-16 12:46:42"
+  },
+  {
+    "id": "jster-116",
+    "title": "JSter #116: Libraries and more",
+    "url": "/blog/jster-116",
+    "date": "2018-05-03 13:22:47"
+  },
+  {
+    "id": "jster-117",
+    "title": "JSter #117: Libraries and techniques",
+    "url": "/blog/jster-117",
+    "date": "2018-05-15 12:54:43"
+  },
+  {
+    "id": "jster-118",
+    "title": "JSter #118: Libraries and more",
+    "url": "/blog/jster-118",
+    "date": "2018-06-03 06:04:14"
+  },
+  {
+    "id": "jster-119",
+    "title": "JSter #119: Libraries and more",
+    "url": "/blog/jster-119",
+    "date": "2018-06-18 11:02:58"
+  },
+  {
+    "id": "jster-120",
+    "title": "JSter #120: Libraries, articles, the usual",
+    "url": "/blog/jster-120",
+    "date": "2018-07-04 10:53:51"
+  },
+  {
+    "id": "jster-121",
+    "title": "JSter #121: Libraries, articles, utilities, tools",
+    "url": "/blog/jster-121",
+    "date": "2018-07-15 14:50:13"
+  },
+  {
+    "id": "jster-122",
+    "title": "JSter #122: Libraries and more",
+    "url": "/blog/jster-122",
+    "date": "2018-08-06 11:40:24"
+  },
+  {
+    "id": "jster-123",
+    "title": "JSter #123: Frameworks and more",
+    "url": "/blog/jster-123",
+    "date": "2018-08-19 03:27:37"
+  },
+  {
+    "id": "jster-124",
+    "title": "JSter #124: Libraries and more",
+    "url": "/blog/jster-124",
+    "date": "2018-09-05 12:35:55"
+  },
+  {
+    "id": "jster-125",
+    "title": "JSter #125: Libraries and more",
+    "url": "/blog/jster-125",
+    "date": "2018-09-16 15:34:45"
+  },
+  {
+    "id": "jster-126",
+    "title": "JSter #126: Libraries, the usual",
+    "url": "/blog/jster-126",
+    "date": "2018-10-03 11:43:55"
+  },
+  {
+    "id": "jster-127",
+    "title": "JSter #127: Libraries and more",
+    "url": "/blog/jster-127",
+    "date": "2018-10-17 10:52:02"
+  },
+  {
+    "id": "jster-128",
+    "title": "JSter #128: Libraries and then some",
+    "url": "/blog/jster-128",
+    "date": "2018-11-03 10:58:50"
+  },
+  {
+    "id": "jster-129",
+    "title": "JSter #129: Libraries and then some",
+    "url": "/blog/jster-129",
+    "date": "2018-11-18 16:03:38"
+  },
+  {
+    "id": "jster-130",
+    "title": "JSter #130: Libraries and more",
+    "url": "/blog/jster-130",
+    "date": "2018-12-03 13:29:20"
+  },
+  {
+    "id": "jster-131",
+    "title": "JSter #131: Libraries and tutorials",
+    "url": "/blog/jster-131",
+    "date": "2018-12-17 15:19:26"
+  },
+  {
+    "id": "jster-132",
+    "title": "JSter #132: Libraries and more",
+    "url": "/blog/jster-132",
+    "date": "2019-01-04 05:04:31"
+  },
+  {
+    "id": "jster-133",
+    "title": "JSter #133: Libraries and more",
+    "url": "/blog/jster-133",
+    "date": "2019-01-18 10:09:39"
+  },
+  {
+    "id": "jster-134",
+    "title": "JSter #134: Libraries and more",
+    "url": "/blog/jster-134",
+    "date": "2019-02-04 13:19:12"
+  },
+  {
+    "id": "jster-135",
+    "title": "JSter #135: Libraries and more",
+    "url": "/blog/jster-135",
+    "date": "2019-02-18 06:04:35"
+  },
+  {
+    "id": "jster-136",
+    "title": "JSter #136: Libraries and more",
+    "url": "/blog/jster-136",
+    "date": "2019-03-01 09:17:46"
+  },
+  {
+    "id": "jster-137",
+    "title": "JSter #137: Libraries and more",
+    "url": "/blog/jster-137",
+    "date": "2019-03-17 07:47:30"
+  },
+  {
+    "id": "jster-138",
+    "title": "JSter #138: Libraries and more",
+    "url": "/blog/jster-138",
+    "date": "2019-04-03 13:51:24"
+  },
+  {
+    "id": "jster-139",
+    "title": "JSter #139: Mainly libraries",
+    "url": "/blog/jster-139",
+    "date": "2019-04-15 05:02:45"
+  },
+  {
+    "id": "jster-140",
+    "title": "JSter #140: Libraries and more",
+    "url": "/blog/jster-140",
+    "date": "2019-05-03 06:37:44"
+  },
+  {
+    "id": "jster-141",
+    "title": "JSter #141: Libraries and more",
+    "url": "/blog/jster-141",
+    "date": "2019-05-16 10:22:36"
+  },
+  {
+    "id": "jster-142",
+    "title": "JSter #142: Libraries and more",
+    "url": "/blog/jster-142",
+    "date": "2019-06-02 04:13:52"
+  },
+  {
+    "id": "jster-143",
+    "title": "JSter #143: Libraries and more",
+    "url": "/blog/jster-143",
+    "date": "2019-06-17 13:33:36"
+  },
+  {
+    "id": "jster-144",
+    "title": "JSter #144: Libraries and more",
+    "url": "/blog/jster-144",
+    "date": "2019-07-02 14:29:37"
+  },
+  {
+    "id": "jster-145",
+    "title": "JSter #145: Libraries and more",
+    "url": "/blog/jster-145",
+    "date": "2019-08-01 13:12:42"
+  },
+  {
+    "id": "jster-146",
+    "title": "JSter #146: Articles and more",
+    "url": "/blog/jster-146",
+    "date": "2019-08-16 05:46:34"
+  },
+  {
+    "id": "jster-147",
+    "title": "JSter #147: Libraries and more",
+    "url": "/blog/jster-147",
+    "date": "2019-09-02 14:25:10"
+  },
+  {
+    "id": "jster-148",
+    "title": "JSter #148: Libraries, tools, and more",
+    "url": "/blog/jster-148",
+    "date": "2019-10-04 12:42:11"
+  },
+  {
+    "id": "jster-149",
+    "title": "JSter #149: Libraries and more",
+    "url": "/blog/jster-149",
+    "date": "2019-11-02 13:34:41"
+  },
+  {
+    "id": "jster-150",
+    "title": "JSter #150: Libraries and more",
+    "url": "/blog/jster-150",
+    "date": "2019-12-03 09:04:25"
+  },
+  {
+    "id": "jster-151",
+    "title": "JSter #151: Libraries and more",
+    "url": "/blog/jster-151",
+    "date": "2020-01-04 02:58:53"
+  },
+  {
+    "id": "jster-152",
+    "title": "JSter #152: Libraries and a lot more",
+    "url": "/blog/jster-152",
+    "date": "2020-02-05 04:31:04"
+  },
+  {
+    "id": "jster-153",
+    "title": "JSter #153: Libraries, tools, and more",
+    "url": "/blog/jster-153",
+    "date": "2020-03-08 13:07:50"
+  },
+  {
+    "id": "jster-154",
+    "title": "JSter #154: Libraries, tools, and more",
+    "url": "/blog/jster-154",
+    "date": "2020-04-06 03:18:36"
+  },
+  {
+    "id": "jster-155",
+    "title": "JSter #155: Libraries, and more",
+    "url": "/blog/jster-155",
+    "date": "2020-05-06 09:21:40"
+  },
+  {
+    "id": "jster-156",
+    "title": "JSter #156: Libraries, and more",
+    "url": "/blog/jster-156",
+    "date": "2020-06-05 05:13:38"
+  },
+  {
+    "id": "jster-157",
+    "title": "JSter #157: Libraries, and more",
+    "url": "/blog/jster-157",
+    "date": "2020-07-06 10:38:24"
+  },
+  {
+    "id": "jster-158",
+    "title": "JSter #158: Libraries, and more",
+    "url": "/blog/jster-158",
+    "date": "2020-08-04 10:06:51"
+  },
+  {
+    "id": "jster-159",
+    "title": "JSter #159: Libraries, and more",
+    "url": "/blog/jster-159",
+    "date": "2020-09-03 10:11:25"
+  },
+  {
+    "id": "jster-160",
+    "title": "JSter #160: Libraries, and more",
+    "url": "/blog/jster-160",
+    "date": "2020-10-05 13:50:55"
+  },
+  {
+    "id": "jster-161",
+    "title": "JSter #161: Libraries, and more",
+    "url": "/blog/jster-161",
+    "date": "2020-11-03 04:33:38"
+  },
+  {
+    "id": "jster-162",
+    "title": "JSter #162: Libraries, and more",
+    "url": "/blog/jster-162",
+    "date": "2020-12-01 12:14:00"
+  },
+  {
+    "id": "jster-163",
+    "title": "JSter #163: Libraries, and more",
+    "url": "/blog/jster-163",
+    "date": "2021-01-05 09:41:59"
+  },
+  {
+    "id": "jster-164",
+    "title": "JSter #164: Libraries, and more",
+    "url": "/blog/jster-164",
+    "date": "2021-02-03 10:55:14"
+  },
+  {
+    "id": "jster-165",
+    "title": "JSter #165: Libraries, and more",
+    "url": "/blog/jster-165",
+    "date": "2021-03-01 09:25:54"
+  },
+  {
+    "id": "jster-166",
+    "title": "JSter #166: Libraries, and more",
+    "url": "/blog/jster-166",
+    "date": "2021-03-16 05:43:40"
+  },
+  {
+    "id": "jster-167",
+    "title": "JSter #167: Libraries, and more",
+    "url": "/blog/jster-167",
+    "date": "2021-04-12 05:59:06"
+  },
+  {
+    "id": "jster-168",
+    "title": "JSter #168: Libraries, and more",
+    "url": "/blog/jster-168",
+    "date": "2021-05-05 05:40:19"
+  },
+  {
+    "id": "jster-169",
+    "title": "JSter #169: Libraries, and more",
+    "url": "/blog/jster-169",
+    "date": "2021-06-04 03:06:53"
+  },
+  {
+    "id": "jster-170",
+    "title": "JSter #170: Libraries, and more",
+    "url": "/blog/jster-170",
+    "date": "2021-07-05 08:27:20"
+  },
+  {
+    "id": "jster-171",
+    "title": "JSter #171: Libraries, and more",
+    "url": "/blog/jster-171",
+    "date": "2021-08-03 10:32:35"
+  },
+  {
+    "id": "jster-172",
+    "title": "JSter #172: Libraries, and more",
+    "url": "/blog/jster-172",
+    "date": "2021-08-30 04:00:20"
+  }
+]
