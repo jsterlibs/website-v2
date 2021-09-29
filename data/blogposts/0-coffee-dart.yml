@@ -1,9 +1,0 @@
-title: CoffeeScript vs Dart
-slug: coffeescript-vs-dart
-body: bla bla
-includes: [CoffeeScript, Dart]
-table:
-  license: [MIT, GPL]
-  can_have_plugins: [yes, no]
-  typing: ['dynamic', 'static']
-
