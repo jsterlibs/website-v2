@@ -3,6 +3,7 @@ import { ensureDirSync, expandGlobSync } from "fs";
 import { join } from "path";
 import { getLibrary } from "./get-library.ts";
 import { getJsonSync } from "./utils.ts";
+import type { Library } from "../types.ts";
 
 const writeLibraries = async (inputDirectory: string) => {
   console.log("Writing libraries");
@@ -12,13 +13,13 @@ const writeLibraries = async (inputDirectory: string) => {
   ensureDirSync(outputDirectory);
 
   for (const category of categories) {
-    const libraries = getJsonSync(category.path);
+    const libraries = getJsonSync<Library[]>(category.path);
 
-    for (const libraryName of libraries) {
-      const library = await getLibrary(libraryName);
-      const libraryPath = join(outputDirectory, libraryName + ".json");
+    for (const { name } of libraries) {
+      const library = await getLibrary(name);
+      const libraryPath = join(outputDirectory, name + ".json");
 
-      console.log(`Writing ${libraryName}`);
+      console.log(`Writing ${name}`);
       Deno.writeTextFileSync(libraryPath, JSON.stringify(library));
     }
   }

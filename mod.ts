@@ -22,10 +22,12 @@ type SiteMeta = { siteName: string };
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
-  const parentCategories: ParentCategory[] = getJsonSync(
+  const parentCategories = getJsonSync<ParentCategory[]>(
     "./data/parent-categories.json",
   );
-  const categories: Category[] = getJsonSync("./data/categories.json");
+  const categories: Record<string, Category> = getCategories(
+    "./data/categories.json",
+  );
   const components: Components = getJsonSync("./components.json");
   const libraries = getLibraries(
     "./data/libraries",
@@ -56,9 +58,13 @@ async function serve(port: number) {
         return;
       }
 
-      // TODO: Maybe this is better as a lookup as well
-      const category = categories.find((c) => c.id === id);
-      const libraries: Library[] = getJsonSync(`data/categories/${id}.json`);
+      const category = categories[id];
+
+      if (!category) {
+        return;
+      }
+
+      const libraries = getJsonSync<Library[]>(`data/categories/${id}.json`);
 
       renderPage("./pages/[category].json", { category, libraries })(context);
     })
@@ -71,9 +77,11 @@ async function serve(port: number) {
 
       const library = libraries[id];
 
-      if (library) {
-        renderPage("./pages/[library].json", { library })(context);
+      if (!library) {
+        return;
       }
+
+      renderPage("./pages/[library].json", { library })(context);
     });
 
   const app = new Application();
@@ -84,11 +92,19 @@ async function serve(port: number) {
   await app.listen({ port });
 }
 
+function getCategories(p: string) {
+  return zipToObject<Category>(
+    getJsonSync<Category[]>(p).map((o: Category) => [o.id, o]),
+  );
+}
+
 function getLibraries(
   p: string,
-): Record<string, Library> {
+) {
   return zipToObject<Library>(
-    dir(p).map(({ name, path }) => [name.split(".")[0], getJsonSync(path)]),
+    dir(p).map((
+      { name, path },
+    ) => [name.split(".")[0], getJsonSync<Library>(path)]),
   );
 }
 
@@ -105,7 +121,7 @@ function getPageRenderer(
     (
       oakContext: RouterContext<RouteParams, Record<string, unknown>>,
     ) => {
-      const { meta, page }: { meta: Meta; page: Component } = getJsonSync(
+      const { meta, page } = getJsonSync<{ meta: Meta; page: Component }>(
         pagePath,
       );
 

@@ -3,10 +3,11 @@ import { ensureDirSync } from "fs";
 import { join } from "path";
 import { getLibraries } from "./get-libraries.ts";
 import { getJsonSync, last } from "./utils.ts";
+import type { Category } from "../types.ts";
 
 const writeCategories = async (inputDirectory: string) => {
   console.log("Writing categories");
-  const categories = getJsonSync(inputDirectory);
+  const categories = getJsonSync<Category[]>(inputDirectory);
   const outputDirectory = "./data/categories";
 
   ensureDirSync(outputDirectory);

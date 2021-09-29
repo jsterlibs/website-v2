@@ -1,6 +1,6 @@
 import * as path from "path";
 
-function getJsonSync(filePath: string) {
+function getJsonSync<R>(filePath: string): R {
   return JSON.parse(Deno.readTextFileSync(filePath));
 }
 
