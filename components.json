@@ -144,6 +144,13 @@
               "attributes": {
                 "href": "http://eepurl.com/zB_g5"
               }
+            },
+            {
+              "component": "link",
+              "children": "Sign in",
+              "attributes": {
+                "href": "https://backend-8ae1c3f3.nhost.app/auth/providers/github"
+              }
             }
           ]
         }
