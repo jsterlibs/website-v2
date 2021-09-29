@@ -2,49 +2,61 @@ type: interview
 title: Taming Big Data - Interview with Udi Falkson of iknow.io
 short_title: Taming Big Data
 slug: taming-big-data-with-udi-falkson
-includes: ['D3.js', 'Masonry', 'Hopscotch', 'Chosen', 'Highcharts JS', 'jQuery','jQuery UI', 'jQuery Infinite Scroll', 'Backbone.js', 'Underscore.js']
+includes:
+  [
+    "D3.js",
+    "Masonry",
+    "Hopscotch",
+    "Chosen",
+    "Highcharts JS",
+    "jQuery",
+    "jQuery UI",
+    "jQuery Infinite Scroll",
+    "Backbone.js",
+    "Underscore.js",
+  ]
 user: bebraw
 profile:
-    name: Udi Falkson
-    twitter: @udi
-    blog: http://breasy.com/blog/
-    bio: "Udi is a co-founder of iknow.io, a service providing big data analytics. "
-    photo: "https://1.gravatar.com/avatar/a4ffc5f661d3a4c7d5862d626893370e?d=https%3A%2F%2Fidenticons.github.com%2Fa0e05df9f187b88a5a90d9dae31fc549.png&s=420"
+  name: Udi Falkson
+  twitter: "@udi"
+  blog: http://breasy.com/blog/
+  bio: "Udi is a co-founder of iknow.io, a service providing big data analytics. "
+  photo: "https://1.gravatar.com/avatar/a4ffc5f661d3a4c7d5862d626893370e?d=https%3A%2F%2Fidenticons.github.com%2Fa0e05df9f187b88a5a90d9dae31fc549.png&s=420"
 body: |
-    These days it's very easy to bump into term "big data". What is it like to develop a service around it? That is what we are about to find out as Udi Falkson of [iknow.io](http://iknow.io/) will tell a bit about his story and some of the technology choices they have made.
+  These days it's very easy to bump into term "big data". What is it like to develop a service around it? That is what we are about to find out as Udi Falkson of [iknow.io](http://iknow.io/) will tell a bit about his story and some of the technology choices they have made.
 
-    #### Hi, [@udi](https://twitter.com/udi). Can you tell us something about yourself?
+  #### Hi, [@udi](https://twitter.com/udi). Can you tell us something about yourself?
 
-    Hi.  I'm Udi, the co-founder and head of product at iknow.io.  Earlier in my career, I was one of the first engineers working on Yahoo! Answers and I'm also the creator of [isitnormal.com](http://isitnormal.com).
+  Hi.  I'm Udi, the co-founder and head of product at iknow.io.  Earlier in my career, I was one of the first engineers working on Yahoo! Answers and I'm also the creator of [isitnormal.com](http://isitnormal.com).
 
-    #### Can you describe what big data is about? How does iknow.io relate to it?
+  #### Can you describe what big data is about? How does iknow.io relate to it?
 
-    The amount of raw, available data out there in the world is growing exponentially.  Sites like [data.gov](http://www.data.gov/) and others are giving the public all kinds of great data to play with.  However, no good tools have emerged to make all this data accessible and useful to the majority of people that really care about it.  This is what we're changing with iknow.io.
+  The amount of raw, available data out there in the world is growing exponentially.  Sites like [data.gov](http://www.data.gov/) and others are giving the public all kinds of great data to play with.  However, no good tools have emerged to make all this data accessible and useful to the majority of people that really care about it.  This is what we're changing with iknow.io.
 
-    Today, unless you're a computer programmer or a scientist, working with anything more complicated than what will fit into a simple spreadsheet is not possible.  Most people are shut out of the game.  We are taking these complex data-sets and making them useful for anyone to explore and analyze.  We do this by sourcing, merging and cleaning the data and providing a new breed of intuitive data analysis and comparison tools for people to use.
+  Today, unless you're a computer programmer or a scientist, working with anything more complicated than what will fit into a simple spreadsheet is not possible.  Most people are shut out of the game.  We are taking these complex data-sets and making them useful for anyone to explore and analyze.  We do this by sourcing, merging and cleaning the data and providing a new breed of intuitive data analysis and comparison tools for people to use.
 
-    We currently have detailed data about Movies and US Congress.  NBA data is coming very soon, and many more verticals will be added in the future.
+  We currently have detailed data about Movies and US Congress.  NBA data is coming very soon, and many more verticals will be added in the future.
 
-    #### What kind of technical challenges have you encountered during its development?
+  #### What kind of technical challenges have you encountered during its development?
 
-    What we are doing is extremely technically challenging.  Our amazing back-end team has built systems from the ground-up to scalably handle extremely large datasets of drastically varying structures.  To account for the different ways that data can be organized (for example, movie data and congressional data have very different structures), we have built our systems around a proprietary graph database.  To complement our graph database, we make heavy use of existing technologies, like Redis, Mongodb, Sphinx Search and Postgres.
+  What we are doing is extremely technically challenging.  Our amazing back-end team has built systems from the ground-up to scalably handle extremely large datasets of drastically varying structures.  To account for the different ways that data can be organized (for example, movie data and congressional data have very different structures), we have built our systems around a proprietary graph database.  To complement our graph database, we make heavy use of existing technologies, like Redis, Mongodb, Sphinx Search and Postgres.
 
-    The biggest challenge we've encountered is that data is messy, really messy.  This fact led us to build a suite of in-house data cleanup and matching tools that have enabled us to efficiently load, update and organize these complex data sets and provide them to our users in a seemingly simple format that hides the real complexity from them.
+  The biggest challenge we've encountered is that data is messy, really messy.  This fact led us to build a suite of in-house data cleanup and matching tools that have enabled us to efficiently load, update and organize these complex data sets and provide them to our users in a seemingly simple format that hides the real complexity from them.
 
-    On the front-end, our data analysis tools are rather advanced and it's taken our very small front-end team (just me) quite a bit of work to get them working nicely.  There are also a few particular UI touches that required quite a bit of effort to get working across all browsers, such as our data results table view that has persistent horizontal and vertical scrolling headers.
+  On the front-end, our data analysis tools are rather advanced and it's taken our very small front-end team (just me) quite a bit of work to get them working nicely.  There are also a few particular UI touches that required quite a bit of effort to get working across all browsers, such as our data results table view that has persistent horizontal and vertical scrolling headers.
 
-    #### You mentioned you have chosen to use Backbone on the front-end side. The framework has [received some criticism](http://blog.shinetech.com/2013/09/06/backbone-is-not-enough/) lately. New options, such as Angular and Ember.js have arisen. Why did you choose Backbone? Are you happy with your choice?
+  #### You mentioned you have chosen to use Backbone on the front-end side. The framework has [received some criticism](http://blog.shinetech.com/2013/09/06/backbone-is-not-enough/) lately. New options, such as Angular and Ember.js have arisen. Why did you choose Backbone? Are you happy with your choice?
 
-    Most of our front-end code is standard server-side Python (Django).  For our more complex and interactive data analysis tools, we opted to provide our users with a more responsive, client-side experience.  We used Backbone.js for this, and the client-side UI communicates with our query engine via REST apis.  I selected Backbone after a lot of research and I'm more or less happy with it.  It's relatively light-weight and there's very little magic, but I have run into a few small bugs and the code can get messy if you're not careful.  A Backbone program will be only as good as the programmer writing it, because it does very little work for you.  What it does do is give you just enough of a structure to work with so you can keep things manageable and maintainable.
+  Most of our front-end code is standard server-side Python (Django).  For our more complex and interactive data analysis tools, we opted to provide our users with a more responsive, client-side experience.  We used Backbone.js for this, and the client-side UI communicates with our query engine via REST apis.  I selected Backbone after a lot of research and I'm more or less happy with it.  It's relatively light-weight and there's very little magic, but I have run into a few small bugs and the code can get messy if you're not careful.  A Backbone program will be only as good as the programmer writing it, because it does very little work for you.  What it does do is give you just enough of a structure to work with so you can keep things manageable and maintainable.
 
-    That said, I'm very interested in Angular and Ember and have read a lot about them.  When I started building iknow.io nearly a year ago both of these other frameworks were not quite as mature and I didn't feel comfortable going with either one.  If I were to start over again today, I think I'd give them both serious consideration and I'm leaning towards Angular for my next such project.
+  That said, I'm very interested in Angular and Ember and have read a lot about them.  When I started building iknow.io nearly a year ago both of these other frameworks were not quite as mature and I didn't feel comfortable going with either one.  If I were to start over again today, I think I'd give them both serious consideration and I'm leaning towards Angular for my next such project.
 
-    #### How do you see the future of JavaScript development? Are there any particular trends in sight you would like to highlight?
+  #### How do you see the future of JavaScript development? Are there any particular trends in sight you would like to highlight?
 
-    Javascript is being used more and more on the server, and it has become tempting to use it for the whole stack to be able to share code between the front-end and back-end.  In our case, Python is so strong when it comes to number crunching (we make heavy use of [Pandas](http://pandas.pydata.org/)), that it didn't make sense for us to do so, but I see this becoming more and more common in the future and I know [a few people](http://getinstinct.com) that are building sites this way today.
+  Javascript is being used more and more on the server, and it has become tempting to use it for the whole stack to be able to share code between the front-end and back-end.  In our case, Python is so strong when it comes to number crunching (we make heavy use of [Pandas](http://pandas.pydata.org/)), that it didn't make sense for us to do so, but I see this becoming more and more common in the future and I know [a few people](http://getinstinct.com) that are building sites this way today.
 
-    #### Given JSter is a JavaScript catalog, can you please list some of your favorite libraries?
+  #### Given JSter is a JavaScript catalog, can you please list some of your favorite libraries?
 
 footer: |
 
-    *Thank you for the interview Udi. It was nice to get an inside view on a service such as iknow.io! Best of luck. :)*
+  *Thank you for the interview Udi. It was nice to get an inside view on a service such as iknow.io! Best of luck. :)*

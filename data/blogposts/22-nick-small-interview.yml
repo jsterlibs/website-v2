@@ -1,12 +1,12 @@
 type: interview
-title: Fighting crimes with Batman.js - Interview with Nick Small of Shopify
-short_title: Fighting crimes with Nick Small
+title: "Fighting crimes with Batman.js - Interview with Nick Small of Shopify"
+short_title: "Fighting crimes with Nick Small"
 slug: batman-js-interview-with-nick-small-shopify
-includes: ['Backbone.js','Meteor']
+includes: ["Backbone.js", "Meteor"]
 user: davertmik
 profile:
   name: Nick Small
-  twitter: @nciagra
+  twitter: "@nciagra"
   github: nickjs
   bio: "Doing cool shit at Shopify. Meanwhile trains Batman to use his 'fighting crime' skills in Web Development. "
   photo: "https://secure.gravatar.com/avatar/da977bab26bac79fbc0a93d98345a099?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"
@@ -53,7 +53,7 @@ body: |
   #### And as we are a JavaScript libraries site, please tell us of your favorite JavaScript libraries.
 
 footer: |
-  
+
   I still really like **Backbone** and all of its elegant simplicity. I think **Meteor** is doing some really neat things as well, but in general, I really respect all of my fellow framework authors. It's hard to solve these problems in generic ways and everyone always has extremely creative solutions. I'm really excited to see what everyone comes up with in the future.
 
   *Thanks Nick for the interview and for a great project you develop!*

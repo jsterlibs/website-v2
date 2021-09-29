@@ -4,9 +4,12 @@ import { setup } from "twind";
 import { getStyleTag, virtualSheet } from "twind-sheets";
 import * as colors from "twind-colors";
 import typography from "twind-typography";
+import { Marked } from "markdown";
 import { dir, get, getJsonSync, zipToObject } from "utils";
+import YAML from "yaml";
 import { renderComponent } from "./src/renderComponent.ts";
 import type {
+  BlogPost,
   Category,
   Component,
   Components,
@@ -22,6 +25,7 @@ type SiteMeta = { siteName: string };
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
+  const blogPosts = getBlogPosts("./data/blogposts.json", "./data/blogposts");
   const parentCategories = getJsonSync<ParentCategory[]>(
     "./data/parent-categories.json",
   );
@@ -47,7 +51,13 @@ async function serve(port: number) {
   const router = new Router();
   router
     .get("/", renderPage("./pages/index.json"))
-    .get("/blog", renderPage("./pages/blog.json"))
+    // TODO: Support specific blog pages
+    .get(
+      "/blog",
+      renderPage("./pages/blog.json", {
+        blogPosts: reversed(Object.values(blogPosts)),
+      }),
+    )
     .get("/catalog", renderPage("./pages/catalog.json"))
     .get("/about", renderPage("./pages/about.json"))
     .get("/add-library", renderPage("./pages/add-library.json"))
@@ -90,6 +100,51 @@ async function serve(port: number) {
   app.use(router.allowedMethods());
 
   await app.listen({ port });
+}
+
+function reversed(arr: unknown[]) {
+  return [...arr].reverse();
+}
+
+type IndexEntry = { id: string; title: string; url: string; date: string };
+
+function getBlogPosts(indexPath: string, postsPath: string) {
+  const blogIndex = getJsonSync<
+    IndexEntry[]
+  >(indexPath);
+  const blogPosts: BlogPost[] = dir(postsPath).map(({ name, path }) => {
+    const yaml = YAML.parse(Deno.readTextFileSync(path));
+
+    return {
+      name,
+      path,
+      ...yaml,
+      // TODO: Support custom syntax (screenshots, anything else?)
+      body: Marked.parse(yaml.body).content,
+    };
+  });
+
+  return zipToObject<BlogPost>(
+    blogIndex.map(({ id, date }: IndexEntry) => {
+      const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
+
+      if (!matchingBlogPost) {
+        console.warn("No matching blog post found for", id);
+      }
+
+      return [id, {
+        id,
+        title: matchingBlogPost?.title || "",
+        // @ts-ignore: Typo in the original data
+        shortTitle: matchingBlogPost?.short_title,
+        slug: matchingBlogPost?.slug || "",
+        date,
+        type: matchingBlogPost?.type || "static",
+        user: matchingBlogPost?.user || "",
+        body: matchingBlogPost?.body || "",
+      }];
+    }),
+  );
 }
 
 function getCategories(p: string) {

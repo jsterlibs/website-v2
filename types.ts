@@ -33,6 +33,7 @@ type ParentCategory = { title: string; children: Category[] };
 type BlogPost = {
   id: string;
   title: string;
+  shortTitle: string;
   slug: string;
   date: string;
   type: "comparison" | "interview" | "rating" | "static";
@@ -41,6 +42,13 @@ type BlogPost = {
   body: string;
   footer?: string;
   table?: Record<string, string[]>;
+  profile?: {
+    name: string;
+    twitter: string;
+    github: string;
+    bio: string;
+    photo: string;
+  };
 };
 
 export type {

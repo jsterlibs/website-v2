@@ -5,21 +5,12 @@ type: static
 user: davertmik
 
 body: |
-<<<<<<< HEAD
-  Recently I had an intention to build a browser extension for my service [Mailican](http://mailican.com).
-  The idea was to let a user create new email addrsses instantly and use them anywhere on the web. 
-  All emails passed to this addresses would be delivered to a primary mailbox. Such alias emails could be easily created, blocked, and deleted.
-  That's why I find this useful when registering on suspicious web sites or subscribing to mail lists. 
-
-  In the extension I decided to create a popup with the list of current user emails. Like this:
-=======
   A while ago I developed a service known as [Mailican](http://mailican.com). The idea is simple.
   The service allows you to define aliases for your actual email. You can then control these aliases
   via Mailican. Unfortunately creating them can be a bit cumbersome at times as you have to create them
   through the service. As it happens there's a nice way to work around this problem: browser extensions!
 
   I decided that the extension would create a popup with the list of current user emails. Here's an example:
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
 
   ![Extension](http://dl.dropbox.com/u/930833/Menu_004.png)
 
@@ -28,20 +19,7 @@ body: |
   And to manage all this things I included **Backbone**. It worked well for me and I must say it is great framework for such lightweight applications.
 
   {{ screenshot: Kango }}
-  
-<<<<<<< HEAD
-  I've choosen **Kango Extensions** to create extensions for all popular browsers in once. **Kango is free** if you don't need extensions for Internet Explorer. 
-  Otherwise you should contact authors. Unlike it's competitor [Crossrider](http://crossrider.com/), Kango is just a buid too with the set of open APIs. 
-  In Crossrider you can develop only in cloud IDE and all apis are closed. I prefer to keep my code to myself and to work in local environment. 
-  Maybe Kango has less features, but at least I control and own everything I produce in this case. 
 
-  In this post I'd like to share my experience and guide you through extensions development process.
-  Please note I didn't build any extension before. So probably this might be a good tutorial for newbies.
-
-  ## Starting with Kango Extensions
-
-  Kango is easy to install. Just take it from [official site](http://kangoextensions.com/kango/kango-framework-latest.zip) and unzip somewhere to your local folders.
-=======
   I chose **Kango Extensions** for creating extensions. Besides being **free** (except for IE), Kango is cross-browser.
   Unlike it's competitor [Crossrider](http://crossrider.com/), Kango is just a build tool with a set of open APIs. 
   In Crossrider you can develop only using a cloud IDE and all the apis are closed. I prefer to keep my code to myself and to work in local environment. 
@@ -50,17 +28,13 @@ body: |
   ## Starting with Kango Extensions
 
   Kango is easy to install. Just download it from [official site](http://kangoextensions.com/kango/kango-framework-latest.zip) and unzip somewhere.
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
+
   From now on you can use `kango` console utility to execute tasks. We have only two here: `create` and `build`. But that's enough.
   Let's create a project:
 
   `~/kango/kango.py create ~/my_extension`
 
-<<<<<<< HEAD
-  By running this you will get folder `my_extenion` filled with lots of folders and boilerplate code. Like on this screenshot (Backbone and Underscore I added later)
-=======
   By running this you will get folder `my_extension` filled with lots of folders and boilerplate code. Like on this screenshot (I added Backbone and Underscore later)
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
 
   ![Files](http://dl.dropbox.com/u/930833/Selection_005.png)
 
@@ -68,11 +42,7 @@ body: |
 
   `~/kango/kango.py build ~/my_extension`
 
-<<<<<<< HEAD
-  sourse code will be translated and palced to `src/browsername` folders of this dir. And packages will be stored in `output` dir.
-=======
   source code will be translated and placed to `src/browsername` folders of this dir. And packages will be stored in `output` dir.
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
 
   ## Preparing Assets
 
@@ -81,29 +51,19 @@ body: |
 
   <script src="https://gist.github.com/DavertMik/5540534.js"></script>
 
-<<<<<<< HEAD
-  Important to notice that you need to **set fixed width and height to your popup**. 
-=======
   It is important to notice that you need to **set fixed width and height to your popup**. 
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
+
   Currently only Chrome allows popups to be autosized. As defined a popup is taken from `popup.html` file. 
+
   Let's create it and include all required assets.
 
   <script src="https://gist.github.com/DavertMik/5540548.js"></script>
 
-<<<<<<< HEAD
-  As you see we are using local path for JavaScript files. As you guessed that files should be placed into the same `common` directory. Kango APIs are availbale by default,
-  but other libs you should download manually. You can take them from [JSDeliver CDN](http://www.jsdelivr.com/). Nice place with lots of frontend libraries hosted.
-
-  I created `popup.js` file to place all javascript code in it. To use any of browser features we should stick to Kango API. 
-  For example, we need to use `KangoAPI.onReady` like we have used `jQuery.ready()`. And to open links in a browser we need to access browser tabs apis.
-=======
   As you see we are using local path for JavaScript files. As you guessed that files should be placed into the same `common` directory. Kango APIs are available by default,
   but other libs you should download manually. You can take them from [JSDelivr CDN](http://www.jsdelivr.com/) for example.
 
   I created `popup.js` file to place all JavaScript code in it. To use any of browser features we should stick to Kango API. 
   For example, we need to use `KangoAPI.onReady` instead of the familiar `jQuery.ready()`. And to open links in a browser we need to access browser tabs apis.
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
 
   <script src="https://gist.github.com/DavertMik/5540615.js"></script>
 
@@ -116,16 +76,12 @@ body: |
   <script src="https://gist.github.com/DavertMik/5540641.js"></script>
 
   As you see, I'm rendering special SignIn view If user info can't be fetched. 
-  
+
   Similarly I define model `Mail` model and `MailCollection` to represent a list of emails. They will be fetched and managed the same way.
 
   <script src="https://gist.github.com/DavertMik/5540669.js"></script>
 
-<<<<<<< HEAD
-  I put corersponding `fetch` model into `MailCollection`. In final script this collection looked too long, so I won't post it here.
-=======
   I put corresponding `fetch` model into `MailCollection`. In final script this collection was too long, so I won't post it here.
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
 
   ## Working with Views
 
@@ -149,11 +105,7 @@ body: |
 
   ![chromium](http://dl.dropbox.com/u/930833/Extensions%20-%20Chromium_007.png)
 
-<<<<<<< HEAD
-  To debug your popup you can use Chrome DevTools. Launch them by right-clickng on your extension button. 
-=======
   To debug your popup you can use Chrome DevTools. Launch them by right-clicking on your extension button. 
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
 
   ![menu](http://dl.dropbox.com/u/930833/Menu_008.png)
 
@@ -161,27 +113,8 @@ body: |
 
   ## Conclusion
 
-<<<<<<< HEAD
-  I didn't use much of Kango Extensions API for this examples. I found them well documented even. And you can use them as a wrapper for browser `messaging` or `storage` APIs.
-  Kango Extensions works smoothly and output extensions worked well in all tested browsers. BackboneJS allowed me to keep my code structured and to work well with data.
-
-  In the day I wrote this post [Kango Extensions 1.2 were released](http://kangoextensions.com/blog/2013/05/08/version-120-released.html). And that's great news! I wish good luck to this project, more features and more popularity.
-  Thanks, Kango for my new Mailican extension. I still need to publish it in all the browser extension catalogs, but that's another story.	
-
-
-
-
-
-
-
-
-
-
-
-=======
   I didn't use much of Kango Extensions API in these examples. I found them well documented, though. And you can use them as a wrapper for browser `messaging` or `storage` APIs.
   Kango Extensions works smoothly and output extensions worked well in all tested browsers. BackboneJS allowed me to keep my code structured and to work well with data.
 
   The day I wrote this post [Kango Extensions 1.2 were released](http://kangoextensions.com/blog/2013/05/08/version-120-released.html). And that's great news! I wish good luck to this project, more features and more popularity.
-  Thanks, Kango for my new Mailican extension. I still need to publish it in all the browser extension catalogs, but that's another story.  
->>>>>>> df2a3d79e10f0af849fe9d7619172817b84e694f
+  Thanks, Kango for my new Mailican extension. I still need to publish it in all the browser extension catalogs, but that's another story.

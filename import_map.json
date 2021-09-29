@@ -10,6 +10,7 @@
     "twind-colors": "https://unpkg.com/twind@0.16.16/colors/colors.js",
     "twind-sheets": "https://unpkg.com/twind@0.16.16/sheets/sheets.js",
     "twind-typography": "https://unpkg.com/@twind/typography@0.0.2/typography.js",
-    "utils": "./scripts/utils.ts"
+    "utils": "./scripts/utils.ts",
+    "yaml": "https://esm.sh/yaml@1.10.2"
   }
 }
