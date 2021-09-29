@@ -25,10 +25,10 @@ async function serve(port: number) {
   const parentCategories = getJsonSync<ParentCategory[]>(
     "./data/parent-categories.json",
   );
-  const categories: Record<string, Category> = getCategories(
+  const categories = getCategories(
     "./data/categories.json",
   );
-  const components: Components = getJsonSync("./components.json");
+  const components = getJsonSync<Components>("./components.json");
   const libraries = getLibraries(
     "./data/libraries",
   );
