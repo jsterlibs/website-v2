@@ -1,0 +1,68 @@
+type: static
+title: "JSter #162: Libraries, and more"
+short_title: "JSter #162"
+user: bebraw
+slug: jster-162
+body: |
+  > JavaScript is here to stay.
+
+  It has been another busy month. I published [a new major version of my webpack book](https://survivejs.com/blog/webpack-book-version-3/). Tomorrow, 2nd of December, [React Finland mini-conference about performance](https://react-finland.fi/) will take place.
+
+  We also published a new version of [MonoLisa](https://www.monolisa.dev/?utm_source=jster), a popular font for coders. At the same time, we made the basic version a bit more affordable while offering more options.
+
+  ## Libraries
+
+  * [pioardi/poolifier](https://github.com/pioardi/poolifier) - Fast and small Node.js thread pools implemented
+  * [DataTables](https://datatables.net/) - Add advanced interaction controls to your HTML tables the free & easy way
+  * [vedantroy/typecheck.macro](https://github.com/vedantroy/typecheck.macro) - A easy (and fast) TypeScript validation library/macro. Automatically generate validation functions for TypeScript types.
+  * [getify/monio](https://github.com/getify/monio) - Async-capable IO Monad for JS, with several companion monads thrown in
+  * [pmndrs/zustand](https://github.com/pmndrs/zustand) - Bear necessities for state management in React
+  * [👷‍♀ Compiled](https://compiledcssinjs.com/) - The CSS in JS authoring experience we love without the runtime cost
+  * [Rest Hooks](https://resthooks.io/) - Delightful data fetching
+  * [saarw/flushout](https://github.com/saarw/flushout) - Flushout is a distributed data model based on event sourcing written in TypeScript.
+  * [josdejong/workerpool](https://github.com/josdejong/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
+
+  ## Articles
+
+  * [Shipping Progressive Web Apps everywhere](https://medium.com/bbc-design-engineering/shipping-progressive-web-apps-everywhere-190a421c606a)
+  * [Deno 1.5 Sees 3x Bundling Performance Improvement Due to Rust-Based JavaScript/TypeScript Compiler](https://www.infoq.com/news/2020/11/deno-15-released/)
+  * [10 ways to deploy a React app for free](https://blog.logrocket.com/8-ways-to-deploy-a-react-app-for-free/)
+  * [Better Error Handling In NodeJS With Error Classes](https://www.smashingmagazine.com/2020/08/error-handling-nodejs-error-classes/)
+  * [Model-Based Testing in React with State Machines](https://css-tricks.com/model-based-testing-in-react-with-state-machines/)
+  * [Is serverless cheaper for your use case? Find out with this calculator.](https://medium.com/serverless-transformation/is-serverless-cheaper-for-your-use-case-find-out-with-this-calculator-2f8a52fc6a68)
+
+  ## Animation
+
+  * [dixonandmoe/rellax](https://github.com/dixonandmoe/rellax) - Lightweight, vanilla javascript parallax library
+  * [AOS](https://michalsnik.github.io/aos/) - Animate On Scroll Library
+  * [janpaepke/ScrollMagic](https://github.com/janpaepke/ScrollMagic) - A library for magical scroll interactions
+  * [Rich-Harris/ramjet](https://github.com/Rich-Harris/ramjet) - Morph DOM elements from one state to another with smooth animations and transitions
+
+  ## Frameworks
+
+  * [Frontity](https://frontity.org/) - The React framework for WordPress
+  * [UmiJS](https://umijs.org/) - Extensible enterprise-level front-end application framework
+  * [Arwes](https://arwes.dev/) - Futuristic Sci-Fi and Cyberpunk Graphical User Interface Framework for Web Apps
+  * [blitz](https://github.com/blitz-js/blitz) - The Fullstack React Framework — built on Next.js
+
+  ## Styling
+
+  * [kenoxa/beamwind](https://github.com/kenoxa/beamwind) - A collection of packages to compile Tailwind CSS like shorthand syntax into CSS at runtime
+
+  ## Components
+
+  * [schrodinger/fixed-data-table-2](https://github.com/schrodinger/fixed-data-table-2) - React table component designed to allow presenting millions of rows of data
+  * [React Datasheet Component](https://nadbm.github.io/react-datasheet/) - Simple and highly customizable excel-like spreadsheet
+  * [naisutech/react-tree](https://github.com/naisutech/react-tree) - Hierarchical object tree component for React
+  * [React CustomScroll](http://www.natrube.net/custom-scroll/index.html) - A tiny React component for scroll bar customization, without dependencies but with a lot of features
+
+  ## Interviews
+
+  * [CV Compiler](https://survivejs.com/blog/cv-compiler-interview/) - The Fastest Way to Improve Your CV - Interview with Andrew Stetsenko
+  * [Plasmic](https://survivejs.com/blog/plasmic-interview/) - The fast and fun visual builder for React - Interview with Yang Zhang
+  * [Multi-platform applications with JavaScript](https://survivejs.com/blog/multi-platform-interview/) - Interview with Valentyn Poliskyi
+  * [Enroute - Envoy Route Controller](https://survivejs.com/blog/enroute-interview/) - Interview with Chintan Thakker
+
+  ## Tools
+
+  * [lastmjs/zwitterion](https://github.com/lastmjs/zwitterion) - A web dev server that lets you import anything*

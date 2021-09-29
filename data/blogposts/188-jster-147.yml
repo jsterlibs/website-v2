@@ -1,0 +1,39 @@
+type: static
+title: "JSter #147: Libraries and more"
+short_title: "JSter #147"
+user: bebraw
+slug: jster-147
+body: |
+  > Measure twice, code once
+
+  It's JSter time again. Mainly libraries this time around.
+
+  ## Libraries
+
+  * [yelouafi/focused](https://github.com/yelouafi/focused) - Yet another Optics library in JavaScript. Based on the famous lens library from Haskell. Wrapped in a convenient Proxy interface
+  * [lukeed/arr](https://github.com/lukeed/arr) - A collection of tiny, highly performant Array.prototype alternatives
+  * [tabatkins/railroad-diagrams](https://github.com/tabatkins/railroad-diagrams) - A small JS+SVG library for drawing railroad syntax diagrams, like on JSON.org.
+  * [mermaid](https://mermaidjs.github.io/) - Diagrams in JavaScript
+  * [Intro.js](https://introjs.com/) - Step-by-step guide and feature introduction
+  * [wisercoder/uibuilder](https://github.com/wisercoder/uibuilder) - Typed HTML templates using TypeScript's TSX files
+  * [nodegui](https://github.com/nodegui/nodegui) - A library for building cross-platform native desktop applications with JavaScript and CSS like styling
+  * [ZzFX – Zuper Zmall Zeeded Zound Zynth](http://frankforce.com/?p=6918)
+
+  ## Frameworks
+
+  * [Socialbakers/BakeryJS](https://github.com/Socialbakers/BakeryJS) - Dataprocessing framework for JavaScript
+
+  ## Articles
+
+  * [Server to Client](https://alistapart.com/article/server-to-client/) - How does it all go together
+  * [Everything you need to know about skeleton screens](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
+  * [Malicious code was in the purescript npm installer](https://harry.garrood.me/blog/malicious-code-in-purescript-npm-installer/)
+
+  ## Techniques
+
+  * [Fun Tip: Use calc() to Change the Height of a Hero Component](https://css-tricks.com/fun-tip-use-calc-to-change-the-height-of-a-hero-component/)
+
+  ## Tools
+
+  * [JSONLog](https://jsonlog.io/) - Capture, Visualize, and Use Your Structured Data
+  * [jhwohlgemuth/tomo-cli](https://github.com/jhwohlgemuth/tomo-cli) - A friendly command line tool designed to help create sustainable software using web technology

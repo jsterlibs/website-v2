@@ -1,0 +1,66 @@
+type: static
+title: "7 Tools for Hassle Free JavaScript Development"
+short_title: "7 Hassle Free Tools"
+user: bebraw
+slug: 7-hassle-free-tools
+body: |
+    The rapidly growing interest in JavaScript has lead to an immense amounts of tools. From developer perspective it can be difficult to keep up as new ones keep on appearing. In this post we'll go through seven interesting ones. So let's get started.
+
+    ## Hitch
+
+    {{ screenshot: http://hitchjs.com/ }}
+
+    If writing CSS has been giving you jitters, then [Hitch](http://hitchjs.com/) is the tool for you. As a small i.e. 5.5k gzipped JavaScript prollyfill engine, Hitch provides you an extension model for your HTML and CSS. By including Hitch in your pages, you can go ahead with importing and leveraging CSS selectors.
+
+    ## Webpack
+
+    {{ screenshot: https://webpack.github.io/docs/what-is-webpack.html }}
+
+    Webpack, a module bundler, is one of those tools that on the first look seems very simple. Don't let the first impression fool you. Webpack is a powerful tool that in fact solves the fundamental problem of web development. By adopting Webpack you can eliminate a lot of manual configuration from your project.
+
+    Webpack overrides import statements and allows you to load arbitrary assets through them. Better yet it can create bundles just the way you want it to. For instance you might want to split bundles (ie. app/vendor bundle) or load some of the dependencies dynamically. Webpack can do this and a lot more. Thanks to [react-hot-loader](https://gaearon.github.io/react-hot-loader/) it a delight to use particularly for [React](https://facebook.github.io/react/) developers.
+
+    [SurviveJS - Webpack and React](http://survivejs.com/), a freely available guide, shows you how to get started with Webpack and React. It illustrates well why Webpack is such a powerful yet underappreciated tool. See also [the list of Webpack resources](https://webpack.zeef.com/bebraw).
+
+    ## ESLint
+
+    {{ screenshot: http://eslint.org/ }}
+
+    [ESLint](http://eslint.org/) represents the newest evolutionary step of JavaScript linting tools. It allows you to detect possible errors in your code early on and hence saves both time and nerves. Compared to earlier tools, such as [JSHint](http://jshint.com/), ESLint allows a wider range of customizability. You can implement your own rules easily for instance and tweak the tool to your liking. [ESLint works well with Webpack](http://survivejs.com/webpack_react/linting_in_webpack/).
+
+    ## GitHub Linker Chrome Extension
+
+    {{ screenshot: https://github.com/github-linker/chrome-extension }}
+
+    As it can be painful to navigate through JavaScript projects using the GitHub user interface, [Github Linker](https://github.com/github-linker/chrome-extension) makes that a little easier. Using this Chrome extension you can jump directly to the target of a `require` statement. Even though this doesn't sound much every little bit counts.
+
+    ## GitHub +1 Chrome Extension
+
+    {{ screenshot: https://github.com/ryanflorence/github-plusone-extension }}
+
+    Don't you hate it when people `+1` a thread and then the thread gets all spammy? [GitHub +1]{https://github.com/ryanflorence/github-plusone-extension} extension for Chrome takes care of this. It will get rid of the gunk and show +1's in a tidy little box at the top of the thread. Now only if GitHub turned this into a real feature and hacks like this wouldn't be needed.
+
+    ## Atom
+
+    {{ screenshot: https://atom.io/ }}
+
+    GitHub's [Atom](https://atom.io/) is the greatest and the most beautiful contender for Sublime Text. Sponsored by GitHub the project has a strong backing and keeps on moving forward at a blistering pace. It reached 1.0 milestone just recently. At this pace it will continue to attract even more developers to Atom camp. Even though it's not a full-fledged IDE it does provide a ton of packages you can apply in your daily work.
+
+    ## Nuclide
+
+    {{ screenshot: http://nuclide.io/ }}
+
+    Even though I just said Atom isn't an IDE, [Nuclide](http://nuclide.io/) sure is. It has been developed on top of Atom as a collection of packages and tries to provide more uniform development experience than what you might get otherwise. So if you are already using Atom maybe Nuclide is worth a look.
+
+    ## Visual Studio Code
+
+    [Visual Studio Code](https://code.visualstudio.com/) is a strong, recent contender to Atom. Who would have thought you could run a version of Visual Studio on Linux or OS X one day? Well, here you have it. TypeScript fans should be thrilled!
+
+    ## Conclusion
+
+    So, that was a set of 7 impeccable JavaScript development tools that support you in simple and complex Java development. So, get on with making the most of
+        these tools for creating scalable, and well-maintained Java based applications.
+
+    ---
+
+    Lucie Kruger is an application developer working with Mobiers Ltd, which is the leading [Android application development company](http://www.mobiers.com/services/android-development). She provides concrete information on latest information on mobile technologies like iOS or Android development processes.

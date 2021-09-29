@@ -1,0 +1,79 @@
+type: static
+title: "JSter #151: Libraries and more"
+short_title: "JSter #151"
+user: bebraw
+slug: jster-151
+body: |
+  > 2020 is the year of JavaScript on desktop
+
+  2020 is shaping up to be yet another year of JavaScript. [React Finland](https://react-finland.fi) (25-29.05) is almost out of early bird tickets so if you are coming and haven't picked up a ticket yet, it's a good chance to do that.
+
+  ## Libraries
+
+  * [Tippy.js](https://atomiks.github.io/tippyjs/) - Tippy.js is a highly customizable tooltip and popover library powered by Popper.js
+  * [Sidewind](https://bebraw.github.io/sidewind/) - Like Tailwind but for state
+  * [Availity](https://availity.github.io/availity-reactstrap-validation/) - Validation for reactstrap
+  * [amplify-js](https://github.com/aws-amplify/amplify-js) - A declarative JavaScript library for application development using cloud services
+  * [MenuSpy](http://leocs.me/menuspy/) - A JavaScript library to make navigation menus activate the item based on currently in view section.
+  * [etienne-dldc/literal-parser](https://github.com/etienne-dldc/literal-parser) - A small library to parse JavaScript array/object literal
+  * [etienne-dldc/democrat](https://github.com/etienne-dldc/democrat) - React, but for state management
+  * [DataLoader v2.0](https://medium.com/@leeb/dataloader-v2-0-925b4dccf8d6) - Data fetching layer for your application
+
+  ## Frameworks
+
+  * [alpine](https://github.com/alpinejs/alpine) - A rugged, minimal framework for composing JavaScript behavior in your markup
+  * [neo](https://github.com/neomjs/neo) - The webworkers driven UI framework
+  * [Inertia.js](https://inertiajs.com/) - Build single-page apps, without building an API
+
+  ## Articles
+
+  * [The modern web is becoming an unusable, user-hostile wasteland](https://omarabid.com/the-modern-web)
+  * [A case for using `void` in modern JavaScript](https://gist.github.com/slikts/dee3702357765dda3d484d8888d3029e)
+  * [The evolution of web design in the 2010s](https://thenextweb.com/podium/2019/12/19/the-evolution-of-web-design-in-the-2010s/)
+  * [How I stopped loving Angular](https://gist.github.com/Igogrek/36d47f7547b679e7dab2bc595e36c0e9)
+  * [You may not need Axios](https://danlevy.net/you-may-not-need-axios/)
+
+  ## Resources
+
+  * [Roadmaps to becoming a modern developer](https://roadmap.sh/)
+
+  ## Tools
+
+  * [One-com/livestyle](https://github.com/One-com/livestyle) - NodeJS middleware and binary for setting up a webserver that notifies the browser of CSS updates
+  * [terotests/ts2swagger](https://github.com/terotests/ts2swagger) - Create Swagger API from TypeScript classes
+  * [Introducing Scully: the Angular Static Site Generator](https://www.netlify.com/blog/2019/12/16/introducing-scully-the-angular-static-site-generator/)
+  * [mikeal/reg](https://github.com/mikeal/reg) - Native ESM Package Manager
+  * [syncpack](https://www.npmjs.com/package/syncpack) - Manage multiple package.json files, such as in Lerna Monorepos and Yarn Workspaces
+
+  ## Services
+
+  * [npm pro](https://blog.npmjs.org/post/189591811407/new-products-and-a-glimpse-ahead) - A new offering by npm for individual developers
+
+  ## TypeScript
+
+  * [cevek/ttypescript](https://github.com/cevek/ttypescript) - TypeScript tool to use custom transformers in the tsconfig.json
+
+  ## 3D
+
+  * [X3D: Declarative 3D for the Modern Web](https://blog.scottlogic.com/2019/08/27/declarative-3d-for-the-modern-web.html)
+  * [WebGLStudio.js](https://webglstudio.org/) - 3D Development environment for the web
+
+  ## Interviews
+
+  * [Squareboat](https://survivejs.com/blog/squareboat-interview/) - Growing an IT Business - Interview with Gaurav Gupta
+
+  ## CSS
+
+  * [Does JavaScript keep you too busy to care about CSS? Here are recent features you want to know about!](https://pawelgrzybek.com/does-javascript-keep-you-too-busy-to-care-about-css-here-are-recent-features-you-want-to-know-about/)
+
+  ## APIs
+
+  * [Replay](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/WebReplay) - Record user behavior and play it back later
+
+  ## Tutorials
+
+  * [Making a Better Custom Select Element](https://24ways.org/2019/making-a-better-custom-select-element/)
+
+  ## Demos
+
+  * [Dear ImGui JavaScript + WebGL example](https://flyover.github.io/imgui-js/example/)

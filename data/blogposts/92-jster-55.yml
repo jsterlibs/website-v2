@@ -1,0 +1,58 @@
+type: static
+title: "JSter #55: News of September 2015 - Part 2"
+short_title: "JSter #55"
+user: bebraw
+slug: monthly-jster-september-2015-part-2
+body: |
+    > Twenty years ago JavaScript was a joke, now it's the future.
+
+    ## Libraries
+
+    {{ screenshot: https://720kb.github.io/highlighter.js/ }}
+
+    * [Highlighter.js](https://720kb.github.io/highlighter.js/) - Highlighter.js allows you to easily navigate, select and highlight the DOM elements.
+    * [OpenSeadragon](https://openseadragon.github.io/) - Viewer for high-resolution zoomable images.
+    * [Substance](http://substance.io/) - Web based content editing.
+
+    ## Articles
+
+    {{ screenshot: http://webdesignledger.com/2015-frontend-dev-tools }}
+
+    * [A Poll of Modern Frontend Web Developer's Preferred Tools](http://webdesignledger.com/2015-frontend-dev-tools)
+    * [Behind Asteroids, The Dark Side (js13k)](https://github.com/gre/behind-asteroids/blob/master/README.md)
+    * [The long road to Async/Await in JavaScript](https://thomashunter.name/blog/the-long-road-to-asyncawait-in-javascript/)
+
+    ## Interviews
+
+    * [Interview of Andrew Ray - The Author of ShaderFrog](http://survivejs.com/blog/shaderfrog-interview/)
+    * [Interview of André Staltz - The author of Cycle.js](http://survivejs.com/blog/cycle-interview/)
+
+    ## Tutorials
+
+    * [How do JavaScript closures work under the hood](http://dmitryfrank.com/articles/js_closures)
+
+    ## Techniques
+
+    * [Binary in Javascript](http://danthedev.com/2015/07/25/binary-in-javascript/)
+    * [Testing JavaScript Modules with Tape](http://ponyfoo.com/articles/testing-javascript-modules-with-tape)
+    * [Beautiful Seamless JavaScript Testing in 10 Minutes](https://medium.com/@Zyklus/beautiful-seamless-javascript-testing-in-10-minutes-2a743637035b)
+
+    ## Resources
+
+    * [douglascrockford/TheJavaScriptEncyclopedia](https://github.com/douglascrockford/TheJavaScriptEncyclopedia)
+
+    ## Games
+
+    * [FightCode - Program JavaScript bots](http://fightcodegame.com/)
+
+    ## Comics
+
+    * [How to choose the right JavaScript framework](http://www.commitstrip.com/en/2015/09/16/how-to-choose-the-right-javascript-framework/)
+
+    ## Tools
+
+    * [WebGLStudio.js](http://webglstudio.org/)
+
+    ## Demos
+
+    * [SVG Aircraft Instruments](http://www.geezer-x.com/panel.html)

@@ -1,0 +1,44 @@
+type: static
+title: "JSter #143: Libraries and more"
+short_title: "JSter #143"
+user: bebraw
+slug: jster-143
+body: |
+  > JavaScript shot first
+
+  The dates for the next [React Finland](https://react-finland.fi) are clear. The event will take place 12-15.05. We are also planning a conference for November but it's a bit too early to announce that yet.
+
+  ## Libraries
+
+  * [lukeed/polka](https://github.com/lukeed/polka) - A micro web server so fast, it'll make you dance!
+  * [Overmind](https://overmindjs.org/) - Frictionless state management
+  * [gunn/pure-store](https://github.com/gunn/pure-store) - A tiny immutable store with type safety
+
+  ## Toolkit
+
+  * [Web Perception Toolkit](https://perceptiontoolkit.dev/) - Navigating with the camera
+
+  ## Articles
+
+  * [So You Want to be a Functional Programmer (Part 1)](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536)
+  * [Slaying a UI Antipattern in Fantasyland](https://medium.com/javascript-inside/slaying-a-ui-antipattern-in-fantasyland-907cbc322d2a)
+  * [Write HTML Like It's 1999](https://bradleytaunt.com/2019/06/08/html-like-1999/)
+  * [The CSS Mindset](https://mxb.dev/blog/the-css-mindset/)
+  * [Best practices for building a large scale React application](https://buttercms.com/blog/best-practices-for-building-a-large-scale-react-application)
+
+  ## Tools
+
+  * [lukeed/pwa](https://github.com/lukeed/pwa) - Universal PWA Builder
+  * [transitive-bullshit/awesome-mdx](https://github.com/transitive-bullshit/awesome-mdx) - List of awesome mdx resources
+  * [Pika CDN](https://www.pika.dev/cdn) - A CDN for modern JavaScript
+  * [palmerhq/tsdx](https://github.com/palmerhq/tsdx) - Zero-config CLI for TypeScript package development
+
+  ## npm
+
+  * [Open-Registry](https://open-registry.dev/) - A JavaScript Package Registry funded, developed and maintained by the community, for the community
+  * [nrm](https://www.npmjs.com/package/nrm) - Switch between npm registries easily
+  * [npm passes the 1 millionth package milestone! What can we learn?](https://snyk.io/blog/npm-passes-the-1-millionth-package-milestone-what-can-we-learn/)
+
+  ## AI
+
+  * [aijs.rocks](https://aijs.rocks/) - A curated collection of inspirational AI-powered JavaScript apps

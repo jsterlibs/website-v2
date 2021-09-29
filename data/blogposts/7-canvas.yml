@@ -1,0 +1,53 @@
+title: Brief Overview of HTML5 Canvas Libraries
+slug: brief-overview-of-html5-canvas-libraries
+type: comparison
+user: bebraw
+
+body: |
+  [HTML5 Canvas](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html) is a good example of immediate graphics. This "draw and forget" way of working is enough for some purposes. For instance you could write a simple drawing application this way. Unfortunately it isn't entirely trivial to implement interactive applications on top of *Canvas* without some decent effort. It gets more complicated when you are dealing with a lot of objects and you have to consider performance.
+
+  This is where various libraries wrapping the *Canvas* kick in. I will concentrate on a few popular ones in this post. You can find various others at [our canvas wrapper category](http://jster.net/category/canvas-wrappers). In addition you might be interested in checking out [various visualization libraries](http://jster.net/category/visualization-libraries) and those focusing on [image manipulation](http://jster.net/category/image-manipulation).
+
+  ## EaselJS
+
+  {{ screenshot: EaselJS }}
+
+  **EaselJS** is an example of a library inspired by Flash. You will gain *hierarchical display list*, interactivity and animation helpers there. The concept of display list is quite powerful. It allows you to define relationships between graphical objects. As you manipulate parent objects, these manipulations are propagated to the children as well.
+
+  ## Paper.js
+
+  {{ screenshot: Paper.js }}
+
+  As you might want sometimes a whole *scene graph* (or as we call it on web development side, Document Object Model), you could complement **EaselJS** with [AtelierJS](https://github.com/bloomingbridges/AtelierJS). *Paper.js* actually implements scene graph as a core feature. This allows you to split objects on multiple layers within the same Canvas. Sometimes you might get away with using multiple Canvas elements and CSS z-index but that's not what you want always.
+
+  Interestingly **paper.js** comes with a language of its own, *PaperScript*. As you probably know dealing with math can be sometimes a bit painful in JavaScript as you cannot overload operators easily. Instead your code ends up looking like `v1.mul(v2.add(v3))` which doesn't parse particularly well. *PaperScript* solves this and provides a couple of custom objects.
+
+  ## Fabric.js
+
+  {{ screenshot: Fabric.js }}
+
+  Just like **EaselJS**, **Paper.js** comes with its own interactivity helpers. **Fabric.js** provides support for interactivity as well and comes with its own Object model as these libraries usually do. The specialty of **Fabric.js** seems to be its SVG-to-Canvas parser. Interestingly this applies to the other direction too!
+
+  ## KineticJS
+
+  {{ screenshot: KineticJS }}
+
+  **KineticJS** seems more or less comparable to libraries mentioned already. It's specialty is that it uses multiple canvas elements internally to achieve better performance. [@softrLi](https://twitter.com/softrli) seems quite excited about it in [his comparison of Canvas libraries](http://www.softr.li/blog/2012/06/20/which-html5-canvas-javascript-library-should-i-use). Probably for a good reason.
+
+  ## Comparison
+
+table:
+  columns: [EaselJS, Paper.js, Fabric.js, KineticJS]
+  license: [MIT, MIT, MIT, MIT or GPLv2]
+  size: [65k, 219k, 79-148k, 67k]
+  modular: ['no', 'no', 'yes', 'no']
+  SVG parser: ['no', 'nightly', 'yes', 'partial']
+  IE<9: ['no', 'no', 'yes', 'no']
+  Node.js: ['no', 'nightly', 'yes', 'no']
+  links: ['[Official Site](http://createjs.com/), [Documentation](http://createjs.com/Docs/EaselJS/), [Demos](http://createjs.com/#demos)', '[Official Site](http://paperjs.org/), [Documentation](http://paperjs.org/reference/), [Demos](http://paperjs.org/examples/)', '[Official Site](http://fabricjs.com/), [Documentation](http://fabricjs.com/docs/), [Demos](http://fabricjs.com/demos/)', '[Official Site](http://kineticjs.com/), [Documentation](http://kineticjs.com/docs/), [Demos](http://kineticjs.com/) (at bottom)']
+footer: |
+  ## Conclusion
+
+  The libraries discussed here are just a tip of the iceberg. [@kangax](https://twitter.com/kangax) has compiled a more [comprehensive listing with more data](https://docs.google.com/spreadsheet/ccc?key=0Aqj_mVmuz3Y8dHNhUVFDYlRaaXlyX0xYSTVnalV5ZlE#gid=0). In this post I wanted to focus specifically on a limited selection to give you a some idea of what sort of capabilities these libraries commonly provide.
+
+  How do you choose one then? It depends a lot on what your goals are. Perhaps give a couple a go and see if the syntax sticks. If you happen to need something really special like SVG support, Fabric might be the way to go.

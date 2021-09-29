@@ -1,0 +1,48 @@
+type: static
+title: "JSter #128: Libraries and then some"
+short_title: "JSter #128"
+user: bebraw
+slug: jster-128
+body: |
+    > For every good JavaScript joke, there's a bad one.
+
+    [GraphQL Finland 2018](https://medium.com/graphql-finland/summary-of-graphql-finland-2018-a769460ebfdd) was a great success. [Check the conference videos online!](https://www.youtube.com/watch?v=aX-BxhkFd9g&feature=youtu.be)
+
+    ## Libraries
+
+    * [avantcredit/gql2ts](https://github.com/avantcredit/gql2ts) - Convert a GraphQL schema to a TypeScript definition
+    * [threepointone/css-suspense](https://github.com/threepointone/css-suspense) - CSS loading for React the suspense way
+    * [diegohaz/styled-tools](https://github.com/diegohaz/styled-tools) - Useful interpolated functions for CSS-in-JS
+    * [sapegin/q-i](https://github.com/sapegin/q-i) - Node.js objects inspector with color highlighting
+    * [turtle.audio](http://turtle.audio/) - Turtle graphics but for audio
+    * [sapegin/richtypo.js](https://github.com/sapegin/richtypo.js) - HTML typography enhancer for Node
+
+    ## Techniques
+
+    * [Drop 20K from your production Angular app](https://bendyworks.com/blog/drop-20k-from-your-production-angular-app) 
+    * [Save Hundreds of Lines of Code in Your Next GraphQL App With This One Weird Trick](https://medium.com/open-graphql/save-hundreds-of-lines-of-code-in-your-next-graphql-app-with-this-one-weird-trick-3bef9ef0d45a) 
+    * [Building & maintaining UI components with a Design System, Part 2](https://www.dynatrace.com/news/blog/dynatrace-design-system-part-2/) 
+
+    ## Architectures
+
+    * [Rethinking Enterprise Architectures with Node.js](https://speakerdeck.com/kamilmysliwiec/rethinking-enterprise-architectures-with-node-dot-js) 
+    * [3factor app architecutre](https://3factor.app/) 
+    * [Turn the web into a database: An alternative to web crawling/scraping](https://www.mixnode.com/blog/posts/turn-the-web-into-a-database-an-alternative-to-web-crawling-scraping) 
+
+    ## Platforms
+
+    * [KeystoneJS](https://keystonejs.com/) - Node.js CMS and web app platform
+    * [Node v11.0.0](https://nodejs.org/en/blog/release/v11.0.0/) 
+
+    ## Tools
+
+    * [firebase2graphql](https://blog.hasura.io/firebase2graphql-moving-from-firebase-to-realtime-graphql-on-postgres-4d36cb7f4eaf) - Moving from firebase to realtime GraphQL on Postgres
+    * [On the Flow Roadmap: Exact Objects by Default](https://medium.com/flow-type/on-the-roadmap-exact-objects-by-default-16b72933c5cf) 
+
+    ## Graphql
+
+    * [Adopting GraphQL in Large Codebases](https://www.youtube.com/watch?v=8KLwLzRlETc&list=PLVSuvWb4Q2Y7oxwvpzlwFxAO6IbIjMDgB) 
+
+    ## Case Studies
+
+    * [Building the Google Photos Web UI](https://medium.com/google-design/google-photos-45b714dfbed1) 

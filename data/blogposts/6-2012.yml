@@ -1,0 +1,16 @@
+type: rating
+title: "Top 12 JavaScript Libraries Started in 2012"
+user: davertmik
+slug: javascript-libraries-started-in-2012
+includes: [ Meteor, Select2, Hammer.js, Turn.js, Mousetrap, Tinycon, Yeoman, noty, a!ertifyjs, morris.js, MetroUI, Gridster.js]
+body: |
+  The year of apocalypse is about to finish. Nothing happened. It was a good year for JavaScript, though. Many amazing projects were started this year. In this post we will go through a collection of the most popular ones based on their GitHub starrings.
+
+  All these libraries are different, but notable on their own. The true leader of list is **Meteor**. They received over 6500 stars on GitHub and over [$11 Million investment](http://techcrunch.com/2012/07/25/andreessen-horowitz-keeps-eating-the-software-world-with-11-2-million-investment-in-javascript-framework-company-meteor/) from
+  Andreessen Horowitz. That makes Meteor the promising project in upcoming 2013. Or maybe a most overestimated one? What do you think?
+
+  Most of the projects picked on our list focus on UI improvements. Examples of these include alerts and notifiers. One curious case is **Yeoman**. It aims to make JavaScript development by wrapping together various tools and enables developers to generate a scaffolding for their own projects.
+ 
+footer: |
+  This was an awesome year for us web developers. Plenty of new technologies appeared and the pace doesn't seem to be slowing down. On the contrary. This site, **Jster, was launched back in October**. We are the most complete catalog for JavaScript frontend development. In the next year we plan to evolve, 
+  go well beyond **1000** JavaScript libraries in our catalog. Besides extending the catalog, we will improve the service continuously and make it serve your needs better. Happy New Post-Apocalyptic Year and Merry X-Mas!

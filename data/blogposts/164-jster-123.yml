@@ -1,0 +1,38 @@
+type: static
+title: "JSter #123: Frameworks and more"
+short_title: "JSter #123"
+user: bebraw
+slug: jster-123
+body: |
+    > Bring me a coffee. It's time to write to JavaScript.
+
+    As usual, time for a new JSter. There's [a new version of TypeScript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html) available. I've been playing with the language lately and now it feels like I should have picked it up earlier. Better late than never I suppose.
+
+    ## Frameworks
+
+    * [egoist/saber](https://github.com/egoist/saber.js) - A minimalistic framework for building static website using Vue.js
+    * [Introducing Dojo 2.0!](https://dojo.io/blog/2018/05/02/2018-05-02-Dojo2-0-0-release/) 
+
+    ## Data Structures
+
+    * [funkia/list](https://github.com/funkia/list) - An immutable list with unmatched performance and a comprehensive functional API.
+    * [Composable, Immutable property access with Lenses in Typescript](https://medium.com/@reidev275/composable-immutable-property-access-with-lenses-in-typescript-798da4ddc30e) 
+
+    ## Articles
+
+    * [Sunil created the exact same app in React and Vue. Here are the differences.](https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-e9a1ae8077fd) 
+    * [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3) 
+
+    ## Tutorials
+
+    * [How to Show SMS Notifications in the Browser with Angular, Node.JS, and Ably](https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr/) 
+
+    ## Tools
+
+    * [ds300/patch-package](https://github.com/ds300/patch-package/) - Fix broken node modules with no fuss
+    * [Strapi](https://strapi.io/) - API creation made simple, secure and fast.
+    * [rvpanoz/luna](https://github.com/rvpanoz/luna) - Modern UI for npm
+
+    ## Demos
+
+    * [Polyhedra Viewer](https://polyhedra.tessera.li/) 

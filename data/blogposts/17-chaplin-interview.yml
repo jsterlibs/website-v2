@@ -1,0 +1,80 @@
+type: interview
+title: "Interview with Paul Miller: maker of Chaplin and Brunch"
+short_title: Interview with Paul Miller
+includes: ["Moment.js","Lo-Dash", "Meteor"]
+slug: chaplin-brunch-author-interview
+user: davertmik
+profile:
+  name: Paul Miller
+  twitter: paulmillr
+  github: paulmillr
+  bio: "Creator of Chaplin MVC framework and Brunch build tool. Writes essays on anarcho-capitalism theory, because he loves freedom and stuff."
+  photo: https://secure.gravatar.com/avatar/d342e4ef045c54a6a6f41d070d8a0406?size=300
+body: |
+
+  Today we have very special guest. He is a passionate open source developer with many projects out there. Particularly two stand out: **Chaplin** an MVC framework built on top of Backbone and **Brunch** a build tool, Yeoman/Grunt alternative. These projects are used by thousands of developers and helps us to make better software. For example, the new [Delicious](https://delicious.com/), that well-known dinosaur from Web 2.0 era, is now blazingly fast thanks to Chaplin MVC framework and Brunch.
+
+  Say hello to **Paul Miller**. Today we will ask him about his projects, future plans, and how to become a better JavaScript developer. Don't switch the channel.
+
+  #### Hi, @paulmillr. Please tell us more about yourself. What do you do, where you live, and how did you end up in JavaScript development?
+
+  I do mostly tools for web devs these days, but i’m also launching non-dev-related projects.
+
+  I started doing JS a long time ago, just when I started doing web dev. Back in 2011 i’ve thought web applications are the future and started doing them, discovered Backbone and stuff.
+
+  {{ screenshot: Chaplin }}  
+
+  #### How did the Chaplin project get started? Can you tell us a brief history of it?
+
+  Matthias Schäfer had separated some parts of moviepilot.com into one reusable framework and named it as **Chaplin**.
+
+  I’ve came to the project after like two weeks and instantly saw Chaplin potential, then decided to help with its development.
+
+  Thanks to Chaplin community, first year was very productive — lots of companies had adopted Chaplin and contributed. I hope this year will be even better.
+
+  #### We both agree that Backbone framework is awesome. It is simple and flexible unlike Chaplin. It's awesome too, but in order to use it, you should learn Chaplin conventions, CoffeeScript, RequireJS, AMD, Brunch, and others. Why should developers do that? What benefits they would achieve by using these technologies?
+
+  Backbone is cool, but it lacks opinions. It just gives some core concepts, you’re supposed on your own to figure out how to use them and where.
+
+  I really like what Chaplin does here. It pushes some best practices that made us productive. This makes your code consistent, clear and very maintainable. It is easy for new devs to continue making your app after that.
+
+  Learning today’s web application stack is not as hard as it seems. In my experience, team which was working with Django had been able to learn the whole stack and write production-quality code in something like 2-6 weeks. This included coffeescript, backbone, underscore, jquery, chaplin and brunch. Quite a lot when you think about it.
+
+  #### You might think memory management is a thing of a past but it's definitely not. How should one approach this topic? How to write better JavaScript code that doesn't leak too much?
+
+  Controlling life cycle of components in your app really matters. In order to avoid leaks it’s important to pick a right architecture that will have some concept of manual memory cleanup.
+
+  Everyone makes mistakes, so it’s better to make them as loud as possible for early detection. Freezing (`Object.freeze()`) / sealing (`Object.seal()`) your objects and ECMAScript 5 strict mode helps with that. When the object becomes unneeded and you’re ready to pass it to garbage collector, delete all properties from it, unbind all handlers and freeze it. If anything from outside will try to change object somehow, you will get a nice exception.
+
+  {{ screenshot: Brunch }}  
+
+  #### A few words about your future plans. What can we expect from Chaplin, Brunch, and [Ost.io](http://ost.io)?
+
+  Brunch will get source maps support. This is really much requested feature. Today there are no solutions for headless automatic compilation of files with source maps. You still need to manually do most of the job.
+
+  As for Chaplin, we want to release stable version (1.0). Before that we hope to incorporate view transition support and AJAX handlers auto-abortion / stacking. Backbone doesn’t help us much here, just like with memory management. And, of course, we want to improve documentation. Screencasts and more examples would be nice to have.
+
+  I hope to push **ost.io** as a default application example for todomvc “successor” — [taste.js](http://tastejs.com). We’re still discussing possibilities, though I persist on the forum. My main points:
+
+  * it is more complex than todomvc and many other examples. CRUD, authentication, consumption of REST API data, app-wide persisted views — everything is here. Some folks say that app should show more than this and i’m absolutely open on any new features and ideas.
+  * it is real-world. Actual people provide support for their stuff there. I don’t like the idea of building another application just to show how tech behaves.
+  * it is working right now. Ost.io demostrates real code today, the spec is there too. [Real artists ship™](http://en.wikiquote.org/wiki/Steve_Jobs).
+
+  #### And traditional question. As we are a JavaScript libraries site, please name a few libraries a frontend developers should look at to gain new superpowers.
+
+  I’m a big aficionado of ultra-small libs that do only one thing these days. Chaplin stack is not like that, though. So I prefer small components to full-size libs.
+
+  But there are some common libs that really help me.
+
+footer: |  
+
+  Additional notes:
+
+  * **Moment.js**. Definitely the best JS lib on the market for date manipulation.
+  * **Lodash**. I don’t like the idea of adding underscore.js dependency to every single project. Most of the time, copying one-three simple function snippets works better. But lodash is different. It has very good performance optimisations — writing these on your own will consume a lot of time. So, it’s pretty good.
+  * **Meteor**. Tried making a new app with it this year. Definitely an awesome tool for prototyping and I think I will be using it in the future. As for real production meteor apps, there are some problems with that. The biggest is the lack of structure in applications. You can’t use modules (Common.js / AMD / ES6) and you’re forced to use global variables and shared state. This sucks and results in shitty and hardly maintainable code. Performance is also questionable, but it doesn’t matter much. Shipping your product matters. You can always optimise performance later, it’s better than having super-optimised project with no users.
+
+  **@paulmillr**, thanks for this interview. Personally I learned new about web development. I'm also fan of CoffeeScript and I hope that it won't be rejected in community just because of language. CoffeeScript works fine with JavaScript and is used by professionals. Then why to ignore it?
+  Good luck to and thanks for Chaplin and Brunch.
+
+  We will have more talks with interesting persons making a JavaScript world brighter. Don't miss it. Follow us in [Twitter](http://twitter.com/jsterlibs) or subscribe to [Jster's RSS feed](http://feeds.feedburner.com/jster). 

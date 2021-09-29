@@ -1,0 +1,58 @@
+type: static
+title: "JSter #135: Libraries and more"
+short_title: "JSter #135"
+user: bebraw
+slug: jster-135
+body: |
+  > I write JavaScript, eight days a week
+
+  I'll be going to [typeof conference](https://typeofconf.com/) in Porto, Portugal at the end of March. 
+
+  ## Libraries
+
+  * [daltonwebdev/console.chat](https://github.com/daltonwebdev/console.chat) - Chat in your console
+  * [Overmind](https://overmindjs.org/) - Frictionless state management. [See also the interview](https://survivejs.com/blog/overmind-interview/).
+  * [modernserf/zebu](https://github.com/modernserf/zebu) - A compiler for little languages in tagged template strings
+  * [lukeed/httpie](https://github.com/lukeed/httpie) - A Node.js HTTP client as easy as pie!
+
+  ## Frameworks
+
+  * [Kube CSS & JS Framework](https://imperavi.com/kube)
+  * [Stimulus](https://stimulusjs.org/) - A modest JavaScript framework for the HTML you already have
+
+  ## TypeScript
+
+  * [labs42io/clean-code-typescript](https://github.com/labs42io/clean-code-typescript) - Clean Code concepts ported to TypeScript
+
+  ## Tools
+
+  * [KidkArolis/healthier](https://github.com/KidkArolis/healthier) - Opinionated, style-agnostic linter
+
+  ## Services
+
+  * [PackTracker](https://packtracker.io/) - Webpack bundle analysis, for every commit
+
+  ## Articles
+
+  * [Rendering on the Web](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+  * [First thoughts on Deno, the JavaScript/TypeScript run-time](https://43081j.com/2019/01/first-look-at-deno)
+
+  ## Design Systems
+
+  * [Carbon Design System](https://www.carbondesignsystem.com/)
+
+  ## GraphQL
+
+  * [graphql-rate-limit-directive](https://www.npmjs.com/package/graphql-rate-limit-directive) - Rate limiting for GraphQL
+
+  ## Interviews
+
+  * [TypeScript with Michel Weststrate](https://medium.com/react-finland/interview-typescript-with-michel-weststrate-8afd7fd24b32)
+
+  ## Tests
+
+  * [Can't Unsee](https://cantunsee.space/)
+
+  ## Documentaries
+
+  * [Ember.js: The Documentary](https://videos.honeypot.io/emberjs-documentary-2019/)

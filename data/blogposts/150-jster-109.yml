@@ -1,0 +1,53 @@
+type: static
+title: "JSter #109: Libraries, articles, the usual"
+short_title: "JSter #109"
+user: bebraw
+slug: jster-109
+body: |
+    > Chuck Norris debugs JavaScript code by staring at it. The code confesses eventually.
+
+    [Leftpad 2.0 occurred](https://www.reddit.com/r/javascript/comments/7olgo0/today_is_leftpad_20_pinkiepromise_pulled_from_npm/) as pinkie-promise was pulled from npm by accident. For this reason, it can be a good idea to run a proxy such as [verdaccio](http://www.verdaccio.org/) in front of npm as it isolates you from these kind of rare disasters.
+
+    We started the sales for [React Finland 2018](https://react-finland.fi/) (24-26.4.2018, Helsinki) and we've almost run out of our early bird tickets! There are also [sponsorship options for companies](https://react-finland.fi/for-sponsors/).
+
+    I wrote [a small summary on 2017](https://survivejs.com/blog/summary-of-2017/). I took my first proper vacation in years so this mailing list was on a brief hiatus. It's back to one post per two weeks again.
+
+    ## Libraries
+
+    {{ screenshot: https://github.com/Drulac/template-literal }}
+
+    * [Drulac/template-literal](https://github.com/Drulac/template-literal) - Simple template engine built on top of the new syntax.
+    * [Nuxt.js 1.0 is out 🎉](https://medium.com/@nuxt_js/nuxt-js-1-0-is-out-bab1af459972) - Nuxt.js is like Next.js but for Vue.
+    * [anime.js](http://animejs.com/) - Animations made easy.
+    * [Why Ramda?](http://fr.umio.us/why-ramda/) - Why would you use Ramda over Lodash and such?
+
+    ## Articles
+
+    * [New moniker rules for npm](http://blog.npmjs.org/post/168978377570/new-package-moniker-rules)
+    * [The story of Cerebral](https://medium.com/@christianalfoni/the-story-of-cerebral-5793c08db2cc) - Cerebral is perhaps the most underappreciated state management solution out there.
+    * [JavaScript Security Awareness - BlueClosure](http://blog.blueclosure.com/2017/09/javascript-security-awareness.html)
+    * [The Current State of Implementation and Planning for ESModules](https://medium.com/the-node-js-collection/the-current-state-of-implementation-and-planning-for-esmodules-a4ecb2aac07a)
+
+    ## Guides
+
+    * [WebGL2 Fundamentals](https://webgl2fundamentals.org/)
+    * [Developing NPM Packages](https://auth0.com/blog/developing-npm-packages/) - See also [my free maintenance book](https://survivejs.com/maintenance/) to learn more about the topic.
+
+    ## Techniques
+
+    * [An Actor, a model and an architect walk onto the web...](https://dassur.ma/things/actormodel/)
+
+    ## Interviews
+
+    * [BEM - Methodology to enable reuse in front-end development - Interview with Sergey Berezhnoy](https://survivejs.com/blog/bem-interview/)
+
+    ## Cheatsheets
+
+    * [npm vs. Yarn Cheat Sheet](https://shift.infinite.red/npm-vs-yarn-cheat-sheet-8755b092e5cc)
+
+    ## Tools
+
+    * [fhinkel/type-profile](https://github.com/fhinkel/type-profile) - Collect runtime type information of your JavaScript code.
+    * [Iroh](https://maierfelix.github.io/Iroh/) - Dynamic code analysis for JavaScript.
+    * [wix/detox](https://github.com/wix/detox) - Gray Box E2E Tests and Automation Library for Mobile Apps.
+    * [GoogleChrome/rendertron](https://github.com/GoogleChrome/rendertron) - A dockerized, headless Chrome rendering solution.

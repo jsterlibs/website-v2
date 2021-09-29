@@ -1,0 +1,42 @@
+type: static
+title: "JSter #141: Libraries and more"
+short_title: "JSter #141"
+user: bebraw
+slug: jster-141
+body: |
+  > What we've got here is failure to JavaScript
+
+  [React Finland 2019](https://www.youtube.com/watch?v=BO_osndeLII) was a great success and we are already planning the next one. You can [find all the presentations on our playlist](https://www.youtube.com/watch?v=IqbOPkCwxlw&list=PL-a9lBflNu2oW1lU7fUvW0oAnbj-mxk2a) (the audio crops on the first one :().
+
+  ## Libraries
+
+  * [MessagePack](https://msgpack.org/) - It's like JSON. but fast and small
+  * [Reakit](https://reakit.io/) - Build accessible rich web apps with React
+  * [Tachyons](http://tachyons.io/) - Create fast loading, highly readable, and 100% responsive interfaces with as little css as possible
+
+  ## Tutorials
+
+  * [CSS masonry with flexbox, :nth-child(), and order](https://tobiasahlin.com/blog/masonry-with-css/)
+  * [Hands-on with Portals: seamless navigations on the Web](https://web.dev/hands-on-portals)
+  * [HTML Canvas API Tutorial](https://flaviocopes.com/canvas/)
+
+  ## Guides
+
+  * [GraphQL for React developers](https://learn.hasura.io/graphql/react/introduction/)
+  * [you-dont-need/You-Dont-Need-Momentjs](https://github.com/you-dont-need/You-Dont-Need-Momentjs) - Maybe you don't need Moment.js
+
+  ## Articles
+
+  * [Game of Frameworks: JavaScript trends of 2019](https://cvcompiler.com/blog/game-of-frameworks-javascript-trends-of-2019/)
+
+  ## Tools
+
+  * [jsdeflate](https://www.npmjs.com/package/jsdeflate) - Compressor for big/huge JavaScript files
+
+  ## Books
+
+  * [getify/functional-light-js](https://github.com/getify/functional-light-js) - Pragmatic, balanced FP in JavaScript
+
+  ## Demos
+
+  * [Tinkersynth](https://tinkersynth.com/) - Create art with knobs

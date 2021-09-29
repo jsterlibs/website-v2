@@ -1,0 +1,63 @@
+type: static
+title: "JSter #137: Libraries and more"
+short_title: "JSter #137"
+user: bebraw
+slug: jster-137
+body: |
+  > No day without JavaScript
+
+  [React Finland](https://react-finland.fi/) is in almost within a month. Can't wait!
+
+  ## Libraries
+
+  * [gpu.js](http://gpu.rocks/) - GPU Accelerated JavaScript
+  * [cristianbote/goober](https://github.com/cristianbote/goober) - A less than 1KB 🎉css-in-js alternative with a familiar API
+  * [gajus/slonik](https://github.com/gajus/slonik) - A PostgreSQL client with strict types, detail logging and assertions
+  * [KaTeX](https://github.com/KaTeX/KaTeX) - Fast math typesetting for the web
+  * [infusion/BitSet.js](https://github.com/infusion/BitSet.js) - An arbitrary size Bit-Vector implementation in JavaScript 
+
+  ## Interviews
+
+  * [atomic-layout - Layout composition as a React component](https://survivejs.com/blog/atomic-layout-interview/) - Interview with Artem Zakharchenko
+
+  ## TypeScript
+
+  * [typestack/class-validator](https://github.com/typestack/class-validator) - Validation made easy using TypeScript decorators
+  * [How to master advanced TypeScript patterns](https://medium.freecodecamp.org/typescript-curry-ramda-types-f747e99744ab)
+
+  ## Techniques
+
+  * [Goodbye Electron, Hello Desktop PWAs](https://medium.com/dailyjs/goodbye-electron-hello-desktop-pwas-f316b8f39882)
+
+  ## Frameworks
+
+  * [UmiJS](https://umijs.org/) - Pluggable enterprise-level React application framework
+  * [Zero Server](https://zeroserver.io/) - Zero configuration web framework
+
+  ## Slides
+
+  * [Vue 3.0 Updates](https://docs.google.com/presentation/d/1yhPGyhQrJcpJI2ZFvBme3pGKaGNiLi709c37svivv0o/preview)
+
+  ## Tutorials
+
+  * [An Intro to Imba: the JavaScript-compatible language for lightning fast DOM updates](https://medium.freecodecamp.org/introduction-to-imba-the-alternative-to-javascript-e2aa1e3d1769)
+
+  ## CSS
+
+  * [Raster](https://rsms.me/raster/) - CSS Grid System
+
+  ## Tools
+
+  * [lasso](https://github.com/lasso-js/lasso) - Advanced JavaScript module bundler, asset pipeline and optimizer
+
+  ## UI
+
+  * [Felipe](https://www.arielverber.com/felipe/) - Turn wireframes to UI
+
+  ## Games
+
+  * [Super Mario Bros. Crossover 4.0 Experimental Preview Released](https://explodingrabbit.com/super-mario-bros-crossover-4-0-experimental-preview-released-1212/)
+
+  ## Demos
+
+  * [Star Atlas](https://staratlas.com/) - Star map in your browser

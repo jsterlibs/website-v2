@@ -1,0 +1,86 @@
+type: static
+title: "JSter #152: Libraries and a lot more"
+short_title: "JSter #152"
+user: bebraw
+slug: jster-152
+body: |
+  > 2020 and we're still coding JavaScript
+
+  It's time for the monthly JSter again. [React Finland](https://react-finland.fi/) is shaping up well and we're out of regular bird tickets for the conference soon. I've compiled a list of JavaScript links I've found interesting during the past month so please enjoy. I hope you find something useful.
+
+  One of the things I completed during past month was [Sidewind](https://sidewindjs.com/). It's a light state manager built for JavaScript. State lives within the DOM and thanks to the modern web APIs I was able to keep it small. If you are using Tailwind for styling, Sidewind complements it well.
+
+  ## Libraries
+
+  * [lukeed/calendarize](https://github.com/lukeed/calendarize) - A tiny (202B) utility to generate calendar views
+  * [Mavo](https://mavo.io/) - A new, approachable way to create web applications
+  * [tagtag](https://www.npmjs.com/package/tagtag) - Easy HTML templating with JS
+  * [hyperscript-html](https://www.npmjs.com/package/hyperscript-html) - Fast and light hyperscript function to generate HTML
+  * [mattboldt/typed.js/](https://github.com/mattboldt/typed.js/) - A JavaScript typing animation library
+  * [lukeed/klona](https://github.com/lukeed/klona) - A tiny (366B) and fast utility to deep clone Objects, Arrays, Dates, RegExps, and more!
+  * [Passjoin Index](https://yomguithereal.github.io/mnemonist/passjoin-index) - Efficient Levenshtein distance queries
+  * [cuid](http://usecuid.org/) - Collision-resistant ids optimized for horizontal scaling and performance
+  * [Perfume.js](https://zizzamia.github.io/perfume/) - Perfume is a tiny, web performance monitoring library
+
+  ## Frameworks
+
+  * [Feathers](https://feathersjs.com/) - A framework for real-time applications and REST APIs
+  * [VulcanJS](http://vulcanjs.org/) - The full-stack React+GraphQL framework
+
+  ## Components
+
+  * [plete](https://plete.dev/) - A vanilla js autocomplete component that supports remote filtering
+  * [@justinribeiro/lite-youtube](https://www.npmjs.com/package/@justinribeiro/lite-youtube) - A web component that displays render YouTube embeds faster
+
+  ## TypeScript
+
+  * [OvernightJS](https://levelup.gitconnected.com/overnightjs-the-best-way-to-use-expressjs-with-typescript-35d71941aade) - The best way to use ExpressJS with TypeScript
+
+  ## Data Structures
+
+  * [anvaka/ngraph](https://github.com/anvaka/ngraph) - A set of graph algorithms
+
+  ## Language
+
+  * [for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) - Explanation of this little known yet useful feature
+
+  ## Tools
+
+  * [react-figma](https://github.com/react-figma/react-figma) - Render React components to Figma
+  * [Introducing Yarn 2](https://dev.to/arcanis/introducing-yarn-2-4eh1) - The popular package manager has reached a new major version
+  * [pretty-quick](https://www.npmjs.com/package/pretty-quick) - Run Prettier on your changed files
+  * [microsoft/playwright](https://github.com/microsoft/playwright) - Puppeteer but for multiple browsers
+  * [why-npm-i-so-long](https://www.npmjs.com/package/why-npm-i-so-long) - Figure out why installing from npm takes so long
+  * [atlassian/yarn-deduplicate](https://github.com/atlassian/yarn-deduplicate) - Deduplication tool for yarn.lock files
+
+  ## Polyfills
+
+  * [WICG/focus-visible](https://github.com/WICG/focus-visible) - Polyfill for :focus-visible
+
+  ## Articles
+
+  * [JavaScript Libraries Are Almost Never Updated Once Installed](https://blog.cloudflare.com/javascript-libraries-are-almost-never-updated/)
+  * [“Outside In” — Ordering CSS Properties by Importance](https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685)
+  * [Six donts of web app internationalization](https://blog.sapegin.me/all/internationalization/)
+  * [Were Kyiv Winters as Snowy as I Remember as a Kid?](https://observablehq.com/@mourner/were-kyiv-winters-as-snowy-as-i-remember-as-a-kid)
+  * [JavaScript libraries for “Self typing text”](https://medium.com/@daniel_ordonez/javascript-libraries-for-self-typing-text-16e339a67582)
+
+  ## Slides
+
+  * [Vue 3.0 changes and how to incorporate them into your Vue apps](https://slides.com/vladimirnovick/vue3#/)
+
+  ## Questions
+
+  * [What is yarn PnP doing?](https://stackoverflow.com/questions/53135221/what-does-yarn-pnp)
+
+  ## Opinions
+
+  * [Why I moved from React to Svelte and others will follow](https://www.mikenikles.com/blog/why-i-moved-from-react-to-svelte-and-why-others-will-follow/)
+
+  ## Tutorials
+
+  * [Build FFmpeg WebAssembly version (= ffmpeg.js): Part.1 Preparation](https://itnext.io/build-ffmpeg-webassembly-version-ffmpeg-js-part-1-preparation-ed12bf4c8fac)
+
+  ## Demos
+
+  * [The Deep Sea](https://neal.fun/deep-sea/)

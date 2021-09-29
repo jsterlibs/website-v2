@@ -1,0 +1,44 @@
+type: static
+title: "JSter #66: News of March 2016 - Part 1"
+short_title: "JSter #66"
+user: bebraw
+slug: monthly-jster-march-2016-part-1
+body: |
+    > When in doubt, JavaScript.
+
+    ## Libraries
+
+    {{ screenshot: https://github.com/hyperoslo/Hue }}
+
+    * [Hue](https://github.com/hyperoslo/Hue) - All-in-one coloring utility
+    * [rot.js](https://ondras.github.io/rot.js/hp/) - Roguelike toolkit for JavaScript
+    * [f](https://github.com/pakastin/f) - Turboboosted view library in 2k
+    * [Oboe.js](http://oboejs.com/) - Streaming JSON loading for Node and browsers
+    * [Intro.js](http://introjs.com/) - Step-by-step guide and feature introduction
+
+    ## Articles
+
+    * [CSS Modules: Who, what, where, when and why?!](https://speakerdeck.com/chrisui/css-modules-who-what-where-when-and-why)
+    * [What's New in jQuery 3](http://developer.telerik.com/featured/whats-new-in-jquery-3/)
+    * [State of the Art JavaScript in 2016](https://medium.com/javascript-and-opinions/state-of-the-art-javascript-in-2016-ab67fc68eb0b)
+
+    ## Opinions
+
+    * [The Sad State of the Backbone Ecosystem](http://benmccormick.org/2016/03/07/the-sad-state-of-the-backbone-ecosystem/)
+    * [Why Instacart moved to React](https://tech.instacart.com/why-we-moved-to-react/)
+    * [A love letter to jQuery](http://madebymike.com.au/writing/love-letter-to-jquery/)
+
+    ## Interviews
+
+    * [React.rocks interview](http://survivejs.com/blog/react-rocks-interview/)
+    * [Reindex interview](http://survivejs.com/blog/reindex-interview/)
+
+    ## Techniques
+
+    * [The Trie data structure](http://blog.benoitvallon.com/data-structures-in-javascript/the-trie-data-structure/)
+    * [Introducing the WebVR 1.0 API Proposal](https://hacks.mozilla.org/2016/03/introducing-the-webvr-1-0-api-proposal/)
+    * [Hardware Hacking With JavaScript](https://www.smashingmagazine.com/2016/02/hardware-hacking-with-javascript-internet-of-things/)
+
+    ## Tools
+
+    * [BackstopJS](https://garris.github.io/BackstopJS/) - Catch CSS curve balls

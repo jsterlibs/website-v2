@@ -1,0 +1,55 @@
+type: static
+title: "JSter #165: Libraries, and more"
+short_title: "JSter #165"
+user: bebraw
+slug: jster-165
+body: |
+  > JavaScript still has new tricks in its sleeves.
+
+  I've started running a series of vodcasts for React Finland. In the first one we covered React components and in [the next one](https://react-finland.fi/blog/vodcast-02/) (29th of March) we'll discuss accessibility.
+
+  ## Libraries
+
+  * [valtio makes proxy-state simple](https://www.npmjs.com/package/valtio)
+  * [nivo](https://nivo.rocks/) - nivo provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries
+  * [Local-first database: Hypermerge](https://jaredforsyth.com/posts/local-first-database-hypermerge/)
+  * [taufik-nurrohman/color-picker](https://github.com/taufik-nurrohman/color-picker) - A simple color picker application written in pure JavaScript, for modern browsers
+  * [Handsfree.js](https://handsfree.js.org/) - Build handsfree User Experiences and add face, hand, and pose tracking to your projects in a snap
+  * [raam](https://raam.joebell.co.uk/) - Beautifully boring cosmetic-free React.js components for structure and layout
+  * [andrasq/node-qrpc](https://github.com/andrasq/node-qrpc) - Quicker Node.js remote procedure call
+  * [ztext.js](https://bennettfeely.com/ztext/) - Easy to implement, 3D typography for the web. Works with every font
+  * [node-notifier](https://github.com/mikaelbr/node-notifier) - A Node.js module for sending notifications on native Mac, Windows and Linux (or Growl as fallback)
+  * [iamkun/dayjs](https://github.com/iamkun/dayjs) - 2KB immutable date-time library alternative to Moment.js with the same modern API
+  * [a-synchronous/rubico](https://github.com/a-synchronous/rubico) - [a]synchronous functional programming
+
+  ## Frameworks
+
+  * [Tone.js](https://tonejs.github.io/) - Web Audio framework for creating interactive music in the browser
+
+  ## Tools
+
+  * [wclr/yalc](https://github.com/wclr/yalc) - Work with yarn/npm packages locally like a boss
+  * [akx/source-from-sourcemaps](https://github.com/akx/source-from-sourcemaps) - Extract original source from JavaScript sourcemaps
+  * [hygen is the simple, fast, and scalable code generator that lives in your project](https://www.npmjs.com/package/hygen)
+  * [TypeScript 4.2](https://devblogs.microsoft.com/typescript/announcing-typescript-4-2/)
+
+  ## CSS
+
+  * [Rucksack](https://www.rucksackcss.org/) - makes proxy-state simple
+  * [AnimXYZ](https://animxyz.com/) - The first composable CSS animation toolkit
+  * [:focus-visible Is Here](https://matthiasott.com/notes/focus-visible-is-here)
+  * [PostCSS Viewport Height Correction](https://github.com/Faisal-Manzer/postcss-viewport-height-correction) - PostCSS plugin to solve the popular problem when 100vh doesn’t fit the mobile browser screen
+
+  ## SVG
+
+  * [Svg Wave](https://svgwave.in/) - Generate SVG Waves
+
+  ## Games
+
+  * [Text Quest: Unlock your imagination](https://textquest.io/)
+
+  ## Articles
+
+  * [Color palettes and accessibility features for data visualization](https://medium.com/carbondesign/color-palettes-and-accessibility-features-for-data-visualization-7869f4874fca)
+  * [Project Structure. Repository and folders. Review of approaches.](https://dev.to/alexsergey/project-structure-repository-and-folders-review-of-approaches-4kh2)
+  * [Is the Future of Web Design Polymorphic?](https://formidable.com/blog/2020/resize-observer/)

@@ -1,0 +1,56 @@
+type: static
+title: "JSter #67: News of March 2016 - Part 2"
+short_title: "JSter #67"
+user: bebraw
+slug: monthly-jster-march-2016-part-2
+body: |
+    > Return of the JavaScript
+
+    I came to a little realization with my [SurviveJS](http://survivejs.com/) effort a while ago. I actually had two books in one! As a result I extracted a book out of the first one. See [SurviveJS - Webpack v1.0.0](http://survivejs.com/blog/survivejs-webpack-100/). You can [purchase it through Leanpub](https://leanpub.com/survivejs-webpack) although there's a [free online edition](http://survivejs.com/webpack/introduction/) as well.
+
+    I still have to restructure the React book so that it doesn't have Webpack bits anymore. The idea is that once I complete this work, those who have bought [the current book](https://leanpub.com/survivejs_webpack_react) by then, will receive both. I feel this is the fairest way to deal with it.
+
+    ## Libraries
+
+    {{ screenshot: https://marak.github.io/faker.js/ }}
+
+    * [faker.js](https://marak.github.io/faker.js/) - Generate massive amounts of fake data in the browser and Node.js
+    * [Luminous](https://imgix.github.io/luminous/) - Simple, standalone lightbox
+    * [PureState](https://github.com/MaiaVictor/PureState) - The stupidest state management library that works
+    * [Introducing Feathers 2.0](https://blog.feathersjs.com/introducing-feathers-2-0-aae8ae8e7920)
+
+    ## Articles
+
+    * [Seams in JavaScript](https://bocoup.com/weblog/seams-in-javascript)
+    * [The Deep Roots of Javascript Fatigue](https://segment.com/blog/the-deep-roots-of-js-fatigue/)
+    * [Angular is a Design Pattern](http://blog.ionic.io/angular-is-a-design-pattern/)
+
+    ## WebAssembly
+
+    * [JavaScript founder Brendan Eich: WebAssembly is a game-changer](http://www.infoworld.com/article/3042705/web-development/javascript-founder-brendan-eich-webassembly-is-a-game-changer.html)
+    * [A WebAssembly Milestone](https://hacks.mozilla.org/2016/03/a-webassembly-milestone/) - Experimental Support in Multiple Browsers
+
+    ## ES6
+
+    * [ES6 is beautiful](http://ewanvalentine.io/es6-is-beautiful/)
+    * [Please stop referring to proposed JavaScript features as ES7](https://medium.com/@jayphelps/please-stop-referring-to-proposed-javascript-features-as-es7-cad29f9dcc4b)
+
+    ## Tutorials
+
+    * [Learning Observable By Building Observable](https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87)
+
+    ## Slides
+
+    * [Scala.js for large and complex frontend apps](https://docs.google.com/presentation/d/1lZn-Awr6OhtBfCpSRZXVABG7O7ApxzHbCqIfTXubVG4/edit)
+
+    ## Techniques
+
+    * [Using Lodash as a Collection of Micro-Libraries](http://knpw.rs/blog/using-lodash)
+    * [Metaballs and Marching Squares](http://jamie-wong.com/2014/08/19/metaballs-and-marching-squares/)
+    * [Element.scrollIntoView()](https://developer.mozilla.org/en/docs/Web/API/Element/scrollIntoView)
+    * [Why Ramda?](http://fr.umio.us/why-ramda/)
+
+    ## Tools
+
+    * [Storyboard](https://guigrpa.github.io/storyboard/) - End-to-end, hierarchical, real-time, colorful logs and stories
+    * [insight](https://github.com/3Dparallax/insight/) - A helpful Chrome extension for WebGL development

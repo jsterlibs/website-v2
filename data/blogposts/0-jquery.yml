@@ -1,0 +1,16 @@
+type: rating
+title: Top 1 jQuery
+user: DavertMik
+slug: top-1-jquery
+includes: [jQuery]
+body: |
+  It has become trendy to write Backbone based applications. But **Backbone is not the only Javascript MVC framework in the
+  world**. And as many developers say maybe not the best one for every purpose. You may find it too lightweight, and it may
+  lack the features you actually require. For example, you may want controllers and actual MVC stack, UI widgets, etc.
+  If you feel like Backbone is not for you there are many other different frameworks worth to check out. In this post
+  I will list some of the most popular ones.
+
+footer: |
+  And that's all. It's up to you what MVC framework to choose. At least you should look for alternatives to be sure you found the right one.
+  More MVC frameworks can be found here, on Jster. We have more then 20 [MVC frameworks](http://jster.net/category/mvc-frameworks) to choose, and
+  even more [application frameworks](http://jster.net/category/application-frameworks), if you want to go beyond MVC stack.

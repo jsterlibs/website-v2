@@ -1,0 +1,49 @@
+type: static
+title: "JSter #83: News of November 2016 - Part 2"
+short_title: "JSter #83"
+user: bebraw
+slug: monthly-jster-november-2016-part-2
+body: |
+    > JavaScript framework a day keeps the doctor away
+
+    It was another busy two weeks. There were two highlights. I released [Reactabular 8](https://reactabular.js.org/#/changelog). I did some major restructuring there to make it easier to grow the project in the future. [webpack-merge](https://www.npmjs.com/package/webpack-merge) reached version 1.0 as I consider it stable now. I also [wrote webpack-merge related interview](http://survivejs.com/blog/webpack-merge-interview/) that explains the idea better.
+
+    > We are running [React Indie Bundle](http://www.reactindiebundle.com/) again this year. So if you want to pick up content on React, check it out.
+
+    ## Libraries
+
+    {{ screenshot: https://github.com/aaronshaf/shaf-chart }}
+
+    * [shaf-chart](https://aaronshaf.github.io/shaf-chart/) - Convert tables to charts
+    * [Smoothie Charts](http://smoothiecharts.org/) - A JavaScript Charting Library for Streaming Data
+
+    ## Frameworks
+
+    * [Svelte](https://svelte.technology/) - The magical disappearing UI framework
+
+    ## Tutorials
+
+    * [An Introduction Into Lenses In JavaScript](https://medium.com/javascript-inside/an-introduction-into-lenses-in-javascript-e494948d1ea5)
+    * [A quick tour of JavaScript primitives](https://medium.com/@DveMac/a-quick-tour-of-javascript-primitives-894eceee31c2)
+    * [An Intro to Monkey Testing with Gremlins.js](https://css-tricks.com/intro-monkey-testing-gremlins-js/)
+
+    ## Guides
+
+    * [How to win in Web Framework Benchmarks](https://medium.com/@localvoid/how-to-win-in-web-framework-benchmarks-8bc31af76ce7)
+
+    ## Services
+
+    * [doiuse...?](http://www.doiuse.com/) - Figure out in which browsers your CSS breaks
+
+    ## Tools
+
+    * [React Style Guide](http://react-styleguidist.js.org/) - Live examples for your React components
+    * [testcafe](https://devexpress.github.io/testcafe/) - Automated browser testing for the modern web development stack
+    * [cramforce/splittable](https://github.com/cramforce/splittable) - Module bundler with support for code splitting, ES6 &amp; CommonJS modules
+    * [GoogleChrome/sw-precache](https://github.com/GoogleChrome/sw-precache) - A node module to generate service worker code that will precache specific resources so they work offline
+    * [X-ray](http://tachyons.io/xray/) - A chrome plugin for aligning objects to a grid
+    * [DragonsInn/fontgen-loader](https://github.com/DragonsInn/fontgen-loader) - Automated webfont generation from SVG icons for webpack
+
+    ## Demos
+
+    * [Google Arts and Culture Experiments](https://artsexperiments.withgoogle.com/)

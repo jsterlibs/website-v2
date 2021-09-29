@@ -1,0 +1,36 @@
+type: rating
+title: "Monthly JSter #1: Trending Libraries on March 2013"
+short_title: "Monthly JSter #1"
+user: davertmik
+slug: monthly-jster-march-2013
+includes: [Intro.js, Epoxy.js, Anima, Pass*Field, Textillate]
+body: |
+  
+  For not to get lost in all this libraries we have on JSter we decided to deliver each month a brief summary on Jster updates.
+  You will discover the most fresh and the most popular JavaScript libraries that were recently started or added to Jster. 
+  Don't miss them as they may save you the hours of work and ehnance any web applications. But before we start we have an announcement.
+
+  #### JSter team needs your help
+
+  Right now we are working on a project that will (as we think it) help web developers in managing user feedback. 
+  Meet [Bugira](http://bugira.com), a bugtracker that allows any visitor of your site to submit you a prefessional bugreport. 
+  Within this report you will receive the most complete data you might need to discover the issue and reproduce it.
+  You will know user's browser, OS, last actions and snapshot of a last page the user seen before the bug occur.
+
+  To bring this product to you **we need to collect feedback from our potential clients**. 
+  Indeed we require this to move on receiving investments. **[Pass this survey](http://www.surveymonkey.com/s/982RCG9)** and get a free year of premium access to Bugira (once it is launched).
+  Thanks for your time and let's go back to topic.
+
+  #### JavaScript libraries discovered on March 2013
+
+footer: |
+  
+  I hope that was useful to you. At least I've seen some libraries I would try in my next projects. If you think we missed a trending library, 
+  please [add it](http://jster.net/library/new) to Jster so we could at least mention it in next monthly listing.
+
+  #### JSter Site News
+
+  This month we added integration with [JSDelivr CDN](http://jsdelivr.com), **Bower** and **NPM**. This means now you can install a library directly from JSter.
+  Also we got our first [interview with author of awesome Minefield game](http://jster.net/blog/mienfield-author-interview). Whom should we interview next? Share your thought in comments.
+  That's all for first Monthly JSter. Take Care!
+

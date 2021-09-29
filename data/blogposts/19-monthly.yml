@@ -1,0 +1,60 @@
+type: static
+title: "Monthly JSter #2: News of April 2013"
+short_title: "Monthly JSter #2"
+user: bebraw
+slug: monthly-jster-april-2013
+body: |
+
+  It's that time of the month again, the monthly JSter time that is. We started this tradition [a month ago](http://jster.net/blog/monthly-jster-march-2013) and intend to keep at it. Compared to last time we changed the format a little bit. Now it's more of an aggregate of our [Twitter feed](https://twitter.com/jsterlibs). It can be very difficult to keep up with the fast moving scene and this little contribution of ours hopefully helps in that.
+
+  The service itself grew steadily during the past month. We refreshed the outlook a little bit and kept on doing small things here and there. And of course the amount of libraries we index keeps on growing. We also had our very first guest post by [Olaf Horstmann](http://indiegamr.com/). Check out his awesome article [Tools to Package Your HTML5 App for Mobile Devices](http://jster.net/blog/tools-to-package-your-html5-app-for-mobile-devices). Thanks for your contribution Olaf!
+
+  If you want to promote your JavaScript tool or library JSter's blog is the right place for that. Write a post about your library (tutorial, overview, or anything else) and we will publish it. In case you are interested in becoming a guest author, let us know. You may contact Michael at *davert.jster&lt;at&gt;mailican.com* or just poke us at Twitter. Either way works.
+
+  I think I've rambled enough. Enjoy the listings below!
+
+  {{ screenshot: jQuery }}
+
+  ## Libraries
+
+  * [jQuery 2.0](http://jster.net/library/jquery) - [News](http://blog.jquery.com/2013/04/18/jquery-2-0-released/). In short support for older IE has been dropped and the library trimmed. Now it's possible to assemble your own jQuery even.
+  * [Ender 1.0](http://jster.net/library/ender) - Ender, a frontend package manager, reached version 1.0
+  * [Rivets.js](http://jster.net/library/rivets-js) - Declarative data binding. Works with Backbone for instance.
+  * [Rendr](http://jster.net/library/rendr) - [Blogpost](http://nerds.airbnb.com/weve-open-sourced-rendr-run-your-backbonejs-a/), basically allows you to render Backbone views on server (Node.js) too
+  * [Browserify](https://github.com/substack/node-browserify) - Node.js style require in browser. It reached version 2.0 two months ago and has been stabilizing since.
+
+  {{ screenshot: Brackets }}  
+
+  ## Tools
+
+  * [brackets.io](http://brackets.io/) - Finally an editor built web development as a priority number one! Still in early stages but looks very promising already.
+  * [Light Table](http://www.lighttable.com/) - Light Table, an interactive IDE, reached 0.4.0 recently. There are some JS related goodies included.
+  * [dependo](https://github.com/auchenberg/dependo) - Visualize your CommonJS or AMD module dependencies in a force directed graph report
+  * [Plato](http://ariya.ofilabs.com/2013/01/javascript-code-complexity-visualization.html) - Plato provides a complexity report on your code. Spot the knots and whatnots.
+  * [Tern](https://github.com/marijnh/tern) - Tern takes JavaScript editing to the next level. Expect a plugin for your favorite text editor soon. Note that brackets.io comes with Tern already.
+  * [JSON Editor Online](http://jsoneditoronline.org/) - A nice way to visualize your JSON so that even Jason may understand it. No offense Jason.
+
+  ## Articles
+
+  * [Callbacks are imperative, promises are functional: Node’s biggest missed opportunity](http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/)
+  * [Single Page Web App Security Cheat Sheet](https://github.com/eoftedal/writings/blob/master/published/javascript-security-cheat-sheet.md)
+  * [Enhance Your Next Presentation with HTML5](http://jster.net/blog/html5-presentation-impress-reveal-deck-bespoke)
+  * [Unix Philosophy and Node.js](http://blog.izs.me/post/48281998870/unix-philosophy-and-node-js)
+  * [Tools to Package Your HTML5 App for Mobile Devices](http://jster.net/blog/tools-to-package-your-html5-app-for-mobile-devices)
+  * [Interview with Paul Miller: maker of Chaplin and Brunch](http://jster.net/blog/chaplin-brunch-author-interview)
+  * [Interview with Esa-Matti Suuronen, developer of underscore.string](http://jster.net/blog/Esa-Matti-Suuronen-interview-underscore-string)
+
+  ## Demos
+
+  * [JavaScript Scope Context Coloring](http://daniellmb.github.io/JavaScript-Scope-Context-Coloring/example/scope-coloring.html) - Maybe you will understand JavaScript scopes after checking out this demo
+  * [Star Logs](http://starlogs.net/) - Your GitHub project logs displayed in a rather interesting way
+  * [Accordion](http://artpolikarpov.github.io/garmoshka/) - Yes, you can play it
+  * [GitLife](http://gitlife.mrmikea.com/) - Now you can put those hard earned GitHub contributions in work
+  * [Pathfinding visualization](http://qiao.github.io/PathFinding.js/visual/) - AI guys will love this
+  * [CSS3 FPS](http://www.keithclark.co.uk/labs/css3-fps/) - And there you thought it would be impossible to implement Doom using some JavaScript and CSS
+
+  ## Presentation Slides
+
+  * [Sane Async Patterns](http://www.slideshare.net/TrevorBurnham/sane-async-patterns/)
+  * [DevTools can do THAT?](https://docs.google.com/presentation/d/1DNljLkRpe9LIDfcqcpHzdLvEOyuVH4d1y9dtAJBr1I8/preview)
+  * [Survive JavaScript - Strategies and Tricks](http://www.slideshare.net/bebraw/survive-javascript-strategies-and-tricks)

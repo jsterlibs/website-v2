@@ -1,0 +1,57 @@
+type: static
+title: "JSter #168: Libraries, and more"
+short_title: "JSter #168"
+user: bebraw
+slug: jster-168
+body: |
+  > To JavaScript or not to JavaScript
+
+  The next React Finland vodcast takes place 26th of May (16:00 GMT+0) and we'll focus on Next.js. [Join us](https://www.youtube.com/watch?v=mMU-j0WoTCs) or watch later.
+
+  ## Libraries
+
+  * [xstyled](https://xstyled.dev/) - Build your entire website using JSX and Props
+  * [System Props](https://system-props.com/) - Theme-driven style props
+  * [fgnass/typed-rpc](https://github.com/fgnass/typed-rpc) - Lightweight JSON-RPC solution for TypeScript projects
+  * [KittyGiraudel/a11y-dialog](https://github.com/KittyGiraudel/a11y-dialog) - A very lightweight and flexible accessible modal dialog script
+  * [react-hot-toast](https://react-hot-toast.com/) - Smoking hot React toasts
+  * [nextapps-de/flexsearch](https://github.com/nextapps-de/flexsearch) - Next-Generation full text search library for Browser and Node.js
+  * [tiptap](https://www.tiptap.dev/) - Headless WYSIWYG Text Editor
+  * [pubkey/rxdb](https://github.com/pubkey/rxdb) - A realtime Database for JavaScript Applications
+
+  ## Tools
+
+  * [hfour/wsrun](https://github.com/hfour/wsrun) - Command runner for Yarn workspaces. Dependency aware
+  * [egoist/esmon](https://github.com/egoist/esmon) - Like nodemon but very esbuild
+
+  ## Frameworks
+
+  * [RedwoodJS](https://redwoodjs.com/) - Bringing full-stack to the Jamstack
+  * [sprinkles](https://github.com/seek-oss/vanilla-extract/tree/master/packages/sprinkles) - Zero-runtime atomic CSS framework for vanilla-extract.
+  * [asos-craigmorten/opine](https://github.com/asos-craigmorten/opine) - Fast, minimalist web framework for Deno ported from ExpressJS
+  * [dubzzz/fast-check](https://github.com/dubzzz/fast-check) - Property based testing framework for JavaScript (like QuickCheck) written in TypeScript
+  * [Inertia.JS](https://www.infoq.com/news/2020/12/inertia-modern-monolith/) - Lets developers write API-Free monolithic React/Vue/Svelte applications in PHP or Ruby
+  * [Foal](https://foalts.org/) - Node.JS framework for building web applications
+
+  ## Articles
+
+  * [vno: a vue / deno love story](https://itnext.io/vno-a-vue-deno-love-story-a9dd4d130ac7) - The first native build tool for compiling and bundling Vue single-file components in a Deno runtime
+  * [Exploring the Page Visibility API for Detecting Page Background State](https://tech.trivago.com/2020/11/17/exploring-the-page-visibility-api-for-detecting-page-background-state/)
+  * [Deno alternatives to popular Node projects](https://blog.logrocket.com/deno-alternatives-to-popular-node-projects/)
+
+  ## Standards
+
+  * [Web Data Render](https://webdatarender.com/) - New standard for light web sites
+
+  ## Platforms
+
+  * [Capacitor](https://capacitorjs.com/) - A cross-platform native runtime for web apps
+  * [Cube.js](https://cube.dev/) - Open Source Analytical API Platform
+
+  ## CSS
+
+  * [20 Outstanding CSS Grid Designs & Effects](https://bashooka.com/inspiration/css-grid-designs-effects/)
+
+  ## a11y
+
+  * [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)

@@ -1,0 +1,88 @@
+type: static
+title: "Monthly JSter #14: News of January 2014"
+short_title: "Monthly JSter #14"
+user: bebraw
+slug: monthly-jster-january-2014-part-1
+body: |
+    Time to JSter again. This time we have quite the mixed bag and a couple of new categories even. Say hi to war stories, React, Build Systems and Dependency Management. Facebook's React has gained some hype in particular. Time will tell whether it will stick. Same goes for Gulp, a build system that aims to shake the hegemony of Grunt.
+
+    No matter what happens developers win as the tools and libraries become more mature. It's a good time to be a web developer. Something new to learn every day. :)
+
+    Remember that Monthly JSter is available as [a newsletter](http://eepurl.com/zB_g5). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content including interviews or book reviews.
+
+    ## Libraries
+
+    * [voxel.js](http://voxeljs.com/) - Open source voxel game building toolkit. Fancy a minecraft?
+
+    ## Node.js
+
+    {{ screenshot: http://www.mariocasciaro.me/dependency-injection-in-node-js-and-other-architectural-patterns }}
+
+    * [Dependency Injection in Node.js and Other Architectural Patterns](http://www.mariocasciaro.me/dependency-injection-in-node-js-and-other-architectural-patterns)
+    * [package.json - An Interactive Guide](http://package.json.nodejitsu.com/) - Figure out what those properties mean!
+
+    ## 3D
+
+    {{ screenshot: http://learningthreejs.com/blog/2013/12/31/zero-to-nyancat-in-30-seconds-flat/ }}
+
+    * [Zero to Nyancat in 30 Seconds Flat!](http://learningthreejs.com/blog/2013/12/31/zero-to-nyancat-in-30-seconds-flat/)
+    * [9 Mind-Blowing WebGL Demos](http://davidwalsh.name/webgl-demos)
+
+    ## War Stories
+
+    {{ screenshot: http://nathanleclaire.com/blog/2013/12/28/the-good-the-bad-and-the-ugly-of-sails-dot-js-realtime-javascript-mvc-framework/ }}
+
+    * [The Good, The Bad, and The Ugly of Sails.js, Realtime JavaScript MVC Framework](http://nathanleclaire.com/blog/2013/12/28/the-good-the-bad-and-the-ugly-of-sails-dot-js-realtime-javascript-mvc-framework/)
+    * [The Once-A-Month Javascript Bug](http://blog.thelonepole.com/2014/01/the-once-a-month-javascript-bug/)
+
+    ## Angular.js
+
+    {{ screenshot: http://nathanleclaire.com/blog/2014/01/04/5-smooth-angularjs-application-tips/ }}
+
+    * [4 Smooth Angular.js Application Tips](http://nathanleclaire.com/blog/2014/01/04/5-smooth-angularjs-application-tips/) - Tab highlighting, services, retaining state from view to view, AJAX calls from services. There. Spoiled that for you.
+    * [Cookies vs. Tokens. Getting auth right with Angular.js](http://blog.auth0.com/2014/01/07/angularjs-authentication-with-cookies-vs-token/)
+
+    ## Techniques
+
+    {{ screenshot: http://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/ }}
+
+    * [Everything you wanted to know about JavaScript scope](http://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/)
+    * [Awesome Responsive Screenshots](http://johnpolacek.com/2013/04/16/awesome-responsive-screenshots/)
+    * [Efficient JavaScript Vector Math](http://media.tojicode.com/sfjs-vectors/) - Slides
+    * [Why @spion is switching to promises?](http://spion.github.io/posts/why-i-am-switching-to-promises.html)
+
+    ## React
+
+    {{ screenshot: http://www.lispcast.com/react-another-level-of-indirection }}
+
+    * [React: Another Level of Indirection](http://www.lispcast.com/react-another-level-of-indirection)
+    * [React beginner tutorial: implementing the board game Go](http://cjlarose.com/2014/01/09/react-board-game-tutorial.html)
+
+    ## Build Systems
+
+    {{ screenshot: http://travismaynard.com/writing/getting-started-with-gulp }}
+
+    * [Gulp - The Streaming Build System](http://slid.es/contra/gulp#/) - Slides. Say bye to spaghetti and magic.
+    * [Getting Started with Gulp](http://travismaynard.com/writing/getting-started-with-gulp)
+    * [Why ./task.js?](https://gist.github.com/substack/8313379)
+
+    ## Dependency Management
+
+    {{ screenshot: http://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html }}
+
+    * [Browserify and the Universal Module Definition](http://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)
+    * [Dependencies, Modules & Browserify](http://www.slideshare.net/johannilsson/dependencies-modules-browserify) - Slides
+
+    ## Tools
+
+    {{ screenshot: http://matthewlein.com/ceaser/ }}
+
+    * [Ceaser - CSS Easing Animation Tool](http://matthewlein.com/ceaser/)
+    * [Datafiddle](http://www.datafiddle.net/) - Like jsFiddle but for data. Write scrapers using this.
+    * [clrs.cc - A nicer color palette for the web](http://clrs.cc/) - Escape the 90s and look like a pro.
+    * [Breakouts](http://city41.github.io/breakouts/) - Like [TodoMVC](http://todomvc.com/) but for game engines!
+    * [uncss](https://github.com/giakki/uncss) - Remove unused styles from CSS. Bye bye bloat.
+
+    ## Conclusion
+
+    > What's the coldest HTML tag? \<br\>

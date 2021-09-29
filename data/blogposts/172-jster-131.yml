@@ -1,0 +1,44 @@
+type: static
+title: "JSter #131: Libraries and tutorials"
+short_title: "JSter #131"
+user: bebraw
+slug: jster-131
+body: |
+    > TypeScript to JavaScript as an airbag is to a car
+
+    We announced [React Finland 2019](https://react-finland.fi/) (24-26.4.2019) recently. It's going to be one day of workshops and two days of conferences (single track) again. This time around we'll have professional MCs and even more speakers than before. It's not the worst reason to visit Finland.
+
+    I hope you enjoy xmas and have a great coming year!
+
+    ## Libraries
+
+    * [umpox/TinyEditor](https://github.com/umpox/TinyEditor) - A functional HTML/CSS/JS editor in less than 400 bytes
+    * [WebReflection/domdiff](https://github.com/WebReflection/domdiff) - Diffing the DOM without virtual DOM
+    * [redux-concise](https://www.npmjs.com/package/redux-concise) - Redux but concise
+    * [Announcing Pino V5.0.0](https://www.nearform.com/blog/announcing-pino-v5-0-0/) - Low-overhead, newline-delimited-JSON logger
+    * [typeorm](https://github.com/typeorm/typeorm) - ORM for TypeScript and JavaScript
+
+    ## Tutorials
+
+    * [Make JavaScript Testing Work for You](https://medium.com/yazanaabed/what-i-know-about-testing-in-javascript-6657d2188c3a) 
+    * [How to fix dragging animation in UI with simple math](https://uxdesign.cc/how-to-fix-dragging-animation-in-ui-with-simple-math-4bbc10deccf7) 
+    * [Node.js with React: Full Stack JS with Strapi Tutorial](https://snipcart.com/blog/node-js-react-strapi-tutorial) 
+    * [How to deal with dirty side effects in your pure functional JavaScript](https://jrsinclair.com/articles/2018/how-to-deal-with-dirty-side-effects-in-your-pure-functional-javascript/) 
+    * [How to write async await without try-catch blocks in JavaScript](https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/) 
+
+    ## Articles
+
+    * [Node.js API and Web Frameworks for 2019](https://checklyhq.com/blog/2018/12/node.js-api-and-web-frameworks-for-2019/) 
+    * [A Recap of Frontend Development in 2018](https://levelup.gitconnected.com/a-recap-of-frontend-development-in-2018-715724c9441d) 
+
+    ## Demos
+
+    * [Let there be light](https://codepen.io/perbyhring/pen/wGQmNY) 
+
+    ## Exercises
+
+    * [JSter auf Twitter: "jlengstorf/learn-fp-exercises](https://github.com/jlengstorf/learn-fp-exercises) - A collection of exercises to accompany a half-day workshop on the basics of functional programming.
+
+    ## Resources
+
+    * [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms) - Algorithms and data structures implemented in JavaScript with explanations and links to further readings

@@ -1,0 +1,47 @@
+type: static
+title: "JSter #136: Libraries and more"
+short_title: "JSter #136"
+user: bebraw
+slug: jster-136
+body: |
+  > I'm gonna make him a JavaScript he can't refuse
+
+  [React Finland](https://react-finland.fi/) (24-26.04) has moved to the late stage in sales. The conference is shaping up well and I can't wait for it.
+
+  ## Libraries
+
+  * [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - If regular expressions are too much for you, try verbal expressions
+  * [RauliL/pakertaja](https://github.com/RauliL/pakertaja) - JavaScript library for building HTML
+  * [ruiaraujo/graphql-jit](https://github.com/ruiaraujo/graphql-jit) - GraphQL execution using a JIT compiler
+  * [NSFW.js](https://shift.infinite.red/avoid-nightmares-nsfw-js-ab7b176978b1) - Avoid nightmares
+  * [optimalbits/bull](https://github.com/optimalbits/bull) - Premium Queue package for handling distributed jobs and messages in NodeJS
+
+  ## Articles
+
+  * [Node.js multithreading](https://blog.logrocket.com/node-js-multithreading-what-are-worker-threads-and-why-do-they-matter-48ab102f8b10) - What are Worker Threads and why do they matter?
+  * [12 strange things that can happen after installing a npm package](https://blog.usejournal.com/12-strange-things-that-can-happen-after-installing-an-npm-package-45de7fbf39f0) - npm is strange
+
+
+  ## Interviews
+
+  * [Codecrumbs](https://survivejs.com/blog/codecrumbs-interview/) - Document a Codebase by Breadcrumbs - Interview with Bohdan Liashenko
+
+  ## Lists
+
+  * [i0natan/nodebestpractices](https://github.com/i0natan/nodebestpractices) - The largest Node.js best practices list
+
+  ## UX
+
+  * [UX Patterns from Hell - The escaping button](https://codepen.io/akx/pen/RdNrBx)
+
+  ## Art
+
+  * [Pure CSS Still Life](https://codepen.io/ivorjetski/pen/xMJoYO) - Someone has too much time
+
+  ## Techniques
+
+  * [How Olavi made his blog blazing fast](https://olavihaapala.fi/2019/02/19/how-i-made-my-blog-blazing-fast.html)
+
+  ## Demos
+
+  * [Pure CSS Animated Rubik's](https://codepen.io/thegreatercurve/pen/vXxvEb)

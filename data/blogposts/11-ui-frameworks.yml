@@ -1,0 +1,27 @@
+type: rating
+title: "Web UI Frameworks Worth a Try"
+user: davertmik
+includes: ["Foundation", "Fuel UX", "HTML KickStart", "MetroUI", "Groundwork", "AlloyUI", "Kendo UI", "Ignite UI"]
+slug: web-ui-frameworks-worth-a-try
+body: |
+
+  We have been used to the fact that every second site looks like Twitter. That's because of their awesome [Bootstrap](http://twitter.github.com/bootstrap) UI framework.
+  We've seen CSS frameworks before, but all of them were narrow enough to solve one problem at a time. Usually this meant a grid layout and resetting CSS.
+  Twitter Bootstrap not only provides you with flexible responsive grids but adds many useful components. 
+  It's pretty easy to build a prototype site just by adding appropriate classes into your tags and see how beautiful CSS3 magic unfold on your pages.
+
+  From another point of view, a site built with Bootstrap loses it's individuality. When you see Twitter buttons and menus, you can even forget what site are you at.
+  They generally look just the same. It's pretty ok, when you do a site for [non-profitable organizations](http://moms.io/) or an [open-source project](http://codeception.com).
+  Such sites will look clean and handy without a penny spent on designing them.
+
+  But how to make site look more unique?
+
+  Let's try something different then. There are many UI frameworks available. Most of them are free but some are commercial.
+  Some can be great alternatives to Bootstrap and some are targeted for mobile usage. So here they are, with their official descriptions.
+
+footer: |
+  
+  As a conclusion, I'd suggest you to try **Foundation** if you are fan of semantic web and SASS. With 4th version of Foundation you can get rid of style-classes in layout and use only SASS mixins for styling. **Groundwork** was inspired by Foundation but adds something of their own.
+  Try **MetroUI** or [FlatUI](http://designmodo.github.com/Flat-UI/) if you prefer modern flat look promoted by Microsoft.
+  If you want to have a site look like Jira, try [Atlassian UI Pack](https://developer.atlassian.com/design/).
+  KendoUI and IgniteUI are the best for designing native-like mobile interfaces. Consider alternatives and choose the framework based on your tastes.

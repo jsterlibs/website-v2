@@ -1,0 +1,96 @@
+type: static
+title: "Monthly JSter #9: News of October 2013"
+short_title: "Monthly JSter #9"
+user: bebraw
+slug: monthly-jster-october-2013-part-2
+body: |
+    Time for the second JSter blast of October. We've got some nice resources coming right up! There's even a headless Halloween surprise in store.
+
+    Remember that Monthly JSter is available as [a newsletter](http://eepurl.com/zB_g5). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content including interviews.
+
+    ## Libraries
+
+    {{ screenshot: http://www.chocolatechip-ui.com/ }}
+
+    * [ChocolateChip-UI](http://www.chocolatechip-ui.com/) - Native look on mobile for web apps. [JSter entry](http://jster.net/library/chocolatechip-ui)
+    * [React v0.5](http://facebook.github.io/react/blog/2013/10/16/react-v0.5.0.html) - [JSter entry](http://jster.net/library/react)
+    * [oboe.js](https://github.com/jimhigson/oboe.js) - Parse JSON objects before response completes [JSter entry](http://jster.net/library/oboe-js)
+    * [Snap.svg](http://snapsvg.io/) - The JavaScript SVG library for the modern web. [JSter entry](http://jster.net/library/snap-svg)
+    * [regenerator](https://github.com/facebook/regenerator) - ES6 generators for ES5. [JSter entry](http://jster.net/library/regenerator)
+    * [device.js](https://github.com/matthewhudson/device.js) - Conditional CSS and/or JavaScript based on device operating system. [JSter entry](http://jster.net/library/device-js)
+    * [password-score](https://github.com/davidstutz/password-score) - Password scoring library. [Article](http://davidstutz.de/password-score-password-strength-estimation-using-javascript/). [JSter entry](http://jster.net/library/password-score)
+    * [Offline](http://github.hubspot.com/offline/docs/welcome/) - Alert your users of lost connection. [JSter entry](http://jster.net/library/offline)
+    * [fullPage.js](http://alvarotrigo.com/fullPage/) - Create beautiful fullscreen scrolling websites. [JSter entry](http://jster.net/library/fullpage-js)
+    * [Riot.js](https://moot.it/riotjs/) - MVC framework, in 1k! According to the author it is "The fastest, smallest and most powerful way to build large scale web applications". [JSter entry](http://jster.net/library/riot-js)
+
+    ## Articles
+
+    {{ screenshot: http://blog.alexanderdickson.com/javascript-nes-emulator-part-1 }}
+
+    * [Exploring Color Matching in JavaScript](http://html5hub.com/exploring-color-matching-in-javascript/)
+    * [Write a NES Emulator with JavaScript](http://blog.alexanderdickson.com/javascript-nes-emulator-part-1)
+    * [Challenging CSS Best Practices](http://coding.smashingmagazine.com/2013/10/21/challenging-css-best-practices-atomic-approach/)
+    * [Functional Refactoring in JavaScript](http://victorsavkin.com/post/63551894251/functional-refactoring-in-javascript)
+    * [You're Missing the Point of Promises](http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/)
+    * [Building a 3D MMO Using WebSockets](http://davidwalsh.name/3d-websockets)
+    * [The JavaScript Event Loop: Explained](http://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/)
+    * [Well Rounded: Compound Shapes in CSS](http://css-tricks.com/well-rounded-compound-shapes-css/)
+
+    ### Angular.js
+
+    {{ screenshot: http://www.neevtech.com/blog/2013/08/17/5-cool-features-in-angularjs-1-2/ }}
+
+    * [5 Cool New Features in AngularJS 1.2](http://www.neevtech.com/blog/2013/08/17/5-cool-features-in-angularjs-1-2/)
+    * [A Lower Technology Style of Angular for the Enterprise](http://paulhammant.com/2013/10/23/a-lower-tech-style-of-angular-for-the-enterprise/)
+    * [What you need to know about Angular SEO](http://www.ng-newsletter.com/posts/serious-angular-seo.html)
+    * [Things That Suck in AngularJS](http://lhorie.blogspot.ca/2013/09/things-that-suck-in-angularjs.html)
+
+    ## Presentations
+
+    * [The Future of data-binding is Object.observe()](http://addyosmani.com/blog/the-future-of-data-binding-is-object-observe/)
+
+    ## Resources
+
+    {{ screenshot: http://startbootstrap.com/ }}
+
+    * [Start Bootstrap](http://startbootstrap.com/) - Free HTML Starter Templates for Bootstrap
+    * [Annotated ECMAScript 5.1](http://es5.github.io/)
+    * [DocHub](http://dochub.io/) - Web development documentation in one place
+    * [Dash](https://dash.generalassemb.ly/) - Learn to make awesome websites
+    * [CSSDB](http://cssdb.co/) - A curated collection of great CSS, SASS, LESS and Stylus libraries
+
+    ## Tools
+
+    * [CSS cubic-bezier builder](http://www.roblaplaca.com/examples/bezierBuilder/)
+    * [Fiddle Salad](http://fiddlesalad.com/) - Yup, a competitor to jsfiddle, jsbin and co.
+    * [Kojak](http://theironcook.github.io/Kojak/) - A simple JavaScript performance profiler
+    * [GLSL Sandbox](http://glsl.heroku.com/)
+    * [Kick.js shader editor](http://www.kickjs.org/example/shader_editor/shader_editor.html)
+    * [browser-sync](https://github.com/shakyShane/browser-sync) - Successor of LiveReload is here? See also [related article](http://css-tricks.com/cross-browser-css-injection/).
+    * [TrifleJS](http://triflejs.org/) - Headless IE! Happy Halloween.
+    * [Retire.js](http://bekk.github.io/retire.js/) - Scan your Node.js app to find known vulnerabilities.
+
+    ## Games
+
+    * [Heroes of Sokoban](http://www.puzzlescript.net/play.html?p=6860122) - If you like Sokoban and RPGs, you will love this. [Part 2](http://www.puzzlescript.net/play.html?p=6910207), [Part 3](http://www.puzzlescript.net/play.html?p=7072276).
+
+    ## Demos
+
+    {{ screenshot: http://tympanus.net/Development/AnimatedCheckboxes/ }}
+
+    * [Animated Checkboxes and Radio Buttons with SVG](http://tympanus.net/Development/AnimatedCheckboxes/)
+    * [Museum of Mario](http://mario.ign.com/)
+    * [Wolfensteiny](http://www.p01.org/releases/wolfensteiny/) - You can achieve a lot in 251 bytes.
+    * [Canvas Cycling](http://www.effectgames.com/demos/canvascycle/) - Golden oldie.
+    * [Cartman in CSS](http://codepen.io/LFeh/pen/qzDCJ) - Kick ass.
+
+    ### Emulators
+
+    * [Turbo Pascal](http://www.teamten.com/lawrence/projects/turbo_pascal_compiler/demo/) - [Article](http://www.teamten.com/lawrence/projects/turbo_pascal_compiler/)
+    * [x86 emulator](http://copy.sh/v24/)
+    * [Windows v1.01 emulator](http://jsmachines.net/demos/pc/cga-win101/xt-cga-win101.xml) - Those were the days.
+    * [OS 7 emulator](http://jamesfriend.com.au/pce-js/)
+
+    ## Conclusion
+
+    > Speed dating is awful. 7 minutes isn't long enough to explain closures to someone.

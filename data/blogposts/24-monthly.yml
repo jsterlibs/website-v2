@@ -1,0 +1,82 @@
+type: static
+title: "Monthly JSter #4: News of June 2013"
+short_title: "Monthly JSter #4"
+user: bebraw
+slug: monthly-jster-june-2013
+body: |
+
+  It looks like the JS people are pretty busy even in the Summer months. I mentioned about a sibling service in [our previous monthly JSter](http://jster.net/blog/monthly-jster-may-2013). We've officially released it! Check out [CDNperf](http://www.cdnperf.com/).
+
+  **CDNperf** is a service that allows you to benchmark various CDN providers focusing on JavaScript libraries and frameworks. Our service uses [Pingdom](https://www.pingdom.com/) as the data provider. The user interface is development of our own.
+
+  Remember that Monthly JSter is available as [a newsletter](http://eepurl.com/zB_g5). We promise to spam you only once per month!
+
+  ## Libraries
+
+  * [js-sequence-diagrams](http://bramp.github.io/js-sequence-diagrams/) - Write your UML sequence diagrams! [JSter entry](http://jster.net/library/js-sequence-diagrams)
+  * [ansi-canvas](https://github.com/TooTallNate/ansi-canvas) - Render canvas to your terminal. [JSter entry](http://jster.net/library/ansi-canvas)
+
+  ## Articles
+
+  * [5 HTML5 Javascript APIs to keep an eye on](http://daker.me/2013/06/5-html5-javascript-apis-to-keep-an-eye-on.html)
+  * [A Study on Solving Callbacks with JavaScript Generators](http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators)
+  * [Build a motion activated security camera, with WebRTC, canvas and Device Orientation](http://www.webdirections.org/blog/build-a-motion-activated-security-camera-with-webrtc-canvas-and-device-orientation/)
+  * [Callbacks vs Coroutines](https://medium.com/code-adventures/174f1fe66127)
+  * [Blazing fast node.js: 10 performance tips from LinkedIn Mobile](http://engineering.linkedin.com/nodejs/blazing-fast-nodejs-10-performance-tips-linkedin-mobile)
+  * [AngularJS vs Ember](http://eviltrout.com/2013/06/15/ember-vs-angular.html)
+  * [Refactoring DOM Heavy JS](http://javascriptplayground.com/blog/2013/06/refactoring-js/)
+  * [Intro to Web Workers](https://zapier.com/engineering/intro-to-web-workers/)
+  * [npm: innovation through modularity](http://blog.nodejitsu.com/npm-innovation-through-modularity)
+  * [Comparing Node.js Support on PaaS Hosting Providers](http://blog.strongloop.com/a-comparison-of-node-js-paas-hosting-providers/)
+  * [Performance Tuning](http://nerds.airbnb.com/performance-tuning/) - See how the [airbnb](https://www.airbnb.com/) guys do it.
+  * [Mobile Web Problems and How to Avoid Them](http://bradfrostweb.com/blog/post/mobile-web-problems/)
+
+  {{ screenshot: http://jsbooks.revolunet.com/ }}
+
+  ## Resources
+
+  * [JSbooks](http://jsbooks.revolunet.com/) - A collection of free JavaScript related books.
+  * [blakeembrey/code-problems](https://github.com/blakeembrey/code-problems) - Common code problems solved in JavaScript.
+  * [NodeZoo](http://nodezoo.com/) - Search engine for Node.js modules.
+  * [Secrets of the Browser Developer Tools](http://devtoolsecrets.com/)
+  * [Open Web Platform Daily Digest](http://webplatformdaily.org/)
+  * [The Toolbox](http://thetoolbox.cc/) - A collection of the best time-saving apps, tools, and widgets from around the web.
+  * [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - If you don't feel overwhelmed yet, check out this list!
+  * [The JavaScript Cookbook](http://www.javascriptcookbook.com/) - Common problems and their solutions
+
+  {{ screenshot: http://www.json-generator.com/ }}
+
+  ## Tools
+
+  * [JSON Generator](http://www.json-generator.com/) - Dummy data generator for dummies.
+  * [David](https://david-dm.org/) - David watches your Node.js dependencies and keeps your project up to date
+  * [picnicc](https://picni.cc/) - Custom builds made easy
+  * [Hitch](http://hitchjs.com/) - Extension model for CSS
+  * [IE Virtual Machines](http://www.modern.ie/en-US/virtualization-tools#downloads)
+  * [HTML Inspector](https://github.com/philipwalton/html-inspector/)
+  * [NV/chrome-devtools-autosave](https://github.com/NV/chrome-devtools-autosave) - Auto-saving CSS and JavaScript changes from the Chrome Developer Tools.
+  * [Goodbye node-forever, hello PM2](http://devo.ps/blog/2013/06/26/goodbye-node-forever-hello-pm2.html)
+
+  ## Slides
+
+  * [Master the CLI with Node](http://michaelbrooks.ca/deck/jsconf2013)
+  * [node.js - production site architecture](http://www.slideshare.net/BenLin2/webconf-nodejsproductionarchitecture)
+  * [Typography ABC](http://alupark.fi/presentations/typography/)
+  * [A Picture Costs a Thousand Words](http://www.slideshare.net/guypod/a-picture-costs-a-thousand-words18062013)
+  * [A Baseline for Web Performance with PhantomJS](https://speakerdeck.com/wesleyhales/a-baseline-for-web-performance-with-phantomjs)
+
+  ## Demos
+
+  * [Seriously](http://seriouslyjs.org/) - Amazing video compositor in JavaScript.
+  * [Leaflet, Jony Ive edition](http://bl.ocks.org/mourner/5780503)
+  * [Genetic Cars 2](http://rednuht.org/genetic_cars_2/)
+
+  ## Games
+
+  * [Request Quest](http://jakearchibald.github.io/request-quest/)
+  * [muchmala](http://muchmala.com/) - Jigsaw the mmorpg
+  * [stream-adventure](https://npmjs.org/package/stream-adventure)
+
+  ## Conclusion
+
+  > Array(16).join('lol' - 2) + ' Batman!';

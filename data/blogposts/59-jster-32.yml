@@ -1,0 +1,57 @@
+type: static
+title: "JSter #32: News of October 2014 - Part 1"
+short_title: "JSter #32"
+user: bebraw
+slug: monthly-jster-october-2014-part-1
+body: |
+    > It takes two to JS.
+
+    ## Libraries
+
+    {{ screenshot: http://typicode.github.io/pegasus/ }}
+
+    * [AngularJS: AngularJS 1.3.0 – superluminal-nudge](http://angularjs.blogspot.com/2014/10/angularjs-130-superluminal-nudge.html)
+    * [PathFinding.js](http://qiao.github.io/PathFinding.js/visual/) - Basic path finding algorithms for JavaScript to help you find your way back home.
+    * [verb](http://verbnurbs.com/) - A CAD library for the web. NURBS and all that fun.
+    * [Pegasus](http://typicode.github.io/pegasus/) - Pegasus loads your data in parallel with your other scripts.
+
+    ## Articles
+
+    {{ screenshot: http://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make }}
+
+    * [10 Top Mistakes Angular.js Developers Make](http://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make)
+    * [From Backbone To React: Our Experience Scaling a Web Application](http://www.techsonian.net/2014/09/from-backbone-to-react-our-experience-scaling-a-web-application)
+    * [AngularJS vs. Backbone.js vs. Ember.js](http://www.airpair.com/js/javascript-framework-comparison)
+    * [Apple's Biggest Announcement Yet Isn't About Phones Or Watches](http://developer.telerik.com/featured/apples-biggest-announcement-yet-isnt-phones-watches/)
+    * [From AngularJS to React: The Isomorphic Way](http://blog.risingstack.com/from-angularjs-to-react-the-isomorphic-way/)
+
+    ## Guides
+
+    * [ReactJS For Stupid People](http://blog.andrewray.me/reactjs-for-stupid-people/) - Of course that does not include you.
+    * [Sustainability vs Speed](http://www.reddit.com/r/javascript/comments/2gfype/sustainability_vs_speed/) - Good Reddit discussion on the topic.
+    * [docs.gl](http://docs.gl/) - OpenGL API documentation.
+
+    ## Techniques
+
+    * [Six reasons to define constructors with only one argument](https://gcanti.github.io/2014/09/25/six-reasons-to-define-constructors-with-only-one-argument.html) - It just makes a lot of sense in JS.
+    * [Add Rules to Stylesheets with JavaScript](http://davidwalsh.name/add-rules-stylesheets)
+    * [5 Guidelines For Avoiding Scope Soup in Angular](http://www.technofattie.com/2014/03/21/five-guidelines-for-avoiding-scope-soup-in-angular.html)
+    * [Emerging Patterns in JavaScript Event Handling](http://www.sitepoint.com/emerging-patterns-javascript-event-handling/)
+
+    ## Tools
+
+    {{ screenshot: http://gaearon.github.io/react-hot-loader/ }}
+
+    * [react-hot-loader](http://gaearon.github.io/react-hot-loader/) - JSX live reload for React fans out there.
+    * [JSON Viewer](http://codebeautify.org/view/jsonviewer) - You can also convert your JSON to enterprise friendly XML using this tool!
+    * [Lapple/ErrorBoard](https://github.com/Lapple/ErrorBoard) - Track and log JavaScript errors triggered by your users.
+    * [JavaScript Style Sheets](https://en.wikipedia.org/wiki/JavaScript_Style_Sheets) - A blast from the past. If only...
+    * [JsonML (JSON Markup Language)](http://www.jsonml.org/) - If you took HTML and replaced it with something nicer, you would end up with JsonML.
+    * [Polyfills as a service](http://labs.ft.com/2014/09/polyfills-as-a-service/)
+    * [108 byte CSS Layout Debugger](https://gist.github.com/addyosmani/fd3999ea7fce242756b1)
+    * [twbs/bootlint](https://github.com/twbs/bootlint) - Lint your Bootstrap.
+    * [5 of the Best Chrome Apps Available Today for Web Developers](http://jster.net/blog/best-chrome-apps-for-devs)
+
+    ## Hardware
+
+    * [Espruino](http://www.espruino.com/) - A cheapo JavaScript embedded board.

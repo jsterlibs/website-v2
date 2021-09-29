@@ -1,0 +1,58 @@
+type: static
+title: "JSter #138: Libraries and more"
+short_title: "JSter #138"
+user: bebraw
+slug: jster-138
+body: |
+  > JavaScript - too late to land to the moon, too early to land on Mars
+
+  [React Finland](https://react-finland.fi/) is in less than three weeks and I am already freaking out.
+
+  ## Libraries
+
+  * [Editor.js](https://editorjs.io/) - Next generation block styled editor
+  * [mikeal/r2](https://github.com/mikeal/r2) - HTTP client. Spiritual successor to reques
+  * [yelouafi/avenir](https://github.com/yelouafi/avenir) - Lightweight async library based on lazy futures
+  * [Parsley](http://parsleyjs.org/) - The ultimate JavaScript form validation library
+  * [Guess.js](https://guess-js.github.io/) - Libraries & tools for enabling Machine Learning driven user-experiences on the web
+
+  ## Styling
+
+  * [Keep Math in the CSS](https://css-tricks.com/keep-math-in-the-css/)
+  * [NES.css](https://nostalgic-css.github.io/NES.css/) - Style like NES
+
+  ## Fonts
+
+  * [very able fonts](http://very-able-fonts.com/) - A playground for variable fonts
+
+  ## Tools
+
+  * [terser](https://www.npmjs.com/package/terser) - A JavaScript parser and mangler/compressor toolkit for ES6+
+  * [satya164/babel-test](https://github.com/satya164/babel-test) - An opinionated library to make testing babel plugins easier
+  * [Pika](https://www.pikapkg.com/blog/pika-web-a-future-without-webpack) - A future without webpack
+
+  ## GraphQL
+
+  * [Announcing OASGraph - a GraphQL Wrapper for REST APIs](https://strongloop.com/strongloop.com/strongblog/announcing-oasgraph/)
+  * [GraphQL Visual Editor](https://graphqleditor.com/)
+
+  ## Articles
+
+  * [Property order is predictable in JavaScript objects since ES2015](https://www.stefanjudis.com/today-i-learned/property-order-is-predictable-in-javascript-objects-since-es2015/)
+
+  ## Techniques
+
+  * [Demystify The Multi-threading in Node.JS](https://medium.com/@wei.surya/demystify-the-multi-threading-in-node-js-4ff07eae9abe)
+  * [How to Eliminate Circular Dependencies from Your JavaScript Project](https://spin.atomicobject.com/2018/06/25/circular-dependencies-javascript/)
+
+  ## Languages
+
+  * [Imba](http://imba.io/) - Create complex web apps with ease!
+
+  ## Security
+
+  * [We're under attack! 23 Node.js security best practices](https://medium.com/@nodepractices/were-under-attack-23-node-js-security-best-practices-e33c146cb87d)
+
+  ## css-in-js
+
+  * [Managing css-in-js Components with Namespaces](https://survivejs.com/blog/managing-css-in-js-with-namespaces/)

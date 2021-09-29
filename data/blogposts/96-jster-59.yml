@@ -1,0 +1,63 @@
+type: static
+title: "JSter #59: News of November 2015 - Part 2"
+short_title: "JSter #59"
+user: bebraw
+slug: monthly-jster-november-2015-part-2
+body: |
+    > JavaScript can feed your cats/dogs/people.
+
+    Things are going pretty solidly with my React book. It reached [version 1.9.10](http://survivejs.com/blog/survivejs1910/) with a nice amount of tweaks. There are still some coming as I want to improve the book while keeping it up to date.
+
+    I gave a presentation about it a while ago. In case you want to have an inside look at what it takes to write an indie book, feel free to go through [my slides](https://survivejs.github.io/how-to-write-a-book-and-survivejs-it). The presentation digs more into the business side of things and it's a side you don't often get to see.
+
+    ## React Indie Bundle
+
+    The bigger news is that we published [React Indie Bundle](http://www.reactindiebundle.com/). The bundle will be available for this week and my book is a part of it. It includes books, videos, and a bit of consulting on the higher tiers.
+
+    If you want to pick up something to do during the holidays, perhaps the bundle would work. It's also a fine present if you are into that sort of thing.
+
+    This is a good chance to support indie work. We even give a part of our earnings to tool and library authors. After all, it's those guys that enable everything in the first place.
+
+    ## Libraries
+
+    {{ screenshot: https://github.com/whackashoe/antimoderate }}
+
+    * [whackashoe/antimoderate](https://github.com/whackashoe/antimoderate) -  The progressive image loading library for great good!
+    * [Angular 2: Developer Preview](http://www.dotnetcurry.com/angularjs/1214/angular2-developer-preview-new-features)
+    * [Aurelia Beta 1](http://blog.durandal.io/2015/11/16/aurelia-beta-week-day-1-the-beta-is-here/)
+    * [Foundation 6 Is Here!](http://zurb.com/article/1416/foundation-6-is-here)
+    * [ncsoft/Unreal.js](https://github.com/ncsoft/Unreal.js)
+    * [plotly/plotly.js](https://github.com/plotly/plotly.js)
+
+    ## Articles
+
+    {{ screenshot: http://engineering.khanacademy.org/posts/js-packaging-http2.htm }}
+
+    * [Forgo JS packaging? Not so fast](http://engineering.khanacademy.org/posts/js-packaging-http2.htm)
+    * [Haskell in ES6: Part 1](http://casualjavascript.com/javascript/es6/haskell/native/implementation/2015/11/12/haskell-in-es6-part-1.html)
+    * [Dance to Calypso](http://ma.tt/2015/11/dance-to-calypso/) - WordPress admin went Node.
+
+    ## Guides
+
+    * [Functional Programming in JavaScript](http://reactivex.io/learnrx/)
+
+    ## Techniques
+
+    * [How to Structure a React Project?](http://reactjsnews.com/structuring-react-projects/)
+    * [Playing Fasttracker 2 .XM files in Javascript](http://www.a1k0n.net/2015/11/09/javascript-ft2-player.html)
+    * [Recipes for Randomness in JavaScript](http://thenewcode.com/82/Recipes-for-Randomness-in-JavaScript)
+    * [Supercharging JavaScript performance with asm.js](http://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/)
+    * [Concurrently JavaScript (2)](http://blog.getify.com/concurrently-javascript-2/)
+    * [Better than Gzip Compression with Brotli](https://hacks.mozilla.org/2015/11/better-than-gzip-compression-with-brotli/)
+
+    ## Interviews
+
+    * [Starhackit interview](http://survivejs.com/blog/starhackit-interview/) - Full stack boilerplate!
+
+    ## Resources
+
+    * [Days Since A Javascript Framework](http://www.isaacchansky.me/days-since-last-new-js-framework/)
+
+    ## Demos
+
+    * [robokitty](https://github.com/rachelnicole/robokitty) - A DIY Cat (or dog. or human) Feeder powered by Node.

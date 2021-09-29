@@ -1,0 +1,28 @@
+type: rating
+title: "Enhance Your Next Presentation with HTML5"
+short_title: Presentation Engines
+user: davertmik
+includes: ["deck.js", "Shower", "impress.js", "reveal.js", "Bespoke.js", "Landslide", "Fathom.js", "io-2012-slides"]
+slug: html5-presentation-impress-reveal-deck-bespoke
+body: |
+  I remember the days when Opera team came to our university with presenting their features of their browser and sharing their vision of the future of Web.
+  I was amazed by the fact that all their slides (with animations) were done in pure HTML5. All presentation was held in the Opera browser itself.
+  "Awesome", that was what I thought. But, honestly, in those days only real geeks would choose coding HTML, CSS, JS over drag-n-drop style of **PowerPoint**.
+  It was the time were HTML5 support was limited, and browsers were trying to at least pass the new ACID tests.
+  And I'm not really sure whether Opera's presentation engine was a real HTML5 implementation or just a built-in feature of their browser.
+
+  But times change and HTML5 came for all the web, all platforms, all browser (mostly). Even games are built with HTML5. So why should we choose PowerPoint.
+  You know, it's not free. Actually, I have an answer for this. We still need some knowledge of HTML5, CSS3, JavaScript to build a good presentation.
+  But that should not actually matter for us, web developers.
+
+  Here is a list of presentation HTML5 engines you want to try. Engines like **Deck.js**, **Impress.js** of them are pretty complex, but they give you all the control and flexibility of presentation.
+  Engines like **Reveal.js** are simple in use and provide you with nice prebuilt, themes and markdown engine to design slides pragmatically. And you now what? Opera has it's presentation engine too. Meet **Shower**, which looks pretty simple to start *(Upd: no, it is personal project, not related to Opera)*. 
+  Also please take a look at **Bespoke.js**, it was released a few months ago but already got a lot of attention and 1000 stars on Github.
+
+footer: |
+  As you see, presentations are ready to move into the web. They can even **export slides to PDF** so you could upload them to your favorite [SpeakerDeck](http://speakerdeck.com).
+  By using HTML5 you get a full control of the slides and you can customize their look with CSS.
+  Don't forget for CSS3 transitions and JS animations. They look awesome and would certainly impress your audience. Add this post to bookmarks and get back when you need to prepare slides for a speech.
+  Geeks love to see presentations in browser!
+
+  *Follow, JSter in [Twitter](http://twitter.com/jsterlibs) or subscribe to our [RSS](http://feeds.feedburner.com/jster) to discover new JavaScript libraries and tools*.

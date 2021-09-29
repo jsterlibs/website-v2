@@ -1,0 +1,52 @@
+type: static
+title: "JSter #146: Articles and more"
+short_title: "JSter #146"
+user: bebraw
+slug: jster-146
+body: |
+  > Life is like a box of JavaScript libraries; you never know what you're gonna get.
+
+  It has been busy two weeks again and it's time for a JSter post.
+
+  ## Libraries
+
+  * [WICG/virtual-scroller](https://github.com/WICG/virtual-scroller) - Virtual scroller built on top of the web platform
+
+  ## Toolkits
+
+  * [Nearley](https://nearley.js.org/) - A modern parser toolkit for JavaScript
+
+  ## Frameworks
+
+  * [Tiptap](https://laravel-news.com/tiptap-rich-text-editor-framework-for-vue-js) - A Rich Text Editor Framework for Vue.js
+
+  ## Techniques
+
+  * [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist)
+  * [Best Front-End Performance Optimization Techniques](https://buttercms.com/blog/front-end-performance-optimization-techniques)
+  * [Say Goodbye to ‘../../../..’ in your TypeScript Imports](https://decembersoft.com/posts/say-goodbye-to-relative-paths-in-typescript-imports/)
+
+  ## Accessibility
+
+  * [A plan for accessible charts](https://www.benjystanton.co.uk/blog/a-plan-for-accessible-charts/)
+
+  ## Articles
+
+  * [Framework Compass Chart](https://medium.com/flowingis/framework-compass-chart-d3851c25b45d) - A way to evaluate JavaScript frameworks
+  * [React Native FAQ](https://shift.infinite.red/react-native-faq-8dc5c1083baa)
+  * [Explaining the Best Javascript Meme I've Ever Seen](https://www.yazeedb.com/posts/explaining-the-best-javascript-meme-i-have-ever-seen/)
+
+  ## Tools
+
+  * [mattpocock/boilersuit](https://twitter.com/i/web/status/1158290308964204544) - A super-powered generator for selectors, reducers, actions, constants and sagas in react-boilerplate
+  * [open-draft/msw](https://github.com/open-draft/msw) - Client-side runtime API mocking using Service Workers
+
+  ## Tutorials
+
+  * [How to write async await without try-catch blocks in Javascript](https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/)
+  * [Your easy guide to Monads, Applicatives, & Functors](https://medium.com/@lettier/your-easy-guide-to-monads-applicatives-functors-862048d61610)
+  * [Beginner's Guide to Front-End Performance Boost (part 1)](https://buttercms.com/blog/front-end-performance-for-beginners)
+
+  ## Interviews
+
+  * [Sketch.sh - Interactive ReasonML sketchbook - Interview with Nguyen Dang Khoa](https://survivejs.com/blog/sketch-sh-interview/)

@@ -1,0 +1,39 @@
+type: static
+title: "JSter #139: Mainly libraries"
+short_title: "JSter #139"
+user: bebraw
+slug: jster-139
+body: |
+  > JavaScript - Still going strong
+
+  [React Finland 2019](https://react-finland.fi) is a week away. If you cannot make it, don't worry. We'll have a livestream of the event and we'll also share the recordings afterwards. You'll miss out the parties and sauna, though.
+
+  ## Libraries
+
+  * [Pristine](https://pristine.js.org/) - Vanilla javascript form validation micro-library
+  * [parcel-bundler/watcher](https://github.com/parcel-bundler/watcher) - A native C++ Node module for querying and subscribing to filesystem events
+  * [shoumma/organigram](https://github.com/shoumma/organigram) - A JSON based tree structure with drag and drop functionally to re-arrange the tree
+  * [ryansolid/solid](https://github.com/ryansolid/solid) - A declarative, efficient, and flexible JavaScript library for building user interfaces
+  * [React95/React95](https://github.com/React95/React95) - React like it's 1995
+  * [bent](https://www.npmjs.com/package/bent) - Functional HTTP client for Node.js w/ async/await
+
+  ## GraphQL
+
+  * [graphql-typescript-definitions](https://www.npmjs.com/package/graphql-typescript-definitions) - Generate TypeScript definition files from .graphql documents
+
+  ## TypeScript
+
+  * [rimeto/ts-optchain](https://github.com/rimeto/ts-optchain) - Optional chaining for TypeScript
+
+  ## Tools
+
+  * [swc-project/swc](https://github.com/swc-project/swc) - Super-fast JavaScript to JavaScript compiler written in Rust
+
+  ## Guides
+
+  * [Cube.js, the Open Source Dashboard Framework: Ultimate Guide](https://statsbot.co/blog/cubejs-open-source-dashboard-framework-ultimate-guide/)
+  * [Welcome to the world of Statecharts](https://statecharts.github.io/)
+
+  ## Games
+
+  * [Untrusted](https://alexnisnevich.github.io/untrusted/) - The continuing adventures of Dr. Eval

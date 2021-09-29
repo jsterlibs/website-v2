@@ -1,0 +1,65 @@
+type: static
+title: "JSter #170: Libraries, and more"
+short_title: "JSter #170"
+user: bebraw
+slug: jster-170
+body: |
+  > One JavaScript - Shaken, not strirred
+
+  [React Finland 2021](https://react-finland.fi/blog/react-finland-2021/) will take place online 30.08-03.09 and we'll do live satellite events where possible. The main content will be freely available and we have a variety of workshops (most commercial) to choose from.
+
+  ## Resources
+
+  * [ES2021 features list](https://h3manth.com/ES2021/)
+
+  ## Tools
+
+  * [GraphQL Modules](https://www.graphql-modules.com/) - Tooling for GraphQL servers
+  * [micromark](https://github.com/micromark/micromark) - The smallest commonmark compliant markdown parser that exists; new basis for @unifiedjs (hundreds of projects w/ billions of downloads for dealing w/ content)
+  * [Packup](https://packup.deno.dev/) - Packup is web application bundler for Deno, inspired by parcel
+  * [Nextra](https://nextra.vercel.app/) - Nextra is a Next.js based static site generator. 0 lines of code needed.
+  * [ToolJet](https://github.com/ToolJet/ToolJet) - An open-source no-code platform for building and deploying internal tools.
+  * [Modern Web](https://modern-web.dev/) - Guides, tools and libraries for modern web development.
+
+  ## Libraries
+
+  * [flopflip](https://github.com/tdeekens/flopflip) - Flip or flop features in your React application in real-time backed by flag provider of your choice
+  * [fwouts/react-screenshot-test](https://github.com/fwouts/react-screenshot-test) - A dead simple library to screenshot test React components
+  * [kevglass/gute](https://github.com/kevglass/gute) - Gute is a simple web games library
+  * [enquirer](https://github.com/enquirer/enquirer) - Stylish, intuitive and user-friendly prompts, for Node.js. Used by eslint, webpack, Generate, lint-staged, pm2, gluegun, hygen, GitHub Actions Toolkit, @airbnb/nimbus, and many others!
+  * [Konva](https://konvajs.org/index.html) - HTML5 2d canvas js library for desktop and mobile applications
+  * [TuSimple/naive-ui](https://github.com/TuSimple/naive-ui) - A Vue 3 Component Library. Fairly Complete. Customizable Themes. Uses TypeScript. Not too Slow.
+  * [sindresorhus/ow](https://github.com/sindresorhus/ow) - Function argument validation for humans
+  * [Swiper](https://swiperjs.com) - The Most Modern Mobile Touch Slider
+  * [tajo/react-range](https://github.com/tajo/react-range) - Range input with a slider. Accessible. Bring your own styles and markup.
+  * [country-code-emoji](https://www.npmjs.com/package/country-code-emoji) - Convert country codes to corresponding emojis
+  * [open-draft/until](https://github.com/open-draft/until) - Better async/await
+
+  ## Typescript
+
+  * [Announcing TypeScript 4.3](https://devblogs.microsoft.com/typescript/announcing-typescript-4-3/)
+  * [3 Design Patterns in TypeScript for Frontend Developers](https://blog.openreplay.com/3-design-patterns-in-typescript-for-frontend-developers/)
+  * [Bundling TypeScript with Esbuild for NPM](https://souporserious.com/bundling-typescript-with-esbuild-for-npm/)
+
+  ## Techniques
+
+  * [Introducing the Memory Inspector](https://developer.chrome.com/blog/memory-inspector/)
+  * [How to Delegate your React Dialogs](https://around25.com/blog/how-to-delegate-your-react-dialogs/)
+  * [Testing Next.js with Playwright. My favourite new testing setup](https://frontend-digest.com/using-playwright-to-test-next-js-applications-80a767540091)
+  * [Half the size of images by optimising for high density displays](https://jakearchibald.com/2021/serving-sharp-images-to-high-density-screens/)
+
+  ## Articles
+
+  * [The Plan for React 18](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html)
+  * [Maybe you don't need Rust and WASM to speed up your JS](https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html)
+  * [Pipeable APIs](https://paulgray.net/pipeable-apis/)
+  * [Building a JavaScript Testing Framework](https://cpojer.net/posts/building-a-javascript-testing-framework)
+
+  ## Interviews
+
+  * [iHateReading - Where knowledge is shared - Interview with Shrey Vijayvargiya](https://survivejs.com/blog/ihatereading-interview/)
+
+  ## Frameworks
+
+  * [Remastered: a full-stack React framework](https://remastered.hagever.com/)
+

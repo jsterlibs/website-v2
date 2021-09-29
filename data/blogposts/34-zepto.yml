@@ -1,0 +1,45 @@
+type: static
+title: "Book Review - Instant Zepto.js by Ian Pointer"
+short_title: "Book Review Instant Zepto.js"
+user: bebraw
+slug: instant_zepto
+body: |
+    > This time we'll have a special treat for you, a book review! The book we're reviewing this time was kindly provided by [Packt Publishing](http://www.packtpub.com/). Thanks!
+
+    {{ screenshot: http://zeptojs.com }}
+
+    You might be familiar with [Zepto.js](http://zeptojs.com/), or just Zepto, already. It is the smaller brother of jQuery developed by [Thomas Fuchs](https://github.com/madrobby). It shares most of the API while weighing a lot less. Hence the name Zepto (10^-21).
+
+    I have used Zepto before a little bit earlier. It is one of those libraries that is particularly useful in a mobile context where it is important to minimize library size. Apart from that it does not excite me a lot honestly.
+
+    This time I will be reviewing a book *Instant Zepto.js* by **Ian Pointer**. It is a part of [Packt Publishing](http://www.packtpub.com/)'s Instant series. This means the book itself is very light, just 48 pages out of which around 30 have been dedicated for content. The book is available only in e-book format and costs around ten euros/dollars. Even though quite cheap is the book worth it?
+
+    ## Support Material
+
+    The book comes with [support material](https://github.com/falloutdurham/zeptojstarter). The fastest way to get started with that is simply to clone the repository, install `serve` (npm install serve -g), execute `serve` at your clone directory and then surf to `localhost:3000` at your browser. Studying the examples should give you some idea of the contents of the book. There is also [a TOC available at Packt site](http://www.packtpub.com/create-mobile-web-apps-with-zeptojs/book).
+
+    ## Content
+
+    ![Zepto Book](/img/blog/34/zepto.jpg "Zepto Book")
+
+    The beginning of the book goes through basic functionality of Zepto and contrasts it with jQuery. It would have been a very good idea to highlight the fact that certain pseudoselectors, like `:first`, don't work with Zepto. That selector in particular had slipped into an early example.
+
+    At times the code could have been formatted better and it could have benefitted from syntax highlighting. It is one of those small things that makes a difference.
+
+    Next the author goes through top three features of Zepto. These include animation, build system and mobile device support. Whereas the beginning was more like a reference these have been explained through examples. A good move.
+
+    Particularly the mobile examples rely on iOS. It would have been a nice idea to show how to emulate the touch events on desktop. After all you might not have a suitable device available.
+
+    The final parts of the book show how to check if a jQuery plugin works with Zepto and how to write your own Zepto plugins compatible with jQuery. Finally there is a brief discussion about differences of jQuery and Zepto.
+
+    The author lists Zepto related resources at the very end. A nice touch.
+
+    ## Conclusion
+
+    I have mixed feelings about the book. There is definitely useful content but is it worth ten bucks? It feels like the content and examples could have been pushed further. Particularly presentation could have been improved.
+
+    I would have appreciated discussion on common Zepto related problems. An app level example would have been very useful as well to see how it works as a part of a bigger whole.
+
+    If you are looking for a quick introduction to Zepto and don't feel like crawling through blogosphere, this might be a good starting point. Don't expect miracles, though.
+
+    > If you want us to review a JavaScript book, stay in touch! We are open to ideas.

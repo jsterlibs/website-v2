@@ -1,0 +1,78 @@
+type: static
+title: "JSter #153: Libraries, tools, and more"
+short_title: "JSter #153"
+user: bebraw
+slug: jster-153
+body: |
+  > JavaScript - still going strong
+
+  Somehow the Winter months are always the busiest. And as if that wasn't enough, now there's this global virus to worry about.
+
+  ## Libraries
+
+  * [AppRun](https://apprun.js.org/) - A JavaScript library for building reliable, high-performance web applications using the Elm inspired Architecture, events, and components
+  * [nicojs/typed-html](https://github.com/nicojs/typed-html) - TypeSafe HTML templates using TypeScript. No need to learn a template library.
+  * [Pancake](https://pancake-charts.surge.sh/) - Charts for Svelte apps
+  * [Hex Engine](https://hex-engine.dev/) - A Modern 2D Game Engine for the Browser
+  * [Mavo](https://mavo.io/) - A new, approachable way to create Web applications
+
+  ## Frameworks
+
+  * [Next.js 9.2](https://nextjs.org/blog/next-9-2)
+  * [Angular 9](https://blog.angular.io/version-9-of-angular-now-available-project-ivy-has-arrived-23c97b63cfa3)
+
+  ## Articles
+
+  * [Filesystem Routers & Indexes](https://ericclemmons.com/blog/filesystem-routers-and-indexes)
+  * [Lessons from building “N26 for Web”](https://hugogiraudel.com/2020/02/03/lessons-from-building-n26-for-web/)
+  * [Checking Node.js sub-dependencies licenses for usage and redistribution](https://medium.com/codewind/checking-node-js-sub-dependencies-licenses-for-usage-and-redistribution-58fe70a77847)
+  * [Honesty is the best policy](https://hankchizljaw.com/wrote/honesty-is-the-best-policy/)
+
+  ## A11y
+
+  * [The accessibility of placeholder links](https://www.scottohara.me/note/2019/07/17/placeholder-link.html)
+  * [CSS resize none on textarea is bad for UX](https://catalin.red/css-resize-none-is-bad-for-ux/)
+  * [Blurred vision](https://eldh.co/blurred-vision/)
+
+  ## Tools
+
+  * [🏆 The Top 50 Developer Tools of 2019](https://stackshare.io/posts/top-developer-tools-2019)
+  * [bradlc/babel-plugin-tailwind-components](https://github.com/bradlc/babel-plugin-tailwind-components) - Use Tailwind with any CSS-in-JS library
+  * [ericclemmons/codelift](https://github.com/ericclemmons/codelift) - A No Code GUI for your existing React code
+  * [lirantal/is-website-vulnerable](https://twitter.com/i/web/status/1231870133351669760) - Find publicly known security vulnerabilities in a website's frontend JavaScript libraries
+  * [livegrep](https://github.com/livegrep/livegrep) - Interactively grep source code
+  * [Tiny Helpers](https://tiny-helpers.dev/) - A collection of free single-purpose online tools for web developers
+  * [NeutralinoJs](https://neutralino.js.org/) - Portable and lightweight cross platform application development framework
+  * [depcheck](https://www.npmjs.com/package/depcheck) - Understand your dependencies, understand your project
+
+  ## Bots
+
+  * [nteract/galleria](https://github.com/nteract/galleria) - GitHub bot that uploads screenshots from PR builds
+
+  ## TypeScript
+
+  * [algebraic-graphs/typescript](https://github.com/algebraic-graphs/typescript) - Algebraic graphs implementation in TypeScript
+
+  ## Tutorials
+
+  * [Implementing 2D Physics in JavaScript](https://towardsdatascience.com/implementing-2d-physics-in-javascript-860a7b152785)
+
+  ## Desktop
+
+  * [styfle/awesome-desktop-js](https://github.com/styfle/awesome-desktop-js) - A list of awesome packages and frameworks for implementing javascript applications on the desktop
+
+  ## Environment
+
+  * [CO2 emissions on the web](https://dannyvankooten.com/website-carbon-emissions/)
+
+  ## Testing
+
+  * [Stryker Mutator](https://stryker-mutator.io/) - Test your tests with mutation testing
+
+  ## Interviews
+
+  * [Debugging JavaScript - Interview with Mehdi Osman](https://survivejs.com/blog/debugging-interview/)
+
+  ## Techniques
+
+  * [A new technique for making responsive, JavaScript-free charts](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp)

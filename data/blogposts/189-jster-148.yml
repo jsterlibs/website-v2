@@ -1,0 +1,66 @@
+type: static
+title: "JSter #148: Libraries, tools, and more"
+short_title: "JSter #148"
+user: bebraw
+slug: jster-148
+body: |
+  > JavaScript is the beginning and the end
+
+  It's time for another JSter link dump. I'm doing these monthly now as I'm too busy with work for time being.
+
+  ## Libraries
+
+  * [prismake/typegql](https://github.com/prismake/typegql) - Create GraphQL schema with TypeScript classes
+  * [graphql-compose](https://www.npmjs.com/package/graphql-compose) - A library for generating GraphQL schemas
+  * [Muuri](https://haltu.github.io/muuri/) - Responsive, sortable, filterable and draggable grid layouts
+  * [jaydenseric/next-graphql-react](https://github.com/jaydenseric/next-graphql-react) - Next.js config and App decorators for graphql-react, enabling server side rendered GraphQL queries
+  * [harp.gl](https://www.harp.gl/) - 3d web map rendering engine
+  * [pqina/filepond](https://github.com/pqina/filepond) - A flexible and fun JavaScript file upload library
+  * [Vincit/objection.js](https://github.com/Vincit/objection.js) - An SQL-friendly ORM for Node.js 
+  * [mauriciosantos/Buckets-JS](https://github.com/mauriciosantos/Buckets-JS) - A complete, fully tested and documented data structure library written in pure JavaScript
+  * [lukeed/mri](https://github.com/lukeed/mri) - Quickly scan for CLI flags and arguments
+  * [lukeed/kleur](https://github.com/lukeed/kleur) - The fastest Node.js library for formatting terminal text with ANSI colors~!
+
+  ## TypeScript
+
+  * [TypesceneBatteryChargingCar](https://typescene.dev/) - Typescene is a robust front end framework made with TypeScript: strongly typed, no dependencies, no nonsense
+
+  ## Styling
+
+  * [Styletron](https://www.styletron.org/) - Styletron is an universal toolkit for component-oriented styling
+  * [treat](https://seek-oss.github.io/treat/) - Themeable, statically extracted CSS‑in‑JS with near‑zero runtime
+  * [Regarding CSS's Global Scope](https://css-tricks.com/regarding-css-global-scope/)
+  * [In Defense of Utility-First CSS](https://frontstuff.io/in-defense-of-utility-first-css)
+
+  ## Tools
+
+  * [voidcosmos/npkill](https://github.com/voidcosmos/npkill) - List any node_modules directories in your system, as well as the space they take up. You can then select which ones you want to erase to free up space
+  * [eslint-config-es](https://www.npmjs.com/package/eslint-config-es) - A strict ESLint configuration for ES2015+ and TypeScript
+  * [akx/npm-dep](https://github.com/akx/npm-dep) - Generate dependency graphs of npm packages
+  * [nodejs/citgm](https://github.com/nodejs/citgm) - citgm is a simple tool for pulling down an arbitrary module from npm and testing it using a specific version of the node runtime
+  * [nanoprobe](https://www.npmjs.com/package/nanoprobe) - A CLI to help better understand the massive amount of information that surrounds Node.js versions.
+  * [QuickJS Javascript Engine](https://bellard.org/quickjs/)
+  * [entropic-dev/entropic](https://github.com/entropic-dev/entropic) - A package registry for anything, but mostly JavaScript
+  * [kristopolous/_inject](https://github.com/kristopolous/_inject) - JavaScript Code Injection for Debugging
+  * [ericclemmons/node-recorder](https://github.com/ericclemmons/node-recorder) - Simple recording & replaying of HTTP requests for predictable development & testing
+  * [Schniz/fnm](https://github.com/Schniz/fnm) - Fast and simple Node.js version manager, built in native ReasonML
+  * [Kickball/awesome-selfhosted](https://github.com/Kickball/awesome-selfhosted) - Awesome self-hosted services and tools
+
+  ## Techniques
+
+  * [How to delete ALL node_modules folders on your machine and free up HD space!](https://dev.to/trilon/how-to-delete-all-nodemodules-folders-on-your-machine-43dh)
+  * [Black box API testing with server logs](https://glebbahmutov.com/blog/api-testing-with-sever-logs/)
+  * [Using a headless browser to capture page screenshots](https://bitsofco.de/using-a-headless-browser-to-capture-page-screenshots/)
+
+  ## Resources
+
+  * [amejiarosario/dsa.js-data-structures-algorithms-javascript](https://github.com/amejiarosario/dsa.js-data-structures-algorithms-javascript) - Data Structures and Algorithms explained and implemented in JavaScript
+
+  ## Articles
+
+  * [Building a React Todo App with Hasura GraphQL Engine](https://hackernoon.com/building-a-react-todo-app-with-hasura-graphql-engine-511b703a7ef)
+  * [I totally forgot about print style sheets](https://uxdesign.cc/i-totally-forgot-about-print-style-sheets-f1e6604cfd6)
+
+  ## Interviews
+
+  * [Tomo - Like CRA but more flexible - Interview with Jason Wohlgemuth](https://survivejs.com/blog/tomo-interview/)

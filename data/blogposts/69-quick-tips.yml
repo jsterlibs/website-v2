@@ -1,0 +1,60 @@
+type: static
+title: "Quick Tips for HTML5 Game Developers"
+short_title: "Quick HTML5 Game Tips"
+user: bebraw
+slug: quick-tips-for-html5-game-developers
+picture: /img/blog/69/1_small.jpg
+body: |
+    <div class="picture"><img src="/img/blog/69/1.jpg" alt="HTML5" /></div>
+
+    When the HTML5 standard hit the web, a lot of things changed for the better. The new markup language boasted a whole lot of new features, and it didn’t took long for developers to jump in and put all the new tech to work. One of the fields that takes great advantage of what HTML5 has to offer is gaming; while browser games were considered soon-to-be-extinct due to the huge improvements brought by video games, HTML5 gives them another chance by allowing them to become a lot more complex, feature-rich, and visually appealing. If you’re planning on developing a HTML5-based game, here is a list of things to take into account.
+
+    ## HTML5 is not just for PCs
+
+    <div class="picture"><img src="/img/blog/69/2.jpg" alt="Not just PCs" /></div>
+
+    One of the main advantages of HTML5 is that it manages to incorporate a vast majority of functions that were previously dependent on the resource-hogging Flash framework straightly to the browser, with huge performance improvements. While on a regular PC this doesn’t mean much, as there’s plenty of computing power available, on a less-powerful device such as a smartphone this is a true blessing. Smartphones, PDAs, tablets and plenty other devices can now run games that were previously a no-go. However, while computing power is no longer a problem, screen size is.
+
+    Most devices come with smaller screens and use various built-in zoom features that might interfere with a game in some circumstances, so you should consider optimizing the game for multiple screen sizes. Once you have your mind set on certain sizes, use the **viewport** meta tag and set the user-scalable setting to off in order to prevent the device or the user from scaling. This is also useful when the game uses touch-controls, as it prevents accidental zooms. Check out [MDN docs for more info on the viewport tag](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag).
+
+    ## Get Sophisticated with Preloading
+
+    <div class="picture"><img src="/img/blog/69/3.jpg" alt="Preloader" /></div>
+
+    Browser games used to be simple. “Used to” is the keyword here – they were simple just because the options were limited. HTML5 doesn’t have this drawback, though, so you can get as complex as you want nowadays.
+
+    Be that as it may, a more sophisticated game requires a more sophisticated approach. While simpler games have small sound and image files that are easy to load by the browser, a more complex game might have bigger files that take different times to load and execute, which can lead to an image/sound discrepancy.
+
+    To avoid such scenario, consider using a preloader that allows a game to load all its necessary resources before running. If you want to go the auto-way, there are various frameworks built specifically for creating games, which offer this feature as well as other useful features.
+
+    Check out this [comprehensive list of frameworks](http://jster.net/category/game-engines), and find the one that meets your needs the best.
+
+    ## Improve performance with multi-tasking
+
+    <div class="picture"><img src="/img/blog/69/4.jpg" alt="Web workers" /></div>
+
+    HTML5 is already designed to take advantage of powerful hardware that includes powerful GPUs and multi-core processors, but you can take multi-tasking to a whole new level with your game by using web workers to perform various tasks. The result is that the game will be better optimized to begin with, running faster and smoother, but it will also open up the path to a better overall optimization and load-balancing over the cores of the CPU, as it will already be divided into “chunks” that can be assigned to a core or the other.
+
+    Keep in mind, though, that web workers cannot interact directly with the UI, so some coding tricks will be needed to translate the current UI state to web worker friendly code. Check [MDN for more information on web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/basic_usage).
+
+    ## Save!
+
+    <div class="picture"><img src="/img/blog/69/5.jpg" alt="Local storage" /></div>
+
+    A major downside of old browser-games is that they lacked one crucial feature present in other types of games: saving. In the past, saving a game was only possible if the user was ok with creating an account (thus allowing the game to identify each user and save his personal preferences and stats on the server-side), or by using cookies.
+
+    Neither solution is very useful when the player attempts to play the game offline, though; luckily, HTML5 offers a different way of saving game with the help of DOM storage, which is a local storage solution. Unlike cookies, DOM storage does not expire after a certain time, making it a better approach.
+
+    [MDN has more information about modern storage approaches](https://developer.mozilla.org/en/docs/Web/Guide/API/DOM/Storage).
+
+    ## Boilerplates
+
+    If you just want to get something visible fast, you could use some boilerplate as a starting point. Examples of these are [HTML5 Canvas Game Boilerplate](https://github.com/IceCreamYou/HTML5-Canvas-Game-Boilerplate) and [Mortar Game Stub](https://github.com/mozilla/mortar-game-stub). In addition many frameworks come with something to help you get started.
+
+    This will take help you to avoid some guesswork and get something visible faster. Of course as you get more experienced, you might just want to set up a boilerplate of your own to suit your tastes!
+
+    ## Conclusion
+
+    Just to recap, remember that you can target platforms beyond PC. Preloading can help you to get a smoother, or at least less confusing, gaming experience. Multi-tasking can help you to get some burden out of the render loop. If you don't feel like implementing a server based backend, you can get simple saving done using a local storage based approach. And finally boilerplates may help you to get up to speed faster.
+
+    This is the guest post provided by Jason Phillips and [Airplane Games 365](http://www.airplanegames365.com/).

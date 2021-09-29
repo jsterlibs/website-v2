@@ -1,0 +1,61 @@
+type: static
+title: "JSter #36: News of December 2014 - Part 1"
+short_title: "JSter #36"
+user: bebraw
+slug: monthly-jster-december-2014-part-1
+body: |
+    > Two weeks makes a fine language
+
+    ## Libraries
+
+    {{ screenshot: http://www.buddhitechno.com/shadow/ }}
+
+    * [josephernest/bigpicture.js](https://github.com/josephernest/bigpicture.js) - Infinite zooming and panning in HTML pages
+    * [Shadow.js](http://www.buddhitechno.com/shadow/) - Give shadows to your images
+    * [SVG Morpheus](http://alexk111.github.io/SVG-Morpheus/) - Morph between SVG shapes
+    * [PhotoSwipe: JavaScript Image Gallery](http://photoswipe.com/)
+    * [laroux.js](https://larukedi.github.io/laroux.js/) - Light alternative to jQuery
+    * [MetricsGraphics.js – a lightweight graphics library based on D3](https://hacks.mozilla.org/2014/12/metricsgraphics-js-a-lightweight-graphics-library-based-on-d3/)
+
+    ## Articles
+
+    {{ screenshot: http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/ }}
+
+    * [The State of JavaScript in 2015](http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/)
+    * [The State of Flux](https://reactjsnews.com/the-state-of-flux/)
+    * [Top 10 Mistakes Node.js Developers Make](https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make)
+    * [What is TypeScript? Pros and Cons](http://designmodo.com/typescript/)
+    * [Holiday reading for a certain sort: If Hemingway Wrote JavaScript](http://arstechnica.com/information-technology/2014/11/holiday-reading-for-a-certain-sort-if-hemingway-wrote-javascript/)
+    * [Is AngularJS Fast Enough?](https://medium.com/@jeffwhelpley/is-angularjs-fast-enough-98dcf96406c8)
+    * [Is learning Angular still worth it?](http://www.reddit.com/r/javascript/comments/2o7ie1/is_learning_angular_still_worth_it/)
+    * [Yahoo Mail moving to React](http://www.slideshare.net/rmsguhan/react-meetup-mailonreact)
+
+    ## Tutorials
+
+    {{ screenshot: http://web-design-weekly.com/2014/09/24/diving-webpack/ }}
+
+    * [Diving into Webpack](http://web-design-weekly.com/2014/09/24/diving-webpack/)
+    * [Relieving Backbone Pain with Flux & React](http://dev.hubspot.com/blog/moving-backbone-to-flux-react)
+    * [Bacon.js blog: Structuring Real-Life Applications](http://baconjs.blogspot.fi/2014/12/structuring-real-life-applications.html)
+    * [Intro to the HTML5 Speech Synthesis API](http://creative-punch.net/2014/10/intro-html5-speech-synthesis-api/)
+
+    ## Guides
+
+    * [What's New In ES6](http://espadrine.github.io/New-In-A-Spec/es6/)
+    * [Single page apps in depth (a.k.a. Mixu' single page app book)](http://singlepageappbook.com/single-page.html)
+    * [rwaldron/idiomatic.js](https://github.com/rwaldron/idiomatic.js/) - Idiomatic style guide
+
+    ## Techniques
+
+    * [Managing Client-Only State in AngularJS](http://www.sitepoint.com/managing-client-state-angularjs/)
+    * [Creating Animations and Interactions with Physical Models](http://iamralpht.github.io/physics/)
+
+    ## Games
+
+    * [sibartlett/colonizers](https://github.com/sibartlett/colonizers) - Settlers of Catan
+
+    ## Tools
+
+    * [svaarala/duktape](https://github.com/svaarala/duktape) - Light implementation of JavaScript suitable for embedded environments
+    * [Clippy](http://bennettfeely.com/clippy/) - Generate CSS clipping paths
+    * [Flow and static types for JavaScript](http://kpuputti.github.io/flow-and-static-types/)

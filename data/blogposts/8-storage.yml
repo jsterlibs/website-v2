@@ -1,0 +1,73 @@
+title: JavaScript Storage Libraries Explored
+slug: javascript-storage-libraries-explored
+type: static
+user: bebraw
+
+body: |
+  It isn't uncommon to need a way to persist some data in browser. Traditionally [cookies](https://developer.mozilla.org/en-US/docs/Web_Development/HTTP_cookies) were used for this purpose. Since then better alternatives, such as [Web Storage](https://developer.mozilla.org/en-US/docs/DOM/Storage) have emerged. As if that wasn't enough, there is also a [Indexed Database](http://www.w3.org/TR/IndexedDB/) and [Web SQL](http://www.w3.org/TR/webdatabase/).
+
+  In [his comparison](http://csimms.botonomy.com/2011/05/html5-storage-wars-localstorage-vs-indexeddb-vs-web-sql.html) Christian Simms points out that *Indexed Database* and *Web SQL* in particular are robust alternatives. Since the post the development of *Web SQL* has halted, however. Of the three **Web Storage** is the best supported at the moment althoug it is also the simplest alternative being a key-value store.
+
+  From a web developer's point of view this is quite a dilemma. How do you make any sense of that mess? What if you are not happy with Web Storage and want better queries for instance? As it happens there are multiple solutions for this problem.
+
+  ---
+
+  ## Lawnchair
+
+  {{ screenshot: lawnchair }}
+
+  [Lawnchair](http://jster.net/library/lawnchair) is an example of a storage library inspired by [CouchDB](http://couchdb.apache.org/). It uses an adapter based design. This means it is possible to use the same API while the actual database backend is selected based on platform.
+
+  [Artemia](http://jster.net/library/artemia) builds on Lawnchair and provides some functionality of its own. This includes various queries. Unfortunately it seems the development of Artemia has stalled while Lawnchair keeps on being active.
+
+  ---
+
+  ## PouchDB
+
+  {{ screenshot: PouchDB }}
+
+  [PouchDB](http://jster.net/library/pouchdb) is bit of an interesting case. Just like *Lawnchair* it builds on CouchDB. What makes it special is the fact that it can sync with an actual database. This applies for offline usage as well. It is possible to sync between PouchDB databases too.
+
+  *PouchDB* is currently in alpha preview so consider it experimental. On conceptual level it seems very interesting, though.
+
+  ---
+
+  ## ydn-db
+
+  {{ screenshot: ydn-db }}
+
+  Just like *lawnchair* [ydn-db](http://jster.net/library/ydn-db) implements adapter design. What makes it special is its support for schemas. If you are looking for something full featured *ydn-db* seems like a good pick even though it doesn't seem particularly popular at the moment.
+
+  ---
+
+  ## story.js
+
+  {{ screenshot: story.js }}
+
+  [story.js](http://jster.net/library/story-js) implements adapter design. What makes it special is the query language that resembles LINQ.
+
+  ---
+
+  ## localStorage Wrappers
+
+  There are quite a few wrappers for *localStorage*, part of *Web Storage* API. I've listed these briefly below:
+
+  * [store.js](http://jster.net/library/store-js) fixes one particular restriction of *Web Storage* as it allows you to store data without having it being cast to string always.
+  * [TaffyDB](http://jster.net/library/taffydb) provides more comprehensive queries. The API works on a bit higher level overall than *store.js*.
+  * [BankersBox](http://jster.net/library/bankersbox) focuses on providing [Redis](http://redis.io/)-like API. Each "database" is accessed by id. After that the syntax familiar from Redis may be used. There is also adapter design familiar from *Lawnchair*.
+  * [IoStorage.js](http://jster.net/library/lostorage-js) has a similar interface as *cookie.js* below.
+  * [Kizzy](https://github.com/ded/Kizzy) provides the usual get/set syntax. In addition there is support for older Internet Explorers thanks to its usage of persistent XML store.
+  * [lsd.js](http://jster.net/library/lsd-js) provides yet another alternative API for localStorage.
+  * [Rockstage.js](http://jster.net/library/rockstage-js) is another pretty generic wrapper.
+
+  ---
+
+  ## Cookie Wrappers
+
+  As you might expect there are wrappers for cookies too. Of these I would like to mention [Cookies.js](http://jster.net/library/cookies-js) and [cookie.js](http://jster.net/library/cookie-js) in particular. Feature-wise *cookie.js* seems a bit more comprehensive than *Cookies.js* and provides chaining for instance. EDIT: *Cookies.js* provides chaining too.
+
+  ---
+
+  ## Conclusion
+
+  There are definitely quite a few storage libraries available. You can find a few more at [our full listing](http://jster.net/category/storage-libraries). Many seem to focus on wrapping localStorage. Fortunately there are a few conceptually different around. I hope this post gave you some insight to the field as it is. Let us know if we missed some awesome library or made some terrible mistake at the comments.

@@ -1,0 +1,72 @@
+type: static
+title: "JSter #155: Libraries, and more"
+short_title: "JSter #155"
+user: bebraw
+slug: jster-155
+body: |
+  > JavaScript, eight days a week
+
+  The online edition of [React Finland](https://react-finland.fi/) is getting closer. There will be a group of workshops at the end of the month. In addition, we'll begin a series of online mini-conferences with three speakers each including QAs and panels. The theme of the first one will be documentation.
+
+  ## Libraries
+
+  * [garmeeh/next-seo](https://github.com/garmeeh/next-seo) - Next SEO is a plug in that makes managing your SEO easier in Next.js projects
+  * [React Icons](https://react-icons.github.io/react-icons/) - Popular icons for React projects
+  * [lukeed/uid](https://github.com/lukeed/uid) - A tiny (134B) and fast utility to generate random IDs of fixed length
+  * [Snap.svg](http://snapsvg.io/) - The JavaScript SVG library for the modern web
+  * [ts-polyfill](https://www.npmjs.com/package/ts-polyfill) - Runtime polyfills for TypeScript libs, powered by core-js!
+  * [iwanthue](https://www.npmjs.com/package/iwanthue) - Colors for data scientists
+  * [KFlash/seafox](https://github.com/KFlash/seafox) - A blazing fast 100% spec compliant, self-hosted JavaScript parser written in TypeScript
+  * [open-draft/until](https://github.com/open-draft/until) - Gracefully handle Promises using async/await
+  * [safety-match](https://www.npmjs.com/package/safety-match) - Rust-style tagged union matching for JavaScript, with TypeScript types
+  * [Yomguithereal/pandemonium](https://github.com/Yomguithereal/pandemonium) - Typical random-related functions for JavaScript
+  * [erikmueller/cond-flow/](https://github.com/erikmueller/cond-flow/) - Elixir style cond for easy javascript control flow
+  * [dna.js ~~ An uncomplicated user interface library for building data-driven semantic templates](https://dnajs.org/)
+
+  ## Frameworks
+
+  * [RedwoodJS](https://redwoodjs.com/) - Bringing full-stack to the Jamstack
+  * [Crank.js](https://crank.js.org/blog/introducing-crank) - A Reactish UI framework with generators
+  * [Announcing Vendure v0.10.0](https://www.vendure.io/blog/2020/03/announcing-vendure-v0.10.0/) - A framework for developing e-commerce
+
+  ## Tools
+
+  * [Snowpack](https://www.snowpack.dev/) - The fast, bundle-free build tool for modern web apps.
+  * [Jest 26: Tick Tock](https://jestjs.io/blog/2020/05/05/jest-26) - A new release of the major testing tool has arrived
+  * [ai/size-limit](https://github.com/ai/size-limit) - Calculate the real cost to run your JS app or lib to keep good performance. Show error in pull request if the cost exceeds the limit
+  * [servor](https://www.npmjs.com/package/servor) - A dependency free dev server for modern web application development
+  * [Babel 7.9.0 Released: Smaller preset-env output, Typescript 3.8 support and a new JSX transform](https://babeljs.io/blog/2020/03/16/7.9.0)
+  * [What's coming in ESLint v7.0.0](https://eslint.org/blog/2020/02/whats-coming-in-eslint-7.0.0)
+
+  ## Articles
+
+  * [React Router v6 in Three Minutes](https://medium.com/better-programming/react-router-v6-in-two-minutes-a7a2963e2340)
+  * [Do React Hooks Replace Redux?](https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672)
+  * [Square Brackets are the Enemy](https://hueniverse.com/square-brackets-are-the-enemy-ff5b9fd8a3e8)
+
+  ## Guides
+
+  * [Humane Guide to Debugging Web Apps](https://hamatti.org/guides/humane-guide-to-debugging/)
+
+  ## Services
+
+  * [GitSpo](https://gitspo.com/analytics) - Analytics and Alerts for Open-Source
+
+  ## Games
+
+  * [quakejs.com](http://www.quakejs.com/)
+
+  ## GraphQL
+
+  * [ganeshcse2991/validate-graphql](https://github.com/ganeshcse2991/validate-graphql) - A simple and elegant module that provides you an easy way to validate your GraphQL queries and mutation with your own logic and YUP validation framework
+  * [Fetch your GraphQL data automagically](https://hasura.io/blog/gqless-fetch-your-graphql-data-automagically/) - Building a movie app with Hasura & gqless
+  * [confuser/graphql-constraint-directive](https://github.com/confuser/graphql-constraint-directive) - Validate GraphQL fields
+  * [gqless](https://gqless.dev/) - GraphQL queries without typing
+
+  ## CSS
+
+  * [CSS-Framework Lighthouse Scores](https://jantimon.github.io/css-framework-performance/) - A performance comparison of css approaches
+
+  ## Parodies
+
+  * [I Am Switching to JS](https://blogtitle.github.io/i-am-switching-to-js/)

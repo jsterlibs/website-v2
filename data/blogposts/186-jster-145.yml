@@ -1,0 +1,69 @@
+type: static
+title: "JSter #145: Libraries and more"
+short_title: "JSter #145"
+user: bebraw
+slug: jster-145
+body: |
+  > There's no place like JavaScript
+
+  It has been a busy month. I had to skip the previous edition of JSter as I was [busy with CSSCamp and JSCamp in Barcelona](https://survivejs.com/blog/csscamp-jscamp-2019/). Now I'm back in action.
+
+  ## Libraries
+
+  * [ungap](https://ungap.github.io/) - Pragmatic polyfills
+  * [Fastify v2 is coming to town](https://medium.com/@fastifyjs/fastify-v2-is-coming-to-town-ce279738bed6)
+  * [interact.js](https://interactjs.io) - JavaScript drag and drop, resizing, and multi-touch gestures for modern browsers (and also IE9+)
+  * [Newton Graph Library](https://julie-ng.github.io/newtonjs-graph/) - High-level dashboard visualization for architects and stakeholders
+  * [lukeed/classico](https://github.com/lukeed/classico) - A tiny (255B) shim when Element.classList cannot be used~!
+  * [TypeScript + Machine Learning + simplicity = Kalimdor.js](https://itnext.io/typescript-machine-learning-simplicity-kalimdor-js-bb1ccadf0ad3)
+  * [Splitting.js](https://splitting.js.org/) - CSS Vars for split words & chars! (items, grids, images, too!)
+  * [ScrollOut](https://scroll-out.github.io/) - ScrollOut detects changes in scroll for reveal, parallax, and CSS Variable effects!
+  * [sadick254/scoped-style](https://github.com/sadick254/scoped-style) - A tiny css-in-js library
+
+  ## Frameworks
+
+  * [jaredpalmer/after.js](https://github.com/jaredpalmer/after.js) - Next.js-like framework for server-rendered React apps built with React Router 4
+  * [GoogleChromeLabs/carlo](https://github.com/GoogleChromeLabs/carlo) - Web rendering surface for Node applications
+
+  ## Techniques
+
+  * [Add GUI to your E2E API tests](https://www.cypress.io/blog/2017/11/07/add-gui-to-your-e2e-api-tests/)
+
+  ## Languages
+
+  * [google/wwwbasic](https://github.com/google/wwwbasic) - BASIC language for the web
+
+  ## TypeScript
+
+  * [TypeScript AST Viewer](https://ts-ast-viewer.com/)
+  * [Announcing TypeScript 3.2](https://devblogs.microsoft.com/typescript/announcing-typescript-3-2/)
+  * [Type holes in TypeScript](https://dev.to/gcanti/type-holes-in-typescript-2lck)
+  * [dsherret/ts-morph](https://github.com/dsherret/ts-morph) - TypeScript Compiler API wrapper for static analysis and programmatic code changes
+
+  ## WebAssembly
+
+  * [WebAssembly doesn’t make unsafe languages safe (yet)](https://00f.net/2018/11/25/webassembly-doesnt-make-unsafe-languages-safe/)
+
+  ## Tools
+
+  * [BrunnerLivio/try](https://github.com/BrunnerLivio/try) - Quickly try out NPM packages inside a container
+  * [xaviervia/which-ramda-function-should-i-use](https://github.com/xaviervia/which-ramda-function-should-i-use)
+  * [release-it](https://github.com/release-it/release-it) - Automate versioning and package publishing
+  * [HTTP Toolkit](https://httptoolkit.tech/view/javascript/) - Capture, view and debug your Node.js and web JS's HTTP traffic
+  * [webpack-nano](https://www.npmjs.com/package/webpack-nano) - A teensy, squeaky 🐤 clean Webpack CLI
+
+  ## Courses
+
+  * [Free React Native Course by Hasura](https://learn.hasura.io/graphql/react-native/introduction/)
+
+  ## Articles
+
+  * [The Power of Web Components](https://hacks.mozilla.org/2018/11/the-power-of-web-components/)
+
+  ## Interviews
+
+  * [Secure Coding](https://survivejs.com/blog/secure-coding-interview/) - Interview with Liran Tal
+
+  ## Standards
+
+  * [JSON Resume](https://jsonresume.org/) - JSON-based standard for resumes

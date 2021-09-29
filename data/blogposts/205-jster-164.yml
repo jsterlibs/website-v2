@@ -1,0 +1,89 @@
+type: static
+title: "JSter #164: Libraries, and more"
+short_title: "JSter #164"
+user: bebraw
+slug: jster-164
+body: |
+  > JavaScript – Always evolving, always changing
+
+  It's time for the second JSter post of the year. I'll be organizing two events later this month: [Vodcast about React components](https://react-finland.fi/blog/vodcast-01/) (24th of February) and [ViennaJS Live Coding: WebXR](https://www.meetup.com/viennajs/events/276123836/) (25th of February). Make sure to tune in!
+
+  ## Libraries
+
+  * [andyrichardson/fielder](https://github.com/andyrichardson/fielder) - A field-first form library for React and React Native
+  * [jneen/parsimmon](https://github.com/jneen/parsimmon) - A monadic LL(infinity) parser combinator library for JavaScript
+
+  ## Articles
+
+  * [Log-Driven Development](https://dev.to/alexsergey/log-driven-development-3jmf)
+  * [Using ESLint to improve your app’s performance](https://allegro.tech/2020/08/using-eslint.html)
+  * [A Breakdown of RxJS 7.0 Performance Improvements](https://labs.thisdot.co/blog/a-breakdown-of-rxjs-7-0-performance-improvements/)
+  * [Building realtime apps with Node.js and WebSockets: client-side considerations](https://www.ably.io/topic/websockets-nodejs)
+
+  ## Tooling
+
+  * [rafgraph/rollpkg](https://github.com/rafgraph/rollpkg) - Zero-config build tool to create packages with Rollup and TypeScript
+  * [Rush](https://rushjs.io/)
+  * [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort) - Sort imports with ESLint
+
+  ## Videos
+
+  * [Deno: Develop REST API + mongoDB + Linux (Ubuntu)](https://www.youtube.com/watch?v=Gmb0yJKkBWM)
+
+  ## TypeScript
+
+  * [a7ul/esbuild-node-tsc](https://github.com/a7ul/esbuild-node-tsc) - Build your Typescript Node.js projects using blazing fast esbuild
+  * [woutervh-/typescript-is](https://github.com/woutervh-/typescript-is) - TypeScript transformer that generates run-time type-checks
+  * [tsconfig.js](https://www.npmjs.com/package/tsconfig.js)
+
+  ## Tools
+
+  * [rsms/estrella](https://github.com/rsms/estrella) - Lightweight and versatile build tool based on the esbuild compiler
+  * [elsaland/elsa](https://github.com/elsaland/elsa) - Elsa is a minimal, fast and secure runtime for JavaScript and TypeScript written in Go
+  * [snyk/vulncost](https://github.com/snyk/vulncost) - Find security vulnerabilities in open source npm packages while you code
+  * [Preconstruct](https://preconstruct.tools/) - Dev and build your code painlessly in monorepos
+  * [intuit/auto](https://github.com/intuit/auto) - Generate releases based on semantic version labels on pull requests
+
+  ## React
+
+  * [Tao of React](https://alexkondov.com/tao-of-react/)
+  * [Server-Side Rendering from zero to hero](https://dev.to/alexsergey/server-side-rendering-from-zero-to-hero-2610)
+  * [pmndrs/use-tweaks](https://github.com/pmndrs/use-tweaks) - Tweak React components with Tweakpanes
+
+  ## Snippets
+
+  * [Short code snippets for all your development needs](https://www.30secondsofcode.org/)
+
+  ## Tutorials
+
+  * [Learn Puppeteer & Playwright](https://theheadless.dev/)
+  * [Build a Simple FLIP Animation in React](https://souporserious.com/build-a-simple-flip-animation-in-react/)
+
+  ## Techniques
+
+  * [Leading-Trim: The Future of Digital Typesetting](https://medium.com/microsoft-design/leading-trim-the-future-of-digital-typesetting-d082d84b202)
+  * [Mutation Testing: A Tale of Two Suites](https://codeascraft.com/2020/08/17/mutation-testing-a-tale-of-two-suites/)
+
+  ## Interviews
+
+  * [PixelCraft - a Pixel Art Editor](https://survivejs.com/blog/pixelcraft-interview/)
+  * [Nullstack - Full-stack JavaScript Components](https://survivejs.com/blog/nullstack-interview/)
+  * [Renderlesskit React - Collection of composable headless hooks](https://survivejs.com/blog/renderlesskit-interview/)
+  * [GruCloud - Infrastructure as Code in JavaScript](https://survivejs.com/blog/grucloud-interview/)
+
+  ## Frameworks
+
+  * [Nullstack](https://nullstack.app/) - Full-stack JavaScript components
+  * [Inertia.js](https://inertiajs.com/) - Build single-page apps, without building an API
+
+  ## Apps
+
+  * [rgab1508/PixelCraft](https://github.com/rgab1508/PixelCraft)
+
+  ## CSS
+
+  * [kripod/css-shorthand-expanders](https://github.com/kripod/css-shorthand-expanders) - Type-safe functions to expand CSS shorthands into their longhand sub-properties
+
+  ## Deno
+
+  * [mdubourg001/ssgo](https://github.com/mdubourg001/ssgo) - The minimalistic but flexible static site generator for Deno

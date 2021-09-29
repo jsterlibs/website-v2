@@ -1,0 +1,56 @@
+title: Why Should You Use Client-Side MVC Framework?
+slug: why-should-you-use-client-side-mvc-framework
+type: rating
+includes: [Backbone.js, AngularJs, Batman.js, CanJS]
+user: DavertMik
+
+body: |
+  ## Looking From the Server's Side 
+
+  Let me start with introduction. My name is Michael Bornarchuk, and I am a web developer since 2004.
+  I've built many sites and applications powered by PHP or Ruby (and [Jster](http://jster.net) is on of them). As many backend developers I was trying to figure out what client-side **Javascript MVC frameworks** are good for. You know, we didn't hear about them before 2012. At least, I didn't. 
+  For backend part we had many wonderful MVC frameworks in all popular languages. We have **Ruby on Rails**, we have **Django**, **Symfony**, **Play**, and others.
+  And now the **MVC** buzzword came to Javascript and met more buzz-friends there: **MVVM**, **Backbone.js**, **Ember.js**, **SproutCore**, **Knockout**, **AngularJS**. What are these things? Do they help developing web applications?
+  For years I was using jQuery and it was ok. So why should I change my mind and use that new geeky stuff? 
+
+  Well, those were my thoughts about a month ago. I was concerned with the fact that moving logic to client makes rendering slower (yeah, a well known Twitter experience). 
+  There are still various issues that can't be done only on server side. Finding the right balance between server and client something that every developer should take on her own.
+  When this balance is not reached we may come to logic and code duplication. I.e. we do form validation on client because it's fast and looks nice, but we do the same stuff on server for security reasons.  
+
+  So it's all about balance. You can put all your code to server side and use jQuery for simple interactions. And it works. Worked for years.
+  Why to invent something new? **The need of client-side MVC frameworks is clear when you start operate not only with HTML but with data on your page**.
+
+  ## From HyperText to HyperData
+
+  Here is an example. You want to list all users on a page using with ajax pagination. Each time you click "`Next page`" an ajax request with page number is sent to backend
+  and HTML is retrieved back. That works fine and cool. But what if you need to display a counter of users on a page: "`10 active users, 2 banned users`"?
+  Server can render them too, but, let's say you need this counters in navbar, and this means server will have to replace all the page to make counters work correctly.
+
+  In that very moment you think, that server should return not only HTML of page, but also a number of active and banned users. And the response itself can't be HTML anymore. 
+  It should be completely reworked to return JSON serialized data, it's HTML part to be rendered and counters updated. But well, wouldn't it look nicer, if 
+  we get rid of HTML in response at all? It's just not very flexible. If need another counter, maybe number of admin users on a page, we will have to update server and client code respectfully to handle this new counter.
+  And so we come to issue I described. Code and logic duplication. So the ideal solution is to return the listed users collection in JSON, process this data,
+  perform all required calculations, render HTML and put that into page.
+
+  ## Brave New World
+  
+  The gates are opened. Part of the application's logic has moved to the client. And here we are in situation when we need to deal somehow with all that data that comes from server.
+  Various user collections, article collections, comment collections. We need a tool to update parts of a web page depending of their state.
+
+  Don't forget for CRUD actions. When we deal with data on client it's natural to make all interactions on client and only synchronize changes with server over **REST API**.
+  So adding or deleting user should not make page to reload as we can update page according to current data state. 
+  
+  What tools should be used for managing data collections and web page interactions? You are right! They are MVC frameworks!
+  There are many of them but we need a lightweight solution that keeps right a balance between server a client logic. 
+
+  Consider choosing one of them. To make a better choice you can  refer to the [TodoMVC](http://todomvc.com/) site. There you will see an example application created with different frameworks.
+
+  {{ screenshot: TodoMVC }}
+
+  Personally I just can't take and move everything to client in a moment. And I still want that most of rendering to be performed on server. 
+  And I want to have a full control over DOM with the tools I'm used to: **jQuery and it's plugins**. And here are some great MVC frameworks for that:
+
+footer: |
+  At some point you may completely run out of need to use MVC things in your projects and use components. 
+  There are JavaScript frameworks that allow you to built a complete UI with no line of HTML written. You may write 90% of your application code on client and use server only as REST API.
+  But as for me I'd stay with a classic schema and combine power of my favorite server and client MVC frameworks.

@@ -1,0 +1,97 @@
+type: interview
+title: "Interview with Esa-Matti Suuronen, developer of underscore.string"
+short_title: Interview with Esa-Matti Suuronen
+slug: Esa-Matti-Suuronen-interview-underscore-string
+includes: ["pouchdb","messageformat.js", "pointer.js", "spin.js"]
+user: bebraw
+profile:
+  name: Esa-Matti Suuronen
+  twitter: EsaMatti 
+  github: epeli
+  bio: "a crazy focused web developer from Jyväskylä, Finland who loves writing code and jumping from airplanes."
+  photo: http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/3/000/0b5/0c8/338c016.jpg
+body: |
+
+  This time we'll be discussing with Esa-Matti Suuronen of [Opinsys](http://www.opinsys.fi/). A company known for its Linux based thin client solutions used in educational sector. Esa-Matti or [Epeli](https://github.com/Epeli) or just [@EsaMatti](https://twitter.com/EsaMatti) is particularly known for his [underscore.string](http://jster.net/library/underscore-string) library and has published several high profile posts over at [his blog](http://esa-matti.suuronen.org/).
+
+  Time for some questions!
+
+  #### First of all, how did you end up developing *underscore.string*? Why did it become such a success?
+
+  I was looking for a library that would provide some missing bits from the
+  Javascript standard library I was used to in some other languages. I asked this
+  Stackoverflow [question](http://stackoverflow.com/questions/2999611/javascript-helper-libraries-no-dom-or-ajax-stuff) which lead me to the Underscore.js which did
+  implement everything I needed except the string extensions. Since I had already
+  quite a few string helper functions lying around it was pretty simple to put
+  Underscore.string together.
+
+  {{ screenshot: underscore-string }} 
+
+  The popularity comes pretty much by piggybacking on the success of
+  **Underscore.js**. Quite soon after I released it **Jeremy Ashkenas** offered to link
+  to it from the Undescore.js page and being probably the only proper
+  Javascript string library with tests at the time. Also Big part of any even
+  remotely successful library is maintaining the project and I definitely cannot
+  take the credit for that. I gotta give big thanks to [@edtsech](https://github.com/edtsech) and [@rwz](https://github.com/rwz)
+  for taking care of the project. Thanks!
+
+  #### Are there any other projects you would like to specifically mention?
+
+  [Backbone.ViewMaster](http://epeli.github.io/backbone.viewmaster/). When I first started with **Backbone.js** the biggest
+  trouble for me was how to manage nested views views with it. Since I'm a big
+  believer of small and decoupled components and in Backbone.js your basic
+  component is a View. I ended up doing a lot of those. Originally I planned to
+  just first work my way with plain Backbone.js and then to migrate to something
+  like Marionette.js when I actually would see the need for it. But soon I
+  realized that I had already solved my biggest issues with just a small base
+  View I was inheriting from. Since I already had documented it for my colleagues
+  I ended up releasing it as a library. If you just need help with view nesting
+  with Backbone.js I think ViewMaster can take you a long way with just 1kb of
+  additional code.
+
+  #### What reasons drove you from RequireJS to Browserify? How do you see the future of modular JavaScript?
+
+  Well, I wasn't very happy with **RequireJS** even when I first started with it
+  because I mostly use node.js for my backend needs so CommonJS based solution
+  would have been a much better fit for me. But back then I didn't feel that
+  there where any flexible and robust enough solutions out there until **Browserify**
+  v2 was released. For a long time resisted using RequireJS. I even created [Piler](https://github.com/epeli/piler)
+  which was a module system agnostic solution for packing and compiling
+  Javascript modules.
+
+  #### If you had to start a JavaScript project (say a client and a backend for that) right now, what tools would you use? Why?
+
+  I would use everything mentioned here.
+
+  **Backbone.js**. Combined with ViewMaster it gives me just enough features I need
+  without getting too much in the way.
+
+  **Node.js**. The apps I'm building today are so client heavy it doesn't really make
+  sense to use any other language for the 10% of the code I write for the backend
+  and node.js is definitely the best Javascript server-side solution out there.
+  Also I quite often leverage Websockets and I think node.js still has the best tools working with those.
+  For the server-side frameworks I don't have that strong opinions. I would
+  probably go with Express since it's very well supported and maintained.
+
+  #### What kind of advice would you provide for JavaScript newcomers?
+
+  Learn it well. If you want get break from all those legacy Java projects learn
+  Javascript well and you'll have lot of new opportunities opening to you. There
+  are dozens of Javascript positions open right now looking for guys and gals
+  being able to write robust Javascript. It's not the easiest language to learn
+  but it's definitely worth it and you'll find that underneath the rough surface
+  there is actually a pretty nice language.
+
+  #### And lastly, as we are a JavaScript library catalog after all, could you please list some of your favorite libraries?
+
+footer: |
+
+  ### Conclusion
+
+  Thank you for the interview Esa-Matti! It was nice to hear your thoughts on JavaScript development. Best of luck to your projects!
+
+  I personally hope these sort of interviews give insight to you, readers, on what makes contemporary JavaScript developers tick. If there are some specific questions in your mind, do let us know and we'll find the right persons to provide the answers.
+
+  In order to keep a better track of what we're doing, do follow us at [Twitter](http://twitter.com/jsterlibs) and consider subscribing to our [RSS feed](http://feeds.feedburner.com/jster).
+
+  Till the next time!

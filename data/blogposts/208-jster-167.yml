@@ -1,0 +1,57 @@
+type: static
+title: "JSter #167: Libraries, and more"
+short_title: "JSter #167"
+user: bebraw
+slug: jster-167
+body: |
+  > JavaScript does whatever JavaScript does
+
+  [The next React Finland vodcast](https://react-finland.fi/blog/vodcast-03/) will focus on full stack React (28th of April, 16:00 GMT+0). Expect to learn about Amplify, Next.js, and Blitz.js.
+
+  ## Libraries
+
+  * [pmndrs/jotai](https://github.com/pmndrs/jotai) - Primitive, flexible state management for React
+  * [zillow/react-slider](https://github.com/zillow/react-slider) - Accessible, CSS agnostic, slider component for React
+  * [yjs](https://github.com/yjs/yjs) - Peer-to-peer shared types
+  * [fakenickels/let-anything](https://github.com/fakenickels/let-anything) - Monadic syntax for JavaScript
+
+  ## Frameworks
+
+  * [github/catalyst](https://github.com/github/catalyst) - Catalyst is a set of patterns and techniques for developing components within a complex application
+  * [Aleph.js](https://alephjs.org/) - The React Framework in Deno
+
+  ## Tools
+
+  * [siddharthkp/bundlesize](https://github.com/siddharthkp/bundlesize) - Keep your bundle size in check
+  * [wclr/yalc](https://github.com/wclr/yalc) - Work with yarn/npm packages locally like a boss
+  * [Squircley](https://squircley.app/) - SVG generator for the famous shape
+  * [mutantcornholio/veendor](https://github.com/mutantcornholio/veendor) - A tool for storing your npm dependencies in arbitrary storage
+  * [ljosberinn/eslint-config-galex](https://github.com/ljosberinn/eslint-config-galex) - Impressive collection of ESLint rules
+
+  ## Articles
+
+  * [Bundling Web Workers for npm](https://souporserious.com/bundling-workers-for-npm/)
+  * [GitHub Actions to securely publish npm packages](https://snyk.io/blog/github-actions-to-securely-publish-npm-packages/)
+  * [Using Damped Springs for animations](https://humpf.etienne.tech/article)
+  * [10 Insights from Adopting TypeScript at Scale](https://www.techatbloomberg.com/blog/10-insights-adopting-typescript-at-scale/)
+  * [Announcing the Deno Company](https://deno.com/blog/the-deno-company)
+  * [The most useful accessibility testing tools and techniques](https://blog.sapegin.me/all/accessibility-testing/)
+  * [Persistent Layout Patterns in Next.js](https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/)
+  * [Don't design for mobile](https://mattanddesign.com/dont-design-for-mobile/)
+
+  ## Interviews
+
+  * [Blitz.js - The Full-stack React Framework - Interview with Brandon Bayer](https://survivejs.com/blog/blitz-interview/)
+
+  ## Node.js
+
+  * [Server.js](https://serverjs.io/) - Powerful server for Node.js
+
+  ## GraphQL
+
+  * [gajus/graphql-lazyloader](https://github.com/gajus/graphql-lazyloader) - GraphQL directive that adds Object-level data resolvers
+  * [Building a GraphQL server with GraphQL Helix](https://dev.to/danielrearden/building-a-graphql-server-with-graphql-helix-2k44)
+
+  ## Demos
+
+  * [Little planet](https://troisjs.github.io/little-planet/)

@@ -1,0 +1,39 @@
+type: static
+title: "JSter #169: Libraries, and more"
+short_title: "JSter #169"
+user: bebraw
+slug: jster-169
+body: |
+  > JavaScript keeps on going
+
+  Remember to tune in at the next [React Finland vodcast](https://www.youtube.com/watch?v=AuwpOsrzHC8) about design tools 29th of June 16:00 GMT+0.
+
+  ## Libraries
+
+  * [SnackUI](https://github.com/snackui/snackui) - SnackUI is a UI Kit for React Native + react-native-web that's much faster with an optimizing compiler
+  * [safety-match](https://www.npmjs.com/package/safety-match) - safety-match provides pattern matching for JavaScript, TypeScript, and Flow
+  * [gvergnaud/ts-pattern](https://github.com/gvergnaud/ts-pattern) - An exhaustive Pattern Matching library for TypeScript, with smart type inference
+
+  ## Frameworks
+
+  * [Announcing Vendure v1.0](https://www.vendure.io/blog/2021/05/announcing-vendure-v1.0/) - TS-friendly open source e-commerce framework
+  * [Bootstrap 5](https://blog.getbootstrap.com/2021/05/05/bootstrap-5/) - The popular CSS framework has reached a new milestone
+
+  ## Tools
+
+  * [devongovett/dprint-node](https://github.com/devongovett/dprint-node) - Like Prettier but 20x faster
+  * [orval](https://orval.dev/) - Generate client with appropriate type-signatures
+  * [Why husky has dropped conventional JS config](https://blog.typicode.com/husky-git-hooks-javascript-config/)
+  * [toplenboren/simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) - Like husky but in package.json
+  * [remorses/vitro](https://github.com/remorses/vitro) - Build and showcase your react components in isolation
+  * [typehole](https://github.com/rikukissa/typehole) - TypeScript development tool for Visual Studio Code that helps you automate creating the initial static typing for runtime values
+
+  ## CSS
+
+  * [seek-oss/vanilla-extract](https://github.com/seek-oss/vanilla-extract) - Zero-runtime Stylesheets-in-TypeScript
+
+  ## Articles
+
+  * [How to Replace Redux with Context API](https://around25.com/blog/replace-redux-with-context-api/)
+  * [Rethinking JavaScript Infrastructure](https://cpojer.net/posts/rethinking-javascript-infrastructure)
+  * [A simple rule for using callbacks in React](https://dev.to/yelouafi/a-simple-rule-for-using-callbacks-in-react-4jah)

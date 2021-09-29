@@ -1,0 +1,59 @@
+type: static
+title: "JSter #76: News of August 2016 - Part 1"
+short_title: "JSter #76"
+user: bebraw
+slug: monthly-jster-august-2016-part-1
+body: |
+    > Maybe I JavaScripted, maybe I didn't. - Matti Nykänen
+
+    I published a new version of [Reactabular](http://reactabular.js.org/) so check it out if you need a table component for React. The logic is decoupled so you could reuse some of that in other environments. I also came up with [slides related to the topic](https://survivejs.github.io/react-api-design).
+
+    ## Libraries
+
+    {{ screenshot: https://alemangui.github.io/pizzicato/ }}
+
+    * [Pizzicato.js](https://alemangui.github.io/pizzicato/) - A Javascript library for web audio
+    * [DOMtastic](http://domtastic.js.org/) - Small, fast, and modular DOM &amp; Event library for modern browsers
+    * [Introducing serializr: serializing and deserializing object graphs with ease](https://medium.com/@mweststrate/introducing-serializr-serializing-and-deserializing-object-graphs-with-ease-8833c3fcea02)
+    * [liftoff/HumanInput](https://github.com/liftoff/HumanInput) - A JavaScript library for handling keyboard shortcuts and other human-generated events
+    * [Popper.js](http://popper.js.org/) - Poppers for websites
+    * [FelixRilling/chevronjs](https://github.com/FelixRilling/chevronjs) - A super tiny JavaScript service library
+    * [Ramotion/aquarelle](https://github.com/Ramotion/aquarelle) - Watercolor JavaScript effect
+    * [verlok/lazyload](https://github.com/verlok/lazyload) - Load images only as they enter the viewport
+
+    ## Articles
+
+    * [Node.js web frameworks are slow](https://medium.com/@hnry/node-js-web-frameworks-are-slow-3b7dfb5e204d)
+    * [A selection of articles demystifying JavaScript engines](https://github.com/a0viedo/demystifying-js-engines)
+    * [js13kGames: Code golf for game devs](https://hacks.mozilla.org/2016/08/js13kgames-code-golf-for-game-devs/)
+    * [Examples of How Enterprises Use Node.js in 2016](https://blog.risingstack.com/node-js-examples-how-enterprises-use-node-in-2016/)
+    * [The Case for Monorepos](https://medium.com/@bebraw/the-case-for-monorepos-907c1361708a)
+
+    ## Techniques
+    * [Beyond Memory Leaks in JavaScript](https://medium.com/outsystems-experts/beyond-memory-leaks-in-javascript-d27fd48ae67e)
+    * [Angular 2 Hot Loading with @ngrx/store and Webpack](http://teropa.info/blog/2016/08/08/angular-2-hot-loading-with-ngrx-store-and-webpack.html)
+    * [Animating like you just don’t care with Element.animate](https://hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/)
+    * [Testing es2015 Riot Tags](http://jaketrent.com/post/testing-es2015-riot-tags/)
+    * [Measuring the Real-world Performance Impact of Service Workers](https://developers.google.com/web/showcase/2016/service-worker-perf)
+
+    ## Interviews
+
+    * [CodeceptJS - Modern Era Acceptance Testing for Node.js - Interview with Michael Bodnarchuk](http://survivejs.com/blog/codeceptjs-interview/)
+
+    ## Games
+
+    * [return true to win](https://alf.nu/ReturnTrue)
+
+    ## Tools
+
+    * [HyperTerm](https://hyperterm.org/) - Forget iTerm, the new king is here
+    * [ShiftJS](http://www.shiftjs.com/) - ShiftJS is an open source Swift to JavaScript transpiler written in JavaScript
+    * [launchkit](https://github.com/launchkit/launchkit) - A set of web-based tools for mobile app developers
+    * [rofrischmann/inline-style-prefixer](https://github.com/rofrischmann/inline-style-prefixer) - Run-time autoprefixer for inline style objects
+
+    ## Demos
+
+    * [Castles made of castles](https://sciencevsmagic.net/castles/) - WebGL demo
+    * [Butterchurn Visualizer](https://butterchurnviz.com/) - Milkdrop nostalgy
+    * [SMB3 Memory Card Game](https://codepen.io/hexagoncircle/details/OXBJxV/)
+    * [Procedural insects](https://dattasid.github.io/ProcInsect.html)

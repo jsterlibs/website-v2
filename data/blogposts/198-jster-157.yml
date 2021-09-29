@@ -1,0 +1,72 @@
+type: static
+title: "JSter #157: Libraries, and more"
+short_title: "JSter #157"
+user: bebraw
+slug: jster-157
+body: |
+  > undefined is not a function
+
+  Thanks to Google sponsorship, I was able to complete a new major version of [webpack-merge](https://www.npmjs.com/package/webpack-merge), the popular tool for merging webpack configurations. It's written in TypeScript and while I dropped smart merging from it, other fixes and tweaks should make up for the omission.
+
+  ## Libraries
+
+  * [aribouius/jsonapi-react](https://github.com/aribouius/jsonapi-react) - A minimal JSON:API client and React hooks for fetching, updating, and caching remote data.
+  * [Hooked on Redux](https://hooked-on-redux.js.org/) - Redux on hooks
+  * [RoughNotation](https://roughnotation.com/) - A small JavaScript library to create and animate annotations on a web page
+  * [MediumEditor](https://yabwe.github.io/medium-editor/) - The dead simple inline editor toolbar.
+  * [Photon](https://silvia-odwyer.github.io/photon/) - A WebAssembly Image Processing Library
+  * [ryansolid/solid](https://github.com/ryansolid/solid) - A declarative JavaScript library for creating user interfaces
+  * [Local-first database: gun.js](https://jaredforsyth.com/posts/local-first-database-gun-js/)
+  * [leeoniya/uPlot](https://github.com/leeoniya/uPlot) - A small (< 25 KB min), fast chart for time series, lines, areas, ohlc & bars
+  * [Tabulator](http://tabulator.info/) - The easy to use, fully featured, interactive table JavaScript library
+
+  ## Tools
+
+  * [AudioMass](https://audiomass.co/) - A free, open source, web-based Audio and Waveform Editor
+  * [Introducing Snowpack 2.0](https://www.snowpack.dev/posts/2020-05-26-snowpack-2-0-release/) - A build system for the modern web
+  * [lud2k/ts-react-display-name](https://github.com/lud2k/ts-react-display-name) - Typescript transformer that adds displayName to React components.
+  * [ericclemmons/amplify-flow](https://github.com/ericclemmons/amplify-flow) - Native app for GitHub issue management for Amplify JS
+  * [typescript-eslint/typescript-eslint/releases/tag/v3.0.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v3.0.0) - A new major release
+
+  ## Styling
+
+  * [LaTeX.css](https://latex.now.sh/) - Make your site look like a LaTeX document
+
+  ## TypeScript
+
+  * [vriad/zod](https://github.com/vriad/zod) - A TypeScript driven validation library
+  * [Typing the Technical Interview in TypeScript](https://gal.hagever.com/posts/typing-the-technical-interview-in-typescript/)
+  * [nicojs/typed-html](https://github.com/nicojs/typed-html) - TypeScript and JSX driven HTML templates
+
+  ## Tutorials
+
+  * [How to make Ionic Storage reactive](https://medium.com/@OlegVaraksin/how-to-make-ionic-storage-reactive-acdd8996f1e6)
+
+  ## Articles
+
+  * [Contemporary Front-end Architectures](https://blog.webf.zone/contemporary-front-end-architectures-fb5b500b0231)
+  * [Designing the perfect Typescript schema validation library](https://vriad.com/essays/zod)
+  * [A Critique of React Hooks](https://dillonshook.com/a-critique-of-react-hooks/)
+
+  ## Testing
+
+  * [mfrachet/cypress-audit](https://github.com/mfrachet/cypress-audit) - Integration of Cypress with other test tooling
+
+  ## Data Structures
+
+  * [protobuf.js](https://github.com/protobufjs/protobuf.js) - A serialized data structure
+  * [MessagePack: It's like JSON. but fast and small.](https://msgpack.org/index.html)
+
+  ## Techniques
+
+  * [Optimize Cumulative Layout Shift](https://web.dev/optimize-cls/)
+  * [Measuring the Real-world Performance Impact of Service Workers](https://developers.google.com/web/showcase/2016/service-worker-perf)
+  * [Precaching in Create React App with Workbox](https://web.dev/precache-with-workbox-react/)
+
+  ## Games
+
+  * [WebLiero](https://www.webliero.com/) - Finnish classic on the web
+
+  ## Proposals
+
+  * [tc39/proposal-pattern-matching/blob/latest/README.md](https://github.com/tc39/proposal-pattern-matching/blob/latest/README.md) - Pattern matching for JavaScript

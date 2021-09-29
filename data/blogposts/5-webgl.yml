@@ -1,0 +1,14 @@
+type: rating
+title: "WebGL 3D Engines and Tools"
+user: bebraw
+slug: webgl-3d-engines-and-tools
+includes: [three.js, CopperLicht, PhiloGL, J3D, CubicVR.js, C3DL, Curve3D, SpiderGL, SceneJS, lightgl.js, WebGLU, GLOW GL, GLGE, glMatrix, csg.js, webgl-2d]
+body: |
+  Pretty much all modern desktop [browsers support WebGL](http://caniuse.com/#search=webgl) Internet Explorer being a notable exception. Even then you can use hacks such as [IEWebGL](http://www.iewebgl.com/) to get the support. Although the whole specification is quite new, there has been some interest. Google Maps is a nice example of a high profile application using it.
+
+  Since working with bare APIs is often quite arduous, many wrappers have emerged. Of these particularly **three.js** and **PhiloGL** have become popular. Libraries such as **glMatrix**,**WebGLU**, **lightgl.js** and **csg.js** provide helpers for particular purposes. It is even possible to emulate Canvas2D with WebGL by using **webgl-2d**.
+  
+footer: |
+  Besides libraries above, there are some nice demos and learning resources around. You can find some of the former at [Chrome Experiments](http://www.chromeexperiments.com/tag/webgl/) and [WebGL.com](http://www.webgl.com/) for instance. [Learning WebGL](http://learningwebgl.com/blog/) and [greggman's blog posts](http://games.greggman.com/game/tag/webgl/) are good starting points for learning. Those interested particularly in the popular three.js might find [Learning Three.js](http://learningthreejs.com/) an interesting site. If you just want to dive into code, try something like [WebGL playground](http://webglplayground.net/).
+
+  As usual I likely missed some awesome libraries. Do let us know which we're missing, or better yet, add them to jster yourself. Till the next post!

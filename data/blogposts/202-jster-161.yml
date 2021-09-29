@@ -1,0 +1,83 @@
+type: static
+title: "JSter #161: Libraries, and more"
+short_title: "JSter #161"
+user: bebraw
+slug: jster-161
+body: |
+  > JavaScript - the language of the web
+
+  In our fourth mini-conference at React Finland, we focused on [lessons learned](https://react-finland.fi/blog/rf-2020-online-mini-conf-vol-4-recap/). The fifth one will take place early December and focus on [React performance](https://react-finland.fi/blog/online-mini-conf-vol-5/).
+
+  In other news, given webpack 5 was finally released, I gave my webpack book [another pass of updates](https://survivejs.com/blog/webpack-book-webpack-5-updates/) to adapt to the changes in the major tool.
+
+  ## Libraries
+
+  * [Sass: LibSass is Deprecated](https://sass-lang.com/blog/libsass-is-deprecated)
+  * [matthiasott/a11y-accordion-tabs](https://github.com/matthiasott/a11y-accordion-tabs) - A script for an accessible accordion tabs component
+  * [p-limit](https://www.npmjs.com/package/p-limit) - Run multiple promise-returning & async functions with limited concurrency
+  * [fullPage.js](https://alvarotrigo.com/fullPage/) - Create beautiful fullscreen scrolling websites
+  * [pubkey/broadcast-channel](https://github.com/pubkey/broadcast-channel) - BroadcastChannel to send data between different browser-tabs or nodejs-processes
+  * [ben-rogerson/twin.macro](https://github.com/ben-rogerson/twin.macro) - Twin blends the magic of Tailwind with the flexibility of css-in-js
+  * [daybrush/selecto](https://github.com/daybrush/selecto) - Selecto.js is a component that allows you to select elements in the drag area using the mouse or touch
+  * [komarovalexander/ka-table](https://github.com/komarovalexander/ka-table) - React Table component with Sorting, Filtering, Grouping, Virtualization, Editing and many more
+
+  ## TypeScript
+
+  * [phenomnomnominal/tsquery](https://github.com/phenomnomnominal/tsquery) - TypeScript AST query library
+
+  ## GraphQL
+
+  * [APIs-guru/graphql-lodash](https://github.com/APIs-guru/graphql-lodash) - Data manipulation for GraphQL queries with lodash syntax
+
+  ## Animation
+
+  * [bendc/animateplus](https://github.com/bendc/animateplus) - A+ animation module for the modern web
+
+  ## React
+
+  * [React v17.0](https://reactjs.org/blog/2020/10/20/react-v17.html) - New major releases without big changes
+  * [Bumbag](https://bumbag.style/) - Build accessible & themeable React applications with your Bumbag
+
+  ## Tools
+
+  * [npm v7 Series - Beta Release! And: SemVer-Major Changes in npm v7](https://blog.npmjs.org/post/626173315965468672/npm-v7-series-beta-release-and-semver-major)
+  * [Adapt](https://adaptjs.org/) - React for your infrastructure
+  * [Rome Toolchain](https://rome.tools/) - Everything in one toolchain for JavaScript
+  * [Electron Forge](https://www.electronforge.io/) - A complete tool for creating, publishing, and installing modern Electron applications
+  * [Storybook for React Native](https://medium.com/@vasikarla.raj/storybook-for-native-d772654c7133)
+  * [Rockpack](https://github.com/AlexSergey/rockpack) - All-in-one solution for developing React applications with webpack
+  * [kitten/runruntypes](https://github.com/kitten/runruntypes) - A poor man's runtime-only type checker
+  * [Webpack 5](https://webpack.js.org/blog/2020-10-10-webpack-5-release/)
+
+  ## Articles
+
+  * [Node.js Application Monitoring with Prometheus and Grafana](https://codersociety.com/blog/articles/nodejs-application-monitoring-with-prometheus-and-grafana)
+
+  ## Techniques
+
+  * [Transforming Markdown with Remark & Rehype](https://www.ryanfiller.com/blog/remark-and-rehype-plugins/)
+  * [Sight and light](https://ncase.me/sight-and-light/) - How to create 2D visibility/shadow effects for your game
+  * [Modern React testing, part 4: Cypress and Cypress Testing Library](https://blog.sapegin.me/all/react-testing-4-cypress/)
+
+  ## Games
+
+  * [Kontra.js](https://straker.github.io/kontra/) - A lightweight JavaScript gaming micro-library created specifically for the Js13kGames game jam
+  * [A Pure CSS Game](https://codepen.io/ivorjetski/pen/OJXbvdL) - You must build a lighthouse
+  * [Bongo Cat](https://bongo.cat/) - Play bongos
+  * [Code out](https://codeout.codecapi.com/)
+
+  ## Interviews
+
+  * [Algolia with Netlify](https://survivejs.com/blog/algolia-with-netlify-interview/) - Interview with Samuel Bodin
+  * [Eleventy - A simpler static site generator](https://survivejs.com/blog/eleventy-interview/) - Interview with Jeremias Menichelli
+  * [End-to-end testing](https://survivejs.com/blog/e2e-interview/) - Interview with Erik Fogg
+  * [Rockpack - Skip config, code React](https://survivejs.com/blog/rockpack-interview/) - Interview with Sergey Aleksandrov
+
+  ## Retro
+
+  * [felixrieseberg/macintosh.js](https://github.com/felixrieseberg/macintosh.js) - A virtual Apple Macintosh with System 8, running in Electron
+
+  ## Music
+
+  * [ORCΛ](https://orca.wtf/) - An esoteric programming language designed to create sequencers
+  * [Roland 808303.studio](https://808303.studio/) - TR-808 drum machine and TB-303 bass synthesiser

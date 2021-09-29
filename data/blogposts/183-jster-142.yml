@@ -1,0 +1,67 @@
+type: static
+title: "JSter #142: Libraries and more"
+short_title: "JSter #142"
+user: bebraw
+slug: jster-142
+body: |
+  > Go where JavaScript is going to be, not where it has been.
+
+  It's time for a JSter post again! If you live in Vienna area, [you could join me at Tech Movie Night!](https://techmovienight.com)
+
+  ## Libraries
+
+  * [lukeed/semiver](https://github.com/lukeed/semiver) - A tiny (153B) utility to compare semver strings.
+  * [enquirer](https://github.com/enquirer/enquirer) - Stylish, intuitive and user-friendly prompts.
+  * [automerge](https://github.com/automerge/automerge) - A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically.
+  * [sveltejs/gl](https://github.com/sveltejs/gl) - WebGL bindings for Svelte
+  * [staltz/use-profunctor-state](https://github.com/staltz/use-profunctor-state) - React Hook for state management with profunctor lenses
+
+  ## Frameworks
+
+  * [Angular 8](https://blog.angular.io/version-8-of-angular-smaller-bundles-cli-apis-and-alignment-with-the-ecosystem-af0261112a27) - Smaller bundles, CLI APIs, and alignment with the ecosystem
+
+  ## Tools
+
+  * [eslint-plugin-async-protect](https://www.npmjs.com/package/eslint-plugin-async-protect) - ESLint rules to help with async functions
+  * [dependency-cruiser](https://www.npmjs.com/package/dependency-cruiser) - Validate and visualize dependencies. With your rules.
+
+  ## Opinions
+
+  * [You probably don't need that hip web framework](https://char.gd/blog/2019/you-dont-need-that-hipster-web-framework)
+
+  ## Articles
+
+  * [The Reader monad and read-only context](https://jaysoo.ca/2017/05/10/learn-fp-with-react-part-2/)
+  * [JavaScript debuggers are broken, and it's our fault.](https://samdesota.com/2019/04/21/javascript-debuggers-are-broken.html)
+
+  ## GraphQL
+
+  * [How to validate your GraphQL queries with ESLint](https://developer.ibm.com/blogs/how-to-validate-your-graphql-queries-with-eslint/)
+  * [Build and Deploy Realtime Svelte 3 Apps Using GraphQL](https://blog.hasura.io/build-and-deploy-svelte-js-3-apps-using-graphql/)
+  * [Why People Like GraphQL](https://smizell.me/micro/2019/02/why-people-like-graphql/)
+
+  ## Interviews
+
+  * [Webpack UI Interview with Even Stensberg](https://survivejs.com/blog/webpack-ui-interview/)
+  * [ReasonML Interview with Gabriel Rubens](https://survivejs.com/blog/reasonml-interview/)
+  * [React Native Future: Interview With Software Engineer at Facebook](https://apiko.com/blog/react-native-future-2019/)
+
+  ## UI
+
+  * [Material-UI v4 is out](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701)
+
+  ## Security
+
+  * [Handlebars template injection and RCE in a Shopify app](https://mahmoudsec.blogspot.com/2019/04/handlebars-template-injection-and-rce.html) - Update Handlebars if you are using it!
+
+  ## Slides
+
+  * [Statically Generating Performance](https://speakerdeck.com/brimtown/statically-generating-performance)
+
+  ## Conferences
+
+  * [Are you a tech blogger? Attend Amsterdam JSNation 2019 for free](https://medium.com/@amsterdamjs/are-you-a-tech-blogger-attend-amsterdam-jsnation-2019-for-free-ca0c365dec30)
+
+  ## Demos
+
+  * [WebGL Fluid Simulation](https://paveldogreat.github.io/WebGL-Fluid-Simulation/)

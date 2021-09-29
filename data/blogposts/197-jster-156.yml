@@ -1,0 +1,76 @@
+type: static
+title: "JSter #156: Libraries, and more"
+short_title: "JSter #156"
+user: bebraw
+slug: jster-156
+body: |
+  > It's 2020 and we're still coding JavaScript
+
+  [The first React Finland mini-conference](https://react-finland.fi/blog/rf-2020-online-mini-conf-vol-1-recap/) took place 28th of May. I've included the videos from the session in the link and it also includes the QAs and the end panel.
+
+  The next mini-conf is going to be about state management and it's going to happen 27th of August.
+
+  ## Libraries
+
+  * [nikersify/pico](https://github.com/nikersify/pico) - Take browser screenshots in Javascript
+  * [dfahlander/Dexie.js](https://github.com/dfahlander/Dexie.js) - A Minimalistic Wrapper for IndexedDB
+  * [jncraton/box-line-text](https://github.com/jncraton/box-line-text) - Simple virtual whiteboarding
+  * [imazen/imageflow](https://github.com/imazen/imageflow) - High-performance image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow
+  * [better-logging](https://www.npmjs.com/package/better-logging) - An alternative logger for JavaScript
+  * [Recoil](https://recoiljs.org/) - A state management library for React
+  * [manassarpatwar/Self-driving-AI](https://github.com/manassarpatwar/Self-driving-AI) - Self driving cars using NEAT
+
+  ## Frameworks
+
+  * [Blitz.js](https://blitzjs.com/) - Rails-like framework for monolithic, full-stack React apps — built on Next.js
+  * [Pixelbox.js](https://pixwlk.itch.io/pixelbox) - Create 2D games in JavaScript
+
+  ## Tools
+
+  * [aholachek/bundle-wizard](https://github.com/aholachek/bundle-wizard) - Magically easy insight into the JavaScript loaded by a web app
+  * [Lerna Update Wizard](https://www.npmjs.com/package/lerna-update-wizard) - Command line interface for simplifying the process of bulk updating dependencies across multiple Lerna or Yarn Workspace packages.
+  * [Preconstruct](https://preconstruct.tools/) - Dev and build your code painlessly in monorepos
+  * [Excalidraw](https://excalidraw.com/) - Simple collaborative drawing on the web
+  * [@yarnpkg/plugin-typescript](https://yarnpkg.com/api/modules/plugin_typescript.html) - This plugin automatically adds @types/ packages into your dependencies when you add a package that doesn't include its own types.
+  * [atlassian/changesets](https://github.com/atlassian/changesets) - Changesets automate changelog generation
+  * [@manypkg/get-packages](https://github.com/Thinkmill/manypkg/tree/master/packages/get-packages) - A simple utility to get the packages from a monorepo, whether they're using Yarn, Bolt or pnpm
+  * [ESLint v7.0.0 released](https://eslint.org/blog/2020/05/eslint-v7.0.0-released)
+  * [stefanjudis/netlify-menubar](https://github.com/stefanjudis/netlify-menubar) - Netlify menubar app to receive build information or trigger new builds
+
+  ## CSS
+
+  * [Animate.css](https://animate.style/) - Just-add-water CSS animations
+  * [98.css](https://jdan.github.io/98.css/) - CSS like it's 1998
+  * [@stitches/css](https://www.npmjs.com/package/@stitches/css) - Atomic css-in-js
+
+  ## Resources
+
+  * [Weekly News for Busy Web Devs](https://programmingdigest.net/?utm_source=jster) - Programming Digest is a weekly curated newsletter with the five most interesting stories in programming 👩‍💻, data 💾, and tech 📱️.
+
+  ## Tutorials
+
+  * [How to Use Workbox With Next.js](https://medium.com/better-programming/using-workbox-with-next-js-a-step-towards-progressive-web-apps-a3f985f5f864)
+  * [Loading web pages fast on a $20 feature phone](https://dev.to/addyosmani/loading-web-pages-fast-on-a-20-feature-phone-8h6)
+  * [How to detect if an object has been garbage collected in Javascript](http://stevehanov.ca/blog/?id=148)
+  * [HTML DOM](https://htmldom.dev/) - How to manage HTML DOM with vanilla JavaScript only?
+
+  ## Articles
+
+  * [AMP + Web Vitals](https://blog.amp.dev/2020/05/06/amp-web-vitals-a-better-web-together/) – a better web, together
+  * [The Cost of Javascript Frameworks](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/)
+  * [Good, Fast, Cheap -- pick any two.](http://www.tuitivegroup.com/good-fast-cheap/)
+
+  ## Languages
+
+  * [Hegel](https://hegel.js.org/) - An advanced static type checker
+  * [Node.js version 14 is available now](https://medium.com/@nodejs/node-js-version-14-available-now-8170d384567e)
+  * [Deno, a Node.js alternative, has reached 1.0](https://deno.land/v1)
+
+  ## Testing
+
+  * [testonjs/teston](https://github.com/testonjs/teston) - Test runner similar to tape, but with ES6 module support, simpler subtest syntax and nice indentation
+
+  ## GraphQL
+
+  * [GraphQL Nexus](https://nexus.js.org/) - Declarative, Code-First GraphQL Schemas for JavaScript/TypeScript
+  * [Relay: the GraphQL client that wants to do the dirty work for you](https://dev.to/zth/relay-the-graphql-client-that-wants-to-do-the-dirty-work-for-you-55kd)

@@ -1,0 +1,63 @@
+type: static
+title: "JSter #149: Libraries and more"
+short_title: "JSter #149"
+user: bebraw
+slug: jster-149
+body: |
+  > JavaScript is the end and the beginning
+
+  Little bird told me that [React Finland](https://react-finland.fi) (26-29.05.2020) and [Freezing Edge](https://freezing-edge.fi) (01.06.2020) conference tickets come available soon!
+
+  ## Libraries
+
+  * [sinclairzx81/zero](https://github.com/sinclairzx81/zero) - 3D graphics rendering pipeline. Implemented in JavaScript. Run in a terminal.
+  * [Cytoscape.js](https://js.cytoscape.org/) - Graph theory (network) library for visualisation and analysis
+  * [leeoniya/uPlot](https://github.com/leeoniya/uPlot) - An exceptionally fast, tiny time series chart
+  * [Introducing MikroORM, TypeScript data-mapper ORM with Identity Map](https://medium.com/dailyjs/introducing-mikro-orm-typescript-data-mapper-orm-with-identity-map-9ba58d049e02)
+  * [lukeed/throttles](https://github.com/lukeed/throttles) - A tiny (139B to 204B) utility to regulate the execution rate of your functions
+  * [Chakra UI](https://chakra-ui.com/) - Build accessible React apps & websites with speed
+  * [ai/nanoid](https://github.com/ai/nanoid) - Simple and reliable id generator
+
+  ## Articles
+
+  * [JAMStack vs MEAN vs LAMP](https://buttercms.com/blog/jamstack-vs-mean-vs-lamp-your-guide-to-picking-one)
+  * [Why Progressive Web Apps Are The Future of Mobile Web [2019 Research]](https://ymedialabs.com/progressive-web-apps)
+  * [The Simplest Way to Load CSS Asynchronously](https://www.filamentgroup.com/lab/load-css-simpler/)
+  * [Initial thoughts using Fastify](https://mattduffield.wordpress.com/2019/07/25/initial-thoughts-using-fastify/)
+
+  ## Tutorials
+
+  * [Code Recipe: How to Reverse an Array in JavaScript](https://medium.com/dailyjs/code-recipe-how-to-reverse-an-array-in-javascript-4a0306001d28)
+  * [Using Prefetch and Caching For Better JavaScript Bundle Loading](https://dev.to/antjanus/using-prefetch-and-caching-for-better-javascript-bundle-loading-2p56)
+  * [Dynamically generating SQL queries using Node.js](https://dev.to/gajus/dynamically-generating-sql-queries-using-node-js-2c1g)
+  * [Reducing Motion to Improve Accessibility](https://www.a11ywithlindsey.com/blog/reducing-motion-improve-accessibility/)
+  * [Multi-column manipulation: Every Layout](https://every-layout.dev/blog/multi-column-manipulation/)
+  * [Capturing stdout/ stderr in Node.js using Domain module](https://medium.com/@gajus/capturing-stdout-stderr-in-node-js-using-domain-module-3c86f5b1536d)
+  * [Completely CSS: Tabs](https://kyusuf.com/post/completely-css-tabs/)
+
+  ## Tools
+
+  * [Falco](https://getfal.co/) - An Open Source WebPageTest runner
+  * [TinaCMS](https://tinacms.org/) - Modern CMS that integrates with Gatsby and Next.js
+  * [getify/TypL](https://github.com/getify/TypL) - The JavaScript Type Linter
+
+  ## TypeScript
+
+  * [joonhocho/tsdef](https://github.com/joonhocho/tsdef) - TypeScript common pattern shortcut definitions / utility gist library
+  * [piotrwitek/utility-types](https://github.com/piotrwitek/utility-types) - Collection of utility types, complementing TypeScript built-in mapped types and aliases
+  * [pelotom/type-zoo](https://github.com/pelotom/type-zoo) - A menagerie of useful type operators for TypeScript
+  * [jawj/mostly-ormless](https://github.com/jawj/mostly-ormless) - Ergonomic Postgres from TypeScript
+  * [google/gts](https://github.com/google/gts) - TypeScript style guide, formatter, and linter
+
+  ## Testing
+
+  * [testing-library/cypress-testing-library](https://github.com/testing-library/cypress-testing-library) - Testing library bindings for Cypress
+
+  ## Slides
+
+  * [Deno - TSConf 2019](https://docs.google.com/presentation/d/1wuwliPiKfg9UyHKhQGov9QQQhgllC5tnpxSWzgV8mTU/edit#slide=id.g6206491ef5_1_0) - Deno is the spiritual successor of Node
+
+  ## Demos
+
+  * [three.js vr](http://vr-ie6.glitch.me/) - Virtual Reality with three.js
+  * [WebGL Fluid Simulation](https://paveldogreat.github.io/WebGL-Fluid-Simulation/)

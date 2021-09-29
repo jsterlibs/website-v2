@@ -1,0 +1,78 @@
+type: static
+title: "JSter #22: News of May 2014 - Part 1"
+short_title: "JSter #22"
+user: bebraw
+slug: monthly-jster-may-2014-part-1
+body: |
+    > JavaScript - The joke's on you.
+
+    ## Libraries
+
+    {{ screenshot: http://quilljs.com/ }}
+
+    * [Quill](http://quilljs.com/) - WYSIWYG editor with plugin architecture
+    * [Eight Bit Color Picker](http://bilalq.github.io/eight-bit-color-picker/)
+    * [jquery.adaptive-backgrounds.js](http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/) - A jQuery plugin for extracting dominant colors from images and applying it to its parent
+
+    ## Articles
+
+    {{ screenshot: https://hacks.mozilla.org/2014/05/how-fast-is-pdf-js/ }}
+
+    * [How Fast is PDF.js?](https://hacks.mozilla.org/2014/05/how-fast-is-pdf-js/)
+    * [30 Best JavaScript Tools of 2014](http://codegeekz.com/best-javascript-tools-2014/)
+    * [GitHub language trends and the fragmenting landscape](http://redmonk.com/dberkholz/2014/05/02/github-language-trends-and-the-fragmenting-landscape/)
+    * [Why you might not need MVC with React.js](http://www.code-experience.com/why-you-might-not-need-mvc-with-reactjs/)
+
+    ## Tutorials
+
+    {{ screenshot: http://strongloop.com/strongblog/how-to-generators-node-js-yield-use-cases/ }}
+
+    * [Understanding Directory References in Node.js](http://www.hacksparrow.com/understanding-directory-references-in-node-js.html)
+    * [10 Steps to Node.js Nirvana in Production](http://qzaidi.github.io/2013/05/14/node-in-production/)
+    * [Generators in Node.js: Common Misconceptions and Three Good Use Cases](http://strongloop.com/strongblog/how-to-generators-node-js-yield-use-cases/)
+    * [Creating type-safe properties with ECMAScript 6 proxies](http://www.nczonline.net/blog/2014/04/29/creating-type-safe-properties-with-ecmascript-6-proxies/)
+    * [Improving JavaScript Performance](http://buildmy-site.com/blog/javascript-improving-javascript-performance/)
+
+    ## Guides
+
+    {{ screenshot: http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html }}
+
+    * [The Absolute Beginner's Guide to Node.js](http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html)
+    * [HTML5 Video Programming Complete Guide](http://www.encoding.com/html5/)
+    * [Building large apps with AngularJS](https://coderwall.com/p/y0zkiw)
+
+    ## Techniques
+
+    {{ screenshot: http://jonathancreamer.com/an-angular-event-bus-with-postal-js/ }}
+
+    * [Optimization Killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
+    * [JavaScript doesn't tell you the Date object is bad, here's how to figure that out before crashing your program](http://davidherron.com/blog/2014-05-04/javascript-doesnt-tell-you-date-object-bad-heres-how-figure-out-crashing-your)
+    * [DevTools Tips and Tricks](https://www.igvita.com/slides/2012/devtools-tips-and-tricks/)
+    * [3D rotator using jQuery](http://creative-punch.net/2014/03/3D-rotator-using-jquery/)
+    * [An Angular.js event bus with postal.js](http://jonathancreamer.com/an-angular-event-bus-with-postal-js/)
+    * [Breaking Bad (Loops in JavaScript Libraries)](http://webapplog.com/breaking-bad-loops-in-javascript-libraries/)
+
+    ## Courses
+
+    * [Shaping Up with Angular.js](https://www.codeschool.com/courses/shaping-up-with-angular-js)
+
+    ## Slides
+
+    {{ screenshot: https://speakerdeck.com/amasad/javascript-debugging }}
+
+    * [JavaScript Debugging](https://speakerdeck.com/amasad/javascript-debugging)
+
+    ## Tools
+
+    {{ screenshot: http://flippinawesome.org/2014/05/05/slush-a-better-web-app-scaffolding-tool/ }}
+
+    * [Slush – A Better Web App Scaffolding Tool](http://flippinawesome.org/2014/05/05/slush-a-better-web-app-scaffolding-tool/)
+    * [A List of Foundational JavaScript Tools](https://www.codefellows.org/blogs/complete-list-of-javascript-tools)
+
+    ## Games
+
+    * [JS1k post-mortem Minecraft](http://birdgames.nl/2014/04/js1k-post-mortem-minecraft/)
+
+    ## Demos
+
+    * [Pure CSS Under Construction GIF](http://codepen.io/redclov3r/pen/bloIh)

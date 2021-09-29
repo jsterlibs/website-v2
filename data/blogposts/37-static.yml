@@ -1,0 +1,287 @@
+type: static
+title: "Learn to Develop Static Site Generators"
+short_title: "Learn to Develop Static Site Generators"
+user: bebraw
+slug: develop-static-site-generators
+body: |
+    > This article was originally published at [Software Developer's Journal](http://sdjournal.org/android-cake-released/).
+
+    Developing websites and services has never been as easy as it is now. There is a massive amount of technology available. Almost too much. And the pace isn't slowing down. On the contrary!
+
+    Especially since JavaScript broke through so to speak, the speed of development has been immense. During the past few years CSS frameworks, such as Bootstrap or Foundation, have made their way to the arsenal of web developers. On the backend side, Node.js has made waves. It is a good time to be a web developer.
+
+    One of the interesting developments has been the resurgence of static websites. They are simpler to understand than content management systems (CMS). Static by definition they are lightning fast to serve. Some of the dynamic functionality required may be implemented using JavaScript and external services. It is possible to get the best out of the both worlds.
+
+    In this article I will show you how to implement a simple static site generator using Node.js. I expect that you understand JavaScript and programming on a basic level. You should be able to pick up following skills by reading it:
+
+    * understand how to set up a Node.js project,
+    * learn how to use `commander` to build cli user interfaces,
+    * have a basic idea of what makes static site generators tick,
+    * learn how to use `async` to take control of asynchronous control flow.
+
+    ## Static Site Generators
+
+    Static site generators are simple on technical level. They simply transform content into a static format that is easy to host. Just dump the files on some server and off you go. The backend required is very minimal.
+
+    Compared to content management systems (CMS) they are somewhat crude. You will not be able to modify the content easily through a web based interface. At least without using a separate service.
+
+    Fortunately the security, speed and hosting advantages make up for it. Especially technically oriented people may find a static generator driven approach very lucrative. You can use git as your backend and edit the content in your favorite editor. No need for clunky web interfaces.
+
+    The speed advantage may be further increased by using a CDN that serves your static content close to the user. This can be beneficial also considering uptime. If your content is cached and served by another provider, it does not matter if your server goes down for a reason or another.
+
+    One of the biggest advantages static site generators have is the ease of maintenance. In case you are using a CMS, you will have to make sure your platform is up to date if you are hosting it yourself. This applies to static sites to limited extent.
+
+    The line between CMS and static generator can be blurry at times. It looks like services that make static generation more like CMS pop up continuously. That way it becomes easier for mainstream to adopt them.
+
+    ## Generator Design
+
+    It is no wonder there are so many static site generators out there. They are easy to implement. Just because there are not enough of those yet, I will show you how to create your own.
+
+    The basic recipe is very simple. In this case I will mimic the design of Jekyll, a popular generator. I will use Node.js for the implementation. Before getting ahead with that, it is a good idea to discuss through some basic concepts and technical design.
+
+    One important thing that most static site generators provide is a separation between layout and content. The idea is that the content will be injected within some layout in the end result. We may also inject some common metadata, such as the site author information, to it.
+
+    For its content Jekyll implements an interesting idea known as a YAML head matter. To give you a better idea of what the content looks like, consider the example below:
+
+        layout: 'default'
+        title: 'Static sites are fun!'
+        author: 'John Doe'
+        ---
+        Static sites are fun! Yes, they are!
+
+    First we define that we are going to use a `default` layout for this content. Then we have some metadata related to the post. We may use this information at the layout. We can also use the information when generating a blog archive for instance.
+
+    The layout will contain specific slots in which we will inject the data. Besides the metadata above we will have a special slot known as `content`. That represents the text part of our post below `---`.
+
+    ### Directory Structure
+
+    As it is nice to have files well organized, it is a good idea to define some sort of schema. I have described one below:
+
+    * /_layouts - The layouts
+    * /_layouts/default.hbs - The default layout in Handlebars format
+    * /index.md - Index (see above)
+    * /_site - The output of our generator
+
+    ## Project Structure
+
+    Now that we have some understanding of what we need to implement, it is a good time to get started with it. If you do not have Node.js set up yet and want to follow along, go at [http://nodejs.org/](http://nodejs.org/) and follow their installation instructions. After that you should have `node` and `npm` commands available at your terminal.
+
+    I will call my generator as `yayassg` (Yet Another Yet Another Static Site Generator). Incidentally `yassg` was taken at NPM so I had to settle for something else. If you want to develop yours further and release it at NPM, it is a very good idea to Google around for a while and check if the NPM entry is free.
+
+    As I like to use GitHub for hosting my project, I naturally use `git` for versioning. I tend to follow a certain project structure for projects such as this. My cli projects usually look like this:
+
+    * .gitignore - Ignores `node_modules/` at least
+    * README.md - Describes the basic idea of the project
+    * LICENSE - The licensing information. I like to use MIT for my projects
+    * bin/yayassg - The cli entry point
+    * lib/ - The library parts
+    * package.json - NPM registration information
+    * node_modules/ - Local Node.js modules installed by NPM. This will not be versioned
+
+    ### package.json
+
+    NPM comes with a handy command known as `npm init`. Simply invoke that and it will ask you a series of questions related to your project. Most of the defaults are fine. In this case you may want to change the entry point of the project to `lib` as that is where we will be storing our library functionality.
+
+    After you have generated the file, you may want to add the following line to it:
+
+        "bin": "bin/yayassg"
+
+    This tells NPM where to find the entry point of our script. Study [https://npmjs.org/doc/json.html](https://npmjs.org/doc/json.html) to understand various properties of the file better.
+
+    ### cli
+
+    It is probably a good idea to implement that `bin/yayassg` then. After creating the file, remember to set it as executable (`chmod +x .yayassg`).
+
+    NPM contains a lot of modules that help in creating clis. One of these is known as `commander`. In order to add it to your project, execute `npm install commander --save`. That `--save` flags adds it to `package.json` in your project dependencies automatically. Sometimes it may be handy to add some dependency just for development usage (say testing). In this case you may want to use `--save-dev` instead.
+
+    Getting started with commander is quite simple. I have provided initial version of our cli below:
+
+        #!/usr/bin/env node
+        var program = require('commander');
+        var yayassg = require('../lib');
+
+
+        main();
+
+        function main() {
+            program.version(require('../package.json').version).
+                option('-i --input <input>', 'input directory').
+                option('-o --output <output>', 'output directory').
+                parse(process.argv);
+
+            if(!program.input) return console.error('Missing input');
+            if(!program.output) return console.error('Missing output');
+
+            yayassg(program.input, program.output);
+        }
+
+    To be able to run this, you will also need to define a stub for our library at `lib/index.js`:
+
+        module.exports = function(input, output) {
+            console.log(input, output);
+        };
+
+    After defining these two files you should be able to execute the cli using `bin/yayassg -i input -o output`. It doesn't do much yet but at least it runs.
+
+    ### lib
+
+    Next we need to define the whole logic and transformation part of the generator. The interface is quite simple. In this case we will rely on convention. We expect to find layouts from `_layouts` of the input directory. We need to go through each Markdown file there and then convert those into HTML at out output.
+
+    As using native filesystem API of Node.js can be a bit cumbersome, let's summon async and glob to rescue! Simply `npm install async glob --save` to add the library to the project.
+
+    Let's try to read our input files and layouts into variables next:
+
+        var path = require('path');
+
+        var async = require('async');
+        var glob = require('glob');
+
+
+        module.exports = function(input, output) {
+            async.map([
+                path.join(input, '**/*.md'),
+                path.join(input, '_layouts', '*.hbs')
+            ], glob, function(err, paths) {
+                if(err) return console.error(err);
+
+                main(paths[0], paths[1], output);
+            });
+        };
+
+        function main(inputs, layouts, output) {/* TODO*/}
+
+    We still need to transform the input files and put the output at an appropriate place. For the input we will need to separate the front matter and actual content. Layouts are easier. We can get away simply by compiling them. All of this will happen at the main function.
+
+    To be honest my initial go at it looked quite messy. Fortunately I managed to simplify my solution a lot my reformulating it as above and by utilizing `caolan/async` utility module. It is one of those modules that makes it a lot easier to deal with asynchronous code.
+
+    In this case I could have used synchronous, blocking versions of the file operations but I rather avoid that and do things the "hard" way. As an additional benefit of doing things the async way, it becomes very easy to split out tasks to separate Node.js processes. This can be somewhat beneficial.
+
+    ### main
+
+    The next snippet shows my `main` function and an associated helper in their entirety. We will go into those details in a little bit:
+
+        var async = require('async');
+
+        // ...
+
+        function main(inputs, layouts, output) {
+            async.parallel([
+                readAndProcess.bind(null, inputs, saltInputs.bind(null, output)),
+                readAndProcess.bind(null, layouts, compileLayouts)
+            ], function(err, res) {
+                if(err) return console.error(err);
+
+                fs.mkdir(output, transform.bind(null, res[0], res[1]));
+            });
+        }
+
+        function readAndProcess(input, process, cb) {
+            async.waterfall([readFiles.bind(null, input), process], cb);
+        }
+
+    There are a couple of things here that you should understand. First of all that `bind` may seem a bit weird if you haven't used it before. It allows us to perform `partial application` in JavaScript. Say we have a function `add` that takes two parameters: a and b. We could define `var addTwo = add.bind(null, 2);` and then invoke that with `addTwo(5)` to get seven.
+
+    It is one of those simple yet powerful concepts. If you are familiar with OOP and inheritance, this is the same thing but for functional programming. It allows you to specialize functions. In this case we use it to pass some extra data to our primary functions and make them more suited for this particular purpose.
+
+    In case you are wondering what's that `null` at the beginning about, it's the context or `this` of the function. That should explain it. If not, look into [`this` at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this).
+
+    Next up you should understand how `async.parallel` and `async.waterfall` operate. `async.parallel` executes a list of given functions in any order. It expects the functions execute a callback (`cb(error, value)`) passed to it. Finally it will execute a function with the possible error and the results gained in a list. The order of the list is guaranteed to be the order of the original one.
+
+    `async.waterfall` executes the given functions in order and passes the result of the current one to the next till finished. The result will be available at an optional function just like in `async.parallel`. In this case I use waterfall literally to read and process.
+
+    ### readFiles
+
+    `readAndProcess` uses `readFiles`. Let's check that out next:
+
+        function readFiles(inputs, cb) {
+            async.map(inputs, function(p, cb) {
+                fs.readFile(p, function(err, d) {
+                    if(err) return cb(err);
+
+                    cb(null, {
+                        data: d.toString(),
+                        path: p
+                    });
+                });
+            }, cb);
+        }
+
+    This one uses an utility known as `async.map`. It executes a given function for a given list of items. Finally it executes a function with the results. If you have used `map` before, you should be familiar with the idea. For those not familiar with the idea, consider the following fact: `[34, 2, 3].map(function(v) {return v * 2;})` yields `[68, 4, 6]`. It is just a mapping from a space to another.
+
+    We still need to understand a couple of functions before we have something that works. The missing ones are `saltInputs`, `compileLayouts` and `transform`. Let's start with the salty one:
+
+        var path = require('path');
+
+        var yaml = require('yaml').eval;
+
+        // ...
+
+        function saltInputs(output, inputs, cb) {
+            async.map(inputs, function(input, cb) {
+                var parts = input.data.split('---\n');
+
+                cb(null, {
+                    front: yaml(parts[0]),
+                    content: parts[1],
+                    output: path.join(output, getName(input.path)) + '.html'
+                });
+            }, cb);
+        }
+
+        function getName(v) {
+            return path.basename(v, path.extname(v));
+        }
+
+    The idea of this function is to take our input and then map it into a format that is useful for us. I decided to call this function salt as that's what it does. It takes something and then adds some spice to it. In this case we deal with our front matter and content logic. The front matter is parsed and content is extracted. In addition it figures out where to place the output based on path.
+
+    I decided to use an external module for parsing YAML. You can add it to your project simply by invoking `npm install yaml --save`.
+
+    ### compileLayouts
+
+    `compileLayouts` is another simple one. I got a bit lazy here and decided to compile all the available layouts whether or not they are used by input. You can try to implement that as a bonus exercise. Remember that `bind` is your friend. Here's my implementation:
+
+        var hbs = require('handlebars').compile;
+
+        // ...
+
+        function compileLayouts(layouts, cb) {
+            var ret = {};
+
+            layouts.forEach(function(layout) {
+                ret[getName(layout.path)] = hbs(layout.data);
+            });
+
+            cb(null, ret);
+        }
+
+    Given the handlebars compiler we use is synchronous by its nature, we don't have to use any async helpers in this case. A simple `forEach` will do. We aggregate the result in an Object (layout name -> compiled layout) as that works well with out input format.
+
+    ### transform
+
+    One more to go, `transform`:
+
+        function transform(inputs, layouts) {
+            inputs.forEach(function(v) {
+                fs.writeFile(v.output, layouts[v.front.layout]({
+                    content: v.content
+                }));
+            });
+        }
+
+    Funnily enough this function is one of our shortest ones. This is due to the fact that our data structures are somewhat ready at this point and all we need to do is to interpret them correctly. In this case we simply iterate our inputs and write them to output while compiling our content to the layouts.
+
+    If you followed along you should have now something that compiles. In case you want to see the source code in its entirety, check out [https://github.com/bebraw/yayassg](https://github.com/bebraw/yayassg). You can also install the generator via NPM using `npm install yayassg -g`. Atfer that `yayassg -i input -o output` should work.
+
+    ## What Next?
+
+    The implementation we have so far is more of a proof of concept. You can definitely use it for simple sites already. There is a lot of room for expansion, however. I've listed some ideas below:
+
+    * add some visible output there (console.log),
+    * provide progress information using progress module,
+    * set up global configuration available for each layout (ie. config.json at input root),
+    * load only layouts that are actually used by input,
+    * compile only input that has changed.
+
+    Where to take it depends entirely on your needs. Remember that you can use `npm version x.y.z` to bump up the version number of your module. This will update package.json, set up a git tag and perform a commit for you. That is very convenient! After that just hit `npm publish` (and possibly `npm adduser` before that) to make your module available for consumption.
+
+    In case you don't feel like coding and would rather work with something existing, check out [the static generator listing at JSter](http://jster.net/category/static-site-generators). That will serve as a starting point.

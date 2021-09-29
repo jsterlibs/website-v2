@@ -1,0 +1,99 @@
+type: static
+title: "Mobile Application UI: 6 Definitive Trends in 2016"
+short_title: "Mobile Trends in 2016"
+user: bebraw
+slug: mobile-application-trends-2016
+picture: /img/blog/118/pexels-small.jpg
+body: |
+  In the past 20 years, apart from the Internet itself, mobiles have been one of the biggest catalysators of growth and innovation on a worldwide level. From the first Nokia phones, to the latest iPhone 7, these small devices interact with us on a daily basis, transforming how we work, socialize and even communicate with our family members.
+
+  Just as there's been a significant change in how the phones themselves look and work, a shift of equal magnitude has occured in the software running on these smarthpones. These days Java and JavaScript are among the top languages used in mobile applications the world over.
+
+  Thousands of quality scripts and frameworks are available on open-source sites such as GitHub, allowing for collaboration and contributions from students, professionals and everyone in between. All of this amounts to software far more solid and secure than people would have dared imagine just a decade earlier.
+
+  ## Move from Consumer Apps to Enterprise Apps.
+
+  <div class="picture"><img src="/img/blog/118/office.jpg" alt="To enterprise apps" /></div>
+
+  While there's still a large number of apps targeted for consumers being developed in 2016, there's been a surge in enterprise app requests at Nodes. We've seen large corporations and organizations open their eyes to the new possibilities that having several company-specific apps offer employees all over the world.
+
+  From the simple time-logging apps, to the semi-complex databases of organizational datasets, to the really sophisticated architectures integrating mobile apps with internal CRM, Inventory management systems, and many other internal systems on a whole.
+
+  Using open-source JavaScript packages and frameworks for enterprise applications can cut down costs significantly, while keeping the apps optimized and secure, due to the large number of GitHub contributors all sharing their particular expertises, adding value to the community at an ever increasing rate.
+
+  It's important to keep in mind that a large business back in 2010 had on average less than 1 app per organizational structure, but today that number is closer to 10. This has led to an improved workflow, better efficiency, and new tools to help managers and board members take direct and correct actions based on cold facts, and the speed in which this data is procured is in itself a valuable asset.
+
+  ## Apps are being integrated with devices and services more frequently.
+
+  <div class="picture"><img src="/img/blog/118/pexels-02.jpg" alt="Increasing integration" /></div>
+
+  Mobile applications are not just being set up to connect to internal enterprise infrastructure, but also connecting to general consumer electronics such as IoT devices, and a whole host of gadgets and gizmos falling somewhere in between.
+
+  The internet coverage is growing and stretching its tentacles far out to the least populated corners of the world, and with India's richest man pumping $20US Billion into free internet access for almost 1 billion indians this year, we are going to see a revitalized interest in the app market on a whole, and integrating apps with various services, providers and other systems are going to be one of the main driving forces behind this latest surge we imagine.
+
+  In particular large businesses are using these on an enterprise level, as described above, and IoT for consumers are also on the verge of taking off. But there's an entirely different middle-ground that might actually be the most profitable at the moment.
+
+  Sport stadiums, public roads and facilities, government sponsored buildings and open areas are just a few of the most interesting areas to follow.
+
+  These large entities all have the money to invest in connected devices, and a commercial interest in doing so. Unlike the private consumers that might just make their life slightly more convenient, these entities and organizations stand to profit by attracting more people to their locations, and creating new markets all together.
+
+  ## Hybrid App Development Losing Traction
+
+  <div class="picture"><img src="/img/blog/118/imac.jpg" alt="Devices" /></div>
+
+  There's been a lot of hype these past couple of years concerning the advance of hybrid development - but praxis has showed costs not always ranging much lower than native development, and the performance issues coupled with the lack of native hardware support has meant several large projects originally starting in hybrid frameworks, have moved to native development - mid project no less!
+
+  Another important issue is the fact that hybrid apps rarely feels as nice and sleek as their native counterparts, due to performance and integration, as well as the fundamental difference between coding software for multiple platforms at once, thereby skipping over device or OS specific features that can make all the difference on the end-users first impression.
+
+  At Nodes we still use both types of approaches, based on individual needs, so there's still cases where hybrid apps are clearly better, but they are not going to take over the world of native apps anytime soon by the looks of things.
+
+  ## The Internet of Things still growing stronger
+
+  <div class="picture"><img src="/img/blog/118/code-01.jpg" alt="IoT code" /></div>
+
+  While the initial craze has slowly begun to subside, the daily realities of IoT technology is beginning to make an impact on our daily lives. Initially lauded as being a game changer, this particular technology might very well change all of our lives, but perhaps not entirely as previously thought.
+
+  The cost of converting all devices in any given home is still too high, and even for newly built houses and apartments, the cost still acts as an inhibitor for most of the world’s population.
+
+  While the hardware is the limiting factor in the expansion of IoT devices at home, the cost of developing software for these devices are dwindling on an almost daily basis. From the older frameworks such as AngularJS, Backbone and Apache Cordova, to some of the latest such as Apple's Swift, the open-source languages and frameworks are lowering the barrier of entry for indie developers from all corners of the world.
+
+  So while the hardware still has some way to go before making a huge impact, the software part, both front- and backend-wise are ready and waiting..
+
+  ## Location Based Services
+
+  <div class="picture"><img src="/img/blog/118/code-02.jpg" alt="Location matters" /></div>
+
+  Beacon technology has been falling out of favor in general, with GPS taking over many aspects usually regarded as perfect beacon candidates, and with an ever increasing usage of GPS and 3G/4G Networks, as well as an increase in time online, the market is ripe for taking advantage of special offers in local areas, and many other location based services on a whole.
+
+  GSM and GPS are a few of the more commonly known points of entry, but another powerful feature is what's known as Control Plane Locating, similar to GSM localization by using cell signals and triangulating, but where GSM location uses multiple cell towers, CPL uses just one, and is thus slower and more inaccurate, but cheaper as well.
+
+  JavaScript and HTML5 can easily use geolocation in software applications for little to no cost for the developers or apps themselves, making this another great reason for the decline of Beacon technology this past year.
+
+  A combination of all services can provide any app with great location indication, without risking the user’s privacy or safety in the process, thus opening up for a number of interesting projects to take advantage of local advertising.
+
+  ## Wearables
+
+  <div class="picture"><img src="/img/blog/118/pexels-01.jpg" alt="iWatch" /></div>
+
+  While at first we were skeptical about including this point, due to the lack of explosiveness previously suggested in previous roundups, there's still a thing or two to be said about the wearables. Consumers haven't truly adopted all these gadgets and devices yet, Google Glass and Apple Watch having fallen somewhat under the radar compared to the marketing efforts put forth by the large companies.
+
+  The potential for wearables however, is one of a significant magnitude. Many experts seems to consider the cost as being the only real inhibitor, since the benefits of wearables are negligible in most cases, consumers are not prone to pay doubly so for their t-shirts or sneakers yet.
+
+  We’re still some years away from having super cheap wifi and gps chips installed in our everyday clothes, but a middle-ground is developing in areas such as Sports, Concert Venues and other areas, tying in with IoT as a whole - currently wearables are more like green energy, in that the commercially viable factor is the driving force behind innovation and adaptation.
+
+  ## Conclusion
+
+  - Enterprise applications seeing increasing levels of interest and activity
+  - New markets for connected devices appearing and stabilizing
+  - Waiting for the hardware cost to rival the software cost
+  - The Internet of Things still gaining traction
+  - Location Based Services with JS and HTML beating Beacon
+  - Wearables still not worn in yet
+
+  2016 is shaping up to be a year of transition, no real new technologies have emerged that are dominating the world of mobile apps, but there are several contenders ready to become the next big thing, once certain factors stabilize or they get more established.
+
+  Paired with a potentially lower cost of hardware, it will be interesting to follow the current trends and see which ones are going to make it, and which ones are going to fade away into oblivion.
+
+  ## About Guest Author
+
+  Mark Pedersen is an app developer at [Nodes](http://www.nodesagency.com) a UK and Denmark based company specializing in mobile application development for medium to large businesses and enterprises. He is actively reading up on the latest gadget gossip, and loves to play around with jsFiddle.

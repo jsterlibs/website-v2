@@ -1,0 +1,66 @@
+type: static
+title: "JSter #154: Libraries, tools, and more"
+short_title: "JSter #154"
+user: bebraw
+slug: jster-154
+body: |
+  > JavaScript, the programming language where there are multiple truths
+
+  It's time for another another montly JSter. Due to the on-going pandemic, we had to [postpone React Finland](https://react-finland.fi/blog/rf-2020-postponed/) to the next year. We'll be running online events this year to serve our community, though.
+
+  ## Libraries
+
+  * [dna.js](https://dnajs.org/) - An uncomplicated user interface library for building data-driven semantic templates
+  * [React v16.13.0](https://reactjs.org/blog/2020/02/26/react-v16.13.0.html)
+  * [jaredpalmer/mutik](https://github.com/jaredpalmer/mutik) - A tiny (495B) immutable state management library based on Immer
+  * [Joda](https://js-joda.github.io/js-joda/) - Immutable date and time library for javascript
+  * [Moon](https://moonjs.org/) - The minimal & fast library for functional user interfaces
+  * [detect-browser](https://www.npmjs.com/package/detect-browser) - This is a package that attempts to detect a browser vendor and version (in a semver compatible format) using a navigator useragent in a browser or process.version in Node.
+  * [brahmosjs/brahmos](https://github.com/brahmosjs/brahmos) - Super charged JavaScript library with modern React API and native templates
+  * [rsmbl/Resemble.js](https://github.com/rsmbl/Resemble.js) - Image analysis and comparison
+
+  ## Toolkits
+
+  * [Emergency Website Kit](https://mxb.dev/blog/emergency-website-kit/)
+
+  ## TypeScript
+
+  * [Why Hasura chose Typescript for the Hasura Console](https://hasura.io/blog/why-we-chose-typescript-for-hasura-console/)
+  * [ronami/meta-typing](https://github.com/ronami/meta-typing) - Functions and algorithms implemented purely with TypeScript's type system
+
+  ## Techniques
+
+  * [Managing indexed collections with useMutableSource](https://souporserious.com/managing-indexed-collections-with-usemutablesource/)
+  * [Fixed Headers and Jump Links? The Solution is scroll-margin-top](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
+  * [luruke/browser-2020](https://github.com/luruke/browser-2020) - Things you can do with a browser in 2020 ☕️
+  * [Set CSS styles with JavaScript](https://dev.to/karataev/set-css-styles-with-javascript-3nl5)
+  * [Listen to your web pages](https://gist.github.com/tomhicks/6cb5e827723c4eaef638bf9f7686d2d8)
+  * [Animated Mesh Lines](https://tympanus.net/codrops/2019/01/08/animated-mesh-lines/)
+
+  ## Articles
+
+  * [What forces layout/reflow. The comprehensive list.](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
+  * [Accessibility for Vestibular Disorders: How My Temporary Disability Changed My Perspective](https://alistapart.com/article/accessibility-for-vestibular/)
+  * [SSR is not the future of Web Development](https://paqmind.com/en/blog/ssr-is-not-the-future)
+
+  ## Tools
+
+  * [mini-html-webpack-plugin](https://www.npmjs.com/package/mini-html-webpack-plugin) - A new major version with support for TypeScript out of the box has been released
+  * [html-webpack-plugin 4 has been released!](https://dev.to/jantimon/html-webpack-plugin-4-has-been-released-125d) - Faster, better
+  * [ryanelian/instapack](https://github.com/ryanelian/instapack) - All-in-one TypeScript and Sass compiler for web applications! 📦 🚀 
+  * [wilddeer/stickyfill](https://github.com/wilddeer/stickyfill) - Polyfill for CSS `position: sticky`
+  * [evanw/esbuild/](https://github.com/evanw/esbuild/) - An extremely fast JavaScript bundler and minifier
+  * [Eve](http://witheve.com/) - Eve is a programming language and IDE based on years of research into building a human-first programming platform
+  * [Supercharge your command line experience: GitHub CLI is now in beta](https://github.blog/2020-02-12-supercharge-your-command-line-experience-github-cli-is-now-in-beta/)
+
+  ## Testing
+
+  * [suchipi/test-it](https://github.com/suchipi/test-it) - Test-It is a test framework that gives you the best of node AND the browser
+
+  ## Tutorials
+
+  * [Transition-ing from Alpine.js to Vue.js](https://erichjames.com/2020/03/transition-ing-from-alpine-js-to-vue-js/)
+
+  ## Resources
+
+  * [Native HTML elements with CSS superpowers](https://native-elements.stackblitz.io/)

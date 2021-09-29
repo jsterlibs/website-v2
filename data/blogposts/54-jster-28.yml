@@ -1,0 +1,56 @@
+type: static
+title: "JSter #28: News of August 2014 - Part 1"
+short_title: "JSter #28"
+user: bebraw
+slug: monthly-jster-august-2014-part-1
+body: |
+    > Just JS it.
+
+    ## Libraries
+
+    {{ screenshot: http://trackingjs.com/ }}
+
+    * [tracking.js](http://trackingjs.com/) - A modern approach for Computer Vision on the web
+    * [Ocrad.js](http://antimatter15.com/ocrad.js/demo.html) - OCR for JS
+    * [facebook/immutable-js](https://github.com/facebook/immutable-js) - Immutable data structures
+    * [Realm - A mobile database](http://realm.io/)
+    * [Matter.js - 2D physics engine](http://brm.io/matter-js/)
+    * [Infinity.js](https://airbnb.github.io/infinity/)
+
+    ## Competitions
+
+    * [js13k - 2014 edition](http://js13kgames.com/)
+
+    ## Articles
+
+    {{ screenshot: http://www.binpress.com/blog/2014/06/26/polymer-vs-angular/ }}
+
+    * [Here's the difference between Polymer and Angular](http://www.binpress.com/blog/2014/06/26/polymer-vs-angular/)
+    * [React.js and How Does It Fit In With Everything Else?](http://www.funnyant.com/reactjs-what-is-it/)
+    * [Don't Be Scared Of Functional Programming](http://www.smashingmagazine.com/2014/07/02/dont-be-scared-of-functional-programming/)
+    * [Is JavaScript here to stay?](http://techcitynews.com/2014/07/24/is-javascript-here-to-stay/)
+    * [The Dark Side of JavaScript](http://blog.testomato.com/dark-side-javascript/)
+    * [16 Great JavaScript Interview Questions and Answers](http://www.toptal.com/javascript/interview-questions)
+
+    ## Guides
+
+    * [Opinionated AngularJS styleguide for teams](http://toddmotto.com/opinionated-angular-js-styleguide-for-teams/)
+    * [You Might Not Need jQuery](http://youmightnotneedjquery.com/)
+
+    ## Techniques
+
+    {{ screenshot: http://journal.stuffwithstuff.com/2014/07/15/a-turn-based-game-loop/ }}
+
+    * [A Turn-Based Game Loop](http://journal.stuffwithstuff.com/2014/07/15/a-turn-based-game-loop/)
+    * [Beat Detection Using JavaScript and the Web Audio API](http://tech.beatport.com/2014/web-audio/beat-detection-using-web-audio/)
+    * [Creating a centered, responsive design without media queries](https://www.campaignmonitor.com/blog/post/4240/creating-a-centred-responsive-design-without-media-queries)
+    * [Set State in Callbacks in React](http://jaketrent.com/post/set-state-in-callbacks-in-react/)
+    * [Authoring Critical Fold CSS](http://css-tricks.com/authoring-critical-fold-css/)
+    * [Common Pitfalls with the HTML5 Drag‘n’Drop API](https://medium.com/@quasado/common-pitfalls-with-html5-drag-n-drop-api-9f011a09ee6c)
+    * [AngularJS Multi-Step Form Using UI Router](http://scotch.io/tutorials/javascript/angularjs-multi-step-form-using-ui-router)
+
+    ## Tools
+
+    * [Textik - ASCII Art Editor](http://textik.com/)
+    * [AniJS Studio, Easy web animation prototypes everywhere](https://anijs.github.io/studio/)
+    * [peter/jsonapitest](https://github.com/peter/jsonapitest) - Test your APIs

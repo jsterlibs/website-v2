@@ -1,0 +1,50 @@
+type: static
+title: "JSter #73: News of June 2016 - Part 2"
+short_title: "JSter #73"
+user: bebraw
+slug: monthly-jster-june-2016-part-2
+body: |
+    > JavaScript a day keeps the doctor away.
+
+    I've been working on [Reactabular](reactabular.js.org), a data grid component for React. There's more information at the [beta thread](https://github.com/bebraw/reactabular/issues/148).
+
+    In other news [webpack has received an official blog](https://medium.com/webpack/webpack-its-getting-real-92c60fca1db1). I'll be coordinating the documentation efforts. It's quite a challenge given there's a lot to cover.
+
+    ## Libraries
+
+    {{ screenshot: https://theonion.github.io/comcastifyjs/ }}
+
+    * [D3 v4.0.0](https://github.com/d3/d3/releases/v4.0.0) - The most advanced SVG based visualization library has reached a major milestone
+    * [rstacruz/onmount](https://github.com/rstacruz/onmount) - Safe, reliable, idempotent and testable behaviors for DOM nodes
+    * [ComcastifyJS by theonion](https://theonion.github.io/comcastifyjs/) - If your site feels too fast, try this
+
+    ## Articles
+
+    * [You Don't Need JavaScript for That!](https://robots.thoughtbot.com/you-don-t-need-javascript-for-that)
+    * [Helping web developers with JavaScript errors](https://hacks.mozilla.org/2016/06/helping-web-developers-with-javascript-errors/)
+
+    ## Tutorials
+
+    * [Getting Started with JavaScript Robotics](https://medium.com/@leo/getting-started-with-javascript-robotics-5c54e716562c)
+    * [Dynamic duotone SVG images with feColorMatrix and Jade](https://ines.io/blog/dynamic-duotone-svg-jade)
+    * [Path tracing a cornell box in Javascript](https://29a.ch/2010/5/17/path-tracing-a-cornell-box-in-javascript)
+
+    ## Techniques
+
+    * [Exploring Continuations: Resumable Exceptions](http://jlongster.com/Exploring-Continuations-Resumable-Exceptions)
+    * [Motion Detection with JavaScript](http://codersblock.com/blog/motion-detection-with-javascript/)
+    * [How to Get Node.js Logging Right](https://blog.risingstack.com/node-js-logging-tutorial/)
+
+    ## Resources
+
+    * [Vanilla List](http://www.vanillalist.com/) - The Vanilla Javascript Repository
+    * [Learning web development](https://developer.mozilla.org/en-US/Learn) - MDN has a new learning section
+
+    ## Tools
+
+    * [Algorithm Visualizer](http://jasonpark.me/AlgorithmVisualizer/)
+
+    ## Demos
+
+    * [Our Solar System](http://neography.com/experiment/circles/solarsystem/)
+    * [Particle Love](http://edankwan.com/experiments/particle-love/)

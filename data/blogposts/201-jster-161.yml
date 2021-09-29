@@ -1,0 +1,84 @@
+type: static
+title: "JSter #160: Libraries, and more"
+short_title: "JSter #160"
+user: bebraw
+slug: jster-160
+body: |
+  > JavaScript - still running strong.
+
+  It's time for the 160th JSter post. I updated [my webpack book to support webpack 5](https://survivejs.com/blog/webpack-book-updated-to-webpack-5/) recently.
+
+  The [next React Finland mini-conference takes place 28th of October](https://react-finland.fi/blog/online-mini-conf-vol-4/) and it's going to be about lessons learned.
+
+  ## Libraries
+
+  * [eldh/credt](https://github.com/eldh/credt) - CRDT-like data structures for building distributed, offline-first applications
+  * [Functional](https://github.com/sebastienfilion/functional) - Common Functional Programming Algebraic data types for JavaScript that is compatible with most modern browsers and Deno.
+  * [scurker/currency.js](https://github.com/scurker/currency.js) - JavaScript library for handling currencies
+  * [techfort/LokiJS](https://github.com/techfort/LokiJS) - JavaScript embeddable / in-memory database
+  * [Magenta](https://magenta.tensorflow.org/) - Make music and art using machine learning
+  * [duetds/date-picker](https://github.com/duetds/date-picker) - Accessible date picker
+  * [hazae41/mutevents](https://github.com/hazae41/mutevents) - Typed, async, and promiseable events for Deno
+  * [Moment.js](https://momentjs.com/docs/#/-project-status/) - Moment is considered legacy, please move on
+  * [Eta](https://eta.js.org/) - Lightweight, powerful, pluggable embedded JS template engine.
+  * [lukeed/watchlist](https://github.com/lukeed/watchlist) - Recursively watch a list of directories & run a command on any file system changes
+  * [Screensaver.js](https://github.com/giuseppeg/screensaver) - Starts a screensaver after timeout milliseconds of inactivity on your site
+
+  ## Frameworks
+
+  * [Oruga](https://oruga.io/) - Oruga UI is like a caterpillar, minimal and yet functional. It's in your hands turning it into a butterfly
+  * [chriskalmar/shyft](https://github.com/chriskalmar/shyft) - Shyft is a server-side framework for building powerful GraphQL APIs
+
+  ## React
+
+  * [luispuig/react-snaplist-carousel](https://github.com/luispuig/react-snaplist-carousel) - Snaplist with React
+  * [Introducing React Spectrum](https://react-spectrum.adobe.com/blog/introducing-react-spectrum.html)
+  * [airbnb/visx](https://github.com/airbnb/visx) - Visualization components
+  * [vadimdemedes/ink](https://github.com/vadimdemedes/ink) - React for interactive command-line apps
+  * [pmndrs/jotai](https://github.com/pmndrs/jotai) - Primitive, flexible state management for React
+
+  ## Tools
+
+  * [Benchmark.js](https://benchmarkjs.com/) - A benchmarking library that supports high-resolution timers & returns statistically significant results.
+  * [malinajs](https://github.com/malinajs/malinajs) - Frontend compiler, inspired by Svelte
+  * [Svelte <3 TypeScript](https://svelte.dev/blog/svelte-and-typescript) - Svelte has a first-class support for TypeScript now
+  * [Rush](https://rushjs.io/) - A scalable monorepo manager for the web
+  * [mfrachet/cypress-audit](https://github.com/mfrachet/cypress-audit) - Run Lighthouse and Pa11y audits directly in your E2E test suites
+  * [postcss/releases/tag/8.0.0](https://github.com/postcss/postcss/releases/tag/8.0.0) - PostCSS has reached 8.0.0
+  * [Deno 1.4](https://deno.land/posts/v1.4) - Alternative to Node by Ryan Dahl
+  * [Nx: Extensible Dev Tools for Monorepos](https://nx.dev/react/)
+  * [Component Story Format](https://github.com/ComponentDriven/csf) - An open standard for UI component examples based on JavaScript ES6 modules.
+
+  ## Articles
+
+  * [State management in Visly](https://visly.app/blog/state-management-in-visly)
+  * [Detached window memory leaks](https://web.dev/detached-window-memory-leaks/)
+  * [How to learn effectively as a developer](https://survivejs.com/blog/how-to-learn-effectively-as-a-developer/)
+
+  ## Interviews
+
+  * [Eleventy - A simpler static site generator - Interview with Jeremias Menichelli](https://survivejs.com/blog/eleventy-interview/)
+  * [NoCode programming - Doing more with less code - Interview with Alex Moldovan](https://survivejs.com/blog/nocode-interview/)
+
+  ## Demos
+
+  * [Simulate Fire in DOOM](https://gxding.com/doom-fire/)
+
+  ## Services
+
+  * [nest.land](https://nest.land/) - A module registry for Deno
+
+  ## Styling
+
+  * [A fancy triangle layout](https://codepen.io/peritpatrio/pen/abNRqxZ)
+  * [Stitches](https://stitches.dev/blog/introducing-stitches) - The modern CSS-in-JS library with near-zero runtime
+  * [nyancss](https://github.com/nyancss/nyancss) - Write plain CSS while reaping benefits of CSS-in-JS
+  * [lukejacksonn/oceanwind](https://github.com/lukejacksonn/oceanwind) - Tailwind.css as a runtime
+
+  ## TypeScript
+
+  * [type-fest](https://www.npmjs.com/package/type-fest) - A collection of essential TypeScript types
+
+  ## Games
+
+  * [s-macke/FSHistory](https://github.com/s-macke/FSHistory) - Play and Enjoy the History of Microsoft Flight Simulator

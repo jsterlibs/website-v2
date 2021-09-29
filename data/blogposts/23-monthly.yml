@@ -1,0 +1,77 @@
+type: static
+title: "Monthly JSter #3: News of May 2013"
+short_title: "Monthly JSter #3"
+user: bebraw
+slug: monthly-jster-may-2013
+body: |
+
+  It was a busy month to put it mildly. You should see some of the results soon in a form of a sibling service.
+
+  I provided an [interview at Pingdom's blog](http://royal.pingdom.com/2013/05/22/web-dev-projects/). Besides that I contributed a [guest post for gun.io](http://gun.io/blog/finding-javascript-libraries/). In this case the topic was "How do I find JavaScript libraries?" and you can probably guess which service was mentioned there amongst a few others.
+
+  This will be the first time "Monthly JSter" will be available as [a newsletter](http://eepurl.com/zB_g5). So in case you came by this post by accident and are interested in this sort of content, do subscribe. Besides our montly one you might enjoy reading [JavaScript Weekly](http://javascriptweekly.com/). [HTML5 Weekly](http://html5weekly.com/) is somewhat excellent too. The lists have linked to us a couple of times. Thank you for that!
+
+  I think I've bored you enough. Time to scavenge through [our Twitter feed](https://twitter.com/jsterlibs) and [blog archives](http://jster.net/blog). :)
+
+  {{ screenshot: Turbulenz }}
+
+  ## Libraries
+
+  * [Turbulenz](https://turbulenz.com/) - The game engine [went open source](http://news.turbulenz.com/post/49430669886/turbulenz-engine-goes-open-source). See also [JSter entry](http://jster.net/library/turbulenz).
+  * [Pijs.io](http://pijs.io/) - [Raspberry Pi](http://www.raspberrypi.org/) + [Node.js](http://nodejs.org/) = Sheer awesomeness as in Pijs.io
+  * [MixItUp](http://mixitup.io/) - A beautiful filtering and sorting library. [JSter entry](http://jster.net/library/mixitup)
+  * [fartscroll.js](http://theonion.github.io/fartscroll.js/) - Doubles your conversion rates, for a while anyway. [JSter entry](http://jster.net/library/fartscroll-js).
+  * [Polymer](http://www.polymer-project.org/) - A structured way to build web apps. [JSter entry](http://jster.net/library/polymer)
+  * [lazy.js](http://dtao.github.io/lazy.js/) - Like [Underscore](http://underscorejs.org/), but lazier. [JSter entry](http://jster.net/library/lazy-js)
+
+  ## Articles
+
+  {{ screenshot: marionettejs }}
+
+  * [JavaScript MVC frameworks: A Comparison of Marionette and Chaplin](http://9elements.com/io/index.php/comparison-of-marionette-and-chaplin/)
+  * [The MEAN Stack: MongoDB, ExpressJS, AngularJS and Node.js](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and)
+  * [Simpler Web Design with HTML5 Prototyping Services](http://jster.net/blog/html5-prototyping-services)
+  * [Tips for Maintaining an Open-Source Library](https://segment.io/blog/tips-for-maintaining-an-open-source-library/)
+  * [Compiling to JavaScript, and Debugging with Source Maps](https://hacks.mozilla.org/2013/05/compiling-to-javascript-and-debugging-with-source-maps/)
+  * [Things I Wish I Were Told About Angular.js](http://ruoyusun.com/2013/05/25/things-i-wish-i-were-told-about-angular-js.html)
+  * [A Study on Solving Callbacks with JavaScript Generators](http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators)
+  * [Fighting crimes with Batman.js - Interview with Nick Small of Shopify](http://jster.net/blog/batman-js-interview-with-nick-small-shopify)
+
+  ## Tutorials
+
+  * [Building HTML5 Apps with Yeoman and Backbone](http://rockyj.in/2013/05/11/yeoman_and_backbone.html)
+  * [Building a Spreadsheet in 20 Minutes with Angular.js](http://thomasstreet.net/blog/spreadsheet.html) - The first steps towards your own version of Excel
+  * [Building Cross-Browser Extensions with Kango and Backbone](http://jster.net/blog/cross-browser-kango-extensions-and-backbone)
+  * [Building Backbone.js apps with Backlift Part 1: Views and Templates](http://gun.io/blog/Building-Backbone.js-apps-with-Backlift-Views-and-Templates/)
+
+  ## Tools
+
+  * [Charcoal, the easiest way to create Ember projects](http://www.thomasboyt.com/2013/05/02/announcing-charcoal.html)
+  * [ExplainJS](http://www.explainjs.com/) - View comments and code side by side
+  * [Intern](http://theintern.io/) - A promising approach to testing your web app. See also [JSter entry](http://jster.net/library/intern)
+  * [JSHint 2.0.0](http://www.jshint.com/blog/2013-05-07/2-0-0/)
+  * [jQuery Builder](http://projects.jga.me/jquery-builder/) - Create a custom build of your favorite(?) library
+  * [Haxe 3.0](https://groups.google.com/forum/#!msg/haxelang/h_KliNPb-jM/AQdmP7M3KO0J)
+  * [JSON Generator](http://www.json-generator.com/) - Perfect for your dummy needs
+
+  ## Slides
+
+  * [The Politics of JavaScript](https://speakerdeck.com/anguscroll/the-politics-of-javascript) - Excellent slides by Angus Croll. His [blog is awesome too](http://javascriptweblog.wordpress.com/).
+  * [The j1k Experience](http://slid.es/zz85/the-js1k-experience) - Superb slides by [@BlurSpline](https://twitter.com/BlurSpline)
+  * [High Performance Data Visualizations](https://speakerdeck.com/mourner/high-performance-data-visualizations)
+  * [Master the CLI with Node](http://michaelbrooks.ca/deck/jsconf2013)
+
+  ## Demos
+
+  * [Epic Citadel](http://www.unrealengine.com/html5/) - It doesn't get more epic than that. You might remember this demo from iOS and Android devices.
+  * [GitHub ArchiveRoom](http://archiveroom.net/) - Explore your [GitHub](https://github.com/) archive in 3D. How neat is that?
+  * [js1k Spring Demos](http://js1k.com/2013-spring/demos)
+  * [JavaScript Gauntlet](http://codeincomplete.com/posts/2013/4/30/javascript_gauntlet/) - Yes, Gauntlet is back
+  * [HackerNews frontend for the mobile](http://hn.premii.com/) - Nice work by [@premii](https://twitter.com/premii)
+  * [CSS NES](http://codepen.io/onediv/pen/AsDev) - [@One_div](https://twitter.com/One_div) put a NES in your CSS
+
+  ## Conclusion
+
+  >> What's the favorite bread of JS developers?
+
+  >> NaN

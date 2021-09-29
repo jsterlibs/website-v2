@@ -1,0 +1,69 @@
+type: static
+title: "JSter #29: News of August 2014 - Part 2"
+short_title: "JSter #29"
+user: bebraw
+slug: monthly-jster-august-2014-part-2
+body: |
+    > JavaScript is like ice cream. Super yummy in small doses. Extremely painful in large quantities - @beders
+
+    ## Libraries
+
+    {{ screenshot: http://yahooeng.tumblr.com/post/96098168666/important-announcement-regarding-yui }}
+
+    * [YUI is Retiring](http://yahooeng.tumblr.com/post/96098168666/important-announcement-regarding-yui)
+    * [AngularJS vs. Backbone.js vs. Ember.js](http://www.airpair.com/js/javascript-framework-comparison)
+    * [sweep.js](http://rileyjshaw.com/sweep/) - Nice color transitions
+    * [Psykick2D](http://mcluck90.github.io/psykick2d/) - HTML5 game engine built with performance and usability in mind
+    * [p5.js](http://p5js.org/) - Alternative to Processing
+    * [Knockout 3.2.0 released](http://blog.stevensanderson.com/2014/08/18/knockout-3-2-0-released/)
+    * [Raynos/mercury](https://github.com/Raynos/mercury) - A truly modular frontend framework
+
+    ## Articles
+
+    {{ screenshot: http://www.developerdrive.com/2014/08/10-essential-javascript-resources-for-html5/ }}
+
+    * [10 essential JavaScript resources for HTML5](http://www.developerdrive.com/2014/08/10-essential-javascript-resources-for-html5/)
+    * [Javascript: the weird parts -- Charlie Harvey](http://charlieharvey.org.uk/page/javascript_the_weird_parts)
+    * [Rails and React I: A happy medium](http://codeloveandboards.com/blog/2014/08/24/rails-and-react-i-a-happy-medium/)
+    * [Opinionated Rundown of JS Frameworks](http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks)
+    * [The future of NPM website](http://blog.npmjs.org/post/94662089625/the-future-of-the-npm-website-lets-map-this-road)
+    * [3 New JavaScript APIs You May Want to Follow](http://www.sitepoint.com/3-new-javascript-apis-may-want-follow/)
+    * [7 Minimal Node.js Web Frameworks for 2014 and Beyond](http://codecondo.com/7-minimal-node-js-web-frameworks)
+
+    ## Tutorials
+
+    {{ screenshot: http://bjorn.tipling.com/advanced-objects-in-javascript }}
+
+    * [Advanced objects in JavaScript](http://bjorn.tipling.com/advanced-objects-in-javascript)
+    * [How To Add Page Transitions with CSS and smoothState.js](http://css-tricks.com/add-page-transitions-css-smoothstate-js/)
+    * [Better Builds Begin with Broccoli](http://moduscreate.com/better-builds-begin-with-broccoli/)
+
+    ## Guides
+
+    * [A JavaScript Quality Guide](https://github.com/bevacqua/js/)
+    * [Easing Functions Cheat Sheet](http://easings.net/)
+    * [JS: The Right Way](http://jstherightway.org/)
+
+    ## Techniques
+
+    {{ screenshot: https://hacks.mozilla.org/2014/08/black-box-driven-development-in-javascript/ }}
+
+    * [Black Box Driven Development in JavaScript](https://hacks.mozilla.org/2014/08/black-box-driven-development-in-javascript/)
+    * [Async requests with React.js and Flux, revisited.](http://www.code-experience.com/async-requests-with-react-js-and-flux-revisited/)
+    * [Browserify and Gulp with React](https://hacks.mozilla.org/2014/08/browserify-and-gulp-with-react/)
+    * [Pure CSS parallax scrolling websites](http://blog.keithclark.co.uk/pure-css-parallax-websites/)
+    * [Single Element CSS Spinners](http://projects.lukehaas.me/css-loaders/)
+
+    ## Games
+
+    * [Old school racing](http://wagnerandrade.github.io/old-school-racing/)
+    * [WebGL available in Unity for free](http://blogs.unity3d.com/2014/08/14/building-and-maintaining-value-for-developers/)
+
+    ## Tools
+
+    * [HTML5 Web Components and Custom Tags, built with X-Tags, Polymer or Pure JavaScript by Martin Ivanov (@wemakesitesnet)](http://experiments.wemakesites.net/html5-web-components.html)
+    * [danielstjules/pjs](https://github.com/danielstjules/pjs) - Pipeable javascript. Quickly filter, map, and reduce from the terminal
+
+    ## Demos
+
+    * [MathBox²](http://acko.net/files/pres/siggraph-2014-bof/online.html)

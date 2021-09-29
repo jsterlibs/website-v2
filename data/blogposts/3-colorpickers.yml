@@ -1,0 +1,24 @@
+type: rating
+title: JavaScript Color Pickers
+user: bebraw
+slug: javascript-color-pickers
+includes: [nativeColorPicker, colorjoe, Flexi Colorpicker, SimpleColor, ExColor, JavaScript Colorpicker, Farbtastic, mooRainbow, jPicker]
+body: |
+  If you are building an application that deals with graphics somehow, you are likely going to need a color picker. Fortunately
+  there are quite a few of those available for JavaScript. [HTML5 includes `color` input](http://www.w3.org/TR/html-markup/input.color.html) type even. One color picker, aptly
+  named **nativeColorPicker**, provides a shim for Internet Explorer so that you have got all bases covered. Other pickers
+  available are more specialized.
+
+  One example of these is **colorjoe**. That is a widget I developed myself after getting frustrated with existing alternatives.
+  My primary goals were to make it scaleable using CSS (no images needed) and make it easy to adjust. I think I succeeded in
+  these goals quite well. [David Durman's](http://www.daviddurman.com/) **Flexi** shares the goal of avoiding images. It is actually a lot lighter than
+  `colorjoe` (19k vs. 4k. minified) though given its modular nature it should be possible to get rid of some of that fat
+  if needed.
+
+  Besides these three there are quite a few pickers available. Enjoy the listing below for some. If you are missing your
+  favorite, let us know and we'll add it to the catalog!
+
+footer: |
+  I hope you managed to find a picker fitting your needs. You might find a few additional ones on our
+  [colorpicker listing](http://jster.net/tag/colorpicker). This post just represents the state at the time of writing.
+  Happy hacking!

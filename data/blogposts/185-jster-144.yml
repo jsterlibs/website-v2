@@ -1,0 +1,41 @@
+type: static
+title: "JSter #144: Libraries and more"
+short_title: "JSter #144"
+user: bebraw
+slug: jster-144
+body: |
+  > Eight days of JavaScript per week
+
+  It's hot summer but coding never stops. I [went to WorkerConf 2019 recently and wrote about my experiences](https://survivejs.com/blog/workerconf-2019/). If you like JavaScript backend development and outdoors, the Austrian conference is worth a look. If you want to visit Vienna in September, [check out HalfStack Vienna](https://halfstackconf.com/vienna/).
+
+  ## Libraries
+
+  * [find-my-way](https://www.npmjs.com/package/find-my-way) - A fast HTTP router
+  * [lmatteis/behavioral](https://github.com/lmatteis/behavioral) - Behavioral Programming for JavaScript
+  * [lukejacksonn/domz](https://github.com/lukejacksonn/domz) - A proxy function to help build virtual DOM trees from functions
+  * [graphql-tag](https://www.npmjs.com/package/graphql-tag) - Helpful utilities for parsing GraphQL queries
+  * [mourner/flatbush](https://github.com/mourner/flatbush) - A very fast static spatial index for 2D points and rectangles in JavaScript
+  * [Graphology](https://graphology.github.io/) - Multipurpose Graph object for JavaScript
+  * [mafintosh/csv-parser](https://github.com/mafintosh/csv-parser) - Streaming csv parser inspired by binary-csv that aims to be faster than everyone else
+  * [GoogleChromeLabs/comlink](https://github.com/GoogleChromeLabs/comlink) - Comlink makes WebWorkers enjoyable
+
+  ## Tools
+
+  * [Clinic.js](https://clinicjs.org/) - Tools to help diagnose and pinpoint Node.js performance issues
+  * [planetlabs/viewpoints](https://github.com/planetlabs/viewpoints) - Viewpoints is a tool for visualizing high dimensionality data using linked scatter plots
+  * [ts2swagger](https://www.npmjs.com/package/ts2swagger) - TypeScript classes to Swagger documentation and Express endpoints
+
+
+  ## Articles
+
+  * [Canvas Debugging](https://webkit.org/blog/8452/canvas-debugging/)
+  * [Lightweight Node.js version switching](https://tkareine.org/articles/lightweight-nodejs-version-switching.html)
+  * [The optimistic UI with React](https://uxdesign.cc/the-optimistic-ui-with-react-f1420e317d54)
+
+  ## Tutorials
+
+  * [Extending Built-in Elements](https://medium.com/@WebReflection/extending-built-in-elements-9dce404b75b4)
+
+  ## Games
+
+  * [JavaScript Equality Table Game](https://eqeq.js.org/)

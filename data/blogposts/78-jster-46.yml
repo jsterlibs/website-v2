@@ -1,0 +1,86 @@
+type: static
+title: "JSter #46: News of May 2015 - Part 1"
+short_title: "JSter #46"
+user: bebraw
+slug: monthly-jster-may-2015-part-1
+body: |
+    > Always bet on JavaScript.
+
+    I've been working on [a book about Webpack and React](https://leanpub.com/survivejs_webpack). If either of those technologies interests you, please check it out. There's plenty of material to study. You can also find [the material at GitHub](https://github.com/survivejs/webpack_react) if you just want to have a quick peek.
+
+    ## Libraries
+
+    {{ screenshot: http://skitjs.com/ }}
+
+    * [skit](http://skitjs.com/) - JavaScript web application environment for first-class web clients. Also something offensive in Swedish.
+    * [jquery/globalize](https://github.com/jquery/globalize) - A JavaScript library for internationalization and localization that leverages the official Unicode CLDR JSON data
+    * [ericelliott/stampit](https://github.com/ericelliott/stampit) - OOP is better with stamps: Composable object factories
+    * [bendc/sprint](https://github.com/bendc/sprint) - A tiny, lightning fast jQuery-like library for modern browsers
+    * [FluxThis](https://fluxthis.io/) - The super-opinionated, yell-at-you-for-everything, immutable Flux framework by AddThis
+    * [dragula](https://bevacqua.github.io/dragula/) - Drag and drop simplified
+    * [Layzr.js](https://callmecavs.github.io/layzr.js/) - A small, fast, modern, and dependency-free library for lazy loading.
+
+    ## Frameworks
+
+    {{ screenshot: http://jsblocks.com/ }}
+
+    * [foam-framework/foam](https://github.com/foam-framework/foam) - Feature-Oriented Active Modeller
+    * [jsblocks](http://jsblocks.com/) - Better MV-ish Framework
+
+    ## Articles
+
+    {{ screenshot: http://csswizardry.com/2015/04/cyclomatic-complexity-logic-in-css/ }}
+
+    * [Cyclomatic Complexity: Logic in CSS](http://csswizardry.com/2015/04/cyclomatic-complexity-logic-in-css/)
+    * [How Facebook’s React Native Will Change Mobile Apps](http://techcrunch.com/2015/04/20/how-facebooks-react-native-will-change-mobile-apps/)
+    * [Chrome DevTools upcoming features](https://medium.com/@bdauton/upcoming-features-in-the-next-chrome-devtools-b7edcb3002a5)
+
+    ## Tutorials
+
+    * [Learn ECMAScript6 by doing it](http://es6katas.org/)
+    * [Learn to use let and const](http://mosaic.academy/exercise/let-and-const)
+    * [ES6 In Depth: An Introduction](https://hacks.mozilla.org/2015/04/es6-in-depth-an-introduction/)
+    * [Just another introduction to ngNewRouter](https://medium.com/angularjs-meetup-south-london/angular-new-router-preview-8002340e5427)
+    * [Angular 2 Series: Components](http://blog.ionic.io/angular-2-series-components/)
+    * [How to use React and Om to make a Single Page Application](http://jster.net/blog/learn-to-create-spas-with-react-and-om)
+    * [The React.js Way: Getting Started Tutorial](http://blog.risingstack.com/the-react-way-getting-started-tutorial/)
+
+    ## Examples
+
+    * [React Examples: Mailbox](http://blog.tryolabs.com/2015/04/07/react-examples-mailbox/)
+    * [amplitude.js](https://open.521dimensions.com/amplitudejs) - Open source HTML5 audio player
+
+    ## Slides
+
+    * [Flux - Those who forget the past...](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1)
+
+    ## Guides
+
+    * [mikechau/react-primer-draft](https://github.com/mikechau/react-primer-draft) - A primer for building web applications with React
+
+    ## Techniques
+
+    * [Putting React Custom PropTypes to Work](http://rjzaworski.com/2015/01/putting-react-custom-proptypes-to-work)
+    * [ES6 In Depth: Template strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
+
+    ## Tools
+
+    * [NativeScript 1.0.0](https://www.nativescript.org/blog/nativescript-1.0.0-is-now-available) - Develop native mobile apps using JavaScript
+    * [Cody](http://cody-cms.org/en/) - a CMS in Node.js
+
+    ## Services
+
+    * [Web Design Stack](http://webdesignstack.com/) - Web design resources under one roof
+    * [.resizr](http://resizr.co/) - Test your responsive web page
+
+    ## Hardware
+
+    * [Node and ARM](https://medium.com/@nodesource/node-and-arm-b5e3eebf449)
+
+    ## Comics
+
+    * [Lost Generation](http://www.commitstrip.com/en/2015/05/05/lost-generation/)
+
+    --
+
+    [mobile monetization](http://www.appnext.com/platform.html)

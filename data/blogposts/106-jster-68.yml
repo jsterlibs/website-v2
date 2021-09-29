@@ -1,0 +1,54 @@
+type: static
+title: "JSter #68: News of April 2016 - Part 1"
+short_title: "JSter #68"
+user: bebraw
+slug: monthly-jster-april-2016-part-1
+body: |
+    > There can be only one JavaScript.
+
+    Weeks seem shorter these days. Despite that I managed to release a new version of my book. See [SurviveJS - Webpack and React 2.1](http://survivejs.com/blog/survivejs210/) for more details. Check out also the [Webpack book](http://survivejs.com/webpack/introduction/). You can read it free online and a part of the income goes directly to Webpack author to support its development.
+
+    ## Libraries
+
+    {{ screenshot: https://facebook.github.io/react/blog/2016/04/07/react-v15.html }}
+
+    * [React v15.0](https://facebook.github.io/react/blog/2016/04/07/react-v15.html)
+    * [Rivets.js](http://rivetsjs.com/) - Lightweight and powerful data binding + templating solution for building modern web applications.
+    * [cash](https://github.com/kenwheeler/cash) - An absurdly small jQuery alternative for modern browsers
+    * [monet.js](https://cwmyers.github.io/monet.js/) - Powerful abstractions for JavaScript. Monads, validation, immutable, etc.
+    * [Substance](http://substance.io/) - A JavaScript library for web-based content editing.
+
+    ## Articles
+
+    * [Analyzing the NPM dependency network](https://medium.com/graph-commons/analyzing-the-npm-dependency-network-e2cf318c1d0d)
+
+    ## Tutorials
+
+    * [Immutable Data and Functional JavaScript with Mori](http://www.sitepoint.com/immutable-data-functional-javascript-mori/)
+
+    ## Techniques
+
+    * [ES6 module loading](https://www.nczonline.net/blog/2016/04/es6-module-loading-more-complicated-than-you-think/) - More complicated than you think.
+    * [Debouncing and Throttling Explained Through Examples](https://css-tricks.com/debouncing-throttling-explained-examples/)
+
+    ## Interviews
+
+    * [Relax Interview](http://survivejs.com/blog/relax-interview/) - New generation CMS on top of React and Node.js - Interview with Bruno Mota
+
+    ## Comparisons
+
+    * [ivan-kleshin/reactive-polyglot](https://github.com/ivan-kleshnin/reactive-polyglot) - FRP libraries / languages compared
+
+    ## Challenges
+
+    * [Regex Challenge](https://callumacrae.github.io/regex-tuesday/challenge1.html)
+
+    ## Tools
+
+    * [minty](https://www.npmjs.com/package/minty) - Node process visualization
+    * [Grunt 1.0.0](http://gruntjs.com/blog/2016-04-04-grunt-1.0.0-released)
+    * [eruda](https://github.com/liriliri/eruda) - Console for mobile JavaScript
+
+    ## Demos
+
+    * [WebAssembly Demo](https://webassembly.github.io/demo/)

@@ -1,0 +1,95 @@
+type: static
+title: "Monthly JSter #12: News of December 2013"
+short_title: "Monthly JSter #12"
+user: bebraw
+slug: monthly-jster-december-2013-part-1
+body: |
+    JSter #12 has arrived. Some things of note happened earlier this month. [Ember 1.2.0](http://emberjs.com/blog/2013/12/04/ember-1-2-0-and-ember-1-3-0-beta-released.html) came available. Also [Zepto reached 1.1](https://github.com/madrobby/zepto/releases/tag/v1.1.0). The new version includes support for IE11 and performance improvements. In addition PayPal announced something interesting Node.js related and overall the community just kept on churning out cool stuff.
+
+    Remember that Monthly JSter is available as [a newsletter](http://eepurl.com/zB_g5). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content including interviews or book reviews.
+
+    ## Libraries
+
+    {{ screenshot: http://emberjs.com/blog/2013/12/04/ember-1-2-0-and-ember-1-3-0-beta-released.html }}
+
+    * [Ember 1.2.0 and 1.3 Beta](http://emberjs.com/blog/2013/12/04/ember-1-2-0-and-ember-1-3-0-beta-released.html)
+    * [voix.js](http://pazguille.github.io/voix/) - Add voice commands to your sites, apps or games
+    * [Zepto 1.1](https://github.com/madrobby/zepto/releases/tag/v1.1.0)
+    * [Move.js](http://visionmedia.github.io/move.js/) - Simple CSS3 animations
+    * [URI.js](http://medialize.github.io/URI.js/) - Library for working with URLs.
+
+    ## Articles
+
+    {{ screenshot: https://hacks.mozilla.org/2013/12/monster-madness-creating-games-on-the-web-with-emscripten/ }}
+
+    * [Happy 18th Birthday JavaScript](http://resin.io/happy-18th-birthday-javascript/)
+    * [Monster Madness - Creating Games on the Web with Emscripten](https://hacks.mozilla.org/2013/12/monster-madness-creating-games-on-the-web-with-emscripten/)
+    * [Stop Being Cute and Clever](http://lucumr.pocoo.org/2013/12/9/stop-being-clever/)
+    * [Exploring Canvas Drawing Techniques](http://perfectionkills.com/exploring-canvas-drawing-techniques/)
+    * [6 secrets of JavaScript Jedis](http://www.infoworld.com/d/application-development/6-secrets-of-javascript-jedis-231322)
+
+    ## Chrome DevTools
+
+    {{ screenshot: http://www.html5rocks.com/en/tutorials/developertools/mobile/ }}
+
+    * [Chrome DevTools for Mobile: Screencast and Emulation](http://www.html5rocks.com/en/tutorials/developertools/mobile/)
+    * [5 Great Hidden Features in the Chrome DevTools](http://blog.teamtreehouse.com/5-great-hidden-features-in-the-chrome-devtools)
+
+    ## Node.js
+
+    {{ screenshot: http://www.infoq.com/news/2013/11/paypal-java-javascript }}
+
+    * [PayPal Switches from Java to JavaScript](http://www.infoq.com/news/2013/11/paypal-java-javascript)
+    * [Learn to Develop Static Site Generators](http://jster.net/blog/develop-static-site-generators)
+    * [Node.js async in practice: When to use what?](http://www.sebastianseilund.com/nodejs-async-in-practice)
+
+    ## jQuery
+
+    {{ screenshot: http://speckyboy.com/2013/12/11/jquery-plugins-2013/ }}
+
+    * [50 Most Useful jQuery Plugins from 2013](http://speckyboy.com/2013/12/11/jquery-plugins-2013/)
+
+    ## Angular.js
+
+    {{ screenshot: http://www.sitepoint.com/10-reasons-use-angularjs/ }}
+
+    * [10 Reasons Why You Should Use AngularJS](http://www.sitepoint.com/10-reasons-use-angularjs/)
+    * [Contrasting Backbone and Angular](http://www.infoq.com/articles/backbone-vs-angular)
+    * [Don't Fear Directives in Angular.js](http://nathanleclaire.com/blog/2013/12/07/dont-fear-directives-in-angular-dot-js/)
+
+    ## Presentations
+
+    {{ screenshot: https://speakerdeck.com/rauschma/ecmascript-6-whats-next-for-javascript }}
+
+    * [15 Tricks to Master Chrome Developer Tools Console](https://www.youtube.com/watch?v=2zmUSoVMyRU)
+    * [ECMAScript 6: What's Next for JavaScript?](https://speakerdeck.com/rauschma/ecmascript-6-whats-next-for-javascript) - Slides
+    * [Callable Entities in ECMAScript 6](https://speakerdeck.com/rauschma/callable-entities-in-ecmascript-6) - Slides
+    * [Practicing Safe Script](https://speakerdeck.com/slexaxton/practicing-safe-script) - Slides
+
+    ## Techniques
+
+    {{ screenshot: http://blog.ponyfoo.com/2013/11/19/fun-with-native-arrays }}
+
+    * [Fun with Native Arrays](http://blog.ponyfoo.com/2013/11/19/fun-with-native-arrays)
+    * [Twitter + GeoJSON + d3.js + Rob Ford = Fun with Data Visualizations](http://blog.repustate.com/twitter-postgis-d3-rob-ford-fun-with-data-visualizations/2013/12/03/)
+    * [Build a Before/After Widget Using CSS and JS](http://www.nixtu.info/2013/07/build-beforeafter-widget-using-css-and.html)
+    * [Understanding JavaScript Object Creation Patterns](http://www.codeproject.com/Articles/687093/Understanding-JavaScript-Object-Creation-Patterns)
+
+    ## Tools
+
+    {{ screenshot: http://nodeapp.org/ }}
+
+    * [Node.app](http://nodeapp.org/) - Node.js for iOS
+    * [escomplex](https://github.com/philbooth/escomplex) - Software complexity analysis of JavaScript-family ASTs. See also [complexity-report](https://github.com/philbooth/complexity-report).
+    * [DOM Monster](http://mir.aculo.us/dom-monster/) - Analyze DOM performance using this bookmarklet.
+
+    ## Demos
+
+    * [lsys](http://benvan.co.uk/lsys/) - l-systems in JavaScript
+    * [SculptGL](http://stephaneginier.com/sculptgl/) - Sculpting app in WebGL
+    * [Minicraft](http://www.p01.org/releases/minicraft/minicraft.htm) - Minecraft clone in 252 bytes
+    * [MiniCodeEditor](http://xem.github.io/miniCodeEditor/) - Online HTML/CSS/JS editor in 161+ bytes
+
+    ## Conclusion
+
+    > Don't call us, we'll call you - said by Hollywood casting directors and asynchronous Node operations.

@@ -1,0 +1,52 @@
+type: static
+title: "JSter #172: Libraries, and more"
+short_title: "JSter #172"
+user: bebraw
+slug: jster-172
+body: |
+  > JavaScript shot first.
+
+  [The week of React Finland](https://react-finland.fi/) (30.08-03.09) is here. There will be a lot of content and many topics go beyond React so be sure to tune in.
+
+  ## Libraries
+
+  * [Mirage JS](https://miragejs.com/) - An API mocking library for frontend
+  * [perceived-dev/optimistic-state](https://github.com/perceived-dev/optimistic-state) - Optimistic state with rollbacks and race condition handling
+  * [What’s Coming in React 18](https://www.telerik.com/blogs/whats-coming-react-18)
+  * [React Navigation 6.0](https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/)
+  * [sindresorhus/p-queue](https://github.com/sindresorhus/p-queue) - Promise queue with concurrency control
+  * [polygonplanet/chillout](https://github.com/polygonplanet/chillout) - Reduce CPU usage by non-blocking async loop and psychologically speed up in JavaScript
+  * [daisyUI](https://daisyui.com/) - Tailwind CSS Components
+
+  ## Frameworks
+
+  * [Milkdown](https://milkdown.dev/) - Plugin Based WYSIWYG Markdown Editor Framework
+
+  ## TypeScript
+
+  * [Announcing the New TypeScript Homepage](https://devblogs.microsoft.com/typescript/announcing-the-new-typescript-homepage/)
+  * [egoist/tsup](https://github.com/egoist/tsup) - The simplest and fastest way to bundle your TypeScript libraries.
+  * [Announcing TypeScript 4.4 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4-rc/)
+  * [Practical introduction to algebraic datatypes (ADTs) in TypeScript](https://itnext.io/practical-introduction-to-algebraic-datatypes-adts-in-typescript-1cb6952e4c6d)
+
+  ## Tools
+
+  * [lahmatiy/react-render-tracker](https://github.com/lahmatiy/react-render-tracker) - React render tracker – a tool to discover performance issues related to unintentional re-renders and unmounts
+  * [unjs/unplugin](https://github.com/unjs/unplugin) - Unified plugin system for Vite, Rollup, and Webpack
+  * [LingDong-/fishdraw](https://github.com/LingDong-/fishdraw) - Procedurally generated fish drawings
+  * [Astro](https://astro.build/) - Build faster websites with less client-side JavaScript
+
+  ## Articles
+
+  * [9 Super Useful Tricks for JavaScript Developers](https://blog.bitsrc.io/9-super-useful-tricks-for-javascript-developers-4fd7193e0ac)
+  * [How to Build an Android News App with React Native and Native Base](https://www.freecodecamp.org/news/build-an-android-news-app-with-react-native-and-native-base/)
+  * [How to Set up Push Notifications in React Native](https://around25.com/blog/how-to-implement-push-notifications-in-react-native/)
+  * [Microsoft wonders if disabling just-in-time compilation of JavaScript improves browser security](https://www.theregister.com/2021/08/06/edge_super_duper_security_mode/)
+  * [Writing JavaScript, but with types!](https://matsu.fi/posts/writing-typed-javascript/)
+  * [Empty npm package '-' has over 700,000 downloads](https://www.bleepingcomputer.com/news/software/empty-npm-package-has-over-700-000-downloads-heres-why/)
+
+  ## GraphQL
+
+  * [GraphQL Response Caching with Envelop](https://the-guild.dev/blog/graphql-response-caching-with-envelop)
+  * [GQty](https://gqty.dev/) - A GraphQL client built for rapid iteration
+  * [marmelab/json-graphql-server](https://github.com/marmelab/json-graphql-server) - Get a full fake GraphQL API with zero coding in less than 30 seconds.

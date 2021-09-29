@@ -1,0 +1,74 @@
+type: static
+title: "JSter #163: Libraries, and more"
+short_title: "JSter #163"
+user: bebraw
+slug: jster-163
+body: |
+  > 2021 - JavaScript has turned 25
+
+  A new year has arrived and I've compiled a nice list of JavaScript related links for you as usual.
+
+  ## Libraries
+
+  * [kripod/react-layout-components](https://github.com/kripod/react-layout-components) - Layout components for React, primarily inspired by Every Layout
+  * [dumbmatter/fakeIndexedDB](https://github.com/dumbmatter/fakeIndexedDB) - A pure JS in-memory implementation of the IndexedDB API
+  * [humaans/react-machine](https://github.com/humaans/react-machine) - A state machine hook for React applications
+  * [pmndrs/react-three-flex](https://github.com/pmndrs/react-three-flex) - Flexbox for react-three-fiber
+  * [diegohaz/constate](https://github.com/diegohaz/constate) - React Context + State
+  * [kripod/otion](https://github.com/kripod/otion) - Atomic CSS-in-JS with a featherweight runtime
+  * [DanWahlin/Observable-Store](https://github.com/DanWahlin/Observable-Store) - Observable Store provides a simple way to manage state in Angular, React, Vue.js and other frontend applications
+  * [neo](https://github.com/neomjs/neo) - Create blazing fast multithreaded Web Apps
+
+  ## Frameworks
+
+  * [Base Web React UI Framework](https://baseweb.design/)
+  * [boxine/pentf](https://github.com/boxine/pentf) - Parallel end-to-end test framework
+  * [grommet](https://github.com/grommet/grommet) - React-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package
+  * [Fluid Framework](https://fluidframework.com/) - Data Sync Reimagined
+  * [Bootstrap 5 - Beta 1](https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1/)
+
+  ## Tools
+
+  * [Saruni](https://saruni.dev/) - The simplest way to write and deploy fast, scalable full-stack web applications in JavaScript
+  * [imcuttle/simple-hot-reload-server](https://github.com/imcuttle/simple-hot-reload-server) - Simple hot reload server by Node
+  * [json-server](https://www.npmjs.com/package/json-server) - Get a full fake REST API with zero coding in less than 30 seconds
+  * [ben-rogerson/twin.macro](https://github.com/ben-rogerson/twin.macro) - Twin blends the magic of Tailwind with the flexibility of css-in-js (emotion, styled-components and goober) at build time
+  * [Webpack - Roadmap 2021 (2020-12-08)](https://webpack.js.org/blog/2020-12-08-roadmap-2021/)
+  * [Hazel, a live functional programming environment featuring typed holes.](https://hazel.org/)
+
+  ## Deno
+
+  * [Node Or Deno, That Is The Question!? 🤔](https://dev.to/mrdoomy/node-or-deno-that-is-the-question-16h9)
+  * [rodolphocastro/dixture](https://github.com/rodolphocastro/dixture) - Dixture is a Deno module that helps you create random data for your tests
+  * [sholladay/pogo](https://github.com/sholladay/pogo) - Server framework for Deno
+
+  ## Articles
+
+  * [Frontend Pattern — Atomic Business Components (ABC)](https://nsisodiya.medium.com/frontend-pattern-atomic-business-components-abc-17466f72dc37)
+  * [How One Developer Recreated AirDrop Using Just JavaScript](https://dev.to/abdisalan_js/how-one-developer-recreated-airdrop-using-just-javascript-2403)
+  * [Should you switch from React to Svelte?](https://blog.logrocket.com/should-you-switch-from-react-to-svelte/)
+
+  ## Techniques
+
+  * [On Designing and Building Toggle Switches](https://www.sarasoueidan.com/blog/toggle-switch-design/)
+  * [Fixing the "dark mode flash" issue on server rendered websites](https://blog.maximeheckel.com/posts/switching-off-the-lights-part-2-fixing-dark-mode-flashing-on-servered-rendered-website/)
+  * [Updating UIs: value comparison VS mutation tracking](https://itnext.io/updating-uis-value-comparison-vs-mutation-tracking-9f6fe912dd9a)
+  * [Node.js Resiliency Concepts: Recovery and Self-Healing](https://blog.appsignal.com/2020/09/09/nodejs-resiliency-concepts-recovery-and-self-healing.html)
+  * [The Key to Calling React Hooks Conditionally](https://souporserious.com/the-key-to-conditionally-calling-react-hooks/)
+  * [Synchronizing Async Functions in Node.js](https://giuseppegurgone.com/synchronizing-async-functions/)
+  * [How to break the rules of React Hooks](https://mattperry.is/writing-code/how-to-break-the-rules-of-react-hooks)
+  * [Preloading Web Assets](https://survivejs.com/blog/preloading-web-assets/)
+
+  ## CSS
+
+  * [rotvalli/css-gauge](https://github.com/rotvalli/css-gauge) - Pure CSS gauge component
+
+  ## TypeScript
+
+  * [Advanced TypeScript Type Tricks](https://casualdeveloper.net/post/2020-12-21-advanced-typescript-type-tricks/)
+  * [type-challenges](https://github.com/type-challenges/type-challenges) - Collection of TypeScript type challenges with online judge
+  * [Announcing TypeScript 4.1](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1/)
+
+  ## Starters
+
+  * [netcoresaas/saas-vuejs-tailwindcss](https://github.com/netcoresaas/saas-vuejs-tailwindcss) - VueJS + TailwindCSS frontend for SaaS apps

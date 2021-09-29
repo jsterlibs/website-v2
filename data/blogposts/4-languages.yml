@@ -1,0 +1,17 @@
+type: rating
+title: "The Others: CoffeeScript, Dart, TypeScript..."
+user: DavertMik
+slug: js-alternatives-coffeescript-dart-typescript
+includes: [CoffeeScript, Dart, TypeScript, ClojureScript, Opal, IcedCoffeeScript, LiveScript, Kaffeine, Roy]
+body: |
+  Javascript is almost a ubiquitous language. In a way it is comparable to C in its heyday. It is the language you need to know, or at least be aware of these days. Besides being a handy language for displaying various doodads on your site (ie. a lá jQuery) it is used for application development. There are even ways to program embedded systems using it (see [noduino](http://semu.github.com/noduino/) for an example).
+
+  The language isn't without its quirks. As a result various alternative languages compiling to JavaScript have emerged. Usually they provide some missing functionality and implement language concepts of their own. 
+  If you want a use OOP-style, or get rid fo nasty callbacks, or add some strict typing to your functions? Well, should definetely check these languages.
+
+  For instance if you are into classical OOP instead of prototypal and want some syntactical sugar, you might enjoy **CoffeeScript**.
+  In case you wish to have a stricter typing system, you could find **Dart** or **TypeScript** interesting. Those that enjoy functional programming, could perhaps enjoy **ClojureScript** or **Roy**.
+  The following list contains various alternatives. You do not have to stick with vanilla JavaScript unless you want to. It does not hurt to know JavaScript well but having higher level options available is always a good thing.
+footer: |
+  There is one language to rule them all: Javascript. It might not be ideal but it is the standard on the frontend side at least. Languages above provide alternatives to vanilla JavaScript and may be beneficial at times. Larger projects, such as Dart (supported by **Google**) and TypeScript (supported by **Microsoft**) have some serious backing behind them. CoffeeScript is obviously really popular these days and [source maps](http://ryanflorence.com/2012/coffeescript-source-maps/) make it even easier to use than before.
+  If you are growing tired of JavaScript and wish to try something different, at least you have options. Experiment, give alternatives a go. You just might get surprised.

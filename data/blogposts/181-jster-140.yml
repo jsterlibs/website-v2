@@ -1,0 +1,49 @@
+type: static
+title: "JSter #140: Libraries and more"
+short_title: "JSter #140"
+user: bebraw
+slug: jster-140
+body: |
+  > A JavaScript. Shaken. Not stirred.
+
+  [React Finland 2019](https://medium.com/react-finland/react-finland-2019-blog-coverage-and-photo-galleries-73ebbbf47d8d) is over and I gathered the blog coverage, videos and photos into a single post for you. The conference was an overall success and it will take a while to digest all the learnings. We gathered the conference videos into [a playlist](https://www.youtube.com/watch?v=IqbOPkCwxlw&list=PL-a9lBflNu2oW1lU7fUvW0oAnbj-mxk2a) you could check out. Now it's time to take a little break from conferences and focus on other things. :)
+
+  ## Libraries
+
+  * [VideoContext](https://bbc.github.io/VideoContext/) - An experimental video composition and rendering library for the browser.
+  * [Finance.js](http://financejs.org/) - JavaScript library for financial calculations
+  * [LinguiJS](https://lingui.js.org/) - Seamless internationalization in JavaScript
+  * [Turf.js](http://turfjs.org/) - Advanced geospatial analysis for browsers and Node.js
+  * [infusion/Complex.js/](https://github.com/infusion/Complex.js/) - A complex number library
+  * [infusion/Quaternion.js](https://github.com/infusion/Quaternion.js) - A JavaScript Quaternion library
+
+  ## Articles
+
+  * [Fantas, Eel, and Specification 1: Daggy](http://www.tomharding.me/2017/03/03/fantas-eel-and-specification/)
+
+  ## Techniques
+
+  * [Building a modern carousel with CSS scroll snap, smooth scrolling, and pinch-zoom](https://nolanlawson.com/2019/02/10/building-a-modern-carousel-with-css-scroll-snap-smooth-scrolling-and-pinch-zoom/)
+  * [How to use SVG as a Placeholder, and Other Image Loading Techniques](https://medium.freecodecamp.org/using-svg-as-placeholders-more-image-loading-techniques-bed1b810ab2c)
+  * [Developing a Javascript-free frontend](https://javascript.works-hub.com/learn/a-javascript-free-frontend-61275)
+  * [Why you should use CSS env() – LogRocket](https://blog.logrocket.com/why-you-should-use-css-env-9ee719ce0f24)
+
+  ## Frameworks
+
+  * [mauroreisvieira/stewed](https://github.com/mauroreisvieira/stewed) - Quick and efficiently responsive framework built in HTML & CSS and JavaScript
+
+  ## TypeScript
+
+  * [Is Typescript on Node.js good enough for Java developers?](https://blog.logrocket.com/is-typescript-on-node-js-good-enough-for-java-developers-f5e879e9e6d7)
+
+  ## Tools
+
+  * [xaviervia/which-ramda-function-should-i-use](https://github.com/xaviervia/which-ramda-function-should-i-use)
+  * [stacktracey](https://www.npmjs.com/package/stacktracey) - Parses call stacks. Reads sources. Clean & filtered output. Sourcemaps. Node & browsers.
+  * [Bogdan-Lyashenko/codecrumbs](https://github.com/Bogdan-Lyashenko/codecrumbs) - Learn, design or document codebase by putting breadcrumbs in source code 
+  * [simonw/datasette](https://github.com/simonw/datasette) - A tool for exploring and publishing data
+  * [ericclemmons/back-to-the-fixture](https://twitter.com/i/web/status/1118790021358739456) - Simple recording & replaying of HTTP requests for predictable development & testing.
+
+  ## Conferences
+
+  * [React Finland 2019 Sketch Notes](https://ebaytech.berlin/react-finland-2019-sketch-notes-64316793809e)

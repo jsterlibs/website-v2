@@ -1,0 +1,84 @@
+type: static
+title: "JSter #159: Libraries, and more"
+short_title: "JSter #159"
+user: bebraw
+slug: jster-159
+body: |
+  > JavaScript, still going strong
+
+  I recently [updated my webpack book to support webpack 5 initially](https://survivejs.com/blog/webpack-book-updated-to-webpack-5/). Webpack 5 will go out 10th of October so it's a good timing. During this work, I modernized the content heavily.
+
+  [The second React Finland mini-conference about state management](https://react-finland.fi/blog/rf-2020-online-mini-conf-vol-2-recap/) took place a few days ago. [The next one](https://react-finland.fi/blog/rf-2020-online-mini-conf-vol-3/) will be about design systems and take place 22nd of September.
+
+  ## Libraries
+
+  * [alexandprivate/react-blurify](https://github.com/alexandprivate/react-blurify) - Apply blur effect to children components
+  * [nicojs/typed-inject](https://github.com/nicojs/typed-inject) - Type-safe dependency injection for TypeScript
+  * [davidkpiano/xactor](https://github.com/davidkpiano/xactor) - Actors for the modern web
+  * [hyperhtml](https://www.npmjs.com/package/hyperhtml) - A Fast & Light Virtual DOM Alternative
+  * [artalar/reatom](https://github.com/artalar/reatom) - State manager with a focus of all needs
+  * [kripod/glaze](https://github.com/kripod/glaze) - CSS-in-JS microlibrary for making design systems approachable with React
+  * [Popmotion](https://github.com/Popmotion/popmotion) - The animator's toolbox
+  * [pubkey/rxdb](https://github.com/pubkey/rxdb) - A realtime Database for JavaScript Applications
+
+  ## Frameworks
+
+  * [Tauri](https://github.com/tauri-apps/tauri) - Build smaller, faster, and more secure desktop applications with a web frontend
+  * [Alibaba Midway Serverless v1.0](https://medium.com/@uplifted_latte_kangaroo_248/alibaba-midway-serverless-v1-0-lets-building-serverless-cloud-ecosystem-with-node-js-8bfa943c4fb7)
+
+  ## Articles
+
+  * [Comparing state machines: XState vs. Robot](https://blog.logrocket.com/comparing-state-machines-xstate-vs-robot/)
+  * [Records & Tuples for React](https://sebastienlorber.com/records-and-tuples-for-react/)
+  * [React + Redux + Comlink = Off-main-thread](https://dassur.ma/things/react-redux-comlink/)
+  * [Lights and Shadows](https://ciechanow.ski/lights-and-shadows/)
+  * [Large Offline Datasets with Apollo Client](https://codeburst.io/large-offline-datasets-with-apollo-client-c19c987e4a98)
+
+  ## Services
+
+  * [Statecharts.io](https://statecharts.io/) - Statechart tools to make your code do more, visually
+  * [tooling.report](https://bundlers.tooling.report/) - Which bundler to use and when
+
+  ## Tutorials
+
+  * [Barebones WebGL in 75 lines of code](https://avikdas.com/2020/07/08/barebones-webgl-in-75-lines-of-code.html)
+  * [Testing your IndexedDB code with Jest](https://dev.to/andyhaskell/testing-your-indexeddb-code-with-jest-2o17)
+  * [How I Dropped 250 KB of Dead CSS Weight with PurgeCSS](https://frontstuff.io/how-i-dropped-250-kb-of-dead-css-weight-with-purgecss)
+  * [Critical-ish CSS Extraction](https://giuseppegurgone.com/critical-css-extraction/)
+  * [Using Node.js sourcemaps with Node.js and Babel](https://dev.to/gajus/using-node-js-sourcemaps-with-node-js-and-babel-2dpi)
+  * [How to Use AVIF: The New Next-Gen Image Compression Format](https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/)
+
+  ## Tools
+
+  * [The polite way of building a javascript util library for any project](https://gitlab.com/codebryo/pleasejs)
+  * [StackTracey](https://www.npmjs.com/package/stacktracey) - Parses call stacks. Reads sources. Clean & filtered output. Sourcemaps. Node & browsers.
+  * [elderjs](https://github.com/Elderjs/elderjs) - Elder.js is an opinionated static site generator and web framework for Svelte built with SEO in mind
+  * [Snowpack 2.7](https://www.snowpack.dev/posts/2020-07-30-snowpack-2-7-release/) - The faster frontend build tool
+  * [Announcing TypeScript 4.0](https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/)
+  * [vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool. It's fast.
+  * [sucrase](https://github.com/alangpierce/sucrase) - Super-fast alternative to Babel for when you can target modern JS runtimes
+
+  ## Interviews
+
+  * [ExtendsClass](https://survivejs.com/blog/extendsclass-interview/) - Tools for developers
+  * [Midway](https://survivejs.com/blog/midway-interview/) - A Node.js framework for Serverless
+
+  ## GraphQL
+
+  * [Announcing TypeGraphQL 1.0 🚀](https://dev.to/michallytek/announcing-typegraphql-1-0-1d7h)
+
+  ## Experiments
+
+  * [experimental-react-like-framework](https://github.com/tvler/experimental-react-like-framework) - A new, experimental frontend for React inspired by SwiftUI. In development.
+
+  ## Games
+
+  * [dabreegster/abstreet](https://github.com/dabreegster/abstreet) - A traffic simulation game exploring how small changes to roads affect cyclists, transit users, pedestrians, and drivers
+
+  ## Songs
+
+  * [All you need is Javascript](https://www.youtube.com/watch?v=Qx0zSF6y70Y&feature=youtu.be)
+
+  ## Demos
+
+  * [JazzKeys](https://jazzkeys.plan8.co/)

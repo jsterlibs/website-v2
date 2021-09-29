@@ -1,0 +1,43 @@
+type: static
+title: "JSter #166: Libraries, and more"
+short_title: "JSter #166"
+user: bebraw
+slug: jster-166
+body: |
+  > JavaScript collects its garbage eventually
+
+  I recently [announced the React Finland event of this year](https://react-finland.fi/blog/rf21-call-for-participants/). It will take place in a hybrid form from 30th of August to 3rd of September. To shape the conference, we've opened [a call for participants](https://forms.gle/SeVygg8wEcXsANsB7). Please let us know what topics to cover.
+
+  ## Libraries
+
+  * [LinkeDOM: A JSDOM Alternative. JSDOM is awesome, but it’s slow at…](https://webreflection.medium.com/linkedom-a-jsdom-alternative-53dd8f699311)
+  * [google/incremental-dom](https://github.com/google/incremental-dom) - An in-place DOM diffing library
+
+  ## Frameworks
+
+  * [ealush/vest](https://github.com/ealush/vest) - Declarative validations framework
+
+  ## Services
+
+  * [natto](https://natto.dev/) - A space to fidget with JavaScript
+
+  ## Articles
+
+  * [Color palettes and accessibility features for data visualization](https://medium.com/carbondesign/color-palettes-and-accessibility-features-for-data-visualization-7869f4874fca)
+  * [CSS Modules vs CSS-in-JS. Who wins?](https://dev.to/alexsergey/css-modules-vs-css-in-js-who-wins-3n25)
+  * [Comparing React and Web Components. Part 2: Components](https://matsu.fi/posts/comparing-react-and-web-components-part-2-components/)
+
+  ## Tools
+
+  * [dabbott/javascript-playgrounds](https://github.com/dabbott/javascript-playgrounds) - An interactive JavaScript sandbox
+  * [tachometer](https://www.npmjs.com/package/tachometer) - Run benchmarks
+  * [Volta](https://volta.sh/) - The Hassle-Free JavaScript Tool Manager
+
+  ## Tutorials
+
+  * [Creating UI Components in SVG](https://css-tricks.com/creating-ui-components-in-svg/)
+  * [What is package lock json? Lockfiles for yarn & npm packages](https://snyk.io/blog/what-is-package-lock-json/)
+
+  ## Interviews
+
+  * [Rubico - [a]synchronous functional programming](https://survivejs.com/blog/rubico-interview/) - Interview with Richard Tong

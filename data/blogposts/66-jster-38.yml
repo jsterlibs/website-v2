@@ -1,0 +1,67 @@
+type: static
+title: "JSter #38: News of January 2015 - Part 1"
+short_title: "JSter #38"
+user: bebraw
+slug: monthly-jster-january-2015-part-1
+body: |
+    > The truthiness is out there
+
+    ## Libraries
+
+    {{ screenshot: https://ecomfe.github.io/echarts/index-en.html }}
+
+    * [ECharts by Baidu](https://ecomfe.github.io/echarts/index-en.html)
+    * [snabbt.js - Minimalistic animation library](http://daniel-lundin.github.io/snabbt.js/)
+    * [Taggle.js - Form-ready, Delicious style tagging made easy](http://sean.is/poppin/tags/)
+    * [vivus.js - Brings your SVGs to life](http://maxwellito.github.io/vivus/)
+    * [The 15 Best JavaScript Charting Libraries](http://www.sitepoint.com/15-best-javascript-charting-libraries/)
+
+    ## Articles
+
+    {{ screenshot: http://blog.risingstack.com/iojs-overview/ }}
+
+    * [IO.js Overview](http://blog.risingstack.com/iojs-overview/)
+    * [10 Web Predictions for 2015](http://www.sitepoint.com/10-web-predictions-2015/)
+    * [JavaScript Comes of Age (20!)](http://www.sitepoint.com/javascript-comes-age-2/)
+    * [Ember.js - On road to server-side rendering](http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html)
+    * [How can React and Flux help us create better Angular applications?](https://medium.com/@gilbox/how-can-react-and-flux-help-us-create-better-stronger-faster-angular-applications-639247898fb)
+    * [Generation Javascript](http://manuel.bernhardt.io/2014/12/30/generation-javascript/)
+
+    ## Slides
+
+    * [Don't React - What sucks in React and what to do about that?](http://staltz.com/dont-react/)
+    * [Learn Gulp in 10 minutes](http://slides.com/contra/gulp)
+
+    ## Tutorials
+
+    * [JSS (a CSS alternative) - The important parts.](https://medium.com/@oleg008/the-important-parts-131dda7f6f6f)
+    * [Understanding JavaScript hoisting](http://howchoo.com/g/understanding-javascript-hoisting)
+    * [Bootstrap Buttons Tutorial](http://www.htmlxprs.com/post/49/playing-with-bootstrap-buttons-tutorial)
+
+    ## Guides
+
+    * [Understanding ECMAScript 6](https://leanpub.com/understandinges6/read/)
+    * [Front-end Tooling Workflows](https://speakerdeck.com/addyosmani/front-end-tooling-workflows)
+
+    ## Techniques
+
+    * [JavaScript: Knowing which apps you’re breaking using static analysis](http://mrjoelkemp.com/2015/01/javascript-knowing-which-apps-youre-breaking-using-static-analysis/)
+    * [Managing the View State with React](http://www.toptal.com/react/managing-view-state-with-react)
+    * [Running Average with Node.js Streams](http://blog.vullum.io/running-average-with-node-js-streams/)
+
+    ## Games
+
+    * [Software Library: MS-DOS Games - In your browser](https://archive.org/details/softwarelibrary_msdos_games/v2)
+
+    ## Resources
+
+    * [Essential JavaScript Links](https://gist.github.com/ericelliott/d576f72441fc1b27dace)
+    * [AngularJS Cheat Sheets: Core Services, Directive Definition Object, and ui-router](https://egghead.io/articles/angularjs-core-services-directive-definition-object-and-ui-router-cheat-sheets)
+
+    ## Tools
+
+    * [io.js - Node.js fork](https://iojs.org/)
+
+    ## Demos
+
+    * [Conway's Truth Table of JavaScript Truthiness](http://thaggie.github.io/2015/01/06/conways-truth.html)

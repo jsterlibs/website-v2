@@ -1,0 +1,58 @@
+type: static
+title: "JSter #112: Libraries, the Usual"
+short_title: "JSter #112"
+user: bebraw
+slug: jster-112
+body: |
+    > I'm gonna make him a JavaScript library he can't refuse.
+
+    The Spring is coming in Vienna fast. [I visited Concat 2018](https://survivejs.com/blog/concat-2018/), a web development event held in Salzburg. It was a great conference and I'll go again if I get the chance.
+
+    [React Finland](https://react-finland.fi/) was sold out. There are still some workshop slots left. One of the major things we did during the process was to re-design the site. [Andrey Okonetchnikov wrote a post about redesigning react-finland.fi](https://medium.com/@okonetchnikov/redesigning-react-finland-fi-7f2dd6b5b487) and [I wrote a React Finland case study as well](https://medium.com/react-finland/case-study-react-finland-website-108a1128a683).
+
+    ## Libraries
+
+    * [oliviertassinari/i18n-extract](https://github.com/oliviertassinari/i18n-extract) - Manage localization with static analysis.
+    * [Swiper](http://idangero.us/swiper/) - Most modern mobile slider.
+    * [funfix](https://github.com/funfix/funfix) - Functional Programming Library for JavaScript, TypeScript and Flow.
+    * [cantinflas](https://github.com/terkelg/cantinflas) - Tiny mustache-like template engine in ~50 LOC.
+    * [funkia/list](https://github.com/funkia/list)
+
+    ## Frameworks
+
+    * [DoneJS](https://donejs.com/) - DoneJS is an open source JavaScript framework that makes it easy to build high performance, real-time web and mobile applications.
+    * [google/bottery](https://github.com/google/bottery) - A conversational agent prototyping platform by Google.
+    * [Next.js 5](https://zeit.co/blog/next5) - Universal Webpack, CSS Imports, Plugins and Zones.
+    * [graphcool/graphql-yoga](https://github.com/graphcool/graphql-yoga) - Fully-featured GraphQL Server with focus on easy setup, performance and great developer experience.
+    * [headlessCMS](https://headlesscms.org/) - A List of Content Management Systems for JAMstack Sites.
+
+    ## Articles
+
+    * [Redesigning Redux](https://hackernoon.com/redesigning-redux-b2baee8b8a38)
+
+    ## Opinions
+
+    * [Maybe you don't need Rust and WASM to speed up your JS](https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html)
+
+    ## Tutorials
+
+    * [Every JavaScript framework tutorial written more than 5 minutes ago](https://medium.freecodecamp.org/every-javascript-framework-tutorial-written-more-than-5-minutes-ago-f96642d4f05)
+
+    ## Interviews
+
+    * [Verdaccio - A lightweight npm proxy registry - Interview with Juan Picado](https://survivejs.com/blog/verdaccio-interview/)
+
+    ## Games
+
+    * [bfirsh/jsnes](https://github.com/bfirsh/jsnes) - A JavaScript NES emulator.
+    * [GameBeans.io](http://gamebeans.io/) - Web-based game creation tool.
+
+    ## Tools
+
+    * [zeit/pkg](https://github.com/zeit/pkg) - Package your Node.js project into an executable.
+    * [Choosing the right JavaScript testing tool](https://gojko.net/2018/02/25/javascript-testing-tools.html)
+
+    ## Demos
+
+    * [Planetary walkthrough shader](https://www.shadertoy.com/view/4tjGRh)
+

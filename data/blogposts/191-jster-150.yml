@@ -1,0 +1,67 @@
+type: static
+title: "JSter #150: Libraries and more"
+short_title: "JSter #150"
+user: bebraw
+slug: jster-150
+body: |
+  > There's no too little JavaScript, only too much
+
+  We announced [React Finland](https://react-finland.fi) (25-29.05) and [Freezing Edge](https://freezing-edge.fi) (01.06) events recently. React Finland will run third time and it's your chance to meet especially the Nordic community. Freezing Edge is a new, live-coding focused concept and we hope developers find it as well!
+
+  ## Libraries
+
+  * [tiptap](https://tiptap.scrumpy.io/) - A renderless rich-text editor for Vue.js
+  * [CASL](https://stalniy.github.io/casl/) - An isomorphic authorization JavaScript library
+  * [lukeed/totalist](https://github.com/lukeed/totalist) - A tiny (181B to 224B) utility to recursively list all (total) files in a directory
+  * [Gun.js](http://gun.js.org/) - Decentralized Database
+  * [valu-digital/focus-trap](https://github.com/valu-digital/focus-trap) - Multi-Container Focus Trap
+
+  ## CSS
+
+  * [chrisrowe/tailwindcss-grid](https://github.com/chrisrowe/tailwindcss-grid) - CSS Grid Tailwind Plugin
+
+  ## Frameworks
+
+  * [Strapi](https://strapi.io/) - Headless open source CMS
+  * [Ghost 3.0](https://ghost.org/blog/3-0/) - The popular blogging platform has reached a new major version
+
+  ## Articles
+
+  * [Why finite state machines](https://thisrobot.life/#why-finite-state-machines)
+  * [JavaScript is C](https://v4.chriskrycho.com/2018/javascript-is-c.html)
+
+  ## Techniques
+
+  * [How SVG Line Animation Works](https://css-tricks.com/svg-line-animation-works/)
+  * [React performance tricks](https://medium.com/@kemalpiro/react-performance-tricks-why-is-it-so-fast-6ece8ade9762)
+  * [Preventing unhandled promise rejections in async functions](https://dev.to/gajus/handling-unhandled-promise-rejections-in-async-functions-5b2b)
+
+  ## Tutorials
+
+  * [JavaScript engine fundamentals: Shapes and Inline Caches](https://mathiasbynens.be/notes/shapes-ics#shapes)
+  * [Angular Environment Setup - Safe & Testable](https://nils-mehlhorn.de/posts/angular-environment-setup-testing/)
+
+  ## npm
+
+  * [Why npm lockfiles can be a security blindspot for injecting malicious modules](https://snyk.io/blog/why-npm-lockfiles-can-be-a-security-blindspot-for-injecting-malicious-modules/)
+  * [Hacking 20 high-profile dev accounts could compromise half of the npm ecosystem](https://www.zdnet.com/google-amp/article/hacking-20-high-profile-dev-accounts-could-compromise-half-of-the-npm-ecosystem/)
+
+  ## Tools
+
+  * [eslint-plugin-formatjs](https://www.npmjs.com/package/eslint-plugin-formatjs) - Force messages to be translatable
+  * [freeCodeCamp/chapter](https://github.com/freeCodeCamp/chapter) - Open source alternative to meetup
+  * [gajus/format-graphql](https://github.com/gajus/format-graphql) - Sort GraphQL schema definition language (SDL) document
+
+  ## Services
+
+  * [Pika Registry](https://www.pika.dev/registry) - Universal JavaScript for everyone
+  * [Free for developers](https://free-for.dev/#/) - Free services for developers
+
+  ## Accessibility
+
+  * [Buttons shouldn’t have a hand cursor](https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b#.b33l7fivt)
+  * [Beyond automatic accessibility testing: 6 things I check on every website I build](https://www.matuzo.at/blog/beyond-automatic-accessibility-testing-6-things-i-check-on-every-website-i-build/)
+
+  ## Design
+
+  * [Spectrum](https://spectrum.adobe.com/) - Adobe's design system

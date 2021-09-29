@@ -1,0 +1,63 @@
+type: static
+title: "JSter #61: News of December 2015 - Part 2"
+short_title: "JSter #61"
+user: bebraw
+slug: monthly-jster-december-2015-part-2
+body: |
+    > 2016 - The year of JavaScript on desktop?
+
+    It was a good year for me and I did a little [recap about SurviveJS](http://survivejs.com/blog/2015-recap/). The upcoming 2.0 release is currently in [beta mode](http://survivejs.com/blog/survivejs200-beta2/). A beta or two and we're ready for a final version.
+
+    ## Libraries
+
+    {{ screenshot: http://blissfuljs.com/ }}
+
+    * [Hexagon.js](https://www.hexagonjs.io/) - A modular, themeable collection of components for modern browsers.
+    * [Bliss.js](http://blissfuljs.com/) - Light utility library for common tasks.
+    * [hg_sdf](http://mercury.sexy/hg_sdf/) - A glsl library for building signed distance functions
+    * [Angular 1.5](https://medium.com/google-developer-experts/angular-new-features-in-angularjs-1-5-24f9b503af15)
+    * [React Komik](http://reactkomik.jscomic.net/) - Create comics with React.
+    * [Cropper.js](https://fengyuanchen.github.io/cropperjs/) - Neat JavaScript image cropper.
+
+    ## Articles
+
+    {{ screenshot: https://blog.risingstack.com/finding-a-memory-leak-in-node-js/ }}
+
+    * [Hunting a Ghost](https://blog.risingstack.com/finding-a-memory-leak-in-node-js/) - How to find a memory leak in Node.js.
+    * [Foundation 6: an advanced template review](https://www.devbridge.com/articles/foundation-6-an-advanced-template-review/)
+    * [Compiling to WebAssembly: It’s Happening!](https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/)
+
+    ## Tutorials
+
+    * [Creating a Lightsaber with Polymer](https://developers.google.com/web/showcase/case-study/lightsaber)
+    * [Exploring Elm - Part 2](http://www.christianalfoni.com/articles/2015_12_17_Exploring-Elm-part2)
+
+    ## Interviews
+
+    * [Codemod - Refactoring Code Programmatically - Interview with Ramana Venkata](http://survivejs.com/blog/codemod-interview/) - Codemods provide an easier way to make big changes across codebases.
+    * [WhiteStormJS - Three.js Based Game Engine - Interview with Alexander Buzin](http://survivejs.com/blog/whitestormjs-interview/)
+
+    ## Guides
+
+    * [Angular 2 for React developers](https://angularclass.com/angular-2-for-react-developers/)
+    * [Mercateo/component-check](https://github.com/Mercateo/component-check) - A quick introduction to explore how components can be created in several frameworks.
+
+    ## Techniques
+
+    * [Useful JavaScript debugging tips you didn't know](https://raygun.io/blog/2015/06/useful-javascript-debugging-tips-you-didnt-know/)
+
+    ## Tools
+
+    * [documentationjs](http://documentation.js.org/) - Documentation generator.
+    * [JSVerify](https://jsverify.github.io/) - QuickCheck implementation for JavaScript.
+    * [amireh/happypack](https://github.com/amireh/happypack) - Speed-up for Webpack.
+    * [JSweet: a transpiler to write JavaScript programs in Java](http://www.jsweet.org/)
+    * [xto6](http://xto6.js.org/) - ES5 code to eS6
+
+    ## Nostalgy
+
+    * [oldweb.today](http://oldweb.today/)
+
+    ## Demos
+
+    * [Password Strength `meter`](https://css-tricks.com/password-strength-meter/)

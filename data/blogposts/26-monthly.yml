@@ -1,0 +1,113 @@
+type: static
+title: "Monthly JSter #5: News of July 2013"
+short_title: "Monthly JSter #5"
+user: bebraw
+slug: monthly-jster-july-2013
+body: |
+
+  Even July was a busy month for JS people. You guys are never gonna give up, huh? Anyway, let's proceed with our monthly listing of important and not so important happenings.
+
+  To celebrate the Summer we updated the outlook of the site. Let us know what you think!
+
+  Remember that Monthly JSter is available as [a newsletter](http://eepurl.com/zB_g5). And when we say monthly, we mean it. One post a month, that's it. Given the content in this post, we might turn it into a biweekly thing, though.
+
+  ## Libraries
+
+  {{ screenshot: http://getbootstrap.com/ }}
+
+  * [console.image](https://github.com/dunxrion/console.image) - Because you have always wanted to put memes into your Chrome Inspector
+  * [evil.js](https://github.com/kitcambridge/evil.js) - Give hotlinkers what they earn.
+  * [tangle](http://worrydream.com/Tangle/) - Reactive documents in your browser. [JSter entry](http://jster.net/library/tangle)
+  * [Async Load](https://github.com/pazguille/aload) - Load images etc. asynchronously.
+  * [Effeckt.css](http://h5bp.github.io/Effeckt.css/dist/)
+  * [PhoneGap 3.0](http://phonegap.com/blog/2013/07/19/adobe-phonegap-3.0-released/) - [JSter entry](http://jster.net/library/phonegap)
+  * [Brunch 1.7](http://brunch.io/) - Assemble HTML5 applications. [JSter entry](http://jster.net/library/brunch)
+  * [Bower 1.0](http://bower.io/) - A package manager for the web. [JSter entry](http://jster.net/library/bower)
+  * [Qooxdoo 3.0](http://news.qooxdoo.org/qooxdoo-3-0-released) - A universal framework with a coherent set of components. [JSter entry](http://jster.net/library/qooxdoo)
+  * [Bootstrap 3 RC1](http://blog.getbootstrap.com/2013/07/27/bootstrap-3-rc1/) - Sleek, powerful frontend framework. [JSter entry](http://jster.net/library/twitter-bootstrap)
+
+  ## Articles
+
+  * [AngularJS: An Overview](http://glennstovall.com/blog/2013/06/27/angularjs-an-overview/) - What's this AngularJS thing anyway?
+  * [Front-end optimizations you can start doing right now](http://odiseo.net/javascript/front-end-optimizations-you-can-do-right-now-on-your-existing-code)
+  * [If Kerous wrote JavaScript (and Dr Johnson wrote CoffeeScript)](http://blog.anguscroll.com/if-kerouac-wrote-javascript)
+  * [Cube Slam - Behind the THREE.Scene()](http://www.inear.se/2013/07/cube-slam-behind-the-three-scene/)
+  * [Eight Cool Features Coming in ES6](http://net.tutsplus.com/tutorials/javascript-ajax/eight-cool-features-coming-in-es6/)
+  * [JavaScript, the winning style](http://seravo.fi/2013/javascript-the-winning-style)
+  * [Building a Decent API](http://philsturgeon.co.uk/blog/2013/07/building-a-decent-api)
+  * [Leveling Up with HTML5 Games Contests](http://jster.net/blog/leveling-up-with-html5-games-contests)
+  * [ES6 Modules, Build Tools and Browser App Delivery](http://ryanflorence.com/2013/es6-modules-and-browser-app-delivery/)
+  * [Little Lisp Interpreter](https://www.hackerschool.com/blog/21-little-lisp-interpreter)
+  * [Promises – an alternative way to approach asynchronous JavaScript](http://12devs.co.uk/articles/promises-an-alternative-way-to-approach-asynchronous-javascript/)
+  * [Building an Arduino Powered BBQ Thermometer](http://blog.safaribooksonline.com/2013/07/25/an-arduino-powered-bbq-thermometer/) - Powered by Node.js
+
+  ### Node.js
+
+  * [Promises in Node.js with Q - An Alternative to Callbacks](http://blog.strongloop.com/promises-in-node-js-with-q-an-alternative-to-callbacks/)
+  * [Monitoring and Stress Testing Node.js Apps](http://blog.strongloop.com/monitoring-stress-testing-nodejs-apps/)
+  * [Parse data files using Node.js streams](http://nicolashery.com/parse-data-files-using-nodejs-streams/)
+
+  ## Resources
+
+  {{ screenshot: http://www.thinkster.io/ }}
+
+  * [thinkster](http://www.thinkster.io/) - A better way to learn AngularJS.
+  * [RequireBin](http://requirebin.com/) - The power of Node.js in browser, sort of. See also [related article](http://maxogden.com/node-packaged-modules.html).
+  * [npmsearch](http://npmsearch.com/) - A better way to navigate NPM.
+  * [DevDocs](http://devdocs.io/) - All of those APIs behind one, spiffy interface.
+  * [javascriptoo](http://www.javascriptoo.com/) - Every JavaScript project you should be looking into. That's quite a few to be honest.
+  * [pineapple.io](http://pineapple.io/) - Tutorials, tools and assets for developers and designers
+  * [codylindley/frontend-tools](https://github.com/codylindley/frontend-tools) - Landscaping with Frontend Development Tools
+  * [Nice list of tutorials](http://pineapple.io/resources/tagged/javascript?type=tutorials&sort=all_time) by [pineapple.io](http://pineapple.io/)
+  * [50 JavaScript Libraries for Charts and Graphs](http://techslides.com/50-javascript-charting-and-graphics-libraries/)
+  * [Chrome Devtools Cheatsheet](http://anti-code.com/devtools-cheatsheet/)
+  * [How to Keep Up to Date on Front-end Technologies](http://uptodate.frontendrescue.org/)
+  * [Chrome App Samples](https://github.com/GoogleChrome/chrome-app-samples)
+  * [Frontend Tools](http://fredsarmento.me/frontend-tools/)
+
+  ## Videos
+
+  {{ screenshot: http://www.egghead.io }}
+
+  * [DIY Code Tutorials for JavaScript](http://varelidi.com/D-I-Y-Code-Tutorials)
+  * [Egghead](http://www.egghead.io/) - Short videos on AngularJS
+
+  ## Tools
+
+  {{ screenshot: http://yeoman.io }}
+
+  * [Yeoman](http://yeoman.io/) - Yeoman provides workflows for modern webapps. They recently released 1.0 RC1.
+  * [eslint](https://github.com/nzakas/eslint/) - JSLint and JSHint just got some company!
+  * [gistblog](https://github.com/jazzychad/gistblog) - A blogging platform built on GitHub gists. [JSter entry](http://jster.net/library/gistblog).
+  * [Create Your Own XKCD-style Graphs](http://xkcdgraphs.com/)
+  * [Object playground](http://www.objectplayground.com/) - Inception!
+  * [ImplicitCAD](http://www.implicitcad.org/) - Powerful, Open Source, Programmatic CAD
+  * [node-webkit](https://github.com/rogerwang/node-webkit) - Node.js + Webkit = Awesomeness
+  * [EnterprisifyJS](https://github.com/bwiklund/EnterprisifyJS) - Because your code is never enterprise enough
+  * [node-inspector](https://github.com/node-inspector/node-inspector) - [New and improved](http://blog.strongloop.com/announcing-a-new-and-improved-node-js-debugger/)
+
+  ## Slides
+
+  * [Enough with the JavaScript Already!](http://www.slideshare.net/nzakas/enough-withthejavascriptalready)
+  * [ES6 - The Awesome Parts](http://www.slideshare.net/domenicdenicola/es6-the-awesome-parts)
+
+  ## Demos
+
+  {{ screenshot: http://give-n-go.tumblr.com/ }}
+
+  * [revealjs](http://revealjs.herokuapp.com/) - Control your presentation using gestures.
+  * [9 Mind-Blowing Canvas Demos](http://davidwalsh.name/canvas-demos) - Well, go blow your mind then.
+  * [Pure CSS Minion](http://cssdeck.com/labs/pure-css-minion)
+  * [SculptGL](http://stephaneginier.com/sculptgl/)
+  * [CSS Horse](http://codepen.io/anon/pen/tvaio) - See also [@horse_js](https://twitter.com/horse_js).
+  * [Synth](http://synth.soundkeep.com/) - For all of those Jan Hammer wannabes
+  * [Give ´n´ Go](http://give-n-go.tumblr.com/) - A curated gallery of Dribbble shots reworked as interactive CodePen pens.
+
+  ## Games
+
+  * [Bit's Quest](http://bitsquest.bitbucket.org/) - Back in the day we played Police Quest and such. Ah, nostalgy.
+  * [JS Crossword Vol 2.](https://mod.it/8UmnmJ11)
+
+  ## Conclusion
+
+  [CCC #20: Weird language](http://ro-che.info/ccc/20.html)

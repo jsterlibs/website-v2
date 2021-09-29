@@ -1,0 +1,66 @@
+type: static
+title: "JSter #48: News of June 2015 - Part 1"
+short_title: "JSter #48"
+user: bebraw
+slug: monthly-jster-june-2015-part-1
+body: |
+    > Saturday Night JS
+
+    ## Libraries
+
+    {{ screenshot: https://github.com/szatkus/js2me }}
+
+    * [scrollReveal.js](http://scrollrevealjs.org/) - Easily reveal elements as they enter viewport
+    * [Clusterize.js](https://nexts.github.io/Clusterize.js/) - Tiny plugin to display large data sets easily
+    * [Reactive-Extensions/rx.angular.js](https://github.com/Reactive-Extensions/rx.angular.js/) - AngularJS Bindings for RxJS
+    * [szatkus/js2me](https://github.com/szatkus/js2me) - Brings back memories
+
+    ## Articles
+
+    {{ screenshot: http://brewhouse.io/blog/2015/05/13/emberjs-an-antidote-to-your-hype-fatigue.html }}
+
+    * [Cool Things Chrome Can Do Now, Thanks to Hardware MIDI](http://createdigitalmusic.com/2015/05/hardware-midi-chrome-audiotool-free-code-coming-html5/)
+    * [How Googlebot Crawls Javascript](http://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-220157)
+    * [Ember.js: An Antidote To Your Hype Fatigue](http://brewhouse.io/blog/2015/05/13/emberjs-an-antidote-to-your-hype-fatigue.html)
+    * [Deku: How we built our functional alternative to React](https://segment.com/blog/deku-our-functional-alternative-to-react/)
+
+    ## Opinions
+
+    {{ screenshot: http://codemix.com/blog/why-babel-matters }}
+
+    * [Why Babel Matters?](http://codemix.com/blog/why-babel-matters)
+    * [We have a problem with promises](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+    * [The Abundance of JavaScript Libraries](http://joonaspajunen.com/the-abundance-of-javascript-libraries)
+    * [Flux Cargo-Culting](https://medium.com/@cassiozen/flux-cargo-culting-3cae9ff27c0c)
+
+    ## Tutorials
+
+    * [Building functional, declarative, point free React JS application](https://medium.com/@kevinle/building-functional-declarative-point-free-react-js-application-dc784fb0d8fc)
+
+    ## Techniques
+
+    * [ES6 In Depth: Rest parameters and defaults](https://hacks.mozilla.org/2015/05/es6-in-depth-rest-parameters-and-defaults/)
+    * [Block, Element, Modifying Your JavaScript Components](https://medium.com/seek-ui-engineering/block-element-modifying-your-javascript-components-d7f99fcab52b)
+    * [Goodbye Flux, welcome Bacon/Rx?](https://medium.com/@milankinen/good-bye-flux-welcome-bacon-rx-23c71abfb1a7)
+    * [How to Use ES6 for Isomorphic JavaScript Apps](https://medium.com/javascript-scene/how-to-use-es6-for-isomorphic-javascript-apps-2a9c3abe5ea2)
+
+    ## Slides
+
+    * [Benchmarking JavaScript](http://mrale.ph/talks/goto2015/#/)
+
+    ## Resources
+
+    * [Mosaic](http://mosaic.academy/) - a JavaScript knowledge map
+    * [Infographic](http://www.webdesigndegreecenter.org/choosing-javascript-framework/) - Choosing Your Javascript Framework
+    * [hackhat/css-in-js-comparison](https://github.com/hackhat/css-in-js-comparison)
+    * [A list of keys and the JavaScript char codes they correspond to](http://www.geekpedia.com/KB53_A-list-of-keys-and-the-JavaScript-char-codes-they-correspond-to.html)
+
+    ## Tools
+
+    * [Antwar 0.5.0](https://antwarjs.github.io/blog/antwar-050/) - Static site generation using Webpack and React
+    * [FikaScript](http://fikascript.se/) - Write JavaScript in Swedish
+    * [Regulex](https://jex.im/regulex/) - JavaScript Regular Expression Visualizer
+
+    ## Demos
+
+    * [cruciform](http://www.clicktorelease.com/code/cruciform/) - Architecture demo in WebGL

@@ -1,0 +1,28 @@
+type: rating
+title: "Simpler Web Design with HTML5 Prototyping Services"
+short_title: "HTML5 Prototyping Services"
+user: davertmik
+slug: html5-prototyping-services
+includes: ["Easel.io", "Divshot","Jetstrap", "LayoutIt"]
+body: |
+  Web is becoming a second desktop now. And the requirements for web apps goes the same as for desktop apps. Especially for the UI part. 
+  It's a bad idea to start developing UI in Photoshop. You can't test application behavior, responsiveness, grids, on static image. 
+  Same goes for oldschool paper+pen method. You just don't aware of poroportions and sizes of your components, so drawed wireframes will look completely different when they come to HTML+CSS.
+
+  Modern way or prototyping stands for opening text editor and writing some HTML code with Twitter Bootstrap included. 
+  But actually why would you do this if there are services that does just the same in **WYSIWYG** way?
+  It is much easier to try different elements, positions, just by moving them through pages, without editing HTML or CSS. 
+  So why not to use this tools. You may stick to well known **Bootstrap**, use **Foundation** or custom framework. 
+
+  Let's list them all. Choose the tool that fit your needs better.
+
+footer: |
+  Personally I prefer the **Divshot** app because it allows prototyping with **Bootstrap** and **Foundation**. 
+  It has nice interface and simple HTML editor for cases you need to manually hook some classes. 
+  If you used other service, please share your experience in comments.
+
+  And a small bonus: If you are not yet familiar with **Zurb Foundation**, you can easily learn on this site.
+
+  {{ screenshot: http://tryfoundation.io }}
+
+  It has nice online editor where you can try Foundation live, that reminds me of [CodeSchool](http://CodeSchool.com) classes I passed recently. 

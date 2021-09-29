@@ -1,0 +1,59 @@
+type: static
+title: "JSter #30: News of September 2014 - Part 1"
+short_title: "JSter #30"
+user: bebraw
+slug: monthly-jster-september-2014-part-1
+body: |
+    > Remember that [Nordic.js](http://nordicjs.com/) is streaming for free at 18th and 19th.
+
+    ## Libraries
+
+    {{ screenshot: http://pioneerjs.com/ }}
+
+    * [pioneer.js](http://pioneerjs.com/) - Easy to understand DSL for testing your app
+    * [tkambler/bonegular](https://github.com/tkambler/bonegular) - Backboneish models and collections for Angular.
+    * [subprotocol/genetic-js](https://github.com/subprotocol/genetic-js) - Genetic and evolutionary algorithms
+    * [roman01la/web-components-polyfills](https://github.com/roman01la/web-components-polyfills)
+    * [terra.js](http://rileyjshaw.com/terra/) - Biological simulations and cellular automata
+    * [deloreanjs/delorean](https://github.com/deloreanjs/delorean) - Flux for React
+    * [fat/bean](https://github.com/fat/bean) - Event handling made simple
+
+    ## Articles
+
+    * [Notes from the development of xkcd's "Pixels"](http://chromakode.com/post/notes-on-xkcd-pixels)
+    * [Deconstructing ReactJS's Flux](http://spoike.ghost.io/deconstructing-reactjss-flux/)
+    * [Understanding the node.js event loop](http://uvarajg.wordpress.com/2014/08/24/understanding-the-node-js-event-loop/)
+    * [6 Reasons to Use React.js as Your Next Framework](http://www.syncano.com/reactjs-reasons-why-part-1/)
+
+    ## Tutorials
+
+    {{ screenshot: https://hacks.mozilla.org/2014/09/introducing-blast-js/ }}
+
+    * [Introducing Blast.js](https://hacks.mozilla.org/2014/09/introducing-blast-js/) - Spoiler: it's a text manipulation library
+    * [Node.js: managing child processes](http://tech.pro/tutorial/2074/nodejs-managing-child-processes)
+    * [Getting started with NoFlo](http://noflojs.org/documentation/) - Nodes in Node.js
+    * [Flow Control With Promises](http://trevorburnham.com/presentations/flow-control-with-promises/)
+    * [JavaScript Memory Management Masterclass](https://speakerdeck.com/addyosmani/javascript-memory-management-masterclass)
+
+    ## Guides
+
+    * [Gulp Fiction](http://gulpfiction.divshot.io/) - Better than Pulp Fiction?
+    * [A Compendium of SVG Information](http://css-tricks.com/mega-list-svg-information/)
+    * [JavaScript API Hall of Shame](https://speakerdeck.com/ariya/javascript-api-hall-of-shame) - Shame on you JS, shame on you
+    * [React vs. Ember](https://docs.google.com/presentation/d/1afMLTCpRxhJpurQ97VBHCZkLbR1TEsRnd3yyxuSQ5YY/preview#slide=id.p)
+
+    ## Techniques
+
+    * [Track Errors with Google Analytics](http://davidwalsh.name/track-errors-google-analytics)
+    * [10 Tips to Make Your Node.js Web App Faster](http://www.sitepoint.com/10-tips-make-node-js-web-app-faster/)
+    * [Justified Gallery](http://miromannino.com/projects/justified-gallery/)
+
+    ## Tools
+
+    {{ screenshot: http://www.code-love.com/2014/09/09/plunker/ }}
+
+    * [Plunker: Open Editor Perfect for Angular.js](http://www.code-love.com/2014/09/09/plunker/)
+    * [11 essential JavaScript tools for Web developers](http://www.infoworld.com/article/2606724/javascript/161868-11-essential-JavaScript-tools-for-Web-developers.html)
+    * [20 Fresh JavaScript Tools for Developers](http://codegeekz.com/20-fresh-javascript-tools-developers/)
+    * [Gravit – unlock your design potential.](http://gravit.io/) - Design tool. Yup.
+    * [slap-editor/slap](https://github.com/slap-editor/slap) - Sublimeish editor written in JS

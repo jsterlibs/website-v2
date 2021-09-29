@@ -1,0 +1,57 @@
+type: static
+title: "JSter #158: Libraries, and more"
+short_title: "JSter #158"
+user: bebraw
+slug: jster-158
+body: |
+  > Toss a coin for your JavaScript
+
+  [The second online mini-conference held by React Finland](https://react-finland.fi/blog/rf-2020-online-mini-conf-vol-2/) takes place 27th of August and it's going to be about state management. Join us to learn more about the topic with David Khourshid, Christian Alfoni, Yan Lavryushev, and Sara Vieira (MC).
+
+  ## Libraries
+
+  * [dai-shi/redux-in-worker](https://github.com/dai-shi/redux-in-worker) - Entire Redux in Web Worker
+  * [zipson](https://jgranstrom.github.io/zipson/) - A drop-in alternative to JSON.parse/stringify with added compression and streaming support
+  * [WebReflection/JSONH](https://github.com/WebReflection/JSONH) - A way to pack/unpack generic homogenous collections
+  * [jcubic/sysend.js](https://github.com/jcubic/sysend.js) - Send messages between pages that are open in the same browser
+  * [beatgammit/gzip-js](https://github.com/beatgammit/gzip-js) - A pure JavaScript implementation of the GZIP file format
+  * [jcubic/jquery.terminal](https://github.com/jcubic/jquery.terminal) - Terminal emulator as a jQuery plugin
+  * [retarsis/routeshub](https://github.com/retarsis/routeshub) - A route manager and pattern for Angular
+  * [miketalbot/js-coroutines](https://github.com/miketalbot/js-coroutines) - coroutines for JavaScript
+  * [Splitting.js](https://splitting.js.org/) - CSS variables for split words and characters
+  * [gajus/mutual-exclusion](https://github.com/gajus/mutual-exclusion) - Mutual Exclusion (mutex) object for JavaScript
+  * [lukeed/escalade](https://github.com/lukeed/escalade) - A tiny (183B to 210B) and fast utility to ascend parent directories
+  * [Muuri](https://muuri.dev/) - Infinite layouts with batteries included
+  * [vvo/tzdb](https://github.com/vvo/tzdb) - Time zone helpers
+  * [graphics-ts](https://dev.to/imax153/graphics-ts-functional-bindings-for-the-html-5-canvas-api-1832) - Functional Bindings for the HTML 5 Canvas API
+
+  ## GraphQL
+
+  * [GraphQL Nexus](https://nexus.js.org/index.html) - Declarative, Code-First GraphQL Schemas for JavaScript/TypeScript
+  * [graphql-genie](https://github.com/genie-team/graphql-genie) - Type definitions to an API
+
+  ## Tools
+
+  * [postcss/postcss-100vh-fix](https://github.com/postcss/postcss-100vh-fix) - PostCSS plugin to fix iOS’s bug with 100vh.
+  * [crewdevio/Trex](https://github.com/crewdevio/Trex) - A package manager for Deno
+  * [Foam](https://foambubble.github.io/foam/) - A personal knowledge management and sharing system
+  * [WebGLStudio](https://webglstudio.org/demo/) - 3D studio on the web
+
+  ## Articles
+
+  * [12 Recipes for testing React applications using cypress-react-unit-test](https://dev.to/bahmutov/12-recipes-for-testing-react-applications-using-cypress-react-unit-test-46g6)
+  * [ECMAScript 2020 biggest new features](https://areknawo.com/ecmascript-2020-biggest-new-features/)
+  * [Coroutines: Suspending State Machines](https://medium.com/google-developer-experts/coroutines-suspending-state-machines-36b189f8aa60)
+
+  ## Techniques
+
+  * [Cancellable promise](https://thomazella.substack.com/p/cancellable-promise) - In Typescript. Also a little surprise.
+
+  ## Languages
+
+  * [pichsenmeister/WienerScript](https://github.com/pichsenmeister/WienerScript)
+  * [Grain: A strongly-typed functional programming language for the modern web.](https://grain-lang.org/)
+
+  ## Random
+
+  * [We are the SpaceX software team, ask us anything!](https://www.reddit.com/r/spacex/comments/gxb7j1/we_are_the_spacex_software_team_ask_us_anything/)

@@ -1,0 +1,87 @@
+title: Batman.js: Advanced Guide for Superheroes
+slug: batman-js-mvc-for-superheroes
+type: static
+user: davertmik
+
+body: |
+  [Last time I wrote](http://jster.net/blog/why-should-you-use-client-side-mvc-framework) about a journey of a backend developer to the world of client side MVC frameworks. 
+  It is often a good idea to research a bit before settling on one. Last time I listed four of these: [BackboneJS](http://jster.net/library/backbone-js), [AngularJS](http://jster.net/library/angularjs), [BatmanJS](http://jster.net/library/batman-js), and [CanJS](http://jster.net/library/canjs).
+  Although Backbone and Angular are getting increasingly popular I've chosen to use Batman.js instead. I'll elaborate on the exact reasons on another post. For now let's just focus on its basics.
+
+  ## Batman for Dummies
+
+  {{ screenshot: Batman.js }}
+
+  Batman.js uses **Rails** conventions and it is based on **CoffeeScript**. This way you don't have to bother with boilerplate code for event submitting and handling. 
+  With data-bindings it provides you won't use any client-side templates, except for plain HTML. This way Batman is comparable to AngularJS. But I found the superhero framework a bit smarter. 
+  I'd encourage you to try Batman.js, especially if you are a Ruby on Rails developer. 
+
+  ## Batman - Not So Good at Interacting with Others
+
+  The weak part of Batman.js is its documentation. 
+  So if you are a superhero, (and probably you are), prepare to use your superpowers for reading source code, asking questions in Google Groups and so on. 
+  I'd suggest you to start learning it with the next resources:
+
+  * [Official site](http://batmanjs.org)
+  * [GitHub Repo (with even better docs)](https://github.com/Shopify/batman)
+  * [A nice tutorial](http://www.speg.com/batman/)
+  * [Building app with Rails + Batman](http://www.zhubert.com/blog/2012/05/12/batman-dot-js-and-rails-part-1/)
+  * [Demo application on JSFiddle](http://jsfiddle.net/VMtdq/3/)
+
+  ## Batman - The Utility Belt
+
+  If your super powers are not strong enough to read all this links at once, put this post into bookmarks, and return when you have a running app.
+  It's really easy to get one running. And If you start working with a real project you might want to know how to deal with some common issues.
+  Let me show you some useful tricks. I will use **Batman.JS 0.13** in the next examples.
+
+  ### Dealing with Current User Session
+
+  It's not documented, but the main application file is a great storage of singleton objects. Such as user sessions.
+
+  <script src="https://gist.github.com/DavertMik/4739675.js"></script>
+
+  When you set something in global scope you can access it on different routes anywhere on page. So If you need to display a user name somewhere in menubar, you can use simple data-binding:
+  `<span data-bind="currentUser.name"></span>`
+
+  ### Destroying Objects
+
+  The other non-trivial issue you should deal with is deletion of a resource. By Batman's convention the `DELETE` method can't be a route but an event. So how to use it?
+
+  <script src="https://gist.github.com/DavertMik/4739732.js"></script>
+
+  As you see you can use `withArguments` filter in a view. This will pass an object from current context to controller.
+
+  ### Handling Views
+
+  How can you enhance views rendered by controller? Let's say to add some cool effect or attach a tooltip to a node.
+
+  <script src="https://gist.github.com/DavertMik/4739800.js"></script>
+
+  In this example we switched a focus to newly rendered form field. To skip rendering at all, your controller should return `@render false`. Otherwise a `Batman.View` object will be instantiated and rendered to the `main` yield place.
+  To render a view into any other place, you should use create a new container with different `data-yield`.
+
+  <script src="https://gist.github.com/DavertMik/4739871.js"></script>
+
+  ### Dynamic Views
+
+  It may seem hard to understand how can you handle the dynamically built views. If you render some html with `data-foreach` iterator, you have no control over inner elements. 
+  You are allowed to use only `data` attributes to manipulate inner html. To add flexibility we cab attach a `view` object to generated elements.
+
+  <script src="https://gist.github.com/DavertMik/4739914.js"></script>
+
+  ### Counters
+
+  Sometimes you may need to perform very basic calculations and display them in views.
+  In the next example we have an application with limited number of user invites. We should always show on a page how many users can be invited before the limit is reached.
+
+  <script src="https://gist.github.com/DavertMik/4739990.js"></script>
+
+  In this example I did an interesting trick. I took a value from DOM and inserted it into Batman model. 
+  This gives you very cool opportunities. With Batman you can render a page completely in Rails, and then pass all your data into HTML tags. Than this data can be taken by Batman and used for manipulations.
+  No need to make an backend application without rendering and views. You can use your plain old HTML templates from server and enhance them with Batman's data bindings. 
+
+  ## Batman Lives Forever
+
+  And that's all for today. I hope that helped you a bit in using Batman.
+  This is a very comprehensive MVC framework and it's very simple in use. 
+  Probably one day it will get better documentation and more examples.

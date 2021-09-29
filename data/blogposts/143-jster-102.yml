@@ -1,0 +1,39 @@
+type: static
+title: "JSter #102: Libraries, and more"
+short_title: "JSter #102"
+user: bebraw
+slug: jster-102
+body: |
+    > There's no time like JavaScript time.
+
+    Time goes fast when you are having fun. I spent a week in Israel and wrote about my [experiences on React Next 2017](https://survivejs.com/blog/react-next-2017/). In short, it's a great event worth visiting.
+
+    ## Libraries
+
+    {{ screenshot: https://github.com/automat/controlkit.js }}
+
+    * [automat/controlkit.js](https://github.com/automat/controlkit.js) - A lightweight controller and GUI library.
+    * [AOS](https://michalsnik.github.io/aos/) - Animate on scroll library.
+    * [ScrollMagic](http://scrollmagic.io/) - Magical scroll interactions.
+    * [unified](https://unifiedjs.github.io/) - An interface for processing text with syntax trees and transforming between them.
+    * [Pressure.js](https://pressurejs.com/) - Handle different touch interfaces through a single interface.
+    * [Freactal](https://github.com/FormidableLabs/freactal) - State management for React and React-like libraries.
+
+    ## Tutorials
+
+    * [Build Yourself a Redux](https://zapier.com/engineering/how-to-build-redux/)
+
+    ## Techniques
+
+    * [Importing CSS as React/Preact components with webpack and unicorns](https://medium.com/dailyjs/js-in-css-df4cf8b9b96c)
+    * [Modern Modules in Node](https://medium.com/@mikeal/modern-modules-d99b6867b8f1)
+
+    ## Interviews
+
+    * [FrintJS - Build reactive applications with React and RxJS](https://survivejs.com/blog/frint-interview/) - Interview with Fahad Ibnay Heylaal.
+
+    ## Tools
+
+    * [tkh44/babel-plugin-sitrep](https://github.com/tkh44/babel-plugin-sitrep) - Log all assignments and the return value of a function with a simple comment.
+    * [Prepack](https://prepack.io/) - A tool for making JavaScript code run faster.
+    * [Yarn 1.0](https://code.facebook.com/posts/274518539716230) - Workspaces and other goodies.

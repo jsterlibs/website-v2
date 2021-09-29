@@ -1,0 +1,73 @@
+type: static
+title: "JSter #82: News of November 2016 - Part 1"
+short_title: "JSter #82"
+user: bebraw
+slug: monthly-jster-november-2016-part-1
+body: |
+    > JavaScript, sweet JavaScript
+
+    It has been busy two weeks again. I gave my first keynote, did eight sessions over seven days and so on. You can read more about it in my [travel report](http://www.nixtu.info/2016/11/kharkivjs-2016-and-react-in-barcelona.html).
+
+    ## Libraries
+
+    {{ screenshot: https://github.com/jrainlau/LowPolifier }}
+
+    * [Superdom.js](https://superdom.site/) - jQuery for millennials
+    * [HTML GL](http://htmlgl.com/) - WebGL through HTML syntax
+    * [AOS](https://michalsnik.github.io/aos/) - Animate on Scroll
+    * [jrainlau/LowPolifier](https://github.com/jrainlau/LowPolifier) - Style an image with low-poly
+
+    ## Data Structures
+
+    * [graphology](https://graphology.github.io/) - Graph structure for JavaScript
+    * [Sigma](http://sigmajs.org/) - A JavaScript library dedicated to graph drawing
+    * [navjobs/relation](https://github.com/navjobs/relation) - Clone of Laravel's Eloquent ORM for nodejs
+    * [arqex/freezer](https://github.com/arqex/freezer) - A tree data structure that emits events on updates, even if the modification is triggered by one of the leaves, making it easier to think in a reactive way
+
+    ## Articles
+
+    * [Why TDD’ing your frontend feels pointless](https://engineering.haus.com/why-tdding-your-frontend-feels-pointless-5f710fea7325)
+
+    ## Tutorials
+
+    * [Understanding the observable type pt.2](http://nick.balestra.ch/2016/creating-observables/)
+    * [Creating a Scalable JavaScript Application with Cycle.js](https://medium.com/@domagojk/creating-a-scalable-javascript-application-with-cycle-js-589f4d4020a5)
+    * [Using ES6 to create a tiny, functional library](https://medium.com/@DveMac/using-es6-to-create-a-tiny-functional-library-fe8e4667045c)
+
+    ## Opinions
+
+    * [Avoid forEach](http://aeflash.com/2014-11/avoid-foreach.html)
+    * [Progressive enhancement isn’t dead, but it smells funny](https://nolanlawson.com/2016/10/13/progressive-enhancement-isnt-dead-but-it-smells-funny/)
+
+    ## Guides
+
+    * [Control mechanisms in JavaScript games](https://hacks.mozilla.org/2016/10/control-mechanisms-in-javascript-games/)
+    * [JavaScript — The Magic Behind Event Emitter](https://medium.com/@NetanelBasal/javascript-the-magic-behind-event-emitter-cce3abcbcef9)
+
+    ## Techniques
+
+    * [19 things David learned reading the NodeJS docs](https://hackernoon.com/19-things-i-learnt-reading-the-nodejs-docs-8a2dcc7f307f)
+    * [Cooperative Scheduling with requestIdleCallback](https://hacks.mozilla.org/2016/11/cooperative-scheduling-with-requestidlecallback/)
+    * [The misunderstood X-XSS-Protection](http://blog.innerht.ml/the-misunderstood-x-xss-protection/)
+    * [6 of the Most Exciting ES6 Features in Node.js v6 LTS](https://nodesource.com/blog/six-of-the-most-exciting-es6-features-in-node-js-v6-lts)
+    * [4 modern background tricks to try out](http://www.webdesignerdepot.com/2016/10/4-modern-background-tricks-to-try-out/)
+
+    ## Interviews
+
+    * [StarRatio - Compare JavaScript Projects - Interview with Dmitry Zaets](http://survivejs.com/blog/starratio-interview/)
+
+    ## Badges
+
+    * [exogen/badge-matrix](https://github.com/exogen/badge-matrix) - More advanced badges for projects using Travis or Sauce Labs
+
+    ## Tools
+
+    * [siddharthkp/cost-of-modules](https://github.com/siddharthkp/cost-of-modules) - Find out which of your dependencies is slowing you down
+    * [aserg-ufmg/JSCity](https://github.com/aserg-ufmg/JSCity) - Visualizing JavaScript source code as navigable 3D cities
+    * [jaridmargolin/inspect-process](https://github.com/jaridmargolin/inspect-process) - Dead simple debugging for node.js using chrome-devtools
+    * [WebAssembly Browser Preview](https://hacks.mozilla.org/2016/10/webassembly-browser-preview/)
+    * [jasonlong/isometric-contributions](https://github.com/jasonlong/isometric-contributions) - GitHub contributions in isomorphic view
+
+    ## Demos
+
+    * [Web Audio Theremin & Oscilloscope](http://bl.ocks.org/alexmacy/41bf2c3727c59a3366528807c2c708b2)

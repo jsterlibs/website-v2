@@ -1,0 +1,112 @@
+title: "Templating in JavaScript - Featuring Mustache, Jade, Transparency"
+short_title: Templating in JavaScript
+slug: templating-javascript-mustache-jade-transparency
+type: comparison
+user: bebraw
+
+body: |
+  In this post I will introduce the concept of templating. It is very likely you have already used some template engine. As a result I will go through the fundamentals quickly and then focus on a set of JavaScript ones.
+
+  You will see various approaches. There is no single right way to deal with it and sometimes it comes down to personal tastes. In this case I'll focus on just a few engines, namely `Mustache`, `Jade` and `Transparency`. You can find a [full list of engines](http://jster.net/category/templating-engines) at our service in case you can see the available options.
+
+  ## Why to Use Templating?
+
+  Before getting too ahead of ourselves let's define an anti-pattern. That is, constructing HTML structures using DOM or some DOM wrapper such as [jQuery](http://jster.net/library/jquery). If you notice yourself constructing a structure this way, think twice. It is both more maintainable and more developer friendly to extract the structure within a template of some sort and leave logic to JavaScript.
+
+  ## How to Use Templating?
+
+  At simplest level it's just a matter of performing a `replace` operation. I've included an example of a naive implementation below:
+
+  <script src="https://gist.github.com/bebraw/5271769.js"></script>
+
+  Essentially you just provide some data which to render into the template. The actual details vary based on engine you are using. Some of them allow you to include logic into the template, some do not. There are a couple that piggyback on good old DOM and abstain from providing any special syntax altogether.
+
+  There are also differences related to the way the engines allow you to structure your templates. For instance in some cases you may include partial templates within your master ones. This allows you to split certain commonalities in sections of their own.
+
+  ## Where to Use Templating?
+
+  Templating techniques may be used both on the frontside and backend side of the fence. Some JavaScript templating engines have been designed to be used just this way. There are some that focus particularly on backend. [Jade](http://jster.net/library/jade) is a good example of one. Apparently it is possible to use it at [frontend](http://stackoverflow.com/questions/6575743/using-jade-templates-jade-lang-com-client-side) with a bit of hackery although I have not given that technique a go. Just saying that the line can be a bit blurry at times.
+
+  There is a huge amount of templating engines available for Node.js. In this post I will focus mainly on the frontend side since that's what JSter is all about after all.
+
+  It is possible to use templating on the frontend in various ways.  In case I want to share templates with my frontend code, I usually simply render the templates on the backend within `script` tags with `type` set as `text/template`. After that it is simply a matter of selecting the element (remember to attach a unique id!) and using the data the way you want. For instance you could compile it through some templating engine I'll go through in a bit.
+
+  Lately I have been playing around with [RequireJS](http://jster.net/library/requirejs) plugins that allow you to include templates directly within your modules. I consider this a cleaner approach as you may store templates within files of their own. And furthermore they may be included in a resulting build.
+
+  ## Types of Templating Engines
+
+  Roughly templating engines may be split into logicless, ones with logic and then those that don't actually implement any specific syntax. I will examine these categories in more detail next.
+
+  ### Logicless Templating Engines
+
+  {{ screenshot: mustache.js }}
+
+  Logicless templating engines such as [mustache](http://jster.net/library/mustache-js) and [Hogan](http://jster.net/library/hogan-js), which implements mustache syntax, and [dust](http://jster.net/library/dustjs) have become somewhat popular. [Handlebars](http://jster.net/library/handlebars-p), a superset of mustache, [extends the syntax further](http://yehudakatz.com/2010/09/09/announcing-handlebars-js/).
+
+  Just to give you an idea of the syntax, consider the example below. It is based on [mustache documentation](http://mustache.github.com/#demo). You can play around with the syntax there.
+
+  Markup:
+
+  <script src="https://gist.github.com/bebraw/5271765.js"></script>
+
+  Data:
+
+  <script src="https://gist.github.com/bebraw/5271757.js"></script>
+
+  As you can see it is fairly simple to inject data to your template. The scheme relies on extra markup. The logic is hidden within a concept they call as `tags`. That "empty" bit at the end is a good example of this. Give it is true, the text will be shown. Else it will be hidden.
+
+  ### Templating Engines with Logic
+
+  {{ screenshot: Jade }}
+
+  Personally I like to use [Jade](http://jster.net/library/jade) especially on the backend side given it integrates well with [Node.js](http://nodejs.org/) and provides a light syntax resembling [YAML](http://yaml.org/). If you like [HAML](http://haml.info/), you are bound to like Jade. Apparently it is possible to use Jade even on the [frontend](http://stackoverflow.com/questions/6575743/using-jade-templates-jade-lang-com-client-side) although I have not given it a go.
+
+  Just to give you an idea what Jade syntax looks like, consider the example below. I simply took the mustache code and ported it to Jade. It uses the same data as above.
+
+  Markup
+
+  <script src="https://gist.github.com/bebraw/5271763.js"></script>
+
+  It reads quite well at least in my eyes. I may have missed some tricks to make it even tidier but you get the idea. You can give the syntax a go over at [Jade documentation](http://naltatis.github.com/jade-syntax-docs/).
+
+  ### DOM and Binding
+
+  {{ screenshot: Transparency }}  
+
+  [Transparency](http://jster.net/library/transparency) and [Weld](http://jster.net/library/weld) use yet another approach I find very interesting. The libraries work both on frontend and backend (Node.js). What makes them special is that these libraries operate directly on DOM avoiding having to define custom syntax of their own. It will be very interesting to see whether this sort of techniques become more prevalent as opposed to something like mustache.
+
+  Next I will show you what the example I implemented above using `mustache` looks like when `Transparency` is used instead. Since you should be familiar with Jade by now I've defined a simple structure using it:
+
+  <script src="https://gist.github.com/bebraw/5271772.js"></script>
+
+  For Transparency to work its magic we'll need to bind the data to the structure and define logic as needed.
+
+  <script src="https://gist.github.com/bebraw/5271770.js"></script>
+
+  There are a couple of differences I would like to highlight. First of all the actual markup is very light. This makes Transparency very designer friendly. It's up to the coder to do the "heavy" lifting. In this case we use directives to bind some attributes we may not bind directly. Both "url" and "first" provide examples of these.
+
+  If we wanted we could eliminate that "first" bit we could simply use a bit of CSS for that. In fact that is the approach I would take. In this case we just illustrate how conditional logic works with directives.
+
+  As you can see it is possible to achieve a lot without a specific templating syntax. It will take some extra effort to deal with those special cases (like "url" in this case). I think it should be possible to at least minimize this effort with composition. So in practice there might not be that much code or at least it would be more compact.
+
+  ## Comparison
+
+table:
+  columns: [mustache.js, Jade, Handlebars, Hogan.js, Transparency]
+  license: [MIT, MIT, MIT, Apache 2.0, MIT]
+  size: [14.7k, 40.9k/76.2k, 1k/69.7k, 6k/15.2k, 18.5k/70k]
+  AMD Support: ['yes', '[via helpers](https://github.com/mysociety/node-jade-amd)', 'yes', 'yes', 'yes']
+  Node.js: ['yes', 'yes', 'yes', 'yes', 'yes']
+  partials: ['yes', 'yes', 'yes', 'yes', 'no']
+  links: ['[Official Site](http://mustache.github.com/), [Documentation](http://mustache.github.com/mustache.5.html), [Demo](http://mustache.github.com/#demo)', '[Official Site](http://jade-lang.com/), [Documentation](https://github.com/visionmedia/jade#readme), [Demo](http://naltatis.github.com/jade-syntax-docs/)', '[Official Site](http://handlebarsjs.com/), [Documentation](http://handlebarsjs.com/), [Demo](http://tryhandlebarsjs.com/)', '[Official Site](http://twitter.github.com/hogan.js/), [Documentation](http://twitter.github.com/hogan.js/), [Demo](http://mustache.github.com/#demo)', '[Official Site](http://leonidas.github.com/transparency/), [Documentation](https://github.com/leonidas/transparency), [Demo](http://leonidas.github.com/transparency/)']
+
+footer: |
+  Besides paradigm there are other differences between these libraries. Not surprisingly all work with `Node.js`. `mustache` is surprisingly small compared to others. It's approach kind of explains it, though. `Handlebars`, the engine that builds on `mustache`, is considerably weightier. EDIT: In case you do not have to compile templates at runtime, you may get away with a very optimized version that weighs only 1k.
+
+  Choosing one isn't entirely easy. It depends on your constraints. `Transparency` for instance could fit a situation where you have to work with designers and would rather not have them learn new syntax. I for one like Jade especially on the backend side as the syntax is compact and fits the way I think. I have used `mustache` sometimes for configuration. It's a very good fit for that purpose.
+
+  ## Conclusion
+
+  The engines covered here are just a tip of an iceberg. [LinkedIn's analysis on the topic](http://engineering.linkedin.com/frontend/client-side-templating-throwdown-mustache-handlebars-dustjs-and-more) provides an alternative view. [garann's](https://github.com/garann) has written a [template engine chooser](http://garann.github.com/template-chooser/) that may come in handy as well.
+
+  I hope this post gave you some idea why it is a good idea to use a templating engine and how some of the existing solutions differ. Do share your thoughts on templating at the comments section. I am particularly curious to know which kind of solutions you happen to use and why.

@@ -1,0 +1,66 @@
+type: static
+title: "JSter #34: News of November 2014 - Part 1"
+short_title: "JSter #34"
+user: bebraw
+slug: monthly-jster-november-2014-part-1
+body: |
+    > Do no eval.
+
+    ## Libraries
+
+    {{ screenshot: http://flockingjs.org/ }}
+
+    * [Flocking: Creative Audio Synthesis for the Web!](http://flockingjs.org/)
+    * [Goblin Physics](http://www.goblinphysics.com/)
+    * [cferdinandi/smooth-scroll](https://github.com/cferdinandi/smooth-scroll)
+    * [steida/este](https://github.com/steida/este - Robust and comfortable dev stack for mobile/offline/frontend first isomorphic web apps)
+    * [Marka - Beautiful transformable icons built for the web.](http://fian.my.id/marka/)
+
+    ## Articles
+
+    {{ screenshot: http://futurice.com/blog/combining-react-flux-and-web-components }}
+
+    * [Combining React, Flux & Web Components](http://futurice.com/blog/combining-react-flux-and-web-components)
+    * [Thoughts on JS MV*](http://pothibo.com/2014/11/thoughts-on-js-mv)
+    * [JavaScript Architecture for the 23rd Century](http://modernweb.com/2014/10/15/javascript-architecture-23rd-century/)
+    * [The Road to Ember 2.0 RFC by tomdale](https://github.com/emberjs/rfcs/pull/15)
+
+    ## Tutorials
+
+    {{ screenshot: http://www.thinkful.com/learn/angularjs-tutorial-build-a-gmail-clone/ }}
+
+    * [This Does Not Have To Be Rocket Science - Ie. how execution contexts work in JS](https://medium.com/@russbeye/this-does-not-have-to-be-rocket-science-fcca5bca3fdf)
+    * [AngularJS Tutorial - Build a GMail Clone](http://www.thinkful.com/learn/angularjs-tutorial-build-a-gmail-clone/)
+    * [ES7 async functions](http://jakearchibald.com/2014/es7-async-functions/)
+    * [How to Write Highly Scalable and Maintainable JavaScript: Coupling](http://www.innoarchitech.com/scalable-maintainable-javascript-coupling/)
+    * [Functional Programming in Javascript - Interactive tutorial](http://jhusain.github.io/learnrx/)
+
+    ## Testing
+
+    * [An Introduction To Unit Testing In AngularJS Applications](http://www.smashingmagazine.com/2014/10/07/introduction-to-unit-testing-in-angularjs/)
+    * [Introduction to Protractor](http://www.slideshare.net/FlorianFesseler/introduction-to-protractor)
+
+    ## Slides
+
+    * [Protractor for AngularJS: writing end-to-end tests has never been so fun](http://ramonvictor.github.io/protractor/slides/)
+
+    ## Guides
+
+    * [Intro to D3](http://square.github.io/intro-to-d3/)
+    * [JavaScript Quality Guide](http://linkis.com/ponyfoo.com/articles/ttyPI)
+
+    ## Techniques
+
+    * [Resizing and Cropping Images with Canvas](http://tympanus.net/codrops/2014/10/30/resizing-cropping-images-canvas/)
+    * [Introducing SIMD.js](https://hacks.mozilla.org/2014/10/introducing-simd-js/)
+    * [How to Trigger JavaScript Functions with CSS Media-Queries](http://codecondo.com/trigger-javascript-functions-css-media-queries/)
+    * [Transducers Explained: Part 1](http://simplectic.com/blog/2014/transducers-explained-1/)
+    * [CSS3 and SVG Image Filters](http://experiments.wemakesites.net/css3-and-svg-image-filters.html)
+
+    ## Resources
+
+    * [enaqx/awesome-react - Collection of React related resources](https://github.com/enaqx/awesome-react)
+
+    ## Demos
+
+    * [Autumn - WebGL demo](http://oos.moxiecode.com/js_webgl/autumn/)

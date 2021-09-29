@@ -1,0 +1,91 @@
+type: static
+title: "A Complete Guide on Developing Cross Platform Mobile Apps"
+short_title: "Mobile Framework Guide"
+user: bebraw
+slug: mobile-framework-guide
+body: |
+    When developing cross platform mobile applications the question is how to do that. Going native has its benefits but then you'll end up having to implement an app per platform. Fortunately that's where various frameworks come into play. They hide some of the platform details from you while allowing code sharing.
+
+    ## Benefits of Using Mobile Frameworks
+
+    * It allows one to create a single code base and make it compatible with other platforms by making a few suitable tweaks.
+    * You just need to learn one programming language instead of delving deep into a range of languages to deploy your app across multiple mobile platforms.
+    * It offers a cost effective solution, as you won't need to hire various developers who possess niche expertise.
+    * Since, you will be using a single code base, it augments agile mobile application development without compromising on the code quality.
+    * With this approach, not only you will be able to quickly reach various mobile platforms, but it also ensures a sustainable success of your applications.
+
+    ## Key Points To Take Into Account
+
+    While developing a cross platform mobile application can leverage your business by widening your reach to a whopping number of mobile users, there are several aspects that must be considered beforehand. I have uncovered a few of them here, let's explore them.
+
+    **Asset Reusability**
+
+    The style sheets and designs are not transferable from one project to another. And, if we consider the designers' assets such as mock-ups and wireframes, it is not easy for developers to work upon that. For this reason, developers are rather required to regenerate the design assets from the complex style sheets.
+
+    To overcome the issue, designers are readily opting assets via cloud-based libraries that help eradicate the redundant design processes. This certainly facilitates professionals to seamlessly reuse the assets for various devices. Furthermore, it also enables one to reuse and share the assets across multiple projects.
+
+    **Collaboration In Real Time**
+
+    A flawless and smooth collaboration among the various processes (including conception, design and development) while developing an application is essential for a harmonious app.
+
+    This can be accomplished by taking the cloud-based workspace into account. This will facilitate the real time sharing of resources, like notes, tools, annotations, etc., to help both designers and developers to work in equilibrium. And thus, improve the app development time.
+
+    **Genuine Form Factors**
+
+    The proliferation of mobile has created bottlenecks by making it complicated for designers to design for every possible combination of orientations, screen sizes, resolutions, and other design aspects.
+
+    Today, designers can choose a better methodology, instead of implementing the traditional blank canvas approach. There are several resourceful tools like WYSIWYG tools available out there that can proficiently serve the cause. Designers can place their designs within genuine framework of the device. This certainly helps them to scour how the targeted device is responding to the fluctuating form factors. Thereby, ensuring the optimal UX for every device and platform.
+
+    ## What Are the Challenges and Their Effective Solutions?
+
+    **Targeting multiple platforms both advanced and outdated mobile platforms**
+
+    Whenever we develop an application for a superior platform and want it to run smoothly on other devices and platforms as well, there is always the risk of creating a poor UX and bad app quality. Luckily, this can be combated by making the content quality and features scale alongside with the targeted platform.
+
+    You must ensure the performance of your application on multiple platforms to attain a sustainable success in the market. By doing so, you can make it certain that if someone recommends your app to his friends, they can also run your app without getting restricted by the device that they own.
+
+    **iOS Application approval time from the App Store**
+
+    The Apple App store needs a considerable amount of time to review an application and approve it. Due to this chronically slow application submission process, iOS users are often not able to get the updates as early as other platform users get. Thus, to ensure that the updates of your cross platform application are reaching on time to your potential users, you must cautiously plan the design and development of your app. One of the solution to efficiently deal with this issue is to create applications embracing backward compatibility.
+
+    ## Cross Platform Mobile Frameworks
+
+    Fortunately, there is no dearth of effective and efficient tools and frameworks that facilitate one to conveniently develop a desired application. Let's have a glance into the blissful cross platform mobile app development frameworks that make a much sought after choice.
+
+    ### Appcelerator Titanium
+
+    {{ screenshot: http://www.appcelerator.com/product/ }}
+
+    [Appcelerator Titanium](http://www.appcelerator.com/product/) amazingly reuses the code while creating apps with native look and feel. It features a useful SDK and implements JavaScript to support cross platform application development for Android and iOS by reusing over 50% of the code. This open source framework saves a lot of valuable time, and being constantly maintained with a slew of developers, supports updated features.
+
+    ### Adobe PhoneGap
+
+    {{ screenshot: https://build.phonegap.com/ }}
+
+    [Adobe PhoneGap](https://www.phonegap.com/) is yet another prolific framework that delivers a fabulous performance. It makes code translation from CSS, HTML5 and JavaScript a breeze. This framework proficiently maintains the SDK separately for each mobile OS. It makes a much preferred choice for novice application developers.
+
+    ### Unity 3D
+
+    {{ screenshot: http://unity3d.com/ }}
+
+    [Unity 3D](http://unity3d.com/) is an incredible game engine that is known for delivering cutting edge graphics. Once you have developed your code in C#, Boo, or UnityScript, you can seamlessly export your app to a range of mobile platforms like Windows Phone, iOS, Android, etc.
+
+    ### Corona
+
+    {{ screenshot: https://coronalabs.com/ }}
+
+    [**Corona**](https://coronalabs.com/) has been optimized for 2D graphics, Corona SDK enables one to quickly start developing applications in a desired manner. You can rapidly develop a gaming app with this framework, without beginning from scratch. Its possess Lua coding language (which is based on C programming language) that facilitates powerful app development with a flair.
+
+    ### RhoMobile
+
+    {{ screenshot: http://rhomobile.com/ }}
+
+    [**RhoMobile**](http://rhomobile.com/) is a great companion that makes it really simple to develop a cross platform mobile app without compromising on its quality. You can integrate supreme functionalities into your app, while creating an intuitive and intriguing interface. It offers a valuable video tutorial that certainly makes it easier to get started and develop an astounding application that can run smoothly on various mobile platforms.
+
+    ## Conclusion
+
+    I hope this guide will help you understand what cross platform mobile app development is and how you can reap its benefits to proficiently boost your business values. There is frameworks galore, but it is always advisable to keep your potential audience and business goals in mind while choosing a suitable framework to ensure a worthwhile approach.
+
+    ----
+
+    Victoria Brinsley is a Android app developer for Appsted Ltd – a reputed [Android application development company](http://www.appsted.com/services/android-development). In case, you are willing to avail a detailed information on the same, get in touch.

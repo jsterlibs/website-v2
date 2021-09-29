@@ -1,0 +1,62 @@
+type: static
+title: "JSter #171: Libraries, and more"
+short_title: "JSter #171"
+user: bebraw
+slug: jster-171
+body: |
+  > JavaScript is always there for you
+
+  Later this month, React Finland 2021 takes place online. There are forty speakers lined up and by registering for free you'll gain access to our virtual online venue. [Find out more at the conference site](https://react-finland.fi/).
+
+  ## Libraries
+
+  * [remorses/smart-glob](https://github.com/remorses/smart-glob) - Glob search in constant time thanks to git cache
+  * [adamrisberg/react-image-magnifiers](https://github.com/adamrisberg/react-image-magnifiers) - A collection of responsive, image magnifying React components for mouse and touch.
+  * [salvoravida/recoil-toolkit](https://github.com/salvoravida/recoil-toolkit) - Helpers for Recoil, the next generation state management library
+  * [vanilla-extract](https://vanilla-extract.style/) - Zero-runtime Stylesheets in TypeScript
+  * [Dinero.js](https://dinerojs.com/) - Dinero.js is a library for working with monetary values in JavaScript
+  * [vuejs/petite-vue](https://github.com/vuejs/petite-vue) - 5kb subset of Vue optimized for progressive enhancement
+  * [Shakeskeyboarde/tsstyled](https://github.com/Shakeskeyboarde/tsstyled) - React visual primitives with first-class TypeScript support and a tiny footprint
+
+  ## Frameworks
+
+  * [Rabios/Pancake](https://github.com/Rabios/Pancake) - Lightweight, Fast, Easy-to-use HTML5 2D game framework!
+  * [React CMS: The missing link](https://dev.to/matfrana/react-cms-the-missing-link-3iok)
+
+  ## TypeScript
+
+  * [rauschma/async-off](https://github.com/rauschma/async-off) - Convert async TypeScript code to sync
+  * [trpc](https://github.com/trpc/trpc) - End-to-end typesafe APIs made easy
+  * [TypeScript 4.4 brings performance boosts](https://www.infoworld.com/article/3626459/typescript-44-brings-performance-boosts.html)
+
+  ## Services
+
+  * [Moiva.io](https://moiva.io/) - Evaluate and discover npm packages
+
+  ## Techniques
+
+  * [Better React Components with TypeScript Union Types](https://blog.scottlogic.com/2021/07/27/union-types-react-components.html)
+  * [Angular SEO: How to make Search Friendly pages](https://buttercms.com/blog/angular-seo-how-to-make-search-friendly-pages)
+  * [How to Implement an Event Bus in TypeScript](https://www.thisdot.co/blog/how-to-implement-an-event-bus-in-typescript/)
+  * [15 Tips for Better Signup / Login UX (Illustrated)](https://learnui.design/blog/tips-signup-login-ux.html)
+
+  ## Articles
+
+  * [The Baked Data architectural pattern](https://simonwillison.net/2021/Jul/28/baked-data/)
+  * [NPM Package Steals Chrome Passwords](https://threatpost.com/npm-package-steals-chrome-passwords/168004/)
+  * [What I learned as a developer from accidents in space](https://evilmartians.com/chronicles/what-i-learned-as-a-developer-from-accidents-in-space)
+  * [Climbing Mount Effect](https://acko.net/blog/climbing-mt-effect/)
+  * [The State Of Web Workers In 2021](https://www.smashingmagazine.com/2021/06/web-workers-2021/)
+
+  ## Tools
+
+  * [Yarn 3.0 - Performances, ESBuild, Better Patches, ...](https://dev.to/arcanis/yarn-3-0-performances-esbuild-better-patches-e07)
+  * [Vitro](https://vitro.vercel.app/) - Best way to build React components
+  * [Five years of PostCSS: State of the Union](https://evilmartians.com/chronicles/five-years-of-postcss-state-of-the-union)
+  * [Type doc](https://typedoc.org/) - A documentation generator for TypeScript projects
+  * [hediet/vscode-delorean-js-debug](https://github.com/hediet/vscode-delorean-js-debug) - Step Back In (Pure) Functions
+  * [Vite](https://vitejs.dev/) - Lightning fast bundler
+
+  ## Cheatsheets
+
+  * [Bootstrap 5 CheatSheet By ThemeSelection](https://bootstrap-cheatsheet.themeselection.com/)
