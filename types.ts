@@ -30,9 +30,22 @@ type Library = {
 };
 type DataContext = Record<string, unknown> | Record<string, unknown>[];
 type ParentCategory = { title: string; children: Category[] };
+type BlogPost = {
+  id: string;
+  title: string;
+  slug: string;
+  date: string;
+  type: "comparison" | "interview" | "rating" | "static";
+  user: string;
+  includes?: string[];
+  body: string;
+  footer?: string;
+  table?: Record<string, string[]>;
+};
 
 export type {
   Attributes,
+  BlogPost,
   Category,
   Component,
   Components,
