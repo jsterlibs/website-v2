@@ -1,7 +1,7 @@
 import { Marked, Renderer } from "markdown";
 import { dir, getJsonSync, zipToObject } from "utils";
 import YAML from "yaml";
-import type { BlogPost, Category, Library } from "../types.ts";
+import type { BlogPost } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
 
@@ -17,21 +17,23 @@ Marked.setOptions({
   smartypants: true,
 });
 
-function getBlogPosts(indexPath: string, postsPath: string) {
+function getBlogPosts() {
   const blogIndex = getJsonSync<
     IndexEntry[]
-  >(indexPath);
-  const blogPosts: BlogPost[] = dir(postsPath).map(({ name, path }) => {
-    const yaml = YAML.parse(Deno.readTextFileSync(path));
+  >("./data/blogposts.json");
+  const blogPosts: BlogPost[] = dir("./data/blogposts").map(
+    ({ name, path }) => {
+      const yaml = YAML.parse(Deno.readTextFileSync(path));
 
-    return {
-      name,
-      path,
-      ...yaml,
-      // TODO: Support custom syntax (screenshots, anything else?)
-      body: Marked.parse(yaml.body).content,
-    };
-  });
+      return {
+        name,
+        path,
+        ...yaml,
+        // TODO: Support custom syntax (screenshots, anything else?)
+        body: Marked.parse(yaml.body).content,
+      };
+    },
+  );
 
   return zipToObject<BlogPost>(
     blogIndex.map(({ id, date }: IndexEntry) => {
@@ -56,20 +58,4 @@ function getBlogPosts(indexPath: string, postsPath: string) {
   );
 }
 
-function getCategories(p: string) {
-  return zipToObject<Category>(
-    getJsonSync<Category[]>(p).map((o: Category) => [o.id, o]),
-  );
-}
-
-function getLibraries(
-  p: string,
-) {
-  return zipToObject<Library>(
-    dir(p).map((
-      { name, path },
-    ) => [name.split(".")[0], getJsonSync<Library>(path)]),
-  );
-}
-
-export { getBlogPosts, getCategories, getLibraries };
+export default getBlogPosts;

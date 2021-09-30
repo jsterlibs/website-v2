@@ -1,24 +1,25 @@
 import { Application, Router } from "oak";
 import { getJsonSync, reversed } from "utils";
-import type { Components, Library, ParentCategory } from "./types.ts";
+import type { Components, Library } from "./types.ts";
 import { getPageRenderer } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
-import { getBlogPosts, getCategories, getLibraries } from "./src/getData.ts";
+import getBlogPosts from "./dataLoaders/blogPosts.ts";
+import getCategories from "./dataLoaders/categories.ts";
+import getLibraries from "./dataLoaders/libraries.ts";
+import getParentCategories from "./dataLoaders/parentCategories.ts";
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
-  const blogPosts = getBlogPosts("./data/blogposts.json", "./data/blogposts");
-  const parentCategories = getJsonSync<ParentCategory[]>(
-    "./data/parent-categories.json",
-  );
-  const categories = getCategories(
-    "./data/categories.json",
-  );
   const components = getJsonSync<Components>("./components.json");
-  const libraries = getLibraries(
-    "./data/libraries",
-  );
+
+  // Data
+  const blogPosts = getBlogPosts();
+  const parentCategories = getParentCategories();
+  const categories = getCategories();
+  const libraries = getLibraries();
+
+  // Meta
   const stylesheet = getStyleSheet();
   const mode = "development";
   const siteMeta = { siteName: "Jster" };
