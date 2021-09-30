@@ -7,7 +7,14 @@ import typography from "twind-typography";
 function getStyleSheet() {
   const sheet = virtualSheet();
 
-  setup({ sheet, theme: { colors }, plugins: { ...typography() } });
+  setup({
+    sheet,
+    theme: { colors },
+    plugins: {
+      // TODO: How to override blockquote styles?
+      ...typography(),
+    },
+  });
 
   return sheet;
 }
