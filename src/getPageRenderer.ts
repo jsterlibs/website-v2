@@ -25,6 +25,7 @@ function getPageRenderer(
       const { meta, page } = getJsonSync<{ meta: Meta; page: Component }>(
         pagePath,
       );
+      const pathname = oakContext.request.url.pathname;
 
       try {
         const body = renderComponent(
@@ -32,7 +33,7 @@ function getPageRenderer(
             children: Array.isArray(page) ? page : [page],
           },
           components,
-          { ...sharedData, ...pageData },
+          { ...sharedData, ...pageData, pathname },
         );
         const styleTag = getStyleTag(stylesheet);
 

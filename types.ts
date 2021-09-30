@@ -10,6 +10,7 @@ type Component = {
   transformWith?: "markdown";
   // Data bindings
   __bind?: string;
+  __class?: string;
   __children?: string | Component[];
   __foreach?: {
     field: string;

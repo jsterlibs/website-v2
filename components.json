@@ -10,7 +10,7 @@
             {
               "element": "h2",
               "__children": "title",
-              "class": "px-4 py-2 w-1/6 text-right border-r-8 border-fuchsia-600 font-bold"
+              "class": "px-4 py-2 w-1/6 text-right border-r-8 border-fuchsia-600 font-medium"
             },
             {
               "element": "ul",
@@ -67,7 +67,10 @@
   },
   "link": {
     "element": "a",
-    "class": "underline"
+    "class": "underline",
+    "__class": {
+      "font-bold": "attributes.href === context.pathname"
+    }
   },
   "navigation": [
     {
@@ -117,7 +120,6 @@
             {
               "component": "link",
               "children": "JSter",
-              "class": "font-bold",
               "attributes": {
                 "href": "/"
               }

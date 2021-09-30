@@ -21,7 +21,7 @@ function renderComponent(
 
   if (component.__bind) {
     // @ts-ignore The assumption is that context exists
-    context = context[component.__bind];
+    context = { ...context, __bound: context[component.__bind] };
   }
 
   if (foundComponent) {
@@ -30,7 +30,6 @@ function renderComponent(
         children: Array.isArray(foundComponent) ? foundComponent : [{
           ...component,
           ...foundComponent,
-          // TODO: See if class can be reduced to a string
           class: joinClasses(
             component.class as string,
             foundComponent.class as string,
@@ -45,28 +44,37 @@ function renderComponent(
 
   let children: string | undefined;
 
-  if (component.__children && context) {
+  // @ts-ignore: Figure out how to type __bound
+  if (component.__children && context.__bound) {
     const boundChildren = component.__children;
 
     if (typeof boundChildren === "string") {
       // @ts-ignore: TODO: How to type this?
-      children = get(context, boundChildren);
+      children = get(context.__bound, boundChildren);
     } else {
-      children = (Array.isArray(context) ? context : [context]).flatMap((d) =>
-        boundChildren.map((c) => renderComponent(c, components, d))
-      )
+      // @ts-ignore: TODO: How to type this?
+      children = (Array.isArray(context.__bound)
+        // @ts-ignore: TODO: How to type this?
+        ? context.__bound
+        : // @ts-ignore: TODO: How to type this?
+          [context.__bound]).flatMap((d) =>
+          boundChildren.map((c) =>
+            renderComponent(c, components, { ...context, __bound: d })
+          ))
         .join("");
     }
   } else if (component.__foreach) {
     const { field, render } = component.__foreach;
 
     // @ts-ignore: TODO: How to type this?
-    const childrenToRender = context[field];
+    const childrenToRender = context.__bound[field];
 
     children = childrenToRender.flatMap((c: DataContext) =>
       Array.isArray(render)
-        ? render.map((r) => renderComponent(r, components, c))
-        : renderComponent(render, components, c)
+        ? render.map((r) =>
+          renderComponent(r, components, { ...context, __bound: c })
+        )
+        : renderComponent(render, components, { ...context, __bound: c })
     ).join("");
   } else {
     children = Array.isArray(component.children)
@@ -80,10 +88,48 @@ function renderComponent(
     component.element,
     generateAttributes({
       ...component.attributes,
-      class: component.class && tw(component.class),
+      class: resolveClass(component, context),
     }, context),
     transform(children, component?.transformWith),
   );
+}
+
+function resolveClass(component: Component, context: DataContext) {
+  const classes: string[] = [];
+
+  if (component.__class) {
+    Object.entries(component.__class).forEach(([klass, expression]) => {
+      if (
+        evaluateExpression(expression, {
+          attributes: component.attributes,
+          context,
+        })
+      ) {
+        classes.push(klass);
+      }
+    });
+  }
+
+  if (!component.class) {
+    return classes.join(" ");
+  }
+
+  return tw(classes.concat(component.class.split(" ")).join(" "));
+}
+
+// From Sidewind
+function evaluateExpression(
+  expression: string,
+  value: Record<string, unknown> = {},
+) {
+  try {
+    return Function.apply(
+      null,
+      Object.keys(value).concat(`return ${expression}`),
+    )(...Object.values(value));
+  } catch (err) {
+    console.error("Failed to evaluate", expression, value, err);
+  }
 }
 
 function transform(children?: string, transformWith?: string) {
@@ -122,7 +168,7 @@ function generateAttributes(attributes: Attributes, context: DataContext) {
   const ret = Object.entries(attributes).map(([k, v]) => {
     if (k.startsWith("__")) {
       // @ts-ignore: TODO: How to type this?
-      return `${k.slice(2)}="${context[v]}"`;
+      return `${k.slice(2)}="${context.__bound[v]}"`;
     }
 
     return v && `${k}="${v}"`;
