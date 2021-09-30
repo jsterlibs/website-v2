@@ -16,8 +16,8 @@
           "children": "Blog"
         },
         {
-          "element": "p",
-          "children": "TODO"
+          "component": "blog-posts",
+          "__bind": "blogPosts"
         }
       ]
     },

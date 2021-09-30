@@ -61,6 +61,26 @@
       ]
     }
   ],
+  "blog-posts": [
+    {
+      "element": "ul",
+      "class": "flex flex-col gap-4",
+      "__children": [
+        {
+          "element": "li",
+          "children": [
+            {
+              "component": "link",
+              "__children": "title",
+              "attributes": {
+                "__href": "slug"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "h1": {
     "element": "h1",
     "class": "prose lg:prose-xl"

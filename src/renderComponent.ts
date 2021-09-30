@@ -69,6 +69,10 @@ function renderComponent(
     // @ts-ignore: TODO: How to type this?
     const childrenToRender = context.__bound[field];
 
+    if (!childrenToRender) {
+      console.warn("No children to render for", component);
+    }
+
     children = childrenToRender.flatMap((c: DataContext) =>
       Array.isArray(render)
         ? render.map((r) =>
