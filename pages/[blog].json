@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "__title": "post.name",
+    "__description": "post.description"
+  },
+  "page": [
+    {
+      "component": "main-navigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
+      "children": [
+        {
+          "component": "h1",
+          "__children": "post.title"
+        },
+        {
+          "element": "p",
+          "transformWith": "markdown",
+          "__children": "post.body"
+        }
+      ]
+    },
+    {
+      "component": "main-footer"
+    }
+  ]
+}

@@ -44,23 +44,20 @@ function renderComponent(
 
   let children: string | undefined;
 
-  // @ts-ignore: Figure out how to type __bound
-  if (component.__children && context.__bound) {
+  if (component.__children) {
     const boundChildren = component.__children;
 
+    // @ts-ignore: Figure out how to type __bound
+    const ctx = context.__bound || context;
+
     if (typeof boundChildren === "string") {
-      // @ts-ignore: TODO: How to type this?
-      children = get(context.__bound, boundChildren);
+      children = get(ctx, boundChildren);
     } else {
-      // @ts-ignore: TODO: How to type this?
-      children = (Array.isArray(context.__bound)
-        // @ts-ignore: TODO: How to type this?
-        ? context.__bound
-        : // @ts-ignore: TODO: How to type this?
-          [context.__bound]).flatMap((d) =>
-          boundChildren.map((c) =>
-            renderComponent(c, components, { ...context, __bound: d })
-          ))
+      children = (Array.isArray(ctx) ? ctx : [ctx]).flatMap((d) =>
+        boundChildren.map((c) =>
+          renderComponent(c, components, { ...context, __bound: d })
+        )
+      )
         .join("");
     }
   } else if (component.__foreach) {

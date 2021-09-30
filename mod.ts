@@ -44,6 +44,21 @@ async function serve(port: number) {
     .get("/catalog", renderPage("./pages/catalog.json"))
     .get("/about", renderPage("./pages/about.json"))
     .get("/add-library", renderPage("./pages/add-library.json"))
+    .get("/blog/:id", (context) => {
+      const id = context.params.id;
+
+      if (!id) {
+        return;
+      }
+
+      const post = blogPosts[id];
+
+      if (!post) {
+        return;
+      }
+
+      renderPage("./pages/[blog].json", { post })(context);
+    })
     .get("/category/:id", (context) => {
       const id = context.params.id;
 
