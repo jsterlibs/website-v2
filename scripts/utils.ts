@@ -47,4 +47,8 @@ function zipToObject<R>(arr: [string, R][]) {
   return ret;
 }
 
-export { dir, get, getJsonSync, isObject, last, zipToObject };
+function reversed(arr: unknown[]) {
+  return [...arr].reverse();
+}
+
+export { dir, get, getJsonSync, isObject, last, reversed, zipToObject };
