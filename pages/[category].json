@@ -1,9 +1,10 @@
 {
   "meta": {
-    "__title": "category.title",
-    "__description": "category.description"
+    "__title": "match.title",
+    "__description": "match.description"
   },
-  "dataSources": [{ "name": "categories", "matchBy": "id" }],
+  "matchBy": { "dataSource": "categories", "field": "id" },
+  "dataSources": [{ "name": "categories" }],
   "page": [
     {
       "component": "main-navigation"
@@ -15,11 +16,11 @@
         {
           "component": "h1",
           "class": "mb-4",
-          "__children": "category.title"
+          "__children": "match.title"
         },
         {
           "component": "all-libraries",
-          "__bind": "category.libraries"
+          "__bind": "match.libraries"
         }
       ]
     },

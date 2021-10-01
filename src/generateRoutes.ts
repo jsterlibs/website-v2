@@ -4,16 +4,10 @@ import type { Components, SiteMeta } from "../types.ts";
 import { getPageRenderer } from "./getPageRenderer.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
 
-/*
-import getBlogPosts from "../dataSources/blogPosts.ts";
-import getCategories from "../dataSources/categories.ts";
-import getLibraries from "../dataSources/libraries.ts";
-import getParentCategories from "../dataSources/parentCategories.ts";
-*/
-
 type Page = {
   meta: Record<string, string>;
-  dataSources?: { name: string; matchBy: string; transformWith: string }[];
+  matchBy?: { dataSource: string; field: string };
+  dataSources?: { name: string; transformWith: string }[];
 };
 
 function generateRoutes(
@@ -39,7 +33,7 @@ function generateRoutes(
     ...getJsonSync<Page>(o.path),
   }));
 
-  pages.forEach(({ dataSources, name, path }) => {
+  pages.forEach(({ dataSources, matchBy, name, path }) => {
     let rootPath = name.split(".").slice(0, -1).join(".");
     rootPath = rootPath === "index" ? "" : rootPath;
 
@@ -59,66 +53,44 @@ function generateRoutes(
       ).then((
         dataSources,
       ) => {
-        router.get(
-          `/${rootPath}`,
-          // TODO: Support matchBy and transformWith (reversed)
-          // @ts-ignore Figure out the type
-          renderPage(path, zipToObject(dataSources)),
-        );
+        // @ts-ignore Figure out the type
+        const pageData = zipToObject(dataSources);
+
+        if (rootPath.startsWith("[") && rootPath.endsWith("]")) {
+          const routerPath = rootPath.slice(1, -1);
+
+          if (matchBy) {
+            router.get(`/${routerPath}/:id`, (context) => {
+              const id = context.params.id;
+
+              if (!id) {
+                return;
+              }
+
+              console.log(Object.keys(pageData), matchBy);
+
+              // @ts-ignore Figure out how to type this
+              const match = pageData[matchBy.dataSource].find((d) =>
+                d[matchBy.field] === id
+              );
+
+              if (!match) {
+                return;
+              }
+
+              renderPage(path, { ...pageData, match })(context);
+            });
+          } else {
+            console.warn(`Path ${rootPath} is missing a matchBy`);
+          }
+        } else {
+          router.get(`/${rootPath}`, renderPage(path, pageData));
+        }
       });
     } else {
       router.get(`/${rootPath}`, renderPage(path));
     }
   });
-
-  /*
-  router
-    .get("/blog/:id", (context) => {
-      const id = context.params.id;
-
-      if (!id) {
-        return;
-      }
-
-      const post = blogPosts.find((blogPost) => blogPost.id === id);
-
-      if (!post) {
-        return;
-      }
-
-      renderPage("./pages/[blog].json", { post })(context);
-    })
-    .get("/category/:id", (context) => {
-      const id = context.params.id;
-
-      if (!id) {
-        return;
-      }
-
-      const category = categories.find((category) => category.id === id);
-
-      if (!category) {
-        return;
-      }
-
-      renderPage("./pages/[category].json", { category })(context);
-    })
-    .get("/library/:id", (context) => {
-      const id = context.params.id;
-
-      if (!id) {
-        return;
-      }
-
-      const library = libraries.find((library) => library.id === id);
-
-      if (!library) {
-        return;
-      }
-
-      renderPage("./pages/[library].json", { library })(context);
-    });
-  */
 
   return router;
 }

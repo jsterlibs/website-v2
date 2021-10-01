@@ -1,9 +1,10 @@
 {
   "meta": {
-    "__title": "post.name",
-    "__description": "post.description"
+    "__title": "match.name",
+    "__description": "match.description"
   },
-  "dataSources": [{ "name": "blogPosts", "matchBy": "id" }],
+  "matchBy": { "dataSource": "blogPosts", "field": "id" },
+  "dataSources": [{ "name": "blogPosts" }],
   "page": [
     {
       "component": "main-navigation"
@@ -14,12 +15,12 @@
       "children": [
         {
           "component": "h1",
-          "__children": "post.title"
+          "__children": "match.title"
         },
         {
           "element": "p",
           "transformWith": "markdown",
-          "__children": "post.body"
+          "__children": "match.body"
         }
       ]
     },

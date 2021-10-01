@@ -1,9 +1,10 @@
 {
   "meta": {
-    "__title": "library.name",
-    "__description": "library.description"
+    "__title": "match.name",
+    "__description": "match.description"
   },
-  "dataSources": [{ "name": "libraries", "matchBy": "id" }],
+  "matchBy": { "dataSource": "libraries", "field": "id" },
+  "dataSources": [{ "name": "libraries" }],
   "page": [
     {
       "component": "main-navigation"
@@ -14,11 +15,11 @@
       "children": [
         {
           "component": "h1",
-          "__children": "library.name"
+          "__children": "match.name"
         },
         {
           "element": "p",
-          "__children": "library.description"
+          "__children": "match.description"
         }
       ]
     },
