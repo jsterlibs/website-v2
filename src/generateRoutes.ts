@@ -1,5 +1,5 @@
 import { Router } from "oak";
-import { dir, getJsonSync, zipToObject } from "utils";
+import { dir, getJsonSync, reversed, zipToObject } from "utils";
 import type { Components, SiteMeta } from "../types.ts";
 import { getPageRenderer } from "./getPageRenderer.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
@@ -13,7 +13,7 @@ import getParentCategories from "../dataSources/parentCategories.ts";
 
 type Page = {
   meta: Record<string, string>;
-  dataSources?: { name: string; matchBy: string; transformWith: string[] }[];
+  dataSources?: { name: string; matchBy: string; transformWith: string }[];
 };
 
 function generateRoutes(
@@ -45,8 +45,16 @@ function generateRoutes(
 
     if (dataSources) {
       Promise.all(
-        dataSources.map(({ name }) =>
-          import(`../dataSources/${name}.ts`).then((o) => [name, o.default()])
+        dataSources.map(({ name, transformWith }) =>
+          import(`../dataSources/${name}.ts`).then((o) => {
+            let data = o.default();
+
+            if (transformWith === "reversed") {
+              data = reversed(data);
+            }
+
+            return [name, data];
+          })
         ),
       ).then((
         dataSources,
