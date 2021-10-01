@@ -1,1 +1,1 @@
-{"description":"jsPerf aims to provide an easy way to create and share test cases, comparing the performance of different JavaScript snippets by running benchmarks.","logo":"/images/repo.png","name":"jsPerf","links":{"site":"https://jsperf.com/"},"tags":["perfomance","test"]}
+{"id":"jsperf","description":"jsPerf aims to provide an easy way to create and share test cases, comparing the performance of different JavaScript snippets by running benchmarks.","logo":"/images/repo.png","name":"jsPerf","links":{"site":"https://jsperf.com/"},"tags":["perfomance","test"]}

@@ -1,1 +1,1 @@
-{"description":"A set of bloom filter implementations in pure coffee/javascipt.","logo":"/images/repo.png","name":"BloomFilters","links":{"github":"https://github.com/dsummersl/bloomfilters"},"tags":["coffeescript"]}
+{"id":"bloomfilters","description":"A set of bloom filter implementations in pure coffee/javascipt.","logo":"/images/repo.png","name":"BloomFilters","links":{"github":"https://github.com/dsummersl/bloomfilters"},"tags":["coffeescript"]}

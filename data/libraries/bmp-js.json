@@ -1,1 +1,1 @@
-{"description":"A BMP image decoder in JS for the canvas element without using a DOM Image.","logo":"/images/repo.png","name":"bmp.js","links":{"site":"https://devongovett.github.com/bmp.js/","github":"https://github.com/devongovett/bmp.js"},"tags":[]}
+{"id":"bmp-js","description":"A BMP image decoder in JS for the canvas element without using a DOM Image.","logo":"/images/repo.png","name":"bmp.js","links":{"site":"https://devongovett.github.com/bmp.js/","github":"https://github.com/devongovett/bmp.js"},"tags":[]}

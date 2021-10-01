@@ -1,1 +1,1 @@
-{"description":"A tiny javascript templating framework in ~400 bytes gzipped\nt.js is a simple solution to interpolating values in an html string for insertion into the DOM via","logo":"/images/repo.png","name":"t.js","links":{"github":"https://github.com/jasonmoo/t.js"},"tags":[]}
+{"id":"t-js","description":"A tiny javascript templating framework in ~400 bytes gzipped\nt.js is a simple solution to interpolating values in an html string for insertion into the DOM via","logo":"/images/repo.png","name":"t.js","links":{"github":"https://github.com/jasonmoo/t.js"},"tags":[]}

@@ -1,1 +1,1 @@
-{"description":"A Minimalistic Wrapper for IndexedDB with Promise/A+ compliant transaction support.","logo":"/images/repo.png","name":"Dexie.js","links":{"site":"http://www.dexie.org","github":"https://github.com/dfahlander/Dexie.js"},"tags":["IndexedDb","offline"]}
+{"id":"dexie-js","description":"A Minimalistic Wrapper for IndexedDB with Promise/A+ compliant transaction support.","logo":"/images/repo.png","name":"Dexie.js","links":{"site":"http://www.dexie.org","github":"https://github.com/dfahlander/Dexie.js"},"tags":["IndexedDb","offline"]}

@@ -1,1 +1,1 @@
-{"description":"wru is an essential general purpose test framework compatible with web environment, node.js, Rhino, and now PhantomJS too.","logo":"/images/repo.png","name":"wru","links":{"github":"https://github.com/WebReflection/wru"},"tags":["nodejs","phantomjs"]}
+{"id":"wru","description":"wru is an essential general purpose test framework compatible with web environment, node.js, Rhino, and now PhantomJS too.","logo":"/images/repo.png","name":"wru","links":{"github":"https://github.com/WebReflection/wru"},"tags":["nodejs","phantomjs"]}

@@ -1,1 +1,1 @@
-{"description":"Wheat is a blogging engine that reads a git repo full of markdown articles and presents them as a website.","logo":"/images/repo.png","name":"wheat","links":{"github":"https://github.com/creationix/wheat"},"tags":[]}
+{"id":"wheat","description":"Wheat is a blogging engine that reads a git repo full of markdown articles and presents them as a website.","logo":"/images/repo.png","name":"wheat","links":{"github":"https://github.com/creationix/wheat"},"tags":[]}

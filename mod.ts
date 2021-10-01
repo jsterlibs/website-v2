@@ -3,10 +3,10 @@ import { getJsonSync, reversed } from "utils";
 import type { Components, Library } from "./types.ts";
 import { getPageRenderer } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
-import getBlogPosts from "./dataLoaders/blogPosts.ts";
-import getCategories from "./dataLoaders/categories.ts";
-import getLibraries from "./dataLoaders/libraries.ts";
-import getParentCategories from "./dataLoaders/parentCategories.ts";
+import getBlogPosts from "./dataSources/blogPosts.ts";
+import getCategories from "./dataSources/categories.ts";
+import getLibraries from "./dataSources/libraries.ts";
+import getParentCategories from "./dataSources/parentCategories.ts";
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
@@ -52,7 +52,7 @@ async function serve(port: number) {
         return;
       }
 
-      const post = blogPosts[id];
+      const post = blogPosts.find((blogPost) => blogPost.id === id);
 
       if (!post) {
         return;
@@ -67,7 +67,7 @@ async function serve(port: number) {
         return;
       }
 
-      const category = categories[id];
+      const category = categories.find((category) => category.id === id);
 
       if (!category) {
         return;
@@ -84,7 +84,7 @@ async function serve(port: number) {
         return;
       }
 
-      const library = libraries[id];
+      const library = libraries.find((library) => library.id === id);
 
       if (!library) {
         return;

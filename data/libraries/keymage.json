@@ -1,1 +1,1 @@
-{"description":"Keymage is a small library for handling key bindings in JavaScript. No dependencies, supports key sequences, nested scopes, etc.","logo":"/images/repo.png","name":"keymage","links":{"github":"https://github.com/piranha/keymage"},"tags":["keyboard"]}
+{"id":"keymage","description":"Keymage is a small library for handling key bindings in JavaScript. No dependencies, supports key sequences, nested scopes, etc.","logo":"/images/repo.png","name":"keymage","links":{"github":"https://github.com/piranha/keymage"},"tags":["keyboard"]}

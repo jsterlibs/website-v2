@@ -20,6 +20,7 @@ type Component = {
 type Components = Record<string, Component>;
 type Category = { id: string; title: string; url: string };
 type Library = {
+  id: string;
   description: string;
   logo?: string;
   name: string;

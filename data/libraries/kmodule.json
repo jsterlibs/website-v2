@@ -1,1 +1,1 @@
-{"description":"KModule is a pure and light implemention of CommonJS Modules/AsynchronousDefinition and Modules/LoaderPlugin.","logo":"/images/repo.png","name":"kmodule","links":{"github":"https://github.com/yessky/kmodule"},"tags":["amd","commonjs","loader"]}
+{"id":"kmodule","description":"KModule is a pure and light implemention of CommonJS Modules/AsynchronousDefinition and Modules/LoaderPlugin.","logo":"/images/repo.png","name":"kmodule","links":{"github":"https://github.com/yessky/kmodule"},"tags":["amd","commonjs","loader"]}

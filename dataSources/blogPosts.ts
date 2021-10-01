@@ -1,5 +1,5 @@
 import { Marked, Renderer } from "markdown";
-import { dir, getJsonSync, zipToObject } from "utils";
+import { dir, getJsonSync } from "utils";
 import YAML from "yaml";
 import type { BlogPost } from "../types.ts";
 
@@ -35,27 +35,25 @@ function getBlogPosts() {
     },
   );
 
-  return zipToObject<BlogPost>(
-    blogIndex.map(({ id, date }: IndexEntry) => {
-      const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
+  return blogIndex.map(({ id, date }: IndexEntry) => {
+    const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
 
-      if (!matchingBlogPost) {
-        console.warn("No matching blog post found for", id);
-      }
+    if (!matchingBlogPost) {
+      console.warn("No matching blog post found for", id);
+    }
 
-      return [id, {
-        id,
-        title: matchingBlogPost?.title || "",
-        // @ts-ignore: Typo in the original data
-        shortTitle: matchingBlogPost?.short_title,
-        slug: matchingBlogPost?.slug || "",
-        date,
-        type: matchingBlogPost?.type || "static",
-        user: matchingBlogPost?.user || "",
-        body: matchingBlogPost?.body || "",
-      }];
-    }),
-  );
+    return {
+      id,
+      title: matchingBlogPost?.title || "",
+      // @ts-ignore: Typo in the original data
+      shortTitle: matchingBlogPost?.short_title,
+      slug: matchingBlogPost?.slug || "",
+      date,
+      type: matchingBlogPost?.type || "static",
+      user: matchingBlogPost?.user || "",
+      body: matchingBlogPost?.body || "",
+    };
+  });
 }
 
 export default getBlogPosts;

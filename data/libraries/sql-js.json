@@ -1,1 +1,1 @@
-{"description":"sql.js is a port of SQLite to JavaScript, by compiling the SQLite C code with Emscripten.","logo":"/images/repo.png","name":"sql.js","links":{"github":"https://github.com/kripken/sql.js"},"tags":["db"]}
+{"id":"sql-js","description":"sql.js is a port of SQLite to JavaScript, by compiling the SQLite C code with Emscripten.","logo":"/images/repo.png","name":"sql.js","links":{"github":"https://github.com/kripken/sql.js"},"tags":["db"]}

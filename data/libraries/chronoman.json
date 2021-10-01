@@ -1,1 +1,1 @@
-{"description":"Utility class to simplify use of timers created by setTimeout.","logo":"/images/repo.png","name":"chronoman","links":{"github":"https://github.com/gamtiq/chronoman"},"tags":["setInterval","setTimeout","timeout","timer"]}
+{"id":"chronoman","description":"Utility class to simplify use of timers created by setTimeout.","logo":"/images/repo.png","name":"chronoman","links":{"github":"https://github.com/gamtiq/chronoman"},"tags":["setInterval","setTimeout","timeout","timer"]}

@@ -1,1 +1,1 @@
-{"description":"curl (cujo resource loader)\ncurl.js is a small and very fast AMD-compliant asynchronous loader","logo":"/images/repo.png","name":"curl","links":{"site":"https://github.com/cujojs/curl","github":"https://github.com/unscriptable/curl"},"tags":["amd"]}
+{"id":"curl","description":"curl (cujo resource loader)\ncurl.js is a small and very fast AMD-compliant asynchronous loader","logo":"/images/repo.png","name":"curl","links":{"site":"https://github.com/cujojs/curl","github":"https://github.com/unscriptable/curl"},"tags":["amd"]}

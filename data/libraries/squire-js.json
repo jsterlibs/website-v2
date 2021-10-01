@@ -1,1 +1,1 @@
-{"description":"Squire.js is a dependency injector for Require.js users to make mocking dependencies easy!","logo":"/images/repo.png","name":"Squire.js","links":{"github":"https://github.com/iammerrick/Squire.js"},"tags":["mock","requirejs"]}
+{"id":"squire-js","description":"Squire.js is a dependency injector for Require.js users to make mocking dependencies easy!","logo":"/images/repo.png","name":"Squire.js","links":{"github":"https://github.com/iammerrick/Squire.js"},"tags":["mock","requirejs"]}

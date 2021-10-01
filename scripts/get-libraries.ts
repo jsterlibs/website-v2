@@ -1,10 +1,11 @@
 import { cheerio } from "cheerio";
+import { last } from "./utils.ts";
 
 const getLibraries = async (category: string) => {
   const res = await fetch("https://jster.net/" + category);
   const html = await res.text();
   const $ = cheerio.load(html);
-  const libraries: { title: string; url: string }[] = [];
+  const libraries: { title: string; url: string; name: string }[] = [];
 
   $(".repo .well a").each(function (_, e) {
     const url = $(e).attr("href");
@@ -15,7 +16,7 @@ const getLibraries = async (category: string) => {
 
     const title = $("h3", e).text().trim();
 
-    url && libraries.push({ title, url });
+    url && libraries.push({ title, url, name: last(url.split("/")) });
   });
 
   return libraries;

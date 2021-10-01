@@ -1,1 +1,1 @@
-{"description":"A simple library that makes it easy to generate DOM nodes from a JSON-like structure.","logo":"/images/repo.png","name":"DomBuilder","links":{"site":"http://creationix.com/dombuilder/","github":"https://github.com/creationix/dombuilder"},"tags":["builder"]}
+{"id":"dombuilder","description":"A simple library that makes it easy to generate DOM nodes from a JSON-like structure.","logo":"/images/repo.png","name":"DomBuilder","links":{"site":"http://creationix.com/dombuilder/","github":"https://github.com/creationix/dombuilder"},"tags":["builder"]}

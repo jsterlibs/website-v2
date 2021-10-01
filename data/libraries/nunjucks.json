@@ -1,1 +1,1 @@
-{"description":"Nunjucks is a full featured templating engine for javascript. It is heavily inspired by jinja2.","logo":"/images/repo.png","name":"Nunjucks","links":{"site":"https://jlongster.github.io/nunjucks/","github":"https://github.com/mozilla/nunjucks"},"tags":[]}
+{"id":"nunjucks","description":"Nunjucks is a full featured templating engine for javascript. It is heavily inspired by jinja2.","logo":"/images/repo.png","name":"Nunjucks","links":{"site":"https://jlongster.github.io/nunjucks/","github":"https://github.com/mozilla/nunjucks"},"tags":[]}

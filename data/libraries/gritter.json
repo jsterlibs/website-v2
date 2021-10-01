@@ -1,1 +1,1 @@
-{"description":"A small growl-like notification plugin for jQuery","logo":"/images/repo.png","name":"Gritter","links":{"site":"http://boedesign.com/2009/07/11/growl-for-jquery-gritter/","github":"https://github.com/jboesch/Gritter"},"tags":["jquery","rails"]}
+{"id":"gritter","description":"A small growl-like notification plugin for jQuery","logo":"/images/repo.png","name":"Gritter","links":{"site":"http://boedesign.com/2009/07/11/growl-for-jquery-gritter/","github":"https://github.com/jboesch/Gritter"},"tags":["jquery","rails"]}

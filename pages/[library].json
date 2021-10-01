@@ -3,6 +3,7 @@
     "__title": "library.name",
     "__description": "library.description"
   },
+  "dataSources": [{ "name": "libraries", "matchBy": "id" }],
   "page": [
     {
       "component": "main-navigation"

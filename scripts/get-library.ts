@@ -14,6 +14,7 @@ const getLibrary = async (libraryName: string): Promise<Library> => {
   });
 
   return {
+    id: libraryName,
     description: $(".desc").text().trim(),
     logo: $(".full_logo img").attr("src"),
     name: $("h1").text(),

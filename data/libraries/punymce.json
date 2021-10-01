@@ -1,1 +1,1 @@
-{"description":"PunyMCE is a lightweight rich text editor written in javascript. It's designed to be used for things like comments and forums.","logo":"/images/repo.png","name":"PunyMCE","links":{"github":"https://github.com/spocke/punymce"},"tags":["jquery"]}
+{"id":"punymce","description":"PunyMCE is a lightweight rich text editor written in javascript. It's designed to be used for things like comments and forums.","logo":"/images/repo.png","name":"PunyMCE","links":{"github":"https://github.com/spocke/punymce"},"tags":["jquery"]}

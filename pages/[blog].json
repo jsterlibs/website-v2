@@ -3,6 +3,7 @@
     "__title": "post.name",
     "__description": "post.description"
   },
+  "dataSources": [{ "name": "blogPosts", "matchBy": "id" }],
   "page": [
     {
       "component": "main-navigation"
