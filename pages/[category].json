@@ -3,6 +3,7 @@
     "__title": "category.title",
     "__description": "category.description"
   },
+  "dataSources": [{ "name": "categories", "matchBy": "id" }],
   "page": [
     {
       "component": "main-navigation"
@@ -18,7 +19,7 @@
         },
         {
           "component": "all-libraries",
-          "__bind": "libraries"
+          "__bind": "category.libraries"
         }
       ]
     },

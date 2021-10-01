@@ -1,6 +1,6 @@
 import { Application, Router } from "oak";
 import { getJsonSync, reversed } from "utils";
-import type { Components, Library } from "./types.ts";
+import type { Components } from "./types.ts";
 import { getPageRenderer } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
 import getBlogPosts from "./dataSources/blogPosts.ts";
@@ -35,7 +35,6 @@ async function serve(port: number) {
   const router = new Router();
   router
     .get("/", renderPage("./pages/index.json"))
-    // TODO: Support specific blog pages
     .get(
       "/blog",
       renderPage("./pages/blog.json", {
@@ -73,9 +72,7 @@ async function serve(port: number) {
         return;
       }
 
-      const libraries = getJsonSync<Library[]>(`data/categories/${id}.json`);
-
-      renderPage("./pages/[category].json", { category, libraries })(context);
+      renderPage("./pages/[category].json", { category })(context);
     })
     .get("/library/:id", (context) => {
       const id = context.params.id;

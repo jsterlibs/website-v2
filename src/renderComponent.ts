@@ -21,7 +21,7 @@ function renderComponent(
 
   if (component.__bind) {
     // @ts-ignore The assumption is that context exists
-    context = { ...context, __bound: context[component.__bind] };
+    context = { ...context, __bound: get(context, component.__bind) };
   }
 
   if (foundComponent) {
