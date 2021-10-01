@@ -3,6 +3,7 @@
     "title": "Blog",
     "description": "Relevant JavaScript news"
   },
+  "dataSources": [{ "name": "blogPosts", "transformWith": ["reversed"] }],
   "page": [
     {
       "component": "main-navigation"

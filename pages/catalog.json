@@ -3,6 +3,7 @@
     "title": "Catalog",
     "description": "JavaScript libraries per category"
   },
+  "dataSources": [{ "name": "parentCategories" }],
   "page": [
     {
       "component": "main-navigation"

@@ -29,20 +29,19 @@ function generateRoutes(
     stylesheet,
     mode,
     siteMeta,
-    sharedData: { parentCategories },
   });
 
   const router = new Router();
 
   router
-    .get("/", renderPage("./pages/index.json"))
+    .get("/", renderPage("./pages/index.json", { parentCategories }))
     .get(
       "/blog",
       renderPage("./pages/blog.json", {
         blogPosts: reversed(Object.values(blogPosts)),
       }),
     )
-    .get("/catalog", renderPage("./pages/catalog.json"))
+    .get("/catalog", renderPage("./pages/catalog.json", { parentCategories }))
     .get("/about", renderPage("./pages/about.json"))
     .get("/add-library", renderPage("./pages/add-library.json"))
     .get("/blog/:id", (context) => {

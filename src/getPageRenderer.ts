@@ -9,12 +9,11 @@ type Mode = "development" | "production";
 type Meta = Record<string, string>;
 
 function getPageRenderer(
-  { components, stylesheet, mode, siteMeta, sharedData }: {
+  { components, stylesheet, mode, siteMeta }: {
     components: Components;
     stylesheet: ReturnType<typeof getStyleSheet>;
     mode: Mode;
     siteMeta: SiteMeta;
-    sharedData: DataContext;
   },
 ) {
   return (pagePath: string, pageData?: DataContext) =>
@@ -32,7 +31,7 @@ function getPageRenderer(
             children: Array.isArray(page) ? page : [page],
           },
           components,
-          { ...sharedData, ...pageData, pathname },
+          { ...pageData, pathname },
         );
         const styleTag = getStyleTag(stylesheet);
 
@@ -43,7 +42,7 @@ function getPageRenderer(
         oakContext.response.body = new TextEncoder().encode(
           htmlTemplate({
             siteMeta,
-            meta: applyData(meta, { ...sharedData, ...pageData }),
+            meta: applyData(meta, { ...pageData, pathname }),
             head: styleTag,
             body,
             mode,

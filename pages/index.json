@@ -3,6 +3,7 @@
     "title": "JavaScript Catalog",
     "description": "JSter catalogues JavaScript libraries per purpose"
   },
+  "dataSources": [{ "name": "parentCategories" }],
   "page": [
     {
       "component": "main-navigation"
