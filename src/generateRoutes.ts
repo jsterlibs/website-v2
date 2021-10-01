@@ -1,12 +1,15 @@
 import { Router } from "oak";
-import { dir, getJsonSync, reversed } from "utils";
+import { dir, getJsonSync, zipToObject } from "utils";
 import type { Components, SiteMeta } from "../types.ts";
 import { getPageRenderer } from "./getPageRenderer.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
+
+/*
 import getBlogPosts from "../dataSources/blogPosts.ts";
 import getCategories from "../dataSources/categories.ts";
 import getLibraries from "../dataSources/libraries.ts";
 import getParentCategories from "../dataSources/parentCategories.ts";
+*/
 
 type Page = {
   meta: Record<string, string>;
@@ -37,15 +40,23 @@ function generateRoutes(
   }));
 
   pages.forEach(({ dataSources, name, path }) => {
-    const rootPath = name.split(".").slice(0, -1).join(".");
+    let rootPath = name.split(".").slice(0, -1).join(".");
+    rootPath = rootPath === "index" ? "" : rootPath;
 
     if (dataSources) {
-      // TODO: Promise.all if dataSources exist -> set up routes
-      dataSources?.forEach(({ name }) => {
-        // TODO: require() from dataSources
-        import(`../dataSources/${name}.ts`).then(({ default: dataSource }) => {
-          console.log("data source", dataSource);
-        });
+      Promise.all(
+        dataSources.map(({ name }) =>
+          import(`../dataSources/${name}.ts`).then((o) => [name, o.default()])
+        ),
+      ).then((
+        dataSources,
+      ) => {
+        router.get(
+          `/${rootPath}`,
+          // TODO: Support matchBy and transformWith (reversed)
+          // @ts-ignore Figure out the type
+          renderPage(path, zipToObject(dataSources)),
+        );
       });
     } else {
       router.get(`/${rootPath}`, renderPage(path));
@@ -54,11 +65,14 @@ function generateRoutes(
 
   // TODO: Read pages + related data sources + construct routes
   // Data
+  /*
   const blogPosts = getBlogPosts();
   const parentCategories = getParentCategories();
   const categories = getCategories();
   const libraries = getLibraries();
+  */
 
+  /*
   router
     .get("/", renderPage("./pages/index.json", { parentCategories }))
     .get(
@@ -113,6 +127,7 @@ function generateRoutes(
 
       renderPage("./pages/[library].json", { library })(context);
     });
+  */
 
   return router;
 }
