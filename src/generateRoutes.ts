@@ -10,7 +10,7 @@ import getParentCategories from "../dataSources/parentCategories.ts";
 
 type Page = {
   meta: Record<string, string>;
-  dataSources: { name: string; matchBy: string; transformWith: string[] }[];
+  dataSources?: { name: string; matchBy: string; transformWith: string[] }[];
 };
 
 function generateRoutes(
@@ -21,20 +21,6 @@ function generateRoutes(
     siteMeta: SiteMeta;
   },
 ) {
-  const pages = dir(pagesPath).map((o) => ({
-    ...o,
-    ...getJsonSync<Page>(o.path),
-  }));
-
-  console.log("pages", pages);
-
-  // TODO: Read pages + related data sources + construct routes
-  // Data
-  const blogPosts = getBlogPosts();
-  const parentCategories = getParentCategories();
-  const categories = getCategories();
-  const libraries = getLibraries();
-
   const stylesheet = getStyleSheet();
   const renderPage = getPageRenderer({
     components,
@@ -45,6 +31,34 @@ function generateRoutes(
 
   const router = new Router();
 
+  const pages = dir(pagesPath).map((o) => ({
+    ...o,
+    ...getJsonSync<Page>(o.path),
+  }));
+
+  pages.forEach(({ dataSources, name, path }) => {
+    const rootPath = name.split(".").slice(0, -1).join(".");
+
+    if (dataSources) {
+      // TODO: Promise.all if dataSources exist -> set up routes
+      dataSources?.forEach(({ name }) => {
+        // TODO: require() from dataSources
+        import(`../dataSources/${name}.ts`).then(({ default: dataSource }) => {
+          console.log("data source", dataSource);
+        });
+      });
+    } else {
+      router.get(`/${rootPath}`, renderPage(path));
+    }
+  });
+
+  // TODO: Read pages + related data sources + construct routes
+  // Data
+  const blogPosts = getBlogPosts();
+  const parentCategories = getParentCategories();
+  const categories = getCategories();
+  const libraries = getLibraries();
+
   router
     .get("/", renderPage("./pages/index.json", { parentCategories }))
     .get(
@@ -54,8 +68,6 @@ function generateRoutes(
       }),
     )
     .get("/catalog", renderPage("./pages/catalog.json", { parentCategories }))
-    .get("/about", renderPage("./pages/about.json"))
-    .get("/add-library", renderPage("./pages/add-library.json"))
     .get("/blog/:id", (context) => {
       const id = context.params.id;
 
