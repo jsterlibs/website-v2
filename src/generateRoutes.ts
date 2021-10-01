@@ -1,5 +1,5 @@
 import { Router } from "oak";
-import { reversed } from "utils";
+import { dir, getJsonSync, reversed } from "utils";
 import type { Components, SiteMeta } from "../types.ts";
 import { getPageRenderer } from "./getPageRenderer.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
@@ -7,6 +7,11 @@ import getBlogPosts from "../dataSources/blogPosts.ts";
 import getCategories from "../dataSources/categories.ts";
 import getLibraries from "../dataSources/libraries.ts";
 import getParentCategories from "../dataSources/parentCategories.ts";
+
+type Page = {
+  meta: Record<string, string>;
+  dataSources: { name: string; matchBy: string; transformWith: string[] }[];
+};
 
 function generateRoutes(
   { components, pagesPath, mode, siteMeta }: {
@@ -16,6 +21,13 @@ function generateRoutes(
     siteMeta: SiteMeta;
   },
 ) {
+  const pages = dir(pagesPath).map((o) => ({
+    ...o,
+    ...getJsonSync<Page>(o.path),
+  }));
+
+  console.log("pages", pages);
+
   // TODO: Read pages + related data sources + construct routes
   // Data
   const blogPosts = getBlogPosts();
