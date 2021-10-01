@@ -2,12 +2,11 @@ import type { RouteParams, RouterContext } from "oak";
 import { getStyleTag } from "twind-sheets";
 import { get, getJsonSync } from "utils";
 import { renderComponent } from "./renderComponent.ts";
-import type { Component, Components, DataContext } from "../types.ts";
+import type { Component, Components, DataContext, SiteMeta } from "../types.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
 
 type Mode = "development" | "production";
 type Meta = Record<string, string>;
-type SiteMeta = { siteName: string };
 
 function getPageRenderer(
   { components, stylesheet, mode, siteMeta, sharedData }: {

@@ -52,6 +52,7 @@ type BlogPost = {
     photo: string;
   };
 };
+type SiteMeta = { siteName: string };
 
 export type {
   Attributes,
@@ -63,4 +64,5 @@ export type {
   Library,
   ParentCategory,
   Props,
+  SiteMeta,
 };
