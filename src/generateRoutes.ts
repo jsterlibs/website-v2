@@ -71,25 +71,8 @@ function generateRoutes(
     }
   });
 
-  // TODO: Read pages + related data sources + construct routes
-  // Data
-  /*
-  const blogPosts = getBlogPosts();
-  const parentCategories = getParentCategories();
-  const categories = getCategories();
-  const libraries = getLibraries();
-  */
-
   /*
   router
-    .get("/", renderPage("./pages/index.json", { parentCategories }))
-    .get(
-      "/blog",
-      renderPage("./pages/blog.json", {
-        blogPosts: reversed(Object.values(blogPosts)),
-      }),
-    )
-    .get("/catalog", renderPage("./pages/catalog.json", { parentCategories }))
     .get("/blog/:id", (context) => {
       const id = context.params.id;
 
