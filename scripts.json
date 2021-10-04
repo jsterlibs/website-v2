@@ -9,10 +9,10 @@
       "watch": true
     },
     "build": {
-      "cmd": "deno run --unstable scripts/build.ts"
+      "cmd": "deno run --no-check --unstable scripts/build.ts"
     },
     "watch:build": {
-      "cmd": "deno run --unstable scripts/build.ts",
+      "cmd": "deno run --no-check --unstable scripts/build.ts",
       "watch": true
     },
     "get-blogposts": {
