@@ -67,8 +67,6 @@ function generateRoutes(
                 return;
               }
 
-              console.log(Object.keys(pageData), matchBy);
-
               // @ts-ignore Figure out how to type this
               const match = pageData[matchBy.dataSource].find((d) =>
                 d[matchBy.field] === id
