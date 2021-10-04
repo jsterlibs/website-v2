@@ -16,11 +16,27 @@ async function serve(port: number) {
     components,
     stylesheet,
     mode: "development",
+    // TODO: Extract to meta.json
     siteMeta: { siteName: "JSter" },
   });
   generateRoutes({
     renderPage(route, path, context) {
-      router.get(route, renderPage(path, context));
+      router.get(route, (ctx) => {
+        try {
+          ctx.response.headers.set(
+            "Content-Type",
+            "text/html; charset=UTF-8",
+          );
+
+          ctx.response.body = new TextEncoder().encode(
+            renderPage(ctx.request.url.pathname, path, context),
+          );
+        } catch (err) {
+          console.error(err);
+
+          ctx.response.body = new TextEncoder().encode(err.stack);
+        }
+      });
     },
     pagesPath: "./pages",
   });

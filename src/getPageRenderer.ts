@@ -1,4 +1,3 @@
-import type { RouteParams, RouterContext } from "oak";
 import { getStyleTag } from "twind-sheets";
 import { get, getJsonSync } from "utils";
 import { renderComponent } from "./renderComponent.ts";
@@ -16,44 +15,27 @@ function getPageRenderer(
     siteMeta: SiteMeta;
   },
 ) {
-  return (pagePath: string, pageData?: DataContext) =>
-    (
-      oakContext: RouterContext<RouteParams, Record<string, unknown>>,
-    ) => {
-      const { meta, page } = getJsonSync<{ meta: Meta; page: Component }>(
-        pagePath,
-      );
-      const pathname = oakContext.request.url.pathname;
+  return (pathname: string, pagePath: string, pageData?: DataContext) => {
+    const { meta, page } = getJsonSync<{ meta: Meta; page: Component }>(
+      pagePath,
+    );
+    const body = renderComponent(
+      {
+        children: Array.isArray(page) ? page : [page],
+      },
+      components,
+      { ...pageData, pathname },
+    );
+    const styleTag = getStyleTag(stylesheet);
 
-      try {
-        const body = renderComponent(
-          {
-            children: Array.isArray(page) ? page : [page],
-          },
-          components,
-          { ...pageData, pathname },
-        );
-        const styleTag = getStyleTag(stylesheet);
-
-        oakContext.response.headers.set(
-          "Content-Type",
-          "text/html; charset=UTF-8",
-        );
-        oakContext.response.body = new TextEncoder().encode(
-          htmlTemplate({
-            siteMeta,
-            meta: applyData(meta, { ...pageData, pathname }),
-            head: styleTag,
-            body,
-            mode,
-          }),
-        );
-      } catch (err) {
-        console.error(err);
-
-        oakContext.response.body = new TextEncoder().encode(err.stack);
-      }
-    };
+    return htmlTemplate({
+      siteMeta,
+      meta: applyData(meta, { ...pageData, pathname }),
+      head: styleTag,
+      body,
+      mode,
+    });
+  };
 }
 
 function applyData(meta: Meta, dataContext?: DataContext) {
