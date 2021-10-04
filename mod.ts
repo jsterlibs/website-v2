@@ -1,17 +1,30 @@
-import { Application } from "oak";
+import { Application, Router } from "oak";
 import { getComponents } from "utils";
 import { generateRoutes } from "./src/generateRoutes.ts";
+import { getPageRenderer } from "./src/getPageRenderer.ts";
+import { getStyleSheet } from "./src/getStyleSheet.ts";
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
   const components = getComponents("./components.json");
   const app = new Application();
-  const router = generateRoutes({
+  const router = new Router();
+
+  const stylesheet = getStyleSheet();
+  const renderPage = getPageRenderer({
     components,
-    pagesPath: "./pages",
+    stylesheet,
     mode: "development",
     siteMeta: { siteName: "JSter" },
+  });
+  generateRoutes({
+    getPage(path, context) {
+      // @ts-ignore Figure out the right way to type this (likely a generic)
+      router.get(path, context);
+    },
+    renderPage,
+    pagesPath: "./pages",
   });
 
   app.use(router.routes());

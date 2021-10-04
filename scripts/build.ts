@@ -8,12 +8,14 @@ function build() {
   const components = getComponents("./components.json");
 
   // TODO: Decouple router from this
+  /*
   generateRoutes({
     components,
     pagesPath: "./pages",
     mode: "production",
     siteMeta: { siteName: "JSter" },
   });
+  */
 }
 
 if (import.meta.main) {

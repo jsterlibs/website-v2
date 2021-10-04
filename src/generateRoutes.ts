@@ -1,8 +1,4 @@
-import { Router } from "oak";
 import { dir, getJsonSync, reversed, zipToObject } from "utils";
-import type { Components, SiteMeta } from "../types.ts";
-import { getPageRenderer } from "./getPageRenderer.ts";
-import { getStyleSheet } from "./getStyleSheet.ts";
 
 type Page = {
   meta: Record<string, string>;
@@ -10,25 +6,15 @@ type Page = {
   dataSources?: { name: string; transformWith: string }[];
 };
 
-// TODO: Convert router as an adapter to break the coupling
+type PageRenderer = (path: string, data?: Record<string, unknown>) => void;
+
 function generateRoutes(
-  { components, pagesPath, mode, siteMeta }: {
-    components: Components;
+  { getPage, renderPage, pagesPath }: {
+    getPage(path: string, context: void): void;
+    renderPage: PageRenderer;
     pagesPath: string;
-    mode: "development" | "production";
-    siteMeta: SiteMeta;
   },
 ) {
-  const stylesheet = getStyleSheet();
-  const renderPage = getPageRenderer({
-    components,
-    stylesheet,
-    mode,
-    siteMeta,
-  });
-
-  const router = new Router();
-
   const pages = dir(pagesPath).map((o) => ({
     ...o,
     ...getJsonSync<Page>(o.path),
@@ -66,7 +52,7 @@ function generateRoutes(
             const dataSource = pageData[matchBy.dataSource];
 
             Object.values(dataSource).forEach((v) => {
-              router.get(
+              getPage(
                 `/${routerPath}/${v.id}`,
                 renderPage(path, { ...pageData, match: v }),
               );
@@ -75,15 +61,13 @@ function generateRoutes(
             console.warn(`Path ${rootPath} is missing a matchBy`);
           }
         } else {
-          router.get(`/${rootPath}`, renderPage(path, pageData));
+          getPage(`/${rootPath}`, renderPage(path, pageData));
         }
       });
     } else {
-      router.get(`/${rootPath}`, renderPage(path));
+      getPage(`/${rootPath}`, renderPage(path));
     }
   });
-
-  return router;
 }
 
 export { generateRoutes };
