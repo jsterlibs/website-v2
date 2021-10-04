@@ -10,6 +10,7 @@ type Page = {
   dataSources?: { name: string; transformWith: string }[];
 };
 
+// TODO: Convert router as an adapter to break the coupling
 function generateRoutes(
   { components, pagesPath, mode, siteMeta }: {
     components: Components;
@@ -53,30 +54,22 @@ function generateRoutes(
       ).then((
         dataSources,
       ) => {
-        // @ts-ignore Figure out the type
-        const pageData = zipToObject(dataSources);
+        const pageData = zipToObject<{ dataSource: { id: string } }>(
+          // @ts-ignore Figure out the type
+          dataSources,
+        );
 
         if (rootPath.startsWith("[") && rootPath.endsWith("]")) {
           const routerPath = rootPath.slice(1, -1);
 
           if (matchBy) {
-            router.get(`/${routerPath}/:id`, (context) => {
-              const id = context.params.id;
+            const dataSource = pageData[matchBy.dataSource];
 
-              if (!id) {
-                return;
-              }
-
-              // @ts-ignore Figure out how to type this
-              const match = pageData[matchBy.dataSource].find((d) =>
-                d[matchBy.field] === id
+            Object.values(dataSource).forEach((v) => {
+              router.get(
+                `/${routerPath}/${v.id}`,
+                renderPage(path, { ...pageData, match: v }),
               );
-
-              if (!match) {
-                return;
-              }
-
-              renderPage(path, { ...pageData, match })(context);
             });
           } else {
             console.warn(`Path ${rootPath} is missing a matchBy`);
