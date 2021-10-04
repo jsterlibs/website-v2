@@ -31,7 +31,8 @@ function build() {
   });
   generateRoutes({
     renderPage(route, path, context) {
-      console.log("Building", route);
+      // TODO: Push this behind a verbose flag
+      // console.log("Building", route);
 
       const dir = join(outputDirectory, route);
 
