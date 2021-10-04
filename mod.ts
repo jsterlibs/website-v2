@@ -1,12 +1,11 @@
 import { Application } from "oak";
-import { getJsonSync } from "utils";
+import { getComponents } from "utils";
 import { generateRoutes } from "./src/generateRoutes.ts";
-import type { Components } from "./types.ts";
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
-  const components = getJsonSync<Components>("./components.json");
+  const components = getComponents("./components.json");
   const app = new Application();
   const router = generateRoutes({
     components,

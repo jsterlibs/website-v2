@@ -1,7 +1,12 @@
 import * as path from "path";
+import type { Components } from "../types.ts";
 
 function getJsonSync<R>(filePath: string): R {
   return JSON.parse(Deno.readTextFileSync(filePath));
+}
+
+function getComponents(filePath: string) {
+  return getJsonSync<Components>(filePath);
 }
 
 function last<O>(array: O[]) {
@@ -51,4 +56,13 @@ function reversed(arr: unknown[]) {
   return [...arr].reverse();
 }
 
-export { dir, get, getJsonSync, isObject, last, reversed, zipToObject };
+export {
+  dir,
+  get,
+  getComponents,
+  getJsonSync,
+  isObject,
+  last,
+  reversed,
+  zipToObject,
+};

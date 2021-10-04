@@ -14,7 +14,7 @@ function generateRoutes(
   { components, pagesPath, mode, siteMeta }: {
     components: Components;
     pagesPath: string;
-    mode: "development";
+    mode: "development" | "production";
     siteMeta: SiteMeta;
   },
 ) {
