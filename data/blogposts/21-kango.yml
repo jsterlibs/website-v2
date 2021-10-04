@@ -12,7 +12,7 @@ body: |
 
   I decided that the extension would create a popup with the list of current user emails. Here's an example:
 
-  ![Extension](http://dl.dropbox.com/u/930833/Menu_004.png)
+  ![Extension](https://dl.dropbox.com/u/930833/Menu_004.png)
 
   To get list of available emails I had to connect to my application server via REST protocol. 
   In order to make list flexible with ability to add new emails on the fly I decided to use a form in the top.
@@ -36,7 +36,7 @@ body: |
 
   By running this you will get folder `my_extension` filled with lots of folders and boilerplate code. Like on this screenshot (I added Backbone and Underscore later)
 
-  ![Files](http://dl.dropbox.com/u/930833/Selection_005.png)
+  ![Files](https://dl.dropbox.com/u/930833/Selection_005.png)
 
   We should stick to `src/common` folder which contains cross-browser code. Once you run 
 
@@ -103,11 +103,11 @@ body: |
   This will produce packaged extensions to all 4 browsers. I used **Chromium** as a primary tool to develop and debug my extension. 
   Open *Extensions* tab then drag and drop your newly created `*.crx` file placed in `output` folder.
 
-  ![chromium](http://dl.dropbox.com/u/930833/Extensions%20-%20Chromium_007.png)
+  ![chromium](https://dl.dropbox.com/u/930833/Extensions%20-%20Chromium_007.png)
 
   To debug your popup you can use Chrome DevTools. Launch them by right-clicking on your extension button. 
 
-  ![menu](http://dl.dropbox.com/u/930833/Menu_008.png)
+  ![menu](https://dl.dropbox.com/u/930833/Menu_008.png)
 
   Yes, manage popup. Also consider using [Backbone Debug](https://github.com/aterris/backbone.debug) script see all model views interactions in console.
 
