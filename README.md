@@ -1,4 +1,4 @@
-[![vr scripts](https://badges.velociraptor.run/flat.svg)](https://velociraptor.run)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/423f506b-ad3e-4e3b-991f-0b30c7678c99/deploy-status)](https://app.netlify.com/sites/jster/deploys) [![vr scripts](https://badges.velociraptor.run/flat.svg)](https://velociraptor.run)
 
 # JSter - Website v2
 
