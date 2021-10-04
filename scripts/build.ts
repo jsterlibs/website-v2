@@ -8,6 +8,14 @@ import { getStyleSheet } from "../src/getStyleSheet.ts";
 function build() {
   console.log("Building to static");
 
+  // TODO: Maybe generateRoutes should become awaitable
+  const startTime = performance.now();
+  window.onunload = () => {
+    const endTime = performance.now();
+
+    console.log(`Completed in ${endTime - startTime}ms`);
+  };
+
   const components = getComponents("./components.json");
   const outputDirectory = "./build";
 
@@ -23,12 +31,15 @@ function build() {
   });
   generateRoutes({
     renderPage(route, path, context) {
-      // TODO: Render to filesystem
       console.log("Building", route);
 
+      const dir = join(outputDirectory, route);
+
+      ensureDirSync(dir);
+
       Deno.writeTextFileSync(
-        join(outputDirectory, route),
-        renderPage(path, context),
+        join(dir, "index.html"),
+        renderPage(route, path, context),
       );
     },
     pagesPath: "./pages",

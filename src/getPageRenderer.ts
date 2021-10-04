@@ -79,8 +79,11 @@ function htmlTemplate({ siteMeta, meta, head, body, mode }: {
     <meta property="twitter:site" content="${siteName}" />
     <title>${title}</title>
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
-    ${mode === "development" &&
-    '<script type="text/javascript" src="https://livejs.com/live.js"></script>'}
+    ${
+    mode === "development"
+      ? '<script type="text/javascript" src="https://livejs.com/live.js"></script>'
+      : ""
+  }
     ${generateMeta(meta)}
     ${head || ""}
   </head>
