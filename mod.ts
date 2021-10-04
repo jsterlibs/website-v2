@@ -19,11 +19,9 @@ async function serve(port: number) {
     siteMeta: { siteName: "JSter" },
   });
   generateRoutes({
-    getPage(path, context) {
-      // @ts-ignore Figure out the right way to type this (likely a generic)
-      router.get(path, context);
+    renderPage(route, path, context) {
+      router.get(route, renderPage(path, context));
     },
-    renderPage,
     pagesPath: "./pages",
   });
 

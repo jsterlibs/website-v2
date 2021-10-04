@@ -6,12 +6,13 @@ type Page = {
   dataSources?: { name: string; transformWith: string }[];
 };
 
-type PageRenderer = (path: string, data?: Record<string, unknown>) => void;
-
 function generateRoutes(
-  { getPage, renderPage, pagesPath }: {
-    getPage(path: string, context: void): void;
-    renderPage: PageRenderer;
+  { renderPage, pagesPath }: {
+    renderPage: (
+      route: string,
+      path: string,
+      data: Record<string, unknown>,
+    ) => void;
     pagesPath: string;
   },
 ) {
@@ -51,21 +52,22 @@ function generateRoutes(
           if (matchBy) {
             const dataSource = pageData[matchBy.dataSource];
 
-            Object.values(dataSource).forEach((v) => {
-              getPage(
+            Object.values(dataSource).forEach((v) =>
+              renderPage(
                 `/${routerPath}/${v.id}`,
-                renderPage(path, { ...pageData, match: v }),
-              );
-            });
+                path,
+                { ...pageData, match: v },
+              )
+            );
           } else {
             console.warn(`Path ${rootPath} is missing a matchBy`);
           }
         } else {
-          getPage(`/${rootPath}`, renderPage(path, pageData));
+          renderPage(`/${rootPath}`, path, pageData);
         }
       });
     } else {
-      getPage(`/${rootPath}`, renderPage(path));
+      renderPage(`/${rootPath}`, path, {});
     }
   });
 }
