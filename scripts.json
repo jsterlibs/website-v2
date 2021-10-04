@@ -8,6 +8,13 @@
       "cmd": "deno run --unstable mod.ts",
       "watch": true
     },
+    "build": {
+      "cmd": "deno run --unstable scripts/build.ts"
+    },
+    "watch:build": {
+      "cmd": "deno run --unstable scripts/build.ts",
+      "watch": true
+    },
     "get-blogposts": {
       "cmd": "deno run --unstable scripts/get-blogposts.ts"
     },
