@@ -1,0 +1,85 @@
+type: static
+title: "JSter #173: Libraries, and more"
+short_title: "JSter #173"
+user: bebraw
+slug: jster-173
+body: |
+  > JavaScript in space is a real thing
+
+  We've completed this year's [React Finland](https://react-finland.fi/2021/schedule/) and the content is available online. Hopefully we can run a live event next year!
+
+  ## Libraries
+
+  * [BuilderIO/partytown](https://github.com/BuilderIO/partytown) - Relocate resource intensive third-party scripts off of the main thread and into a web worker.
+  * [Motion One: The Web Animations API for everyone](https://motion.dev/)
+  * [ChowJS: an AOT JavaScript engine for game consoles](https://mp2.dk/techblog/chowjs/)
+  * [jamiemccrindle/axax](https://github.com/jamiemccrindle/axax) - Async Iterator Extensions for JavaScript e.g. map, reduce, filter, flatMap, etc.
+  * [simdjson/simdjson/releases/tag/v1.0.0](https://github.com/simdjson/simdjson/releases/tag/v1.0.0) - Parsing gigabytes of JSON per second
+  * [modern-async](https://www.npmjs.com/package/modern-async) - A modern JavaScript tooling library for asynchronous operations using async/await and promises
+  * [shiki](https://github.com/shikijs/shiki) - A beautiful Syntax Highlighter
+  * [plausible/analytics](https://github.com/plausible/analytics) - Simple, open-source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
+  * [Stitches v1.0](https://stitches.dev/) - Style your components with confidence
+
+  ## CSS
+
+  * [Grainy Gradients](https://css-tricks.com/grainy-gradients/)
+  * [Houdini.how](https://houdini.how/) - How to implement features with Houdini
+  * [Deep dive CSS: font metrics, line-height and vertical-align](https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
+
+  ## Standards
+
+  * [Worker Environments](https://workers.js.org/) - Worker Environments are the new standard for writing HTTP servers in JavaScript.
+
+  ## Services
+
+  * [bundle](https://bundle.js.org/) - A quick npm package size checker
+  * [Deno Visualizer](https://deno-visualizer.danopia.net/)
+
+  ## Design Systems
+
+  * [Welcome to the W3C design system](https://design-system.w3.org/)
+  * [UI Guideline](https://www.uiguideline.com/components) - The definitive guide to standardize the design/code of the UI Components based on the 39 most popular Reference Systems.
+
+  ## Demos
+
+  * [phoboslab/q1k3](https://github.com/phoboslab/q1k3) - A tiny FPS for js13k
+
+  ## Articles
+
+  * [How Svelte scopes component styles](https://geoffrich.net/posts/svelte-scoped-styles/)
+  * [Symbols explained](https://gist.github.com/robinpokorny/01019f85dc41fe6196f957a9d6c89480)
+  * [Dissecting Deno](https://fettblog.eu/dissecting-deno/)
+  * [Twitter's div Soup and Uglyfied CSS, Explained](https://giuseppegurgone.com/twitter-html/)
+  * [NPM package with 3 million weekly downloads had a severe vulnerability](https://arstechnica.com/information-technology/2021/09/npm-package-with-3-million-weekly-downloads-had-a-severe-vulnerability/)
+  * [Why Developers Never Use State Machines](https://skorks.com/2011/09/why-developers-never-use-state-machines/)
+  * [I've used the pipe() function 2,560 times and I can tell you it's good!](https://www.obvibase.com/dev-blog/i-ve-used-the-pipe-function-2-560-times-and-i-can-tell-you-it-s-good)
+  * [React 18: Things You Need To Know About React JS Latest Version](https://dzone.com/articles/react-18-things-you-need-to-know-about-react-js-la)
+
+  ## TypeScript
+
+  * [TypeScript 4.4](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-4.html)
+  * [Parse, don’t validate, incoming data in TypeScript.](https://itnext.io/parse-dont-validate-incoming-data-in-typescript-d6d5bfb092c8)
+  * [React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/)
+
+  ## Techniques
+
+  * [Precise control, fewer bugs with statecharts](https://medium.com/houston-io/precise-control-fewer-bugs-statecharting-a-phone-input-field-829bba2571cd)
+
+  ## Starters
+
+  * [Epiczzor/r3f-template](https://github.com/Epiczzor/r3f-template) - A starter project for react-three-fiber and some more useful packages
+  * [Elliotclyde/esbuild-react-starter](https://github.com/Elliotclyde/esbuild-react-starter) - A super simple starter pack for esbuild and react
+
+  ## Videos
+
+  * [Ryan Carniato on SolidJS](https://www.youtube.com/watch?v=2iK9zzhSKo4)
+
+  ## GraphQL
+
+  * [Lessons learned from running GraphQL at scale](https://blog.dream11engineering.com/lessons-learned-from-running-graphql-at-scale-2ad60b3cefeb)
+
+  ## Tools
+
+  * [Accessibility Insights](https://accessibilityinsights.io/)
+  * [leanup](https://github.com/leanupjs/leanup) - Generic CLI to develop, test and build a SPA/PWA (framework independently)
+  * [Responsive viewer for Chrome](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)
