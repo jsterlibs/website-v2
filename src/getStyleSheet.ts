@@ -1,7 +1,7 @@
-import { virtualSheet } from "twind-sheets";
-import { setup } from "twind";
-import * as colors from "twind-colors";
-import typography from "twind-typography";
+import { virtualSheet } from "https://unpkg.com/twind@0.16.16/sheets/sheets.js";
+import { setup } from "https://unpkg.com/twind@0.16.16/twind.js";
+import * as colors from "https://unpkg.com/twind@0.16.16/colors/colors.js";
+import typography from "https://unpkg.com/@twind/typography@0.0.2/typography.js";
 
 // https://twind.dev/handbook/the-shim.html#server
 function getStyleSheet() {

@@ -1,6 +1,6 @@
-import { tw } from "twind";
-import { Marked } from "markdown";
-import { get } from "utils";
+import { tw } from "https://unpkg.com/twind@0.16.16/twind.js";
+import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import { get } from "../scripts/utils.ts";
 import type {
   Attributes,
   Component,

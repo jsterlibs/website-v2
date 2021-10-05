@@ -1,5 +1,5 @@
-import { getStyleTag } from "twind-sheets";
-import { get, getJsonSync } from "utils";
+import { getStyleTag } from "https://unpkg.com/twind@0.16.16/sheets/sheets.js";
+import { get, getJsonSync } from "../scripts/utils.ts";
 import { renderComponent } from "./renderComponent.ts";
 import type { Component, Components, DataContext, SiteMeta } from "../types.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";

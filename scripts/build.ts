@@ -1,9 +1,9 @@
 import { ensureDirSync } from "fs";
-import { join } from "path";
-import { getComponents } from "utils";
+// import { join } from "path";
+// import { getComponents } from "utils";
 import { generateRoutes } from "../src/generateRoutes.ts";
-import { getPageRenderer } from "../src/getPageRenderer.ts";
-import { getStyleSheet } from "../src/getStyleSheet.ts";
+// import { getPageRenderer } from "../src/getPageRenderer.ts";
+// import { getStyleSheet } from "../src/getStyleSheet.ts";
 
 function build() {
   console.log("Building to static");
@@ -16,11 +16,15 @@ function build() {
     console.log(`Completed in ${endTime - startTime}ms`);
   };
 
-  const components = getComponents("./components.json");
+  // const components = getComponents("./components.json");
   const outputDirectory = "./build";
+
+  const worker = createWorker();
+  worker.postMessage({ event: "init" });
 
   ensureDirSync(outputDirectory);
 
+  /*
   const stylesheet = getStyleSheet();
   const renderPage = getPageRenderer({
     components,
@@ -29,11 +33,13 @@ function build() {
     // TODO: Extract to meta.json
     siteMeta: { siteName: "JSter" },
   });
+  */
   generateRoutes({
     renderPage(route, path, context) {
       // TODO: Push this behind a verbose flag
       // console.log("Building", route);
 
+      /*
       const dir = join(outputDirectory, route);
 
       ensureDirSync(dir);
@@ -42,8 +48,18 @@ function build() {
         join(dir, "index.html"),
         renderPage(route, path, context),
       );
+      */
     },
     pagesPath: "./pages",
+  });
+}
+
+function createWorker() {
+  return new Worker(new URL("./build-worker.ts", import.meta.url).href, {
+    type: "module",
+    deno: {
+      namespace: true,
+    },
   });
 }
 

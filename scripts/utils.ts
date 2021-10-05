@@ -1,4 +1,4 @@
-import * as path from "path";
+import * as path from "https://deno.land/std@0.107.0/path/mod.ts";
 import type { Components } from "../types.ts";
 
 function getJsonSync<R>(filePath: string): R {
