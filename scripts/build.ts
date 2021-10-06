@@ -1,4 +1,4 @@
-import { ensureDirSync } from "fs";
+import { ensureDir } from "fs";
 import { join } from "path";
 import { getComponents } from "utils";
 import { generateRoutes } from "../src/generateRoutes.ts";
@@ -19,31 +19,31 @@ function build() {
   const components = getComponents("./components.json");
   const outputDirectory = "./build";
 
-  ensureDirSync(outputDirectory);
+  ensureDir(outputDirectory).then(() => {
+    const stylesheet = getStyleSheet();
+    const renderPage = getPageRenderer({
+      components,
+      stylesheet,
+      mode: "production",
+      // TODO: Extract to meta.json
+      siteMeta: { siteName: "JSter" },
+    });
+    generateRoutes({
+      renderPage(route, path, context) {
+        // TODO: Push this behind a verbose flag
+        // console.log("Building", route);
 
-  const stylesheet = getStyleSheet();
-  const renderPage = getPageRenderer({
-    components,
-    stylesheet,
-    mode: "production",
-    // TODO: Extract to meta.json
-    siteMeta: { siteName: "JSter" },
-  });
-  generateRoutes({
-    renderPage(route, path, context) {
-      // TODO: Push this behind a verbose flag
-      // console.log("Building", route);
+        const dir = join(outputDirectory, route);
 
-      const dir = join(outputDirectory, route);
-
-      ensureDirSync(dir);
-
-      Deno.writeTextFile(
-        join(dir, "index.html"),
-        renderPage(route, path, context),
-      ).catch((err) => console.error(err));
-    },
-    pagesPath: "./pages",
+        ensureDir(dir).then(() =>
+          Deno.writeTextFile(
+            join(dir, "index.html"),
+            renderPage(route, path, context),
+          ).catch((err) => console.error(err))
+        );
+      },
+      pagesPath: "./pages",
+    });
   });
 }
 
