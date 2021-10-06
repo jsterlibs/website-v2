@@ -1,6 +1,10 @@
 import * as path from "path";
 import type { Components } from "../types.ts";
 
+function getJson<R>(filePath: string): Promise<R> {
+  return Deno.readTextFile(filePath).then((d) => JSON.parse(d));
+}
+
 function getJsonSync<R>(filePath: string): R {
   return JSON.parse(Deno.readTextFileSync(filePath));
 }
@@ -60,6 +64,7 @@ export {
   dir,
   get,
   getComponents,
+  getJson,
   getJsonSync,
   isObject,
   last,

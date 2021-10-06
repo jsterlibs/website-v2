@@ -21,15 +21,21 @@ async function serve(port: number) {
   });
   generateRoutes({
     renderPage(route, path, context) {
-      router.get(route, (ctx) => {
+      router.get(route, async (ctx) => {
         try {
           ctx.response.headers.set(
             "Content-Type",
             "text/html; charset=UTF-8",
           );
 
+          const data = await renderPage(
+            ctx.request.url.pathname,
+            path,
+            context,
+          );
+
           ctx.response.body = new TextEncoder().encode(
-            renderPage(ctx.request.url.pathname, path, context),
+            data,
           );
         } catch (err) {
           console.error(err);

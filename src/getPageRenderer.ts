@@ -1,5 +1,5 @@
 import { getStyleTag } from "twind-sheets";
-import { get, getJsonSync } from "utils";
+import { get, getJson } from "utils";
 import { renderComponent } from "./renderComponent.ts";
 import type { Component, Components, DataContext, SiteMeta } from "../types.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
@@ -15,27 +15,27 @@ function getPageRenderer(
     siteMeta: SiteMeta;
   },
 ) {
-  return (pathname: string, pagePath: string, pageData?: DataContext) => {
-    const { meta, page } = getJsonSync<{ meta: Meta; page: Component }>(
-      pagePath,
-    );
-    const body = renderComponent(
-      {
-        children: Array.isArray(page) ? page : [page],
-      },
-      components,
-      { ...pageData, pathname },
-    );
-    const styleTag = getStyleTag(stylesheet);
+  return (pathname: string, pagePath: string, pageData?: DataContext) =>
+    getJson<{ meta: Meta; page: Component }>(pagePath).then(
+      ({ meta, page }) => {
+        const body = renderComponent(
+          {
+            children: Array.isArray(page) ? page : [page],
+          },
+          components,
+          { ...pageData, pathname },
+        );
+        const styleTag = getStyleTag(stylesheet);
 
-    return htmlTemplate({
-      siteMeta,
-      meta: applyData(meta, { ...pageData, pathname }),
-      head: styleTag,
-      body,
-      mode,
-    });
-  };
+        return htmlTemplate({
+          siteMeta,
+          meta: applyData(meta, { ...pageData, pathname }),
+          head: styleTag,
+          body,
+          mode,
+        });
+      },
+    );
 }
 
 function applyData(meta: Meta, dataContext?: DataContext) {

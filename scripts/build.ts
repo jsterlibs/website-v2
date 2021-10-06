@@ -36,9 +36,8 @@ function build() {
         const dir = join(outputDirectory, route);
 
         ensureDir(dir).then(() =>
-          Deno.writeTextFile(
-            join(dir, "index.html"),
-            renderPage(route, path, context),
+          renderPage(route, path, context).then((d) =>
+            Deno.writeTextFile(join(dir, "index.html"), d)
           ).catch((err) => console.error(err))
         );
       },
