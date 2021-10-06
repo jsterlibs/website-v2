@@ -38,10 +38,10 @@ function build() {
 
       ensureDirSync(dir);
 
-      Deno.writeTextFileSync(
+      Deno.writeTextFile(
         join(dir, "index.html"),
         renderPage(route, path, context),
-      );
+      ).catch((err) => console.error(err));
     },
     pagesPath: "./pages",
   });
