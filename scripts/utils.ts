@@ -36,7 +36,17 @@ function get<O = Record<string, unknown>>(dataContext: O, key: string): string {
   return value as unknown as string;
 }
 
-function dir(p: string) {
+async function dir(p: string) {
+  const ret = [];
+
+  for await (const { name } of Deno.readDir(p)) {
+    ret.push({ path: path.join(p, name), name });
+  }
+
+  return ret;
+}
+
+function dirSync(p: string) {
   const ret = [];
 
   for (const { name } of Deno.readDirSync(p)) {
@@ -74,6 +84,7 @@ async function watch(
 
 export {
   dir,
+  dirSync,
   get,
   getComponents,
   getJson,

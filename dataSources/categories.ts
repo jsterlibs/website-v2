@@ -1,12 +1,15 @@
-import { getJsonSync } from "utils";
+import { getJson } from "utils";
 import type { Category, Library } from "../types.ts";
 
-function getCategories() {
-  // TODO: Attach libraries to each category
-  return getJsonSync<Category[]>("./data/categories.json").map((category) => ({
+async function getCategories() {
+  const categories = await getJson<Category[]>("./data/categories.json");
+
+  return Promise.all(categories.map(async (
+    category,
+  ) => ({
     ...category,
-    libraries: getJsonSync<Library[]>(`data/categories/${category.id}.json`),
-  }));
+    libraries: await getJson<Library[]>(`data/categories/${category.id}.json`),
+  })));
 }
 
 export default getCategories;

@@ -6,7 +6,7 @@ type Page = {
   dataSources?: { name: string; transformWith: string }[];
 };
 
-function generateRoutes(
+async function generateRoutes(
   { renderPage, pagesPath }: {
     renderPage: (
       route: string,
@@ -16,7 +16,7 @@ function generateRoutes(
     pagesPath: string;
   },
 ) {
-  const pages = dir(pagesPath).map((o) => ({
+  const pages = (await dir(pagesPath)).map((o) => ({
     ...o,
     ...getJsonSync<Page>(o.path),
   }));
@@ -28,8 +28,8 @@ function generateRoutes(
     if (dataSources) {
       Promise.all(
         dataSources.map(({ name, transformWith }) =>
-          import(`../dataSources/${name}.ts`).then((o) => {
-            let data = o.default();
+          import(`../dataSources/${name}.ts`).then(async (o) => {
+            let data = await o.default();
 
             if (transformWith === "reversed") {
               data = reversed(data);

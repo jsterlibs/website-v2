@@ -1,5 +1,5 @@
 import { Marked, Renderer } from "markdown";
-import { dir, getJsonSync } from "utils";
+import { dir, getJson } from "utils";
 import YAML from "yaml";
 import type { BlogPost } from "../types.ts";
 
@@ -17,11 +17,11 @@ Marked.setOptions({
   smartypants: true,
 });
 
-function getBlogPosts() {
-  const blogIndex = getJsonSync<
+async function getBlogPosts() {
+  const blogIndex = await getJson<
     IndexEntry[]
   >("./data/blogposts.json");
-  const blogPosts: BlogPost[] = dir("./data/blogposts").map(
+  const blogPosts: BlogPost[] = (await dir("./data/blogposts")).map(
     ({ name, path }) => {
       const yaml = YAML.parse(Deno.readTextFileSync(path));
 

@@ -27,7 +27,7 @@ async function serve(port: number) {
     // TODO: Extract to meta.json
     siteMeta: { siteName: "JSter" },
   });
-  generateRoutes({
+  await generateRoutes({
     renderPage(route, path, context) {
       router.get(route, async (ctx) => {
         try {
