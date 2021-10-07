@@ -1,11 +1,11 @@
 {
-  "allow": ["env", "read", "write", "net"],
+  "allow": ["env", "read", "write", "net", "run"],
   "env": {
     "NO_COLOR": 1
   },
   "scripts": {
     "start": {
-      "cmd": "deno run --unstable mod.ts",
+      "cmd": "deno run --no-check --unstable mod.ts",
       "watch": true
     },
     "build": {

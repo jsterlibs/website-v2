@@ -1,5 +1,5 @@
 import { Application, Router } from "oak";
-import { getComponents } from "utils";
+import { getComponents, watch } from "utils";
 import { generateRoutes } from "./src/generateRoutes.ts";
 import { getPageRenderer } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
@@ -10,6 +10,14 @@ async function serve(port: number) {
   const components = getComponents("./components.json");
   const app = new Application();
   const router = new Router();
+
+  // Touch this file if any json file in the project changes to trigger
+  // a rebuild.
+  watch(
+    ".",
+    ".json",
+    () => Deno.run({ cmd: ["touch", new URL("", import.meta.url).pathname] }),
+  );
 
   const stylesheet = getStyleSheet();
   const renderPage = getPageRenderer({

@@ -60,6 +60,18 @@ function reversed(arr: unknown[]) {
   return [...arr].reverse();
 }
 
+async function watch(
+  directory: string,
+  extension: string,
+  handler: (path: string) => void,
+) {
+  const watcher = Deno.watchFs(directory);
+
+  for await (const event of watcher) {
+    event.paths.forEach((p) => p.endsWith(extension) && handler(p));
+  }
+}
+
 export {
   dir,
   get,
@@ -69,5 +81,6 @@ export {
   isObject,
   last,
   reversed,
+  watch,
   zipToObject,
 };
