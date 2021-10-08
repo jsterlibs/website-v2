@@ -1,10 +1,5 @@
 import { dir, getJsonSync, reversed, zipToObject } from "utils";
-
-type Page = {
-  meta: Record<string, string>;
-  matchBy?: { dataSource: string; field: string };
-  dataSources?: { name: string; transformWith: string }[];
-};
+import type { Page } from "../types.ts";
 
 async function generateRoutes(
   { renderPage, pagesPath }: {
@@ -12,6 +7,7 @@ async function generateRoutes(
       route: string,
       path: string,
       data: Record<string, unknown>,
+      page: Page,
     ) => void;
     pagesPath: string;
   },
@@ -21,7 +17,8 @@ async function generateRoutes(
     ...getJsonSync<Page>(o.path),
   }));
 
-  pages.forEach(({ dataSources, matchBy, name, path }) => {
+  pages.forEach((page) => {
+    const { dataSources, matchBy, name, path } = page;
     let rootPath = name.split(".").slice(0, -1).join(".");
     rootPath = rootPath === "index" ? "" : rootPath;
 
@@ -57,17 +54,18 @@ async function generateRoutes(
                 `/${routerPath}/${v.id}`,
                 path,
                 { ...pageData, match: v },
+                page,
               )
             );
           } else {
             console.warn(`Path ${rootPath} is missing a matchBy`);
           }
         } else {
-          renderPage(`/${rootPath}`, path, pageData);
+          renderPage(`/${rootPath}`, path, pageData, page);
         }
       });
     } else {
-      renderPage(`/${rootPath}`, path, {});
+      renderPage(`/${rootPath}`, path, {}, page);
     }
   });
 }

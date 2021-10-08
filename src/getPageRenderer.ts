@@ -1,7 +1,13 @@
 import { getStyleTag } from "twind-sheets";
 import { get, getJson } from "utils";
 import { renderComponent } from "./renderComponent.ts";
-import type { Component, Components, DataContext, SiteMeta } from "../types.ts";
+import type {
+  Component,
+  Components,
+  DataContext,
+  Page,
+  SiteMeta,
+} from "../types.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
 
 type Mode = "development" | "production";
@@ -15,12 +21,19 @@ function getPageRenderer(
     siteMeta: SiteMeta;
   },
 ) {
-  return (pathname: string, pagePath: string, pageData?: DataContext) =>
+  return (
+    pathname: string,
+    pagePath: string,
+    pageData: DataContext,
+    page: Page,
+  ) =>
     getJson<{ meta: Meta; page: Component }>(pagePath).then(
-      ({ meta, page }) => {
+      ({ meta, page: pageComponent }) => {
         const body = renderComponent(
           {
-            children: Array.isArray(page) ? page : [page],
+            children: Array.isArray(pageComponent)
+              ? pageComponent
+              : [pageComponent],
           },
           components,
           { ...pageData, pathname },
@@ -33,6 +46,7 @@ function getPageRenderer(
           head: styleTag,
           body,
           mode,
+          page,
         });
       },
     );
@@ -52,12 +66,13 @@ function applyData(meta: Meta, dataContext?: DataContext) {
   return ret;
 }
 
-function htmlTemplate({ siteMeta, meta, head, body, mode }: {
+function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
   siteMeta: SiteMeta;
   meta: Meta;
   head?: string;
   body?: string;
   mode: Mode;
+  page: Page;
 }) {
   const siteName = siteMeta.siteName || "";
   const title = meta.title || "";
@@ -92,11 +107,7 @@ function htmlTemplate({ siteMeta, meta, head, body, mode }: {
   </head>
   <body>
     <wc-codemirror mode="javascript" theme="monokai">
-      <script type="wc-content">
-      function myGoodPerson(){
-        return "what can I do for you ?"
-      }
-      </script>
+      <script type="wc-content">${JSON.stringify(page, null, 2)}</script>
     </wc-codemirror>
     ${body || ""}
   </body>

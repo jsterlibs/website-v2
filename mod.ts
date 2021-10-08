@@ -28,7 +28,7 @@ async function serve(port: number) {
     siteMeta: { siteName: "JSter" },
   });
   await generateRoutes({
-    renderPage(route, path, context) {
+    renderPage(route, path, context, page) {
       router.get(route, async (ctx) => {
         try {
           ctx.response.headers.set(
@@ -40,6 +40,7 @@ async function serve(port: number) {
             ctx.request.url.pathname,
             path,
             context,
+            page,
           );
 
           ctx.response.body = new TextEncoder().encode(
