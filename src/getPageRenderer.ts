@@ -81,13 +81,25 @@ function htmlTemplate({ siteMeta, meta, head, body, mode }: {
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
     ${
     mode === "development"
-      ? '<script type="text/javascript" src="https://livejs.com/live.js"></script>'
+      ? `<script type="text/javascript" src="https://livejs.com/live.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/index.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/mode/javascript/javascript.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/theme/monokai.css">`
       : ""
   }
     ${generateMeta(meta)}
     ${head || ""}
   </head>
-  <body>${body || ""}</body>
+  <body>
+    <wc-codemirror mode="javascript" theme="monokai">
+      <script type="wc-content">
+      function myGoodPerson(){
+        return "what can I do for you ?"
+      }
+      </script>
+    </wc-codemirror>
+    ${body || ""}
+  </body>
 </html>`;
 }
 
