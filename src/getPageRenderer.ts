@@ -98,27 +98,36 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
     mode === "development"
       ? `<script type="text/javascript" src="https://livejs.com/live.js"></script>
 <script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
-<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/index.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/mode/javascript/javascript.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/theme/monokai.css">`
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/josdejong/jsoneditor/dist/jsoneditor.min.css">
+<script src="https://cdn.jsdelivr.net/gh/josdejong/jsoneditor/dist/jsoneditor.min.js"></script>`
       : ""
   }
     ${generateMeta(meta)}
     ${head || ""}
   </head>
   <body>
-    <div x-state="{ showEditor: false }">
+    ${
+    mode === "development"
+      ? `<div x-state="{ showEditor: false }">
       <button type="button" class="fixed bottom-0 right-0 m-2" onclick="setState(({ showEditor }) => ({ showEditor: !showEditor }))">
         <div x-class="state.showEditor && 'hidden'">Show editor</div>
         <div x-class="!state.showEditor && 'hidden'">Hide editor</div>
       </button>
       <div x-class="!state.showEditor && 'hidden'">
-        <wc-codemirror mode="javascript" theme="monokai">
-          <script type="wc-content">${JSON.stringify(page, null, 2)}</script>
-        </wc-codemirror>
+        <div id="jsoneditor" class="w-full h-1/2"></div>
       </div>
+      <script>
+      const container = document.getElementById("jsoneditor")
+      const options = {}
+      const editor = new JSONEditor(container, options)
+      const initialJson = ${JSON.stringify(page, null, 2)}
+  
+      editor.set(initialJson)
+  </script>
       ${body || ""}
-    </div>
+    </div>`
+      : body || ""
+  }
   </body>
 </html>`;
 }
