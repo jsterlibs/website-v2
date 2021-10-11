@@ -136,8 +136,8 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
       });
 
       editor.set(${JSON.stringify(page, null, 2)});
-  </script>
-      ${body || ""}
+      </script>
+      <div id="pagebody">${body || ""}</div>
     </div>`
       : body || ""
   }

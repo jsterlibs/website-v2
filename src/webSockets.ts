@@ -12,7 +12,7 @@ const getWebsocketServer = (port = 8080) => {
   wss.on("connection", (ws) => {
     console.log("wss - Connected");
 
-    ws.send("connected");
+    ws.send(JSON.stringify({ type: "log", payload: "connected" }));
 
     ws.on("message", (message: string) => {
       const { type, payload: { path, data } }: WebSocketMessage = JSON.parse(
@@ -20,10 +20,10 @@ const getWebsocketServer = (port = 8080) => {
       );
 
       if (type === "update") {
-        ws.send(`received ${type}`);
+        ws.send(JSON.stringify({ type: "log", payload: `received ${type}` }));
 
         Deno.writeTextFile(path, JSON.stringify(data, null, 2)).then(() =>
-          ws.send(`wrote to ${path}`)
+          ws.send(JSON.stringify({ type: "log", payload: `wrote to ${path}` }))
         )
           .catch((err) => ws.send(`error: ${err}`));
       }
@@ -36,12 +36,26 @@ const getWebsocketServer = (port = 8080) => {
 const websocketClient = `const socket = new WebSocket('ws://localhost:8080');
   
 socket.addEventListener('message', (event) => {
-  if (event.data === 'connected') {
-    console.log('WebSocket - connected');
+  let type, payload;
+
+  try {
+    const data = JSON.parse(event.data);
+
+    type = data.type;
+    payload = data.payload;
+  } catch(err) {
+    console.error(event, err);
+
+    return;
   }
-  else if (event.data === 'refresh') {
-    /* TODO: What to do now? Is it better to do a partial render in the frontend? */
-    /* location.reload(); */
+
+  if (type === 'log') {
+    console.log('WebSocket', payload);
+  }
+  else if (type === 'refresh') {
+    /* TODO: Handle updating meta info as well, not just content */
+    const container = document.getElementById("pagebody");
+    container.innerHTML = payload;
   }
   else {
     console.log(event);

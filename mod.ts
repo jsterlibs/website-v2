@@ -22,7 +22,14 @@ async function serve(port: number) {
         if (socket.state === 1) {
           console.log("watch - Refresh ws");
 
-          socket.send("refresh");
+          // TODO: Send re-rendered page in payload
+          // TODO: Figure out how to handle meta updates (separate field)
+          socket.send(
+            JSON.stringify({
+              type: "refresh",
+              payload: "<div>hello from server</div>",
+            }),
+          );
         }
       });
     },
