@@ -117,12 +117,15 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
         <div id="jsoneditor" class="w-full h-1/2"></div>
       </div>
       <script>
-      const container = document.getElementById("jsoneditor")
-      const options = {}
-      const editor = new JSONEditor(container, options)
-      const initialJson = ${JSON.stringify(page, null, 2)}
-  
-      editor.set(initialJson)
+      const container = document.getElementById("jsoneditor");
+      const editor = new JSONEditor(container, {
+        onChangeJSON(json) {
+          // TODO: Send the changed JSON to the server
+          console.log('JSON changed', json)
+        }
+      });
+
+      editor.set(${JSON.stringify(page, null, 2)});
   </script>
       ${body || ""}
     </div>`
