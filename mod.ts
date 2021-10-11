@@ -22,7 +22,7 @@ async function serve(port: number, pagesPath: string) {
     // TODO: Extract to meta.json
     siteMeta: { siteName: "JSter" },
   });
-  const routes = await generateRoutes({
+  const { paths } = await generateRoutes({
     renderPage(route, path, context, page) {
       router.get(route, async (ctx) => {
         try {
@@ -67,14 +67,14 @@ async function serve(port: number, pagesPath: string) {
             pagesPath,
             basename(matchedPath, import.meta.url),
           );
-          const path = routes[pagePath];
+          const path = paths[pagePath];
 
           if (!path) {
             console.error(
               "Failed to find match for",
               matchedPath,
               "in",
-              Object.keys(routes),
+              Object.keys(paths),
             );
 
             return;

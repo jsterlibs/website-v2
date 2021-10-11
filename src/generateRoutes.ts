@@ -16,8 +16,11 @@ async function generateRoutes(
     meta,
     page: getJsonSync<Page>(meta.path),
   }));
-  const ret: Record<string, { context: Record<string, unknown>; page: Page }> =
-    {};
+  const paths: Record<
+    string,
+    { context: Record<string, unknown>; page: Page }
+  > = {};
+  const routes: string[] = [];
 
   await Promise.all(pages.map(async ({ page, meta: { name, path } }) => {
     const { dataSources, matchBy } = page;
@@ -62,25 +65,32 @@ async function generateRoutes(
                 page,
               );
 
-              ret[path] = { context, page };
+              paths[path] = { context, page };
+              routes.push(route);
             });
           } else {
             console.warn(`Path ${rootPath} is missing a matchBy`);
           }
         } else {
-          renderPage(`/${rootPath}`, path, pageData, page);
+          const route = `/${rootPath}`;
 
-          ret[path] = { context: pageData, page };
+          renderPage(route, path, pageData, page);
+
+          paths[path] = { context: pageData, page };
+          routes.push(route);
         }
       });
     } else {
-      renderPage(`/${rootPath}`, path, {}, page);
+      const route = `/${rootPath}`;
 
-      ret[path] = { context: {}, page };
+      renderPage(route, path, {}, page);
+
+      paths[path] = { context: {}, page };
+      routes.push(route);
     }
   }));
 
-  return ret;
+  return { paths, routes };
 }
 
 export { generateRoutes };

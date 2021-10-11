@@ -8,18 +8,27 @@ import { getStyleSheet } from "../src/getStyleSheet.ts";
 function build() {
   console.log("Building to static");
 
+  let routes: string[] = [];
+
   // TODO: Maybe generateRoutes should become awaitable
   const startTime = performance.now();
   window.onunload = () => {
     const endTime = performance.now();
+    const duration = endTime - startTime;
+    const routeAmount = routes.length;
 
-    console.log(`Completed in ${endTime - startTime}ms`);
+    console.log(
+      `Generated ${routeAmount} pages in ${duration}ms.\nAverage: ${Math.round(
+        duration /
+          routeAmount * 1000,
+      ) / 1000} ms per page.`,
+    );
   };
 
   const components = getComponents("./components.json");
   const outputDirectory = "./build";
 
-  ensureDir(outputDirectory).then(() => {
+  ensureDir(outputDirectory).then(async () => {
     const stylesheet = getStyleSheet();
     const renderPage = getPageRenderer({
       components,
@@ -28,7 +37,7 @@ function build() {
       // TODO: Extract to meta.json
       siteMeta: { siteName: "JSter" },
     });
-    generateRoutes({
+    const ret = await generateRoutes({
       renderPage(route, path, context, page) {
         // TODO: Push this behind a verbose flag
         // console.log("Building", route);
@@ -43,6 +52,8 @@ function build() {
       },
       pagesPath: "./pages",
     });
+
+    routes = ret.routes;
   });
 }
 
