@@ -29,14 +29,14 @@ function build() {
       siteMeta: { siteName: "JSter" },
     });
     generateRoutes({
-      renderPage(route, path, context) {
+      renderPage(route, path, context, page) {
         // TODO: Push this behind a verbose flag
         // console.log("Building", route);
 
         const dir = join(outputDirectory, route);
 
         ensureDir(dir).then(() =>
-          renderPage(route, path, context).then((d) =>
+          renderPage(route, path, context, page).then((d) =>
             Deno.writeTextFile(join(dir, "index.html"), d)
           ).catch((err) => console.error(err))
         );

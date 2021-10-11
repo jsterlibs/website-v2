@@ -43,7 +43,11 @@ function getPageRenderer(
 
         return htmlTemplate({
           siteMeta,
-          meta: applyData(meta, { ...pageData, pathname }),
+          meta: {
+            ...applyData(meta, { ...pageData, pathname, pagePath }),
+            pathname,
+            pagePath,
+          },
           head: styleTag,
           body,
           mode,
@@ -97,8 +101,7 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
     ${
     mode === "development"
-      ? `<script>${websocketClient}</script>
-<script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
+      ? `<script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/josdejong/jsoneditor/dist/jsoneditor.min.css">
 <script src="https://cdn.jsdelivr.net/gh/josdejong/jsoneditor/dist/jsoneditor.min.js"></script>`
       : ""
@@ -118,11 +121,17 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
         <div id="jsoneditor" class="w-full h-1/2"></div>
       </div>
       <script>
+      ${websocketClient}
       const container = document.getElementById("jsoneditor");
       const editor = new JSONEditor(container, {
-        onChangeJSON(json) {
-          // TODO: Send the changed JSON to the server
-          console.log('JSON changed', json)
+        onChangeJSON(data) {
+          socket.send(JSON.stringify({
+            type: 'update',
+            payload: {
+              path: "${meta.pagePath}",
+              data
+            }
+          }));
         }
       });
 

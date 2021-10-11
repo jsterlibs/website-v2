@@ -1,4 +1,10 @@
 import { WebSocketServer } from "websockets";
+import type { Page } from "../types.ts";
+
+type WebSocketMessage = {
+  type: "update";
+  payload: { path: string; data: Page };
+};
 
 const getWebsocketServer = (port = 8080) => {
   const wss = new WebSocketServer(port);
@@ -8,11 +14,20 @@ const getWebsocketServer = (port = 8080) => {
 
     ws.send("connected");
 
-    // Catch possible messages here
-    /*ws.on("message", (message: string) => {
-      console.log(message);
-      ws.send(message);
-    });*/
+    ws.on("message", (message: string) => {
+      const { type, payload: { path, data } }: WebSocketMessage = JSON.parse(
+        message,
+      );
+
+      if (type === "update") {
+        ws.send(`received ${type}`);
+
+        Deno.writeTextFile(path, JSON.stringify(data, null, 2)).then(() =>
+          ws.send(`wrote to ${path}`)
+        )
+          .catch((err) => ws.send(`error: ${err}`));
+      }
+    });
   });
 
   return wss;
@@ -24,9 +39,11 @@ socket.addEventListener('message', (event) => {
   if (event.data === 'connected') {
     console.log('WebSocket - connected');
   }
-
-  if (event.data === 'refresh') {
+  else if (event.data === 'refresh') {
     location.reload();
+  }
+  else {
+    console.log(event);
   }
 });`
   .split("\n")
