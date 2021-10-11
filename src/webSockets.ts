@@ -22,8 +22,11 @@ const getWebsocketServer = (port = 8080) => {
       if (type === "update") {
         ws.send(JSON.stringify({ type: "log", payload: `received ${type}` }));
 
-        Deno.writeTextFile(path, JSON.stringify(data, null, 2)).then(() =>
-          ws.send(JSON.stringify({ type: "log", payload: `wrote to ${path}` }))
+        Deno.writeTextFile(path, JSON.stringify(data, null, 2) + "\n").then(
+          () =>
+            ws.send(
+              JSON.stringify({ type: "log", payload: `wrote to ${path}` }),
+            )
         )
           .catch((err) => ws.send(`error: ${err}`));
       }
