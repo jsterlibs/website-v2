@@ -12,13 +12,13 @@ async function generateRoutes(
     pagesPath: string;
   },
 ) {
-  const pages = (await dir(pagesPath)).map((o) => ({
-    ...o,
-    ...getJsonSync<Page>(o.path),
+  const pages = (await dir(pagesPath)).map((meta) => ({
+    meta,
+    page: getJsonSync<Page>(meta.path),
   }));
 
-  pages.forEach((page) => {
-    const { dataSources, matchBy, name, path } = page;
+  pages.forEach(({ page, meta: { name, path } }) => {
+    const { dataSources, matchBy } = page;
     let rootPath = name.split(".").slice(0, -1).join(".");
     rootPath = rootPath === "index" ? "" : rootPath;
 
