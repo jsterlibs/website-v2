@@ -97,6 +97,7 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
     ${
     mode === "development"
       ? `<script type="text/javascript" src="https://livejs.com/live.js"></script>
+<script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
 <script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/index.js"></script>
 <script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/mode/javascript/javascript.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vanillawc/wc-codemirror@1/theme/monokai.css">`
@@ -106,10 +107,18 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
     ${head || ""}
   </head>
   <body>
-    <wc-codemirror mode="javascript" theme="monokai">
-      <script type="wc-content">${JSON.stringify(page, null, 2)}</script>
-    </wc-codemirror>
-    ${body || ""}
+    <div x-state="{ showEditor: false }">
+      <button type="button" class="fixed bottom-0 right-0 m-2" onclick="setState(({ showEditor }) => ({ showEditor: !showEditor }))">
+        <div x-class="state.showEditor && 'hidden'">Show editor</div>
+        <div x-class="!state.showEditor && 'hidden'">Hide editor</div>
+      </button>
+      <div x-class="!state.showEditor && 'hidden'">
+        <wc-codemirror mode="javascript" theme="monokai">
+          <script type="wc-content">${JSON.stringify(page, null, 2)}</script>
+        </wc-codemirror>
+      </div>
+      ${body || ""}
+    </div>
   </body>
 </html>`;
 }
