@@ -3,20 +3,29 @@ import { getComponents, watch } from "utils";
 import { generateRoutes } from "./src/generateRoutes.ts";
 import { getPageRenderer } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
+import { getWebsocketServer } from "./src/webSockets.ts";
 
 async function serve(port: number) {
   console.log(`Serving at ${port}`);
 
+  const wss = getWebsocketServer();
   const components = getComponents("./components.json");
   const app = new Application();
   const router = new Router();
 
-  // Touch this file if any json file in the project changes to trigger
-  // a rebuild.
   watch(
     ".",
     ".json",
-    () => Deno.run({ cmd: ["touch", new URL("", import.meta.url).pathname] }),
+    () => {
+      wss.clients.forEach((socket) => {
+        // 1 for open, https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
+        if (socket.state === 1) {
+          console.log("watch - Refresh ws");
+
+          socket.send("refresh");
+        }
+      });
+    },
   );
 
   const stylesheet = getStyleSheet();
@@ -62,7 +71,5 @@ async function serve(port: number) {
   await app.listen({ port });
 }
 
-// TODO: Make this configurable
-const port = 3000;
-
-serve(port);
+// TODO: Make port configurable
+serve(3000);

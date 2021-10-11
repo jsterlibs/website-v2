@@ -9,6 +9,7 @@ import type {
   SiteMeta,
 } from "../types.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
+import { websocketClient } from "./webSockets.ts";
 
 type Mode = "development" | "production";
 type Meta = Record<string, string>;
@@ -96,7 +97,7 @@ function htmlTemplate({ siteMeta, meta, head, body, mode, page }: {
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
     ${
     mode === "development"
-      ? `<script type="text/javascript" src="https://livejs.com/live.js"></script>
+      ? `<script>${websocketClient}</script>
 <script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/josdejong/jsoneditor/dist/jsoneditor.min.css">
 <script src="https://cdn.jsdelivr.net/gh/josdejong/jsoneditor/dist/jsoneditor.min.js"></script>`
