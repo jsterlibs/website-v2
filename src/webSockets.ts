@@ -40,7 +40,8 @@ socket.addEventListener('message', (event) => {
     console.log('WebSocket - connected');
   }
   else if (event.data === 'refresh') {
-    location.reload();
+    /* TODO: What to do now? Is it better to do a partial render in the frontend? */
+    /* location.reload(); */
   }
   else {
     console.log(event);
