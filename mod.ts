@@ -1,39 +1,18 @@
 import { Application, Router } from "oak";
 import { getComponents, watch } from "utils";
+import { basename, join } from "path";
 import { generateRoutes } from "./src/generateRoutes.ts";
 import { getPageRenderer } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
 import { getWebsocketServer } from "./src/webSockets.ts";
 
-async function serve(port: number) {
+async function serve(port: number, pagesPath: string) {
   console.log(`Serving at ${port}`);
 
   const wss = getWebsocketServer();
   const components = getComponents("./components.json");
   const app = new Application();
   const router = new Router();
-
-  watch(
-    ".",
-    ".json",
-    () => {
-      wss.clients.forEach((socket) => {
-        // 1 for open, https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
-        if (socket.state === 1) {
-          console.log("watch - Refresh ws");
-
-          // TODO: Send re-rendered page in payload
-          // TODO: Figure out how to handle meta updates (separate field)
-          socket.send(
-            JSON.stringify({
-              type: "refresh",
-              payload: "<div>hello from server</div>",
-            }),
-          );
-        }
-      });
-    },
-  );
 
   const stylesheet = getStyleSheet();
   const renderPage = getPageRenderer({
@@ -43,7 +22,7 @@ async function serve(port: number) {
     // TODO: Extract to meta.json
     siteMeta: { siteName: "JSter" },
   });
-  await generateRoutes({
+  const routes = await generateRoutes({
     renderPage(route, path, context, page) {
       router.get(route, async (ctx) => {
         try {
@@ -69,14 +48,55 @@ async function serve(port: number) {
         }
       });
     },
-    pagesPath: "./pages",
+    pagesPath,
   });
 
   app.use(router.routes());
   app.use(router.allowedMethods());
 
+  watch(
+    ".",
+    ".json",
+    (matchedPath) => {
+      wss.clients.forEach(async (socket) => {
+        // 1 for open, https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
+        if (socket.state === 1) {
+          console.log("watch - Refresh ws");
+
+          const pagePath = join(
+            pagesPath,
+            basename(matchedPath, import.meta.url),
+          );
+          const path = routes[pagePath];
+
+          if (!path) {
+            console.error(
+              "Failed to find match for",
+              matchedPath,
+              "in",
+              Object.keys(routes),
+            );
+
+            return;
+          }
+
+          const { context, page } = path;
+          const payload = await renderPage("/", pagePath, context, page);
+
+          // TODO: Handle meta updates (add a separate field)
+          socket.send(
+            JSON.stringify({
+              type: "refresh",
+              payload,
+            }),
+          );
+        }
+      });
+    },
+  );
+
   await app.listen({ port });
 }
 
 // TODO: Make port configurable
-serve(3000);
+serve(3000, "./pages");

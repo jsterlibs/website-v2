@@ -16,14 +16,16 @@ async function generateRoutes(
     meta,
     page: getJsonSync<Page>(meta.path),
   }));
+  const ret: Record<string, { context: Record<string, unknown>; page: Page }> =
+    {};
 
-  pages.forEach(({ page, meta: { name, path } }) => {
+  await Promise.all(pages.map(async ({ page, meta: { name, path } }) => {
     const { dataSources, matchBy } = page;
     let rootPath = name.split(".").slice(0, -1).join(".");
     rootPath = rootPath === "index" ? "" : rootPath;
 
     if (dataSources) {
-      Promise.all(
+      await Promise.all(
         dataSources.map(({ name, transformWith }) =>
           import(`../dataSources/${name}.ts`).then(async (o) => {
             let data = await o.default();
@@ -49,25 +51,36 @@ async function generateRoutes(
           if (matchBy) {
             const dataSource = pageData[matchBy.dataSource];
 
-            Object.values(dataSource).forEach((v) =>
+            Object.values(dataSource).forEach((v) => {
+              const route = `/${routerPath}/${v.id}`;
+              const context = { ...pageData, match: v };
+
               renderPage(
-                `/${routerPath}/${v.id}`,
+                route,
                 path,
-                { ...pageData, match: v },
+                context,
                 page,
-              )
-            );
+              );
+
+              ret[path] = { context, page };
+            });
           } else {
             console.warn(`Path ${rootPath} is missing a matchBy`);
           }
         } else {
           renderPage(`/${rootPath}`, path, pageData, page);
+
+          ret[path] = { context: pageData, page };
         }
       });
     } else {
       renderPage(`/${rootPath}`, path, {}, page);
+
+      ret[path] = { context: {}, page };
     }
-  });
+  }));
+
+  return ret;
 }
 
 export { generateRoutes };
