@@ -62,9 +62,16 @@ socket.addEventListener('message', (event) => {
     container.innerHTML = payload.bodyMarkup;
 
     document.querySelector("title").innerHTML = payload.meta.title;
+    Object.entries(payload.meta).forEach(([k, v]) => {
+      const element = document.head.querySelector("meta[name='" + k + "']");
 
-    /* TODO: Update title + meta fields based on received data */
-    console.log('meta', payload.meta);
+      if (element) {
+        element.setAttribute('content', v);
+      }
+      else {
+        console.error('WebSocket', 'meta element not found for', k);
+      }
+    })
   }
   else {
     console.log('WebSocket', 'unknown event', event);
