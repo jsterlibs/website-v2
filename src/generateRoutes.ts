@@ -19,7 +19,7 @@ async function generateRoutes(
   }));
   const paths: Record<
     string,
-    { context: Record<string, unknown>; page: Page }
+    { route: string; context: Record<string, unknown>; page: Page }
   > = {};
   const routes: string[] = [];
 
@@ -67,6 +67,7 @@ async function generateRoutes(
               );
 
               paths[path] = {
+                route,
                 context,
                 page: { ...page, meta: getMeta(pageData, page.meta, siteMeta) },
               };
@@ -81,6 +82,7 @@ async function generateRoutes(
           renderPage(route, path, pageData, page);
 
           paths[path] = {
+            route,
             context: pageData,
             page: { ...page, meta: getMeta(pageData, page.meta, siteMeta) },
           };
@@ -94,6 +96,7 @@ async function generateRoutes(
       renderPage(route, path, {}, page);
 
       paths[path] = {
+        route,
         context: pageData,
         page: { ...page, meta: getMeta(pageData, page.meta, siteMeta) },
       };

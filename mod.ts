@@ -1,10 +1,11 @@
 import { Application, Router } from "oak";
-import { getComponents, watch } from "utils";
+import { getComponents, getJson, watch } from "utils";
 import { basename, join } from "path";
 import { generateRoutes } from "./src/generateRoutes.ts";
 import { getPageRenderer, renderBody } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
 import { getWebsocketServer } from "./src/webSockets.ts";
+import type { Page } from "./types.ts";
 
 async function serve(port: number, pagesPath: string) {
   console.log(`Serving at ${port}`);
@@ -58,7 +59,7 @@ async function serve(port: number, pagesPath: string) {
     ".",
     ".json",
     (matchedPath) => {
-      wss.clients.forEach((socket) => {
+      wss.clients.forEach(async (socket) => {
         // 1 for open, https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
         if (socket.state === 1) {
           console.log("watch - Refresh ws");
@@ -80,14 +81,21 @@ async function serve(port: number, pagesPath: string) {
             return;
           }
 
-          const { context, page } = path;
+          const { meta, page } = await getJson<Page>(pagePath);
 
           socket.send(
             JSON.stringify({
               type: "refresh",
               payload: {
-                bodyMarkup: renderBody(page.page, components, context, "/"),
-                meta: page.meta,
+                bodyMarkup: renderBody(
+                  page,
+                  components,
+                  // TODO: Fix context
+                  // Resolve against data again if data sources have changes
+                  path.context,
+                  path.route,
+                ),
+                meta,
               },
             }),
           );
