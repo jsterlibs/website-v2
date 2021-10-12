@@ -1,5 +1,5 @@
-import * as path from "path";
-import type { Components } from "../types.ts";
+import { basename, extname, join } from "path";
+import type { Component } from "../types.ts";
 
 function getJson<R>(filePath: string): Promise<R> {
   return Deno.readTextFile(filePath).then((d) => JSON.parse(d));
@@ -9,8 +9,17 @@ function getJsonSync<R>(filePath: string): R {
   return JSON.parse(Deno.readTextFileSync(filePath));
 }
 
-function getComponents(filePath: string) {
-  return getJsonSync<Components>(filePath);
+async function getComponents(directoryPath: string) {
+  const componentFiles = await dir(directoryPath);
+
+  const o = await Promise.all(
+    await componentFiles.map(async (
+      { path },
+    ) => [basename(path, extname(path)), await getJson<Component>(path)]),
+  );
+
+  // @ts-ignore How to type this
+  return zipToObject<Component>(o);
 }
 
 function last<O>(array: O[]) {
@@ -40,7 +49,7 @@ async function dir(p: string) {
   const ret = [];
 
   for await (const { name } of Deno.readDir(p)) {
-    ret.push({ path: path.join(p, name), name });
+    ret.push({ path: join(p, name), name });
   }
 
   return ret;
@@ -50,7 +59,7 @@ function dirSync(p: string) {
   const ret = [];
 
   for (const { name } of Deno.readDirSync(p)) {
-    ret.push({ path: path.join(p, name), name });
+    ret.push({ path: join(p, name), name });
   }
 
   return ret;

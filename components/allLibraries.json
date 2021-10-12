@@ -1,0 +1,20 @@
+{
+  "element": "ul",
+  "class": "grid grid-cols-3 gap-8",
+  "__children": [
+    {
+      "element": "li",
+      "class": "my-4",
+      "children": [
+        {
+          "component": "link",
+          "class": "w-full bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+          "__children": "title",
+          "attributes": {
+            "__href": "url"
+          }
+        }
+      ]
+    }
+  ]
+}

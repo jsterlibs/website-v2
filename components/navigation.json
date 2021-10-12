@@ -1,0 +1,30 @@
+[
+  {
+    "component": "link",
+    "children": "Blog",
+    "attributes": {
+      "href": "/blog/"
+    }
+  },
+  {
+    "component": "link",
+    "children": "Catalog",
+    "attributes": {
+      "href": "/catalog/"
+    }
+  },
+  {
+    "component": "link",
+    "children": "About",
+    "attributes": {
+      "href": "/about/"
+    }
+  },
+  {
+    "component": "link",
+    "children": "Add library",
+    "attributes": {
+      "href": "/add-library/"
+    }
+  }
+]

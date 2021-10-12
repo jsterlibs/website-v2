@@ -5,7 +5,7 @@ import { generateRoutes } from "../src/generateRoutes.ts";
 import { getPageRenderer } from "../src/getPageRenderer.ts";
 import { getStyleSheet } from "../src/getStyleSheet.ts";
 
-function build() {
+async function build() {
   console.log("Building to static");
 
   let routes: string[] = [];
@@ -25,7 +25,7 @@ function build() {
     );
   };
 
-  const components = getComponents("./components.json");
+  const components = await getComponents("./components");
   const outputDirectory = "./build";
 
   ensureDir(outputDirectory).then(async () => {

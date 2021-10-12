@@ -7,11 +7,11 @@ import { getStyleSheet } from "./src/getStyleSheet.ts";
 import { getWebsocketServer } from "./src/webSockets.ts";
 import type { Page } from "./types.ts";
 
-async function serve(port: number, pagesPath: string) {
+async function serve(port: number, pagesPath: string, componentsPath: string) {
   console.log(`Serving at ${port}`);
 
   const wss = getWebsocketServer();
-  const components = getComponents("./components.json");
+  const components = await getComponents(componentsPath);
   const app = new Application();
   const router = new Router();
 
@@ -71,6 +71,12 @@ async function serve(port: number, pagesPath: string) {
           const path = paths[pagePath];
 
           if (!path) {
+            // TODO: In case a component was updated, related pages should be
+            // updated as well instead of skipping the updates!
+            if (matchedPath.includes(basename(componentsPath))) {
+              return;
+            }
+
             console.error(
               "Failed to find match for",
               matchedPath,
@@ -108,4 +114,4 @@ async function serve(port: number, pagesPath: string) {
 }
 
 // TODO: Make port configurable
-serve(3000, "./pages");
+serve(3000, "./pages", "./components");

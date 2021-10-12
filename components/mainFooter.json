@@ -1,0 +1,106 @@
+{
+  "element": "footer",
+  "class": "bg-violet-200 py-4 font-light",
+  "children": [
+    {
+      "element": "div",
+      "class": "flex flex-col container mx-auto gap-4",
+      "children": [
+        {
+          "element": "section",
+          "class": "flex justify-between",
+          "children": [
+            {
+              "element": "div",
+              "class": "flex flex-col",
+              "children": [
+                {
+                  "element": "h2",
+                  "children": "New additions"
+                },
+                {
+                  "element": "ul",
+                  "children": [
+                    {
+                      "element": "li",
+                      "children": "TODO"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "class": "flex flex-col",
+              "children": [
+                {
+                  "element": "h2",
+                  "children": "Selected library"
+                },
+                {
+                  "element": "div",
+                  "children": "Demo library"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "element": "section",
+          "class": "grid grid-cols-3 gap-4",
+          "children": [
+            {
+              "element": "div",
+              "class": "flex flex-col",
+              "children": [
+                {
+                  "element": "h2",
+                  "children": "About"
+                },
+                {
+                  "element": "div",
+                  "class": "font-thin",
+                  "children": "JSter is a community-driven catalog of the most useful javascript libraries. Find the right tool for a work and do it effectively."
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "class": "flex flex-col",
+              "children": [
+                {
+                  "element": "h2",
+                  "children": "Navigation"
+                },
+                {
+                  "element": "div",
+                  "class": "flex gap-4 font-thin",
+                  "children": [
+                    {
+                      "component": "navigation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "class": "flex flex-col",
+              "children": [
+                {
+                  "element": "h2",
+                  "children": "Credits"
+                },
+                {
+                  "element": "div",
+                  "class": "font-thin",
+                  "children": "JSter was created by passionate web developers Juho Vepsäläinen and Codegyre Developers Team (Michael Bodnarchuk and Nick Palamarchuk)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "element": "nav",
+  "class": "flex justify-between p-4 bg-gray-100",
+  "children": [
+    {
+      "element": "div",
+      "class": "flex gap-4 font-thin",
+      "children": [
+        {
+          "component": "link",
+          "children": "JSter",
+          "attributes": {
+            "href": "/"
+          }
+        },
+        {
+          "component": "navigation"
+        }
+      ]
+    },
+    {
+      "element": "div",
+      "class": "flex gap-4 font-light",
+      "children": [
+        {
+          "component": "link",
+          "children": "@jsterlibs",
+          "attributes": {
+            "href": "https://twitter.com/jsterlibs"
+          }
+        },
+        {
+          "component": "link",
+          "children": "Mailing list",
+          "attributes": {
+            "href": "https://eepurl.com/zB_g5"
+          }
+        },
+        {
+          "component": "link",
+          "children": "Sign in",
+          "attributes": {
+            "href": "https://backend-8ae1c3f3.nhost.app/auth/providers/github"
+          }
+        }
+      ]
+    }
+  ]
+}
