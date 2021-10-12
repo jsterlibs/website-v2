@@ -1,5 +1,6 @@
-import { dir, get, getJsonSync, reversed, zipToObject } from "utils";
+import { dir, get, getJsonSync, zipToObject } from "utils";
 import type { DataContext, Meta, Page, SiteMeta } from "../types.ts";
+import transform from "./transform.ts";
 
 async function generateRoutes(
   { renderPage, pagesPath, siteMeta }: {
@@ -31,15 +32,9 @@ async function generateRoutes(
     if (dataSources) {
       await Promise.all(
         dataSources.map(({ name, transformWith }) =>
-          import(`../dataSources/${name}.ts`).then(async (o) => {
-            let data = await o.default();
-
-            if (transformWith === "reversed") {
-              data = reversed(data);
-            }
-
-            return [name, data];
-          })
+          import(`../dataSources/${name}.ts`).then(async (o) => (
+            [name, await transform(transformWith, await o.default())]
+          ))
         ),
       ).then((
         dataSources,

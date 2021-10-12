@@ -13,7 +13,7 @@ function getPageRenderer(
     mode: Mode;
   },
 ) {
-  return (
+  return async (
     pathname: string,
     pagePath: string,
     pageData: DataContext,
@@ -23,7 +23,7 @@ function getPageRenderer(
       pagePath,
       metaMarkup: renderMetaMarkup(page.meta),
       headMarkup: getStyleTag(stylesheet),
-      bodyMarkup: renderBody(page.page, components, pageData, pathname),
+      bodyMarkup: await renderBody(page.page, components, pageData, pathname),
       mode,
       page,
     });

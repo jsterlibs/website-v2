@@ -66,10 +66,6 @@ function zipToObject<R>(arr: [string, R][]) {
   return ret;
 }
 
-function reversed(arr: unknown[]) {
-  return [...arr].reverse();
-}
-
 async function watch(
   directory: string,
   extension: string,
@@ -91,7 +87,6 @@ export {
   getJsonSync,
   isObject,
   last,
-  reversed,
   watch,
   zipToObject,
 };

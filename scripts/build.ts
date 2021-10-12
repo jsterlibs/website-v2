@@ -42,10 +42,10 @@ function build() {
 
         const dir = join(outputDirectory, route);
 
-        ensureDir(dir).then(() =>
+        ensureDir(dir).then(async () =>
           Deno.writeTextFile(
             join(dir, "index.html"),
-            renderPage(route, path, context, page),
+            await renderPage(route, path, context, page),
           )
         );
       },

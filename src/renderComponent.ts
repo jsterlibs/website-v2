@@ -1,5 +1,4 @@
 import { tw } from "twind";
-import { Marked } from "markdown";
 import { get } from "utils";
 import type {
   Attributes,
@@ -7,12 +6,13 @@ import type {
   Components,
   DataContext,
 } from "../types.ts";
+import transform from "./transform.ts";
 
-function renderComponent(
+async function renderComponent(
   component: Component | string,
   components: Components,
   context: DataContext,
-): string {
+): Promise<string> {
   if (typeof component === "string") {
     return component;
   }
@@ -25,7 +25,7 @@ function renderComponent(
   }
 
   if (foundComponent) {
-    return renderComponent(
+    return await renderComponent(
       {
         children: Array.isArray(foundComponent) ? foundComponent : [{
           ...component,
@@ -53,12 +53,15 @@ function renderComponent(
     if (typeof boundChildren === "string") {
       children = get(ctx, boundChildren);
     } else {
-      children = (Array.isArray(ctx) ? ctx : [ctx]).flatMap((d) =>
-        boundChildren.map((c) =>
-          renderComponent(c, components, { ...context, __bound: d })
+      children = (
+        await Promise.all(
+          (Array.isArray(ctx) ? ctx : [ctx]).flatMap((d) =>
+            boundChildren.map((c) =>
+              renderComponent(c, components, { ...context, __bound: d })
+            )
+          ),
         )
-      )
-        .join("");
+      ).join("");
     }
   } else if (component.__foreach) {
     const { field, render } = component.__foreach;
@@ -67,21 +70,34 @@ function renderComponent(
     const childrenToRender = context.__bound[field];
 
     if (!childrenToRender) {
-      console.warn("No children to render for", component);
+      console.warn(
+        "No children to render for",
+        component,
+        // @ts-ignore: TODO: How to type this?
+        context.__bound,
+        field,
+      );
     }
 
-    children = childrenToRender.flatMap((c: DataContext) =>
-      Array.isArray(render)
-        ? render.map((r) =>
-          renderComponent(r, components, { ...context, __bound: c })
-        )
-        : renderComponent(render, components, { ...context, __bound: c })
-    ).join("");
+    children = (await Promise.all(
+      childrenToRender.flatMap((c: DataContext) =>
+        Array.isArray(render)
+          ? render.map((r) =>
+            renderComponent(r, components, { ...context, __bound: c })
+          )
+          : renderComponent(render, components, {
+            ...context,
+            __bound: c,
+          })
+      ),
+    )).join("");
   } else {
     children = Array.isArray(component.children)
-      ? component.children.map((component) =>
-        renderComponent(component, components, context)
-      ).join("")
+      ? (await Promise.all(
+        component.children.map(async (component) =>
+          await renderComponent(component, components, context)
+        ),
+      )).join("")
       : component.children;
   }
 
@@ -91,7 +107,7 @@ function renderComponent(
       ...component.attributes,
       class: resolveClass(component, context),
     }, context),
-    transform(children, component?.transformWith),
+    await transform(component?.transformWith, children),
   );
 }
 
@@ -133,14 +149,6 @@ function evaluateExpression(
   }
 }
 
-function transform(children?: string, transformWith?: string) {
-  if (transformWith === "markdown" && typeof children === "string") {
-    return Marked.parse(children).content;
-  }
-
-  return children || "";
-}
-
 function joinClasses(a?: string, b?: string) {
   if (a) {
     if (b) {
@@ -156,10 +164,10 @@ function joinClasses(a?: string, b?: string) {
 function wrapInElement(
   element: Component["element"],
   attributes: string,
-  children?: string,
+  children?: unknown,
 ): string {
   if (!element) {
-    return children || "";
+    return typeof children === "string" ? children : "";
   }
 
   return `<${element}${attributes}>${children}</${element}>`;
