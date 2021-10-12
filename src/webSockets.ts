@@ -61,6 +61,8 @@ socket.addEventListener('message', (event) => {
     const container = document.getElementById("pagebody");
     container.innerHTML = payload.bodyMarkup;
 
+    document.querySelector("title").innerHTML = payload.meta.title;
+
     /* TODO: Update title + meta fields based on received data */
     console.log('meta', payload.meta);
   }
