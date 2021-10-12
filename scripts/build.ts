@@ -34,8 +34,6 @@ function build() {
       components,
       stylesheet,
       mode: "production",
-      // TODO: Extract to meta.json
-      siteMeta: { siteName: "JSter" },
     });
     const ret = await generateRoutes({
       renderPage(route, path, context, page) {
@@ -45,12 +43,15 @@ function build() {
         const dir = join(outputDirectory, route);
 
         ensureDir(dir).then(() =>
-          renderPage(route, path, context, page).then((d) =>
-            Deno.writeTextFile(join(dir, "index.html"), d)
-          ).catch((err) => console.error(err))
+          Deno.writeTextFile(
+            join(dir, "index.html"),
+            renderPage(route, path, context, page),
+          )
         );
       },
       pagesPath: "./pages",
+      // TODO: Extract to meta.json
+      siteMeta: { siteName: "JSter" },
     });
 
     routes = ret.routes;

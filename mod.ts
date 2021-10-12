@@ -2,7 +2,7 @@ import { Application, Router } from "oak";
 import { getComponents, watch } from "utils";
 import { basename, join } from "path";
 import { generateRoutes } from "./src/generateRoutes.ts";
-import { getPageRenderer } from "./src/getPageRenderer.ts";
+import { getPageRenderer, renderBody } from "./src/getPageRenderer.ts";
 import { getStyleSheet } from "./src/getStyleSheet.ts";
 import { getWebsocketServer } from "./src/webSockets.ts";
 
@@ -19,8 +19,6 @@ async function serve(port: number, pagesPath: string) {
     components,
     stylesheet,
     mode: "development",
-    // TODO: Extract to meta.json
-    siteMeta: { siteName: "JSter" },
   });
   const { paths } = await generateRoutes({
     renderPage(route, path, context, page) {
@@ -49,6 +47,8 @@ async function serve(port: number, pagesPath: string) {
       });
     },
     pagesPath,
+    // TODO: Extract to meta.json
+    siteMeta: { siteName: "JSter" },
   });
 
   app.use(router.routes());
@@ -58,7 +58,7 @@ async function serve(port: number, pagesPath: string) {
     ".",
     ".json",
     (matchedPath) => {
-      wss.clients.forEach(async (socket) => {
+      wss.clients.forEach((socket) => {
         // 1 for open, https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
         if (socket.state === 1) {
           console.log("watch - Refresh ws");
@@ -81,13 +81,17 @@ async function serve(port: number, pagesPath: string) {
           }
 
           const { context, page } = path;
-          const payload = await renderPage("/", pagePath, context, page);
 
-          // TODO: Handle meta updates (add a separate field)
           socket.send(
             JSON.stringify({
               type: "refresh",
-              payload,
+              payload: renderBody(page.page, components, context, "/"),
+              // TODO: Include meta as a separate field to be patched
+              /*payload: {
+                // TODO: Fix pathname
+                bodyMarkup: renderBody(pageComponent, components, context, "/"),
+                meta,
+              },*/
             }),
           );
         }

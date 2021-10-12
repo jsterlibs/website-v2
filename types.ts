@@ -54,10 +54,12 @@ type BlogPost = {
 };
 type SiteMeta = { siteName: string };
 type Page = {
-  meta: Record<string, string>;
+  meta: Meta;
+  page: Component | Component[];
   matchBy?: { dataSource: string; field: string };
   dataSources?: { name: string; transformWith: string }[];
 };
+type Meta = Record<string, string>;
 
 export type {
   Attributes,
@@ -67,6 +69,7 @@ export type {
   Components,
   DataContext,
   Library,
+  Meta,
   Page,
   ParentCategory,
   Props,

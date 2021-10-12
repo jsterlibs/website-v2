@@ -1,25 +1,16 @@
 import { getStyleTag } from "twind-sheets";
-import { get, getJson } from "utils";
 import { renderComponent } from "./renderComponent.ts";
-import type {
-  Component,
-  Components,
-  DataContext,
-  Page,
-  SiteMeta,
-} from "../types.ts";
+import type { Components, DataContext, Meta, Page } from "../types.ts";
 import { getStyleSheet } from "./getStyleSheet.ts";
 import { websocketClient } from "./webSockets.ts";
 
 type Mode = "development" | "production";
-type Meta = Record<string, string>;
 
 function getPageRenderer(
-  { components, stylesheet, mode, siteMeta }: {
+  { components, stylesheet, mode }: {
     components: Components;
     stylesheet: ReturnType<typeof getStyleSheet>;
     mode: Mode;
-    siteMeta: SiteMeta;
   },
 ) {
   return (
@@ -28,69 +19,62 @@ function getPageRenderer(
     pageData: DataContext,
     page: Page,
   ) =>
-    getJson<{ meta: Meta; page: Component }>(pagePath).then(
-      ({ meta, page: pageComponent }) => {
-        const body = renderComponent(
-          {
-            children: Array.isArray(pageComponent)
-              ? pageComponent
-              : [pageComponent],
-          },
-          components,
-          { ...pageData, pathname },
-        );
-        const styleTag = getStyleTag(stylesheet);
-
-        return htmlTemplate({
-          meta: {
-            ...applyData(meta, { ...pageData, pathname, pagePath }),
-            pathname,
-            pagePath,
-            "og:site_name": siteMeta.siteName || "",
-            "twitter:site": siteMeta.siteName || "",
-            "og:title": meta.title || "",
-            "twitter:title": meta.title || "",
-            "og:description": meta.description || "",
-            "twitter:description": meta.description || "",
-          },
-          head: styleTag,
-          body,
-          mode,
-          page,
-        });
-      },
-    );
+    htmlTemplate({
+      pagePath,
+      metaMarkup: renderMetaMarkup(page.meta),
+      headMarkup: getStyleTag(stylesheet),
+      bodyMarkup: renderBody(page.page, components, pageData, pathname),
+      mode,
+      page,
+    });
 }
 
-function applyData(meta: Meta, dataContext?: DataContext) {
-  const ret: Meta = {};
+function renderMetaMarkup(meta?: Meta) {
+  if (!meta) {
+    return "";
+  }
 
-  Object.entries(meta).forEach(([k, v]) => {
-    if (k.startsWith("__") && dataContext) {
-      ret[k.slice(2)] = get<DataContext>(dataContext, v);
-    } else {
-      ret[k] = v;
-    }
-  });
+  const ret = Object.entries(meta).map(([key, value]) =>
+    `<meta name="${key}" content="${value}"></meta>`
+  );
 
-  return ret;
+  if (meta.title) {
+    ret.push(`<title>${meta.title}</title>`);
+  }
+
+  return ret.join("\n");
 }
 
-function htmlTemplate({ meta, head, body, mode, page }: {
-  meta: Meta;
-  head?: string;
-  body?: string;
-  mode: Mode;
-  page: Page;
-}) {
-  const title = meta.title || "";
+function renderBody(
+  pageComponent: Page["page"],
+  components: Components,
+  pageData: DataContext,
+  pathname: string,
+) {
+  return renderComponent(
+    {
+      children: Array.isArray(pageComponent) ? pageComponent : [pageComponent],
+    },
+    components,
+    { ...pageData, pathname },
+  );
+}
 
+function htmlTemplate(
+  { pagePath, metaMarkup, headMarkup, bodyMarkup, mode, page }: {
+    pagePath: string;
+    metaMarkup?: string;
+    headMarkup?: string;
+    bodyMarkup?: string;
+    mode: Mode;
+    page: Page;
+  },
+) {
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>${title}</title>
     <script type="text/javascript" src="https://unpkg.com/sidewind@3.3.3/dist/sidewind.umd.production.min.js"></script>
     ${
     mode === "development"
@@ -99,8 +83,8 @@ function htmlTemplate({ meta, head, body, mode, page }: {
 <script src="https://cdn.jsdelivr.net/gh/josdejong/jsoneditor/dist/jsoneditor.min.js"></script>`
       : ""
   }
-    ${generateMeta(meta)}
-    ${head || ""}
+    ${metaMarkup || ""}
+    ${headMarkup || ""}
   </head>
   <body>
     ${
@@ -121,7 +105,7 @@ function htmlTemplate({ meta, head, body, mode, page }: {
           socket.send(JSON.stringify({
             type: 'update',
             payload: {
-              path: "${meta.pagePath}",
+              path: "${pagePath}",
               data
             }
           }));
@@ -130,22 +114,12 @@ function htmlTemplate({ meta, head, body, mode, page }: {
 
       editor.set(${JSON.stringify(page, null, 2)});
       </script>
-      <div id="pagebody">${body || ""}</div>
+      <div id="pagebody">${bodyMarkup || ""}</div>
     </div>`
-      : body || ""
+      : bodyMarkup || ""
   }
   </body>
 </html>`;
 }
 
-function generateMeta(meta?: Meta) {
-  if (!meta) {
-    return "";
-  }
-
-  return Object.entries(meta).map(([key, value]) =>
-    `<meta name="${key}" content="${value}"></meta>`
-  ).join("\n");
-}
-
-export { getPageRenderer };
+export { getPageRenderer, renderBody };

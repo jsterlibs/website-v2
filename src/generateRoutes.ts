@@ -1,8 +1,8 @@
-import { dir, getJsonSync, reversed, zipToObject } from "utils";
-import type { Page } from "../types.ts";
+import { dir, get, getJsonSync, reversed, zipToObject } from "utils";
+import type { DataContext, Meta, Page, SiteMeta } from "../types.ts";
 
 async function generateRoutes(
-  { renderPage, pagesPath }: {
+  { renderPage, pagesPath, siteMeta }: {
     renderPage: (
       route: string,
       path: string,
@@ -10,6 +10,7 @@ async function generateRoutes(
       page: Page,
     ) => void;
     pagesPath: string;
+    siteMeta: SiteMeta;
   },
 ) {
   const pages = (await dir(pagesPath)).map((meta) => ({
@@ -65,7 +66,10 @@ async function generateRoutes(
                 page,
               );
 
-              paths[path] = { context, page };
+              paths[path] = {
+                context,
+                page: { ...page, meta: getMeta(pageData, page.meta, siteMeta) },
+              };
               routes.push(route);
             });
           } else {
@@ -76,21 +80,58 @@ async function generateRoutes(
 
           renderPage(route, path, pageData, page);
 
-          paths[path] = { context: pageData, page };
+          paths[path] = {
+            context: pageData,
+            page: { ...page, meta: getMeta(pageData, page.meta, siteMeta) },
+          };
           routes.push(route);
         }
       });
     } else {
       const route = `/${rootPath}`;
+      const pageData = {};
 
       renderPage(route, path, {}, page);
 
-      paths[path] = { context: {}, page };
+      paths[path] = {
+        context: pageData,
+        page: { ...page, meta: getMeta(pageData, page.meta, siteMeta) },
+      };
       routes.push(route);
     }
   }));
 
   return { paths, routes };
+}
+
+function getMeta(
+  pageData: DataContext,
+  meta: Meta,
+  siteMeta: SiteMeta,
+) {
+  return {
+    ...applyMeta(meta, pageData),
+    "og:site_name": siteMeta.siteName || "",
+    "twitter:site": siteMeta.siteName || "",
+    "og:title": meta.title || "",
+    "twitter:title": meta.title || "",
+    "og:description": meta.description || "",
+    "twitter:description": meta.description || "",
+  };
+}
+
+function applyMeta(meta: Meta, dataContext?: DataContext) {
+  const ret: Meta = {};
+
+  Object.entries(meta).forEach(([k, v]) => {
+    if (k.startsWith("__") && dataContext) {
+      ret[k.slice(2)] = get<DataContext>(dataContext, v);
+    } else {
+      ret[k] = v;
+    }
+  });
+
+  return ret;
 }
 
 export { generateRoutes };
