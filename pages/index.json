@@ -10,7 +10,7 @@
   ],
   "page": [
     {
-      "component": "main-navigation"
+      "component": "mainNavigation"
     },
     {
       "element": "main",
@@ -24,7 +24,7 @@
               "component": "subscribe"
             },
             {
-              "component": "all-categories",
+              "component": "allCategories",
               "__bind": "parentCategories"
             }
           ]
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "component": "main-footer"
+      "component": "mainFooter"
     }
   ]
 }

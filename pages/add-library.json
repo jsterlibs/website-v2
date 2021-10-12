@@ -5,7 +5,7 @@
   },
   "page": [
     {
-      "component": "main-navigation"
+      "component": "mainNavigation"
     },
     {
       "element": "main",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "component": "main-footer"
+      "component": "mainFooter"
     }
   ]
 }

@@ -7,7 +7,7 @@
   "dataSources": [{ "name": "categories" }],
   "page": [
     {
-      "component": "main-navigation"
+      "component": "mainNavigation"
     },
     {
       "element": "main",
@@ -19,13 +19,13 @@
           "__children": "match.title"
         },
         {
-          "component": "all-libraries",
+          "component": "allLibraries",
           "__bind": "match.libraries"
         }
       ]
     },
     {
-      "component": "main-footer"
+      "component": "mainFooter"
     }
   ]
 }

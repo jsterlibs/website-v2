@@ -1,5 +1,5 @@
 {
-  "all-categories": [
+  "allCategories": [
     {
       "element": "ul",
       "__children": [
@@ -39,7 +39,7 @@
       ]
     }
   ],
-  "all-libraries": [
+  "allLibraries": [
     {
       "element": "ul",
       "class": "grid grid-cols-3 gap-8",
@@ -61,7 +61,7 @@
       ]
     }
   ],
-  "blog-posts": [
+  "blogPosts": [
     {
       "element": "ul",
       "class": "flex flex-col gap-4",
@@ -128,7 +128,7 @@
       "children": "Subscription widget goes here"
     }
   ],
-  "main-navigation": [
+  "mainNavigation": [
     {
       "element": "nav",
       "class": "flex justify-between p-4 bg-gray-100",
@@ -179,7 +179,7 @@
       ]
     }
   ],
-  "main-footer": [
+  "mainFooter": [
     {
       "element": "footer",
       "class": "bg-violet-200 py-4 font-light",

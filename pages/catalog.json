@@ -6,7 +6,7 @@
   "dataSources": [{ "name": "parentCategories" }],
   "page": [
     {
-      "component": "main-navigation"
+      "component": "mainNavigation"
     },
     {
       "element": "main",
@@ -17,13 +17,13 @@
           "children": "Catalog"
         },
         {
-          "component": "all-categories",
+          "component": "allCategories",
           "__bind": "parentCategories"
         }
       ]
     },
     {
-      "component": "main-footer"
+      "component": "mainFooter"
     }
   ]
 }

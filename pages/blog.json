@@ -6,7 +6,7 @@
   "dataSources": [{ "name": "blogPosts", "transformWith": "reversed" }],
   "page": [
     {
-      "component": "main-navigation"
+      "component": "mainNavigation"
     },
     {
       "element": "main",
@@ -17,13 +17,13 @@
           "children": "Blog"
         },
         {
-          "component": "blog-posts",
+          "component": "blogPosts",
           "__bind": "blogPosts"
         }
       ]
     },
     {
-      "component": "main-footer"
+      "component": "mainFooter"
     }
   ]
 }
