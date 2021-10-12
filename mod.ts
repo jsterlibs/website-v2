@@ -85,13 +85,10 @@ async function serve(port: number, pagesPath: string) {
           socket.send(
             JSON.stringify({
               type: "refresh",
-              payload: renderBody(page.page, components, context, "/"),
-              // TODO: Include meta as a separate field to be patched
-              /*payload: {
-                // TODO: Fix pathname
-                bodyMarkup: renderBody(pageComponent, components, context, "/"),
-                meta,
-              },*/
+              payload: {
+                bodyMarkup: renderBody(page.page, components, context, "/"),
+                meta: page.meta,
+              },
             }),
           );
         }

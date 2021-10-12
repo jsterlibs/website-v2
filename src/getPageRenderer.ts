@@ -99,8 +99,7 @@ function htmlTemplate(
       </div>
       <script>
       ${websocketClient}
-      const container = document.getElementById("jsoneditor");
-      const editor = new JSONEditor(container, {
+      const editor = new JSONEditor(document.getElementById("jsoneditor"), {
         onChangeJSON(data) {
           socket.send(JSON.stringify({
             type: 'update',

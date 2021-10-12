@@ -26,7 +26,7 @@ const getWebsocketServer = (port = 8080) => {
           () =>
             ws.send(
               JSON.stringify({ type: "log", payload: `wrote to ${path}` }),
-            )
+            ),
         )
           .catch((err) => ws.send(`error: ${err}`));
       }
@@ -56,12 +56,16 @@ socket.addEventListener('message', (event) => {
     console.log('WebSocket', payload);
   }
   else if (type === 'refresh') {
-    /* TODO: Handle updating meta info as well, not just content */
+    console.log('WebSocket', 'refreshing');
+
     const container = document.getElementById("pagebody");
-    container.innerHTML = payload;
+    container.innerHTML = payload.bodyMarkup;
+
+    /* TODO: Update title + meta fields based on received data */
+    console.log('meta', payload.meta);
   }
   else {
-    console.log(event);
+    console.log('WebSocket', 'unknown event', event);
   }
 });`
   .split("\n")
