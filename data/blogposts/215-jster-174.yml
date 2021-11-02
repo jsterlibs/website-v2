@@ -1,0 +1,58 @@
+type: static
+title: "JSter #174: Libraries, and more"
+short_title: "JSter #174"
+user: bebraw
+slug: jster-174
+body: |
+  > Release the JavaScript
+
+  As I want to revamp JSter website, I've started a little project called [Gustwind](https://gustwind.js.org/). It's a highly performant static site creator built with Deno. It will still take plenty of iteration to take the project where I want it but it's shaping up.
+
+  ## Libraries
+
+  * [Blobity](https://blobity.dev/) - The cursor rethought
+  * [Sigma.js](https://www.sigmajs.org/) - JavaScript library aimed at visualizing graphs of thousands of nodes and edges
+  * [@monaco-editor/react](https://www.npmjs.com/package/@monaco-editor/react) - Monaco editor for React
+  * [dnd kit](https://dndkit.com/) - Modern drag and drop toolkit for React
+  * [matubu/speed_highlight_js](https://github.com/matubu/speed_highlight_js) - Light, fast, and easy to use, dependencies free javascript syntax highlighter
+  * [josdejong/jsoneditor](https://github.com/josdejong/jsoneditor) - A web-based tool to view, edit, format, and validate JSON
+  * [lucacasonato/fresh](https://github.com/lucacasonato/fresh) - Preact, but super edgy
+  * [automerge](https://github.com/automerge/automerge) - A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically
+  * [josdejong/workerpool](https://github.com/josdejong/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
+  * [Vizzu](https://vizzuhq.com/) - JavaScript library for animated data stories and visualizations
+  * [Rematch](https://rematchjs.org/) - Rematch is Redux best practices without the boilerplate
+  * [Introducing MUI Core v5.0](https://mui.com/blog/mui-core-v5/) - The UI library for React has reached a new major version
+
+  ## TypeScript
+
+  * [akheron/typera](https://github.com/akheron/typera) - Type-safe routes for Express and Koa
+  * [3 TypeScript Tricks I wish I knew when I learned TypeScript](https://www.cstrnt.dev/blog/three-typescript-tricks)
+  * [Announcing TypeScript 4.5 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/)
+  * [I need to learn about TypeScript Template Literal Types](https://dev.to/phenomnominal/i-need-to-learn-about-typescript-template-literal-types-51po)
+
+  ## Books
+
+  * [ServiceWorker Cookbook](https://serviceworke.rs/)
+
+  ## Tools
+
+  * [qawolf](https://github.com/qawolf/qawolf) - Create browser tests 10x faster
+  * [Announcing Parcel v2!](https://parceljs.org/blog/v2/)
+  * [amzn/style-dictionary](https://github.com/amzn/style-dictionary) - A build system for creating cross-platform styles
+  * [Lume](https://lumeland.github.io/) - A static site generator for Deno
+  * [Storybook on-demand architecture](https://storybook.js.org/blog/storybook-on-demand-architecture/)
+  * [nodejs/corepack](https://github.com/nodejs/corepack) - Zero-runtime-dependency package acting as bridge between Node projects and their package managers
+
+  ## Articles
+
+  * [How to win at CORS](https://jakearchibald.com/2021/cors/)
+  * [Conditional Border Radius In CSS](https://ishadeed.com/article/conditional-border-radius/)
+  * [Spacing children in React](https://weser.io/blog/spacing-children-in-react)
+
+  ## Services
+
+  * [jsben.ch](https://jsben.ch/) - Performance Benchmarking Playground for JavaScript
+
+  ## Standards
+
+  * [Design Tokens Format Module](https://design-tokens.github.io/community-group/format/)
