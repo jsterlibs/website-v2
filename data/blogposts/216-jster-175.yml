@@ -1,0 +1,60 @@
+type: static
+title: "JSter #175: Libraries, and more"
+short_title: "JSter #175"
+user: bebraw
+slug: jster-175
+body: |
+  > The good, the bad, the JavaScript
+
+  X-mas is getting closer. I've been iterating on [Gustwind](https://gustwind.js.org/) and on a conceptual level it's starting to feel solid. I still have add a couple of features to be able to host JSter site through it but the end is in sight.
+
+  ## Libraries
+
+  * [promise-worker.ts](https://gist.github.com/RedstoneWizard22/d07b326a438dd0449758c263cebd0e82) - Make web workers fun
+  * [Strapi v4 stable is live](https://strapi.io/v4) - Headless CMS for all
+  * [Fuse.js](https://fusejs.io/) - a powerful, lightweight fuzzy-search library, with zero dependencies
+  * [molefrog/wouter](https://github.com/molefrog/wouter) - A minimalist-friendly ~1.5KB routing for React and Preact. Nothing else but HOOKS
+  * [Undici](https://undici.nodejs.org/#/) - A HTTP/1.1 client, written from scratch for Node.js.
+  * [jarle](https://www.npmjs.com/package/jarle/v/2.0.0-beta.0) - Just Another React Live Editor
+  * [coston/react-super-responsive-table](https://github.com/coston/react-super-responsive-table) - Turn the tables on unresponsive data
+  * [g-plane/typed-query-selector](https://github.com/g-plane/typed-query-selector) - Better typed `querySelector` and `querySelectorAll`.
+  * [Pollen](https://www.pollen.style/) - Utility-first CSS for the future
+  * [davidkpiano/flipping](https://github.com/davidkpiano/flipping) - Flipping awesome animations
+  * [aholachek/animate-css-grid](https://github.com/aholachek/animate-css-grid) - Painless transitions for CSS Grid
+  * [Yomguithereal/obliterator](https://github.com/Yomguithereal/obliterator) - Higher order iterator library for JavaScript and TypeScript
+  * [Mantine](https://mantine.dev/) - A fully featured React components library
+
+  ## TypeScript
+
+  * [Good magic with TypeScript](https://www.placemark.io/post/good-magic-with-typescript)
+
+  ## Tools
+
+  * [vercel/ncc](https://github.com/vercel/ncc) - Compile a Node.js project into a single file. Supports TypeScript, binary addons, dynamic requires
+  * [Tamagui](https://tamagui.dev/) - Universal React design systems that optimize for native & web
+  * [open-source-labs/reactime](https://github.com/open-source-labs/reactime) - Chrome developer tool and time-travel debugger for React applications (Gatsby and Next.js compatible)
+  * [TestCafe](https://testcafe.io/) - End-to-end testing, simplified
+  * [fast-check](https://dubzzz.github.io/fast-check.github.com/) - Property based testing
+
+  ## Graphics
+
+  * [Phosphor Icons](https://phosphoricons.com/)
+
+  ## Tips
+
+  * [voxpelli/types-in-js](https://github.com/voxpelli/types-in-js) - Tips and tricks for working with types in JavaScript
+
+  ## Articles
+
+  * [Cross-fading any two DOM elements is currently impossible](https://jakearchibald.com/2021/dom-cross-fade/)
+  * [Rust Is The Future of JavaScript Infrastructure](https://leerob.io/blog/rust)
+  * [All the Ways to Make a Web Component](https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/)
+  * [How I made Google’s data grid scroll 10x faster with one line of CSS](https://medium.com/@johan.isaksson/how-i-made-googles-data-grid-scroll-10x-faster-with-one-line-of-css-78cb1e8d9cb1)
+
+  ## Resources
+
+  * [ryanmcdermott/clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) - Clean Code concepts in JavaScript
+
+  ## Frameworks
+
+  * [Hydrogen](https://hydrogen.shopify.dev/) - Shopify's opinionated framework for building headless ecommerce
