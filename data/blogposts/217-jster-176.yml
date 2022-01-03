@@ -1,0 +1,38 @@
+type: static
+title: "JSter #176: Libraries, articles, and tools"
+short_title: "JSter #176"
+user: bebraw
+slug: jster-176
+body: |
+  > 2022 - Only twos and zeros
+
+  Welcome to 2022. Let's hope it's better than 2021.
+
+  ## Libraries
+
+  * [mnater/Hyphenopoly](https://github.com/mnater/Hyphenopoly) - Hyphenation for node and Polyfill for client-side hyphenation
+  * [Malina.js](https://malinajs.github.io/docs/) - Performant Svelte-style evaluator
+  * [Svelte Intl Precompile](https://svelte-intl-precompile.com/) - The i18n library for Svelte that analyzes and compiles your translations at build time
+  * [devongovett/tree-sitter-highlight](https://github.com/devongovett/tree-sitter-highlight) - A syntax highlighter for Node powered by Tree Sitter. Written in Rust.
+  * [Theatre.js](https://www.theatrejs.com/) - Theatre.js is a JavaScript animation library with a GUI. It animates the DOM, WebGL, and any other JavaScript variable.
+  * [Matsuuu/vanilla-rough-notation](https://github.com/Matsuuu/vanilla-rough-notation) - A Vanilla JS Web Component implementation of the Rough Notation library
+  * [Rough.js](https://roughjs.com/) - Create graphics with a hand-drawn, sketchy, appearance
+  * [Open UI](https://open-ui.org/) - The missing industry standard definition of UI
+  * [anttiviljami/human-filetypes](https://github.com/anttiviljami/human-filetypes) - Human-friendly categorisation of file types based on extension or MIME type
+  * [exhibitionist-digital/ultra](https://github.com/exhibitionist-digital/ultra) - Deno + React: No build, no bundle, all streaming
+  * [MapLibre](https://maplibre.org/) - Open-source mapping libraries for developers of web and mobile applications.
+  * [Introducing Sandpack](https://codesandbox.io/post/sandpack-announcement) - The core of CodeSandbox is open source now
+  * [Floating UI](https://floating-ui.com/) - Powerful positioning primitives
+  * [Open Props: sub-atomic styles](https://open-props.style/) - Supercharged CSS variables
+
+  ## Articles
+
+  * [How Valtio Proxy State Works (React Part)](https://blog.axlight.com/posts/how-valtio-proxy-state-works-react-part/)
+  * [Performant A/B Testing with Cloudflare Workers](https://philipwalton.com/articles/performant-a-b-testing-with-cloudflare-workers/)
+  * [Highlights of the Web Almanac 2021](https://www.stefanjudis.com/blog/highlights-from-the-web-almanac-2021/)
+  * [The 2021 Web Almanac](https://almanac.httparchive.org/en/2021/)
+
+  ## Tools
+
+  * [Vitest](https://vitest.dev/) - A blazing fast unit-test framework powered by Vite
+  * [facebook/create-react-app/releases/tag/v5.0.0](https://github.com/facebook/create-react-app/releases/tag/v5.0.0) - CRA v5.0
