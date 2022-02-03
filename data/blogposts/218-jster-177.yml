@@ -1,0 +1,66 @@
+type: static
+title: "JSter #177: Libraries, articles, and more"
+short_title: "JSter #177"
+user: bebraw
+slug: jster-177
+body: |
+  > JavaScript is the beginning of wisdom, not the end
+
+  As I've been rewriting my websites, it has been good time for me to revisit basic topics like image manipulation. I delved into [image manipulation with Cloudflare Images](https://github.com/survivejs/website-cf-assets). It's a topic that will need a blog post later and I still have to expand my solution to fit all my needs.
+
+  ## Libraries
+
+  * [MessageFormat](http://messageformat.github.io/messageformat/) - i18n Plural and Gender Capable Messages
+  * [esamattis/react-zorm](https://github.com/esamattis/react-zorm) - Type-safe <form> for React using Zod
+  * [An update from the Faker team](https://fakerjs.dev/update.html#what-is-faker)
+  * [adelsz/pgtyped](https://github.com/adelsz/pgtyped) - Typesafe SQL in TypeScript
+  * [tRPC](https://trpc.io/) - End-to-end typesafe APIs made easy
+  * [PeerJS](https://peerjs.com/) - PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls
+  * [Rehype Pretty Code](https://rehype-pretty-code.netlify.app/) - Beautiful code blocks for your MD/MDX docs
+  * [Typesense](https://typesense.org/) - Lightning-fast, Open Source Search
+  * [react-async-states](https://incepter.github.io/react-async-states/docs/intro/) - A multi-paradigm React state management library
+
+  ## Frameworks
+
+  * [yusukebe/hono](https://github.com/yusukebe/hono) - Ultrafast web framework for Cloudflare Workers
+
+  ## Articles
+
+  * [Building like it's 1984: A comprehensive guide to creating intuitive context menus](https://height.app/blog/guide-to-build-context-menus)
+  * [I'm porting tsc to Go](https://kdy1.dev/posts/2022/1/tsc-go)
+  * [Type-safe routing in React with `fp-ts-routing` (part 1)](https://oliverjash-me.vercel.app/2022/type-safe-routing-in-react-with-fp-ts-routing-part-1)
+  * [You May Not Need Controlled Form Components](https://www.swyx.io/no-controlled-forms)
+  * [State of the Web: Deno](https://byteofdev.com/posts/deno/)
+  * [How to tame the devDependencies of your project?](https://survivejs.com/blog/how-to-tame-dev-deps/)
+
+  ## APIs
+
+  * [Intl.ListFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat)
+
+  ## Tools
+
+  * [wader/fq](https://github.com/wader/fq) - jq for binary formats
+  * [weiran-zsd/dts-cli](https://github.com/weiran-zsd/dts-cli) - Zero-config CLI for TypeScript package development
+  * [Turborepo](https://turborepo.org/) - Monorepos supercharged
+  * [Denoflare](https://denoflare.dev/) - Fast and easy way to develop and deploy Cloudflare workers
+  * [Rockpack](https://github.com/AlexSergey/rockpack) - A simple solution for creating React Application with Server Side Rendering, bundling, linting, testing within 5 minutes
+  * [suchipi/suchibot](https://github.com/suchipi/suchibot) - A cross-platform AutoHotKey-like thing with TypeScript as its scripting language
+  * [(t,i,x,y) => "creative code golfing"](https://tixy.land/)
+  * [Import Map Generator](https://generator.jspm.io/)
+
+  ## Languages
+
+  * [Announcing TypeScript 4.6 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6-beta/)
+
+  ## GraphQL
+
+  * [hoangvvo/benzene](https://benzene.vercel.app/) - Fast and minimal JavaScript GraphQL Server
+
+  ## Games
+
+  * [Multiplayer 2d car game!](https://car.js.org/)
+
+  ## Resources
+
+  * [Deno by Example](https://examples.deno.land/)
+  * [orta/TypeScript-TSServer-Plugin-Template](https://github.com/orta/TypeScript-TSServer-Plugin-Template)
