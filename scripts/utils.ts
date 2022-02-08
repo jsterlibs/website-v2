@@ -1,4 +1,8 @@
-import { basename, extname, join } from "path";
+import {
+  basename,
+  extname,
+  join,
+} from "https://deno.land/std@0.107.0/path/mod.ts";
 import type { Component } from "../types.ts";
 
 function getJson<R>(filePath: string): Promise<R> {

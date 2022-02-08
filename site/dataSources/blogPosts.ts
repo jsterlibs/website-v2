@@ -35,7 +35,7 @@ async function getBlogPosts() {
     },
   );
 
-  return blogIndex.map(({ id, date }: IndexEntry) => {
+  const ret = blogIndex.map(({ id, date }: IndexEntry) => {
     const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
 
     if (!matchingBlogPost) {
@@ -54,6 +54,9 @@ async function getBlogPosts() {
       body: matchingBlogPost?.body || "",
     };
   });
+
+  // TODO: Likely this should be applied as a transform
+  return [...ret].reverse();
 }
 
 export default getBlogPosts;

@@ -18,5 +18,18 @@
       "description": "About JSter"
     },
     "layout": "aboutPage"
+  },
+  "blog": {
+    "layout": "blogIndex",
+    "meta": {
+      "title": "JSter – Blog",
+      "description": "News relevant to JavaScript"
+    },
+    "dataSources": [
+      {
+        "id": "blogPosts",
+        "operation": "blogPosts"
+      }
+    ]
   }
 }

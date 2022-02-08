@@ -9,17 +9,16 @@
       "element": "MainNavigation"
     },
     {
-      "element": "div",
-      "class": "md:mx-auto my-8 px-4 md:px-0 w-full lg:max-w-3xl",
+      "element": "main",
+      "class": "py-4 mx-auto max-w-5xl prose lg:prose-xl",
       "children": [
         {
-          "element": "h1",
-          "class": "text-4xl mb-8",
-          "children": "Blog posts"
+          "element": "H1",
+          "children": "Blog"
         },
         {
           "element": "BlogPosts",
-          "__bind": "blogPosts.content"
+          "__bind": "blogPosts"
         }
       ]
     },
