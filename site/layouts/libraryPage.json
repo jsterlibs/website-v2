@@ -1,11 +1,10 @@
 {
-  "meta": {
-    "__title": "match.name",
-    "__description": "match.description"
-  },
-  "matchBy": { "dataSource": "libraries", "field": "id" },
-  "dataSources": [{ "name": "libraries" }],
-  "page": [
+  "head": [
+    {
+      "element": "MetaFields"
+    }
+  ],
+  "body": [
     {
       "element": "MainNavigation"
     },
@@ -25,6 +24,10 @@
     },
     {
       "element": "MainFooter"
+    },
+    {
+      "element": "Scripts",
+      "__bind": "scripts"
     }
   ]
 }
