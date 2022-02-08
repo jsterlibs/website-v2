@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "__title": "match.name",
+    "__description": "match.description"
+  },
+  "matchBy": { "dataSource": "libraries", "field": "id" },
+  "dataSources": [{ "name": "libraries" }],
+  "page": [
+    {
+      "element": "MainNavigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
+      "children": [
+        {
+          "element": "H1",
+          "__children": "match.name"
+        },
+        {
+          "element": "p",
+          "__children": "match.description"
+        }
+      ]
+    },
+    {
+      "element": "MainFooter"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "element": "ul",
+  "class": "flex flex-col gap-4",
+  "__children": [
+    {
+      "element": "li",
+      "children": [
+        {
+          "element": "Link",
+          "__children": "title",
+          "attributes": {
+            "__href": "slug"
+          }
+        }
+      ]
+    }
+  ]
+}

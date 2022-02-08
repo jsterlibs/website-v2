@@ -1,0 +1,34 @@
+{
+  "head": [
+    {
+      "element": "MetaFields"
+    }
+  ],
+  "body": [
+    {
+      "element": "MainNavigation"
+    },
+    {
+      "element": "div",
+      "class": "md:mx-auto my-8 px-4 md:px-0 w-full lg:max-w-3xl",
+      "children": [
+        {
+          "element": "h1",
+          "class": "text-4xl mb-8",
+          "children": "Blog posts"
+        },
+        {
+          "element": "BlogPosts",
+          "__bind": "blogPosts.content"
+        }
+      ]
+    },
+    {
+      "element": "MainFooter"
+    },
+    {
+      "element": "Scripts",
+      "__bind": "scripts"
+    }
+  ]
+}

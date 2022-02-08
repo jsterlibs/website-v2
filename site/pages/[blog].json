@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "__title": "match.name",
+    "__description": "match.description"
+  },
+  "matchBy": { "dataSource": "blogPosts", "field": "id" },
+  "dataSources": [{ "name": "blogPosts" }],
+  "page": [
+    {
+      "element": "MainNavigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
+      "children": [
+        {
+          "element": "H1",
+          "__children": "match.title"
+        },
+        {
+          "element": "p",
+          "transformWith": "markdown",
+          "__children": "match.body"
+        }
+      ]
+    },
+    {
+      "element": "MainFooter"
+    }
+  ]
+}

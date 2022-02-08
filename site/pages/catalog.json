@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Catalog",
+    "description": "JavaScript libraries per category"
+  },
+  "dataSources": [{ "name": "parentCategories" }],
+  "page": [
+    {
+      "element": "MainNavigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-5xl",
+      "children": [
+        {
+          "element": "H1",
+          "children": "Catalog"
+        },
+        {
+          "element": "AllCategories",
+          "__bind": "parentCategories"
+        }
+      ]
+    },
+    {
+      "element": "MainFooter"
+    }
+  ]
+}

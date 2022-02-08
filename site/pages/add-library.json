@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Add library",
+    "description": "Add a library to the catalogue"
+  },
+  "page": [
+    {
+      "element": "MainNavigation"
+    },
+    {
+      "element": "main",
+      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
+      "children": [
+        {
+          "element": "H1",
+          "children": "Add library"
+        },
+        {
+          "element": "p",
+          "children": "TODO"
+        }
+      ]
+    },
+    {
+      "element": "MainFooter"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "/": {
+    "meta": {
+      "title": "JSter – JavaScript Catalog",
+      "description": "JSter catalogues JavaScript libraries per purpose"
+    },
+    "layout": "siteIndex",
+    "dataSources": [
+      {
+        "id": "parentCategories",
+        "operation": "parentCategories"
+      }
+    ]
+  }
+}
