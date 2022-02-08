@@ -30,6 +30,23 @@
         "id": "blogPosts",
         "operation": "blogPosts"
       }
-    ]
+    ],
+    "expand": {
+      "dataSources": [
+        {
+          "id": "blogPosts",
+          "operation": "blogPosts"
+        }
+      ],
+      "matchBy": {
+        "dataSource": "blogPosts",
+        "slug": "id"
+      },
+      "layout": "blogPage",
+      "meta": {
+        "__title": "match.name",
+        "__description": "match.description"
+      }
+    }
   }
 }

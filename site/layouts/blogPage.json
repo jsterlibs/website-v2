@@ -9,163 +9,17 @@
       "element": "MainNavigation"
     },
     {
-      "element": "header",
-      "class": "w-full h-64 bg-cover bg-center",
+      "element": "main",
+      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
       "children": [
         {
-          "element": "div",
-          "class": "px-4 flex flex-col justify-center text-white h-full bg-gradient-to-b from-transparent to-gray-800",
-          "children": [
-            {
-              "element": "h1",
-              "class": "text-5xl font-bold text-center items-center",
-              "__children": "match.data.title"
-            }
-          ]
-        }
-      ],
-      "attributes": {
-        "==style": "'background-image:url(' + match.data.images.header + ')'"
-      }
-    },
-    {
-      "element": "div",
-      "class": "md:mx-auto my-8 px-4 md:px-0 w-full lg:max-w-3xl flex flex-col gap-8",
-      "children": [
-        {
-          "element": "div",
-          "class": "font-thin text-base text-gray-600 flex items-center justify-between",
-          "children": [
-            {
-              "element": "div",
-              "class": "flex gap-1",
-              "children": [
-                {
-                  "element": "span",
-                  "children": "Published:"
-                },
-                {
-                  "element": "time",
-                  "==children": "new Date(match.data.date).toLocaleDateString('en-US')",
-                  "attributes": {
-                    "__datetime": "match.data.date"
-                  }
-                }
-              ]
-            },
-            {
-              "element": "Topics",
-              "__bind": "match.data.topics"
-            },
-            {
-              "element": "Link",
-              "==children": "match.data.author.name",
-              "attributes": {
-                "==href": "match.data.author.twitter"
-              }
-            }
-          ]
+          "element": "H1",
+          "__children": "match.title"
         },
         {
-          "element": "div",
-          "class": "prose lg:prose-xl",
-          "inputProperty": "match.content",
-          "transformWith": ["markdown"],
-          "__children": "content"
-        },
-        {
-          "element": "div",
-          "class": "flex flex-row w-full",
-          "children": [
-            {
-              "visibleIf": "match.previous",
-              "element": "Link",
-              "class": "w-full",
-              "children": [
-                {
-                  "element": "div",
-                  "class": "h-full p-4 flex flex-col gap-2 text-white bg-gradient-to-b from-transparent to-gray-800",
-                  "children": [
-                    {
-                      "element": "h2",
-                      "class": "flex flex-row justify-between",
-                      "children": [
-                        {
-                          "element": "span",
-                          "children": "&lsaquo;"
-                        },
-                        {
-                          "element": "span",
-                          "children": "Previous post"
-                        }
-                      ]
-                    },
-                    {
-                      "element": "h3",
-                      "class": "font-thin",
-                      "__children": "match.previous.data.title"
-                    }
-                  ]
-                }
-              ],
-              "attributes": {
-                "==href": "'/blog/' + match.previous.data.slug + '/'",
-                "x-state": "{ image: '' }",
-                "==x-intersect": "`{ options: { once: true }, state: { image: 'background-image:url(` + match.previous.data.images.thumbnail + `)' } }`",
-                "x-attr": "",
-                "@style": "state.image"
-              }
-            },
-            {
-              "visibleIf": "!match.previous",
-              "element": "div",
-              "class": "w-full"
-            },
-            {
-              "visibleIf": "match.next",
-              "element": "Link",
-              "class": "w-full",
-              "children": [
-                {
-                  "element": "div",
-                  "class": "h-full p-4 flex flex-col gap-2 text-white bg-gradient-to-b from-transparent to-gray-800",
-                  "children": [
-                    {
-                      "element": "h2",
-                      "class": "flex flex-row justify-between",
-                      "children": [
-                        {
-                          "element": "span",
-                          "children": "Next post"
-                        },
-                        {
-                          "element": "span",
-                          "children": "&rsaquo;"
-                        }
-                      ]
-                    },
-                    {
-                      "element": "h3",
-                      "class": "font-thin",
-                      "__children": "match.next.data.title"
-                    }
-                  ]
-                }
-              ],
-              "attributes": {
-                "==href": "'/blog/' + match.next.data.slug + '/'",
-                "x-state": "{ image: '' }",
-                "==x-intersect": "`{ options: { once: true }, state: { image: 'background-image:url(` + match.next.data.images.thumbnail + `)' } }`",
-                "x-attr": "",
-                "@style": "state.image"
-              }
-            },
-            {
-              "visibleIf": "!match.next",
-              "element": "div",
-              "class": "w-full"
-            }
-          ]
+          "element": "p",
+          "transformWith": "markdown",
+          "__children": "match.body"
         }
       ]
     },
