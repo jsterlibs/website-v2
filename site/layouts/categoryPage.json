@@ -1,11 +1,10 @@
 {
-  "meta": {
-    "__title": "match.title",
-    "__description": "match.description"
-  },
-  "matchBy": { "dataSource": "categories", "field": "id" },
-  "dataSources": [{ "name": "categories" }],
-  "page": [
+  "head": [
+    {
+      "element": "MetaFields"
+    }
+  ],
+  "body": [
     {
       "element": "MainNavigation"
     },
@@ -26,6 +25,10 @@
     },
     {
       "element": "MainFooter"
+    },
+    {
+      "element": "Scripts",
+      "__bind": "scripts"
     }
   ]
 }

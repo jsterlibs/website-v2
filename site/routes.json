@@ -25,6 +25,25 @@
       }
     ]
   },
+  "category": {
+    "expand": {
+      "dataSources": [
+        {
+          "id": "categories",
+          "operation": "categories"
+        }
+      ],
+      "matchBy": {
+        "dataSource": "categories",
+        "slug": "id"
+      },
+      "layout": "categoryPage",
+      "meta": {
+        "__title": "match.name",
+        "__description": "match.description"
+      }
+    }
+  },
   "about": {
     "meta": {
       "title": "JSter – About",
