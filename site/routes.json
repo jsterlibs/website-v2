@@ -11,5 +11,12 @@
         "operation": "parentCategories"
       }
     ]
+  },
+  "about": {
+    "meta": {
+      "title": "JSter – About",
+      "description": "About JSter"
+    },
+    "layout": "aboutPage"
   }
 }
