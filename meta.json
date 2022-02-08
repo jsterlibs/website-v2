@@ -1,6 +1,6 @@
 {
   "port": 3000,
-  "amountOfBuildThreads": 5,
+  "amountOfBuildThreads": "cpuMax",
   "meta": {
     "language": "en",
     "siteName": "JSter"
