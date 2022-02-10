@@ -56,6 +56,9 @@
     "watch:write-libraries": {
       "cmd": "deno run --unstable scripts/write-libraries.ts",
       "watch": true
+    },
+    "write-tags": {
+      "cmd": "deno run --unstable scripts/write-tags.ts"
     }
   },
   "imap": "import_map.json"

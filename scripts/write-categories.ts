@@ -1,6 +1,6 @@
 // Example usage: vr write-categories data/categories.json
-import { ensureDirSync } from "fs";
-import { join } from "path";
+import { ensureDirSync } from "https://deno.land/std@0.107.0/fs/mod.ts";
+import { join } from "https://deno.land/std@0.107.0/path/mod.ts";
 import { getLibraries } from "./get-libraries.ts";
 import { getJsonSync, last } from "./utils.ts";
 import type { Category } from "../types.ts";
