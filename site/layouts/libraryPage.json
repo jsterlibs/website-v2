@@ -10,15 +10,99 @@
     },
     {
       "element": "main",
-      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
+      "class": "py-4 mx-auto max-w-3xl flex flex-row gap-2",
       "children": [
         {
-          "element": "H1",
-          "__children": "match.name"
+          "element": "div",
+          "class": "prose lg:prose-xl",
+          "children": [
+            {
+              "element": "H1",
+              "__children": "match.name"
+            },
+            {
+              "element": "p",
+              "__children": "match.description"
+            }
+          ]
         },
         {
-          "element": "p",
-          "__children": "match.description"
+          "element": "div",
+          "class": "flex flex-col gap-4",
+          "children": [
+            {
+              "element": "div",
+              "class": "flex flex-col gap-2",
+              "children": [
+                {
+                  "element": "h2",
+                  "class": "text-xl",
+                  "children": "Links"
+                },
+                {
+                  "element": "ul",
+                  "class": "flex flex-row gap-2",
+                  "children": [
+                    {
+                      "element": "li",
+                      "children": [
+                        {
+                          "element": "a",
+                          "children": "Site",
+                          "attributes": {
+                            "__href": "match.links.site"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "element": "li",
+                      "children": [
+                        {
+                          "element": "a",
+                          "children": "GitHub",
+                          "attributes": {
+                            "__href": "match.links.github"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "class": "flex flex-col gap-2",
+              "children": [
+                {
+                  "element": "h2",
+                  "class": "text-xl",
+                  "children": "Tags"
+                },
+                {
+                  "element": "ul",
+                  "class": "flex flex-row gap-2",
+                  "__bind": "match.tags",
+                  "__children": [
+                    {
+                      "element": "li",
+                      "children": [
+                        {
+                          "element": "a",
+                          "class": "p-1 rounded-full border bg-violet-200",
+                          "__children": "data",
+                          "attributes": {
+                            "==href": "'/tags/' + data + '/'"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
