@@ -1,4 +1,4 @@
-// Example usage: vr write-categories data/categories.json
+// Example usage: vr write-tags
 import { ensureDirSync } from "https://deno.land/std@0.107.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.107.0/path/mod.ts";
 import { dir, getJsonSync } from "./utils.ts";
