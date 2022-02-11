@@ -10,7 +10,7 @@
     },
     {
       "element": "main",
-      "class": "py-4",
+      "class": "p-4",
       "children": [
         {
           "element": "div",

@@ -10,7 +10,7 @@
     },
     {
       "element": "main",
-      "class": "py-4 mx-auto max-w-3xl flex flex-row gap-2",
+      "class": "p-4 mx-auto max-w-3xl flex flex-row gap-2",
       "children": [
         {
           "element": "div",
@@ -81,24 +81,8 @@
                   "children": "Tags"
                 },
                 {
-                  "element": "ul",
-                  "class": "flex flex-row gap-2",
-                  "__bind": "match.tags",
-                  "__children": [
-                    {
-                      "element": "li",
-                      "children": [
-                        {
-                          "element": "a",
-                          "class": "p-1 rounded-full border bg-violet-200",
-                          "__children": "data",
-                          "attributes": {
-                            "==href": "'/tag/' + data + '/'"
-                          }
-                        }
-                      ]
-                    }
-                  ]
+                  "element": "Tags",
+                  "__bind": "match.tags"
                 }
               ]
             }

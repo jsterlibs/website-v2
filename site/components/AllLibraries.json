@@ -1,18 +1,22 @@
 {
   "element": "ul",
-  "class": "grid grid-cols-3 gap-8",
+  "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
   "__children": [
     {
       "element": "li",
-      "class": "my-4",
+      "class": "my-4 flex flex-col gap-4 w-full",
       "children": [
         {
           "element": "Link",
-          "class": "w-full bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+          "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
           "__children": "title",
           "attributes": {
             "__href": "url"
           }
+        },
+        {
+          "element": "Tags",
+          "__bind": "library.tags"
         }
       ]
     }

@@ -10,7 +10,7 @@
     },
     {
       "element": "main",
-      "class": "py-4 mx-auto max-w-5xl",
+      "class": "p-4 mx-auto max-w-5xl",
       "children": [
         {
           "element": "H1",

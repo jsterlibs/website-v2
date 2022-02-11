@@ -10,7 +10,7 @@
     },
     {
       "element": "main",
-      "class": "py-4 mx-auto max-w-3xl prose lg:prose-xl",
+      "class": "p-4 mx-auto max-w-3xl prose lg:prose-xl",
       "children": [
         {
           "element": "H1",
