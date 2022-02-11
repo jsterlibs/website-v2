@@ -93,7 +93,7 @@
                           "class": "p-1 rounded-full border bg-violet-200",
                           "__children": "data",
                           "attributes": {
-                            "==href": "'/tags/' + data + '/'"
+                            "==href": "'/tag/' + data + '/'"
                           }
                         }
                       ]
