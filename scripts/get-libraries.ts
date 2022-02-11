@@ -1,5 +1,5 @@
 import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
-import { last } from "./utils.ts";
+import { getJsonSync, last } from "./utils.ts";
 import type { Category } from "../types.ts";
 
 const getLibraries = async (category: string) => {
@@ -16,8 +16,15 @@ const getLibraries = async (category: string) => {
     }
 
     const title = $("h3", e).text().trim();
+    const id = last(url.split("/"));
 
-    url && libraries.push({ title, url, id: last(url.split("/")) });
+    url &&
+      libraries.push({
+        title,
+        url,
+        id,
+        library: getJsonSync(`./data/libraries/${id}.json`),
+      });
   });
 
   return libraries;
