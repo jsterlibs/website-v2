@@ -44,6 +44,25 @@
       }
     }
   },
+  "tag": {
+    "expand": {
+      "dataSources": [
+        {
+          "id": "tags",
+          "operation": "tags"
+        }
+      ],
+      "matchBy": {
+        "dataSource": "tags",
+        "slug": "id"
+      },
+      "layout": "categoryPage",
+      "meta": {
+        "__title": "match.name",
+        "__description": "match.description"
+      }
+    }
+  },
   "library": {
     "expand": {
       "dataSources": [
