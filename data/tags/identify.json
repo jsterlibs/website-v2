@@ -1,1 +1,1 @@
-[{"title":"detect-indent","url":"/library/detect-indent","id":"detect-indent"}]
+[{"title":"detect-indent","url":"/library/detect-indent","id":"detect-indent","library":{"id":"detect-indent","description":"Detect the indentation of some code. Useful if you need to persist indentation or have new content match existing indentation.","logo":"/images/repo.png","name":"detect-indent","links":{"site":"http://sindresorhus.com","github":"https://github.com/sindresorhus/detect-indent"},"tags":["bower","code","component","detect","identify","indentation","infer","npm"]}}]

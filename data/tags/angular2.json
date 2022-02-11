@@ -1,1 +1,1 @@
-[{"title":"NgxAni","url":"/library/ngxani","id":"ngxani"}]
+[{"title":"NgxAni","url":"/library/ngxani","id":"ngxani","library":{"id":"ngxani","description":"NgxAni is an animation plugin for AngularJS2+.\n\nIt is very simple and convenient to use. At the same time it has very good compatibility.\n\nNgxAni is a service class, do not rely on any file. You can use it in any Component or Directive.","logo":"/images/repo.png","name":"NgxAni","links":{"site":"https://a-jie.github.io/NgxAni/","github":"https://github.com/a-jie/NgxAni"},"tags":["angular2","animation","ng2"]}}]

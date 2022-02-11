@@ -1,1 +1,1 @@
-[{"title":"eva","url":"/library/eva","id":"eva"}]
+[{"title":"eva","url":"/library/eva","id":"eva","library":{"id":"eva","description":"Functions to create functions and evaluate expressions.","logo":"/images/repo.png","name":"eva","links":{"github":"https://github.com/gamtiq/eva"},"tags":["create","delegate","eval","expression","function"]}}]

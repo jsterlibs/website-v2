@@ -1,1 +1,1 @@
-[{"title":"ClojureScript","url":"/library/clojurescript","id":"clojurescript"}]
+[{"title":"ClojureScript","url":"/library/clojurescript","id":"clojurescript","library":{"id":"clojurescript","description":"ClojureScript is a new compiler for Clojure that targets JavaScript. It is designed to emit JavaScript code which is compatible with the advanced compilation mode of the Google Closure optimizing compiler.","logo":"http://clojure.org/file/view/clojure-icon.gif","name":"ClojureScript","links":{"github":"https://github.com/clojure/clojurescript"},"tags":["clojure"]}}]

@@ -1,1 +1,1 @@
-[{"title":"Spellbook","url":"/library/spellbook","id":"spellbook"}]
+[{"title":"Spellbook","url":"/library/spellbook","id":"spellbook","library":{"id":"spellbook","description":"Javascript tools and Class extensions.\nLibrary for extend the javascript abilities.","logo":"https://pbs.twimg.com/profile_images/712154442473336833/HaJxLcQn.jpg","name":"Spellbook","links":{"site":"http://spellbook.io","github":"https://github.com/warlock/spellbook"},"tags":["Object","array","async","each","extension","javascript","modules","promise","promises","range","stdlib","util"]}}]

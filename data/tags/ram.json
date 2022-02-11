@@ -1,1 +1,1 @@
-[{"title":"kash","url":"/library/kash","id":"kash"}]
+[{"title":"kash","url":"/library/kash","id":"kash","library":{"id":"kash","description":"Fast and efficient in-memory caching for JavaScript.","logo":"/images/repo.png","name":"kash","links":{"github":"https://github.com/matthewhudson/kash"},"tags":["cache","caching","data","memory","ram","storage"]}}]

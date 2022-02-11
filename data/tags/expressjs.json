@@ -1,1 +1,1 @@
-[{"title":"lingua","url":"/library/lingua","id":"lingua"}]
+[{"title":"lingua","url":"/library/lingua","id":"lingua","library":{"id":"lingua","description":"A i18n middleware for the Express.js framework.","logo":"/images/repo.png","name":"lingua","links":{"github":"https://github.com/akoenig/express-lingua"},"tags":["Node","expressjs","i18n"]}}]

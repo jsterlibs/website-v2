@@ -1,1 +1,1 @@
-[{"title":"Geddy","url":"/library/geddy","id":"geddy"}]
+[{"title":"Geddy","url":"/library/geddy","id":"geddy","library":{"id":"geddy","description":"A simple, structured MVC web framework for NodeJS.","logo":"https://avatars.githubusercontent.com/u/6487240?v=2","name":"Geddy","links":{"site":"http://geddyjs.org/","github":"https://github.com/geddy/geddy"},"tags":["Node","ORM","model","validations"]}}]

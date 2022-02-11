@@ -1,1 +1,1 @@
-[{"title":"asyncGate","url":"/library/asyncgate","id":"asyncgate"}]
+[{"title":"asyncGate","url":"/library/asyncgate","id":"asyncgate","library":{"id":"asyncgate","description":"asynchronous gate for javascript","logo":"/images/repo.png","name":"asyncGate","links":{"github":"https://github.com/getify/asyncGate.js"},"tags":["async","control","flow","gate"]}}]

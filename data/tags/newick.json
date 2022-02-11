@@ -1,1 +1,1 @@
-[{"title":"NewickJS","url":"/library/newickjs","id":"newickjs"}]
+[{"title":"NewickJS","url":"/library/newickjs","id":"newickjs","library":{"id":"newickjs","description":"JavaScript library for parsing and working with the Newick format.","logo":"http://tribunsky.com/img/newick_logo.png","name":"NewickJS","links":{"site":"http://tribunsky.com","github":"https://github.com/octav47/NewickJS"},"tags":["JS","newick","parser","tree"]}}]

@@ -1,1 +1,1 @@
-[{"title":"__SE__","url":"/library/se-sharedevents","id":"se-sharedevents"}]
+[{"title":"__SE__","url":"/library/se-sharedevents","id":"se-sharedevents","library":{"id":"se-sharedevents","description":"SharedEvents (SE): library for exchange events, data and tasks between browser tabs.\n\nRequirements: Blob, Blob.URL, Worker, localStorage","logo":"/images/repo.png","name":"__SE__","links":{"github":"https://github.com/Sombressoul/__SE__"},"tags":["data","events","exchange","tab","tabs"]}}]

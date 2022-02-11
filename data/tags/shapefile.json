@@ -1,1 +1,1 @@
-[{"title":"shapefile-js","url":"/library/shapefile-js","id":"shapefile-js"}]
+[{"title":"shapefile-js","url":"/library/shapefile-js","id":"shapefile-js","library":{"id":"shapefile-js","description":"Convert an ESRI shapefile into GeoJSON, can take either a link to a zipped shapefile, a link to a .shp file, or an array buffer of a zipped shapefile.","logo":"/images/repo.png","name":"shapefile-js","links":{"site":"https://calvinmetcalf.github.io/shapefile-js/","github":"https://github.com/calvinmetcalf/shapefile-js"},"tags":["geojson","shapefile","shp"]}}]

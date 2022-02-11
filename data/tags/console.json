@@ -1,1 +1,1 @@
-[{"title":"janeway","url":"/library/janeway","id":"janeway"}]
+[{"title":"janeway","url":"/library/janeway","id":"janeway","library":{"id":"janeway","description":"A console mouse-driven REPL for node.js","logo":"/images/repo.png","name":"janeway","links":{"github":"https://github.com/skerit/janeway"},"tags":["console","logger","repl"]}}]

@@ -1,1 +1,1 @@
-[{"title":"PlayN","url":"/library/playn","id":"playn"}]
+[{"title":"PlayN","url":"/library/playn","id":"playn","library":{"id":"playn","description":"PlayN\nis a cross-platform game abstraction library for writing games that compile to:\n\nDesktop Java\nHTML5 Browsers\nAndroid\niOS\nFlash","logo":"https://code.google.com/p/playn/logo?cct=1337812194","name":"PlayN","links":{"site":"https://code.google.com/p/playn/","github":"https://github.com/Just-/playn"},"tags":["android","canvas","jvm","webgl"]}}]

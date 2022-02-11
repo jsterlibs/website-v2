@@ -1,1 +1,1 @@
-[{"title":"tds","url":"/library/tds","id":"tds"}]
+[{"title":"tds","url":"/library/tds","id":"tds","library":{"id":"tds","description":"tds is an implementation of the TDS protocol, which is used for communication with Microsoft's SQL Server.","logo":"/images/repo.png","name":"tds","links":{"site":"https://ttghr.github.io/tds/","github":"https://github.com/ttghr/tds"},"tags":["Database","SQL_Server","TDS"]}}]

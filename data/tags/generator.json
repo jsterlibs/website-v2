@@ -1,1 +1,1 @@
-[{"title":"numgen","url":"/library/numgen","id":"numgen"}]
+[{"title":"numgen","url":"/library/numgen","id":"numgen","library":{"id":"numgen","description":"Creates objects that generate number sequences","logo":"/images/repo.png","name":"numgen","links":{"github":"https://github.com/gamtiq/numgen"},"tags":["Fibonacci","generator","number","progression","sequence"]}}]

@@ -1,1 +1,1 @@
-[{"title":"Karma","url":"/library/karma","id":"karma"}]
+[{"title":"Karma","url":"/library/karma","id":"karma","library":{"id":"karma","description":"A simple tool that allows you to execute JavaScript code in multiple real browsers, powered by Node.js and Socket.io.","logo":"https://0.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-org-420.png","name":"Karma","links":{"site":"https://karma-runner.github.io","github":"https://github.com/karma-runner/karma"},"tags":["runner"]}}]

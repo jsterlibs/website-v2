@@ -1,1 +1,1 @@
-[{"title":"COA","url":"/library/coa","id":"coa"}]
+[{"title":"COA","url":"/library/coa","id":"coa","library":{"id":"coa","description":"COA is a parser for command line options that aim to get maximum profit from formalization your program API. Once you write definition in terms of commands, options and arguments you automaticaly get:\n- Command line help text\n- Program API for use COA-based programs as modules\n- Shell completion","logo":"/images/repo.png","name":"COA","links":{"github":"https://github.com/veged/coa"},"tags":["cli","command","line","optparse"]}}]

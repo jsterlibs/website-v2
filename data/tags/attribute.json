@@ -1,1 +1,1 @@
-[{"title":"srcset","url":"/library/srcset","id":"srcset"}]
+[{"title":"srcset","url":"/library/srcset","id":"srcset","library":{"id":"srcset","description":"Parse and stringify the HTML  srcset attribute.","logo":"/images/repo.png","name":"srcset","links":{"site":"http://sindresorhus.com","github":"https://github.com/sindresorhus/srcset"},"tags":["attribute","bower","component","html","image","img","npm","parse","src","stringify"]}}]

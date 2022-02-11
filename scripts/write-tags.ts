@@ -16,7 +16,12 @@ const writeTags = async () => {
   const allTags: Record<string, Category[]> = {};
 
   Object.values(libraries).forEach(({ id, name: title, tags }) => {
-    const o: Category = { title, url: `/library/${id}`, id };
+    const o: Category = {
+      title,
+      url: `/library/${id}`,
+      id,
+      library: getJsonSync(`./data/libraries/${id}.json`),
+    };
 
     tags.forEach((tag) => {
       if (allTags[tag]) {

@@ -1,1 +1,1 @@
-[{"title":"seeq","url":"/library/seeq","id":"seeq"}]
+[{"title":"seeq","url":"/library/seeq","id":"seeq","library":{"id":"seeq","description":"Detect whether a name is registered or present on some resource (GitHub, NPM, Component, Bower, Jam, ...).\nAlso allows searching for string on specified resources.","logo":"/images/repo.png","name":"seeq","links":{"github":"https://github.com/gamtiq/seeq"},"tags":["check","detect","discover","library","package","project","search","seek"]}}]

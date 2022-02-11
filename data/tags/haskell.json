@@ -1,1 +1,1 @@
-[{"title":"Fay","url":"/library/fay","id":"fay"}]
+[{"title":"Fay","url":"/library/fay","id":"fay","library":{"id":"fay","description":"Fay is a proper subset of Haskell that compiles to JavaScript.","logo":"http://fay-lang.org/logo-large.png","name":"Fay","links":{"site":"http://fay-lang.org/","github":"https://github.com/faylang/fay"},"tags":["haskell"]}}]

@@ -1,1 +1,1 @@
-[{"title":"newClass","url":"/library/newclass","id":"newclass"}]
+[{"title":"newClass","url":"/library/newclass","id":"newclass","library":{"id":"newclass","description":"Provides class like programming to JavaScript while staying close to prototypal inheritance.","logo":"/images/repo.png","name":"newClass","links":{"github":"https://github.com/edwinm/newClass"},"tags":["OOP","Object","Oriented","inheritance","prototypal","prototype"]}}]
