@@ -61,5 +61,5 @@
       "cmd": "deno run --unstable scripts/write-tags.ts"
     }
   },
-  "imap": "import_map.json"
+  "importMap": "import_map.json"
 }
