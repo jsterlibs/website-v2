@@ -1,0 +1,58 @@
+type: static
+title: "JSter #178: Libraries, articles, and more"
+short_title: "JSter #178"
+user: bebraw
+slug: jster-178
+body: |
+  > It's not just a signal, it's JavaScript
+
+  There are no words for what's happening in Ukraine right now. I can only hope the situation finds a peaceful resolution as soon as possible. That said, here's a monthly list of JavaScript links to study.
+
+  ## Libraries
+
+  * [Braid](https://braid.org/) - Synchronization for HTTP
+  * [cosinekitty/astronomy](https://github.com/cosinekitty/astronomy) - Astronomy Engine: multi-language calculation of Sun, Moon, and planet positions. Predicts lunar phases, eclipses, transits, oppositions, conjunctions, equinoxes, solstices, rise/set times, and other events. Provides vector and angular coordinate transforms among equatorial, ecliptic, and horizontal orientations.
+  * [fdaciuk/conduit-api](https://github.com/fdaciuk/conduit-api) - API for Real World App project (Conduit) using Node.js + TS with Functional Programming
+  * [matthewp/haunted](https://github.com/matthewp/haunted) - React's Hooks API implemented for web components
+  * [classname-variants](https://www.npmjs.com/package/classname-variants) - Stitches-like variant API for plain class names
+  * [googlemaps-react-primitives](https://www.npmjs.com/package/googlemaps-react-primitives) - Google Maps primitives for React
+  * [react-api-query](https://www.npmjs.com/package/react-api-query) - Hooks to use react-query with a typed API client
+  * [Rythm.js](https://okazari.github.io/Rythm.js/) - A JavaScript library that makes your page dance
+  * [terotests/numbot](https://github.com/terotests/numbot) - A configurable parser for text based logs
+
+  ## Frameworks
+
+  * [raimohanska/harmaja](https://github.com/raimohanska/harmaja) - Experimental frontend framework
+  * [BuilderIO/qwik](https://github.com/BuilderIO/qwik) - The HTML-first framework. Initialize apps of any size with < 1kb JS
+  * [pankod/refine](https://github.com/pankod/refine) - refine is a React-based headless framework for building data-intensive applications in no time ✨ It ships with Ant Design System, an enterprise-level UI toolkit.
+
+  ## TypeScript
+
+  * [Filtering undefined elements from an array in TypeScript](https://www.benmvp.com/blog/filtering-undefined-elements-from-array-typescript/)
+
+  ## Security
+
+  * [Simek/yarn-lock-changes](https://github.com/Simek/yarn-lock-changes) - Creates a comment inside Pull Request with the human-readable summary of changes to the Yarn lock file
+  * [Injecting backdoors to NPM packages](https://dev.to/kozlovzxc/injecting-backdoors-to-npm-packages-a0k)
+  * [Enarx](https://enarx.dev/) - WebAssembly + Confidential Computing
+
+  ## CSS
+
+  * [Don't try this at home: CSS _as_ the backend - introducing Cascading Server Sheets!](https://dev.to/thormeier/dont-try-this-at-home-css-as-the-backend-what-3oih)
+
+  ## Articles
+
+  * [The State of JS 2021](https://2021.stateofjs.com/en-us/)
+  * [How onChange Differs Between React and Vanilla JavaScript](https://betterprogramming.pub/how-onchange-differs-between-react-and-vanilla-javascript-90b56d6a340a)
+  * [Solving a Mystery Behavior of parseInt() in JavaScript](https://dmitripavlutin.com/parseint-mystery-javascript/)
+  * [Why Efficient Hydration in JavaScript Frameworks is so Challenging](https://dev.to/this-is-learning/why-efficient-hydration-in-javascript-frameworks-is-so-challenging-1ca3)
+
+  ## Tools
+
+  * [Smooth Shadow](https://shadows.brumm.af/) - Smooth shadow generator
+
+  ## Techniques
+
+  * [An Accessible Modal Dialog with HTML, CSS, and JavaScript](https://levelup.gitconnected.com/an-accessible-modal-dialog-with-html-css-and-javascript-d885004d0b3a)
+  * [Building like it's 1984: A comprehensive guide to creating intuitive context menus](https://height.app/blog/guide-to-build-context-menus)
+  * [Using a JavaScript proxy as low code REST client](https://gist.github.com/DavidWells/53518b3c12344952641dc81cc7599939)
