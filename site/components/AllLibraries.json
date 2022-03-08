@@ -28,37 +28,17 @@
     {
       "element": "ul",
       "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
+      "attributes": {
+        "x-each": "state.libraries"
+      },
       "children": [
-        {
-          "element": "template",
-          "attributes": {
-            "x-each": "state.libraries"
-          },
-          "children": [
-            {
-              "element": "li",
-              "class": "my-4 flex flex-col gap-4 w-full",
-              "children": [
-                {
-                  "element": "Link",
-                  "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
-                  "attributes": {
-                    "x": "state.value.title",
-                    "x-attr": "",
-                    "@href": "state.value.url"
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "__children": [
             {
               "element": "li",
               "class": "my-4 flex flex-col gap-4 w-full",
               "attributes": {
-                "x-initial": ""
+                "x-template": "initial"
               },
               "children": [
                 {
@@ -66,7 +46,10 @@
                   "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
                   "__children": "title",
                   "attributes": {
-                    "__href": "url"
+                    "__href": "url",
+                    "x": "state.value.title",
+                    "x-attr": "",
+                    "@href": "state.value.url"
                   }
                 },
                 {
