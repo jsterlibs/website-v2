@@ -1,22 +1,81 @@
 {
-  "element": "ul",
-  "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
-  "__children": [
+  "element": "div",
+  "attributes": {
+    "==x-state": "'{ libraries: JSON.parse(decodeURIComponent(escape(atob(`' + btoa(unescape(encodeURIComponent(JSON.stringify(data)))) + '`)))) }'"
+  },
+  "children": [
     {
-      "element": "li",
-      "class": "my-4 flex flex-col gap-4 w-full",
+      "element": "button",
+      "children": "Show ten libraries",
+      "attributes": {
+        "onclick": "setState(state => ({ libraries: state.libraries.slice(0, 10) }))"
+      }
+    },
+    {
+      "element": "button",
+      "children": "Sort libraries",
+      "attributes": {
+        "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => a.title.localeCompare(b.title)) }))"
+      }
+    },
+    {
+      "element": "button",
+      "children": "Sort libraries reversed",
+      "attributes": {
+        "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => b.title.localeCompare(a.title)) }))"
+      }
+    },
+    {
+      "element": "ul",
+      "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
       "children": [
         {
-          "element": "Link",
-          "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
-          "__children": "title",
+          "element": "template",
           "attributes": {
-            "__href": "url"
-          }
+            "x-each": "state.libraries"
+          },
+          "children": [
+            {
+              "element": "li",
+              "class": "my-4 flex flex-col gap-4 w-full",
+              "children": [
+                {
+                  "element": "Link",
+                  "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+                  "attributes": {
+                    "x": "state.value.title",
+                    "x-attr": "",
+                    "@href": "state.value.url"
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "element": "Tags",
-          "__bind": "library.tags"
+          "__children": [
+            {
+              "element": "li",
+              "class": "my-4 flex flex-col gap-4 w-full",
+              "attributes": {
+                "x-initial": ""
+              },
+              "children": [
+                {
+                  "element": "Link",
+                  "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+                  "__children": "title",
+                  "attributes": {
+                    "__href": "url"
+                  }
+                },
+                {
+                  "element": "Tags",
+                  "__bind": "library.tags"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
