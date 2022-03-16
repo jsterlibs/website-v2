@@ -31,9 +31,6 @@ body: |
 
     ## Tutorials
 
-    {{ screenshot: http://scotch.io/tutorials/javascript/getting-to-know-flux-the-react-js-architecture }}
-
-    * [Getting To Know Flux, the React.js Architecture](http://scotch.io/tutorials/javascript/getting-to-know-flux-the-react-js-architecture)
     * [A Reflux TodoMVC codebase walkthrough](http://blog.krawaller.se/posts/a-reflux-todomvc-codebase-walkthrough/)
     * [ES6 Array methods](http://h3manth.com/new/blog/2014/es6-array-methods/)
 
@@ -50,7 +47,6 @@ body: |
     * [Amphibian Abstracts: Call Now, Log Later](http://thoughts.amphibian.com/2014/11/call-now-log-later.html)
     * [An easier way of using polyfills](https://hacks.mozilla.org/2014/11/an-easier-way-of-using-polyfills/)
     * [Porting to Emscripten](https://hacks.mozilla.org/2014/11/porting-to-emscripten/)
-    * [AngularJS Form Validation](http://scotch.io/tutorials/javascript/angularjs-form-validation)
 
     ## Random
 
