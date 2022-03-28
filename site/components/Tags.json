@@ -2,13 +2,13 @@
   "element": "ul",
   "class": "flex flex-row flex-wrap gap-x-2 gap-y-4",
   "attributes": {
-    "x-each": "state.value.tags"
+    "x-each": "state.value.library.tags"
   },
   "__children": [
     {
       "element": "li",
       "attributes": {
-        "x-template": "initial"
+        "x-template": ""
       },
       "children": [
         {
