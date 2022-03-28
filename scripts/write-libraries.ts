@@ -1,4 +1,4 @@
-// Example usage: vr write-libraries data/categories
+// Example usage: vr write-libraries assets/data/categories
 import { ensureDirSync, expandGlobSync } from "fs";
 import { join } from "path";
 import { getLibrary } from "./get-library.ts";

@@ -23,7 +23,7 @@ const getLibraries = async (category: string) => {
         title,
         url,
         id,
-        library: getJsonSync(`./data/libraries/${id}.json`),
+        library: getJsonSync(`./assets/data/libraries/${id}.json`),
       });
   });
 

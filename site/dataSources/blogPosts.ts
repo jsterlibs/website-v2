@@ -2,7 +2,7 @@ import { Marked, Renderer } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 import YAML from "https://esm.sh/yaml@1.10.2";
 import { dir } from "../../scripts/utils.ts";
 import type { BlogPost } from "../../types.ts";
-import blogIndex from "../../data/blogposts.json" assert {
+import blogIndex from "../../assets/data/blogposts.json" assert {
   type: "json",
 };
 
@@ -21,7 +21,7 @@ Marked.setOptions({
 });
 
 async function getBlogPosts() {
-  const blogPosts: BlogPost[] = (await dir("./data/blogposts")).map(
+  const blogPosts: BlogPost[] = (await dir("./assets/data/blogposts")).map(
     ({ name, path }) => {
       const yaml = YAML.parse(Deno.readTextFileSync(path));
 

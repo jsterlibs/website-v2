@@ -1,4 +1,4 @@
-import parentCategories from "../../data/parent-categories.json" assert {
+import parentCategories from "../../assets/data/parent-categories.json" assert {
   type: "json",
 };
 
