@@ -7,7 +7,7 @@ import type { Category, Library } from "../types.ts";
 const writeTags = async () => {
   console.log("Writing tags");
   const libraries = Object.fromEntries(
-    (await dir("./data/libraries")).map(({ path }) => {
+    (await dir("./assets/data/libraries")).map(({ path }) => {
       const data = getJsonSync<Library>(path);
 
       return [data.id, data];
@@ -20,7 +20,7 @@ const writeTags = async () => {
       title,
       url: `/library/${id}`,
       id,
-      library: getJsonSync(`./data/libraries/${id}.json`),
+      library: getJsonSync(`./assets/data/libraries/${id}.json`),
     };
 
     tags.forEach((tag) => {
@@ -32,7 +32,7 @@ const writeTags = async () => {
     });
   });
 
-  const outputDirectory = "./data/tags";
+  const outputDirectory = "./assets/data/tags";
 
   ensureDirSync(outputDirectory);
 

@@ -8,7 +8,7 @@ import type { Library } from "../types.ts";
 const writeLibraries = async (inputDirectory: string) => {
   console.log("Writing libraries");
   const categories = expandGlobSync(join(inputDirectory, "*.json"));
-  const outputDirectory = "./data/libraries";
+  const outputDirectory = "./assets/data/libraries";
 
   ensureDirSync(outputDirectory);
 

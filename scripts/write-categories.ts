@@ -8,7 +8,7 @@ import type { Category } from "../types.ts";
 const writeCategories = async (inputDirectory: string) => {
   console.log("Writing categories");
   const categories = getJsonSync<Category[]>(inputDirectory);
-  const outputDirectory = "./data/categories";
+  const outputDirectory = "./assets/data/categories";
 
   ensureDirSync(outputDirectory);
 
