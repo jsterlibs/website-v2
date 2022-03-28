@@ -31,32 +31,28 @@
       "attributes": {
         "x-each": "state.libraries"
       },
-      "children": [
+      "__children": [
         {
-          "__children": [
+          "element": "li",
+          "class": "my-4 flex flex-col gap-4 w-full",
+          "attributes": {
+            "x-template": ""
+          },
+          "children": [
             {
-              "element": "li",
-              "class": "my-4 flex flex-col gap-4 w-full",
+              "element": "Link",
+              "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+              "__children": "title",
               "attributes": {
-                "x-template": ""
-              },
-              "children": [
-                {
-                  "element": "Link",
-                  "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
-                  "__children": "title",
-                  "attributes": {
-                    "__href": "url",
-                    "x": "state.value.title",
-                    "x-attr": "",
-                    "@href": "state.value.url"
-                  }
-                },
-                {
-                  "element": "Tags",
-                  "__bind": "library.tags"
-                }
-              ]
+                "__href": "url",
+                "x": "state.value.title",
+                "x-attr": "",
+                "@href": "state.value.url"
+              }
+            },
+            {
+              "element": "Tags",
+              "__bind": "library.tags"
             }
           ]
         }
