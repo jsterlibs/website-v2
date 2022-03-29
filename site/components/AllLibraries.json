@@ -13,14 +13,14 @@
     },
     {
       "element": "button",
-      "children": "Sort libraries",
+      "children": "Sort libraries (asc.)",
       "attributes": {
         "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => a.title.localeCompare(b.title)) }))"
       }
     },
     {
       "element": "button",
-      "children": "Sort libraries reversed",
+      "children": "Sort libraries (desc.)",
       "attributes": {
         "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => b.title.localeCompare(a.title)) }))"
       }
