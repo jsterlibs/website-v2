@@ -1,7 +1,7 @@
 {
   "element": "div",
   "attributes": {
-    "==x-state": "'{ libraries: JSON.parse(decodeURIComponent(escape(atob(`' + btoa(unescape(encodeURIComponent(JSON.stringify(data)))) + '`)))) }'"
+    "x-state": "'{ libraries: [] }'"
   },
   "children": [
     {
@@ -29,7 +29,8 @@
       "element": "ul",
       "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
       "attributes": {
-        "x-each": "state.libraries"
+        "x-each": "state.libraries",
+        "x-ssr": ""
       },
       "__children": [
         {
