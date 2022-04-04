@@ -1,0 +1,59 @@
+type: static
+title: "JSter #179: Libraries, articles, and more"
+short_title: "JSter #179"
+user: bebraw
+slug: jster-179
+body: |
+  > The JavaScript must flow
+
+  I've been working on the [SSR capabilities of Sidewind](https://sidewind.js.org/ssr/) to prepare for the launch of the next version of jster.net. Let's see if I can get that live before the next mail.
+
+  ## Libraries
+
+  * [porsager/postgres](https://github.com/porsager/postgres) - The Fastest full featured PostgreSQL client for Node.js and Deno
+  * [capsidjs/capsid](https://github.com/capsidjs/capsid) - Declarative DOM programming library. Lightweight (1.79 kb)
+  * [phiresky/sql.js-httpvfs](https://github.com/phiresky/sql.js-httpvfs) - sql.js is a light wrapper around SQLite compiled with EMScripten for use in the browser
+
+  ## Frameworks
+
+  * [Vanilla](https://vanillaframework.io/) - A simple, extensible CSS framework
+  * [robtweed/golgi](https://github.com/robtweed/golgi) - Dynamically-loading WebComponent Assembly UI Framework
+
+  ## Tools
+
+  * [mbalabash/sdc-check](https://github.com/mbalabash/sdc-check) - Easy-to-use tool to inform you about potential risks in your project dependencies list
+  * [Histoire](https://histoire.dev/) - Fast stories powered by Vite
+
+  ## Environments
+
+  * [natto](https://natto.dev/) - A spatial environment in JavaScript
+
+  ## Demos
+
+  * [100,000 Stars](https://stars.chromeexperiments.com/)
+
+  ## Articles
+
+  * [Tao of Node](https://alexkondov.com/tao-of-node/)
+  * [Alert: peacenotwar module sabotages npm developers in the node-ipc package to protest the invasion of Ukraine](https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/)
+  * [Native apps faster than Electron using hostbridge build](https://dev.to/progrium/native-apps-faster-than-electron-using-hostbridge-build-11jc)
+  * [Interop 2022: browsers working together to improve the web for developers](https://web.dev/interop-2022/)
+
+  ## React
+
+  * [4Catalyzer/found](https://github.com/4Catalyzer/found) - Extensible route-based routing for React applications
+  * [Ladle](https://www.ladle.dev/) - Develop and test your React stories faster
+  * [How to Upgrade to React 18](https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html)
+  * [React Sigma](https://sim51.github.io/react-sigma/) - Render graphs with React
+  * [Mantine](https://mantine.dev/) - A fully featured React components library
+
+  ## Techniques
+
+  * [Runtime Data Validation from TypeScript Interfaces](https://betterprogramming.pub/runtime-data-validation-from-typescript-interfaces-1001ad22e775)
+  * [The selectmenu HTML Tag](https://css-tricks.com/the-selectmenu-element/)
+  * [WebGPU](https://surma.dev/things/webgpu/) - All of the cores, none of the canvas
+  * [Monorepos are changing how teams build software](https://vercel.com/blog/monorepos-are-changing-how-teams-build-software)
+
+  ## Proposals
+
+  * [A Proposal For Type Syntax in JavaScript](https://devblogs.microsoft.com/typescript/a-proposal-for-type-syntax-in-javascript/)
