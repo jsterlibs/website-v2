@@ -52,6 +52,14 @@
               }
             },
             {
+              "element": "div",
+              "__children": "library.stargazers"
+            },
+            {
+              "element": "div",
+              "==children": "JSON.stringify(library, null, 2)"
+            },
+            {
               "element": "Tags",
               "__bind": "library.tags"
             }

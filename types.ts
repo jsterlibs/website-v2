@@ -29,6 +29,7 @@ type Library = {
     github?: string;
   };
   tags: string[];
+  stargazers?: number;
 };
 type DataContext = Record<string, unknown> | Record<string, unknown>[];
 type ParentCategory = { title: string; children: Category[] };

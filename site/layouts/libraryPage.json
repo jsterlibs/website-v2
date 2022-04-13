@@ -66,6 +66,15 @@
                           }
                         }
                       ]
+                    },
+                    {
+                      "element": "li",
+                      "children": [
+                        {
+                          "element": "a",
+                          "==children": "'Stars: ' + match.stargazers"
+                        }
+                      ]
                     }
                   ]
                 }
