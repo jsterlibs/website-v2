@@ -1,0 +1,66 @@
+type: static
+title: "JSter #180: Libraries, articles, and more"
+short_title: "JSter #180"
+user: bebraw
+slug: jster-180
+body: |
+  > If we don't JavaScript, no one will
+
+  Another month went by very fast. Perhaps the biggest news of the month is that the popular monorepo tool Lerna reached its end of life and won't be actively maintained anymore. If you are still using it, it's worth looking into options.
+
+  ## Libraries
+
+  * [gvergnaud/ts-pattern](https://github.com/gvergnaud/ts-pattern) - The exhaustive Pattern Matching library for TypeScript, with smart type inference
+  * [SQLite On The Web: Absurd-sql](https://hackaday.com/2021/08/24/sqlite-on-the-web-absurd-sql/)
+
+  ## Tools
+
+  * [PyScript](https://pyscript.net/) - Python but in browser
+  * [pure JS WiFi QR Code Generator](https://qifi.org/)
+  * [ghiscoding/lerna-lite](https://github.com/ghiscoding/lerna-lite) - Automate your workspace version & publish by using conventional-changelog-commits
+  * [lerna](https://github.com/lerna/lerna) - Lerna has reached end of life
+  * [Retheme.org](https://retheme.org/) - The internet without ads
+  * [Jest 28: Shedding weight and improving compatibility 🫶](https://jestjs.io/blog/2022/04/25/jest-28)
+  * [Node.js 18 is now available!](https://nodejs.org/en/blog/announcements/v18-release-announce/)
+  * [dutiyesh/chrome-extension-cli](https://github.com/dutiyesh/chrome-extension-cli) - The CLI for your next Chrome Extension
+  * [BuilderIO/mitosis](https://github.com/BuilderIO/mitosis) - Write components once, run everywhere. Compiles to Vue, React, Solid, Angular, Svelte, and more
+  * [Storybook Lazy Compilation for Webpack](https://storybook.js.org/blog/storybook-lazy-compilation-for-webpack/)
+  * [AST explorer](https://astexplorer.net/)
+  * [Rome formatter is now available](https://rome.tools/blog/2022/04/05/rome_formatter_release)
+  * [Astro (static site generator) 1.0 Beta Release](https://astro.build/blog/astro-1-beta-release/)
+
+  ## Techniques
+
+  * [How to Build Real-time App with Node.js](https://www.simform.com/blog/build-real-time-apps-node-js/)
+  * [Transpiling ESM files inside node_modules](https://blog.sapegin.me/til/javascript/transpiling-esm-in-node-modules/)
+  * [How to use idb, a 1kb package that makes IndexedDB easy](https://hackernoon.com/use-indexeddb-with-idb-a-1kb-library-that-makes-it-easy-8p1f3yqq)
+
+  ## Frameworks
+
+  * [Ultra: Un-bundle the Web](https://ultrajs.dev/)
+  * [Lexical](https://lexical.dev/) - An extensible text editor framework that does things differently
+
+  ## Guides
+
+  * [Deno Cheat Sheet](https://oscarotero.com/deno/)
+  * [The Practical Guide to Naming Design Tokens](https://uxdesign.cc/naming-design-tokens-9454818ed7cb)
+  * [Node.js Development Business Guide](https://www.ideamotive.co/node/guide)
+
+  ## Articles
+
+  * [How I use TypeScript to Boost My Productivity](https://www.offerzen.com/blog/how-typescript-boosts-productivity)
+  * [Writing cross-platform components for web and React Native](https://blog.sapegin.me/all/react-native-components/)
+  * [Setting up Cloudflare Workers for web performance optimisation and testing](https://nooshu.com/blog/2021/03/14/setting-up-cloudflare-workers-for-web-performance-optimisation-and-testing/)
+  * [Frontend Security: npm-audit and Script integrity](https://dev.to/madsstoumann/frontend-security-npm-audit-and-script-integrity-kl3)
+
+  ## Services
+
+  * [MythBusters JS](https://mythbusters.js.org/) - Busting JS myths
+
+  ## Design Systems
+
+  * [Launching Nord Design System](https://viljamis.com/2022/launching-nord-design-system/)
+
+  ## Demos
+
+  * [World Sizes](https://arnofiva.github.io/world-sizes/)
