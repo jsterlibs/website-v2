@@ -25,6 +25,12 @@
       ]
     },
     {
+      "element": "div",
+      "debug_attributes": {
+        "x": "JSON.stringify(state.libraries, null, 2)"
+      }
+    },
+    {
       "element": "ul",
       "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
       "attributes": {
