@@ -7,7 +7,7 @@
     {
       "element": "div",
       "class": "flex gap-1",
-      "children": [
+      "todo_children": [
         {
           "element": "button",
           "children": "Sort libraries (asc.)",
