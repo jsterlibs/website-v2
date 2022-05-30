@@ -70,7 +70,11 @@
                     },
                     {
                       "element": "span",
-                      "__children": "library.stargazers"
+                      "__children": "library.stargazers",
+                      "attributes": {
+                        "x": "state.value.stargazers",
+                        "x-attr": ""
+                      }
                     }
                   ]
                 },
@@ -78,7 +82,9 @@
                   "element": "Link",
                   "children": "GitHub page",
                   "attributes": {
-                    "__href": "library.links.github"
+                    "__href": "library.links.github",
+                    "x-attr": "",
+                    "@href": "state.value.links.github"
                   }
                 }
               ]
