@@ -63,13 +63,9 @@ async function getLibraries(): Promise<Library[]> {
             const { stargazers } = await response.text().then((text) => {
               try {
                 return JSON.parse(text);
-              } catch (error) {
-                console.error(
-                  "Failed to parse",
-                  error,
-                  text,
-                  library.links.github,
-                );
+              } catch (_error) {
+                // no-op: Error is expected here as some libraries don't have this data
+                // because they aren't hosted on GitHub for example.
               }
 
               return 0;
