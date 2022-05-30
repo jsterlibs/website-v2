@@ -16,14 +16,14 @@
               "children": [
                 {
                   "element": "h2",
-                  "children": "New additions"
+                  "todo_children": "New additions"
                 },
                 {
                   "element": "ul",
                   "children": [
                     {
                       "element": "li",
-                      "children": "TODO"
+                      "todo_children": "TODO"
                     }
                   ]
                 }
@@ -35,11 +35,11 @@
               "children": [
                 {
                   "element": "h2",
-                  "children": "Selected library"
+                  "todo_children": "Selected library"
                 },
                 {
                   "element": "div",
-                  "children": "Demo library"
+                  "todo_children": "Demo library"
                 }
               ]
             }
