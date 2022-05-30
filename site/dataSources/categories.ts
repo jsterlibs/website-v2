@@ -14,7 +14,9 @@ async function getCategories() {
     ...category,
     libraries: (await getJson<Library[]>(
       `assets/data/categories/${category.id}.json`,
-    )).map((l) => libraries.find((library) => library.id === l.id)),
+    )).map((l) => libraries.find((library) => library.id === l.id)).filter(
+      Boolean,
+    ),
   })));
 }
 

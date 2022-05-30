@@ -15,7 +15,7 @@ const cacheDirectory = ".gustwind_cache";
 async function getLibraries(): Promise<Library[]> {
   const libraries = await dir("./assets/data/libraries");
   const limit = pLimit(8);
-  return Promise.all(
+  const enhancedLibraries = await Promise.all(
     await libraries.map(({ path }) =>
       limit(async () => {
         const library = await getJson<Library>(path);
@@ -32,9 +32,15 @@ async function getLibraries(): Promise<Library[]> {
           const cachePath = join(cacheDirectory, library.name + ".json");
 
           try {
-            const cachedFile = await Deno.readTextFile(cachePath);
+            const cachedLibrary = JSON.parse(
+              await Deno.readTextFile(cachePath),
+            );
 
-            return JSON.parse(cachedFile);
+            if (cachedLibrary.stargazers === "undefined") {
+              return;
+            }
+
+            return cachedLibrary;
           } catch (_error) {
             // no-op: Error here is ok as then it means the cache file doesn't exist yet
           }
@@ -69,6 +75,10 @@ async function getLibraries(): Promise<Library[]> {
               return 0;
             });
 
+            if (stargazers === "undefined") {
+              return;
+            }
+
             const ret = {
               ...library,
               stargazers,
@@ -92,6 +102,8 @@ async function getLibraries(): Promise<Library[]> {
       })
     ),
   );
+
+  return enhancedLibraries.filter(Boolean);
 }
 
 export default getLibraries;

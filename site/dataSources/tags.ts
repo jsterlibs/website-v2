@@ -10,10 +10,16 @@ async function getTags() {
   ) => ({
     id: name.split(".").slice(0, -1).join(),
     title: name.split(".").slice(0, -1).join(),
-    libraries: (await getJson<Category[]>(path)).map((c) => ({
-      ...c,
-      library: libraries.find((l) => l.id === c.library.id),
-    })),
+    libraries: (await getJson<Category[]>(path)).map((c) => {
+      const foundLibrary = libraries.find((l) => l.id === c.library.id);
+
+      if (foundLibrary) {
+        return ({
+          ...c,
+          library: foundLibrary,
+        });
+      }
+    }).filter(Boolean),
   })));
 }
 
