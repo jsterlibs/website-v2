@@ -3,9 +3,12 @@ import { getJson } from "../../scripts/utils.ts";
 import categories from "../../assets/data/categories.json" assert {
   type: "json",
 };
+import getLibraries from "./libraries.ts";
 
-// TODO: Change this to refer to libraries by id and resolve to that data since it's enhanced
-function getCategories() {
+async function getCategories() {
+  const libraries = await getLibraries();
+
+  // TODO: Point to the enhanced library data here (map by id)
   return Promise.all(categories.map(async (
     category,
   ) => ({
