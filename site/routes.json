@@ -30,7 +30,8 @@
       "dataSources": [
         {
           "id": "categories",
-          "operation": "categories"
+          "operation": "categories",
+          "dependsOn": ["libraries"]
         }
       ],
       "matchBy": {
@@ -54,7 +55,8 @@
       ],
       "matchBy": {
         "dataSource": "tags",
-        "slug": "id"
+        "slug": "id",
+        "dependsOn": ["libraries"]
       },
       "layout": "categoryPage",
       "meta": {

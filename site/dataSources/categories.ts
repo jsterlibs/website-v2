@@ -3,11 +3,8 @@ import { getJson } from "../../scripts/utils.ts";
 import categories from "../../assets/data/categories.json" assert {
   type: "json",
 };
-import getLibraries from "./libraries.ts";
 
-async function getCategories() {
-  const libraries = await getLibraries();
-
+function getCategories(libraries: Library[]) {
   return Promise.all(categories.map(async (
     category,
   ) => ({
