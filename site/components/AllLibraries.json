@@ -5,25 +5,24 @@
   },
   "children": [
     {
-      "element": "button",
-      "children": "Show ten libraries",
-      "attributes": {
-        "onclick": "setState(state => ({ libraries: state.libraries.slice(0, 10) }))"
-      }
-    },
-    {
-      "element": "button",
-      "children": "Sort libraries (asc.)",
-      "attributes": {
-        "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => a.title.localeCompare(b.title)) }))"
-      }
-    },
-    {
-      "element": "button",
-      "children": "Sort libraries (desc.)",
-      "attributes": {
-        "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => b.title.localeCompare(a.title)) }))"
-      }
+      "element": "div",
+      "class": "flex gap-1",
+      "children": [
+        {
+          "element": "button",
+          "children": "Sort libraries (asc.)",
+          "attributes": {
+            "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => a.title.localeCompare(b.title)) }))"
+          }
+        },
+        {
+          "element": "button",
+          "children": "Sort libraries (desc.)",
+          "attributes": {
+            "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => b.title.localeCompare(a.title)) }))"
+          }
+        }
+      ]
     },
     {
       "element": "ul",
