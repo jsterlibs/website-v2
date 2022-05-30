@@ -2,12 +2,16 @@
 import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
 import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
 import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
+import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
+import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
 import { dir, getJson } from "../../scripts/utils.ts";
 import type { Library } from "../../types.ts";
 
 const config = configSync();
 
-// TODO: Figure out a better way to cache all this so that CF doesn't need to be hit always
+const cacheDirectory = ".gustwind_cache";
+
+// TODO: Extract the cache logic as it's useful beyond this use case
 async function getLibraries(): Promise<Library[]> {
   const libraries = await dir("./assets/data/libraries");
   const limit = pLimit(8);
@@ -22,6 +26,17 @@ async function getLibraries(): Promise<Library[]> {
 
           if (!org || !repository) {
             return library;
+          }
+
+          // Check cache before requesting
+          const cachePath = join(cacheDirectory, library.name + ".json");
+
+          try {
+            const cachedFile = await Deno.readTextFile(cachePath);
+
+            return JSON.parse(cachedFile);
+          } catch (_error) {
+            // no-op: Error here is ok as then it means the cache file doesn't exist yet
           }
 
           // TODO: The interesting point here that some repositories don't exist anymore!
@@ -54,10 +69,18 @@ async function getLibraries(): Promise<Library[]> {
               return 0;
             });
 
-            return {
+            const ret = {
               ...library,
               stargazers,
             };
+
+            console.log("Caching", library.name, "to", cachePath);
+
+            // Write to cache
+            ensureFileSync(cachePath);
+            await Deno.writeTextFile(cachePath, JSON.stringify(ret, null, 2));
+
+            return ret;
           } catch (error) {
             console.error("Failed to get stargazers", error);
 
