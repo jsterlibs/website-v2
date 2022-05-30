@@ -8,14 +8,13 @@ import getLibraries from "./libraries.ts";
 async function getCategories() {
   const libraries = await getLibraries();
 
-  // TODO: Point to the enhanced library data here (map by id)
   return Promise.all(categories.map(async (
     category,
   ) => ({
     ...category,
-    libraries: await getJson<Library[]>(
+    libraries: (await getJson<Library[]>(
       `assets/data/categories/${category.id}.json`,
-    ),
+    )).map((l) => libraries.find((library) => library.id === l.id)),
   })));
 }
 
