@@ -1,0 +1,19 @@
+{
+  "element": "ul",
+  "class": "flex flex-row flex-wrap gap-x-2 gap-y-4",
+  "__children": [
+    {
+      "element": "li",
+      "children": [
+        {
+          "element": "a",
+          "class": "p-1 rounded-full border bg-violet-200 hover:bg-violet-300 font-extralight text-sm",
+          "__children": "data",
+          "attributes": {
+            "==href": "'/tag/' + data + '/'"
+          }
+        }
+      ]
+    }
+  ]
+}

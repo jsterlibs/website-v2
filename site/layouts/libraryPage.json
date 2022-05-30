@@ -90,7 +90,7 @@
                   "children": "Tags"
                 },
                 {
-                  "element": "Tags",
+                  "element": "SimpleTags",
                   "__bind": "match.tags"
                 }
               ]
