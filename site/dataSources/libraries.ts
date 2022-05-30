@@ -84,7 +84,7 @@ async function getLibraries(): Promise<Library[]> {
               stargazers,
             };
 
-            console.log("Caching", library.name, "to", cachePath);
+            // console.log("Caching", library.name, "to", cachePath);
 
             // Write to cache
             ensureFileSync(cachePath);
