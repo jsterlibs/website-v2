@@ -35,14 +35,14 @@
       "__children": [
         {
           "element": "li",
-          "class": "my-4 flex flex-col gap-4 w-full",
+          "class": "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4",
           "attributes": {
             "x-template": ""
           },
           "children": [
             {
               "element": "Link",
-              "class": "bg-gray-100 hover:bg-gray-200 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+              "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
               "__children": "title",
               "attributes": {
                 "__href": "url",
@@ -53,11 +53,30 @@
             },
             {
               "element": "div",
-              "__children": "library.stargazers"
-            },
-            {
-              "element": "div",
-              "==children": "JSON.stringify(library, null, 2)"
+              "class": "flex justify-between",
+              "children": [
+                {
+                  "element": "div",
+                  "class": "flex gap-1",
+                  "children": [
+                    {
+                      "element": "span",
+                      "children": "Stars:"
+                    },
+                    {
+                      "element": "span",
+                      "__children": "library.stargazers"
+                    }
+                  ]
+                },
+                {
+                  "element": "Link",
+                  "children": "GitHub page",
+                  "attributes": {
+                    "__href": "library.links.github"
+                  }
+                }
+              ]
             },
             {
               "element": "Tags",
