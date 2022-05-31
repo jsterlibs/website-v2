@@ -1,4 +1,4 @@
 [build]
   base    = ""
   publish = "build"
-  command = "curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.19.0 && /opt/buildhome/.deno/bin/deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.23.0/cli.ts -b"
+  command = "curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.19.0 && /opt/buildhome/.deno/bin/deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.24.0/cli.ts -b"

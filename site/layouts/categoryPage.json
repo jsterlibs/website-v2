@@ -19,7 +19,9 @@
         },
         {
           "element": "AllLibraries",
-          "__bind": "match.libraries"
+          "__bind": {
+            "libraries": "match.libraries"
+          }
         }
       ]
     },

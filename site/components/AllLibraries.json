@@ -31,70 +31,77 @@
       }
     },
     {
+      "element": "div",
+      "==children": "JSON.stringify(libraries, null, 2)"
+    },
+    {
       "element": "ul",
       "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
       "attributes": {
         "x-each": "state.libraries",
         "x-ssr": ""
       },
-      "__children": [
-        {
-          "element": "li",
-          "class": "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4",
-          "attributes": {
-            "x-template": ""
-          },
-          "children": [
-            {
-              "element": "Link",
-              "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
-              "__children": "title",
-              "attributes": {
-                "__href": "url",
-                "x": "state.value.title",
-                "x-attr": "",
-                "@href": "state.value.url"
-              }
+      "__foreach": [
+        "libraries",
+        [
+          {
+            "element": "li",
+            "class": "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4",
+            "attributes": {
+              "x-template": ""
             },
-            {
-              "element": "div",
-              "class": "flex justify-between",
-              "children": [
-                {
-                  "element": "div",
-                  "class": "flex gap-1",
-                  "children": [
-                    {
-                      "element": "span",
-                      "children": "Stars:"
-                    },
-                    {
-                      "element": "span",
-                      "__children": "library.stargazers",
-                      "attributes": {
-                        "x": "state.value.stargazers",
-                        "x-attr": ""
-                      }
-                    }
-                  ]
-                },
-                {
-                  "element": "Link",
-                  "children": "GitHub page",
-                  "attributes": {
-                    "__href": "library.links.github",
-                    "x-attr": "",
-                    "@href": "state.value.links.github"
-                  }
+            "children": [
+              {
+                "element": "Link",
+                "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+                "__children": "name",
+                "attributes": {
+                  "==href": "'/library/' + id",
+                  "x": "state.value.name",
+                  "x-attr": "",
+                  "@href": "state.value.url"
                 }
-              ]
-            },
-            {
-              "element": "Tags",
-              "__bind": "library.tags"
-            }
-          ]
-        }
+              },
+              {
+                "element": "div",
+                "class": "flex justify-between",
+                "children": [
+                  {
+                    "element": "div",
+                    "class": "flex gap-1",
+                    "children": [
+                      {
+                        "element": "span",
+                        "children": "Stars:"
+                      },
+                      {
+                        "element": "span",
+                        "__children": "stargazers",
+                        "attributes": {
+                          "x": "state.value.stargazers",
+                          "x-attr": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "element": "Link",
+                    "children": "GitHub page",
+                    "attributes": {
+                      "__href": "links.github",
+                      "x-attr": "",
+                      "@href": "state.value.links.github"
+                    }
+                  }
+                ]
+              },
+              {
+                "element": "Tags",
+                "__bind": "library.tags"
+              }
+            ]
+          }
+        ]
       ]
     }
   ]
