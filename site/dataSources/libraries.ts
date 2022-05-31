@@ -38,7 +38,7 @@ async function getLibraries(): Promise<Library[]> {
               await Deno.readTextFile(cachePath),
             );
 
-            return cachedLibrary;
+            return { stargazers: undefined, ...cachedLibrary };
           } catch (_error) {
             // no-op: Error here is ok as then it means the cache file doesn't exist yet
           }
@@ -90,11 +90,11 @@ async function getLibraries(): Promise<Library[]> {
           } catch (error) {
             console.error("Failed to get stargazers", error);
 
-            return library;
+            return { ...library, stargazers: undefined };
           }
         }
 
-        return library;
+        return { ...library, stargazers: undefined };
       })
     ),
   );
