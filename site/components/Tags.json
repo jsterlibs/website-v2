@@ -4,7 +4,8 @@
   "attributes": {
     "x-each": "state.value.library.tags"
   },
-  "__children": [
+  "__foreach": [
+    "tags",
     {
       "element": "li",
       "attributes": {

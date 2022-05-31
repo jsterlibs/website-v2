@@ -25,16 +25,6 @@
       ]
     },
     {
-      "element": "div",
-      "debug_attributes": {
-        "x": "JSON.stringify(state.libraries, null, 2)"
-      }
-    },
-    {
-      "element": "div",
-      "==children": "JSON.stringify(libraries, null, 2)"
-    },
-    {
       "element": "ul",
       "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
       "attributes": {
@@ -43,65 +33,65 @@
       },
       "__foreach": [
         "libraries",
-        [
-          {
-            "element": "li",
-            "class": "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4",
-            "attributes": {
-              "x-template": ""
-            },
-            "children": [
-              {
-                "element": "Link",
-                "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
-                "__children": "name",
-                "attributes": {
-                  "==href": "'/library/' + id",
-                  "x": "state.value.name",
-                  "x-attr": "",
-                  "@href": "state.value.url"
-                }
-              },
-              {
-                "element": "div",
-                "class": "flex justify-between",
-                "children": [
-                  {
-                    "element": "div",
-                    "class": "flex gap-1",
-                    "children": [
-                      {
-                        "element": "span",
-                        "children": "Stars:"
-                      },
-                      {
-                        "element": "span",
-                        "__children": "stargazers",
-                        "attributes": {
-                          "x": "state.value.stargazers",
-                          "x-attr": ""
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "element": "Link",
-                    "children": "GitHub page",
-                    "attributes": {
-                      "__href": "links.github",
-                      "x-attr": "",
-                      "@href": "state.value.links.github"
-                    }
-                  }
-                ]
-              },
-              {
-                "element": "Tags",
-                "__bind": "library.tags"
+        {
+          "element": "li",
+          "class": "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4",
+          "attributes": {
+            "x-template": ""
+          },
+          "children": [
+            {
+              "element": "Link",
+              "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+              "__children": "name",
+              "attributes": {
+                "==href": "'/library/' + id",
+                "x": "state.value.name",
+                "x-attr": "",
+                "@href": "state.value.url"
               }
-            ]
-          }
-        ]
+            },
+            {
+              "element": "div",
+              "class": "flex justify-between",
+              "children": [
+                {
+                  "element": "div",
+                  "class": "flex gap-1",
+                  "children": [
+                    {
+                      "element": "span",
+                      "children": "Stars:"
+                    },
+                    {
+                      "element": "span",
+                      "__children": "stargazers",
+                      "attributes": {
+                        "x": "state.value.stargazers",
+                        "x-attr": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "element": "Link",
+                  "children": "GitHub page",
+                  "attributes": {
+                    "__href": "links.github",
+                    "x-attr": "",
+                    "@href": "state.value.links.github"
+                  }
+                }
+              ]
+            },
+            {
+              "element": "Tags",
+              "__bind": {
+                "tags": "match.tags"
+              }
+            }
+          ]
+        }
       ]
     }
   ]
