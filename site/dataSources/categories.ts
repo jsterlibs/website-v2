@@ -4,7 +4,7 @@ import categories from "../../assets/data/categories.json" assert {
   type: "json",
 };
 
-function getCategories(libraries: Library[]) {
+function getCategories(_: unknown, { libraries }: { libraries: Library[] }) {
   return Promise.all(categories.map(async (
     category,
   ) => ({

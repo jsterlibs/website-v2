@@ -29,6 +29,10 @@
     "expand": {
       "dataSources": [
         {
+          "id": "libraries",
+          "operation": "libraries"
+        },
+        {
           "id": "categories",
           "operation": "categories",
           "dependsOn": ["libraries"]
@@ -49,14 +53,18 @@
     "expand": {
       "dataSources": [
         {
+          "id": "libraries",
+          "operation": "libraries"
+        },
+        {
           "id": "tags",
-          "operation": "tags"
+          "operation": "tags",
+          "dependsOn": ["libraries"]
         }
       ],
       "matchBy": {
         "dataSource": "tags",
-        "slug": "id",
-        "dependsOn": ["libraries"]
+        "slug": "id"
       },
       "layout": "categoryPage",
       "meta": {

@@ -11,7 +11,9 @@ const config = configSync();
 
 const cacheDirectory = ".gustwind_cache";
 
-// TODO: Extract the cache logic as it's useful beyond this use case
+// TODO: Extract the cache logic as it's useful beyond this use case.
+// That feels like a good spot for supporting middlewares or webpack style
+// loaders.
 async function getLibraries(): Promise<Library[]> {
   const libraries = await dir("./assets/data/libraries");
   const limit = pLimit(8);
@@ -36,18 +38,11 @@ async function getLibraries(): Promise<Library[]> {
               await Deno.readTextFile(cachePath),
             );
 
-            if (cachedLibrary.stargazers === "undefined") {
-              return;
-            }
-
             return cachedLibrary;
           } catch (_error) {
             // no-op: Error here is ok as then it means the cache file doesn't exist yet
           }
 
-          // TODO: The interesting point here that some repositories don't exist anymore!
-          // This might require additional handling to filter them out.
-          //
           // It looks like the missing repos have stargazers set to undefined.
           try {
             const response = await fetch(
@@ -72,6 +67,13 @@ async function getLibraries(): Promise<Library[]> {
             });
 
             if (stargazers === "undefined") {
+              // Write to cache even if stargazers were not found
+              ensureFileSync(cachePath);
+              await Deno.writeTextFile(
+                cachePath,
+                JSON.stringify(library, null, 2),
+              );
+
               return;
             }
 
@@ -79,8 +81,6 @@ async function getLibraries(): Promise<Library[]> {
               ...library,
               stargazers,
             };
-
-            // console.log("Caching", library.name, "to", cachePath);
 
             // Write to cache
             ensureFileSync(cachePath);

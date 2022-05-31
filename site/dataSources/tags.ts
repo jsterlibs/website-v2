@@ -1,7 +1,7 @@
 import type { Category, Library } from "../../types.ts";
 import { dir, getJson } from "../../scripts/utils.ts";
 
-async function getTags(libraries: Library[]) {
+async function getTags(_: unknown, { libraries }: { libraries: Library[] }) {
   return Promise.all((await dir("assets/data/tags")).map(async (
     { name, path },
   ) => ({
