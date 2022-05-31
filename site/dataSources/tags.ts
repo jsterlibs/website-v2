@@ -11,10 +11,7 @@ async function getTags(_: unknown, { libraries }: { libraries: Library[] }) {
       const foundLibrary = libraries.find((l) => l.id === c.library.id);
 
       if (foundLibrary) {
-        return ({
-          ...c,
-          library: foundLibrary,
-        });
+        return foundLibrary;
       }
     }).filter(Boolean),
   })));
