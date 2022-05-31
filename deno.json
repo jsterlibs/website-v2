@@ -4,6 +4,7 @@
     "build": "gustwind -b",
     "start": "gustwind -d",
     "ci:build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.24.3/cli.ts -b",
-    "compress:cache": "tar -zcf build/cache.tar.gz .gustwind_cache"
+    "compress:cache": "tar -zcf build/cache.tar.gz .gustwind_cache",
+    "decompress:cache": "wget -c $CACHE_LOCATION -O - | tar -xz"
   }
 }
