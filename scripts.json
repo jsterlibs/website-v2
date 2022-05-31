@@ -4,10 +4,10 @@
     "NO_COLOR": 1
   },
   "scripts": {
-    "install:gustwind": "deno install -A --unstable --no-check -f https://deno.land/x/gustwind@v0.24.2/cli.ts",
+    "install:gustwind": "deno install -A --unstable --no-check -f https://deno.land/x/gustwind@v0.24.3/cli.ts",
     "build": "gustwind -b",
     "start": "gustwind -d",
-    "ci:build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.24.2/cli.ts -b",
+    "ci:build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.24.3/cli.ts -b",
     "get-blogposts": {
       "cmd": "deno run --unstable scripts/get-blogposts.ts"
     },
