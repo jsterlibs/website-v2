@@ -71,7 +71,7 @@ async function getLibraries(): Promise<Library[]> {
               ensureFileSync(cachePath);
               await Deno.writeTextFile(
                 cachePath,
-                JSON.stringify(library, null, 2),
+                JSON.stringify({ ...library, stargazers: undefined }, null, 2),
               );
 
               return;

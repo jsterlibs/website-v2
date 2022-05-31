@@ -32,47 +32,55 @@
           "children": [
             {
               "element": "div",
-              "class": "flex flex-col gap-2",
+              "class": "flex flex-col gap-4",
               "children": [
                 {
-                  "element": "h2",
-                  "class": "text-xl",
-                  "children": "Links"
-                },
-                {
-                  "element": "ul",
-                  "class": "flex flex-row gap-2",
+                  "visibleIf": "match.stargazers",
+                  "element": "div",
                   "children": [
                     {
-                      "element": "li",
-                      "children": [
-                        {
-                          "element": "a",
-                          "children": "Site",
-                          "attributes": {
-                            "__href": "match.links.site"
-                          }
-                        }
-                      ]
+                      "element": "a",
+                      "==children": "'Stars: ' + match.stargazers"
+                    }
+                  ]
+                },
+                {
+                  "element": "div",
+                  "children": [
+                    {
+                      "element": "h2",
+                      "class": "text-xl",
+                      "children": "Links"
                     },
                     {
-                      "element": "li",
+                      "element": "ul",
+                      "class": "flex flex-row gap-2",
                       "children": [
                         {
-                          "element": "a",
-                          "children": "GitHub",
-                          "attributes": {
-                            "__href": "match.links.github"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "element": "li",
-                      "children": [
+                          "visibleIf": "match.links.site",
+                          "element": "li",
+                          "children": [
+                            {
+                              "element": "a",
+                              "children": "Site",
+                              "attributes": {
+                                "__href": "match.links.site"
+                              }
+                            }
+                          ]
+                        },
                         {
-                          "element": "a",
-                          "==children": "'Stars: ' + match.stargazers"
+                          "visibleIf": "match.links.github",
+                          "element": "li",
+                          "children": [
+                            {
+                              "element": "a",
+                              "children": "GitHub",
+                              "attributes": {
+                                "__href": "match.links.github"
+                              }
+                            }
+                          ]
                         }
                       ]
                     }
@@ -81,6 +89,7 @@
               ]
             },
             {
+              "visibleIf": "match.tags.length",
               "element": "div",
               "class": "flex flex-col gap-2",
               "children": [
