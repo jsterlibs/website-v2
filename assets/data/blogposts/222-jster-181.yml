@@ -1,0 +1,81 @@
+type: static
+title: "JSter #181: Libraries, articles, and more"
+short_title: "JSter #181"
+user: bebraw
+slug: jster-181
+body: |
+  > It's the JavaScript that I don't know that gets to me
+
+  To my horror, I noticed early this week that [jster.net](https://jster.net/) is down. It turns out the server had gone offline. The original service was hosted in Ukraine and I imagine something bad happened. That meant I had to finish and deploy the new version on a sufficient level.
+
+  The new site is far faster than the old one as it's fully static. It doesn't have full feature parity with the old one yet and I'm restoring it bit by bit. That said, the index and the blog posts are up although you may notice something not rendering in a post for example.
+
+  On the plus side, [the new stack](https://gustwind.js.org/) is fairly nice and it renders fast. It takes about six seconds on my computer to render 3000 pages and roughly 10 seconds on Cloudflare Pages infrastructure (not counting Deno installation).
+
+  The process hasn't been fully optimized yet so that's a good sign in case I want to grow the index one day and then there are more tricks like incremental compilation and using edge workers to generate pages dynamically on demand.
+
+  ## Libraries
+
+  * [wooorm/starry-night](https://github.com/wooorm/starry-night) - Syntax highlighting, like GitHub
+  * [Preview.js](https://previewjs.com/) - Preview UI components in your IDE instantly
+  * [Panolens.js](https://pchen66.github.io/Panolens/) - A JavaScript panorama viewer
+  * [yjs](https://github.com/yjs/yjs) - Shared data types for building collaborative software
+  * [coder/code-server](https://github.com/coder/code-server) - VS Code in the browser
+  * [terotests/robowatch](https://github.com/terotests/robowatch) - Directory event watch with configuration
+  * [Zag](https://zagjs.com/) - UI components powered by Finite State Machines
+
+  ## Tools
+
+  * [Flutter 3 is available](https://docs.flutter.dev/whats-new#may-11-2022-google-io-edition-flutter-3-release)
+  * [Meta Open Source is transferring Jest to the OpenJS Foundation](https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/)
+  * [Slinkity](https://slinkity.dev/) - To eleventy and beyond
+  * [metiss](https://github.com/metissio/metiss) - Eliminate bugs via intelligent tests generation
+  * [usmanyunusov/nano-staged](https://github.com/usmanyunusov/nano-staged) - Tiny tool to run commands for modified, staged, and committed files in a GIT repository
+  * [projen](https://github.com/projen/projen) - A new generation of project generators
+  * [eemeli/ibid](https://github.com/eemeli/ibid) - Tools to automate your releases and changelogs, esp. for monorepos
+  * [ericclemmons/click-to-component](https://github.com/ericclemmons/click-to-component) - Option+Click React components in your browser to instantly open the source in VS Code
+
+  ## Slides
+
+  * [The future is mostly static](https://www.slideshare.net/bebraw/the-future-is-mostly-static)
+
+  ## Articles
+
+  * [Making a falling sand simulator](https://jason.today/falling-sand)
+  * [Moving from Next to Remix](https://blog.openreplay.com/moving-from-next-to-remix/)
+  * [JavaScript Containers](https://tinyclouds.org/javascript_containers)
+  * [Notes on Advanced TypeScript: Runtime Validations](https://dev.to/busypeoples/notes-on-advanced-typescript-runtime-validations-5b)
+  * [Porting Zelda Classic to the Web](https://hoten.cc/blog/porting-zelda-classic-to-the-web/)
+  * [Backbone.js vs React](https://www.ideamotive.co/blog/backbone.js-vs-react-what-to-choose-for-your-front-end)
+  * [Why I don't miss React: a story about using the platform](https://www.jackfranklin.co.uk/blog/working-with-react-and-the-web-platform/)
+  * [Monorepo Explained](https://monorepo.tools/)
+  * [Supercharge your Design System with Design Tokens](https://uxdesign.cc/supercharge-your-design-system-with-design-tokens-55044fa29142)
+
+  ## Security
+
+  * [npm security update: Attack campaign using stolen OAuth tokens](https://github.blog/2022-05-26-npm-security-update-oauth-tokens/)
+  * [3 Jedi-inspired lessons to level up your JavaScript security](https://snyk.io/blog/jedi-lessons-to-level-up-javascript-security/)
+
+  ## Demos
+
+  * [jantimon/next-relay-demo](https://github.com/jantimon/next-relay-demo) - Relay React Concurrency Example
+
+  ## Services
+
+  * [TypeScript Error Translator](https://ts-error-translator.vercel.app/)
+
+  ## Aricles
+
+  * [Building a JavaScript Bundler](https://cpojer.net/posts/building-a-javascript-bundler)
+
+  ## Books
+
+  * [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/books/structure-and-interpretation-computer-programs-1) - Now in JavaScript
+
+  ## Icons
+
+  * [Tabler Icons: over 1950 vector icons for web design](https://tabler-icons.io/)
+
+  ## Standards
+
+  * [Constructable Stylesheets](https://web.dev/constructable-stylesheets/)
