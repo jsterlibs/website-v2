@@ -38,7 +38,7 @@
         },
         {
           "element": "Link",
-          "children": "Sign in",
+          "todo_children": "Sign in",
           "attributes": {
             "href": "https://backend-8ae1c3f3.nhost.app/auth/providers/github"
           }
