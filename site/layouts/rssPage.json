@@ -1,56 +1,69 @@
 [
   {
-    "element": "rss",
+    "element": "feed",
+    "__reference": "https://kevincox.ca/2022/05/06/rss-feed-best-practices/",
     "attributes": {
-      "version": "2.0"
+      "xmlns":"http://www.w3.org/2005/Atom"
     },
     "children": [
       {
-        "element": "channel",
-        "children": [
+        "element": "title",
+        "__children": "meta.siteName"
+      },
+      {
+        "element": "id",
+        "children": "https://jster.net/"
+      },
+      {
+        "element": "link",
+        "attributes": {
+          "rel": "alternate",
+          "href": "https://jster.net/"
+        }
+      },
+      {
+        "element": "link",
+        "attributes": {
+          "rel": "self",
+          "href": "https://jster.net/atom.xml"
+        }
+      },
+      {
+        "element": "updated",
+        "==children": "(new Date(meta.built)).toISOString()"
+      },
+      {
+        "__bind": "blogPosts",
+        "__children": [
           {
-            "element": "title",
-            "__children": "meta.siteName"
-          },
-          {
-            "element": "description",
-            "__children": "meta.description"
-          },
-          {
-            "element": "link",
-            "children": "https://jster.net/"
-          },
-          {
-            "element": "lastBuildDate",
-            "==children": "meta.built"
-          },
-          {
-            "__bind": "blogPosts",
-            "__children": [
+            "element": "entry",
+            "children": [
               {
-                "element": "item",
-                "children": [
-                  {
-                    "element": "title",
-                    "__children": "title"
-                  },
-                  {
-                    "element": "description",
-                    "__children": "description"
-                  },
-                  {
-                    "element": "link",
-                    "==children": "'https://jster.net/blog/' + slug + '/'"
-                  },
-                  {
-                    "element": "guid",
-                    "__children": "slug"
-                  },
-                  {
-                    "element": "pubDate",
-                    "__children": "date"
-                  }
-                ]
+                "element": "title",
+                "__children": "title"
+              },
+              {
+                "element": "link",
+                "attributes": {
+                  "rel": "alternate",
+                  "type": "text/html",
+                  "==href": "'https://jster.net/blog/' + slug + '/'"
+                }
+              },
+              {
+                "element": "id",
+                "__children": "slug"
+              },
+              {
+                "element": "published",
+                "==children": "(new Date(date)).toISOString()"
+              },
+              {
+                "element": "content",
+                "attributes": {
+                  "type": "html"
+                },
+                "__children": "description"
               }
             ]
           }
