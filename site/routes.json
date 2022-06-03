@@ -128,5 +128,19 @@
         "__description": "match.description"
       }
     }
+  },
+  "atom.xml": {
+    "layout": "rssPage",
+    "type": "xml",
+    "meta": {
+      "title": "JSter",
+      "description": "JSter blog"
+    },
+    "dataSources": [
+      {
+        "id": "blogPosts",
+        "operation": "blogPosts"
+      }
+    ]
   }
 }
