@@ -1,6 +1,6 @@
 {
   "element": "footer",
-  "class": "bg-violet-200 py-4 font-light",
+  "class": "bg-violet-200 px-2 py-4 font-light",
   "children": [
     {
       "element": "div",
@@ -74,7 +74,7 @@
                 },
                 {
                   "element": "div",
-                  "class": "flex gap-4 font-thin",
+                  "class": "flex flex-col md:flex-row gap-4 font-thin",
                   "children": [
                     {
                       "element": "Navigation"
