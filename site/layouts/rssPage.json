@@ -1,59 +1,61 @@
-{
-  "element": "rss",
-  "attributes": {
-    "version": "2.0"
-  },
-  "children": [
-    {
-      "element": "channel",
-      "children": [
-        {
-          "element": "title",
-          "__children": "meta.siteName"
-        },
-        {
-          "element": "description",
-          "__children": "meta.description"
-        },
-        {
-          "element": "link",
-          "children": "https://jster.net/"
-        },
-        {
-          "element": "lastBuildDate",
-          "==children": "meta.built"
-        },
-        {
-          "__bind": "blogPosts",
-          "__children": [
-            {
-              "element": "item",
-              "children": [
-                {
-                  "element": "title",
-                  "__children": "title"
-                },
-                {
-                  "element": "description",
-                  "__children": "description"
-                },
-                {
-                  "element": "link",
-                  "==children": "'https://jster.net/blog/' + slug + '/'"
-                },
-                {
-                  "element": "guid",
-                  "__children": "slug"
-                },
-                {
-                  "element": "pubDate",
-                  "__children": "date"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "element": "rss",
+    "attributes": {
+      "version": "2.0"
+    },
+    "children": [
+      {
+        "element": "channel",
+        "children": [
+          {
+            "element": "title",
+            "__children": "meta.siteName"
+          },
+          {
+            "element": "description",
+            "__children": "meta.description"
+          },
+          {
+            "element": "link",
+            "children": "https://jster.net/"
+          },
+          {
+            "element": "lastBuildDate",
+            "==children": "meta.built"
+          },
+          {
+            "__bind": "blogPosts",
+            "__children": [
+              {
+                "element": "item",
+                "children": [
+                  {
+                    "element": "title",
+                    "__children": "title"
+                  },
+                  {
+                    "element": "description",
+                    "__children": "description"
+                  },
+                  {
+                    "element": "link",
+                    "==children": "'https://jster.net/blog/' + slug + '/'"
+                  },
+                  {
+                    "element": "guid",
+                    "__children": "slug"
+                  },
+                  {
+                    "element": "pubDate",
+                    "__children": "date"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
