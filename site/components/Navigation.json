@@ -22,7 +22,7 @@
   },
   {
     "element": "Link",
-    "children": "Add library",
+    "todo_children": "Add library",
     "attributes": {
       "href": "/add-library/"
     }
