@@ -1,33 +1,39 @@
-{
-  "head": [
-    {
-      "element": "MetaFields"
-    }
-  ],
-  "body": [
-    {
-      "element": "MainNavigation"
-    },
-    {
-      "element": "main",
-      "class": "p-4 mx-auto max-w-5xl",
-      "children": [
-        {
-          "element": "H1",
-          "children": "Catalog"
-        },
-        {
-          "element": "AllCategories",
-          "__bind": "parentCategories"
-        }
-      ]
-    },
-    {
-      "element": "MainFooter"
-    },
-    {
-      "element": "Scripts",
-      "__bind": "scripts"
-    }
-  ]
-}
+[
+  {
+    "element": "head",
+    "children": [
+      {
+        "element": "MetaFields"
+      }
+    ]
+  },
+  {
+    "element": "body",
+    "children":  [
+      {
+        "element": "MainNavigation"
+      },
+      {
+        "element": "main",
+        "class": "p-4 mx-auto max-w-5xl",
+        "children": [
+          {
+            "element": "H1",
+            "children": "Catalog"
+          },
+          {
+            "element": "AllCategories",
+            "__bind": "parentCategories"
+          }
+        ]
+      },
+      {
+        "element": "MainFooter"
+      },
+      {
+        "element": "Scripts",
+        "__bind": "scripts"
+      }
+    ]
+  }
+]
