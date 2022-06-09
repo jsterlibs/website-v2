@@ -4,8 +4,8 @@
     "NO_COLOR": 1
   },
   "scripts": {
-    "build": "gustwind -b",
-    "start": "gustwind -d",
+    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.25.0/cli.ts -b",
+    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.25.0/cli.ts -d",
     "decompress:cache": "wget -c $CACHE_LOCATION -O - | tar -xz",
     "get-blogposts": {
       "cmd": "deno run --unstable scripts/get-blogposts.ts"
