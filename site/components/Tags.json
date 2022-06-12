@@ -4,8 +4,8 @@
   "attributes": {
     "x-each": "state.value.library.tags"
   },
-  "__foreach": [
-    "tags",
+  "foreach": [
+    "props.tags",
     {
       "element": "li",
       "attributes": {
@@ -15,10 +15,10 @@
         {
           "element": "a",
           "class": "p-1 rounded-full border bg-violet-200 hover:bg-violet-300 font-extralight text-sm",
-          "__children": "data",
+          "__children": "props.value",
           "attributes": {
             "x": "state.value",
-            "==href": "'/tag/' + data + '/'",
+            "==href": "'/tag/' + props.value + '/'",
             "x-attr": "",
             "@href": "'/tag/' + state.value + '/'"
           }

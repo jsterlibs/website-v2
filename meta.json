@@ -3,8 +3,15 @@
   "amountOfBuildThreads": "cpuHalf",
   "meta": {
     "language": "en",
-    "siteName": "JSter"
+    "siteName": "JSter",
+    "url": "https://jster.net/"
   },
+  "scripts": [
+    {
+      "type": "text/javascript",
+      "src": "https://unpkg.com/sidewind@7.3.0/dist/sidewind.umd.production.min.js"
+    }
+  ],
   "paths": {
     "assets": "./assets",
     "components": "./site/components",
@@ -13,14 +20,9 @@
     "output": "./build",
     "routes": "./site/routes.json",
     "transforms": "./site/transforms",
+    "pageUtilities": "./site/pageUtilities.ts",
     "twindSetup": "./site/twindSetup.ts"
   },
-  "scripts": [
-    {
-      "type": "text/javascript",
-      "src": "https://unpkg.com/sidewind@7.3.0/dist/sidewind.umd.production.min.js"
-    }
-  ],
   "features": {
     "extractCSS": false,
     "showEditorAlways": false

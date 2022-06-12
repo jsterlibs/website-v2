@@ -1,9 +1,4 @@
-import {
-  basename,
-  extname,
-  join,
-} from "https://deno.land/std@0.107.0/path/mod.ts";
-import type { Component } from "../types.ts";
+import { join } from "https://deno.land/std@0.107.0/path/mod.ts";
 
 function getJson<R>(filePath: string): Promise<R> {
   return Deno.readTextFile(filePath).then((d) => JSON.parse(d));
@@ -11,19 +6,6 @@ function getJson<R>(filePath: string): Promise<R> {
 
 function getJsonSync<R>(filePath: string): R {
   return JSON.parse(Deno.readTextFileSync(filePath));
-}
-
-async function getComponents(directoryPath: string) {
-  const componentFiles = await dir(directoryPath);
-
-  const o = await Promise.all(
-    await componentFiles.map(async (
-      { path },
-    ) => [basename(path, extname(path)), await getJson<Component>(path)]),
-  );
-
-  // @ts-ignore How to type this
-  return zipToObject<Component>(o);
 }
 
 function last<O>(array: O[]) {
@@ -79,27 +61,4 @@ function zipToObject<R>(arr: [string, R][]) {
   return ret;
 }
 
-async function watch(
-  directory: string,
-  extension: string,
-  handler: (path: string) => void,
-) {
-  const watcher = Deno.watchFs(directory);
-
-  for await (const event of watcher) {
-    event.paths.forEach((p) => p.endsWith(extension) && handler(p));
-  }
-}
-
-export {
-  dir,
-  dirSync,
-  get,
-  getComponents,
-  getJson,
-  getJsonSync,
-  isObject,
-  last,
-  watch,
-  zipToObject,
-};
+export { dir, dirSync, get, getJson, getJsonSync, isObject, last, zipToObject };

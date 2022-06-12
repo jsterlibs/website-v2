@@ -1,39 +1,23 @@
-[
-  {
-    "element": "head",
-    "children": [
-      {
-        "element": "MetaFields"
-      }
-    ]
-  },
-  {
-    "element": "body",
-    "children":  [
-      {
-        "element": "MainNavigation"
-      },
-      {
-        "element": "main",
-        "class": "p-4 mx-auto max-w-5xl",
-        "children": [
-          {
-            "element": "H1",
+{
+  "element": "BaseLayout",
+  "props": {
+    "content": {
+      "element": "div",
+      "class": "p-4 mx-auto max-w-5xl",
+      "children": [
+        {
+          "element": "H1",
+          "props": {
             "children": "Catalog"
-          },
-          {
-            "element": "AllCategories",
-            "__bind": "parentCategories"
           }
-        ]
-      },
-      {
-        "element": "MainFooter"
-      },
-      {
-        "element": "Scripts",
-        "__bind": "scripts"
-      }
-    ]
+        },
+        {
+          "element": "AllCategories",
+          "props": {
+            "__categories": "context.parentCategories"
+          }
+        }
+      ]
+    }
   }
-]
+}

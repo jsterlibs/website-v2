@@ -1,51 +1,34 @@
-[
-  {
-    "element": "head",
-    "children": [
-      {
-        "element": "MetaFields"
-      }
-    ]
-  },
-  {
-    "element": "body",
-    "children": [
-      {
-        "element": "MainNavigation"
-      },
-      {
-        "element": "main",
-        "class": "p-4",
-        "children": [
-          {
-            "element": "div",
-            "class": "mx-auto max-w-5xl",
-            "children": [
-              {
-                "element": "Subscribe"
+{
+  "element": "BaseLayout",
+  "props": {
+    "content": {
+      "element": "div",
+      "class": "p-4",
+      "children": [
+        {
+          "element": "div",
+          "class": "mx-auto max-w-5xl",
+          "children": [
+            {
+              "element": "Subscribe"
+            },
+            {
+              "element": "div",
+              "class": "mx-auto my-4 p-2 bg-yellow-100 prose",
+              "props": {
+                "content": "**Note:** The new site is still in beta. Please [use the issue tracker for bug reports and feature requests](https://github.com/jsterlibs/website-v2/issues)."
               },
-              {
-                "element": "div",
-                "class": "mx-auto my-4 p-2 bg-yellow-100 prose",
-                "inputText": "**Note:** The new site is still in beta. Please [use the issue tracker for bug reports and feature requests](https://github.com/jsterlibs/website-v2/issues).",
-                "transformWith": ["markdown"],
-                "__children": "content"
-              },
-              {
-                "element": "AllCategories",
-                "__bind": "parentCategories"
+              "==children": "utilities.markdown(props.content).content"
+            },
+            {
+              "element": "AllCategories",
+              "props": {
+                "__categories": "context.parentCategories"
               }
-            ]
-          }
-        ]
-      },
-      {
-        "element": "MainFooter"
-      },
-      {
-        "element": "Scripts",
-        "__bind": "scripts"
-      }
-    ]
+            }
+          ]
+        }
+      ]
+    }
   }
-]
+}

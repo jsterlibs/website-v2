@@ -1,4 +1,5 @@
 {
   "element": "h1",
-  "class": "prose lg:prose-xl"
+  "class": "prose lg:prose-xl",
+  "__children": "props.children"
 }

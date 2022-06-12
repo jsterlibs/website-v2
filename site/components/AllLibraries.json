@@ -31,8 +31,8 @@
         "x-each": "state.libraries",
         "x-ssr": ""
       },
-      "__foreach": [
-        "libraries",
+      "foreach": [
+        "props.libraries",
         {
           "element": "li",
           "class": "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4",
@@ -42,12 +42,11 @@
           "children": [
             {
               "element": "Link",
-              "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
-              "__children": "name",
-              "attributes": {
-                "==href": "'/library/' + id",
+              "props": {
+                "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
+                "__children": "props.name",
+                "==href": "'/library/' + props.id",
                 "x": "state.value.name",
-                "x-attr": "",
                 "@href": "state.value.url"
               }
             },
@@ -56,7 +55,7 @@
               "class": "flex justify-between",
               "children": [
                 {
-                  "visibleIf": "stargazers",
+                  "visibleIf": "props.stargazers",
                   "element": "div",
                   "class": "flex gap-1",
                   "children": [
@@ -66,7 +65,7 @@
                     },
                     {
                       "element": "span",
-                      "__children": "stargazers",
+                      "__children": "props.stargazers",
                       "attributes": {
                         "x": "state.value.stargazers",
                         "x-attr": ""
@@ -75,22 +74,20 @@
                   ]
                 },
                 {
-                  "visibleIf": "links.site",
+                  "visibleIf": "props.links.site",
                   "element": "Link",
-                  "children": "Homepage",
-                  "attributes": {
-                    "__href": "links.site",
-                    "x-attr": "",
+                  "props": {
+                    "children": "Homepage",
+                    "__href": "props.links.site",
                     "@href": "state.value.links.site"
                   }
                 },
                 {
-                  "visibleIf": "links.github",
+                  "visibleIf": "props.links.github",
                   "element": "Link",
-                  "children": "GitHub page",
-                  "attributes": {
-                    "__href": "links.github",
-                    "x-attr": "",
+                  "props": {
+                    "children": "GitHub page",
+                    "__href": "props.links.github",
                     "@href": "state.value.links.github"
                   }
                 }
@@ -98,8 +95,8 @@
             },
             {
               "element": "Tags",
-              "__bind": {
-                "tags": "match.tags"
+              "props": {
+                "__tags": "props.tags"
               }
             }
           ]

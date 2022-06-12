@@ -1,39 +1,23 @@
-[
-  {
-    "element": "head",
-    "children": [
-      {
-        "element": "MetaFields"
-      }
-    ]
-  },
-  {
-    "element": "body",
-    "children":  [
-      {
-        "element": "MainNavigation"
-      },
-      {
-        "element": "main",
-        "class": "p-4 mx-auto max-w-5xl prose lg:prose-xl",
-        "children": [
-          {
-            "element": "H1",
+{
+  "element": "BaseLayout",
+  "props": {
+    "content": {
+      "element": "div",
+      "class": "p-4 mx-auto max-w-5xl prose lg:prose-xl",
+      "children": [
+        {
+          "element": "H1",
+          "props": {
             "children": "Blog"
-          },
-          {
-            "element": "BlogPosts",
-            "__bind": "blogPosts"
           }
-        ]
-      },
-      {
-        "element": "MainFooter"
-      },
-      {
-        "element": "Scripts",
-        "__bind": "scripts"
-      }
-    ]
+        },
+        {
+          "element": "BlogPosts",
+          "props": {
+            "__blogPosts": "context.blogPosts"
+          }
+        }
+      ]
+    }
   }
-]
+}

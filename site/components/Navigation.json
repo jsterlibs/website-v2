@@ -1,29 +1,29 @@
 [
   {
     "element": "Link",
-    "children": "Blog",
-    "attributes": {
+    "props": {
+      "children": "Blog",
       "href": "/blog/"
     }
   },
   {
     "element": "Link",
-    "children": "Catalog",
-    "attributes": {
+    "props": {
+      "children": "Catalog",
       "href": "/catalog/"
     }
   },
   {
     "element": "Link",
-    "children": "About",
-    "attributes": {
+    "props": {
+      "children": "About",
       "href": "/about/"
     }
   },
   {
-    "element": "Link",
-    "todo_children": "Add library",
-    "attributes": {
+    "todo_element": "Link",
+    "props": {
+      "children": "Add library",
       "href": "/add-library/"
     }
   }

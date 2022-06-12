@@ -8,8 +8,8 @@
       "children": [
         {
           "element": "Link",
-          "children": "JSter",
-          "attributes": {
+          "props": {
+            "children": "JSter",
             "href": "/"
           }
         },

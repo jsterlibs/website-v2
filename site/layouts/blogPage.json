@@ -1,40 +1,21 @@
-[
-  {
-    "element": "head",
-    "children": [
-      {
-        "element": "MetaFields"
-      }
-    ]
-  },
-  {
-    "element": "body",
-    "children":  [
-      {
-        "element": "MainNavigation"
-      },
-      {
-        "element": "main",
-        "class": "p-4 mx-auto max-w-3xl prose lg:prose-xl",
-        "children": [
-          {
-            "element": "H1",
-            "__children": "match.title"
-          },
-          {
-            "element": "p",
-            "transformWith": "markdown",
-            "__children": "match.body"
+{
+  "element": "BaseLayout",
+  "props": {
+    "content": {
+      "element": "div",
+      "class": "p-4 mx-auto max-w-5xl prose lg:prose-xl",
+      "children": [
+        {
+          "element": "H1",
+          "props": {
+            "__children": "context.match.title"
           }
-        ]
-      },
-      {
-        "element": "MainFooter"
-      },
-      {
-        "element": "Scripts",
-        "__bind": "scripts"
-      }
-    ]
+        },
+        {
+          "element": "p",
+          "==children": "utilities.markdown(context.match.body).content"
+        }
+      ]
+    }
   }
-]
+}

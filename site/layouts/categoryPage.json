@@ -1,42 +1,23 @@
-[
-  {
-    "element": "head",
-    "children": [
-      {
-        "element": "MetaFields"
-      }
-    ]
-  },
-  {
-    "element": "body",
-    "children":  [
-      {
-        "element": "MainNavigation"
-      },
-      {
-        "element": "main",
-        "class": "p-4 mx-auto max-w-5xl",
-        "children": [
-          {
-            "element": "H1",
-            "class": "mb-4",
-            "__children": "match.title"
-          },
-          {
-            "element": "AllLibraries",
-            "__bind": {
-              "libraries": "match.libraries"
-            }
+{
+  "element": "BaseLayout",
+  "props": {
+    "content": {
+      "element": "div",
+      "class": "p-4 mx-auto max-w-5xl flex flex-col gap-4",
+      "children": [
+        {
+          "element": "H1",
+          "props": {
+            "__children": "context.match.title"
           }
-        ]
-      },
-      {
-        "element": "MainFooter"
-      },
-      {
-        "element": "Scripts",
-        "__bind": "scripts"
-      }
-    ]
+        },
+        {
+          "element": "AllLibraries",
+          "props": {
+            "__libraries": "context.match.libraries"
+          }
+        }
+      ]
+    }
   }
-]
+}

@@ -1,18 +1,16 @@
 {
   "element": "ul",
   "class": "flex flex-col gap-4",
-  "__children": [
-    {
-      "element": "li",
-      "children": [
-        {
-          "element": "Link",
-          "__children": "title",
-          "attributes": {
-            "__href": "slug"
-          }
+  "foreach": ["props.blogPosts", {
+    "element": "li",
+    "children": [
+      {
+        "element": "Link",
+        "props": {
+          "__children": "props.title",
+          "__href": "props.slug"
         }
-      ]
-    }
-  ]
+      }
+    ]
+  }]
 }

@@ -1,125 +1,109 @@
-[
-  {
-    "element": "head",
-    "children": [
-      {
-        "element": "MetaFields"
-      }
-    ]
-  },
-  {
-    "element": "body",
-    "children": [
-      {
-        "element": "MainNavigation"
-      },
-      {
-        "element": "main",
-        "class": "p-4 mx-auto max-w-3xl flex flex-row gap-2",
-        "children": [
-          {
-            "element": "div",
-            "class": "prose lg:prose-xl",
-            "children": [
-              {
-                "element": "H1",
-                "__children": "match.name"
-              },
-              {
-                "element": "p",
-                "__children": "match.description"
+{
+  "element": "BaseLayout",
+  "props": {
+    "content": {
+      "element": "div",
+      "class": "p-4 mx-auto max-w-3xl flex flex-row gap-2",
+      "children": [
+        {
+          "element": "div",
+          "class": "prose lg:prose-xl",
+          "children": [
+            {
+              "element": "H1",
+              "props": {
+                "__children": "context.match.name"
               }
-            ]
-          },
-          {
-            "element": "div",
-            "class": "flex flex-col gap-4",
-            "children": [
-              {
-                "element": "div",
-                "class": "flex flex-col gap-4",
-                "children": [
-                  {
-                    "visibleIf": "match.stargazers",
-                    "element": "div",
-                    "children": [
-                      {
-                        "element": "a",
-                        "==children": "'Stars: ' + match.stargazers"
-                      }
-                    ]
-                  },
-                  {
-                    "element": "div",
-                    "children": [
-                      {
-                        "element": "h2",
-                        "class": "text-xl",
-                        "children": "Links"
-                      },
-                      {
-                        "element": "ul",
-                        "class": "flex flex-row gap-2",
-                        "children": [
-                          {
-                            "visibleIf": "match.links.site",
-                            "element": "li",
-                            "children": [
-                              {
-                                "element": "a",
-                                "children": "Site",
-                                "attributes": {
-                                  "__href": "match.links.site"
-                                }
+            },
+            {
+              "element": "p",
+              "__children": "context.match.description"
+            }
+          ]
+        },
+        {
+          "element": "div",
+          "class": "flex flex-col gap-4",
+          "children": [
+            {
+              "element": "div",
+              "class": "flex flex-col gap-4",
+              "children": [
+                {
+                  "visibleIf": "context.match.stargazers",
+                  "element": "div",
+                  "children": [
+                    {
+                      "element": "a",
+                      "==children": "'Stars: ' + context.match.stargazers"
+                    }
+                  ]
+                },
+                {
+                  "element": "div",
+                  "children": [
+                    {
+                      "element": "h2",
+                      "class": "text-xl",
+                      "children": "Links"
+                    },
+                    {
+                      "element": "ul",
+                      "class": "flex flex-row gap-2",
+                      "children": [
+                        {
+                          "visibleIf": "context.match.links.site",
+                          "element": "li",
+                          "children": [
+                            {
+                              "element": "a",
+                              "children": "Site",
+                              "attributes": {
+                                "__href": "context.match.links.site"
                               }
-                            ]
-                          },
-                          {
-                            "visibleIf": "match.links.github",
-                            "element": "li",
-                            "children": [
-                              {
-                                "element": "a",
-                                "children": "GitHub",
-                                "attributes": {
-                                  "__href": "match.links.github"
-                                }
+                            }
+                          ]
+                        },
+                        {
+                          "visibleIf": "context.match.links.github",
+                          "element": "li",
+                          "children": [
+                            {
+                              "element": "a",
+                              "children": "GitHub",
+                              "attributes": {
+                                "__href": "context.match.links.github"
                               }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "visibleIf": "context.match.tags.length",
+              "element": "div",
+              "class": "flex flex-col gap-2",
+              "children": [
+                {
+                  "element": "h2",
+                  "class": "text-xl",
+                  "children": "Tags"
+                },
+                {
+                  "element": "SimpleTags",
+                  "props": {
+                    "__tags": "context.match.tags"
                   }
-                ]
-              },
-              {
-                "visibleIf": "match.tags.length",
-                "element": "div",
-                "class": "flex flex-col gap-2",
-                "children": [
-                  {
-                    "element": "h2",
-                    "class": "text-xl",
-                    "children": "Tags"
-                  },
-                  {
-                    "element": "SimpleTags",
-                    "__bind": "match.tags"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "element": "MainFooter"
-      },
-      {
-        "element": "Scripts",
-        "__bind": "scripts"
-      }
-    ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
-]
+}
