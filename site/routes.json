@@ -5,12 +5,7 @@
       "description": "JSter catalogues JavaScript libraries per purpose"
     },
     "layout": "siteIndex",
-    "dataSources": [
-      {
-        "id": "parentCategories",
-        "operation": "parentCategories"
-      }
-    ]
+    "dataSources": ["parentCategories"]
   },
   "catalog": {
     "meta": {
@@ -18,26 +13,10 @@
       "description": "JavaScript libraries per category"
     },
     "layout": "catalogIndex",
-    "dataSources": [
-      {
-        "id": "parentCategories",
-        "operation": "parentCategories"
-      }
-    ]
+    "dataSources": ["parentCategories"]
   },
   "category": {
     "expand": {
-      "dataSources": [
-        {
-          "id": "libraries",
-          "operation": "libraries"
-        },
-        {
-          "id": "categories",
-          "operation": "categories",
-          "dependsOn": ["libraries"]
-        }
-      ],
       "matchBy": {
         "dataSource": "categories",
         "slug": "id"
@@ -51,17 +30,6 @@
   },
   "tag": {
     "expand": {
-      "dataSources": [
-        {
-          "id": "libraries",
-          "operation": "libraries"
-        },
-        {
-          "id": "tags",
-          "operation": "tags",
-          "dependsOn": ["libraries"]
-        }
-      ],
       "matchBy": {
         "dataSource": "tags",
         "slug": "id"
@@ -75,12 +43,6 @@
   },
   "library": {
     "expand": {
-      "dataSources": [
-        {
-          "id": "libraries",
-          "operation": "libraries"
-        }
-      ],
       "matchBy": {
         "dataSource": "libraries",
         "slug": "id"
@@ -105,19 +67,8 @@
       "title": "JSter – Blog",
       "description": "News relevant to JavaScript"
     },
-    "dataSources": [
-      {
-        "id": "blogPosts",
-        "operation": "blogPosts"
-      }
-    ],
+    "dataSources": ["blogPosts"],
     "expand": {
-      "dataSources": [
-        {
-          "id": "blogPosts",
-          "operation": "blogPosts"
-        }
-      ],
       "matchBy": {
         "dataSource": "blogPosts",
         "slug": "id"
@@ -136,11 +87,6 @@
       "title": "JSter",
       "description": "JSter blog"
     },
-    "dataSources": [
-      {
-        "id": "blogPosts",
-        "operation": "blogPosts"
-      }
-    ]
+    "dataSources": ["blogPosts"]
   }
 }

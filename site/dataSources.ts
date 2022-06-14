@@ -4,8 +4,33 @@ import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
 import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
 import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
-import { dir, getJson } from "../../scripts/utils.ts";
-import type { Library } from "../../types.ts";
+import { Marked, Renderer } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import YAML from "https://esm.sh/yaml@1.10.2";
+import { dir, getJson } from "../scripts/utils.ts";
+import categories from "../assets/data/categories.json" assert {
+  type: "json",
+};
+import blogIndex from "../assets/data/blogposts.json" assert {
+  type: "json",
+};
+import parentCategories from "../assets/data/parent-categories.json" assert {
+  type: "json",
+};
+import type { BlogPost, Category, Library } from "../types.ts";
+
+type IndexEntry = { id: string; title: string; url: string; date: string };
+
+// TODO: Set up highlighting
+Marked.setOptions({
+  renderer: new Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: true,
+});
 
 const config = configSync();
 
@@ -102,4 +127,86 @@ async function getLibraries(): Promise<Library[]> {
   return enhancedLibraries.filter(Boolean);
 }
 
-export default getLibraries;
+async function getBlogPosts() {
+  const blogPosts: BlogPost[] = (await dir("./assets/data/blogposts")).map(
+    ({ name, path }) => {
+      const yaml = YAML.parse(Deno.readTextFileSync(path));
+
+      return {
+        name,
+        path,
+        ...yaml,
+        // TODO: Support custom syntax (screenshots, anything else?)
+        body: Marked.parse(yaml.body).content,
+      };
+    },
+  );
+
+  const ret = blogIndex.map(({ id, date }: IndexEntry) => {
+    const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
+
+    if (!matchingBlogPost) {
+      console.warn("No matching blog post found for", id);
+    }
+
+    return {
+      id,
+      title: matchingBlogPost?.title || "",
+      // @ts-ignore: Typo in the original data
+      shortTitle: matchingBlogPost?.short_title,
+      slug: matchingBlogPost?.slug || "",
+      date,
+      type: matchingBlogPost?.type || "static",
+      user: matchingBlogPost?.user || "",
+      body: matchingBlogPost?.body || "",
+    };
+  });
+
+  // TODO: Likely this should be applied as a transform
+  return [...ret].reverse();
+}
+
+async function getCategories() {
+  const libraries = await getLibraries();
+
+  return Promise.all(categories.map(async (
+    category,
+  ) => ({
+    ...category,
+    libraries: (await getJson<Library[]>(
+      `assets/data/categories/${category.id}.json`,
+    )).map((l) => libraries.find((library) => library.id === l.id)).filter(
+      Boolean,
+    ),
+  })));
+}
+
+function getParentCategories() {
+  return parentCategories;
+}
+
+async function getTags() {
+  const libraries = await getLibraries();
+
+  return Promise.all((await dir("assets/data/tags")).map(async (
+    { name, path },
+  ) => ({
+    id: name.split(".").slice(0, -1).join(),
+    title: name.split(".").slice(0, -1).join(),
+    libraries: (await getJson<Category[]>(path)).map((c) => {
+      const foundLibrary = libraries.find((l) => l.id === c.library.id);
+
+      if (foundLibrary) {
+        return foundLibrary;
+      }
+    }).filter(Boolean),
+  })));
+}
+
+export {
+  getBlogPosts as blogPosts,
+  getCategories as categories,
+  getLibraries as libraries,
+  getParentCategories as parentCategories,
+  getTags as tags,
+};
