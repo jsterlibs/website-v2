@@ -1,4 +1,3 @@
-// TODO: Figure out a good spot for this. Maybe Gustwind needs some init file?
 import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
 import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
 import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
@@ -64,63 +63,44 @@ async function getLibraries(): Promise<Library[]> {
               await Deno.readTextFile(cachePath),
             );
 
-            return { stargazers: undefined, ...cachedLibrary };
+            return { score: {}, metrics: {}, ...cachedLibrary };
           } catch (_error) {
             // no-op: Error here is ok as then it means the cache file doesn't exist yet
           }
 
-          // It looks like the missing repos have stargazers set to undefined.
           try {
             const response = await fetch(
-              `https://cf-api.jster.net/stargazers?organization=${
-                trim(org, "/")
-              }&repository=${trim(repository, "/")}`,
+              `https://cf-api.jster.net/security?name=${trim(repository, "/")}`,
               {
                 headers: {
                   "Authorization": `Bearer ${config.API_AUTH}`,
                 },
               },
             );
-            const { stargazers } = await response.text().then((text) => {
+            const { score, metrics } = await response.text().then((text) => {
               try {
                 return JSON.parse(text);
               } catch (_error) {
-                // no-op: Error is expected here as some libraries don't have this data
-                // because they aren't hosted on GitHub for example.
+                // no-op: Error is expected here as some libraries don't have their data
+                // at socket.dev
               }
 
               return 0;
             });
 
-            if (stargazers === "undefined") {
-              // Write to cache even if stargazers were not found
-              ensureFileSync(cachePath);
-              await Deno.writeTextFile(
-                cachePath,
-                JSON.stringify({ ...library, stargazers: undefined }, null, 2),
-              );
-
-              return;
-            }
-
-            const ret = {
-              ...library,
-              stargazers,
-            };
+            const ret = { ...library, score, metrics };
 
             // Write to cache
             ensureFileSync(cachePath);
             await Deno.writeTextFile(cachePath, JSON.stringify(ret, null, 2));
 
             return ret;
-          } catch (error) {
-            console.error("Failed to get stargazers", error);
-
-            return { ...library, stargazers: undefined };
+          } catch (_error) {
+            return { ...library, score: {}, metrics: {} };
           }
         }
 
-        return { ...library, stargazers: undefined };
+        return { ...library, score: {}, metrics: {} };
       })
     ),
   );
