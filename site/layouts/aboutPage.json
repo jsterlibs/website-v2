@@ -18,7 +18,7 @@
         {
           "element": "p",
           "props": {
-            "content": "JSter is a catalog of frontend JavaScript libraries. We also maintain [a blog](/blog/) and publish [a monthly newsletter](http://eepurl.com/zB_g5). If you want to find a library for some specific purpose, we probably have something for you."
+            "content": "JSter is a catalog of frontend JavaScript libraries. We also maintain [a blog](/blog/) and publish [a monthly newsletter](https://buttondown.email/jster). If you want to find a library for some specific purpose, we probably have something for you."
           },
           "==children": "utilities.markdown(props.content).content"
         },

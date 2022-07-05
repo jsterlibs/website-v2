@@ -6,7 +6,7 @@ slug: monthly-jster-august-2013
 body: |
     The JS people have been busy as ever it seems. Time to go through some highlights of the month.
 
-    Remember that Monthly JSter is available as [a newsletter](http://eepurl.com/zB_g5). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content.
+    Remember that Monthly JSter is available as [a newsletter](https://buttondown.email/jster). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content.
 
     Psst. If you happen to come by some awesome content and would like us to feature it, poke [@jsterlibs](https://twitter.com/jsterlibs) at Twitter.
 
@@ -19,7 +19,7 @@ body: |
     * [Yeoman 1.0](http://yeoman.io/blog/hello-1.0.html) - The Kraken is out! More generators than the doctor prescribed.
     * [jsep](http://jsep.from.so/) - A simple JavaScript expression parser written in JavaScript.
     * [polyfill](https://github.com/jonathantneal/polyfill) - Polyfill combinator that selectively polyfills what the browser needs.
-    * [URI.js](https://github.com/medialize/URI.js) - Mutate URIs easily. 
+    * [URI.js](https://github.com/medialize/URI.js) - Mutate URIs easily.
     * [intention.js](http://intentionjs.com/) - Light weight way to dynamically restructure HTML in a responsive manner.
     * [task.js](http://taskjs.org/)
     * [Verbal Expressions](http://thechangelog.com/stop-writing-regular-expressions-express-them-with-verbal-expressions/)
