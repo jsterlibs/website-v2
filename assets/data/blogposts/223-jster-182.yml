@@ -4,78 +4,61 @@ short_title: "JSter #182"
 user: bebraw
 slug: jster-182
 body: |
-  > It's the JavaScript that I don't know that gets to me
+  > JavaScript is a tool. They think I'm hiding in the shadows. But I am the shadows.
 
-  To my horror, I noticed early this week that [jster.net](https://jster.net/) is down. It turns out the server had gone offline. The original service was hosted in Ukraine and I imagine something bad happened. That meant I had to finish and deploy the new version on a sufficient level.
+  It's time another JSter post. If you follow through [the mailing list](https://buttondown.email/jster), then you'll notice the mail looks different now. That's because I moved to a service called Buttondown to simplify my workflow.
 
-  The new site is far faster than the old one as it's fully static. It doesn't have full feature parity with the old one yet and I'm restoring it bit by bit. That said, the index and the blog posts are up although you may notice something not rendering in a post for example.
-
-  On the plus side, [the new stack](https://gustwind.js.org/) is fairly nice and it renders fast. It takes about six seconds on my computer to render 3000 pages and roughly 10 seconds on Cloudflare Pages infrastructure (not counting Deno installation).
-
-  The process hasn't been fully optimized yet so that's a good sign in case I want to grow the index one day and then there are more tricks like incremental compilation and using edge workers to generate pages dynamically on demand.
+  As a result, I might move back to a biweekly interval maybe in the fall as now it's simply faster to author the posts.
 
   ## Libraries
 
-  * [wooorm/starry-night](https://github.com/wooorm/starry-night) - Syntax highlighting, like GitHub
-  * [Preview.js](https://previewjs.com/) - Preview UI components in your IDE instantly
-  * [Panolens.js](https://pchen66.github.io/Panolens/) - A JavaScript panorama viewer
-  * [yjs](https://github.com/yjs/yjs) - Shared data types for building collaborative software
-  * [coder/code-server](https://github.com/coder/code-server) - VS Code in the browser
-  * [terotests/robowatch](https://github.com/terotests/robowatch) - Directory event watch with configuration
-  * [Zag](https://zagjs.com/) - UI components powered by Finite State Machines
+  * [json2html](https://github.com/moappi/json2html) - Json2html is a lightning fast client side javascript HTML templating library with wrappers for both jQuery and Node.js
+  * [Papanasi](https://papanasi.js.org/) - UI library to use cross frameworks
+  * [duetds/date-picker](https://github.com/duetds/date-picker) - Open source version of Duet Design System accessible date picker
+  * [QuaggaJS, an advanced barcode-reader written in JavaScript](https://serratus.github.io/quaggaJS/)
+  * [oslabs-beta/dangoDB](https://github.com/oslabs-beta/dangoDB) - A MongoDB ODM for Deno
+  * [thoughtbot/fishery](https://github.com/thoughtbot/fishery) - A library for setting up JavaScript objects as test data
+  * [CASL.js](https://casl.js.org/v5/en/) - Isomorphic Authorization JavaScript library
+  * [esamattis/react-zorm](https://github.com/esamattis/react-zorm) - Type-safe form for React using Zod
 
-  ## Tools
+  ## Frameworks
 
-  * [Flutter 3 is available](https://docs.flutter.dev/whats-new#may-11-2022-google-io-edition-flutter-3-release)
-  * [Meta Open Source is transferring Jest to the OpenJS Foundation](https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/)
-  * [Slinkity](https://slinkity.dev/) - To eleventy and beyond
-  * [metiss](https://github.com/metissio/metiss) - Eliminate bugs via intelligent tests generation
-  * [usmanyunusov/nano-staged](https://github.com/usmanyunusov/nano-staged) - Tiny tool to run commands for modified, staged, and committed files in a GIT repository
-  * [projen](https://github.com/projen/projen) - A new generation of project generators
-  * [eemeli/ibid](https://github.com/eemeli/ibid) - Tools to automate your releases and changelogs, esp. for monorepos
-  * [ericclemmons/click-to-component](https://github.com/ericclemmons/click-to-component) - Option+Click React components in your browser to instantly open the source in VS Code
+  * [Angular v14 is now available](https://blog.angular.io/angular-v14-is-now-available-391a6db736af)
+  * [Markdoc](https://markdoc.io/) - A powerful, flexible, Markdown-based authoring framework
 
-  ## Slides
+  ## TypeScript
 
-  * [The future is mostly static](https://www.slideshare.net/bebraw/the-future-is-mostly-static)
+  * [colinhacks/zod](https://github.com/colinhacks/zod) - TypeScript-first schema validation with static type inference
+  * [Deepkit](https://deepkit.io/) - High performance TypeScript framework
+  * [TypeScript Records and Mapped Types](https://www.wwt.com/article/typescript-records-and-mapped-types)
+  * [Migrating millions of lines of code to TypeScript](https://stripe.com/blog/migrating-to-typescript)
+  * [Announcing TypeScript 4.7](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7/)
+
+  ## Techniques
+
+  * [Dependency Injection](https://syntactic-sugar.dev/blog/nested-route/dependency-injection)
+  * [Run the latest SQLite beta directly in your web browser](https://changelog.com/news/run-the-latest-sqlite-beta-directly-in-your-web-browser-Zowk)
+  * [Lightning Fast Headless Commerce with Vendure and Remix](https://www.vendure.io/blog/2022/05/lightning-fast-headless-commerce-with-vendure-and-remix/)
+  * [5 ways to prevent code injection in JavaScript and Node.js](https://snyk.io/blog/5-ways-to-prevent-code-injection-in-javascript-and-node-js/)
 
   ## Articles
 
-  * [Making a falling sand simulator](https://jason.today/falling-sand)
-  * [Moving from Next to Remix](https://blog.openreplay.com/moving-from-next-to-remix/)
-  * [JavaScript Containers](https://tinyclouds.org/javascript_containers)
-  * [Notes on Advanced TypeScript: Runtime Validations](https://dev.to/busypeoples/notes-on-advanced-typescript-runtime-validations-5b)
+  * [Web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms) - Working with user data
   * [Porting Zelda Classic to the Web](https://hoten.cc/blog/porting-zelda-classic-to-the-web/)
-  * [Backbone.js vs React](https://www.ideamotive.co/blog/backbone.js-vs-react-what-to-choose-for-your-front-end)
-  * [Why I don't miss React: a story about using the platform](https://www.jackfranklin.co.uk/blog/working-with-react-and-the-web-platform/)
-  * [Monorepo Explained](https://monorepo.tools/)
-  * [Supercharge your Design System with Design Tokens](https://uxdesign.cc/supercharge-your-design-system-with-design-tokens-55044fa29142)
+  * [Hydration is Pure Overhead](https://www.builder.io/blog/hydration-is-pure-overhead)
+  * [The Thing About Fastify](https://hire.jonasgalvez.com.br/2022/may/02/the-thing-about-fastify/)
+  * [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
+  * [Announcing the Web-interoperable Runtimes](https://deno.com/blog/announcing-wintercg)
+  * [The road to universal JavaScript](https://fettblog.eu/the-road-to-universal-javascript/)
 
-  ## Security
+  ## Guides
 
-  * [npm security update: Attack campaign using stolen OAuth tokens](https://github.blog/2022-05-26-npm-security-update-oauth-tokens/)
-  * [3 Jedi-inspired lessons to level up your JavaScript security](https://snyk.io/blog/jedi-lessons-to-level-up-javascript-security/)
+  * [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
 
-  ## Demos
+  ## Tools
 
-  * [jantimon/next-relay-demo](https://github.com/jantimon/next-relay-demo) - Relay React Concurrency Example
-
-  ## Services
-
-  * [TypeScript Error Translator](https://ts-error-translator.vercel.app/)
-
-  ## Aricles
-
-  * [Building a JavaScript Bundler](https://cpojer.net/posts/building-a-javascript-bundler)
-
-  ## Books
-
-  * [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/books/structure-and-interpretation-computer-programs-1) - Now in JavaScript
-
-  ## Icons
-
-  * [Tabler Icons: over 1950 vector icons for web design](https://tabler-icons.io/)
-
-  ## Standards
-
-  * [Constructable Stylesheets](https://web.dev/constructable-stylesheets/)
+  * [postcss/postcss-media-minmax](https://github.com/postcss/postcss-media-minmax) - Writing simple and graceful Media Queries
+  * [Storybook 6.5](https://storybook.js.org/blog/storybook-6-5/)
+  * [Capri](https://capri.build/) - Build static sites with interactive islands
+  * [Announcing Cypress 10 with Component Testing Beta!](https://www.cypress.io/blog/2022/06/01/cypress-10-release/)
+  * [pre-commit](https://pre-commit.com/) - A Framework For Managing And Maintaining Multi Language Pre Commit Hooks
