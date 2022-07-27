@@ -1,0 +1,23 @@
+{
+  "name": "website-v2",
+  "version": "0.0.0",
+  "description": "jster.net source",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsterlibs/website-v2.git"
+  },
+  "keywords": [],
+  "author": "Juho Vepsäläinen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsterlibs/website-v2/issues"
+  },
+  "homepage": "https://github.com/jsterlibs/website-v2#readme",
+  "dependencies": {
+    "breezewind": "^0.1.0"
+  }
+}
