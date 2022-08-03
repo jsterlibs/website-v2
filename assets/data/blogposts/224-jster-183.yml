@@ -1,0 +1,54 @@
+type: static
+title: "JSter #183: Libraries and more"
+short_title: "JSter #183"
+user: bebraw
+slug: jster-183
+body: |
+  > When things are too dangerous to say, JavaScript.
+
+  It's that time of the month again, JSter-time.
+
+  ## Libraries
+
+  * [pakastin/maze](https://github.com/pakastin/maze) - Maze generation visualization
+  * [Ficus](https://www.ficusjs.org/) - Lightweight libraries and tools for building modern web applications
+  * [srmagura/real-cancellable-promise](https://github.com/srmagura/real-cancellable-promise) - Cancellable promise library for JavaScript and TypeScript
+  * [react-hookz/web](https://github.com/react-hookz/web) - React hooks done right, for browser and SSR
+  * [ahooks](https://ahooks.js.org/) - A high-quality & reliable React Hooks library
+  * [maraisr/piecemeal](https://github.com/maraisr/piecemeal) - Send your data piecemeal
+  * [CSS Variable](https://css-variable.js.org/) - CSS Variables for your CSS-in-JS solution
+  * [React Native Zephyr](https://formidable.com/open-source/react-native-zephyr/) - TailwindCSS-inspired styling library for React Native
+  * [Starbeam](https://starbeamjs.com/) - Reactivity Made Simple and Fun
+  * [kwhitley/itty-router](https://github.com/kwhitley/itty-router) - A little router
+  * [Nano JSX](https://nanojsx.io/) - Lightweight 1kB JSX library
+
+  ## Frameworks
+
+  * [Vest Validations Framework](https://vestjs.dev/)
+
+  ## Tools
+
+  * [unjs/unbuild](https://github.com/unjs/unbuild) - An unified javascript build system
+  * [Bun is a fast all-in-one JavaScript runtime](https://bun.sh/)
+  * [gemini-testing/hermione](https://github.com/gemini-testing/hermione) - Browser test runner based on mocha and wdio
+  * [Vite 3.0 is out!](https://vitejs.dev/blog/announcing-vite3.html) - Faster, better, stronger bundler for the modern web
+  * [esbuild-kit/tsx](https://github.com/esbuild-kit/tsx) - TypeScript Execute (tsx): Node.js enhanced with esbuild to run TypeScript & ESM
+
+  ## Articles
+
+  * [SPAs: theory versus practice](https://nolanlawson.com/2022/06/27/spas-theory-versus-practice/)
+  * [Making the world's fastest website, and other mistakes](https://dev.to/tigt/making-the-worlds-fastest-website-and-other-mistakes-56na)
+  * [Patterns for Building JavaScript Websites in 2022](https://dev.to/this-is-learning/patterns-for-building-javascript-websites-in-2022-5a93)
+  * [Hacking Swagger-UI - from XSS to account takeovers](https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/)
+
+  ## Techniques
+
+  * [Simplify your full-stack applications with XState](https://blog.theodo.com/2022/07/simplify-your-applications-with-xstate/)
+  * [How to animate multiplayer cursors](https://liveblocks.io/blog/how-to-animate-multiplayer-cursors)
+  * [wasmbuild](https://deno.com/blog/wasmbuild) - Using Rust in Deno and Web Apps
+  * [AbortController is your friend](https://whistlr.info/2022/abortcontroller-is-your-friend/)
+
+  ## Demos
+
+  * [Curl Flow](https://curl-flow.vercel.app/)
+  * [Hub and spoke](https://willymaps.github.io/spoke/)
