@@ -1,14 +1,36 @@
 {
-  "element": "a",
-  "==class": "['underline'].concat(props.class || []).join(' ')",
-  "classList": {
-    "font-bold": "props.href === context.pathname"
+  "type": "a",
+  "class": {
+    "utility": "concat",
+    "parameters": [
+      "underline",
+      " ",
+      { "utility": "get", "parameters": ["props", "class"] }
+    ]
   },
-  "__children": "props.children",
+  "classList": {
+    "font-bold": [
+      { "utility": "get", "parameters": ["props", "href"] },
+      { "utility": "get", "parameters": ["context", "pathname"] }
+    ]
+  },
+  "children": {
+    "utility": "get",
+    "parameters": ["props", "children"]
+  },
   "attributes": {
-    "__href": "props.href",
+    "href": {
+      "utility": "get",
+      "parameters": ["props", "href"]
+    },
     "x-attr": "",
-    "__x": "props.x",
-    "__@href": "props.@href"
+    "x": {
+      "utility": "get",
+      "parameters": ["props", "x"]
+    },
+    "@href": {
+      "utility": "get",
+      "parameters": ["props", "@href"]
+    }
   }
 }

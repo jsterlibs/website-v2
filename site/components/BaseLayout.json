@@ -1,6 +1,6 @@
 [
   {
-    "element": "!DOCTYPE",
+    "type": "!DOCTYPE",
     "attributes": {
       "html": "",
       "language": "context.meta.language"
@@ -8,32 +8,38 @@
     "closingCharacter": ""
   },
   {
-    "element": "html",
+    "type": "html",
     "attributes": {},
     "children": [
       {
-        "element": "head",
+        "type": "head",
         "children": [
           {
-            "element": "MetaFields"
+            "type": "MetaFields"
           }
         ]
       },
       {
-        "element": "body",
+        "type": "body",
         "children": [
           {
-            "element": "MainNavigation"
+            "type": "MainNavigation"
           },
           {
-            "element": "main",
-            "##children": "props.content"
+            "type": "main",
+            "children": {
+              "utility": "render",
+              "parameters": [{
+                "utility": "get",
+                "parameters": ["props", "content"]
+              }]
+            }
           },
           {
-            "element": "MainFooter"
+            "type": "MainFooter"
           },
           {
-            "element": "Scripts"
+            "type": "Scripts"
           }
         ]
       }

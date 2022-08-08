@@ -1,5 +1,8 @@
 {
-  "element": "h1",
+  "type": "h1",
   "class": "prose lg:prose-xl",
-  "__children": "props.children"
+  "children": {
+    "utility": "get",
+    "parameters": ["props", "children"]
+  }
 }

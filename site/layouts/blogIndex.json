@@ -1,20 +1,23 @@
 {
-  "element": "BaseLayout",
+  "type": "BaseLayout",
   "props": {
     "content": {
-      "element": "div",
+      "type": "div",
       "class": "p-4 mx-auto max-w-5xl prose lg:prose-xl",
       "children": [
         {
-          "element": "H1",
+          "type": "H1",
           "props": {
             "children": "Blog"
           }
         },
         {
-          "element": "BlogPosts",
-          "props": {
-            "__blogPosts": "context.blogPosts"
+          "type": "BlogPosts",
+          "bindToProps": {
+            "blogPosts": {
+              "utility": "get",
+              "parameters": ["context", "blogPosts"]
+            }
           }
         }
       ]
