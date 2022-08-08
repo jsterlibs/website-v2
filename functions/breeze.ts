@@ -22,7 +22,6 @@ setup({
 export async function onRequest() {
   sheet.reset();
 
-  // TODO: Set up styling (twind)
   // TODO: Pass proper context here
   const html = await breeze({
     component,
