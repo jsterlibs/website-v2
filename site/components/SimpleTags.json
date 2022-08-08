@@ -1,17 +1,36 @@
 {
-  "element": "ul",
+  "type": "ul",
   "class": "flex flex-row flex-wrap gap-x-2 gap-y-4",
-  "foreach": ["props.tags", {
-    "element": "li",
-    "children": [
-      {
-        "element": "a",
-        "class": "p-1 rounded-full border bg-violet-200 hover:bg-violet-300 font-extralight text-sm",
-        "__children": "props.value",
-        "attributes": {
-          "==href": "'/tag/' + props.value + '/'"
+  "foreach": [
+    {
+      "utility": "get",
+      "parameters": ["props", "tags"]
+    },
+    {
+      "type": "li",
+      "children": [
+        {
+          "type": "a",
+          "class": "p-1 rounded-full border bg-violet-200 hover:bg-violet-300 font-extralight text-sm",
+          "children": {
+            "utility": "get",
+            "parameters": ["props", "value"]
+          },
+          "attributes": {
+            "href": {
+              "utility": "concat",
+              "parameters": [
+                "/tag/",
+                {
+                  "utility": "get",
+                  "parameters": ["props", "value"]
+                },
+                "/"
+              ]
+            }
+          }
         }
-      }
-    ]
-  }]
+      ]
+    }
+  ]
 }

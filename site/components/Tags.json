@@ -1,24 +1,40 @@
 {
-  "element": "ul",
+  "type": "ul",
   "class": "flex flex-row flex-wrap gap-x-2 gap-y-4",
   "attributes": {
     "x-each": "state.value.library.tags"
   },
   "foreach": [
-    "props.tags",
     {
-      "element": "li",
+      "utility": "get",
+      "parameters": ["props", "tags"]
+    },
+    {
+      "type": "li",
       "attributes": {
         "x-template": ""
       },
       "children": [
         {
-          "element": "a",
+          "type": "a",
           "class": "p-1 rounded-full border bg-violet-200 hover:bg-violet-300 font-extralight text-sm",
-          "__children": "props.value",
+          "children": {
+            "utility": "get",
+            "parameters": ["props", "value"]
+          },
           "attributes": {
             "x": "state.value",
-            "==href": "'/tag/' + props.value + '/'",
+            "href": {
+              "utility": "concat",
+              "parameters": [
+                "/tag/",
+                {
+                  "utility": "get",
+                  "parameters": ["props", "value"]
+                },
+                "/"
+              ]
+            },
             "x-attr": "",
             "@href": "'/tag/' + state.value + '/'"
           }

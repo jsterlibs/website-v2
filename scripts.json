@@ -4,8 +4,10 @@
     "NO_COLOR": 1
   },
   "scripts": {
-    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.27.0/cli.ts -b",
-    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.27.0/cli.ts -d",
+    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.28.4/cli.ts -b",
+    "build:linked": "gustwind -b",
+    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.28.4/cli.ts -d",
+    "start:linked": "gustwind -d",
     "decompress:cache": "wget -c $CACHE_LOCATION -O - | tar -xz"
   },
   "importMap": "import_map.json"

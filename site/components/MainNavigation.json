@@ -1,50 +1,50 @@
 {
-  "element": "nav",
+  "type": "nav",
   "class": "flex flex-col md:flex-row gap-4 md:gap-0 justify-between p-4 bg-gray-100",
   "children": [
     {
-      "element": "div",
+      "type": "div",
       "class": "flex gap-4 font-thin",
       "children": [
         {
-          "element": "Link",
+          "type": "Link",
           "props": {
             "children": "JSter",
             "href": "/"
           }
         },
         {
-          "element": "Navigation"
+          "type": "Navigation"
         }
       ]
     },
     {
-      "element": "div",
+      "type": "div",
       "class": "flex gap-4 font-light",
       "children": [
         {
-          "element": "Link",
+          "type": "Link",
           "props": {
             "children": "@jsterlibs",
             "href": "https://twitter.com/jsterlibs"
           }
         },
         {
-          "element": "Link",
+          "type": "Link",
           "props": {
             "children": "Mailing list",
             "href": "https://buttondown.email/jster"
           }
         },
         {
-          "element": "Link",
+          "type": "Link",
           "props": {
             "children": "RSS",
             "href": "/atom.xml"
           }
         },
         {
-          "element": "Link",
+          "type": "Link",
           "props": {
             "todo_children": "Sign in",
             "href": "https://backend-8ae1c3f3.nhost.app/auth/providers/github"

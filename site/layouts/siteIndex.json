@@ -1,29 +1,37 @@
 {
-  "element": "BaseLayout",
+  "type": "BaseLayout",
   "props": {
     "content": {
-      "element": "div",
+      "type": "div",
       "class": "p-4",
       "children": [
         {
-          "element": "div",
+          "type": "div",
           "class": "mx-auto max-w-5xl",
           "children": [
             {
-              "element": "Subscribe"
+              "type": "Subscribe"
             },
             {
-              "element": "div",
+              "type": "div",
               "class": "mx-auto my-4 p-2 bg-yellow-100 prose",
               "props": {
                 "content": "**Note:** The new site is still in beta. Please [use the issue tracker for bug reports and feature requests](https://github.com/jsterlibs/website-v2/issues)."
               },
-              "==children": "utilities.markdown(props.content).content"
+              "children": {
+                "utility": "markdown",
+                "parameters": [
+                  { "utility": "get", "parameters": ["props", "content"] }
+                ]
+              }
             },
             {
-              "element": "AllCategories",
-              "props": {
-                "__categories": "context.parentCategories"
+              "type": "AllCategories",
+              "bindToProps": {
+                "categories": {
+                  "utility": "get",
+                  "parameters": ["context", "parentCategories"]
+                }
               }
             }
           ]

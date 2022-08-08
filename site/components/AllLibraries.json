@@ -1,22 +1,22 @@
 {
-  "element": "div",
+  "type": "div",
   "attributes": {
     "x-state": "'{ libraries: [] }'"
   },
   "children": [
     {
-      "element": "div",
+      "type": "div",
       "class": "flex gap-1",
       "todo_children": [
         {
-          "element": "button",
+          "type": "button",
           "children": "Sort libraries (asc.)",
           "attributes": {
             "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => a.title.localeCompare(b.title)) }))"
           }
         },
         {
-          "element": "button",
+          "type": "button",
           "children": "Sort libraries (desc.)",
           "attributes": {
             "onclick": "setState(state => ({ libraries: state.libraries.slice().sort((a, b) => b.title.localeCompare(a.title)) }))"
@@ -25,47 +25,64 @@
       ]
     },
     {
-      "element": "ul",
+      "type": "ul",
       "class": "grid md:grid-cols-2 lg:grid-cols-3 gap-4",
       "attributes": {
         "x-each": "state.libraries",
         "x-ssr": ""
       },
       "foreach": [
-        "props.libraries",
         {
-          "element": "li",
+          "utility": "get",
+          "parameters": ["props", "libraries"]
+        },
+        {
+          "type": "li",
           "class": "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4",
           "attributes": {
             "x-template": ""
           },
           "children": [
             {
-              "element": "Link",
+              "type": "Link",
+              "bindToProps": {
+                "children": {
+                  "utility": "get",
+                  "parameters": ["props", "name"]
+                },
+                "href": {
+                  "utility": "concat",
+                  "parameters": ["/library/", {
+                    "utility": "get",
+                    "parameters": ["props", "id"]
+                  }]
+                }
+              },
               "props": {
                 "class": "bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg",
-                "__children": "props.name",
-                "==href": "'/library/' + props.id",
                 "x": "state.value.name",
                 "@href": "state.value.url"
               }
             },
             {
-              "element": "div",
+              "type": "div",
               "class": "flex justify-between",
               "children": [
                 {
                   "visibleIf": "props.stargazers",
-                  "element": "div",
+                  "type": "div",
                   "class": "flex gap-1",
                   "children": [
                     {
-                      "element": "span",
+                      "type": "span",
                       "children": "Stars:"
                     },
                     {
-                      "element": "span",
-                      "__children": "props.stargazers",
+                      "type": "span",
+                      "children": {
+                        "utility": "get",
+                        "parameters": ["props", "stargazers"]
+                      },
                       "attributes": {
                         "x": "state.value.stargazers",
                         "x-attr": ""
@@ -75,28 +92,41 @@
                 },
                 {
                   "visibleIf": "props.links.site",
-                  "element": "Link",
+                  "type": "Link",
+                  "bindToProps": {
+                    "href": {
+                      "utility": "get",
+                      "parameters": ["props", "links.site"]
+                    }
+                  },
                   "props": {
                     "children": "Homepage",
-                    "__href": "props.links.site",
                     "@href": "state.value.links.site"
                   }
                 },
                 {
                   "visibleIf": "props.links.github",
-                  "element": "Link",
+                  "type": "Link",
+                  "bindToProps": {
+                    "href": {
+                      "utility": "get",
+                      "parameters": ["props", "links.github"]
+                    }
+                  },
                   "props": {
                     "children": "GitHub page",
-                    "__href": "props.links.github",
                     "@href": "state.value.links.github"
                   }
                 }
               ]
             },
             {
-              "element": "Tags",
-              "props": {
-                "__tags": "props.tags"
+              "type": "Tags",
+              "bindToProps": {
+                "tags": {
+                  "utility": "get",
+                  "parameters": ["props", "tags"]
+                }
               }
             }
           ]

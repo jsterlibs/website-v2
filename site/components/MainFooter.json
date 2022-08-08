@@ -1,28 +1,28 @@
 {
-  "element": "footer",
+  "type": "footer",
   "class": "bg-violet-200 px-2 py-4 font-light",
   "children": [
     {
-      "element": "div",
+      "type": "div",
       "class": "flex flex-col container mx-auto gap-4",
       "children": [
         {
-          "element": "section",
+          "type": "section",
           "class": "flex justify-between",
           "children": [
             {
-              "element": "div",
+              "type": "div",
               "class": "flex flex-col",
               "children": [
                 {
-                  "element": "h2",
+                  "type": "h2",
                   "todo_children": "New additions"
                 },
                 {
-                  "element": "ul",
+                  "type": "ul",
                   "children": [
                     {
-                      "element": "li",
+                      "type": "li",
                       "todo_children": "TODO"
                     }
                   ]
@@ -30,15 +30,15 @@
               ]
             },
             {
-              "element": "div",
+              "type": "div",
               "class": "flex flex-col",
               "children": [
                 {
-                  "element": "h2",
+                  "type": "h2",
                   "todo_children": "Selected library"
                 },
                 {
-                  "element": "div",
+                  "type": "div",
                   "todo_children": "Demo library"
                 }
               ]
@@ -46,53 +46,53 @@
           ]
         },
         {
-          "element": "section",
+          "type": "section",
           "class": "grid grid-cols-3 gap-4",
           "children": [
             {
-              "element": "div",
+              "type": "div",
               "class": "flex flex-col",
               "children": [
                 {
-                  "element": "h2",
+                  "type": "h2",
                   "children": "About"
                 },
                 {
-                  "element": "div",
+                  "type": "div",
                   "class": "font-thin",
                   "children": "JSter is a community-driven catalog of the most useful JavaScript libraries. Find the right tool for a work and do it effectively."
                 }
               ]
             },
             {
-              "element": "div",
+              "type": "div",
               "class": "flex flex-col",
               "children": [
                 {
-                  "element": "h2",
+                  "type": "h2",
                   "children": "Navigation"
                 },
                 {
-                  "element": "div",
+                  "type": "div",
                   "class": "flex flex-col md:flex-row gap-4 font-thin",
                   "children": [
                     {
-                      "element": "Navigation"
+                      "type": "Navigation"
                     }
                   ]
                 }
               ]
             },
             {
-              "element": "div",
+              "type": "div",
               "class": "flex flex-col",
               "children": [
                 {
-                  "element": "h2",
+                  "type": "h2",
                   "children": "Credits"
                 },
                 {
-                  "element": "div",
+                  "type": "div",
                   "class": "font-thin",
                   "children": "JSter was created by passionate web developers Juho Vepsäläinen and Codegyre Developers Team (Michael Bodnarchuk and Nick Palamarchuk)"
                 }

@@ -1,16 +1,28 @@
 {
-  "element": "ul",
+  "type": "ul",
   "class": "flex flex-col gap-4",
-  "foreach": ["props.blogPosts", {
-    "element": "li",
-    "children": [
-      {
-        "element": "Link",
-        "props": {
-          "__children": "props.title",
-          "__href": "props.slug"
+  "foreach": [
+    {
+      "utility": "get",
+      "parameters": ["props", "blogPosts"]
+    },
+    {
+      "type": "li",
+      "children": [
+        {
+          "type": "Link",
+          "bindToProps": {
+            "children": {
+              "utility": "get",
+              "parameters": ["props", "title"]
+            },
+            "href": {
+              "utility": "get",
+              "parameters": ["props", "slug"]
+            }
+          }
         }
-      }
-    ]
-  }]
+      ]
+    }
+  ]
 }

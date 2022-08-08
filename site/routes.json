@@ -23,8 +23,14 @@
       },
       "layout": "categoryPage",
       "meta": {
-        "__title": "match.name",
-        "__description": "match.description"
+        "title": {
+          "utility": "get",
+          "parameters": ["match", "name"]
+        },
+        "description": {
+          "utility": "get",
+          "parameters": ["match", "description"]
+        }
       }
     }
   },
@@ -36,8 +42,14 @@
       },
       "layout": "categoryPage",
       "meta": {
-        "__title": "match.name",
-        "__description": "match.description"
+        "title": {
+          "utility": "get",
+          "parameters": ["match", "name"]
+        },
+        "description": {
+          "utility": "get",
+          "parameters": ["match", "description"]
+        }
       }
     }
   },
@@ -49,8 +61,14 @@
       },
       "layout": "libraryPage",
       "meta": {
-        "__title": "match.name",
-        "__description": "match.description"
+        "title": {
+          "utility": "get",
+          "parameters": ["match", "name"]
+        },
+        "description": {
+          "utility": "get",
+          "parameters": ["match", "description"]
+        }
       }
     }
   },
@@ -75,8 +93,14 @@
       },
       "layout": "blogPage",
       "meta": {
-        "__title": "match.name",
-        "__description": "match.description"
+        "title": {
+          "utility": "get",
+          "parameters": ["match", "name"]
+        },
+        "description": {
+          "utility": "get",
+          "parameters": ["match", "description"]
+        }
       }
     }
   },

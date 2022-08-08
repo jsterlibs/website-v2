@@ -1,20 +1,23 @@
 {
-  "element": "BaseLayout",
+  "type": "BaseLayout",
   "props": {
     "content": {
-      "element": "div",
+      "type": "div",
       "class": "p-4 mx-auto max-w-5xl",
       "children": [
         {
-          "element": "H1",
+          "type": "H1",
           "props": {
             "children": "Catalog"
           }
         },
         {
-          "element": "AllCategories",
-          "props": {
-            "__categories": "context.parentCategories"
+          "type": "AllCategories",
+          "bindToProps": {
+            "categories": {
+              "utility": "get",
+              "parameters": ["context", "parentCategories"]
+            }
           }
         }
       ]

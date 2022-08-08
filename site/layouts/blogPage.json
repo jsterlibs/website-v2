@@ -1,19 +1,28 @@
 {
-  "element": "BaseLayout",
+  "type": "BaseLayout",
   "props": {
     "content": {
-      "element": "div",
+      "type": "div",
       "class": "p-4 mx-auto max-w-5xl prose lg:prose-xl",
       "children": [
         {
-          "element": "H1",
-          "props": {
-            "__children": "context.match.title"
+          "type": "H1",
+          "bindToProps": {
+            "children": {
+              "utility": "get",
+              "parameters": ["context", "match.title"]
+            }
           }
         },
         {
-          "element": "p",
-          "==children": "utilities.markdown(context.match.body).content"
+          "type": "p",
+          "children": {
+            "utility": "markdown",
+            "parameters": [{
+              "utility": "get",
+              "parameters": ["context", "match.body"]
+            }]
+          }
         }
       ]
     }

@@ -1,20 +1,20 @@
 [
   {
-    "element": "Link",
+    "type": "Link",
     "props": {
       "children": "Blog",
       "href": "/blog/"
     }
   },
   {
-    "element": "Link",
+    "type": "Link",
     "props": {
       "children": "Catalog",
       "href": "/catalog/"
     }
   },
   {
-    "element": "Link",
+    "type": "Link",
     "props": {
       "children": "About",
       "href": "/about/"
