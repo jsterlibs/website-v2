@@ -120,11 +120,21 @@
               {
                 "type": "content",
                 "attributes": {
-                  "type": "html"
+                  "type": "text/html"
                 },
                 "children": {
-                  "utility": "get",
-                  "parameters": ["props", "description"]
+                  "utility": "concat",
+                  "parameters": [
+                    "<![CDATA[",
+                    {
+                      "utility": "markdown",
+                      "parameters": [{
+                        "utility": "get",
+                        "parameters": ["props", "body"]
+                      }]
+                    },
+                    "]]>"
+                  ]
                 }
               }
             ]

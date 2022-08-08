@@ -15,7 +15,6 @@
           }
         },
         {
-          "type": "p",
           "children": {
             "utility": "markdown",
             "parameters": [{

@@ -6,6 +6,7 @@ import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
 import { Marked, Renderer } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 import YAML from "https://esm.sh/yaml@1.10.2";
+import { Html5Entities } from "https://deno.land/x/html_entities@v1.0/mod.js";
 import { dir, getJson } from "../scripts/utils.ts";
 import categories from "../assets/data/categories.json" assert {
   type: "json",
@@ -137,7 +138,7 @@ async function getBlogPosts() {
         path,
         ...yaml,
         // TODO: Support custom syntax (screenshots, anything else?)
-        body: Marked.parse(yaml.body).content,
+        body: Html5Entities.decode(Marked.parse(yaml.body).content),
       };
     },
   );
