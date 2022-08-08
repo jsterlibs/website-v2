@@ -1,7 +1,9 @@
 {
   "tasks": {
-    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.28.3/cli.ts -b",
-    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.28.3/cli.ts -d",
+    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.28.4/cli.ts -b",
+    "build:linked": "gustwind -b",
+    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.28.4/cli.ts -d",
+    "start:linked": "gustwind -d",
     "compress:cache": "tar -zcf build/cache.tar.gz .gustwind_cache",
     "decompress:cache": "wget -c $CACHE_LOCATION -O - | tar -xz"
   }

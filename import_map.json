@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "cheerio": "https://deno.land/x/cheerio@1.0.4/mod.ts",
-    "fs": "https://deno.land/std@0.107.0/fs/mod.ts",
-    "path": "https://deno.land/std@0.107.0/path/mod.ts",
-    "utils": "./scripts/utils.ts"
-  }
-}
