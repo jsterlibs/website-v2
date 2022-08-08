@@ -1,5 +1,4 @@
 build/
 node_modules
-components.ts
 .env
 .gustwind_cache
