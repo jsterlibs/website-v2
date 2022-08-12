@@ -2,21 +2,15 @@ import breeze from "breezewind";
 import { setup, tw } from "twind";
 import * as twindColors from "twind/colors";
 import { virtualSheet, getStyleTag } from "twind/sheets";
-import typography from "@twind/typography";
+import twindTypography from "@twind/typography";
 import * as breezeExtensions from "breezewind/extensions";
-import * as components from "../../components";
-import component from "../../site/layouts/libraryPage.json";
+import * as components from "../../components.ts";
+import component from "../../site/layouts/libraryPage.json" assert { type: "json" };
+import sharedTwindSetup from "../../sharedTwindSetup.ts";
 
 const sheet = virtualSheet();
 
-// TODO: Set up a module for this so it can be shared with SSG
-setup({
-  theme: { extend: { colors: twindColors } },
-  plugins: {
-    ...typography(),
-  },
-  sheet,
-});
+setup({ ...sharedTwindSetup({ twindColors, twindTypography }), sheet });
 
 export async function onRequest({
   params: { id },
