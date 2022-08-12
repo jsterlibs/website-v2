@@ -4,22 +4,25 @@ import * as twindColors from "twind/colors";
 import { virtualSheet, getStyleTag } from "twind/sheets";
 import typography from "@twind/typography";
 import * as breezeExtensions from "breezewind/extensions";
-import * as components from "../components";
-import component from "../site/layouts/libraryPage.json";
+import * as components from "../../components";
+import component from "../../site/layouts/libraryPage.json";
 
 const sheet = virtualSheet();
 
+// TODO: Set up a module for this so it can be shared with SSG
 setup({
   theme: { extend: { colors: twindColors } },
   plugins: {
-    ...typography({
-      className: "my-prose", // Defaults to 'prose'
-    }),
+    ...typography(),
   },
   sheet,
 });
 
-export async function onRequest() {
+export async function onRequest({
+  params: { id },
+}: {
+  params: { id: string };
+}) {
   sheet.reset();
 
   // TODO: Pass proper context here
