@@ -69,7 +69,10 @@
               "class": "flex justify-between",
               "children": [
                 {
-                  "visibleIf": "props.stargazers",
+                  "visibleIf": [{
+                    "utility": "get",
+                    "parameters": ["props", "stargazers"]
+                  }],
                   "type": "div",
                   "class": "flex gap-1",
                   "children": [
@@ -91,7 +94,10 @@
                   ]
                 },
                 {
-                  "visibleIf": "props.links.site",
+                  "visibleIf": [{
+                    "utility": "get",
+                    "parameters": ["props", "links.site"]
+                  }],
                   "type": "Link",
                   "bindToProps": {
                     "href": {
@@ -105,7 +111,10 @@
                   }
                 },
                 {
-                  "visibleIf": "props.links.github",
+                  "visibleIf": [{
+                    "utility": "get",
+                    "parameters": ["props", "links.github"]
+                  }],
                   "type": "Link",
                   "bindToProps": {
                     "href": {

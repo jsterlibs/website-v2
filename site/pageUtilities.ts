@@ -1,11 +1,4 @@
 import md from "./transforms/markdown.ts";
+import getUtilities from "../sharedUtilities.ts";
 
-function dateToISO(_: unknown, date: string) {
-  return (new Date(date)).toISOString();
-}
-
-function markdown(_: unknown, input: string) {
-  return md(input).content;
-}
-
-export { dateToISO, markdown };
+export default getUtilities(md);

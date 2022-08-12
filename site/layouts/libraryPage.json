@@ -14,7 +14,7 @@
               "bindToProps": {
                 "children": {
                   "utility": "get",
-                  "parameters": ["context", "match.name"]
+                  "parameters": ["context", "name"]
                 }
               }
             },
@@ -22,7 +22,7 @@
               "type": "p",
               "children": {
                 "utility": "get",
-                "parameters": ["context", "match.description"]
+                "parameters": ["context", "description"]
               }
             }
           ]
@@ -36,7 +36,10 @@
               "class": "flex flex-col gap-4",
               "children": [
                 {
-                  "visibleIf": "context.match.stargazers",
+                  "visibleIf": [{
+                    "utility": "get",
+                    "parameters": ["context", "github.stargazers"]
+                  }],
                   "type": "div",
                   "children": [
                     {
@@ -45,7 +48,35 @@
                         "utility": "concat",
                         "parameters": ["Stars:", " ", {
                           "utility": "get",
-                          "parameters": ["context", "match.stargazers"]
+                          "parameters": ["context", "github.stargazers"]
+                        }]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "visibleIf": [{
+                    "utility": "get",
+                    "parameters": ["context", "score.supplyChain"]
+                  }],
+                  "type": "div",
+                  "children": [
+                    {
+                      "type": "a",
+                      "children": {
+                        "utility": "concat",
+                        "parameters": ["Supplychain score:", " ", {
+                          "utility": "toFixed",
+                          "parameters": [
+                            {
+                              "utility": "get",
+                              "parameters": [
+                                "context",
+                                "score.supplyChain"
+                              ]
+                            },
+                            2
+                          ]
                         }]
                       }
                     }
@@ -64,7 +95,10 @@
                       "class": "flex flex-row gap-2",
                       "children": [
                         {
-                          "visibleIf": "context.match.links.site",
+                          "visibleIf": [{
+                            "utility": "get",
+                            "parameters": ["context", "links.site"]
+                          }],
                           "type": "li",
                           "children": [
                             {
@@ -73,14 +107,17 @@
                               "attributes": {
                                 "href": {
                                   "utility": "get",
-                                  "parameters": ["context", "match.links.site"]
+                                  "parameters": ["context", "links.site"]
                                 }
                               }
                             }
                           ]
                         },
                         {
-                          "visibleIf": "context.match.links.github",
+                          "visibleIf": [{
+                            "utility": "get",
+                            "parameters": ["context", "match.github"]
+                          }],
                           "type": "li",
                           "children": [
                             {
@@ -89,10 +126,7 @@
                               "attributes": {
                                 "href": {
                                   "utility": "get",
-                                  "parameters": [
-                                    "context",
-                                    "match.links.github"
-                                  ]
+                                  "parameters": ["context", "match.github"]
                                 }
                               }
                             }
@@ -105,7 +139,11 @@
               ]
             },
             {
-              "visibleIf": "context.match.tags.length",
+              "__todo": "check against context.tags.length",
+              "visibleIf": [{
+                "utility": "get",
+                "parameters": ["context", "tags"]
+              }],
               "type": "div",
               "class": "flex flex-col gap-2",
               "children": [
@@ -119,7 +157,7 @@
                   "bindToProps": {
                     "tags": {
                       "utility": "get",
-                      "parameters": ["context", "match.tags"]
+                      "parameters": ["context", "tags"]
                     }
                   }
                 }

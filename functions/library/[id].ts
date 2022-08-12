@@ -6,12 +6,13 @@ import twindTypography from "@twind/typography";
 import * as breezeExtensions from "breezewind/extensions";
 import * as components from "../../components.ts";
 import component from "../../site/layouts/libraryPage.json" assert { type: "json" };
-import sharedTwindSetup from "../../sharedTwindSetup.ts";
-import { injectStyleTag } from "../../utils.ts";
+import getSharedTwindSetup from "../../sharedTwindSetup.ts";
+import getUtilities from "../../sharedUtilities.ts";
+import { getLibraryData, injectStyleTag } from "../../utils.ts";
 
 const sheet = virtualSheet();
 
-setup({ ...sharedTwindSetup({ twindColors, twindTypography }), sheet });
+setup({ ...getSharedTwindSetup({ twindColors, twindTypography }), sheet });
 
 export async function onRequest({
   params: { id },
@@ -20,19 +21,33 @@ export async function onRequest({
 }) {
   sheet.reset();
 
-  // TODO: Pass proper context here
-  const html = await breeze({
-    component,
-    components,
-    context: {},
-    extensions: [
-      breezeExtensions.classShortcut(tw),
-      breezeExtensions.foreach,
-      breezeExtensions.visibleIf,
-    ],
-  });
+  try {
+    // TODO: Cache library data
+    const libraryData = await getLibraryData(id);
+    const html = await breeze({
+      component,
+      components,
+      // TODO: Pass information from github here as well (readme + links)
+      context: libraryData,
+      extensions: [
+        breezeExtensions.classShortcut(tw),
+        breezeExtensions.foreach,
+        breezeExtensions.visibleIf,
+      ],
+      // TODO: Pass proper markdown handler
+      utilities: getUtilities((s: string) => ({
+        content: s,
+      })),
+    });
 
-  return new Response(injectStyleTag(html, getStyleTag(sheet)), {
-    headers: { "content-type": "text/html" },
-  });
+    return new Response(injectStyleTag(html, getStyleTag(sheet)), {
+      status: 200,
+      headers: { "content-type": "text/html" },
+    });
+  } catch (_error) {
+    return new Response(`{ "error": "Internal error" }`, {
+      status: 500,
+      headers: { "content-type": "application/json" },
+    });
+  }
 }
