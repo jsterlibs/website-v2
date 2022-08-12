@@ -7,6 +7,7 @@ import * as breezeExtensions from "breezewind/extensions";
 import * as components from "../../components.ts";
 import component from "../../site/layouts/libraryPage.json" assert { type: "json" };
 import sharedTwindSetup from "../../sharedTwindSetup.ts";
+import { injectStyleTag } from "../../utils.ts";
 
 const sheet = virtualSheet();
 
@@ -34,11 +35,4 @@ export async function onRequest({
   return new Response(injectStyleTag(html, getStyleTag(sheet)), {
     headers: { "content-type": "text/html" },
   });
-}
-
-// TODO: Move to some utils
-function injectStyleTag(markup: string, styleTag: string) {
-  const parts = markup.split("</head>");
-
-  return parts[0] + styleTag + parts[1];
 }
