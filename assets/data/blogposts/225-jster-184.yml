@@ -1,0 +1,59 @@
+type: static
+title: "JSter #184: Libraries and more"
+short_title: "JSter #184"
+user: bebraw
+slug: jster-184
+body: |
+  > Mama always said life was like a box of JavaScript libraries
+
+  A lot of libraries this time. That's all.
+
+  I also wrote documentation for my JSON based templating solution called [Breezewind](https://gustwind.js.org/breezewind/). It's the core of jster.net and you can think it as a React inspired way to handle templates.
+
+  ## Libraries
+
+  * [bmoren/p5.collide2D](https://github.com/bmoren/p5.collide2D) - A collision detection library for 2D geometry in p5.js
+  * [FullCalendar](https://fullcalendar.io/) - The Most Popular JavaScript Calendar
+  * [developit/snarkdown](https://github.com/developit/snarkdown) - A snarky 1kb Markdown parser written in JavaScript
+  * [natemoo-re/ultrahtml](https://github.com/natemoo-re/ultrahtml) - A 1.75kB library for enhancing HTML
+  * [ANTLR (ANother Tool for Language Recognition)](https://github.com/antlr/antlr4) - A powerful parser generator for reading, processing, executing, or translating structured text or binary files
+  * [Pinia](https://pinia.vuejs.org/) - The Vue Store that you will enjoy using
+  * [JLCarveth/zjs](https://github.com/JLCarveth/zjs) - Yet Another JavaScript Runtime
+  * [validator.js](https://github.com/validatorjs/validator.js) - String validation
+  * [LyraSearch/lyra](https://github.com/LyraSearch/lyra) - Fast, in-memory, typo-tolerant, full-text search engine written in TypeScript
+  * [natemoo-re/ultrafetch](https://github.com/natemoo-re/ultrafetch) - RFC-7234 compliant caching for any `fetch` implementation
+  * [lxsmnsyc/waystone](https://github.com/lxsmnsyc/waystone) - MPAs that feels like SPAs
+  * [Million.js](https://millionjs.org/) - Virtual DOM into the future
+  * [Promise pool](https://superchargejs.com/docs/3.x/promise-pool)
+  * [ferdikoomen/openapi-typescript-codegen](https://github.com/ferdikoomen/openapi-typescript-codegen) - NodeJS library that generates TypeScript or JavaScript clients based on the OpenAPI specification
+
+  ## React
+
+  * [jed/wc-jsx-runtime](https://github.com/jed/wc-jsx-runtime) - A JSX transform for Web Components
+  * [react-curved-input](https://akx.github.io/react-curved-input/)
+  * [Shopify/react-native-skia](https://github.com/Shopify/react-native-skia) - High-performance React Native Graphics using Skia
+  * [dai-shi/react-hooks-global-state](https://github.com/dai-shi/react-hooks-global-state) - Simple global state for React with Hooks API without Context API
+
+  ## Frameworks
+
+  * [Tauri](https://tauri.app/) - Build smaller, faster, and more secure desktop applications with a web frontend
+
+  ## Articles
+
+  * [The JavaScript Paradox](https://dev.to/this-is-learning/the-javascript-paradox-2njj)
+  * [Which generator builds Markdown the fastest?](https://www.zachleat.com/web/build-benchmark/)
+  * [Check Your Site’s Performance With Artillery and Playwright](https://dev-tester.com/check-your-sites-performance-with-artillery-and-playwright/)
+  * [Stronger JavaScript with Opaque Types](https://codemix.com/opaque-types-in-javascript/)
+  * [Custom ESM loaders: Who, what, when, where, why, how](https://dev.to/jakobjingleheimer/custom-esm-loaders-who-what-when-where-why-how-4i1o)
+  * [Rendering Dynamic Remote Containers in a React Micro Frontend](https://betterprogramming.pub/rendering-dynamic-remote-containers-in-a-react-micro-frontend-1dd97019824f)
+  * [Avoiding <img> layout shifts: aspect-ratio vs width & height attributes](https://jakearchibald.com/2022/img-aspect-ratio/)
+
+  ## Tools
+
+  * [Slidev 101: Coding presentations with Markdown](https://snyk.io/blog/slidev-101-coding-presentations-with-markdown/)
+  * [npkill](https://www.npmjs.com/package/npkill) - High-performance React Native Graphics using Skia
+  * [alloc/indo](https://github.com/alloc/indo) - More flexible monorepos
+
+  ## Tutorials
+
+  * [Getting started with Fresh: The New Deno Framework](https://blog.bitsrc.io/getting-started-with-fresh-the-new-deno-framework-47ac30545891)
