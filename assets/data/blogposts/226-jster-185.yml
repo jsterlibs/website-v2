@@ -1,0 +1,70 @@
+type: static
+title: "JSter #185: Libraries and more"
+short_title: "JSter #185"
+user: bebraw
+slug: jster-185
+body: |
+  > How many JavaScript developers does it take to change a LAMP?
+
+  [React Finland 2022](https://react-finland.fi/) is over and it went smoothly. We're currently in post-production phase but you can find uncut content online already.
+
+  ## Libraries
+
+  * [Cmdk](https://cmdk.paco.me/) - Fast, composable, unstyled command menu for React
+  * [Plaiceholder](https://plaiceholder.co/) - Beautiful image placeholders, without the hassle
+  * [unocss](https://github.com/unocss/unocss) - The instant on-demand atomic CSS engine
+  * [Tamagui](https://tamagui.dev/) - Universal UI for React Native
+  * [fast-fuzzy](https://www.npmjs.com/package/fast-fuzzy) - Fast fuzzy search utility
+  * [WiseLibs/better-sqlite3](https://github.com/WiseLibs/better-sqlite3) - The fastest and simplest library for SQLite3 in Node.js
+  * [bebraw/dragjs](https://github.com/bebraw/dragjs) - Simple utility to make it easier to implement drag based things (ie. sliders and such)
+  * [bokuweb/react-rnd](https://github.com/bokuweb/react-rnd) - A resizable and draggable component for React
+  * [fjmhzyh/Dragjs](https://github.com/fjmhzyh/Dragjs) - A light js library that makes your element draggable
+  * [interact.js](https://interactjs.io/) - JavaScript drag and drop, resizing, and multi-touch gestures for modern browsers (and also IE9+)
+  * [flimsy](https://github.com/fabiospampinato/flimsy) - A single-file <1kb min+gzip simplified implementation of the reactive core of Solid, optimized for clean code
+  * [t3-oss/create-t3-app](https://github.com/t3-oss/create-t3-app) - Quickest way to start a new web app with full stack typesafety
+
+  ## Articles
+
+  * [The npm faker package and the unexpected demise of open source libraries](https://snyk.io/blog/npm-faker-package-open-source-libraries/)
+  * [Building an aircraft radar system in JavaScript](https://charliegerard.dev/blog/aircraft-radar-system-rtl-sdr-web-usb/)
+  * [Why Qwik Is Potentially the Future Of JS Frameworks?](https://upmostly.com/web-development/why-qwik-is-potentially-the-future-of-js-frameworks)
+  * [Most Popular React Tech Stack in 2022 (Based on Data)](https://profy.dev/article/react-tech-stack)
+  * [Introducing Ezno](https://kaleidawave.github.io/posts/introducing-ezno/) - New compiler for the web
+  * [Resumability, WTF?](https://dev.to/this-is-learning/resumability-wtf-2gcm)
+  * [Getting Started with (and Surviving) Node.js](https://formidable.com/blog/2021/node-esm-and-exports/)
+  * [JavaScript had a hand in delivering James Webb Space Telescope’s images](https://www.theverge.com/2022/8/18/23206110/james-webb-space-telescope-javascript-jwst-instrument-control)
+  * [Avoiding useEffect with callback refs](https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs)
+
+  ## APIs
+
+  * [tRPC](https://trpc.io/) - Move Fast and Break Nothing. End-to-end typesafe APIs made easy.
+  * [sachinraja/trpc-pokemon](https://github.com/sachinraja/trpc-pokemon) - public tRPC Pokemon API
+
+  ## Games
+
+  * [Choose Your Framework](https://www.chooseyourframework.dev/)
+
+  ## Techniques
+
+  * [Improving Paint Metrics by Removing Unused Preloads](https://blog.webpagetest.org/posts/removing-unused-preloads-on-festival-foods/)
+
+  ## Frameworks
+
+  * [Qwik and Qwik City have reached beta!](https://www.builder.io/blog/qwik-and-qwik-city-have-reached-beta)
+  * [Pico.css](https://picocss.com/) - Minimal CSS Framework for semantic HTML
+
+  ## Opinions
+
+  * [Typescript is terrible for library developers: We spend a disproportionate amount of time on types](https://erock.prose.sh/typescript-terrible-for-library-developers)
+
+  ## Tools
+
+  * [JMESPath](https://jmespath.org/) - JMESPath is a query language for JSON
+
+  ## Testing
+
+  * [CodeIntelligenceTesting/jazzer.js](https://github.com/CodeIntelligenceTesting/jazzer.js) - Coverage-guided, in-process fuzzing for the Node.js
+
+  ## Services
+
+  * [Component Party](https://component-party.dev/) - Comparison of components
