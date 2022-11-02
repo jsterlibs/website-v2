@@ -1,0 +1,62 @@
+type: static
+title: "JSter #186: Libraries and more"
+short_title: "JSter #186"
+user: bebraw
+slug: jster-186
+body: |
+  > No time to JavaScript
+
+  It's almost Winter and the world of JavaScript keeps moving.
+
+  ## Libraries
+
+  * [11ty/is-land](https://github.com/11ty/is-land) - A new performance-focused way to add interactive client-side components to your web site
+  * [Corset](https://corset.dev/) - Cascading binding sheets
+  * [WebReflection/weak-value](https://github.com/WebReflection/weak-value) - A Map with weakly referenced values, instead of keys
+  * [React Calendar](https://www.react-calendar.com/)
+  * [11ty/webc](https://github.com/11ty/webc) - Single File Web Components
+  * [Pyodide](https://pyodide.org/en/stable/index.html) - Python distribution for the browser and Node.js based on WebAssembly
+
+  ## Articles
+
+  * [Everyone has JavaScript, right?](https://kryogenix.org/code/browser/everyonehasjs.html)
+  * [JSX can be more efficient by default](https://webreflection.medium.com/jsx-can-be-more-efficient-by-default-466cfd704fc0)
+  * [Accessibility testing for web developers](https://dev.solita.fi/2022/09/28/accessibility-for-web-dev.html)
+  * [Let’s talk about web components](https://bradfrost.com/blog/post/lets-talk-about-web-components/)
+  * [React I Love You, But You're Bringing Me Down](https://marmelab.com/blog/2022/09/20/react-i-love-you.html)
+  * [The Future of the Web is on the Edge](https://deno.com/blog/the-future-of-web-is-on-the-edge)
+  * [whitep4nth3r changed her mind about writing new JavaScript frameworks](https://whitep4nth3r.com/blog/write-a-new-javascript-framework/)
+
+  ## Tools
+
+  * [dudykr/stc](https://github.com/dudykr/stc) - Speedy TypeScript type checker
+  * [Turbopack](https://turbo.build/pack) - The successor of webpack
+  * [Node.js 19 is now available!](https://nodejs.org/en/blog/announcements/v19-release-announce/)
+  * [rollup/rollup/releases/tag/v3.0.0](https://github.com/rollup/rollup/releases/tag/v3.0.0) - Rollup v3.0
+  * [Lightning CSS](https://lightningcss.dev/) - An extremely fast CSS parser, transformer, bundler, and minifier.
+
+  ## Frameworks
+
+  * [Next.js 13](https://nextjs.org/blog/next-13)
+  * [Voby: Simplifications Over Solid - No Babel, No Compiler](https://dev.to/fabiospampinato/voby-simplifications-over-solid-no-babel-no-compiler-5epg)
+
+  ## TypeScript
+
+  * [Boxed: Functional utility types and functions for TypeScript](https://swan-io.github.io/boxed/)
+  * [Ten Years of TypeScript](https://devblogs.microsoft.com/typescript/ten-years-of-typescript/)
+
+  ## Techniques
+
+  * [8 elements of securing Node.js applications](https://developers.redhat.com/articles/2022/08/09/8-elements-securing-nodejs-applications#6__externalizing_secrets)
+  * [Best practices for creating a modern npm package](https://snyk.io/blog/best-practices-create-modern-npm-package/)
+  * [Monitor Events and Function Calls via Console](https://davidwalsh.name/monitorevents)
+  * [Introducing Signals for Preact](https://preactjs.com/blog/introducing-signals/)
+  * [Running 1000 tests in 1s](https://marvinh.dev/blog/running-1000-test-in-1s/)
+
+  ## Services
+
+  * [Accessibility Checker](https://www.accessibilitychecker.org/)
+
+  ## Games
+
+  * [JS13K 2022 winners](https://github.blog/2022-10-06-js13k-2022-winners/)
