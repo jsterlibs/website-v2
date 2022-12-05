@@ -1,0 +1,66 @@
+type: static
+title: "JSter #187: Libraries and more"
+short_title: "JSter #187"
+user: bebraw
+slug: jster-187
+body: |
+  > XmasScript needs to become a thing
+
+  Xmas is getting close and this is the last JSter post of the year.
+
+  ## Libraries
+
+  * [Jeongho made 1,000x faster TypeScript Validator Library](https://dev.to/samchon/typescript-json-is-10-1000x-times-faster-than-zod-and-io-ts-8n6)
+  * [arackaf/micro-graphql-svelte](https://github.com/arackaf/micro-graphql-svelte) - Light and simple GraphQL Svelte client with extensible, composable cache invalidation
+  * [Tremor](https://www.tremor.so/) - The React library to build dashboards fast
+  * [Legend](https://legendapp.com/open-source/state/) - A super fast and powerful state library for JavaScript apps
+  * [hazae41/xswr](https://github.com/hazae41/xswr) - Yet another React data (re)fetching library
+  * [Telefunc](https://telefunc.com/) - Remote Functions. Instead of API.
+  * [bigskysoftware/idiomorph](https://github.com/bigskysoftware/idiomorph) - A DOM-merging algorithm
+  * [WebReflection/uhtml](https://github.com/WebReflection/uhtml) - A micro HTML/SVG render
+  * [Modular Forms](https://modularforms.dev/) - The modular form library for SolidJS
+
+  ## Frameworks
+
+  * [LiveViewJS](https://www.liveviewjs.com/) - Simple yet powerful framework for LiveViews in NodeJS and Deno
+  * [TezJS](https://tezjs.io/) - A Revolutionary Jamstack Framework for Modern Websites
+  * [Unpoly](https://unpoly.com/) - Unobtrusive JavaScript framework
+  * [Introducing Shoelace, a Framework-Independent Component-Based UX Library](https://css-tricks.com/shoelace-component-frameowrk-introduction/)
+  * [TahaSh/qwikql](https://github.com/TahaSh/qwikql) - A GraphQL client for Qwik framework
+
+  ## Techniques
+
+  * [JavaScript [].at() is amazing and you should use it](https://davidea.st/articles/javascript-at-array/)
+  * [How Understanding State Machines Helps With Building Trees and Graphs](https://mfaani.com/posts/interviewing/how-understanding-state-machines-helps-with-building-trees-and-graphs/)
+  * [Understanding the useId hook in ReactOpenReplay](https://blog.openreplay.com/understanding-the-useid-hook-in-react/)
+  * [Rendering React on the Edge with Flareact and Cloudflare Workers](https://blog.cloudflare.com/rendering-react-on-the-edge-with-flareact-and-cloudflare-workers/)
+  * [Incremental Static Regeneration on Cloudflare Workers](https://reego.dev/blog/achieving-isr-on-cloudflare-workers)
+  * [Why antfu doesn't use Prettier](https://antfu.me/posts/why-not-prettier)
+  * [Making React fast by default and truly reactiveOpen on CodeSandbox](https://legendapp.com/open-source/legend-state/)
+
+  ## TypeScript
+
+  * [TypeScript's Blind Spots](https://incrementalelm.com/typescript-blind-spots/)
+  * [Understanding infer in TypeScript](https://blog.logrocket.com/understanding-infer-typescript/)
+  * [Announcing TypeScript 4.9](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9/)
+
+  ## Articles
+
+  * [React Native Internals for Web Developers](https://tech-blog.agrittiwari.com/react-native-internals-for-web-developers)
+  * [Where Web Components Went Wrong (And How We Can Turn It Around)](https://space.matthewphillips.info/posts/where-web-components-went-wrong/)
+  * [JSX is inefficient by default but](https://webreflection.medium.com/jsx-is-inefficient-by-default-but-d1122c992399)
+  * [Variant-driven components](https://ped.ro/writing/variant-driven-components)
+
+  ## Languages
+
+  * [Deno 1.28: Featuring 1.3 Million New Modules](https://buff.ly/3fYi2nz)
+
+  ## Tools
+
+  * [npm CLI v9 is now generally available](https://github.blog/changelog/2022-11-09-npm-cli-v9-is-now-generally-available/)
+  * [Announcing Rome v10](https://rome.tools/blog/2022/11/08/rome-10/)
+
+  ## Starters
+
+  * [trpc/examples-next-prisma-starter](https://github.com/trpc/examples-next-prisma-starter) - Prisma + tRPC
+  * [cpojer/vite-ts-react-tailwind-template](https://github.com/cpojer/vite-ts-react-tailwind-template) - Minimal, sensible defaults, fast
