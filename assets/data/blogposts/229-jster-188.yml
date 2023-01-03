@@ -1,0 +1,59 @@
+type: static
+title: "JSter #188: Libraries and more"
+short_title: "JSter #188"
+user: bebraw
+slug: jster-188
+body: |
+  > New year, new JavaScript libraries
+
+  As a follow-up to [React Finland](https://react-finland.fi/), we'll organize a new conference called [Future Frontend](https://futurefrontend.com/). As you might have guessed from the name, it is more future focused and the pivot allowed us to invite speakers that we otherwise couldn't have invited. The conference takes place 05-09.06 in Helsinki, Finland and we've started early sales.
+
+  ## Libraries
+
+  * [Stylable](https://stylable.io/) - CSS for components
+  * [Shoelace](https://shoelace.style/) - A forward-thinking library of web components
+  * [jQuery 3.6.2 Released!](https://blog.jquery.com/2022/12/13/jquery-3-6-2-released/)
+
+  ## Frameworks
+
+  * [Beyond Docs](https://beyondjs.com/) - The Full Stack Modular + Universal Typescript Framework
+  * [Next 13.1](https://nextjs.org/blog/next-13-1)
+  * [GrapesJS](https://grapesjs.com/) - Free and Open Source Web Builder Framework
+  * [yisar/asta](https://github.com/yisar/asta) - Resumable SSR framework
+  * [OpenNext](https://open-next.js.org/) - Open source Next.js serverless adapter
+  * [gbj/leptos](https://github.com/gbj/leptos) - Build fast web applications with Rust
+
+  ## Tools
+
+  * [Tamagui 1.0 🎉](https://tamagui.dev/blog/version-one) - Ship cross-platform React apps in ½ the time with 2x performance
+  * [What’s new in Nx 15?. Nx v15 is finally here! Let’s go…](https://blog.nrwl.io/whats-new-in-nx-15-7e14e1ff282d)
+  * [unjs/unplugin](https://github.com/unjs/unplugin) - Unified plugin system for Vite, Rollup, Webpack, and more
+  * [github/catalyst](https://github.com/github/catalyst) - Catalyst is a set of patterns and techniques for developing components within a complex application.
+  * [marcj/TypeRunner](https://github.com/marcj/TypeRunner) - High-performance TypeScript compiler
+  * [danielroe/fontaine](https://github.com/danielroe/fontaine) - Automatic font fallback based on font metrics
+  * [vituum](https://github.com/vituum/vituum) - Fast prototyping with template engines and integrated frontend tools. Vituum is a small wrapper around Vite
+  * [Vite 4.0 is out!](https://vitejs.dev/blog/announcing-vite4.html)
+  * [Ladle](https://ladle.dev/) - Develop and test your React stories faster
+  * [g-plane/typed-query-selector](https://github.com/g-plane/typed-query-selector) - Better typed `querySelector` and `querySelectorAll`
+  * [google/wireit](https://github.com/google/wireit) - Wireit upgrades your npm/pnpm/yarn scripts to make them smarter and more efficient
+
+  ## Articles
+
+  * [Remember when the IE 11 User-Agent forced Mozilla to freeze part of its User-Agent string (last week)](https://miketaylr.com/posts/2022/12/how-the-IE-11-ua-string-broke-sites-in-firefox.html)
+  * [Why We're Breaking Up with CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)
+
+  ## Techniques
+
+  * [Dynamic LCP Priority: Learning from Past Visits](https://philipwalton.com/articles/dynamic-lcp-priority/)
+  * [React Hooks Best Practices 2023](https://djaytechdiary.com/react-hooks-best-practices-2023)
+  * [Explore DOM Events 👩‍🔬](https://domevents.dev/)
+
+  ## Tutorials
+
+  * [Building a dialog component](https://web.dev/building-a-dialog-component/)
+  * [Intro to Qwik: A superfast JavaScript framework](https://www.infoworld.com/article/3676577/intro-to-qwik-a-superfast-javascript-framework.html)
+  * [Writing Your First Qwik Component](https://betterprogramming.pub/writing-your-first-qwik-component-18a0c50f2687)
+
+  ## Icons
+
+  * [Lucide](https://lucide.dev/) - Beautiful & consistent icon toolkit made by the community
