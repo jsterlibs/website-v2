@@ -1,0 +1,57 @@
+type: static
+title: "JSter #189: Libraries and more"
+short_title: "JSter #189"
+user: bebraw
+slug: jster-189
+body: |
+  > In a few years npm will reach ten million packages
+
+  The JavaScript ecosystem keeps growing at an exponential pace. One day we'll reach Mars and beyond.
+
+  ## Libraries
+
+  * [Vessel.js](https://shiplab.github.io/vesseljs/) - Design ships in JavaScript
+  * [11ty/eleventy-activity-feed](https://github.com/11ty/eleventy-activity-feed) - One feed to rule them all
+  * [visx](https://airbnb.io/visx/) - A collection of expressive, low-level visualization primitives for React
+  * [React Virtuoso](https://virtuoso.dev/) - Powerful yet easy-to-use React components that can render enormous data sets
+  * [vanilla-jsoneditor](https://www.npmjs.com/package/vanilla-jsoneditor) - A web-based tool to view, edit, format, transform, and validate JSON
+  * [ts-safeql/safeql](https://github.com/ts-safeql/safeql) - Validate and auto-generate TypeScript types from raw SQL queries in PostgreSQL
+  * [hyperfetch](https://hyperfetch.bettertyped.com/) - Data Fetching, Offline First, Caching, Queueing
+
+  ## Articles
+
+  * [Do you really understand CSS radial-gradients?](https://patrickbrosset.com/articles/2022-10-24-do-you-really-understand-CSS-radial-gradients/)
+  * [So you want to make a new JS framework](https://daverupert.com/2023/01/so-you-want-to-make-a-new-js-framework/)
+  * [Your Accessibility Claims Are Wrong, Unless…](https://adrianroselli.com/2022/11/your-accessibility-claims-are-wrong-unless.html)
+  * [Speeding up the JavaScript ecosystem](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-2/)
+  * [Javascript Questions for the Dazed and Confused](https://dev.to/thepassle/the-javascript-ecosystem-for-the-dazed-and-confused-36il)
+  * [The State of JS 2022](https://2022.stateofjs.com/en-us/)
+
+  ## Tools
+
+  * [Introducing Jampack](https://divriots.com/blog/introducing-jampack) - Speed up your static site
+  * [Announcing TypeScript 5.0 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/)
+  * [Astro 2.0](https://astro.build/blog/astro-2/) - The major site generator has reached a new milestone
+  * [LocatorJS](https://www.locatorjs.com/) - Click on a component to go to its code
+  * [pixel-point/fontpie](https://github.com/pixel-point/fontpie) - Get your layout shifts optimized with a CLI-generated piece of CSS
+  * [val town](https://www.val.town/) - Write scripts and run
+  * [zachleat/speedlify](https://github.com/zachleat/speedlify) - Benchmark the web performance and accessibility of sites over time
+
+  ## Techniques
+
+  * [Form-Associated Custom Elements](https://bennypowers.dev/posts/form-associated-custom-elements/)
+  * [The Hidden Power of Custom States For Web Components](https://itnext.io/the-hidden-power-of-custom-states-for-web-components-dcae5b048e20)
+  * [The paired hook pattern for React](https://lukeshiru.dev/articles/the-paired-hook-pattern)
+
+  ## CSS
+
+  * [CSS Timeline](https://css-timeline.vercel.app/) - What was done and when
+  * [Cube CSS](https://cube.fyi/) - A new CSS methodology
+  * [Stylify](https://stylifycss.com/) - Code your website faster with CSS-like utilities
+  * [Critical CSS? Not So Fast!](https://csswizardry.com/2022/09/critical-css-not-so-fast/)
+  * [joe-bell/cva](https://github.com/joe-bell/cva) - Class Variance Authority
+  * [@acab/reset.css](https://www.npmjs.com/package/@acab/reset.css) - Yet another CSS reset
+
+  ## Games
+
+  * [slow roads](https://slowroads.io/) - Endless driving zen
