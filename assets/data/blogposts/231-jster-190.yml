@@ -1,0 +1,65 @@
+type: static
+title: "JSter #190: Libraries and more"
+short_title: "JSter #190"
+user: bebraw
+slug: jster-190
+body: |
+  > JavaScript isn't what you think.
+
+  It's only three months until [Future Frontend](https://futurefrontend.com/) conference (6-9.6) in Finland. Exciting times.
+
+  ## Libraries
+
+  * [ungap/esx](https://github.com/ungap/esx) - A template literal based ESX proposal
+  * [a11y-dialog](https://a11y-dialog.netlify.app/) - a lightweight yet flexible script to create accessible dialog windows.
+
+  ## Frameworks
+
+  * [tjkandala/baahu](https://github.com/tjkandala/baahu) - State machine-based UI framework
+  * [hydroxide-js/hydroxide](https://github.com/hydroxide-js/hydroxide) - Next Generation Reactive JavaScript Framework
+
+  ## TypeScript
+
+  * [Civet](https://civet.dev/) - CoffeeScript for TypeScript
+  * [total-typescript/ts-reset](https://github.com/total-typescript/ts-reset) - Resets (filter etc.) for TypeScript
+
+  ## Styling
+
+  * [Typewind](https://typewind.dev/) - Typesafe Tailwind
+  * [Stylable](https://stylable.io/) - CSS for components
+  * [98.css](https://jdan.github.io/98.css/) - Style like it's 1998
+
+  ## Articles
+
+  * [Svelte vs React: Which framework to learn in 2023?](https://dev.to/mikehtmlallthethings/svelte-vs-react-which-framework-to-learn-in-2023-50gf)
+  * [Module Extraction: The Silent Web Revolution](https://www.builder.io/blog/module-extraction-the-silent-web-revolution)
+  * [Why useEffect May Not Be the Best Abstraction](https://www.builder.io/blog/useeffect-not-the-best-abstraction)
+  * [Streaming, snapshots, and other new features since SvelteKit 1.0](https://svelte.dev/blog/streaming-snapshots-sveltekit)
+  * [An Introduction to RedwoodJS](https://blog.openreplay.com/an-intro-to-redwoodjs/)
+  * [A Historical Reference of React Criticism](https://www.zachleat.com/web/react-criticism/)
+  * [Is React going anywhere?](https://www.infoxicator.com/is-react-going-anywhere)
+
+  ## Services
+
+  * [Deploy app servers close to your users](https://fly.io/)
+
+  ## Tools
+
+  * [Payload CMS](https://payloadcms.com/)
+  * [ArrowJS](https://www.arrow-js.com/) - an experimental tool for programming reactive interfaces using native JavaScript
+  * [Eleventy v2.0.0](https://www.11ty.dev/blog/eleventy-v2/) - the major static site generator has reached an important milestone
+  * [Lightning CSS](https://lightningcss.dev/) - An extremely fast CSS parser, transformer, bundler, and minifier
+
+  ## Techniques
+
+  * [How to split JavaScript strings into sentences, words or graphemes with "Intl.Segmenter"](https://www.stefanjudis.com/today-i-learned/how-to-split-javascript-strings-with-intl-segmenter/)
+  * [Super Charging Fine-Grained Reactive Performance](https://dev.to/modderme123/super-charging-fine-grained-reactive-performance-47ph)
+  * [Who's your BFF? Rough notes on the popular BFF architecture pattern](https://vicvijayakumar.com/blog/the-bff-backend-for-frontends-architectural-pattern)
+
+  ## Courses
+
+  * [Free Course: Node.js Full Stack Developer Course](https://kinsta.com/academy/course/node-js-full-stack-developer/)
+
+  ## Guides
+
+  * [A complete guide to iconography](https://www.designsystems.com/iconography-guide/)
