@@ -1,0 +1,45 @@
+type: static
+title: "JSter #191: Libraries and more"
+short_title: "JSter #191"
+user: bebraw
+slug: jster-191
+body: |
+  > JavaScript, still going strong
+
+  I'll resume old biweekly schedule with this mailing list for now to see if that makes it easier to maintain. If not, I will revert back to monthly.
+
+  As I run conferences, I have good contacts in the space and this time around I have a special section for conference related discounts. You can share them with your friends if you know some that are interested.
+
+  ## Conferences
+
+  * [WebExpo](https://webexpo.net/) - 19-21.4, Prague - Use the code `FutureFrontend` for a 20% discount during a checkout.
+  * [Node Congress](https://nodecongress.com/) - 14.4 and 17.4, Berlin (hybrid) - Use the code `JSter10` for a 10% discount for a full hybrid access ticket.
+  * [Future Frontend](https://futurefrontend.com/) - 6-9.6, Helsinki - [Use this link for a 10% discount for all tickets](https://ti.to/future-frontend/2023/discount/JSTER_10).
+
+  ## Libraries
+
+  * [luwes/super-template](https://github.com/luwes/super-template) - Build-less template inheritance in the browser. Handy for example or demo pages.
+  * [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) - TypeScript ORM for SQL
+  * [openapi-stack](https://openapistack.co/) - Full stack typesafe API-first development for REST
+  * [WebReflection/promise](https://github.com/WebReflection/promise) - Abortable and Resolvable Promises
+  * [tldraw/signia](https://github.com/tldraw/signia) - Reactive signals that scale, by tldraw
+
+  ## Toolkits
+
+  * [Hello, Superflare](https://superflare.dev/) - Full stack toolkit for Cloudflare
+
+  ## Tools
+
+  * [Jake](https://jakejs.com/) - JavaScript build tool / task runner for NodeJS
+  * [Rspack](https://www.rspack.dev/) - Rust-based, webpack compatible bundler
+  * [Boshen/oxc](https://github.com/Boshen/oxc) - The JavaScript Oxidation Compiler -> Linter
+
+  ## Articles
+
+  * [React Is Holding Me Hostage](https://emnudge.dev/blog/react-hostage)
+  * [React is the New IBM. You’ll never get fired for picking it…](https://chrlschn.medium.com/react-is-the-new-ibm-6af2f4b04e5e)
+  * [React vs Signals: 10 Years Later](https://dev.to/this-is-learning/react-vs-signals-10-years-later-3k71)
+
+  ## Services
+
+  * [Strapi Cloud is live](https://strapi.io/blog/strapi-cloud-is-now-available) - The open source headless solution has its cloud now
