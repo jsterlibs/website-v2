@@ -4,7 +4,7 @@ import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
 import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
 import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
-import { Marked, Renderer } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import { marked } from "https://unpkg.com/marked@4.0.0/lib/marked.esm.js";
 import YAML from "https://esm.sh/yaml@1.10.2";
 import { Html5Entities } from "https://deno.land/x/html_entities@v1.0/mod.js";
 import { dir, getJson } from "../scripts/utils.ts";
@@ -22,8 +22,8 @@ import type { BlogPost, Category, Library } from "../types.ts";
 type IndexEntry = { id: string; title: string; url: string; date: string };
 
 // TODO: Set up highlighting
-Marked.setOptions({
-  renderer: new Renderer(),
+marked.setOptions({
+  renderer: new marked.Renderer(),
   gfm: true,
   tables: true,
   breaks: false,
@@ -138,7 +138,7 @@ async function getBlogPosts() {
         path,
         ...yaml,
         // TODO: Support custom syntax (screenshots, anything else?)
-        body: Html5Entities.decode(Marked.parse(yaml.body).content),
+        body: Html5Entities.decode(marked(yaml.body)),
       };
     },
   );
