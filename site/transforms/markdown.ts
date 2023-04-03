@@ -1,7 +1,7 @@
-import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import { marked } from "https://unpkg.com/marked@4.0.0/lib/marked.esm.js";
 
 function transformMarkdown(input: string) {
-  return Marked.parse(input);
+  return marked(input);
 }
 
 export default transformMarkdown;

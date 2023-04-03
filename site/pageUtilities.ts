@@ -5,7 +5,7 @@ function dateToISO(_: unknown, date: string) {
 }
 
 function markdown(_: unknown, input: string) {
-  return md(input).content;
+  return md(input);
 }
 
 export { dateToISO, markdown };
