@@ -1,0 +1,50 @@
+type: static
+title: "JSter #192: Frameworks and more"
+short_title: "JSter #192"
+user: bebraw
+slug: jster-192
+body: |
+  > Be careful. JavaScript lurks around every corner.
+
+  Two weeks went by fast and here's the next batch of JSter links.
+
+  ## Frameworks
+
+  * [akash-joshi/rocketrpc](https://github.com/akash-joshi/rocketrpc) - A typesafe framework to destroy client-server barriers
+  * [Qwik Reaches RC Milestone](https://www.builder.io/blog/qwik-rc-milestone)
+
+  ## Articles
+
+  * [Jumping HTML tags. Another reason to validate your markup](https://pepelsbey.dev/articles/jumping-html-tags/)
+  * [Rethinking React best practices](https://frontendmastery.com/posts/rethinking-react-best-practices/)
+  * [Rich Harris Talks SvelteKit and What's Next for Svelte](https://thenewstack.io/rich-harris-talks-sveltekit-and-whats-next-for-svelte/)
+  * [New React docs pretend SPAs don't exist anymore](https://wasp-lang.dev/blog/2023/03/17/new-react-docs-pretend-spas-dont-exist)
+  * [Signals vs. Observables, what's all the fuss about?](https://www.builder.io/blog/signals-vs-observables)
+  * [Be Aware of Stale Closures when Using React Hooks](https://dmitripavlutin.com/react-hooks-stale-closures/)
+  * [A Brief History of Reactivity](https://www.builder.io/blog/history-of-reactivity)
+
+  ## Demonstrations
+
+  * [crutchcorn/offline-first-react-app](https://github.com/crutchcorn/offline-first-react-app) - An offline first React app with the ability to manually diff stale data from offline clients
+  * [PauloGoncalvesBH/running-playwright-on-aws-lambda](https://github.com/PauloGoncalvesBH/running-playwright-on-aws-lambda) - Running hundreds of Playwright E2E tests in a few seconds with AWS Lambda
+
+  ## Tools
+
+  * [Announcing Rome v12](https://rome.tools/blog/2023/03/28/rome12/)
+  * [evilmartians/lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects
+  * [samchon/typia](https://github.com/samchon/typia) - Super-fast Runtime validator (type checker) with only one line
+  * [Announcing TypeScript 5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/)
+  * [Ladle](https://ladle.dev/) - Develop and test your React stories faster
+
+  ## TypeScript
+
+  * [total-typescript/untypeable](https://github.com/total-typescript/untypeable) - Get type-safe access to any API, with a zero-bundle size option
+
+  ## Techniques
+
+  * [Speeding up the JavaScript ecosystem](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-4/)
+
+  ## Tutorials
+
+  * [How React server components work: an in-depth guide](https://www.plasmic.app/blog/how-react-server-components-work)
+  * [How to Create a Job Queue using Bull and Redis in NodeJS](https://dev.to/franciscomendes10866/how-to-create-a-job-queue-using-bull-and-redis-in-nodejs-20ck)
