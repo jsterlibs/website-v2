@@ -1,0 +1,34 @@
+type: static
+title: "JSter #193: Libraries and more"
+short_title: "JSter #193"
+user: bebraw
+slug: jster-193
+body: |
+  > What we do in JavaScript echoes in eternity
+
+  Another two weeks, another bunch of links to check.
+
+  ## Libraries
+
+  * [joshmarinacci/node-pureimage - Pure JS implementation of the HTML Canvas 2D drawing API](https://buff.ly/2pVZOow)
+  * [kolodny/immutability-helper - Mutate a copy of data without changing the original source](https://buff.ly/3G6rgrW)
+  * [TanStack/bling - Framework agnostic transpilation utilities for client/server RPCs, env isolation, islands, module splitting, and more.](https://buff.ly/3J5dDuE)
+  * [Effect-TS/schema - Modeling the schema of data structures as first-class values](https://buff.ly/3LitqaM)
+
+  ## Frameworks
+
+  * [ascorbic/impala - A very simple static React framework](https://buff.ly/3KcWyzk)
+
+  ## Articles
+
+  * [Oklab - A perceptual color space for image processing](https://buff.ly/3hwN7ej)
+  * [Why OKLCH is the future of colors in CSS](https://buff.ly/3YC2l6Z)
+  * [Best practices for creating a modern npm package](https://buff.ly/3RTdPP9)
+  * [5 best practices for React with TypeScript security](https://buff.ly/3FwxwHU)
+  * [Modularizing React Applications with Established UI Patterns](https://buff.ly/3JOnUMs)
+  * [Migrating from ts-node to Bun](https://buff.ly/3T91R5M)
+
+  ## Opinions
+
+  * [Thoughts on Svelte](https://buff.ly/40go8RX)
+  * [The problem with React](https://buff.ly/3ZrFU3A)
