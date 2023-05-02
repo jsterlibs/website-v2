@@ -1,0 +1,36 @@
+type: static
+title: "JSter #194: Libraries and more"
+short_title: "JSter #194"
+user: bebraw
+slug: jster-194
+body: |
+  > To JavaScript, and beyond
+
+  Another two weeks has passed and I've compiled a list of links below.
+
+  ## Libraries
+
+  * [aidenybai/hundred - Toy block virtual DOM](https://buff.ly/3LbgBO4)
+  * [Pagefind - Add search to your static site easily](https://buff.ly/3RrThNU)
+  * [pmndrs/react-three-offscreen - Offscreen worker canvas for react-three-fiber](https://buff.ly/3Locj7g)
+  * [React Wrap Balancer](https://buff.ly/3GiCsSm)
+  * [Open Props: sub-atomic styles](https://buff.ly/3d9mHxA)
+  * [immer v10 has been released](https://buff.ly/3okw32v)
+
+  ## Guides
+
+  * [Micro-frontend development explained](https://buff.ly/3WSR6FF)
+  * [A Web Components Primer](https://buff.ly/354PQd2)
+
+  ## Tools
+
+  * [publint - Lint if a package is published right](https://buff.ly/3XcOvXb)
+  * [fwoosh - A lightning fast MDX based site generator](https://buff.ly/3XbxFIb)
+  * [yoavbls/pretty-ts-errors - Make TypeScript errors prettier and human-readable in VSCode](https://buff.ly/3MKKKGl)
+  * [Node.js 20 Now Available](https://buff.ly/41B96qi)
+
+  ## Articles
+
+  * [A React Developer's First Take on Solid](https://buff.ly/3Q1op78)
+  * [A deep dive into Rematch - State Management for React](https://buff.ly/3Vn9zJ4)
+  * [Speeding up the JavaScript ecosystem - draft-js emoji plugin](https://buff.ly/3A2A7Hf)
