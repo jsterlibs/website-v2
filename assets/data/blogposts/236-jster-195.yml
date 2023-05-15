@@ -1,0 +1,40 @@
+type: static
+title: "JSter #195: Libraries and more"
+short_title: "JSter #195"
+user: bebraw
+slug: jster-195
+body: |
+  > That'll do JavaScript. That'll do.
+
+  Another two weeks, another list of JavaScript resources.
+
+  ## Libraries
+
+  * [tkrotoff/fetch: A Fetch API wrapper](https://buff.ly/3QlJaKE)
+  * [elbywan/wretch: A tiny wrapper built around fetch with an intuitive syntax.](https://buff.ly/2AFWG8O)
+  * [saarw/async-sequential-runner: TypeScript class for sequentially running async tasks to completion.](https://buff.ly/3WSsqNP)
+
+  ## Frameworks
+
+  * [Angular v16 is here!](https://buff.ly/3p7nYi9)
+  * [Qwik Reaches v1.0](https://buff.ly/44prioP)
+
+  ## Opinions
+
+  * [JS private fields considered harmful](https://buff.ly/41zCGMs)
+  * [Artem's struggle with Remix](https://buff.ly/3MinYF4)
+
+  ## Tools
+
+  * [Introducing Deopt Explorer for TypeScript](https://buff.ly/3W1wZWb)
+  * [Introducing Baseline: a unified view of stable web features](https://buff.ly/3nU3d9u)
+  * [lxsmnsyc/forgetti: Solve your hook spaghetti (with more spaghetti). Inspired by React Forget.](https://buff.ly/3HJeCQa)
+
+  ## Services
+
+  * [https annotated live](https://buff.ly/3nPIxzi)
+
+  ## Articles
+
+  * [New CSS Relative Units](https://buff.ly/3WTEr5z)
+  * [The Cost of Convenience](https://buff.ly/3p6cCec)
