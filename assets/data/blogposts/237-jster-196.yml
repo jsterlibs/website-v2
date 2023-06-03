@@ -1,0 +1,39 @@
+type: static
+title: "JSter #196: Libraries and more"
+short_title: "JSter #196"
+user: bebraw
+slug: jster-196
+body: |
+  > Even my JavaScript is capable of making an analogy
+
+  It's happening. [Future Frontend](https://futurefrontend.com/) conference takes place next week (8-9.6). A little bird told me there will be a live stream available as well.
+
+  ## Libraries
+
+  * [retejs/rete: JavaScript framework for visual programming and creating node editor](https://buff.ly/2m4a7oM)
+  * [fibo/flow-view: is a visual editor for Dataflow programming](https://buff.ly/3OJvGK0)
+  * [Precedent - Building blocks for your Next.js project](https://buff.ly/3GEA5s3)
+  * [graphql/graphql-http: Simple, pluggable, zero-dependency, GraphQL over HTTP Protocol compliant server and client.](https://buff.ly/3vZ5DEc)
+  * [Crawlee - Build reliable crawlers](https://buff.ly/3S3X8AN)
+  * [mercurius-js/mercurius: Implement GraphQL servers and gateways with Fastify](https://buff.ly/3QoKuws)
+
+  ## Frameworks
+
+  * [sandulat/routes-gen: Framework agnostic routes typings generator. Remix ☑️ SolidStart ☑️](https://buff.ly/3iJhpPS)
+
+  ## Articles
+
+  * [Isomorphic Development](https://buff.ly/3OO3u94)
+  * [Three attributes for better web forms](https://buff.ly/3WosMuu)
+  * [The Challenges of Lazy Loading in JavaScript](https://buff.ly/3irOkbP)
+  * [Build your own resumability](https://buff.ly/3OAshwU)
+  * [A Cure for useState Hell](https://buff.ly/3izNnOo)
+  * [The gotcha of unhandled promise rejections](https://buff.ly/3Zs4QZT)
+
+  ## Tools
+
+  * [NoFlo - Flow-Based Programming for JavaScript](https://buff.ly/2kNb8kF)
+  * [Gradient Designer](https://buff.ly/3iI5Mc2)
+  * [SQLite Wasm in the browser backed by the Origin Private File System](https://buff.ly/3H1PMep)
+  * [why-is-node-running](https://buff.ly/3IJm7rk)
+  * [The Bun Bundler](https://buff.ly/41Xv72p)
