@@ -1,0 +1,43 @@
+type: static
+title: "JSter #197: Libraries and more"
+short_title: "JSter #197"
+user: bebraw
+slug: jster-197
+body: |
+  > Elementary, my dear JavaScript.
+
+  [The first edition of Future Frontend conference](https://futurefrontend.com/2023/) finished last week and I consider it a success. We are currently in post-production mode to get the conference content online.
+
+  ## Libraries
+
+  * [natemoo-re/ultramatter: <1KB frontmatter parser that supports a reasonable subset of YAML](https://buff.ly/3Y8qXmq)
+  * [WebReflection/not-so-weak: Iterable WeakMap and WeakSet](https://buff.ly/3XH3fOn)
+  * [Tiptap - Headless WYSIWYG Text Editor](https://buff.ly/3HeSz3M)
+
+  ## Frameworks
+
+  * [Astro 2.6: Middleware](https://buff.ly/3OYjOUI)
+
+  ## Articles
+
+  * [JavaScript Imports Under The Hood](https://buff.ly/42JflIJ)
+  * [Forking Chrome to render in a terminal](https://buff.ly/3Y5zmap)
+  * [Sharing WebSocket Connections between Browser Tabs and Windows](https://buff.ly/43GB2tF)
+
+  ## UI
+
+  * [shadcn/ui - Build your component library](https://buff.ly/42jl3R7)
+
+  ## CSS
+
+  * [Master CSS - A Virtual CSS language with enhanced syntax.](https://buff.ly/3XLN2Yg)
+  * [PSone.css](https://buff.ly/2U3YrCB)
+  * [Tufte CSS - Tufte style layout but in CSS](https://buff.ly/2CGfjsL)
+
+  ## TypeScript
+
+  * [Write better TypeScript with Effect](https://www.effect.website/)
+
+  ## Tools
+
+  * [Starlight 🌟 Build documentation sites with Astro](https://buff.ly/43sWW3Z)
