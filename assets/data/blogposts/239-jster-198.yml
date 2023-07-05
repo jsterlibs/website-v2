@@ -1,0 +1,47 @@
+type: static
+title: "JSter #198: Libraries and more"
+short_title: "JSter #198"
+user: bebraw
+slug: jster-198
+body: |
+  > The only thing we have to fear is JavaScript itself.
+
+  I recently gave a presentation titled [ECMAScript - From an idea to a major standard](https://www.slideshare.net/bebraw/ecmascript-from-an-idea-to-a-major-standard) ([paper](https://arxiv.org/abs/2305.01373)) at EURAS 2023. That's also the reason why this edition was delayed by a couple of days.
+
+  ## Libraries
+
+  * [DrizzleORM - next gen TypeScript ORM](https://buff.ly/3PEbIkc)
+  * [Splide is a lightweight, flexible and accessible slider/carousel written in TypeScript. No dependencies, no Lighthouse errors](https://buff.ly/3kGjahI)
+  * [GoogleChromeLabs/quicklink: Faster subsequent page-loads by prefetching in-viewport links during idle time](https://buff.ly/2rCuhcg)
+  * [superlucky84/lithent - A lightweight Virtual DOM UI library](https://buff.ly/43LWGNz)
+
+  ## Frameworks
+
+  * [Qwik 1.2: Performance in Autopilot](https://buff.ly/3NCHifA)
+  * [Enhance - Full stack HTML first framework](https://buff.ly/3XqsFR4)
+  * [Medusa - Building blocks for digital commerce](https://buff.ly/3ouvVug)
+  * [NestJS v10 is now available](https://buff.ly/3NzFbuh)
+  * [waiter-and-autratac/WaiterAndAUTRATAC: A pair of frameworks that allow delaying JavaScript code execution.](https://buff.ly/3NzMrqg)
+  * [Fresh 1.2 - sharing state between islands, limited npm support, and more](https://buff.ly/3Ctp4Iu)
+
+  ## Services
+
+  * [Modern Font Stacks](https://buff.ly/3lbwIlP) - Font stacks to choose from
+
+  ## Tools
+
+  * [WebReflection/basic-devtools: Exports `$`, `$$`, and `$x` utilities as described in Chrome Console Utilities API reference](https://buff.ly/3XxZD1W)
+  * [Browsh - The modern text based browser](https://buff.ly/2L3DW43)
+  * [Fallback Font Generator](https://buff.ly/3yqPUiU)
+
+  ## CSS
+
+  * [kkuchta/css-only-chat: A truly monstrous async web chat using no JS whatsoever on the frontend](https://buff.ly/2DVZZrL)
+  * [Panda CSS - The fastest way to build beautiful websites in React.](https://buff.ly/443uN3r)
+
+  ## Articles
+
+  * [A better way to use Dotenv](https://buff.ly/3PB5zWh)
+  * [The problem with disabled buttons and what to do instead](https://buff.ly/3LYCwbC)
+  * [Misko's Take on a Unified Theory of Reactivity](https://buff.ly/3NBU8Mk)
+  * [JavaScript Imports Under The Hood](https://buff.ly/42JflIJ)
