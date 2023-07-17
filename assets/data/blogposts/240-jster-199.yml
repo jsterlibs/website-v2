@@ -1,0 +1,40 @@
+type: static
+title: "JSter #199: Tools and more"
+short_title: "JSter #199"
+user: bebraw
+slug: jster-199
+body: |
+  > JavaScript isn't one important thing, it's everything.
+
+  Carry on and keep JavaScripting. There's not much to say this time.
+
+  ## Tools
+
+  * [egoist/dum: An npm scripts runner written in Rust.](https://buff.ly/3IAwOc8)
+  * [denoland/deno_lint: Blazing fast linter for JavaScript and TypeScript written in Rust](https://buff.ly/3RzxTXG)
+  * [PactumJS - Test whole pyramid](https://buff.ly/3wRKxI7)
+  * [Module Federation: streamline your microfrontends](https://buff.ly/3CVr1h8)
+  * [Announcing TypeScript 5.2 Beta](https://buff.ly/44qOxOx)
+
+  ## Articles
+
+  * [Form Field Usability: Avoid Multi-Column Layouts (13% Make This Form Usability Mistake)](https://buff.ly/2KBxctW)
+  * [CommonJS is hurting JavaScript](https://buff.ly/3CVb8Y0)
+  * [A Deep Dive Into SVG Path Commands](https://buff.ly/3pBFs6Y)
+
+  ## Services
+
+  * [Convert JSON to Swift, C#, TypeScript, Objective-C, Go, Java, C++ and more with quicktype](https://buff.ly/2toQ2Od)
+  * [RelativeCI - In-depth bundle stats analysis and monitoring - Interview with Viorel Cojocaru](https://survivejs.com/blog/relativeci-interview/)
+
+  ## CSS
+
+  * [The Power of CSS Blend Modes](https://buff.ly/3LRdevC)
+
+  ## APIs
+
+  * [structuredClone() - Web APIs](https://buff.ly/3IrEr6r)
+
+  ## Libraries
+
+  * [TinyBase - The reactive data store for local-first apps](https://buff.ly/3Pzo0KV)
