@@ -1,0 +1,43 @@
+type: static
+title: "JSter #200: Libraries and more"
+short_title: "JSter #200"
+user: bebraw
+slug: jster-200
+body: |
+  > I'll beach off with you any day, JavaScript
+
+  It's the 200th issue of JSter. That's a lot of links.
+
+  ## Libraries
+
+  * [hwchase17/langchainjs - Building applications with LLMs through composability](https://buff.ly/3xuUR9l)
+  * [Introducing Valibot, a < 1kb Zod Alternative](https://buff.ly/3Y5rQxA)
+  * [natemoo-re/clack: Effortlessly build beautiful command-line apps](https://buff.ly/3ltlfxz)
+  * [Code Hike - Not just a syntax highlighter](https://buff.ly/43xrdOp)
+
+  ## Frameworks
+
+  * [Analog - Full stack metaframework for Angular](https://buff.ly/3JMLOrO)
+  * [Fresh 1.3 - Simplified Route Components and More](https://buff.ly/3Doh4IY)
+
+  ## Articles
+
+  * [Routing on the web is complicated - our routers should be simple](https://buff.ly/3KgFmJR)
+  * [On building the enterprise-grade Node.js applications](https://buff.ly/3XGj1sd)
+  * [JS Class fields potentially harmful](https://buff.ly/3lIbf3w)
+  * [The Market for Lemons](https://buff.ly/3YmzUJ8)
+
+  ## Tools
+
+  * [ossjs/release: Minimalistic, opinionated, and predictable release automation tool.](https://buff.ly/3EhRXZz)
+  * [fabiospampinato/banal: On-demand bundle analyzer, powered by esbuild.](https://buff.ly/3OkWv6G)
+
+  ## Techniques
+
+  * [WebContainers - Dev environments. In your web app](https://buff.ly/410pjWh)
+  * [Rendering strategies: CSR, SSR, SSG, ISR](https://buff.ly/3I83pZL)
+  * [Visual design rules you can safely follow every time](https://buff.ly/3kWK7gP)
+
+  ## Standards
+
+  * [Messaging Layer Security is now an internet standard](https://buff.ly/3Qf12sS)
