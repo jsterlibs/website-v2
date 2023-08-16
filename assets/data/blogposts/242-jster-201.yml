@@ -1,0 +1,44 @@
+type: static
+title: "JSter #201: Libraries and more"
+short_title: "JSter #201"
+user: bebraw
+slug: jster-201
+body: |
+  > I am become JavaScript, the destroyer of worlds
+
+  Not much to say this time. I have the dates for the next [Future Frontend](https://futurefrontend.com/), though. It will take place 13-14.6.2024 at Helsinki, Finland.
+
+  ## Libraries
+
+  * [WebReflection/nonchalance: The easiest way to augment DOM builtin elements.](https://buff.ly/3kx516r)
+  * [ts-rest - Incrementally adoptable type-safety for your new and existing APIs](https://buff.ly/3SEBbd4)
+  * [macaron — CSS-in-JS with zero-runtime](https://buff.ly/3IZ5zf0)
+  * [fgnass/type-assurance - Lightweight type guards and assertions](https://buff.ly/3ONiPpE)
+
+  ## Frameworks
+
+  * [dai-shi/wakuwork - Minimalistic React framework](https://buff.ly/3ZF3YjI)
+  * [emilwidlund/nodl: A framework for computational node graphs.](https://buff.ly/3Zgn4MY)
+
+  ## Articles
+
+  * [Making the Case for Signals in JavaScript](https://buff.ly/3mifq6t)
+  * [The Evolution of Signals in JavaScript](https://buff.ly/3EJoSX6)
+  * [Ryan Dahl, Node.js Creator, Wants to Rebuild How We Experience the Web](https://buff.ly/3Z4O3Ld)
+
+  ## Platforms
+
+  * [moonrepo - a developer productivity platform for scaling codebases](https://buff.ly/3ZaFgrC)
+
+  ## Components
+
+  * [RippleUI - TailwindCSS Components](https://t.co/JZJWUf88tH)
+  * [Konsta UI - Mobile UI components built with TailwindCSS](https://buff.ly/3SuaV4J)
+
+  ## Benchmarks
+
+  * [modderme123/js-reactivity-benchmark](https://buff.ly/41BQ1oP)
+
+  ## Tools
+
+  * [zachleat/performance-leaderboard-pagespeed-insights - A plugin to run Lighthouse on Pagespeed Insights against a set of urls to see which site is the fastest.](https://buff.ly/3EkYZfS)
