@@ -1,0 +1,62 @@
+type: static
+title: "JSter #202: Libraries and more"
+short_title: "JSter #202"
+user: bebraw
+slug: jster-202
+body: |
+  > I'm in no hurry. I like the desert. I like JavaScript.
+
+  It has been busy two weeks and the Fall is approaching.
+
+  ## Libraries
+
+  * [aidenybai/million - An extremely fast virtual DOM that makes React up to 70% faster!](https://buff.ly/3iBuVkC)
+  * [nanostores/router: A tiny (792 bytes) router for Nano Stores state manager](https://buff.ly/3yqhz2P)
+  * [fabiospampinato/pioppo: A tiny isomorphic batched logger. ~3x faster than regular logging in Node.](https://buff.ly/3y9soWW)
+
+  ## Frameworks
+
+  * [Bridge is a strongly typed framework that auto-generates the OpenAPI specification and fully-typed Typescript client code](https://buff.ly/3PhxKc3)
+  * [Astro 3.0](https://buff.ly/45tiuhP)
+  * [Fresh 1.4 – Faster Page Loads, Layouts and More](https://buff.ly/3sleEIT)
+  * [dai-shi/wakuwork - Minimalistic React framework](https://buff.ly/3ZF3YjI)
+
+  ## Articles
+
+  * [Educational Sensational Inspirational Foundational](https://buff.ly/47P96Xr) - Collection of blog posts
+  * [Things you forgot (or never knew) because of React](https://buff.ly/3Otli7v)
+  * [The Next Generation of Web Layouts by Zeldman](https://buff.ly/3Qw5zqO)
+  * [Making the Case for Signals in JavaScript](https://buff.ly/3mifq6t)
+  * [The Evolution of Signals in JavaScript](https://buff.ly/3EJoSX6)
+
+  ## Techniques
+
+  * [Debugging Like A Pro-xy](https://buff.ly/45wqf6T)
+  * [More Elegant Destructuring with JavaScript Generators](https://buff.ly/3ypXRnZ)
+  * [The .meta Directory: Let's Tidy Things Up 🧹🧹🧹](https://buff.ly/3YDo7rl)
+
+  ## Tools
+
+  * [Announcing Biome, a fork of Rome](https://buff.ly/45KMQfC)
+  * [Volta - The Hassle-Free JavaScript Tool Manager](https://buff.ly/2O3lfA0)
+
+  ## Languages
+
+  * [Announcing TypeScript 5.2](https://buff.ly/45ocM0S)
+
+  ## Books
+
+  * [gibbok/typescript-book - A free and concise TypeScript Book: A Concise Guide to Effective Development in TypeScript](https://buff.ly/3pEoyVg)
+
+  ## Demos
+
+  * [pakastin/flanets: Flanets 2D space flight simulator](https://buff.ly/3qAaOLz)
+  * [iPod.js](https://buff.ly/3xOkIaw)
+
+  ## Runtimes
+
+  * [Deno 1.36: More flexible security and expanded testing APIs](https://buff.ly/45xF6xA)
+
+  ## Platforms
+
+  * [moonrepo - a developer productivity platform for scaling codebases](https://buff.ly/3ZaFgrC)
