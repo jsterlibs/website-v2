@@ -1,1 +1,323 @@
-[{"title":"Collage","url":"/library/collage","id":"collage","library":{"id":"collage","description":"Framework for creating live, dynamic, and interactive collages. Collage.js brings together many public APIs, along a method of presenting media within a limitless two-dimesional space to create memorable experiences.","logo":"http://oztu.org/collage/logo.png","name":"Collage","links":{"site":"http://ozan.io/collage","github":"https://github.com/oztu/collage"},"tags":["api","collage","css3","facebook","flickr","html5","twitter","youtube"]}},{"title":"Stickeez","url":"/library/stickeez","id":"stickeez","library":{"id":"stickeez","description":"Sticky notes app using the new HTML5 File API, blobs and local storage.","logo":"/images/repo.png","name":"Stickeez","links":{"site":"http://stickeez.wemakesites.net/"},"tags":["css3","html5","localstorage","notes","sticky"]}},{"title":"Webix","url":"/library/webix","id":"webix","library":{"id":"webix","description":"Webix is a ross-browser, cross-device JavaScript UI framework for building interactive web apps using CSS and HTML5 techniques.\nThe library delivers over 40 fully customizable components, provides JQuery integration and can work with any server-side platform: PHP, .NET, Java, etc. \nFlexible layouts, unlimited extensibility, controllable look-and-feel, and intuitive API allow creating apps of any difficulty that will work equally well on desktop, mobile and tablet devices.","logo":"http://webix.com/wp-content/themes/webix/images/logo_header.png","name":"Webix","links":{"site":"http://webix.com/"},"tags":["commercial","css3","html5","javascript"]}},{"title":"oriDomi","url":"/library/oridomi","id":"oridomi","library":{"id":"oridomi","description":"Fold up the DOM like paper.","logo":"http://oxism.com/images/oridomi.png","name":"oriDomi","links":{"site":"http://oridomi.com","github":"https://github.com/dmotz/oridomi"},"tags":["3d","coffeescript","css3","effect","jquery"]}},{"title":"Fotorama","url":"/library/fotorama","id":"fotorama","library":{"id":"fotorama","description":"A simple, stunning, powerful jQuery gallery","logo":"/images/repo.png","name":"Fotorama","links":{"site":"http://fotorama.io","github":"https://github.com/artpolikarpov/fotorama"},"tags":["css3","fullscreen","html5","responsive","thumbs","trasitions"]}},{"title":"lightSlider","url":"/library/jquery-lightslider","id":"jquery-lightslider","library":{"id":"jquery-lightslider","description":"JQuery lightSlider is a lightweight responsive Content slider with carousel thumbnails navigation","logo":"/images/repo.png","name":"lightSlider","links":{"site":"https://sachinchoolur.github.io/lightslider/","github":"https://github.com/sachinchoolur/lightslider"},"tags":["carousel","commercial","css3","gallery","responsive","slider"]}},{"title":"Kendo UI Mobile","url":"/library/kendo-ui-mobile","id":"kendo-ui-mobile","library":{"id":"kendo-ui-mobile","description":"Kendo UI Mobile is a complete mobile framework that automatically adapts the look and feel of mobile applications to the platform they are viewed on (iOS, Android, or BlackBerry). Thanks to the adaptive rendering, mobile apps built with Kendo UI look iOS-ish on iOS, Android-ish on Android, etc. without any additional code required. \n\nTarget multiple phone and tablet platforms with a single UI codebase, using only HTML5 and JavaScript.","logo":"http://www.kendoui.com/Image/kendo-logo.png","name":"Kendo UI Mobile","links":{"site":"http://www.kendoui.com/mobile.aspx"},"tags":["css3","html5"]}},{"title":"grumble.js","url":"/library/grumble-js","id":"grumble-js","library":{"id":"grumble-js","description":"grumble.js provides special tooltips without the usual limitations of north/east/south/west positioning. \n\nA grumble can be rotated around a given element at any angle, all 360 degrees. Any distance can be specified. Any CSS style can be applied. There's auto-magic size adjustment for use with localised text. FX queues for animating multiple grumbles. And it works in IE6+, and modern browsers.","logo":"/images/repo.png","name":"grumble.js","links":{"site":"https://jamescryer.github.com/grumble.js/","github":"https://github.com/jamescryer/grumble.js"},"tags":["css3","tooltip"]}},{"title":"Flux Slider","url":"/library/flux-slider","id":"flux-slider","library":{"id":"flux-slider","description":"Hardware accelerated image transitions using CSS3.","logo":"/images/repo.png","name":"Flux Slider","links":{"site":"http://www.joelambert.co.uk/flux","github":"https://github.com/joelambert/Flux-Slider"},"tags":["css3","jquery"]}},{"title":"jquery.emphasis.js","url":"/library/jquery-emphasis","id":"jquery-emphasis","library":{"id":"jquery-emphasis","description":"A lightweight javascript fallback for CSS3 text-emphasis.","logo":"/images/repo.png","name":"jquery.emphasis.js","links":{"site":"http://nodejs.in/jquery.emphasis/","github":"https://github.com/zmmbreeze/jquery.emphasis"},"tags":["css3","text-emphasis","ui"]}},{"title":"impress.js","url":"/library/impress-js","id":"impress-js","library":{"id":"impress-js","description":"It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com","logo":"http://thedesignsuperhero.com/wp-content/uploads/2012/01/impress.jpg","name":"impress.js","links":{"site":"https://bartaz.github.com/impress.js","github":"https://github.com/bartaz/impress.js"},"tags":["css3"]}},{"title":"Kendo UI","url":"/library/kendo-ui","id":"kendo-ui","library":{"id":"kendo-ui","description":"Kendo UI is a HTML5, jQuery-based framework for building modern HTML apps. Kendo UI combines the best of emerging HTML5, CSS3, and JavaScript technologies with robust, cross-browser techniques to deliver a framework that is both powerfully rich and broadly compatible with older browsers.\n\nKendo UI combines everything that a developer needs to build a rich JavaScript app, eliminating the traditional challenge of manually researching and combining all of the needed plug-ins, frameworks, and libraries needed to build apps. Kendo UI includes rich UI controls for desktop, mobile and data vizualization, a JavaScript DataSource, fast Templates, cross-device Drag and Drop API, Globalization, Validation and MVVM framework extensions, and more.","logo":"http://jaydata.org/Themes/Bootstrap/Styles/img/logo_kendoui_solo.png","name":"Kendo UI","links":{"site":"http://www.telerik.com/kendo-ui","github":"https://github.com/telerik/kendo-ui-core"},"tags":["commercial","css3","html5","jquery"]}},{"title":"SliceBox","url":"/library/slicebox","id":"slicebox","library":{"id":"slicebox","description":"A fresh 3D image slider with graceful fallback","logo":"http://tympanus.net/codrops/wp-content/uploads/2011/09/slicebox.jpg","name":"SliceBox","links":{"site":"http://tympanus.net/codrops/2011/09/05/slicebox-3d-image-slider/"},"tags":["3d","css3","jquery"]}},{"title":"Collie","url":"/library/collie","id":"collie","library":{"id":"collie","description":"Collie is a Javascript library that helps to create highly optimized animations and games using HTML 5. Collie runs on both PC and mobile using HTML 5 canvas and DOM.\n\nCollie can stably process multiple objects using rendering pipelines and supports useful features including sprite animation and user events. Stably supports iOS and Android, and renders with an optimized method for each platform. Also easily responds to retina display.\n\nTry out Collie for fast and easy development, tuned for best performance in various PC and mobile devices.","logo":"http://jindo.dev.naver.com/collie/img/logo/logo_200x200.png","name":"Collie","links":{"site":"http://jindo.dev.naver.com/collie/index.html?l=en"},"tags":["2d","canvas","css3","html5","non-commerce"]}},{"title":" AppJS","url":"/library/appjs","id":"appjs","library":{"id":"appjs","description":"AppJS allows you to use HTML 5 APIs to create attractive applications from Word Processors to 3D Games. You are no longer limited to default GUI widgets that plaforms force you to use.","logo":"https://lh3.googleusercontent.com/-mop-LUenVbw/AAAAAAAAAAI/AAAAAAAAAFE/0kizp6Dw_-U/photo.jpg","name":" AppJS","links":{"site":"http://appjs.org","github":"https://github.com/appjs/appjs"},"tags":["css3","html5","nodejs","npm"]}},{"title":"Ignite UI","url":"/library/ignite-ui","id":"ignite-ui","library":{"id":"ignite-ui","description":"With Ignite UI, developers can create next generation, browser-based, touch-enabled tablet, mobile & desktop experiences.  At its core, Ignite UI is a set of full-featured, high-performance HTML & JavaScript user interface controls based on jQuery Core, jQuery UI and jQuery Mobile JavaScript libraries. Ignite UI also includes MVC & ASP.NET server-side wrappers. On top of that, Ignite UI features a set of Mobile controls with adaptive CSS, which you can use for your iPhone, Android & Windows Phone applications.","logo":"http://users.infragistics.com/ignite/ignite-white.png","name":"Ignite UI","links":{"site":"http://www.infragistics.com/products/jquery/"},"tags":["commercial","css3","html5","jquery"]}},{"title":"AliceJS","url":"/library/alicejs","id":"alicejs","library":{"id":"alicejs","description":"AliceJS - (A Lightweight Independent CSS Engine) is a micro JavaScript library focused on using hardware-accelerated capabilities (in particular CSS3 features) in modern browsers for generating high-quality, high-end visual effects.","logo":"https://blackberry.github.com/Alice/images/logo_header_plain_sprite.png","name":"AliceJS","links":{"site":"https://blackberry.github.com/Alice/","github":"https://github.com/blackberry/Alice"},"tags":["css3"]}},{"title":"kquery","url":"/library/kquery","id":"kquery","library":{"id":"kquery","description":"kquery is a pure-JavaScript css selector engine with full implemention of css3 selector. compatible for all major browsers ie6+/chrome/firefox/opera/safari, only 8.0kB minified and gzipped. smart compiler engine will optimize the query logic, keep these which really needs. it's faster than all Sizzle(jquery) version, nwmatcher, peppy without cache, dojo/query. never cache results, query function was cached,  works on both XML/HTML.","logo":"/images/repo.png","name":"kquery","links":{"github":"https://github.com/yessky/kquery"},"tags":["compiler","css3","javascript","selector"]}},{"title":"mass Framework","url":"/library/mass-framework","id":"mass-framework","library":{"id":"mass-framework","description":"mass Framework is a modular, high-quality,  cross-browser , suitable for large-scale development JS framework,supporting  AMD, CSS3 animation, asynchronous calls,templates, and more.","logo":"/images/repo.png","name":"mass Framework","links":{"github":"https://github.com/RubyLouvre/mass-Framework"},"tags":["amd","css3","framework","jquery"]}},{"title":"Jo","url":"/library/jo","id":"jo","library":{"id":"jo","description":"Jo is a thin (~12K) candy shell for PhoneGap apps. It's an HTML5 mobile app framework which provides UI widgets, a flexible event model, a wrapper for sound, and a light data layer. Apps are skinnable with CSS3, and work everywhere PhoneGap does... and then some, including Adobe Air and OSX (desktop and dashboard)","logo":"/images/repo.png","name":"Jo","links":{"site":"http://joapp.com/","github":"https://github.com/davebalmer/jo"},"tags":["css3","html5"]}},{"title":"Presenteer.js ","url":"/library/presenteer-js","id":"presenteer-js","library":{"id":"presenteer-js","description":"Presenteer.js is a flexible HTML5 presentation tool that uses CSS3 transforms and transitions to make smooth HTML presentations.\nWorks on Chrome, Firefox, Opera, Android, iPhone and IE9.","logo":"/images/repo.png","name":"Presenteer.js ","links":{"site":"https://willemmulder.github.com/Presenteer.js/","github":"https://github.com/willemmulder/presenteer.js"},"tags":["css3","html5"]}}]
+[
+  {
+    "title": "Collage",
+    "url": "/library/collage",
+    "id": "collage",
+    "library": {
+      "id": "collage",
+      "description": "Framework for creating live, dynamic, and interactive collages. Collage.js brings together many public APIs, along a method of presenting media within a limitless two-dimesional space to create memorable experiences.",
+      "logo": "http://oztu.org/collage/logo.png",
+      "name": "Collage",
+      "links": {
+        "site": "http://ozan.io/collage",
+        "github": "https://github.com/oztu/collage"
+      },
+      "tags": [
+        "api",
+        "collage",
+        "css3",
+        "facebook",
+        "flickr",
+        "html5",
+        "twitter",
+        "youtube"
+      ]
+    }
+  },
+  {
+    "title": "Stickeez",
+    "url": "/library/stickeez",
+    "id": "stickeez",
+    "library": {
+      "id": "stickeez",
+      "description": "Sticky notes app using the new HTML5 File API, blobs and local storage.",
+      "logo": "/images/repo.png",
+      "name": "Stickeez",
+      "links": { "site": "http://stickeez.wemakesites.net/" },
+      "tags": ["css3", "html5", "localstorage", "notes", "sticky"]
+    }
+  },
+  {
+    "title": "Webix",
+    "url": "/library/webix",
+    "id": "webix",
+    "library": {
+      "id": "webix",
+      "description": "Webix is a ross-browser, cross-device JavaScript UI framework for building interactive web apps using CSS and HTML5 techniques.\nThe library delivers over 40 fully customizable components, provides JQuery integration and can work with any server-side platform: PHP, .NET, Java, etc. \nFlexible layouts, unlimited extensibility, controllable look-and-feel, and intuitive API allow creating apps of any difficulty that will work equally well on desktop, mobile and tablet devices.",
+      "logo": "http://webix.com/wp-content/themes/webix/images/logo_header.png",
+      "name": "Webix",
+      "links": { "site": "http://webix.com/" },
+      "tags": ["commercial", "css3", "html5", "javascript"]
+    }
+  },
+  {
+    "title": "oriDomi",
+    "url": "/library/oridomi",
+    "id": "oridomi",
+    "library": {
+      "id": "oridomi",
+      "description": "Fold up the DOM like paper.",
+      "logo": "http://oxism.com/images/oridomi.png",
+      "name": "oriDomi",
+      "links": {
+        "site": "http://oridomi.com",
+        "github": "https://github.com/dmotz/oridomi"
+      },
+      "tags": ["3d", "coffeescript", "css3", "effect", "jquery"]
+    }
+  },
+  {
+    "title": "Fotorama",
+    "url": "/library/fotorama",
+    "id": "fotorama",
+    "library": {
+      "id": "fotorama",
+      "description": "A simple, stunning, powerful jQuery gallery",
+      "logo": "/images/repo.png",
+      "name": "Fotorama",
+      "links": {
+        "site": "http://fotorama.io",
+        "github": "https://github.com/artpolikarpov/fotorama"
+      },
+      "tags": [
+        "css3",
+        "fullscreen",
+        "html5",
+        "responsive",
+        "thumbs",
+        "trasitions"
+      ]
+    }
+  },
+  {
+    "title": "lightSlider",
+    "url": "/library/jquery-lightslider",
+    "id": "jquery-lightslider",
+    "library": {
+      "id": "jquery-lightslider",
+      "description": "JQuery lightSlider is a lightweight responsive Content slider with carousel thumbnails navigation",
+      "logo": "/images/repo.png",
+      "name": "lightSlider",
+      "links": {
+        "site": "https://sachinchoolur.github.io/lightslider/",
+        "github": "https://github.com/sachinchoolur/lightslider"
+      },
+      "tags": [
+        "carousel",
+        "commercial",
+        "css3",
+        "gallery",
+        "responsive",
+        "slider"
+      ]
+    }
+  },
+  {
+    "title": "Kendo UI Mobile",
+    "url": "/library/kendo-ui-mobile",
+    "id": "kendo-ui-mobile",
+    "library": {
+      "id": "kendo-ui-mobile",
+      "description": "Kendo UI Mobile is a complete mobile framework that automatically adapts the look and feel of mobile applications to the platform they are viewed on (iOS, Android, or BlackBerry). Thanks to the adaptive rendering, mobile apps built with Kendo UI look iOS-ish on iOS, Android-ish on Android, etc. without any additional code required. \n\nTarget multiple phone and tablet platforms with a single UI codebase, using only HTML5 and JavaScript.",
+      "logo": "http://www.kendoui.com/Image/kendo-logo.png",
+      "name": "Kendo UI Mobile",
+      "links": { "site": "http://www.kendoui.com/mobile.aspx" },
+      "tags": ["css3", "html5"]
+    }
+  },
+  {
+    "title": "grumble.js",
+    "url": "/library/grumble-js",
+    "id": "grumble-js",
+    "library": {
+      "id": "grumble-js",
+      "description": "grumble.js provides special tooltips without the usual limitations of north/east/south/west positioning. \n\nA grumble can be rotated around a given element at any angle, all 360 degrees. Any distance can be specified. Any CSS style can be applied. There's auto-magic size adjustment for use with localised text. FX queues for animating multiple grumbles. And it works in IE6+, and modern browsers.",
+      "logo": "/images/repo.png",
+      "name": "grumble.js",
+      "links": {
+        "site": "https://jamescryer.github.com/grumble.js/",
+        "github": "https://github.com/jamescryer/grumble.js"
+      },
+      "tags": ["css3", "tooltip"]
+    }
+  },
+  {
+    "title": "Flux Slider",
+    "url": "/library/flux-slider",
+    "id": "flux-slider",
+    "library": {
+      "id": "flux-slider",
+      "description": "Hardware accelerated image transitions using CSS3.",
+      "logo": "/images/repo.png",
+      "name": "Flux Slider",
+      "links": {
+        "site": "http://www.joelambert.co.uk/flux",
+        "github": "https://github.com/joelambert/Flux-Slider"
+      },
+      "tags": ["css3", "jquery"]
+    }
+  },
+  {
+    "title": "jquery.emphasis.js",
+    "url": "/library/jquery-emphasis",
+    "id": "jquery-emphasis",
+    "library": {
+      "id": "jquery-emphasis",
+      "description": "A lightweight javascript fallback for CSS3 text-emphasis.",
+      "logo": "/images/repo.png",
+      "name": "jquery.emphasis.js",
+      "links": {
+        "site": "http://nodejs.in/jquery.emphasis/",
+        "github": "https://github.com/zmmbreeze/jquery.emphasis"
+      },
+      "tags": ["css3", "text-emphasis", "ui"]
+    }
+  },
+  {
+    "title": "impress.js",
+    "url": "/library/impress-js",
+    "id": "impress-js",
+    "library": {
+      "id": "impress-js",
+      "description": "It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com",
+      "logo": "http://thedesignsuperhero.com/wp-content/uploads/2012/01/impress.jpg",
+      "name": "impress.js",
+      "links": {
+        "site": "https://bartaz.github.com/impress.js",
+        "github": "https://github.com/bartaz/impress.js"
+      },
+      "tags": ["css3"]
+    }
+  },
+  {
+    "title": "Kendo UI",
+    "url": "/library/kendo-ui",
+    "id": "kendo-ui",
+    "library": {
+      "id": "kendo-ui",
+      "description": "Kendo UI is a HTML5, jQuery-based framework for building modern HTML apps. Kendo UI combines the best of emerging HTML5, CSS3, and JavaScript technologies with robust, cross-browser techniques to deliver a framework that is both powerfully rich and broadly compatible with older browsers.\n\nKendo UI combines everything that a developer needs to build a rich JavaScript app, eliminating the traditional challenge of manually researching and combining all of the needed plug-ins, frameworks, and libraries needed to build apps. Kendo UI includes rich UI controls for desktop, mobile and data vizualization, a JavaScript DataSource, fast Templates, cross-device Drag and Drop API, Globalization, Validation and MVVM framework extensions, and more.",
+      "logo": "http://jaydata.org/Themes/Bootstrap/Styles/img/logo_kendoui_solo.png",
+      "name": "Kendo UI",
+      "links": {
+        "site": "http://www.telerik.com/kendo-ui",
+        "github": "https://github.com/telerik/kendo-ui-core"
+      },
+      "tags": ["commercial", "css3", "html5", "jquery"]
+    }
+  },
+  {
+    "title": "SliceBox",
+    "url": "/library/slicebox",
+    "id": "slicebox",
+    "library": {
+      "id": "slicebox",
+      "description": "A fresh 3D image slider with graceful fallback",
+      "logo": "http://tympanus.net/codrops/wp-content/uploads/2011/09/slicebox.jpg",
+      "name": "SliceBox",
+      "links": {
+        "site": "http://tympanus.net/codrops/2011/09/05/slicebox-3d-image-slider/"
+      },
+      "tags": ["3d", "css3", "jquery"]
+    }
+  },
+  {
+    "title": "Collie",
+    "url": "/library/collie",
+    "id": "collie",
+    "library": {
+      "id": "collie",
+      "description": "Collie is a Javascript library that helps to create highly optimized animations and games using HTML 5. Collie runs on both PC and mobile using HTML 5 canvas and DOM.\n\nCollie can stably process multiple objects using rendering pipelines and supports useful features including sprite animation and user events. Stably supports iOS and Android, and renders with an optimized method for each platform. Also easily responds to retina display.\n\nTry out Collie for fast and easy development, tuned for best performance in various PC and mobile devices.",
+      "logo": "http://jindo.dev.naver.com/collie/img/logo/logo_200x200.png",
+      "name": "Collie",
+      "links": { "site": "http://jindo.dev.naver.com/collie/index.html?l=en" },
+      "tags": ["2d", "canvas", "css3", "html5", "non-commerce"]
+    }
+  },
+  {
+    "title": "Ignite UI",
+    "url": "/library/ignite-ui",
+    "id": "ignite-ui",
+    "library": {
+      "id": "ignite-ui",
+      "description": "With Ignite UI, developers can create next generation, browser-based, touch-enabled tablet, mobile & desktop experiences.  At its core, Ignite UI is a set of full-featured, high-performance HTML & JavaScript user interface controls based on jQuery Core, jQuery UI and jQuery Mobile JavaScript libraries. Ignite UI also includes MVC & ASP.NET server-side wrappers. On top of that, Ignite UI features a set of Mobile controls with adaptive CSS, which you can use for your iPhone, Android & Windows Phone applications.",
+      "logo": "http://users.infragistics.com/ignite/ignite-white.png",
+      "name": "Ignite UI",
+      "links": { "site": "http://www.infragistics.com/products/jquery/" },
+      "tags": ["commercial", "css3", "html5", "jquery"]
+    }
+  },
+  {
+    "title": "AliceJS",
+    "url": "/library/alicejs",
+    "id": "alicejs",
+    "library": {
+      "id": "alicejs",
+      "description": "AliceJS - (A Lightweight Independent CSS Engine) is a micro JavaScript library focused on using hardware-accelerated capabilities (in particular CSS3 features) in modern browsers for generating high-quality, high-end visual effects.",
+      "logo": "https://blackberry.github.com/Alice/images/logo_header_plain_sprite.png",
+      "name": "AliceJS",
+      "links": {
+        "site": "https://blackberry.github.com/Alice/",
+        "github": "https://github.com/blackberry/Alice"
+      },
+      "tags": ["css3"]
+    }
+  },
+  {
+    "title": "kquery",
+    "url": "/library/kquery",
+    "id": "kquery",
+    "library": {
+      "id": "kquery",
+      "description": "kquery is a pure-JavaScript css selector engine with full implemention of css3 selector. compatible for all major browsers ie6+/chrome/firefox/opera/safari, only 8.0kB minified and gzipped. smart compiler engine will optimize the query logic, keep these which really needs. it's faster than all Sizzle(jquery) version, nwmatcher, peppy without cache, dojo/query. never cache results, query function was cached,  works on both XML/HTML.",
+      "logo": "/images/repo.png",
+      "name": "kquery",
+      "links": { "github": "https://github.com/yessky/kquery" },
+      "tags": ["compiler", "css3", "javascript", "selector"]
+    }
+  },
+  {
+    "title": "mass Framework",
+    "url": "/library/mass-framework",
+    "id": "mass-framework",
+    "library": {
+      "id": "mass-framework",
+      "description": "mass Framework is a modular, high-quality,  cross-browser , suitable for large-scale development JS framework,supporting  AMD, CSS3 animation, asynchronous calls,templates, and more.",
+      "logo": "/images/repo.png",
+      "name": "mass Framework",
+      "links": { "github": "https://github.com/RubyLouvre/mass-Framework" },
+      "tags": ["amd", "css3", "framework", "jquery"]
+    }
+  },
+  {
+    "title": "Jo",
+    "url": "/library/jo",
+    "id": "jo",
+    "library": {
+      "id": "jo",
+      "description": "Jo is a thin (~12K) candy shell for PhoneGap apps. It's an HTML5 mobile app framework which provides UI widgets, a flexible event model, a wrapper for sound, and a light data layer. Apps are skinnable with CSS3, and work everywhere PhoneGap does... and then some, including Adobe Air and OSX (desktop and dashboard)",
+      "logo": "/images/repo.png",
+      "name": "Jo",
+      "links": {
+        "site": "http://joapp.com/",
+        "github": "https://github.com/davebalmer/jo"
+      },
+      "tags": ["css3", "html5"]
+    }
+  },
+  {
+    "title": "Presenteer.js ",
+    "url": "/library/presenteer-js",
+    "id": "presenteer-js",
+    "library": {
+      "id": "presenteer-js",
+      "description": "Presenteer.js is a flexible HTML5 presentation tool that uses CSS3 transforms and transitions to make smooth HTML presentations.\nWorks on Chrome, Firefox, Opera, Android, iPhone and IE9.",
+      "logo": "/images/repo.png",
+      "name": "Presenteer.js ",
+      "links": {
+        "site": "https://willemmulder.github.com/Presenteer.js/",
+        "github": "https://github.com/willemmulder/presenteer.js"
+      },
+      "tags": ["css3", "html5"]
+    }
+  }
+]
