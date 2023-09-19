@@ -1,0 +1,45 @@
+type: static
+title: "JSter #203: Libraries and more"
+short_title: "JSter #203"
+user: bebraw
+slug: jster-203
+body: |
+  > Any programming languages whose errors take ten years to correct is quite a programming language
+
+  The Winter is coming and it's only a matter of days that we'll get the first snow in Finland.
+
+  ## Libraries
+
+  * [evanw/thumbhash: A very compact representation of an image placeholder](https://buff.ly/3lxZywQ)
+  * [vercel/satori: Enlightened library to convert HTML and CSS to SVG](https://buff.ly/42xAWFe)
+  * [mlc-ai/web-stable-diffusion: Bringing stable diffusion models to web browsers. Everything runs inside the browser with no server support.](https://buff.ly/3FxHycC)
+  * [TimboKZ/Chonky: 😸 A File Browser component for React.](https://buff.ly/3qlzFxD)
+
+  ## Articles
+
+  * [Astro JS Framework: A Practical Guide To Building Faster Websites](https://buff.ly/3M3gg1R)
+  * [Build your own sandwich with React Hooks](https://buff.ly/3FxYZtH)
+
+  ## Polyfills
+
+  * [luwes/selectmenu-polyfill: Polyfill for the selectmenu element](https://buff.ly/3FSYavK)
+
+  ## Frameworks
+
+  * [Nue - Frontend troublesolver](https://buff.ly/3Ziw9pV)
+  * [Wasp - develop full stack apps without the boilerplate](https://buff.ly/2JSmWm0)
+
+  ## Techniques
+
+  * [Draw SVG rope using JavaScript](https://buff.ly/3vv65tn)
+
+  ## Tools
+
+  * [graphql-editor/graphql-zeus: GraphQL client and GraphQL code generator with GraphQL autocomplete library generation ⚡⚡⚡ for browser,nodejs and react native](https://buff.ly/2GjC3zI)
+  * [Bun 1.0](https://buff.ly/3sMWVut) - The popular Node alternative has reached 1.0
+  * [SST - Build modern full-stack applications on AWS](https://buff.ly/3AAoesH)
+  * [Quickboot.js - Reduce JavaScript beyond treeshaking](https://buff.ly/45X6gxW)
+
+  ## Design systems
+
+  * [USWDS: The United States Web Design System](https://buff.ly/2ZVI5A1)
