@@ -1,0 +1,40 @@
+type: static
+title: "JSter #204: Frameworks and more"
+short_title: "JSter #204"
+user: bebraw
+slug: jster-204
+body: |
+  > JavaScript. It's not what you think it is.
+
+  Another two weeks, another JSter post. Lots of frameworks this time.
+
+  ## Frameworks
+
+  * [Rakkas - Bleeding edge React framework powered by Vite](https://buff.ly/469kA73)
+  * [Rezact/Rezact: A JavaScript Framework/Library (call it what you want) that blends the best of svelte, solid, react, and many others.](https://buff.ly/3t8BTGK)
+  * [dai-shi/wakuwork: Minimalistic React Framework](https://buff.ly/3ZF3YjI)
+  * [Svelte - Introducing runes](https://buff.ly/46lHYxB)
+  * [Hwy is a lightweight, flexible, and powerful alternative to NextJS, based on HTMX instead of React](https://buff.ly/3Pn83pr)
+
+  ## Techniques
+
+  * [Test Assertion Styles in JavaScript](https://buff.ly/48BqUFP)
+
+  ## Articles
+
+  * [Photoshop is now on the web!. Enabled by WebAssembly, Web Components…](https://buff.ly/3PZEhsr)
+  * [ECMAScript 2023 (ES14) — what to expect](https://buff.ly/3mCJDxI)
+  * [CSS-only Widgets Are Inaccessible](https://buff.ly/3U247MQ)
+
+  ## Tools
+
+  * [Boshen/oxc: The JavaScript Oxidation Compiler](https://buff.ly/3KZoKGY)
+  * [kasper/phoenix: A lightweight macOS window and app manager scriptable with JavaScript](https://buff.ly/2S2qwKa)
+
+  ## Platforms
+
+  * [evolu: Local-first platform designed for privacy, ease of use, and no vendor lock-in to sync and backup precious data using SQLite and CRDT](https://buff.ly/3tbygQt)
+
+  ## Specifications
+
+  * [Typesafe REST API Specification (TYRAS)](https://buff.ly/45VqrNf)
