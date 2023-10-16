@@ -1,0 +1,52 @@
+type: static
+title: "JSter #205: Libraries and more"
+short_title: "JSter #205"
+user: bebraw
+slug: jster-205
+body: |
+  > Today is going to be the most JavaScript day ever.
+
+  I published [a short primer to disappearing frameworks](https://arxiv.org/abs/2309.03201) a while ago. It is freely available and captures the current movements in the frontend space.
+
+  ## Libraries
+
+  * [Lit Launch Day: Lit 3.0, Labs graduations, a compiler and more!](https://buff.ly/3Fdfrig)
+  * [Bau UI - Reactive library and components for building web user interface](https://buff.ly/46MbTPP)
+  * [Kysely - The type-safe SQL query builder for TypeScript](https://buff.ly/3po6zCi)
+
+  ## Articles
+
+  * [Why Fetch Promise Doesn't Reject on Error Responses](https://buff.ly/3RX4f0X)
+
+  ## Frameworks
+
+  * [Fresh 1.5: Partials, client side navigation and more](https://buff.ly/3FcVBDQ)
+  * [Hono - Ultrafast web framework for the Edges](https://buff.ly/3PwRrNg)
+
+  ## Tools
+
+  * [bruno - Fast, git friendly API client](https://buff.ly/3Fb69mR)
+
+  ## Benchmarks
+
+  * [Web server ‘hello world’ benchmark : Go vs Node.js vs Nim vs Bun](https://buff.ly/3RQgITW)
+
+  ## Components
+
+  * [FastBootstrap: Bootstrap UI Components with Atlassian Design](https://buff.ly/3tmXZFG)
+
+  ## Demos
+
+  * [Wind Waker JS - game demo](https://buff.ly/3rIaESV)
+
+  ## Languages
+
+  * [Announcing TypeScript 5.3 Beta](https://buff.ly/3ZHK2y3)
+
+  ## Boilerplates
+
+  * [Blazity/next-enterprise: 💼 An enterprise-grade Next.js boilerplate for high-performance, maintainable apps. Packed with features like Tailwind CSS, TypeScript, ESLint, Prettier, testing tools, and more to accelerate your development.](https://buff.ly/45fHb1I)
+
+  ## CSS
+
+  * [Scoped CSS is back](https://buff.ly/3Aug70v)
