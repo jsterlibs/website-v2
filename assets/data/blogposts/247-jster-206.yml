@@ -1,0 +1,48 @@
+type: static
+title: "JSter #206: Libraries and more"
+short_title: "JSter #206"
+user: bebraw
+slug: jster-206
+body: |
+  > No tricks, only JavaScript
+
+  Lately I've been refactoring my site creator, [Gustwind](https://gustwind.js.org/). Now it accepts HTML syntax and it's shaping up nicely although there's work left to be done.
+
+  ## Libraries
+
+  * [jessquery - A modern, light (3k) alternative to jQuery](https://buff.ly/3Mdm9c2)
+  * [data-guardian - a collection of security related utilities for TypeScript](https://buff.ly/3Qxq4D1)
+  * [Color.js - let's get serious about color.](https://buff.ly/43iRMYs)
+  * [blitz-js/superjson: Safely serialize JavaScript expressions to a superset of JSON, which includes Dates, BigInts, and more.](https://buff.ly/3QoLulM)
+  * [React Knob Headless](https://buff.ly/3ZYBoLL)
+
+  ## Frameworks
+
+  * [Next.js 14](https://buff.ly/3Qy7f2G)
+
+  ## Tools
+
+  * [Announcing WinterJS - The most performant Service Workers](https://buff.ly/3MiWIpD)
+
+  ## Articles
+
+  * [Web Components Will Outlive Your JavaScript Framework](https://buff.ly/3FzxCPn)
+  * [Unveiling the Magic: Exploring Reactivity Across Various Frameworks](https://buff.ly/3MSZjY0)
+  * [Speeding up the JavaScript ecosystem - The barrel file debacle](https://buff.ly/45vh4ms)
+
+  ## Guides
+
+  * [Blind SVG Study Guide](https://buff.ly/46JgDGg)
+
+  ## Toolkits
+
+  * [instant.dev - Build APIs with JavaScript and Postgres, fast](https://buff.ly/3rX1MJs)
+
+  ## Runtimes
+
+  * [Node.js v21 is now available](https://buff.ly/3QcifRM)
+
+  ## Techniques
+
+  * [11 HTML best practices for login & sign-up forms](https://buff.ly/3MTtr5x)
+  * [Deploy a Static WordPress Site to Kinsta for Free](https://buff.ly/3M9bb7l)
