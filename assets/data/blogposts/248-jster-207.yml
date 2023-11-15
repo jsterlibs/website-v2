@@ -1,0 +1,48 @@
+type: static
+title: "JSter #207: Libraries and more"
+short_title: "JSter #207"
+user: bebraw
+slug: jster-207
+body: |
+  > In the beginning there was swamp, JavaScript, and Jussi
+
+  Nothing to announce this time. Read on.
+
+  ## Libraries
+
+  * [pilcrowOnPaper/monaco: A simple OAuth library made for fun](https://buff.ly/3FWHW4l)
+  * [Melt UI - Open source UI library for Svelte](https://buff.ly/49xEta6)
+  * [LocatorJS - click on any component to go to code.](https://buff.ly/3UsfNrw)
+  * [jsep - JavaScript expression parser](https://buff.ly/3StcYbp)
+  * [bufferhead-code/nextjs-use-php - Use PHP code right within your React / Next.js App. With "use php";](https://buff.ly/3FITKHd)
+
+  ## Articles
+
+  * [Removing list styles without affecting semantics](https://buff.ly/3StO5fB)
+  * [Usability madness of the Modern Javascript UI](https://buff.ly/3u5EcLf)
+  * [Speeding up the JavaScript ecosystem - Tailwind CSS](https://buff.ly/40hLDLn)
+
+  ## Languages
+
+  * [bigskysoftware/_hyperscript: a small scripting language for the web](https://buff.ly/3Sxbwoy)
+
+  ## Tools
+
+  * [msw v2.0 - msw testing tool has reached a new major version](https://buff.ly/470fcTF)
+  * [Docusaurus 3.0 is available](https://buff.ly/3QEOjiQ)
+
+  ## Frameworks
+
+  * [Hono - Ultrafast web framework for the Edges](https://buff.ly/3PwRrNg)
+
+  ## Content Management
+
+  * [Decap CMS - Open-Source Content Management System](https://buff.ly/3Qp7yLR)
+
+  ## Typescript
+
+  * [Announcing TypeScript 5.3 RC](https://buff.ly/46WEJO5)
+
+  ## Boilerplates
+
+  * [haydenbleasel/next-forge: A production-grade boilerplate for modern Next.js apps.](https://buff.ly/3Sijjqb)
