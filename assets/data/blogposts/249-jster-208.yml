@@ -1,0 +1,40 @@
+type: static
+title: "JSter #208: Libraries and more"
+short_title: "JSter #208"
+user: bebraw
+slug: jster-208
+body: |
+  > JavaScript is to my advantage.
+
+  To gather leading minds of frontend space together, we'll organize [the second edition of Future Frontend](https://futurefrontend.com/blog/ff24/) 13-14.6.2024 at Helsinki, Finland. The conference has a single track organized a eight themed sessions. I expect our visitors will go back inspired and enjoy comfortably mild Finnish Summer.
+
+  ## Libraries
+
+  * [CSS Hooks - A new take on inline styles](https://buff.ly/3R8jClk)
+  * [google/schema-dts: JSON-LD TypeScript types for  vocabulary](Schema.orghttps://buff.ly/3N6iHjR)
+  * [varsace - Design tokens as TypeScript variables](https://buff.ly/47Wllku)
+  * [Effect - TS library to support creation of complex applications](https://buff.ly/47UWUDX)
+  * [Plyr - A simple, customizable HTML5 Video, Audio, YouTube and Vimeo player](https://buff.ly/2WNqF7r)
+  * [DavidWells/analytics: Lightweight analytics abstraction layer for tracking page views, custom events, & identifying visitors](https://buff.ly/46qtjRB)
+  * [WebReflection/coincident: An Atomics based Proxy to simplify, and synchronize, Worker related tasks.](https://buff.ly/3WSfb0a)
+  * [Nuka Carousel 7 for React](https://buff.ly/3ujrOY0)
+  * [jagenjo/litegraph.js: A graph node engine and editor written in Javascript similar to PD or UDK Blueprints, comes with its own editor in HTML5 Canvas2D](https://buff.ly/43b8BV6)
+
+  ## Articles
+
+  * [A simple WebSocket benchmark in JavaScript: Node.js versus Bun](https://buff.ly/47wQ87B)
+  * [How Qwik’s Astro Integration Beats Both React and Vanilla JS](https://buff.ly/47sEY3z)
+  * [JS Proxy Shenanigans](https://buff.ly/3G7UPZj)
+
+  ## Frameworks
+
+  * [Analog - metaframework for Angular](https://buff.ly/3JMLOrO)
+
+  ## TypeScript
+
+  * [Announcing TypeScript 5.3](https://buff.ly/47J4fWS)
+
+  ## Tools
+
+  * [bytecodealliance/javy: JS to WebAssembly toolchain](https://buff.ly/46pOumY)
+  * [Vite 5.0 is out!](https://buff.ly/3MNQaiV)
