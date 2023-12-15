@@ -1,0 +1,36 @@
+type: static
+title: "JSter #209: Libraries and more"
+short_title: "JSter #209"
+user: bebraw
+slug: jster-209
+body: |
+  > I will honor JavaScript in my heart, and try to keep it all the year
+
+  xmas is getting close and it's 2024 soon. That means we're way closer to 2050 than 1980. Time flies.
+
+  ## Libraries
+
+  * [Frappe Charts: Simple and Modern SVG Charts](https://buff.ly/2Ev9HE1)
+  * [Melt UI - Open source UI components for Svelte](https://buff.ly/49xEta6)
+  * [facebook/stylex: StyleX is the styling system for ambitious user interfaces.](https://buff.ly/47Kfoap)
+  * [WebReflection/proxy-pants: Secured and reliable Proxy based utilities for more or less common tasks.](https://buff.ly/42viAU5)
+
+  ## Frameworks
+
+  * [Fuse.js: The opinionated framework for creating typesafe data layers](https://buff.ly/41egfhm)
+  * [Fresh 1.6: Tailwind CSS plugin, simplified typings and more](https://buff.ly/4127g2m)
+
+  ## Tools
+
+  * [Astro 4.0](https://buff.ly/3NeSM9E)
+
+  ## Techniques
+
+  * [You might not need Jest — the Node.js native test runner is great](https://buff.ly/3KhiTvx)
+  * [Fast Buffer-to-String conversion in JavaScript with a Lookup Table](https://buff.ly/3GFUg9p)
+  * [Event Based State Management](https://buff.ly/480CxoW)
+
+  ## Articles
+
+  * [QuickJS: An Overview and Guide to Adding a New Feature](https://buff.ly/43XGJ6z)
+  * [Comparison of npm, pnpm, and yarn](https://buff.ly/3sLRITO)
