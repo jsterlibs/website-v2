@@ -1,0 +1,58 @@
+type: static
+title: "JSter #210: Libraries and more"
+short_title: "JSter #210"
+user: bebraw
+slug: jster-210
+body: |
+  > JavaScript doesn't mind cold.
+
+  New year, new cold records.
+
+  ## Libraries
+
+  * [trekhleb/micrograd-ts: 🤖 A TypeScript version of karpathy/micrograd — a tiny scalar-valued autograd engine and a neural net on top of it](https://buff.ly/3Os6h5K)
+  * [gregberge/twc: Create reusable React + Tailwind components in one line](https://buff.ly/3RS38zc)
+  * [tr1ckydev/webview-bun: Bun bindings for webview, a tiny library for creating web-based desktop GUIs.](https://buff.ly/3tpTmeg)
+  * [date-fns v3 is available now](https://buff.ly/3GOZgIW)
+  * [WebGPU — All of the cores, none of the canvas](https://buff.ly/3vPWZsH)
+
+  ## Frameworks
+
+  * [CableReady - Create complex apps driven by a server](https://buff.ly/3GW9Rlu)
+  * [Announcing SvelteKit 2](https://buff.ly/481Ymon)
+
+  ## Articles
+
+  * [Sending UI over APIs](https://buff.ly/3KAVpBk)
+  * [Breaking Up with SVG-in-JS in 2023](kurtextrem.dehttps://buff.ly/3D7dsLA)
+
+  ## Techniques
+
+  * [Mark's Experience on Modernizing Packages to ESM](https://buff.ly/4519pg6)
+  * [The Future of Native HTML Templating and Data Binding](https://buff.ly/3OvPsXN)
+  * [Extracting Pokemon Red/Blue Map with JavaScript](https://buff.ly/3vdkcqq)
+  * [Running 1000 tests in 1s](https://buff.ly/3SyERvW)
+  * [Sass in the Browser](https://buff.ly/43hgjMF)
+
+  ## React
+
+  * [React Server Components: the Good, the Bad, and the Ugly](https://buff.ly/3S3SA01)
+  * [Announcing React Hydration Overlay - Easily Squash Hydration Errors](https://buff.ly/4anmwv2)
+
+  ## Tutorials
+
+  * [Let’s learn how modern JavaScript frameworks work by building one](https://buff.ly/47Z4pu2)
+  * [Building an AI powered WebGL experience with Supabase and React Three Fiber](https://buff.ly/4899dNe)
+
+  ## TypeScript
+
+  * [TypeScript's Hidden Feature: Subtypes](https://buff.ly/46X2Mvi)
+  * [TS Docs - Reference docs for npm packages](https://buff.ly/3RyHluO)
+
+  ## Papers
+
+  * [Paper - Upcoming JavaScript web frameworks and their techniques](https://buff.ly/3RIg3Tb)
+
+  ## Tools
+
+  * [projen - A new generation of project generators](https://buff.ly/3s3Iu1x)
