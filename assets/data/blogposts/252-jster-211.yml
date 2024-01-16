@@ -1,0 +1,32 @@
+type: static
+title: "JSter #211: Libraries and more"
+short_title: "JSter #211"
+user: bebraw
+slug: jster-211
+body: |
+  > You don't know what JavaScript is. It's a relationship.
+
+  Here's a quick injection of JavaScript libraries and related injection. If you are within the region, we'll organize [the first Future Frontend meetup](https://meetabit.com/events/future-frontend-january-2024/) 31.1 at Helsinki.
+
+  ## Libraries
+
+  * [TypeSchema - Universal adapter for TypeScript schema validation](https://buff.ly/45lUIV4)
+  * [Faire/mjml-react: React component library to generate the HTML emails on the fly](https://buff.ly/3YNh4MF)
+  * [Wedges — Open-source UI components for React](https://buff.ly/48tL7wY)
+  * [isographlabs/isograph: Build React apps powered by GraphQL data](https://buff.ly/47t0IM6)
+  * [43081j/hanbi: A small javascript library for stubbing and spying on methods/functions](https://buff.ly/3vv4szk)
+
+  ## Techniques
+
+  * [Passle overengineered his blog](https://buff.ly/4206Ieb)
+  * [Shadow Themes with Web Components](https://buff.ly/47uVX5K)
+  * [Sidenotes In Web Design](https://buff.ly/41Le7Oi)
+
+  ## Articles
+
+  * [Advancing Interaction to Next Paint](https://buff.ly/4aRE96E)
+  * [When "Everything" Becomes Too Much: The npm Package Chaos of 2024](https://t.co/kDbimDqqTE)
+
+  ## Tools
+
+  * [Codemod Studio](https://buff.ly/3OxyAjn)
