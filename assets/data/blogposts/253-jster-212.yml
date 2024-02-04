@@ -1,0 +1,68 @@
+type: static
+title: "JSter #212: Libraries and more"
+short_title: "JSter #212"
+user: bebraw
+slug: jster-212
+body: |
+  > JavaScript does not come without a tax of effort.
+
+  One of my MSc students is doing [a survey related to the adoption of JavaScript frameworks](https://link.webropolsurveys.com/S/C8470021A862B4BE). It would be very helpful if you could fill in the form as that will help to generate useful insights.
+
+  ## Libraries
+
+  * [edmundhung/conform: A type-safe form validation library utilizing web fundamentals to progressively enhance HTML Forms with full support for server frameworks like Remix and Next.js.](https://buff.ly/49bOGIJ)
+  * [tinypool - A minimal and tiny Node.js Worker Thread Pool implementation (38KB)](https://buff.ly/3HFMf4I)
+  * [WebReflection/loop-once: A safer loop for sync or async unique use cases.](https://buff.ly/3Sz0Khf)
+  * [Faire/mjml-react: React component library to generate the HTML emails on the fly](https://buff.ly/3YNh4MF)
+  * [isographlabs/isograph: Build React apps powered by GraphQL data](https://buff.ly/47t0IM6)
+  * [43081j/hanbi: A small javascript library for stubbing and spying on methods/functions](https://buff.ly/3vv4szk)
+
+  ## Frameworks
+
+  * [ExpressoTS - Node.js Framework](https://buff.ly/3YV4bAe)
+
+  ## Components
+
+  * [Wedges — Open-source UI components for React](https://buff.ly/48tL7wY)
+
+  ## Security
+
+  * [Investigating a major security vulnerability with Clerk's Next.js integration](https://buff.ly/48YcM9n)
+
+  ## Articles
+
+  * [Next.js App Router migration: the good, bad, and ugly](https://buff.ly/48RVjj5)
+  * [TypeScript Might Not Be Your God: Case Study of Migration from TS to JSDoc](https://buff.ly/4b9hgMb)
+  * [Passle overengineered his blog](https://buff.ly/4206Ieb)
+  * [Advancing Interaction to Next Paint](https://buff.ly/4aRE96E)
+
+  ## Tools
+
+  * [Ladle - Storybook-like tool for Vite](https://buff.ly/3RURNLy)
+  * [SukkaW/nolyfill: Speed up your package installation process, reduce your disk usage, and extend the lifespan of your precious SSD.](https://buff.ly/3Sj776K)
+  * [Vinxi - JavaScript Server SDK to build full stack apps and frameworks with your own opinions](https://buff.ly/494Ujrz)
+  * [Counterscale: Web Analytics you can host yourself](https://buff.ly/47GIzu7)
+  * [gql.tada teaches TypeScript to GraphQL](https://buff.ly/48BLFAP)
+  * [TypeSchema - Universal adapter for TypeScript schema validation](https://buff.ly/45lUIV4)
+  * [Codemod Studio](https://buff.ly/3OxyAjn)
+
+  ## Resources
+
+  * [43081j/ecosystem-cleanup: A place to keep track of ongoing efforts to clean up the JS ecosystem](https://buff.ly/3u6X3WD)
+
+  ## Techniques
+
+  * [Fix Next.js routing to have full type-safety](https://buff.ly/4be36Ju)
+  * [Going Build-less With Import Maps](https://buff.ly/45Or4aU)
+  * [The future of React.use and React.useMemo - a powerful alternative to context selectors](https://buff.ly/48WEHWR)
+  * [useMemo overdose](https://buff.ly/3EbwIrR)
+  * [Shadow Themes with Web Components](https://buff.ly/47uVX5K)
+  * [Sidenotes In Web Design](https://buff.ly/41Le7Oi)
+
+  ## Languages
+
+  * [hyperscript - An easy & approachable language for modern web front-ends](https://buff.ly/3ydmFhD)
+
+  ## Fonts
+
+  * [MonoLisa](https://www.monolisa.dev/?ref=survivejs) - You can get additional 15% off from this font for coders by applying the coupon `AFFILIATED15` during the checkout.
