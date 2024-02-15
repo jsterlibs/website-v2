@@ -1,0 +1,34 @@
+<footer class="bg-violet-200 px-2 py-4 font-light">
+  <div class="flex flex-col container mx-auto gap-4">
+    <section &visibleIf="(get todo)" class="flex justify-between">
+      <div class="flex flex-col">
+        <h2 &visibleIf="(get todo)">New additions</h2>
+      </div>
+      <div class="flex flex-col">
+        <h2 &visibleIf="(get todo)">Selected library</h2>
+      </div>
+    </section>
+    <section class="grid grid-cols-3 gap-4">
+      <div class="flex flex-col">
+        <h2>About</h2>
+        <div class="font-thin">
+          JSter is a community-driven catalog of the most useful JavaScript
+          libraries. Find the right tool for a work and do it effectively.
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <h2>Navigation</h2>
+        <div class="flex flex-col md:flex-row gap-4 font-thin">
+          <Navigation />
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <h2>Credits</h2>
+        <div class="font-thin">
+          JSter was created by passionate web developers Juho Vepsäläinen and
+          Codegyre Developers Team (Michael Bodnarchuk and Nick Palamarchuk)
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
