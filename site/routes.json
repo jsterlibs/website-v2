@@ -44,11 +44,11 @@
       "meta": {
         "title": {
           "utility": "get",
-          "parameters": ["match", "name"]
+          "parameters": ["context", "document.title"]
         },
         "description": {
           "utility": "get",
-          "parameters": ["match", "description"]
+          "parameters": ["context", "document.description"]
         }
       }
     }
