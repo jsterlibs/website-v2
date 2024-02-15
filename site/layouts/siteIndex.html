@@ -1,0 +1,12 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="p-4 mx-auto max-w-5xl">
+      <Markdown as="p">
+        **Note:** The new site is still in beta. Please [use the issue tracker
+        for bug reports and feature
+        requests](https://github.com/jsterlibs/website-v2/issues).
+      </Markdown>
+      <AllCategories &categories="(get context parentCategories)" />
+    </div>
+  </slot>
+</BaseLayout>

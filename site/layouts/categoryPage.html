@@ -1,0 +1,8 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="p-4 mx-auto max-w-5xl flex flex-col gap-4">
+      <h1 &children="(get context match.title)"></h1>
+      <AllLibraries &libraries="(get context match.libraries)" />
+    </div>
+  </slot>
+</BaseLayout>

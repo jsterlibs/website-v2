@@ -1,0 +1,30 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="p-4 mx-auto max-w-3xl prose lg:prose-xl">
+      <h1>About</h1>
+      <h2>What is JSter?</h2>
+      <Markdown as="p">
+        JSter is a catalog of frontend JavaScript libraries. We also maintain [a
+        blog](/blog/) and publish [a monthly
+        newsletter](https://buttondown.email/jster). If you want to find a
+        library for some specific purpose, we probably have something for you.
+      </Markdown>
+      <h2>Origin</h2>
+      <Markdown as="p">
+        JSter is a spiritual successor to
+        [JSwiki](https://github.com/bebraw/jswiki/wiki) established by [Juho
+        Vepsäläinen](https://github.com/bebraw/). JSter started out as a
+        collaboration between Juho and the Codegyre development team: Michael
+        Bodnarchuk and Nick Palamarchuk.\n\nWe took the technology they had
+        developed for Symfohub and then retrofitted it. After that, Juho rewrote
+        the site on top of a Deno based stack developed with
+        [Gustwind](https://gustwind.js.org).
+      </Markdown>
+      <h2>Feedback</h2>
+      <Markdown as="p">
+        You can get in touch by using [Twitter](https://twitter.com/jsterlibs)
+        or [email](bebraw@gmail.com).
+      </Markdown>
+    </div>
+  </slot>
+</BaseLayout>

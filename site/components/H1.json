@@ -1,8 +1,0 @@
-{
-  "type": "h1",
-  "class": "prose lg:prose-xl",
-  "children": {
-    "utility": "get",
-    "parameters": ["props", "children"]
-  }
-}
