@@ -16,6 +16,7 @@ type Library = {
 type DataContext = Record<string, unknown> | Record<string, unknown>[];
 type ParentCategory = { title: string; children: Category[] };
 type BlogPost = {
+  path: string;
   id: string;
   title: string;
   shortTitle: string;

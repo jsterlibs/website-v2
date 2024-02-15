@@ -1,8 +1,8 @@
 <BaseLayout>
   <slot name="content">
     <div class="p-4 mx-auto max-w-5xl prose lg:prose-xl">
-      <h1 &children="(get context match.title)"></h1>
-      <Markdown &children="(get context match.body)"></Markdown>
+      <h1 &children="(get context document.title)"></h1>
+      <Markdown &children="(get context document.body)"></Markdown>
     </div>
   </slot>
 </BaseLayout>

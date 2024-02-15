@@ -22,9 +22,9 @@
       x-template
     >
       <SiteLink
-        &class="bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg"
-        &x="state.value.name"
-        &@href="state.value.url"
+        class="bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg"
+        x="state.value.name"
+        @href="state.value.url"
         &children="(get props name)"
         &href="(concat /library/ (get props id))"
       ></SiteLink>

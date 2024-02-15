@@ -1,213 +1,235 @@
-// TODO: Figure out a good spot for this. Maybe Gustwind needs some init file?
+import YAML from "https://esm.sh/yaml@1.10.2";
 import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
 import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
 import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
 import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
-import { marked } from "https://unpkg.com/marked@4.0.0/lib/marked.esm.js";
-import YAML from "https://esm.sh/yaml@1.10.2";
-import { Html5Entities } from "https://deno.land/x/html_entities@v1.0/mod.js";
+import getMarkdown from "./transforms/markdown.ts";
 import { dir, getJson } from "../scripts/utils.ts";
-import categories from "../assets/data/categories.json" assert {
+import type { LoadApi } from "https://deno.land/x/gustwind@v0.52.3/types.ts";
+
+import categories from "../data/categories.json" assert {
   type: "json",
 };
-import blogIndex from "../assets/data/blogposts.json" assert {
+import blogIndex from "../data/blogposts.json" assert {
   type: "json",
 };
-import parentCategories from "../assets/data/parent-categories.json" assert {
+import parentCategories from "../data/parent-categories.json" assert {
   type: "json",
 };
 import type { BlogPost, Category, Library } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
 
-// TODO: Set up highlighting
-marked.setOptions({
-  renderer: new marked.Renderer(),
-  gfm: true,
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  sanitize: false,
-  smartLists: true,
-  smartypants: true,
-});
+type MarkdownWithFrontmatter = {
+  data: {
+    slug: string;
+    title: string;
+    date: Date;
+    keywords: string[];
+  };
+  content: string;
+};
 
 const config = configSync();
 
 const cacheDirectory = ".gustwind_cache";
 
-// TODO: Extract the cache logic as it's useful beyond this use case.
-// That feels like a good spot for supporting middlewares or webpack style
-// loaders.
-async function getLibraries(): Promise<Library[]> {
-  const libraries = await dir("./assets/data/libraries");
-  const limit = pLimit(8);
-  const enhancedLibraries = await Promise.all(
-    await libraries.map(({ path }) =>
-      limit(async () => {
-        const library = await getJson<Library>(path);
+function init({ load }: { load: LoadApi }) {
+  const markdown = getMarkdown(load);
 
-        if (library.links.github) {
-          const parts = library.links.github?.split("github.com/")[1];
-          const [org, repository] = parts.split("/");
+  async function indexBlog() {
+    const blogPostFiles = await load.dir({
+      path: "./data/blogposts",
+      extension: ".yml",
+      type: "",
+    });
+    const blogPosts: BlogPost[] = await Promise.all(blogPostFiles.map(
+      async ({ name, path }) => {
+        const yaml = YAML.parse(await load.textFile(path));
 
-          if (!org || !repository) {
-            return library;
-          }
+        return {
+          name,
+          path,
+          ...yaml,
+        };
+      },
+    ));
 
-          // Check cache before requesting
-          const cachePath = join(cacheDirectory, library.name + ".json");
+    const ret = blogIndex.map(({ id, date }: IndexEntry) => {
+      const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
 
-          try {
-            const cachedLibrary = JSON.parse(
-              await Deno.readTextFile(cachePath),
-            );
-
-            return { stargazers: undefined, ...cachedLibrary };
-          } catch (_error) {
-            // no-op: Error here is ok as then it means the cache file doesn't exist yet
-          }
-
-          // It looks like the missing repos have stargazers set to undefined.
-          try {
-            const response = await fetch(
-              `https://cf-api.jster.net/stargazers?organization=${
-                trim(org, "/")
-              }&repository=${trim(repository, "/")}`,
-              {
-                headers: {
-                  "Authorization": `Bearer ${config.API_AUTH}`,
-                },
-              },
-            );
-            const { stargazers } = await response.text().then((text) => {
-              try {
-                return JSON.parse(text);
-              } catch (_error) {
-                // no-op: Error is expected here as some libraries don't have this data
-                // because they aren't hosted on GitHub for example.
-              }
-
-              return 0;
-            });
-
-            if (stargazers === "undefined") {
-              // Write to cache even if stargazers were not found
-              ensureFileSync(cachePath);
-              await Deno.writeTextFile(
-                cachePath,
-                JSON.stringify({ ...library, stargazers: undefined }, null, 2),
-              );
-
-              return;
-            }
-
-            const ret = {
-              ...library,
-              stargazers,
-            };
-
-            // Write to cache
-            ensureFileSync(cachePath);
-            await Deno.writeTextFile(cachePath, JSON.stringify(ret, null, 2));
-
-            return ret;
-          } catch (error) {
-            console.error("Failed to get stargazers", error);
-
-            return { ...library, stargazers: undefined };
-          }
-        }
-
-        return { ...library, stargazers: undefined };
-      })
-    ),
-  );
-
-  return enhancedLibraries.filter(Boolean);
-}
-
-async function getBlogPosts() {
-  const blogPosts: BlogPost[] = (await dir("./assets/data/blogposts")).map(
-    ({ name, path }) => {
-      const yaml = YAML.parse(Deno.readTextFileSync(path));
+      if (!matchingBlogPost) {
+        console.warn("No matching blog post found for", id);
+      }
 
       return {
-        name,
-        path,
-        ...yaml,
-        // TODO: Support custom syntax (screenshots, anything else?)
-        body: Html5Entities.decode(marked(yaml.body)),
+        // TODO: Better without nesting
+        blogPost: {
+          path: matchingBlogPost?.path,
+          id,
+          title: matchingBlogPost?.title || "",
+          // @ts-ignore: Typo in the original data
+          shortTitle: matchingBlogPost?.short_title,
+          slug: matchingBlogPost?.slug || "",
+          date,
+          type: matchingBlogPost?.type || "static",
+          user: matchingBlogPost?.user || "",
+        },
       };
-    },
-  );
+    });
 
-  const ret = blogIndex.map(({ id, date }: IndexEntry) => {
-    const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
+    // TODO: Drop slice
+    return ret.toReversed().slice(0, 1);
+  }
 
-    if (!matchingBlogPost) {
-      console.warn("No matching blog post found for", id);
-    }
+  async function processBlogPost(blogPost: BlogPost) {
+    const blogPostFile = await load.textFile(blogPost.path);
+    const body = markdown(blogPostFile).content;
 
-    return {
-      id,
-      title: matchingBlogPost?.title || "",
-      // @ts-ignore: Typo in the original data
-      shortTitle: matchingBlogPost?.short_title,
-      slug: matchingBlogPost?.slug || "",
-      date,
-      type: matchingBlogPost?.type || "static",
-      user: matchingBlogPost?.user || "",
-      body: matchingBlogPost?.body || "",
-    };
-  });
+    return { ...blogPost, body };
+  }
 
-  // TODO: Likely this should be applied as a transform
-  return [...ret].reverse();
+  // TODO: Extract the cache logic as it's useful beyond this use case.
+  // That feels like a good spot for supporting middlewares or webpack style
+  // loaders.
+  async function getLibraries(): Promise<Library[]> {
+    const libraries = await dir("./assets/data/libraries");
+    const limit = pLimit(8);
+    const enhancedLibraries = await Promise.all(
+      await libraries.map(({ path }) =>
+        limit(async () => {
+          const library = await getJson<Library>(path);
+
+          if (library.links.github) {
+            const parts = library.links.github?.split("github.com/")[1];
+            const [org, repository] = parts.split("/");
+
+            if (!org || !repository) {
+              return library;
+            }
+
+            // Check cache before requesting
+            const cachePath = join(cacheDirectory, library.name + ".json");
+
+            try {
+              const cachedLibrary = JSON.parse(
+                await load.textFile(cachePath),
+              );
+
+              return { stargazers: undefined, ...cachedLibrary };
+            } catch (_error) {
+              // no-op: Error here is ok as then it means the cache file doesn't exist yet
+            }
+
+            // It looks like the missing repos have stargazers set to undefined.
+            try {
+              const response = await fetch(
+                `https://cf-api.jster.net/stargazers?organization=${
+                  trim(org, "/")
+                }&repository=${trim(repository, "/")}`,
+                {
+                  headers: {
+                    "Authorization": `Bearer ${config.API_AUTH}`,
+                  },
+                },
+              );
+              const { stargazers } = await response.text().then((text) => {
+                try {
+                  return JSON.parse(text);
+                } catch (_error) {
+                  // no-op: Error is expected here as some libraries don't have this data
+                  // because they aren't hosted on GitHub for example.
+                }
+
+                return 0;
+              });
+
+              if (stargazers === "undefined") {
+                // Write to cache even if stargazers were not found
+                ensureFileSync(cachePath);
+                await Deno.writeTextFile(
+                  cachePath,
+                  JSON.stringify(
+                    { ...library, stargazers: undefined },
+                    null,
+                    2,
+                  ),
+                );
+
+                return;
+              }
+
+              const ret = {
+                ...library,
+                stargazers,
+              };
+
+              // Write to cache
+              ensureFileSync(cachePath);
+              await Deno.writeTextFile(cachePath, JSON.stringify(ret, null, 2));
+
+              return ret;
+            } catch (error) {
+              console.error("Failed to get stargazers", error);
+
+              return { ...library, stargazers: undefined };
+            }
+          }
+
+          return { ...library, stargazers: undefined };
+        })
+      ),
+    );
+
+    return enhancedLibraries.filter(Boolean);
+  }
+
+  async function getCategories() {
+    const libraries = await getLibraries();
+
+    return Promise.all(categories.map(async (
+      category,
+    ) => ({
+      ...category,
+      libraries: (await getJson<Library[]>(
+        `assets/data/categories/${category.id}.json`,
+      )).map((l) => libraries.find((library) => library.id === l.id)).filter(
+        Boolean,
+      ),
+    })));
+  }
+
+  function getParentCategories() {
+    return parentCategories;
+  }
+
+  async function getTags() {
+    const libraries = await getLibraries();
+
+    return Promise.all((await dir("assets/data/tags")).map(async (
+      { name, path },
+    ) => ({
+      id: name.split(".").slice(0, -1).join(),
+      title: name.split(".").slice(0, -1).join(),
+      libraries: (await getJson<Category[]>(path)).map((c) => {
+        const foundLibrary = libraries.find((l) => l.id === c.library.id);
+
+        if (foundLibrary) {
+          return foundLibrary;
+        }
+      }).filter(Boolean),
+    })));
+  }
+
+  return {
+    getCategories,
+    getLibraries,
+    getParentCategories,
+    getTags,
+    indexBlog,
+    processBlogPost,
+  };
 }
 
-async function getCategories() {
-  const libraries = await getLibraries();
-
-  return Promise.all(categories.map(async (
-    category,
-  ) => ({
-    ...category,
-    libraries: (await getJson<Library[]>(
-      `assets/data/categories/${category.id}.json`,
-    )).map((l) => libraries.find((library) => library.id === l.id)).filter(
-      Boolean,
-    ),
-  })));
-}
-
-function getParentCategories() {
-  return parentCategories;
-}
-
-async function getTags() {
-  const libraries = await getLibraries();
-
-  return Promise.all((await dir("assets/data/tags")).map(async (
-    { name, path },
-  ) => ({
-    id: name.split(".").slice(0, -1).join(),
-    title: name.split(".").slice(0, -1).join(),
-    libraries: (await getJson<Category[]>(path)).map((c) => {
-      const foundLibrary = libraries.find((l) => l.id === c.library.id);
-
-      if (foundLibrary) {
-        return foundLibrary;
-      }
-    }).filter(Boolean),
-  })));
-}
-
-export {
-  getBlogPosts as blogPosts,
-  getCategories as categories,
-  getLibraries as libraries,
-  getParentCategories as parentCategories,
-  getTags as tags,
-};
+export { init };

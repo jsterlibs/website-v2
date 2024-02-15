@@ -1,4 +1,4 @@
-import type { Routes } from "../../types.ts";
+import type { Routes } from "https://deno.land/x/gustwind@v0.52.3/types.ts";
 
 function init({ routes }: { routes: Routes }) {
   function validateUrl(url: string) {
@@ -12,6 +12,11 @@ function init({ routes }: { routes: Routes }) {
       return urlRoot === "/"
         ? url
         : `/${urlRoot}${anchor ? "#" + anchor : "/"}`;
+    }
+
+    // Check against /atom.xml and similar
+    if (urlRoot[0] === "/" && Object.keys(routes).includes(urlRoot.slice(1))) {
+      return url;
     }
 
     // TODO: This would be a good spot to check the url doesn't 404
