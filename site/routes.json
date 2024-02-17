@@ -55,6 +55,34 @@
       }
     }
   },
+  "tag": {
+    "expand": {
+      "matchBy": {
+        "indexer": {
+          "operation": "indexTags",
+          "parameters": []
+        },
+        "dataSources": [{
+          "operation": "processTag",
+          "firstParameter": "tag",
+          "parameters": [],
+          "name": "tags"
+        }],
+        "slug": "tag.id"
+      },
+      "layout": "categoryPage",
+      "meta": {
+        "title": {
+          "utility": "get",
+          "parameters": ["context", "name"]
+        },
+        "description": {
+          "utility": "get",
+          "parameters": ["context", "description"]
+        }
+      }
+    }
+  },
   "about": {
     "meta": {
       "title": "JSter – About",

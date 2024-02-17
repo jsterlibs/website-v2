@@ -17,7 +17,7 @@ import blogIndex from "../data/blogposts.json" assert {
 import parentCategories from "../data/parent-categories.json" assert {
   type: "json",
 };
-import type { BlogPost, Category, Library } from "../types.ts";
+import type { BlogPost, Category, Library, Tag } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
 
@@ -215,7 +215,7 @@ function init({ load }: { load: LoadApi }) {
     return parentCategories;
   }
 
-  async function getTags() {
+  async function indexTags() {
     const libraries = await getLibraries();
 
     return Promise.all(
@@ -223,28 +223,35 @@ function init({ load }: { load: LoadApi }) {
         .map(async (
           { name, path },
         ) => ({
-          id: name.split(".").slice(0, -1).join(),
-          title: name.split(".").slice(0, -1).join(),
-          libraries: (await getJson<Category[]>(path)).map((c) => {
-            const foundLibrary = libraries.find((l) => l.id === c.library.id);
+          tag: {
+            id: name.split(".").slice(0, -1).join(),
+            title: name.split(".").slice(0, -1).join(),
+            libraries: (await getJson<Category[]>(path)).map((c) => {
+              const foundLibrary = libraries.find((l) => l.id === c.library.id);
 
-            if (foundLibrary) {
-              return foundLibrary;
-            }
-          }).filter(Boolean),
+              if (foundLibrary) {
+                return foundLibrary;
+              }
+            }).filter(Boolean),
+          },
         })),
     );
+  }
+
+  function processTag(tag: Tag) {
+    return tag;
   }
 
   return {
     getBlogPosts,
     getLibraries,
     getParentCategories,
-    getTags,
     indexCategories,
     indexBlog,
+    indexTags,
     processBlogPost,
     processCategory,
+    processTag,
   };
 }
 

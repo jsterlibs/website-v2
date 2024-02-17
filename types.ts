@@ -36,6 +36,11 @@ type BlogPost = {
     photo: string;
   };
 };
+type Tag = {
+  id: string;
+  title: string;
+  libraries: Library[];
+};
 
 export type {
   Attributes,
@@ -44,4 +49,5 @@ export type {
   DataContext,
   Library,
   ParentCategory,
+  Tag,
 };
