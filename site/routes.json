@@ -13,6 +13,20 @@
       }
     ]
   },
+  "catalog": {
+    "meta": {
+      "title": "JSter – Catalog",
+      "description": "JavaScript libraries per category"
+    },
+    "layout": "catalogIndex",
+    "dataSources": [
+      {
+        "operation": "getParentCategories",
+        "parameters": [],
+        "name": "parentCategories"
+      }
+    ]
+  },
   "blog": {
     "layout": "blogIndex",
     "meta": {
