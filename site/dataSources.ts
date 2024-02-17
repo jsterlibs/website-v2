@@ -5,7 +5,7 @@ import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
 import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
 import getMarkdown from "./transforms/markdown.ts";
-import { dir, getJson } from "../scripts/utils.ts";
+import { getJson } from "../scripts/utils.ts";
 import type { LoadApi } from "https://deno.land/x/gustwind@v0.52.3/types.ts";
 
 import categories from "../data/categories.json" assert {
@@ -99,7 +99,11 @@ function init({ load }: { load: LoadApi }) {
   // That feels like a good spot for supporting middlewares or webpack style
   // loaders.
   async function getLibraries(): Promise<Library[]> {
-    const libraries = await dir("./assets/data/libraries");
+    const libraries = await load.dir({
+      path: "./data/libraries",
+      extension: ".json",
+      type: "",
+    });
     const limit = pLimit(8);
     const enhancedLibraries = await Promise.all(
       await libraries.map(({ path }) =>
@@ -190,19 +194,21 @@ function init({ load }: { load: LoadApi }) {
     return enhancedLibraries.filter(Boolean);
   }
 
-  async function getCategories() {
+  function indexCategories() {
+    return categories.map((category) => ({ category }));
+  }
+
+  async function processCategory(category: Category) {
     const libraries = await getLibraries();
 
-    return Promise.all(categories.map(async (
-      category,
-    ) => ({
+    return {
       ...category,
       libraries: (await getJson<Library[]>(
-        `assets/data/categories/${category.id}.json`,
+        `data/categories/${category.id}.json`,
       )).map((l) => libraries.find((library) => library.id === l.id)).filter(
         Boolean,
       ),
-    })));
+    };
   }
 
   function getParentCategories() {
@@ -212,29 +218,33 @@ function init({ load }: { load: LoadApi }) {
   async function getTags() {
     const libraries = await getLibraries();
 
-    return Promise.all((await dir("assets/data/tags")).map(async (
-      { name, path },
-    ) => ({
-      id: name.split(".").slice(0, -1).join(),
-      title: name.split(".").slice(0, -1).join(),
-      libraries: (await getJson<Category[]>(path)).map((c) => {
-        const foundLibrary = libraries.find((l) => l.id === c.library.id);
+    return Promise.all(
+      (await load.dir({ path: "./data/tags", extension: ".json", type: "" }))
+        .map(async (
+          { name, path },
+        ) => ({
+          id: name.split(".").slice(0, -1).join(),
+          title: name.split(".").slice(0, -1).join(),
+          libraries: (await getJson<Category[]>(path)).map((c) => {
+            const foundLibrary = libraries.find((l) => l.id === c.library.id);
 
-        if (foundLibrary) {
-          return foundLibrary;
-        }
-      }).filter(Boolean),
-    })));
+            if (foundLibrary) {
+              return foundLibrary;
+            }
+          }).filter(Boolean),
+        })),
+    );
   }
 
   return {
     getBlogPosts,
-    getCategories,
     getLibraries,
     getParentCategories,
     getTags,
+    indexCategories,
     indexBlog,
     processBlogPost,
+    processCategory,
   };
 }
 

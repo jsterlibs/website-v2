@@ -27,6 +27,34 @@
       }
     ]
   },
+  "category": {
+    "expand": {
+      "matchBy": {
+        "indexer": {
+          "operation": "indexCategories",
+          "parameters": []
+        },
+        "dataSources": [{
+          "operation": "processCategory",
+          "firstParameter": "category",
+          "parameters": [],
+          "name": "categories"
+        }],
+        "slug": "category.id"
+      },
+      "layout": "categoryPage",
+      "meta": {
+        "title": {
+          "utility": "get",
+          "parameters": ["context", "name"]
+        },
+        "description": {
+          "utility": "get",
+          "parameters": ["context", "description"]
+        }
+      }
+    }
+  },
   "about": {
     "meta": {
       "title": "JSter – About",
