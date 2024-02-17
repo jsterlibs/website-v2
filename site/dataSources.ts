@@ -95,6 +95,16 @@ function init({ load }: { load: LoadApi }) {
     return { ...blogPost, body };
   }
 
+  async function indexLibraries() {
+    const libraries = await getLibraries();
+
+    return libraries.map((library) => ({ library }));
+  }
+
+  function processLibrary(library: Library) {
+    return library;
+  }
+
   // TODO: Extract the cache logic as it's useful beyond this use case.
   // That feels like a good spot for supporting middlewares or webpack style
   // loaders.
@@ -244,11 +254,12 @@ function init({ load }: { load: LoadApi }) {
 
   return {
     getBlogPosts,
-    getLibraries,
     getParentCategories,
+    indexLibraries,
     indexCategories,
     indexBlog,
     indexTags,
+    processLibrary,
     processBlogPost,
     processCategory,
     processTag,
