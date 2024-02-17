@@ -1,0 +1,37 @@
+type: static
+title: "JSter #213: Libraries and more"
+short_title: "JSter #213"
+user: bebraw
+slug: jster-213
+body: |
+  > You don't know what JavaScript is. It's a relationship.
+
+  There's nothing special to announce this time. Carry on and keep scripting.
+
+  ## Libraries
+
+  * [WebReflection/fetch: A fetch with Response abilities.](https://buff.ly/3wkpNvJ)
+  * [formkit/tempo: 📆 Parse, format, manipulate, and internationalize dates and times in JavaScript and TypeScript.](https://buff.ly/4bz5BX9)
+  * [awslabs/llrt: LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.](https://buff.ly/3SSeLGX)
+  * [jQuery 4.0.0 is available in beta](https://buff.ly/42xFg7x)
+
+  ## React
+
+  * [What is coming for React](https://buff.ly/49G7xLP)
+
+  ## Tools
+
+  * [nelipuu/zbind: Zig-TypeScript binding generator](https://buff.ly/48hdWvR)
+  * [dax - Cross-platform shell tools for Node.js](https://buff.ly/49sM6xn)
+  * [Storybook 8 Beta](https://buff.ly/42s1OH1)
+  * [Simple stack 🌱 - Stack of tools to simplify Astro workflow](https://buff.ly/482Qq5p)
+
+  ## Frameworks
+
+  * [Hono - ultrafast framework for the edge has reached 4.0](https://buff.ly/3HVOWPL)
+  * [Towards Qwik 2.0: Lighter, Faster, Better](https://buff.ly/3SCMLpp)
+  * [Vocs – React Documentation Framework](https://buff.ly/3Ovi3gw)
+
+  ## Techniques
+
+  * [Hot Module Replacement is Easy](https://buff.ly/3SMq4jO)
