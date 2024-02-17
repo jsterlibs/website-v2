@@ -27,6 +27,13 @@
       }
     ]
   },
+  "about": {
+    "meta": {
+      "title": "JSter – About",
+      "description": "About JSter"
+    },
+    "layout": "aboutPage"
+  },
   "blog": {
     "layout": "blogIndex",
     "meta": {
