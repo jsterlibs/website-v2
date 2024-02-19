@@ -1,5 +1,8 @@
 <ul class="flex flex-col gap-4" &foreach="(get props blogPosts)">
   <li>
-    <SiteLink &children="(get props title)" &href="(get props slug)"></SiteLink>
+    <SiteLink
+      &children="(get props blogPost.title)"
+      &href="(concat blog / (get props blogPost.slug))"
+    ></SiteLink>
   </li>
 </ul>

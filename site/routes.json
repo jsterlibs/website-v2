@@ -126,7 +126,7 @@
     },
     "dataSources": [
       {
-        "operation": "getBlogPosts",
+        "operation": "indexBlog",
         "parameters": [],
         "name": "blogPosts"
       }
@@ -167,7 +167,7 @@
     },
     "dataSources": [
       {
-        "operation": "getBlogPosts",
+        "operation": "indexBlog",
         "parameters": [],
         "name": "blogPosts"
       }

@@ -38,11 +38,6 @@ const cacheDirectory = ".gustwind_cache";
 function init({ load }: { load: LoadApi }) {
   const markdown = getMarkdown(load);
 
-  function getBlogPosts() {
-    // TODO: Compose from index + process
-    return [];
-  }
-
   async function indexBlog() {
     const blogPostFiles = await load.dir({
       path: "./data/blogposts",
@@ -84,8 +79,7 @@ function init({ load }: { load: LoadApi }) {
       };
     });
 
-    // TODO: Drop slice
-    return ret.toReversed().slice(0, 1);
+    return ret.toReversed();
   }
 
   async function processBlogPost(blogPost: BlogPost) {
@@ -253,7 +247,6 @@ function init({ load }: { load: LoadApi }) {
   }
 
   return {
-    getBlogPosts,
     getParentCategories,
     indexLibraries,
     indexCategories,
