@@ -1,5 +1,10 @@
 {
   "language": "en",
   "siteName": "JSter",
-  "url": "https://jster.net/"
+  "url": "https://jster.net/",
+  "colors": {
+    "primary": "#3a2fa6",
+    "secondary": "#84ebec",
+    "tertiary": "#ffffff"
+  }
 }
