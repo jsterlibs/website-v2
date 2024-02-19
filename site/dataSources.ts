@@ -83,10 +83,9 @@ function init({ load }: { load: LoadApi }) {
   }
 
   async function processBlogPost(blogPost: BlogPost) {
-    const blogPostFile = await load.textFile(blogPost.path);
-    const body = markdown(blogPostFile).content;
+    const yaml = YAML.parse(await load.textFile(blogPost.path));
 
-    return { ...blogPost, body };
+    return { ...blogPost, body: markdown(yaml.body).content };
   }
 
   async function indexLibraries() {
