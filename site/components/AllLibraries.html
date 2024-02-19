@@ -1,12 +1,12 @@
 <div x-state="{ libraries: [] }">
-  <div class="flex gap-1">
+  <div class="flex gap-1" &visibleIf="(get context todo)">
     <button
-      onclick="setState(state => ({ libraries: state.libraries.slice().toSorted((a, b) => a.title.localeCompare(b.title)) }))"
+      onclick="setState(state => ({ libraries: state.libraries.toSorted((a, b) => a.name.localeCompare(b.name)) }))"
     >
       Sort libraries (asc.)
     </button>
     <button
-      onclick="setState(state => ({ libraries: state.libraries.slice().toSorted((a, b) => -a.title.localeCompare(b.title)) }))"
+      onclick="setState(state => ({ libraries: state.libraries.toSorted((a, b) => -a.name.localeCompare(b.name)) }))"
     >
       Sort libraries (desc.)
     </button>

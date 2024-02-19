@@ -1,10 +1,10 @@
 {
   "tasks": {
-    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.61.0/gustwind-cli/mod.ts -b -t cpuMax -o ./build",
+    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.61.1/gustwind-cli/mod.ts -b -t cpuMax -o ./build",
     "build:linked": "gustwind -b",
-    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.61.0/gustwind-cli/mod.ts -d -p 3000",
+    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.61.1/gustwind-cli/mod.ts -d -p 3000",
     "start:linked": "gustwind -d",
-    "serve": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.61.0/gustwind-cli/mod.ts -s -p 3000 -i ./build",
+    "serve": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.61.1/gustwind-cli/mod.ts -s -p 3000 -i ./build",
     "serve:linked": "gustwind -s -p 3000 -i ./build",
     "compress:cache": "tar -zcf build/cache.tar.gz .gustwind_cache",
     "decompress:cache": "wget -c $CACHE_LOCATION -O - | tar -xz"
