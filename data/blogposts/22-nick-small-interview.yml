@@ -17,12 +17,12 @@ body: |
 
   Batman's views rely heavily on HTML data attributes. Compared to Angular Batman is less modular, placing its namespace in global scope for easier access. batman.js is written in CoffeeScript and shares the principle of "convention over configuration" inspired by Ruby on Rails. This makes its code more compact and readable, much faster to write and prototype, and easier to jump into a new project. The downside is that the learning curve now includes learning all of the conventions that the framework provides.
 
-  {{ screenshot: batman.js }}  
+  {{ screenshot: batman.js }}
 
-  Let's take a quick look at some code from both frameworks. Here is a controller built both in AngularJS and batman.js. 
+  Let's take a quick look at some code from both frameworks. Here is a controller built both in AngularJS and batman.js.
   *(I will use CoffeeScript in this example)*
 
-    <script src="https://gist.github.com/DavertMik/9ec02b30f18609acd6e9.js"></script>
+  <script src="https://gist.github.com/DavertMik/9ec02b30f18609acd6e9.js"></script>
 
   As you see they are pretty similar, but personally I find batman.js's code a lot cleaner.
 

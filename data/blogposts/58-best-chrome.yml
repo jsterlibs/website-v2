@@ -6,52 +6,52 @@ slug: best-chrome-apps-for-devs
 picture: /img/blog/58/1_small.png
 body: |
 
-    Being a web developer nowadays is far different from what it used to be; I still remember when all you needed in order to get going was a text editor and a bucket of coffee. Nowadays, though, technology is changing at such a pace that it only takes a few blinks and you’ll end up falling behind with everything.
+  Being a web developer nowadays is far different from what it used to be; I still remember when all you needed in order to get going was a text editor and a bucket of coffee. Nowadays, though, technology is changing at such a pace that it only takes a few blinks and you’ll end up falling behind with everything.
 
-    The best way to stay atop of the game is to make use of every resources available out there in order to simplify or automate everything you can in the development process, and one of the easiest methods of doing so is by customizing your web browser with the right apps to take you through the day. Here are five of the best Chrome apps that are totally worth your attention.
+  The best way to stay atop of the game is to make use of every resources available out there in order to simplify or automate everything you can in the development process, and one of the easiest methods of doing so is by customizing your web browser with the right apps to take you through the day. Here are five of the best Chrome apps that are totally worth your attention.
 
-    ## [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm/details?hl=en)
+  ## [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm/details?hl=en)
 
-    <div class="picture"><img src="/img/blog/58/1.png" alt="Web Developer" /></div>
+  <div class="picture"><img src="/img/blog/58/1.png" alt="Web Developer" /></div>
 
-    Chris Pederick’s Web Developer app is one of the most iconic apps in the field of web development, and it’s easy to understand why: it has pretty much everything you can think of. The initial extension was developed for Mozilla Firefox, being one of the primary reasons developers chose to use Firefox, but its recent porting to Chrome might have developers moving to Chrome as well.
+  Chris Pederick’s Web Developer app is one of the most iconic apps in the field of web development, and it’s easy to understand why: it has pretty much everything you can think of. The initial extension was developed for Mozilla Firefox, being one of the primary reasons developers chose to use Firefox, but its recent porting to Chrome might have developers moving to Chrome as well.
 
-    Web Developer offers access to information about all the key elements of a webpage at the touch of a button, making it easy to view and edit code on the fly. If you’re looking for an all-in-one solution, Web Developer is it.
+  Web Developer offers access to information about all the key elements of a webpage at the touch of a button, making it easy to view and edit code on the fly. If you’re looking for an all-in-one solution, Web Developer is it.
 
-    ## [PageSpeed Insights](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli)
+  ## [PageSpeed Insights](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli)
 
-    <div class="picture"><img src="/img/blog/58/2.png" alt="PageSpeed Insights" /></div>
+  <div class="picture"><img src="/img/blog/58/2.png" alt="PageSpeed Insights" /></div>
 
-    Slow-loading pages are every developer’s nightmare, especially after spending countless hours on creating the perfect code. Making things even worse is the fact that this usually happens due to a minor JavaScript or CSS function; here’s where PageSpeed Insights comes into play.
+  Slow-loading pages are every developer’s nightmare, especially after spending countless hours on creating the perfect code. Making things even worse is the fact that this usually happens due to a minor JavaScript or CSS function; here’s where PageSpeed Insights comes into play.
 
-    While there are multiple sites and apps that provide page speeds assessments, most will only tell you that there’s a problem, without actually indicating where it is, or how it can be fixed. PageSpeed Insights does exactly that: analyzes the page, identifies problems and provides solutions. The Google Chrome app is especially useful if you’re working on an offline site, and want to make sure everything is in top shape before having the site go live.
+  While there are multiple sites and apps that provide page speeds assessments, most will only tell you that there’s a problem, without actually indicating where it is, or how it can be fixed. PageSpeed Insights does exactly that: analyzes the page, identifies problems and provides solutions. The Google Chrome app is especially useful if you’re working on an offline site, and want to make sure everything is in top shape before having the site go live.
 
-    ## [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
+  ## [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
 
-    <div class="picture"><img src="/img/blog/58/3.jpg" alt="Wappalyzer" /></div>
+  <div class="picture"><img src="/img/blog/58/3.jpg" alt="Wappalyzer" /></div>
 
-    If you’ve ever found yourself just staring at a website and wonrdering how a certain feature was created, or what framework’s in use, Wappalyzer is the place to search for answers. This tiny app provides detailed information about every web page, and the technologies behind it, allowing you to get a better understanding of various things, which you will ultimately use to your advantage.
+  If you’ve ever found yourself just staring at a website and wonrdering how a certain feature was created, or what framework’s in use, Wappalyzer is the place to search for answers. This tiny app provides detailed information about every web page, and the technologies behind it, allowing you to get a better understanding of various things, which you will ultimately use to your advantage.
 
-    Wappalyzer comes with a large library of content management systems, platforms, JavaScript frameworks or web servers, so finding out what’s making a website’s wheels turn won’t have you digging through the source code for hints anymore.
+  Wappalyzer comes with a large library of content management systems, platforms, JavaScript frameworks or web servers, so finding out what’s making a website’s wheels turn won’t have you digging through the source code for hints anymore.
 
-    ## [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+  ## [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
 
-    <div class="picture"><img src="/img/blog/58/4.jpg" alt="JSONView" /></div>
+  <div class="picture"><img src="/img/blog/58/4.jpg" alt="JSONView" /></div>
 
-    The JSON format for storing and transporting data is becoming more popular by the day, with a lot of websites making use of it in an effort to become more developer-friendly. Be that as it may, browsers are not very JSON-friendly yet, meaning that JSON content won’t be displayed in an organized manner that’s easy to follow.
+  The JSON format for storing and transporting data is becoming more popular by the day, with a lot of websites making use of it in an effort to become more developer-friendly. Be that as it may, browsers are not very JSON-friendly yet, meaning that JSON content won’t be displayed in an organized manner that’s easy to follow.
 
-    JSONView is here to save the day, offering two different methods of parsing JSON content (direct extraction from the page or via an additional XMLHttpRequest) and displaying it in a readable stream of data.
+  JSONView is here to save the day, offering two different methods of parsing JSON content (direct extraction from the page or via an additional XMLHttpRequest) and displaying it in a readable stream of data.
 
-    ## [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en)
+  ## [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en)
 
-    <div class="picture"><img src="/img/blog/58/5.jpg" alt="EditThisCookie" /></div>
+  <div class="picture"><img src="/img/blog/58/5.jpg" alt="EditThisCookie" /></div>
 
-    Cookies are natural elements of all websites, but sometimes they tend to store a little bit more than they should have. If you want to test the behavior of the cookies generated by your own website, or any other site, EditThisCookie is one of the easiest ways of doing it.
+  Cookies are natural elements of all websites, but sometimes they tend to store a little bit more than they should have. If you want to test the behavior of the cookies generated by your own website, or any other site, EditThisCookie is one of the easiest ways of doing it.
 
-    Simply install the app and, with a single press of a button, you’ll get full access to the cookies generated by the site you’re on. You can easily view, edit and even lock the contents of the cookies, basically taking full control over the way cookies work.
+  Simply install the app and, with a single press of a button, you’ll get full access to the cookies generated by the site you’re on. You can easily view, edit and even lock the contents of the cookies, basically taking full control over the way cookies work.
 
-    ## Conclusion
+  ## Conclusion
 
-    So there you have them – five of the best Google Chrome Apps and extensions available for web developers now. What are your apps and extensions of choice?
+  So there you have them – five of the best Google Chrome Apps and extensions available for web developers now. What are your apps and extensions of choice?
 
-    This is a guest post by Jason Phillips and [Train Games 365](http://www.traingames365.com/). Thanks Jason!
+  This is a guest post by Jason Phillips and [Train Games 365](http://www.traingames365.com/). Thanks Jason!

@@ -4,68 +4,68 @@ short_title: "JSter #86"
 user: bebraw
 slug: jster-january-2017-part-2
 body: |
-    > JavaScript - Because you are worth it.
+  > JavaScript - Because you are worth it.
 
-    It has been busy two weeks again. [Webpack 2 reached a final version](https://medium.com/webpack/webpack-2-2-the-final-release-76c3d43bf144). This also gave me a good excuse to [push a new version of my webpack book out there](http://survivejs.com/blog/survivejs-webpack-160/). It's getting closer and closer to paper and the end(?) is in sight.
+  It has been busy two weeks again. [Webpack 2 reached a final version](https://medium.com/webpack/webpack-2-2-the-final-release-76c3d43bf144). This also gave me a good excuse to [push a new version of my webpack book out there](http://survivejs.com/blog/survivejs-webpack-160/). It's getting closer and closer to paper and the end(?) is in sight.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/trentm/node-bunyan }}
+  {{ screenshot: https://github.com/trentm/node-bunyan }}
 
-    * [Bunyan](https://github.com/trentm/node-bunyan) - A logger for Node.
-    * [mocha needs your help](https://github.com/mochajs/mocha/blob/master/README.md)
-    * [Gothdo/range](https://github.com/Gothdo/range) - A JavaScript implementation of the Python's range() function
-    * [mitt](https://www.npmjs.com/package/mitt) - A tiny event emitter, pubsub thinger.
-    * [lake.js](http://alligatr.co.uk/lake.js/) - Well, make a lake in JavaScript. Handy, eh?
-    * [switzerland](https://github.com/wildhoney/switzerland) - Neutral web components.
-    * [Identicon.js](https://rawgit.com/stewartlord/identicon.js/master/demo.html) - Identicons like in GitHub profiles of lazy people.
-    * [Voca: The JavaScript string library](https://vocajs.com/)
-    * [partial.lenses](https://www.npmjs.com/package/partial.lenses) - Yup. Just what it says in the label.
-    * [date-fns](https://date-fns.org/) - Tired of moment? This one is for you.
-    * [Inferno](https://infernojs.org/) - Faster than React with a familiar API. What's not to like?
+  * [Bunyan](https://github.com/trentm/node-bunyan) - A logger for Node.
+  * [mocha needs your help](https://github.com/mochajs/mocha/blob/master/README.md)
+  * [Gothdo/range](https://github.com/Gothdo/range) - A JavaScript implementation of the Python's range() function
+  * [mitt](https://www.npmjs.com/package/mitt) - A tiny event emitter, pubsub thinger.
+  * [lake.js](http://alligatr.co.uk/lake.js/) - Well, make a lake in JavaScript. Handy, eh?
+  * [switzerland](https://github.com/wildhoney/switzerland) - Neutral web components.
+  * [Identicon.js](https://rawgit.com/stewartlord/identicon.js/master/demo.html) - Identicons like in GitHub profiles of lazy people.
+  * [Voca: The JavaScript string library](https://vocajs.com/)
+  * [partial.lenses](https://www.npmjs.com/package/partial.lenses) - Yup. Just what it says in the label.
+  * [date-fns](https://date-fns.org/) - Tired of moment? This one is for you.
+  * [Inferno](https://infernojs.org/) - Faster than React with a familiar API. What's not to like?
 
-    ## Articles
+  ## Articles
 
-    * [A Taste from Angular 4](https://netbasal.com/a-taste-from-angular-version-4-50be1c4f3550)
-    * [Firebase: the great, the meh, and the ugly](https://medium.com/@Pier/firebase-the-great-the-meh-and-the-ugly-a07252fbcf15)
-    * [What should be in a Single Page Application?](https://medium.com/@maurice.de.beijer/what-should-be-in-a-single-page-application-9bbbf40c3862)
-    * [Of Classes and Arrow Functions](https://javascriptweblog.wordpress.com/2015/11/02/of-classes-and-arrow-functions-a-cautionary-tale/) - A horror story.
+  * [A Taste from Angular 4](https://netbasal.com/a-taste-from-angular-version-4-50be1c4f3550)
+  * [Firebase: the great, the meh, and the ugly](https://medium.com/@Pier/firebase-the-great-the-meh-and-the-ugly-a07252fbcf15)
+  * [What should be in a Single Page Application?](https://medium.com/@maurice.de.beijer/what-should-be-in-a-single-page-application-9bbbf40c3862)
+  * [Of Classes and Arrow Functions](https://javascriptweblog.wordpress.com/2015/11/02/of-classes-and-arrow-functions-a-cautionary-tale/) - A horror story.
 
-    ## Security
+  ## Security
 
-    * [Regular Expression Denial of Service and Catastrophic Backtracking](https://snyk.io/blog/redos-and-catastrophic-backtracking/)
+  * [Regular Expression Denial of Service and Catastrophic Backtracking](https://snyk.io/blog/redos-and-catastrophic-backtracking/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [How to create an online Siri-like personal assistant](https://blog.sambego.be/how-to-create-an-online-siri-like-personal-assistant/)
-    * [Use the amazing D3 library to animate a path on a Leaflet map](http://zevross.com/blog/2014/09/30/use-the-amazing-d3-library-to-animate-a-path-on-a-leaflet-map/)
+  * [How to create an online Siri-like personal assistant](https://blog.sambego.be/how-to-create-an-online-siri-like-personal-assistant/)
+  * [Use the amazing D3 library to animate a path on a Leaflet map](http://zevross.com/blog/2014/09/30/use-the-amazing-d3-library-to-animate-a-path-on-a-leaflet-map/)
 
-    ## Techniques
+  ## Techniques
 
-    * [11 Simple npm Tricks That Will Knock Your Wombat Socks Off](https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off)
-    * [10 things a rando learned making the fastest site in the world](https://hackernoon.com/10-things-i-learned-making-the-fastest-site-in-the-world-18a0e1cdf4a7)
-    * [Measuring performance in JavaScript](http://code.fitness/post/2017/01/js-perf-measurement.html)
+  * [11 Simple npm Tricks That Will Knock Your Wombat Socks Off](https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off)
+  * [10 things a rando learned making the fastest site in the world](https://hackernoon.com/10-things-i-learned-making-the-fastest-site-in-the-world-18a0e1cdf4a7)
+  * [Measuring performance in JavaScript](http://code.fitness/post/2017/01/js-perf-measurement.html)
 
-    ## Interviews
+  ## Interviews
 
-    * [isomorphic-webpack interview with Gajus Kuizinas](http://survivejs.com/blog/isomorphic-webpack-interview/)
+  * [isomorphic-webpack interview with Gajus Kuizinas](http://survivejs.com/blog/isomorphic-webpack-interview/)
 
-    ## Resources
+  ## Resources
 
-    * [webcomponents.org](https://www.webcomponents.org/launch-announcement) - New element registry.
-    * [CSS Puns & CSS Jokes](http://saijogeorge.com/css-puns/)
+  * [webcomponents.org](https://www.webcomponents.org/launch-announcement) - New element registry.
+  * [CSS Puns & CSS Jokes](http://saijogeorge.com/css-puns/)
 
-    ## Games
+  ## Games
 
-    * [Incheon](http://incheon.gg/) - Online JavaScript game fun with open source.
+  * [Incheon](http://incheon.gg/) - Online JavaScript game fun with open source.
 
-    ## Tools
+  ## Tools
 
-    * [RxJS Diagrams](http://rxjs-diagrams.com/)
-    * [A Prettier JavaScript Formatter](http://jlongster.com/A-Prettier-Formatter)
-    * [InterlockJS](http://interlockjs.com/) - Unify your build, whatever that means. Find out.
+  * [RxJS Diagrams](http://rxjs-diagrams.com/)
+  * [A Prettier JavaScript Formatter](http://jlongster.com/A-Prettier-Formatter)
+  * [InterlockJS](http://interlockjs.com/) - Unify your build, whatever that means. Find out.
 
-    ## Demos
+  ## Demos
 
-    * [Pluto isn't that special, after all](http://bl.ocks.org/AntonLecock/e347a9aab4808a9efaa8643662267522)
-    * [the genetic code](http://benfry.com/aasd/)
+  * [Pluto isn't that special, after all](http://bl.ocks.org/AntonLecock/e347a9aab4808a9efaa8643662267522)
+  * [the genetic code](http://benfry.com/aasd/)

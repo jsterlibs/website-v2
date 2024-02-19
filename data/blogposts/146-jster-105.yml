@@ -4,42 +4,42 @@ short_title: "JSter #105"
 user: bebraw
 slug: jster-105
 body: |
-    > I feel the need - the need for JavaScript!
+  > I feel the need - the need for JavaScript!
 
-    It has been time to travel for me. The [Maintenance book](https://survivejs.com/maintenance/) is getting closer, though.
+  It has been time to travel for me. The [Maintenance book](https://survivejs.com/maintenance/) is getting closer, though.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/MadRabbit/a-plus-forms }}
+  {{ screenshot: https://github.com/MadRabbit/a-plus-forms }}
 
-    * [MadRabbit/a-plus-forms](https://github.com/MadRabbit/a-plus-forms) - A fresh approach for React forms.
-    * [Konva](https://konvajs.github.io/) - Canvas library for desktop and mobile applications.
-    * [delvedor/workq](https://github.com/delvedor/workq) - A super tiny work queue.
-    * [mattbierner/akh](https://github.com/mattbierner/akh) - Javascript Monad and Monad Transformer Collection
+  * [MadRabbit/a-plus-forms](https://github.com/MadRabbit/a-plus-forms) - A fresh approach for React forms.
+  * [Konva](https://konvajs.github.io/) - Canvas library for desktop and mobile applications.
+  * [delvedor/workq](https://github.com/delvedor/workq) - A super tiny work queue.
+  * [mattbierner/akh](https://github.com/mattbierner/akh) - Javascript Monad and Monad Transformer Collection
 
-    ## Articles
+  ## Articles
 
-    * [The web component experience](https://jeremenichelli.io/2017/10/the-web-components-experience/)
-    * [Image Effects with CSS](http://bennettfeely.com/image-effects/)
-    * [Compilers are the New Frameworks](https://tomdale.net/2017/09/compilers-are-the-new-frameworks/)
+  * [The web component experience](https://jeremenichelli.io/2017/10/the-web-components-experience/)
+  * [Image Effects with CSS](http://bennettfeely.com/image-effects/)
+  * [Compilers are the New Frameworks](https://tomdale.net/2017/09/compilers-are-the-new-frameworks/)
 
-    ## Techniques
+  ## Techniques
 
-    * [End-to-end Tests that Don’t Suck with Puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/)
-    * [Get to know the Actor Model](https://monades.roperzh.com/get-to-know-the-actor-model/)
+  * [End-to-end Tests that Don’t Suck with Puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/)
+  * [Get to know the Actor Model](https://monades.roperzh.com/get-to-know-the-actor-model/)
 
-    ## Interviews
+  ## Interviews
 
-    * [React Day Berlin - Fully Packed Day of Your Favorite React Content](https://survivejs.com/blog/react-day-berlin-interview/) - Interview with Robert Haritonov.
+  * [React Day Berlin - Fully Packed Day of Your Favorite React Content](https://survivejs.com/blog/react-day-berlin-interview/) - Interview with Robert Haritonov.
 
-    ## Tools
+  ## Tools
 
-    * [steelbrain/pundle](https://github.com/steelbrain/pundle) - A bundler built from the ground up for speed and extensibility.
-    * [Microsoft/napajs)](https://github.com/Microsoft/napajs) - A multi-threaded JavaScript runtime.
-    * [mikeal/cappadonna](https://github.com/mikeal/cappadonna) - Headless browser testing for tap with coverage reporting.
+  * [steelbrain/pundle](https://github.com/steelbrain/pundle) - A bundler built from the ground up for speed and extensibility.
+  * [Microsoft/napajs)](https://github.com/Microsoft/napajs) - A multi-threaded JavaScript runtime.
+  * [mikeal/cappadonna](https://github.com/mikeal/cappadonna) - Headless browser testing for tap with coverage reporting.
 
-    ## Demos
+  ## Demos
 
-    * [TodoCSS](http://www.mattzeunert.com/TodoCSS/) - TodoMVC in CSS.
-    * [Sheet](https://xem.github.io/sheet/) - A 188b/253b spreadsheet app in HTML/JS.
-    * [veu/mini-tetris](https://github.com/veu/mini-tetris) - Tetris in 512b.
+  * [TodoCSS](http://www.mattzeunert.com/TodoCSS/) - TodoMVC in CSS.
+  * [Sheet](https://xem.github.io/sheet/) - A 188b/253b spreadsheet app in HTML/JS.
+  * [veu/mini-tetris](https://github.com/veu/mini-tetris) - Tetris in 512b.

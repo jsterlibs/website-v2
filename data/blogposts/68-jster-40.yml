@@ -4,57 +4,57 @@ short_title: "JSter #40"
 user: bebraw
 slug: monthly-jster-february-2015-part-1
 body: |
-    > Framework a day keeps doctor away
+  > Framework a day keeps doctor away
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://theonion.github.io/comcastifyjs/ }}
+  {{ screenshot: https://theonion.github.io/comcastifyjs/ }}
 
-    * [ComcastifyJS by theonion](https://theonion.github.io/comcastifyjs/)
-    * [Gitlet](http://gitlet.maryrosecook.com/) - Git in JavaScript
-    * [kofrasa/mingo](https://github.com/kofrasa/mingo) - JavaScript implementation of MongoDB query language
-    * [coderaiser/anyorder](https://github.com/coderaiser/anyorder) - Call function with any order of arguments
-    * [Conditioner.js • Frizz Free, Environment-aware, JavaScript Modules](http://conditionerjs.com/)
+  * [ComcastifyJS by theonion](https://theonion.github.io/comcastifyjs/)
+  * [Gitlet](http://gitlet.maryrosecook.com/) - Git in JavaScript
+  * [kofrasa/mingo](https://github.com/kofrasa/mingo) - JavaScript implementation of MongoDB query language
+  * [coderaiser/anyorder](https://github.com/coderaiser/anyorder) - Call function with any order of arguments
+  * [Conditioner.js • Frizz Free, Environment-aware, JavaScript Modules](http://conditionerjs.com/)
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://www.jasimabasheer.com/posts/on-react.html }}
+  {{ screenshot: http://www.jasimabasheer.com/posts/on-react.html }}
 
-    * [React makes the front-end a fully programmable system](http://www.jasimabasheer.com/posts/on-react.html)
-    * [How Google Sees Node.js](http://blog.risingstack.com/how-google-sees-node-js/)
-    * [AngularJS' Internals In Depth](http://www.smashingmagazine.com/2015/01/22/angularjs-internals-in-depth/)
-    * [Netflix Likes React](http://techblog.netflix.com/2015/01/netflix-likes-react.html)
-    * [First Impressions Using React Native](http://jlongster.com/First-Impressions-using-React-Native)
-    * [Arguing for ReactJS](https://medium.com/@joaomilho/arguing-for-reactjs-7b80aafc6493)
-    * [React and Flux Interview](http://ianobermiller.com/blog/2014/09/15/react-and-flux-interview/)
+  * [React makes the front-end a fully programmable system](http://www.jasimabasheer.com/posts/on-react.html)
+  * [How Google Sees Node.js](http://blog.risingstack.com/how-google-sees-node-js/)
+  * [AngularJS' Internals In Depth](http://www.smashingmagazine.com/2015/01/22/angularjs-internals-in-depth/)
+  * [Netflix Likes React](http://techblog.netflix.com/2015/01/netflix-likes-react.html)
+  * [First Impressions Using React Native](http://jlongster.com/First-Impressions-using-React-Native)
+  * [Arguing for ReactJS](https://medium.com/@joaomilho/arguing-for-reactjs-7b80aafc6493)
+  * [React and Flux Interview](http://ianobermiller.com/blog/2014/09/15/react-and-flux-interview/)
 
-    ## Tutorials
+  ## Tutorials
 
-    {{ screenshot: http://javascriptplayground.com/blog/2013/12/es5-getters-setters/ }}
+  {{ screenshot: http://javascriptplayground.com/blog/2013/12/es5-getters-setters/ }}
 
-    * [JavaScript Getters and Setters](http://javascriptplayground.com/blog/2013/12/es5-getters-setters/)
-    * [How to build a real-time dashboard of React.js components on top of D3](http://codelinks.net/reactjs-and-d3-build-real-time-components/)
+  * [JavaScript Getters and Setters](http://javascriptplayground.com/blog/2013/12/es5-getters-setters/)
+  * [How to build a real-time dashboard of React.js components on top of D3](http://codelinks.net/reactjs-and-d3-build-real-time-components/)
 
-    ## Techniques
+  ## Techniques
 
-    * [Strategies for loading scripts in your HTML page](http://boyan.in/strategies-loading-scripts/)
-    * [Reducing stretch in high-FOV games using barrel distortion](http://www.decarpentier.nl/lens-distortion)
-    * [Maintaining JavaScript Code Quality with ESLint](https://www.paypal-engineering.com/2014/12/12/maintaining-javascript-code-quality-with-eslint/)
-    * [Plant a Baobab tree in your flux application](http://christianalfoni.github.io/javascript/2015/02/06/plant-a-baobab-tree-in-your-flux-application.html)
+  * [Strategies for loading scripts in your HTML page](http://boyan.in/strategies-loading-scripts/)
+  * [Reducing stretch in high-FOV games using barrel distortion](http://www.decarpentier.nl/lens-distortion)
+  * [Maintaining JavaScript Code Quality with ESLint](https://www.paypal-engineering.com/2014/12/12/maintaining-javascript-code-quality-with-eslint/)
+  * [Plant a Baobab tree in your flux application](http://christianalfoni.github.io/javascript/2015/02/06/plant-a-baobab-tree-in-your-flux-application.html)
 
-    ## Examples
+  ## Examples
 
-    * [voronianski/flux-comparison](https://github.com/voronianski/flux-comparison)
-    * [jasonfarrell/threejs-normal-examples](https://github.com/jasonfarrell/threejs-normal-examples)
+  * [voronianski/flux-comparison](https://github.com/voronianski/flux-comparison)
+  * [jasonfarrell/threejs-normal-examples](https://github.com/jasonfarrell/threejs-normal-examples)
 
-    ## Tools
+  ## Tools
 
-    * [Node v0.12.0 (Stable)](http://blog.nodejs.org/2015/02/06/node-v0-12-0-stable/)
-    * [Towards isomorphic js packages](http://www.fse.guru/isomorphic-javascript-libraries)
-    * [RaveJS/rave](https://github.com/RaveJS/rave) - Zero-configuration application bootstrap and development
-    * [wizzard0/js2lua](https://github.com/wizzard0/js2lua)
+  * [Node v0.12.0 (Stable)](http://blog.nodejs.org/2015/02/06/node-v0-12-0-stable/)
+  * [Towards isomorphic js packages](http://www.fse.guru/isomorphic-javascript-libraries)
+  * [RaveJS/rave](https://github.com/RaveJS/rave) - Zero-configuration application bootstrap and development
+  * [wizzard0/js2lua](https://github.com/wizzard0/js2lua)
 
-    ## Demos
+  ## Demos
 
-    * [Try Flow online](https://tryflow.org/)
-    * [Daft Punk Console](http://daftpunkonsole.com/)
+  * [Try Flow online](https://tryflow.org/)
+  * [Daft Punk Console](http://daftpunkonsole.com/)

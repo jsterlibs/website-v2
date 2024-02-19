@@ -4,41 +4,41 @@ short_title: "JSter #133"
 user: bebraw
 slug: jster-133
 body: |
-    > `${Array.from(new Array(10), () => NaN).join('')} Batman`
+  > `${Array.from(new Array(10), () => NaN).join('')} Batman`
 
-    **React Finland 2019** is getting closer. We still have some early bird tickets left but not for long. [Read seven reasons to visit the event](https://medium.com/react-finland/seven-reasons-to-visit-2019-d290d3417b67).
+  **React Finland 2019** is getting closer. We still have some early bird tickets left but not for long. [Read seven reasons to visit the event](https://medium.com/react-finland/seven-reasons-to-visit-2019-d290d3417b67).
 
-    ## Libraries
+  ## Libraries
 
-    * [Elevator.js](http://tholman.com/elevator.js/) - It's what you think it is
-    * [superfly/cdn](https://github.com/superfly/cdn) 
-    * [remy/memfetch](https://github.com/remy/memfetch) - Memoizing version of fetch for development
-    * [facebookincubator/fbt](https://github.com/facebookincubator/fbt) - I18n library by Facebook
-    * [ts-option](https://www.npmjs.com/package/ts-option) - Scala like Option type for TypeScript/JavaScript
+  * [Elevator.js](http://tholman.com/elevator.js/) - It's what you think it is
+  * [superfly/cdn](https://github.com/superfly/cdn)
+  * [remy/memfetch](https://github.com/remy/memfetch) - Memoizing version of fetch for development
+  * [facebookincubator/fbt](https://github.com/facebookincubator/fbt) - I18n library by Facebook
+  * [ts-option](https://www.npmjs.com/package/ts-option) - Scala like Option type for TypeScript/JavaScript
 
-    ## Frameworks
+  ## Frameworks
 
-    * [script-8](https://github.com/script-8/script-8.github.io) - A fantasy computer for making, sharing, and playing tiny retro-looking games
-    * [What's New in Angular 7](https://www.telerik.com/blogs/whats-new-in-angular-7) 
+  * [script-8](https://github.com/script-8/script-8.github.io) - A fantasy computer for making, sharing, and playing tiny retro-looking games
+  * [What's New in Angular 7](https://www.telerik.com/blogs/whats-new-in-angular-7)
 
-    ## Tools
+  ## Tools
 
-    * [tsc-watch](https://www.npmjs.com/package/tsc-watch) - Like tsc but with better hooks
-    * [atlassian/yarn-deduplicate](https://github.com/atlassian/yarn-deduplicate) - Deduplication tool for yarn.lock files
-    * [Eleventy](https://www.11ty.io/) - A light static site generator
+  * [tsc-watch](https://www.npmjs.com/package/tsc-watch) - Like tsc but with better hooks
+  * [atlassian/yarn-deduplicate](https://github.com/atlassian/yarn-deduplicate) - Deduplication tool for yarn.lock files
+  * [Eleventy](https://www.11ty.io/) - A light static site generator
 
-    ## Articles
+  ## Articles
 
-    * [Accessible SVG Icons with Inline Sprites](https://www.24a11y.com/2018/accessible-svg-icons-with-inline-sprites/) 
+  * [Accessible SVG Icons with Inline Sprites](https://www.24a11y.com/2018/accessible-svg-icons-with-inline-sprites/)
 
-    ## Techniques
+  ## Techniques
 
-    * [How I started doing load testing on GraphQL without writing a single Query](https://hackernoon.com/how-i-started-doing-load-testing-on-graphql-without-writing-a-single-query-8604ba38b422) 
+  * [How I started doing load testing on GraphQL without writing a single Query](https://hackernoon.com/how-i-started-doing-load-testing-on-graphql-without-writing-a-single-query-8604ba38b422)
 
-    ## Slides
+  ## Slides
 
-    * [Responsive Images](https://siakaramalegos.github.io/responsive-images-slides/#/) 
+  * [Responsive Images](https://siakaramalegos.github.io/responsive-images-slides/#/)
 
-    ## Demos
+  ## Demos
 
-    * [danilw/card-game-GLSL](https://github.com/danilw/card-game-GLSL) 
+  * [danilw/card-game-GLSL](https://github.com/danilw/card-game-GLSL)

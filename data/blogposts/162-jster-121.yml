@@ -4,29 +4,29 @@ short_title: "JSter #121"
 user: bebraw
 slug: jster-121
 body: |
-    > JavaScript, the hipster certified programming language.
+  > JavaScript, the hipster certified programming language.
 
-    It's that time of the month again. npm almost had a disaster in their hands as a worm got through to the registry through a popular package. Enabling [two-factor authentication for npm](https://docs.npmjs.com/getting-started/using-two-factor-authentication) is recommended.
+  It's that time of the month again. npm almost had a disaster in their hands as a worm got through to the registry through a popular package. Enabling [two-factor authentication for npm](https://docs.npmjs.com/getting-started/using-two-factor-authentication) is recommended.
 
-    ## Libraries
+  ## Libraries
 
-    * [TensorFlow.js](https://js.tensorflow.org/) - A JavaScript library for training and deploying ML models in the browser and on Node.js.
-    * [Fluture](https://github.com/fluture-js/Fluture) - FantasyLand compliant (monadic) alternative to Promises.
-    * [Luxon](https://moment.github.io/luxon/) - A powerful, modern, and friendly wrapper for Javascript dates and times.
+  * [TensorFlow.js](https://js.tensorflow.org/) - A JavaScript library for training and deploying ML models in the browser and on Node.js.
+  * [Fluture](https://github.com/fluture-js/Fluture) - FantasyLand compliant (monadic) alternative to Promises.
+  * [Luxon](https://moment.github.io/luxon/) - A powerful, modern, and friendly wrapper for Javascript dates and times.
 
-    ## Articles
+  ## Articles
 
-    * [A Bloatless Web](https://itnext.io/a-bloatless-web-d4f811c7991b) - How to deal with browser bloat? Are there better ways? Spoiler: yes there are.
-    * [Making calls to WebAssembly fast and implementing anyref](https://blog.benj.me/2018/07/04/mozilla-2018-faster-calls-and-anyref/) - WebAssembly/JavaScript interop is getting fast.
+  * [A Bloatless Web](https://itnext.io/a-bloatless-web-d4f811c7991b) - How to deal with browser bloat? Are there better ways? Spoiler: yes there are.
+  * [Making calls to WebAssembly fast and implementing anyref](https://blog.benj.me/2018/07/04/mozilla-2018-faster-calls-and-anyref/) - WebAssembly/JavaScript interop is getting fast.
 
-    ## Utilities
+  ## Utilities
 
-    * [streamich/jsx-plus-plus](https://github.com/streamich/jsx-plus-plus) - What if JSX could be made better?
-    * [lukeed/dynamic-import-ponyfill](https://github.com/lukeed/dynamic-import-ponyfill) - Ponyfill `import()` in the browser.
+  * [streamich/jsx-plus-plus](https://github.com/streamich/jsx-plus-plus) - What if JSX could be made better?
+  * [lukeed/dynamic-import-ponyfill](https://github.com/lukeed/dynamic-import-ponyfill) - Ponyfill `import()` in the browser.
 
-    ## Tools
+  ## Tools
 
-    * [ry/deno](https://github.com/ry/deno) - A secure TypeScript runtime on V8.
-    * [pnpm version 2 is out!](https://medium.com/pnpm/pnpm-version-2-is-out-a015268254d5) - pnpm, a npm client alternative, has reached a new major version. It maintains each package version only once on your computer making it both fast and space conserving.
-    * [Vue Design System](https://vueds.com/) - Design systems for Vue.js.
-    * [JSUI](https://github.com/kitze/JSUI) - A graphical application for visualizing your project and maintaining it.
+  * [ry/deno](https://github.com/ry/deno) - A secure TypeScript runtime on V8.
+  * [pnpm version 2 is out!](https://medium.com/pnpm/pnpm-version-2-is-out-a015268254d5) - pnpm, a npm client alternative, has reached a new major version. It maintains each package version only once on your computer making it both fast and space conserving.
+  * [Vue Design System](https://vueds.com/) - Design systems for Vue.js.
+  * [JSUI](https://github.com/kitze/JSUI) - A graphical application for visualizing your project and maintaining it.

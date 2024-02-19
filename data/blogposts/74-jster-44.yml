@@ -4,61 +4,61 @@ short_title: "JSter #44"
 user: bebraw
 slug: monthly-jster-april-2015-part-1
 body: |
-    > NPM packages are like a box of chocolates. You never know what you are going to get.
+  > NPM packages are like a box of chocolates. You never know what you are going to get.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: http://reapp.io/ }}
+  {{ screenshot: http://reapp.io/ }}
 
-    * [Reapp](http://reapp.io/) - Mobile apps using React
-    * [benfred/venn.js](https://github.com/benfred/venn.js) - Venn and Euler diagrams
-    * [typography.js](https://kyleamathews.github.io/typography.js/) - React typography
-    * [FixedDataTable](https://facebook.github.io/fixed-data-table/) - Nice tables for React by Facebook
-    * [Synaptic](http://synaptic.juancazala.com/) - Neural networks and visualization
-    * [Textures.js](http://riccardoscalco.github.io/textures/) - SVG patterns for data visualization
+  * [Reapp](http://reapp.io/) - Mobile apps using React
+  * [benfred/venn.js](https://github.com/benfred/venn.js) - Venn and Euler diagrams
+  * [typography.js](https://kyleamathews.github.io/typography.js/) - React typography
+  * [FixedDataTable](https://facebook.github.io/fixed-data-table/) - Nice tables for React by Facebook
+  * [Synaptic](http://synaptic.juancazala.com/) - Neural networks and visualization
+  * [Textures.js](http://riccardoscalco.github.io/textures/) - SVG patterns for data visualization
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://developer.telerik.com/featured/the-rise-of-typescript/ }}
+  {{ screenshot: http://developer.telerik.com/featured/the-rise-of-typescript/ }}
 
-    * [The Rise of TypeScript?](http://developer.telerik.com/featured/the-rise-of-typescript/)
-    * [JavaScript World Domination](https://medium.com/@slsoftworks/javascript-world-domination-af9ca2ee5070)
-    * [AngularJS 2.0: Crazy Like A Fox?](http://www.intridea.com/blog/2015/3/24/angularjs-2-0-crazy-like-a-fox)
+  * [The Rise of TypeScript?](http://developer.telerik.com/featured/the-rise-of-typescript/)
+  * [JavaScript World Domination](https://medium.com/@slsoftworks/javascript-world-domination-af9ca2ee5070)
+  * [AngularJS 2.0: Crazy Like A Fox?](http://www.intridea.com/blog/2015/3/24/angularjs-2-0-crazy-like-a-fox)
 
-    ## React Native
+  ## React Native
 
-    * [Diary of Building an iOS App with React Native](http://herman.asia/building-a-flashcard-app-with-react-native)
-    * [React Native For Beginners](http://devdactic.com/react-native-for-beginners/)
+  * [Diary of Building an iOS App with React Native](http://herman.asia/building-a-flashcard-app-with-react-native)
+  * [React Native For Beginners](http://devdactic.com/react-native-for-beginners/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Understanding the CSS box model for inline elements](https://hacks.mozilla.org/2015/03/understanding-inline-box-model/)
-    * [Modularise CSS the React way](https://medium.com/@jviereck/modularise-css-the-react-way-1e817b317b04)
-    * [Ain't that fetch!](http://webreflection.blogspot.fi/2015/03/aint-that-fetch.html)
-    * [Understanding Collisions and Physics with Babylon.js and Oimo.js](http://www.sitepoint.com/understanding-collisions-physics-babylon-js-oimo-js/)
+  * [Understanding the CSS box model for inline elements](https://hacks.mozilla.org/2015/03/understanding-inline-box-model/)
+  * [Modularise CSS the React way](https://medium.com/@jviereck/modularise-css-the-react-way-1e817b317b04)
+  * [Ain't that fetch!](http://webreflection.blogspot.fi/2015/03/aint-that-fetch.html)
+  * [Understanding Collisions and Physics with Babylon.js and Oimo.js](http://www.sitepoint.com/understanding-collisions-physics-babylon-js-oimo-js/)
 
-    ## Techniques
+  ## Techniques
 
-    * [Peering Through the WebRTC Fog with SocketPeer](https://hacks.mozilla.org/2015/04/peering-through-the-webrtc-fog-with-socketpeer/)
-    * [Auto-formatting JavaScript Code Style](https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8)
-    * [Web Reflection: Bringing Custom Elements to IE8](http://webreflection.blogspot.fi/2015/03/bringing-custom-elements-to-ie8.html)
+  * [Peering Through the WebRTC Fog with SocketPeer](https://hacks.mozilla.org/2015/04/peering-through-the-webrtc-fog-with-socketpeer/)
+  * [Auto-formatting JavaScript Code Style](https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8)
+  * [Web Reflection: Bringing Custom Elements to IE8](http://webreflection.blogspot.fi/2015/03/bringing-custom-elements-to-ie8.html)
 
-    ## Games
+  ## Games
 
-    * [JSNES: A JavaScript NES emulator](https://fir.sh/projects/jsnes/)
+  * [JSNES: A JavaScript NES emulator](https://fir.sh/projects/jsnes/)
 
-    ## Tools
+  ## Tools
 
-    * [npm semantic version calculator](http://semver.npmjs.com/)
-    * [paulirish/memory-stats.js](https://github.com/paulirish/memory-stats.js)
-    * [Amok](http://amokjs.com/) - No Reload Live Editing for JavaScript
-    * [Nuclide](http://nuclide.io/) - Atom based IDE for mobile and web development
-    * [Node.js Tools 1.0 for Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/03/25/node-js-tools-1-0-for-visual-studio.aspx)
+  * [npm semantic version calculator](http://semver.npmjs.com/)
+  * [paulirish/memory-stats.js](https://github.com/paulirish/memory-stats.js)
+  * [Amok](http://amokjs.com/) - No Reload Live Editing for JavaScript
+  * [Nuclide](http://nuclide.io/) - Atom based IDE for mobile and web development
+  * [Node.js Tools 1.0 for Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/03/25/node-js-tools-1-0-for-visual-studio.aspx)
 
-    ## Demos
+  ## Demos
 
-    * [3D Viewer Demo](http://lmv.rocks/)
-    * [gpbl/isomorphic500](https://github.com/gpbl/isomorphic500) - Isomorphic Fluxible demo for React guys
-    * [Heart of sort](http://codepen.io/jakealbaugh/full/PwLXXP/)
-    * [Making of js1k Impossible Road](http://www.p01.org/releases/JS1K_2015_impossible_road/)
-    * [In Pieces](http://species-in-pieces.com/) - CSS can do that?
+  * [3D Viewer Demo](http://lmv.rocks/)
+  * [gpbl/isomorphic500](https://github.com/gpbl/isomorphic500) - Isomorphic Fluxible demo for React guys
+  * [Heart of sort](http://codepen.io/jakealbaugh/full/PwLXXP/)
+  * [Making of js1k Impossible Road](http://www.p01.org/releases/JS1K_2015_impossible_road/)
+  * [In Pieces](http://species-in-pieces.com/) - CSS can do that?

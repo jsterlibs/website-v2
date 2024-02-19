@@ -4,62 +4,62 @@ short_title: "JSter #27"
 user: bebraw
 slug: monthly-jster-july-2014-part-2
 body: |
-    > All JS and no fun makes Jack a dull boy
+  > All JS and no fun makes Jack a dull boy
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://afarkas.github.io/webshim/demos/ }}
+  {{ screenshot: https://afarkas.github.io/webshim/demos/ }}
 
-    * [Webshim](https://afarkas.github.io/webshim/demos/) - A collection of shims
-    * [React Components by Khan Academy](https://khan.github.io/react-components/)
-    * [Intense Images](http://tholman.com/intense-images/) - View images fully in full screen
-    * [simov/purest](https://github.com/simov/purest) - REST API client
-    * [RippleButtons.js](https://holloway.github.io/ripple/)
-    * [tshr/navi](https://github.com/tshr/navi) - Simple object listener / notification system
-    * [emojify.js](https://hassankhan.github.io/emojify.js/) - For all you emos out there
-    * [typesjs](https://github.com/ChrisAntaki/typesjs) - Easy type checking
-    * [React v0.11.1](https://facebook.github.io/react/blog/2014/07/25/react-v0.11.1.html)
-    * [please.js](http://www.checkman.io/please/) - Random pleasing colors
-    * [Five.js by jackdcrawford](http://jackdcrawford.github.io/five/) - High five!
+  * [Webshim](https://afarkas.github.io/webshim/demos/) - A collection of shims
+  * [React Components by Khan Academy](https://khan.github.io/react-components/)
+  * [Intense Images](http://tholman.com/intense-images/) - View images fully in full screen
+  * [simov/purest](https://github.com/simov/purest) - REST API client
+  * [RippleButtons.js](https://holloway.github.io/ripple/)
+  * [tshr/navi](https://github.com/tshr/navi) - Simple object listener / notification system
+  * [emojify.js](https://hassankhan.github.io/emojify.js/) - For all you emos out there
+  * [typesjs](https://github.com/ChrisAntaki/typesjs) - Easy type checking
+  * [React v0.11.1](https://facebook.github.io/react/blog/2014/07/25/react-v0.11.1.html)
+  * [please.js](http://www.checkman.io/please/) - Random pleasing colors
+  * [Five.js by jackdcrawford](http://jackdcrawford.github.io/five/) - High five!
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: https://www.joyent.com/blog/risingstack-writing-testable-apis-the-basics }}
+  {{ screenshot: https://www.joyent.com/blog/risingstack-writing-testable-apis-the-basics }}
 
-    * [Writing Testable HTTP APIs Using Node.js](https://www.joyent.com/blog/risingstack-writing-testable-apis-the-basics)
-    * [Create high-performance mobile UIs with Famo.us](http://www.ibm.com/developerworks/library/wa-famous/index.html)
-    * [ES6 interview with David Herman](http://es6rocks.com/2014/07/es6-interview-with-david-herman/)
-    * [JavaScript Debugging for Beginners](http://juliepagano.com/blog/2014/05/18/javascript-debugging-for-beginners/)
-    * [10 Common JavaScript Coding Errors](http://www.toptal.com/javascript/10-most-common-javascript-mistakes#.)
-    * [42 Top Examples of JavaScript](http://www.creativebloq.com/web-design/examples-of-javascript-1233964)
-    * [The Future is JavaScript, Only Less Terrible](http://zombiecodekill.com/2014/07/12/the-future-is-javascript-only-less-terrible/)
+  * [Writing Testable HTTP APIs Using Node.js](https://www.joyent.com/blog/risingstack-writing-testable-apis-the-basics)
+  * [Create high-performance mobile UIs with Famo.us](http://www.ibm.com/developerworks/library/wa-famous/index.html)
+  * [ES6 interview with David Herman](http://es6rocks.com/2014/07/es6-interview-with-david-herman/)
+  * [JavaScript Debugging for Beginners](http://juliepagano.com/blog/2014/05/18/javascript-debugging-for-beginners/)
+  * [10 Common JavaScript Coding Errors](http://www.toptal.com/javascript/10-most-common-javascript-mistakes#.)
+  * [42 Top Examples of JavaScript](http://www.creativebloq.com/web-design/examples-of-javascript-1233964)
+  * [The Future is JavaScript, Only Less Terrible](http://zombiecodekill.com/2014/07/12/the-future-is-javascript-only-less-terrible/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [HTML5 Chat with AngularJs, Spike Engine and Twitter Bootstrap](http://www.codeproject.com/Articles/788325/HTML-Chat-with-AngularJs-Spike-Engine-and-Twitter)
-    * [JavaScript Template Engine in Just 20 Lines](http://krasimirtsonev.com/blog/article/Javascript-template-engine-in-just-20-line)
+  * [HTML5 Chat with AngularJs, Spike Engine and Twitter Bootstrap](http://www.codeproject.com/Articles/788325/HTML-Chat-with-AngularJs-Spike-Engine-and-Twitter)
+  * [JavaScript Template Engine in Just 20 Lines](http://krasimirtsonev.com/blog/article/Javascript-template-engine-in-just-20-line)
 
-    ## Guides
+  ## Guides
 
-    {{ screenshot: http://journal.gentlenode.com/node-2-node-js-cheatsheet/ }}
+  {{ screenshot: http://journal.gentlenode.com/node-2-node-js-cheatsheet/ }}
 
-    * [Node Cheatsheet](http://journal.gentlenode.com/node-2-node-js-cheatsheet/)
-    * [Discover Meteor](https://www.discovermeteor.com/)
-    * [The Guide to Scrolling Animation Libraries](http://ihatetomatoes.net/guide-scrolling-animation-libraries/)
-    * [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - A curated list of delightful Node.js packages and resources
+  * [Node Cheatsheet](http://journal.gentlenode.com/node-2-node-js-cheatsheet/)
+  * [Discover Meteor](https://www.discovermeteor.com/)
+  * [The Guide to Scrolling Animation Libraries](http://ihatetomatoes.net/guide-scrolling-animation-libraries/)
+  * [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - A curated list of delightful Node.js packages and resources
 
-    ## Techniques
+  ## Techniques
 
-    {{ screenshot: http://journal.crushlovely.com/post/91371788978/7-patterns-to-refactor-javascript-applications-policy }}
+  {{ screenshot: http://journal.crushlovely.com/post/91371788978/7-patterns-to-refactor-javascript-applications-policy }}
 
-    * [7 Patterns to Refactor JavaScript Applications](http://journal.crushlovely.com/post/91371788978/7-patterns-to-refactor-javascript-applications-policy)
-    * [Adding captions and subtitles to HTML5 video](https://hacks.mozilla.org/2014/07/adding-captions-and-subtitles-to-html5-video/)
-    * [Content Sites Using Node.js - Slides](http://slides.com/bradoyler/nodejs-content-sites)
+  * [7 Patterns to Refactor JavaScript Applications](http://journal.crushlovely.com/post/91371788978/7-patterns-to-refactor-javascript-applications-policy)
+  * [Adding captions and subtitles to HTML5 video](https://hacks.mozilla.org/2014/07/adding-captions-and-subtitles-to-html5-video/)
+  * [Content Sites Using Node.js - Slides](http://slides.com/bradoyler/nodejs-content-sites)
 
-    ## Games
+  ## Games
 
-    * [JS Robot](http://ahineya.github.io/) - JavaScript challenges
+  * [JS Robot](http://ahineya.github.io/) - JavaScript challenges
 
-    ## Tools
+  ## Tools
 
-    * [SlexAxton/css-colorguard](https://github.com/SlexAxton/css-colorguard)
+  * [SlexAxton/css-colorguard](https://github.com/SlexAxton/css-colorguard)

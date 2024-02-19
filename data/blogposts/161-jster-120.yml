@@ -4,44 +4,44 @@ short_title: "JSter #120"
 user: bebraw
 slug: jster-120
 body: |
-    > The time has come to write some JavaScript
+  > The time has come to write some JavaScript
 
-    It has been another busy two weeks. [We announced GraphQL Finland 2018 workshops](https://medium.com/graphql-finland/workshops-at-graphql-finland-23f6a72312b2) recently and we have a steady set of speakers. The conference is shaping up nicely.
+  It has been another busy two weeks. [We announced GraphQL Finland 2018 workshops](https://medium.com/graphql-finland/workshops-at-graphql-finland-23f6a72312b2) recently and we have a steady set of speakers. The conference is shaping up nicely.
 
-    ## Libraries
+  ## Libraries
 
-    * [callbag](https://github.com/callbag/callbag) - A standard for JS callbacks that enables lightweight observables and iterables.
-    * [fastpriorityqueue](https://www.npmjs.com/package/fastpriorityqueue) - A fast, heap-based priority queue in JavaScript.
-    * [Uppy File Uploader](https://uppy.io/)
-    * [Chevrotain](https://sap.github.io/chevrotain/docs/) - Parser Building Toolkit for JavaScript.
-    * [vincentriemer/assign.macro](https://github.com/vincentriemer/assign.macro) - A babel-macro to transpile `Object.assign`-style expressions to direct assignments for maximum performance.
-    * [ml5js](https://ml5js.org/) - Friendly Machine Learning for the Web.
+  * [callbag](https://github.com/callbag/callbag) - A standard for JS callbacks that enables lightweight observables and iterables.
+  * [fastpriorityqueue](https://www.npmjs.com/package/fastpriorityqueue) - A fast, heap-based priority queue in JavaScript.
+  * [Uppy File Uploader](https://uppy.io/)
+  * [Chevrotain](https://sap.github.io/chevrotain/docs/) - Parser Building Toolkit for JavaScript.
+  * [vincentriemer/assign.macro](https://github.com/vincentriemer/assign.macro) - A babel-macro to transpile `Object.assign`-style expressions to direct assignments for maximum performance.
+  * [ml5js](https://ml5js.org/) - Friendly Machine Learning for the Web.
 
-    ## Articles
+  ## Articles
 
-    * [REST vs. GraphQL: A Critical Review](https://blog.goodapi.co/rest-vs-graphql-a-critical-review-5f77392658e7)
-    * [The Node.js Ecosystem Is Chaotic and Insecure](https://medium.com/@caspervonb/the-internet-is-at-the-mercy-of-a-handful-of-people-73fac4bc5068)
-    * [Why you should use GraphQL instead of a JSON DSL](https://blog.hasura.io/why-not-use-a-json-dsl-instead-of-graphql-d29f20cc97d2)
+  * [REST vs. GraphQL: A Critical Review](https://blog.goodapi.co/rest-vs-graphql-a-critical-review-5f77392658e7)
+  * [The Node.js Ecosystem Is Chaotic and Insecure](https://medium.com/@caspervonb/the-internet-is-at-the-mercy-of-a-handful-of-people-73fac4bc5068)
+  * [Why you should use GraphQL instead of a JSON DSL](https://blog.hasura.io/why-not-use-a-json-dsl-instead-of-graphql-d29f20cc97d2)
 
-    ## Guides
+  ## Guides
 
-    * [Inclusive Components](https://inclusive-components.design/)
+  * [Inclusive Components](https://inclusive-components.design/)
 
-    ## Techniques
+  ## Techniques
 
-    * [Node.js can HTTP/2 push!](https://medium.com/the-node-js-collection/node-js-can-http-2-push-b491894e1bb1)
-    * [Backend-in-the-frontend: a pattern for cleaner code](https://hackernoon.com/frontend-in-the-backend-a-pattern-for-cleaner-code-b497c92d0b49)
-    * [How to escape async/await hell](https://medium.freecodecamp.org/avoiding-the-async-await-hell-c77a0fb71c4c)
+  * [Node.js can HTTP/2 push!](https://medium.com/the-node-js-collection/node-js-can-http-2-push-b491894e1bb1)
+  * [Backend-in-the-frontend: a pattern for cleaner code](https://hackernoon.com/frontend-in-the-backend-a-pattern-for-cleaner-code-b497c92d0b49)
+  * [How to escape async/await hell](https://medium.freecodecamp.org/avoiding-the-async-await-hell-c77a0fb71c4c)
 
-    ## Interviews
+  ## Interviews
 
-    * [Progressive Web Apps - The Why and How - Interview with Maciej Caputa](https://survivejs.com/blog/pwa-interview/)
-    * [Proppy - Functional props composition for components - Interview with Fahad Ibnay Heylaal](https://survivejs.com/blog/proppy-interview/)
+  * [Progressive Web Apps - The Why and How - Interview with Maciej Caputa](https://survivejs.com/blog/pwa-interview/)
+  * [Proppy - Functional props composition for components - Interview with Fahad Ibnay Heylaal](https://survivejs.com/blog/proppy-interview/)
 
-    ## Tools
+  ## Tools
 
-    * [accessibilityjs](https://github.com/github/accessibilityjs) - Client side accessibility error scanner.
+  * [accessibilityjs](https://github.com/github/accessibilityjs) - Client side accessibility error scanner.
 
-    ## Demos
+  ## Demos
 
-    * [30 Seconds of CSS](https://atomiks.github.io/30-seconds-of-css/)
+  * [30 Seconds of CSS](https://atomiks.github.io/30-seconds-of-css/)

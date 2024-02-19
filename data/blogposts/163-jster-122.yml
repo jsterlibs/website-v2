@@ -4,55 +4,55 @@ short_title: "JSter #122"
 user: bebraw
 slug: jster-122
 body: |
-    > There's always room for one more JavaScript library
+  > There's always room for one more JavaScript library
 
-    [GraphQL Finland (October, Helsinki)](https://graphql-finland.fi/) has reached the last week for early bird tickets. It should be great fun. :)
+  [GraphQL Finland (October, Helsinki)](https://graphql-finland.fi/) has reached the last week for early bird tickets. It should be great fun. :)
 
-    ## Libraries
+  ## Libraries
 
-    * [monet.js](https://monet.github.io/monet.js/) - Monadic types library for JavaScript
-    * [tehnokv/picojs](https://github.com/tehnokv/picojs) - A face detection library in 200 lines of JavaScript
-    * [iamkun/dayjs](https://github.com/iamkun/dayjs) - A light alternative to moment.js
-    * [mdx](https://github.com/mdx-js/mdx) - JSX in Markdown for ambitious projects
+  * [monet.js](https://monet.github.io/monet.js/) - Monadic types library for JavaScript
+  * [tehnokv/picojs](https://github.com/tehnokv/picojs) - A face detection library in 200 lines of JavaScript
+  * [iamkun/dayjs](https://github.com/iamkun/dayjs) - A light alternative to moment.js
+  * [mdx](https://github.com/mdx-js/mdx) - JSX in Markdown for ambitious projects
 
-    ## Articles
+  ## Articles
 
-    * [React Native at Airbnb](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)
-    * [Here are three upcoming changes to JavaScript that you’ll love](https://medium.freecodecamp.org/here-are-three-upcoming-changes-to-javascript-that-youll-love-387bce1bfb0b)
+  * [React Native at Airbnb](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)
+  * [Here are three upcoming changes to JavaScript that you’ll love](https://medium.freecodecamp.org/here-are-three-upcoming-changes-to-javascript-that-youll-love-387bce1bfb0b)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Lighter than Lightweight](https://engineering.linkedin.com/blog/2018/03/how-we-built-the-same-app-twice-with-preact-and-glimmerjs) - How LinkedIn Built the Same App Twice with Preact and Glimmer.js
+  * [Lighter than Lightweight](https://engineering.linkedin.com/blog/2018/03/how-we-built-the-same-app-twice-with-preact-and-glimmerjs) - How LinkedIn Built the Same App Twice with Preact and Glimmer.js
 
-    ## Guides
+  ## Guides
 
-    * [How JavaScript works](https://blog.sessionstack.com/how-javascript-works-the-rendering-engine-and-tips-to-optimize-its-performance-7b95553baeda) - The rendering engine and tips to optimize its performance
-    * [Node.js event loop workflow and lifecycle in low level](http://voidcanvas.com/nodejs-event-loop/)
-    * [JavaScript essentials: why you should know how the engine works](https://medium.freecodecamp.org/javascript-essentials-why-you-should-know-how-the-engine-works-c2cc0d321553)
+  * [How JavaScript works](https://blog.sessionstack.com/how-javascript-works-the-rendering-engine-and-tips-to-optimize-its-performance-7b95553baeda) - The rendering engine and tips to optimize its performance
+  * [Node.js event loop workflow and lifecycle in low level](http://voidcanvas.com/nodejs-event-loop/)
+  * [JavaScript essentials: why you should know how the engine works](https://medium.freecodecamp.org/javascript-essentials-why-you-should-know-how-the-engine-works-c2cc0d321553)
 
-    ## Techniques
+  ## Techniques
 
-    * [Parallax scrolling with CSS variables](https://basicscroll.electerious.com/)
-    * [Slaying a UI Antipattern in Fantasyland](https://medium.com/javascript-inside/slaying-a-ui-antipattern-in-fantasyland-907cbc322d2a)
-    * [Threads in Node 10.5.0: a practical intro](https://medium.com/dailyjs/threads-in-node-10-5-0-a-practical-intro-3b85a0a3c953)
+  * [Parallax scrolling with CSS variables](https://basicscroll.electerious.com/)
+  * [Slaying a UI Antipattern in Fantasyland](https://medium.com/javascript-inside/slaying-a-ui-antipattern-in-fantasyland-907cbc322d2a)
+  * [Threads in Node 10.5.0: a practical intro](https://medium.com/dailyjs/threads-in-node-10-5-0-a-practical-intro-3b85a0a3c953)
 
-    ## Slides
+  ## Slides
 
-    * [Monoliths always pay their debts](http://delved.org/monoliths-always-pay-their-debts/)
+  * [Monoliths always pay their debts](http://delved.org/monoliths-always-pay-their-debts/)
 
-    ## Interviews
+  ## Interviews
 
-    * [Uppy](https://survivejs.com/blog/uppy-interview/) - Painless Uploads for JavaScript - Interview with Artur Paikin
+  * [Uppy](https://survivejs.com/blog/uppy-interview/) - Painless Uploads for JavaScript - Interview with Artur Paikin
 
-    ## Tools
+  ## Tools
 
-    * [Does it mutate?](https://doesitmutate.xyz/)
-    * [Electron 2.0](https://electronjs.org/releases#2.0.0)
+  * [Does it mutate?](https://doesitmutate.xyz/)
+  * [Electron 2.0](https://electronjs.org/releases#2.0.0)
 
-    ## Demos
+  ## Demos
 
-    * [Oat the Goat](http://oatthegoat.co.nz/) - An interactive story
-    * [Elements of Physics](https://elements-of-physics.surge.sh/)
-    * [8-Bit Emulators](https://floooh.github.io/tiny8bit/)
-    * [TRACK](https://demos.littleworkshop.fr/track) - WebGL coolness
-    * [rhysd/vim.wasm](https://github.com/rhysd/vim.wasm) - Vim ported to WebAssembly
+  * [Oat the Goat](http://oatthegoat.co.nz/) - An interactive story
+  * [Elements of Physics](https://elements-of-physics.surge.sh/)
+  * [8-Bit Emulators](https://floooh.github.io/tiny8bit/)
+  * [TRACK](https://demos.littleworkshop.fr/track) - WebGL coolness
+  * [rhysd/vim.wasm](https://github.com/rhysd/vim.wasm) - Vim ported to WebAssembly

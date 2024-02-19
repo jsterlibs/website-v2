@@ -4,84 +4,84 @@ short_title: "JSter #75"
 user: bebraw
 slug: monthly-jster-july-2016-part-2
 body: |
-    > To JavaScript or not.
+  > To JavaScript or not.
 
-    I managed to reach 1.0 with my table component, [Reactabular](http://reactabular.js.org/). The development will go on, but from now I can focus more on other things like writing.
+  I managed to reach 1.0 with my table component, [Reactabular](http://reactabular.js.org/). The development will go on, but from now I can focus more on other things like writing.
 
-    You might notice there are more links than usual. There is simply more content to [tweet](https://twitter.com/jsterlibs) these days. I might have to go to a weekly schedule with this mailing list but we'll see.
+  You might notice there are more links than usual. There is simply more content to [tweet](https://twitter.com/jsterlibs) these days. I might have to go to a weekly schedule with this mailing list but we'll see.
 
-    ## UI
+  ## UI
 
-    {{ screenshot: https://zingchart.github.io/zingtouch/ }}
+  {{ screenshot: https://zingchart.github.io/zingtouch/ }}
 
-    * [ZingTouch](https://zingchart.github.io/zingtouch/) - A JavaScript gesture detection library for the modern web
-    * [Monkberry](http://monkberry.js.org/) - A JavaScript library for building web user interfaces
-    * [Bricks.js](http://callmecavs.com/bricks.js/) - A blazing fast masonry layout generator for fixed width elements
-    * [Fela](http://fela.js.org/) - Fela is a fast and modular library to handle styling in JavaScript.
-    * [anime.js](http://anime-js.com/) - A flexible yet lightweight JavaScript animation library. It works with CSS, Individual Transforms, SVG, DOM attributes and JS Objects.
+  * [ZingTouch](https://zingchart.github.io/zingtouch/) - A JavaScript gesture detection library for the modern web
+  * [Monkberry](http://monkberry.js.org/) - A JavaScript library for building web user interfaces
+  * [Bricks.js](http://callmecavs.com/bricks.js/) - A blazing fast masonry layout generator for fixed width elements
+  * [Fela](http://fela.js.org/) - Fela is a fast and modular library to handle styling in JavaScript.
+  * [anime.js](http://anime-js.com/) - A flexible yet lightweight JavaScript animation library. It works with CSS, Individual Transforms, SVG, DOM attributes and JS Objects.
 
-    ## i18n
+  ## i18n
 
-    * [Jed](https://slexaxton.github.io/Jed/) - Gettext Style i18n for Modern JavaScript Apps
+  * [Jed](https://slexaxton.github.io/Jed/) - Gettext Style i18n for Modern JavaScript Apps
 
-    ## Data Structures
+  ## Data Structures
 
-    * [most.js 1.0](https://github.com/cujojs/most) - Ultra-high performance reactive programming
-    * [iterall](https://github.com/leebyron/iterall) - Minimal zero-dependency utilities for using Iterables in all JavaScript environments.
-    * [seamless-immutable](https://github.com/rtfeldman/seamless-immutable) - Immutable data structures for JavaScript which are backwards-compatible with normal JS Arrays and Objects.
-    * [Episode 7](https://github.com/mars/episode-7) - Sequence async side-effects with ES6 generators and easily test them.
+  * [most.js 1.0](https://github.com/cujojs/most) - Ultra-high performance reactive programming
+  * [iterall](https://github.com/leebyron/iterall) - Minimal zero-dependency utilities for using Iterables in all JavaScript environments.
+  * [seamless-immutable](https://github.com/rtfeldman/seamless-immutable) - Immutable data structures for JavaScript which are backwards-compatible with normal JS Arrays and Objects.
+  * [Episode 7](https://github.com/mars/episode-7) - Sequence async side-effects with ES6 generators and easily test them.
 
-    ## Frameworks
+  ## Frameworks
 
-    * [Aurelia 1.0](http://blog.durandal.io/2016/07/27/aurelia-1-0-is-here/)
-    * [Two Phases of Angular 2 Applications](https://vsavkin.com/two-phases-of-angular-2-applications-fda2517604be)
-    * [ReactJS vs AngularJS](http://freezeprosoftware.com/news/reactjs-vs-angularjs.aspx)
+  * [Aurelia 1.0](http://blog.durandal.io/2016/07/27/aurelia-1-0-is-here/)
+  * [Two Phases of Angular 2 Applications](https://vsavkin.com/two-phases-of-angular-2-applications-fda2517604be)
+  * [ReactJS vs AngularJS](http://freezeprosoftware.com/news/reactjs-vs-angularjs.aspx)
 
-    ## Articles
+  ## Articles
 
-    * [CSS at BBC Sport (Part 1)](https://medium.com/@shaunbent/css-at-bbc-sport-part-1-bab546184e66)
-    * [The Languages Which Almost Were CSS](https://eager.io/blog/the-languages-which-almost-were-css/)
+  * [CSS at BBC Sport (Part 1)](https://medium.com/@shaunbent/css-at-bbc-sport-part-1-bab546184e66)
+  * [The Languages Which Almost Were CSS](https://eager.io/blog/the-languages-which-almost-were-css/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Three.js Tutorial for Beginners](https://dinosaurscode.xyz/tutorials/2016/07/15/three-js-tutorial-for-beginners/)
-    * [Stupidly smart components in Choo](http://blog.krawaller.se/posts/stupidly-smart-components-in-choo/)
-    * [How to Build and Publish ES6 Modules Today, with Babel and Rollup](https://medium.com/@tarkus/how-to-build-and-publish-es6-modules-today-with-babel-and-rollup-4426d9c7ca71)
-    * [Building Angular 2 applications with Immutable.js and Redux](http://houssein.me/redux/immutablejs/angular2/2016/07/04/angular2-with-immutablejs-and-redux.html)
+  * [Three.js Tutorial for Beginners](https://dinosaurscode.xyz/tutorials/2016/07/15/three-js-tutorial-for-beginners/)
+  * [Stupidly smart components in Choo](http://blog.krawaller.se/posts/stupidly-smart-components-in-choo/)
+  * [How to Build and Publish ES6 Modules Today, with Babel and Rollup](https://medium.com/@tarkus/how-to-build-and-publish-es6-modules-today-with-babel-and-rollup-4426d9c7ca71)
+  * [Building Angular 2 applications with Immutable.js and Redux](http://houssein.me/redux/immutablejs/angular2/2016/07/04/angular2-with-immutablejs-and-redux.html)
 
-    ## Guides
+  ## Guides
 
-    * [JavaScript Systems Music - Learning Web Audio by Recreating The Works of Steve Reich and Brian Eno](http://teropa.info/blog/2016/07/28/javascript-systems-music.html)
+  * [JavaScript Systems Music - Learning Web Audio by Recreating The Works of Steve Reich and Brian Eno](http://teropa.info/blog/2016/07/28/javascript-systems-music.html)
 
-    ## Techniques
+  ## Techniques
 
-    * [Write Modern Asynchronous Javascript using Promises, Generators, and Coroutines](https://medium.freecodecamp.com/write-modern-asynchronous-javascript-using-promises-generators-and-coroutines-5fa9fe62cf74)
-    * [Brief Introduction to JavaScript Audio API](https://robots.thoughtbot.com/javascript-audio-api)
-    * [JavaScript oneliners](https://github.com/1-liners/1-liners)
-    * [Web Font preloading for HTML5 games](https://hacks.mozilla.org/2016/06/webfont-preloading-for-html5-games/)
+  * [Write Modern Asynchronous Javascript using Promises, Generators, and Coroutines](https://medium.freecodecamp.com/write-modern-asynchronous-javascript-using-promises-generators-and-coroutines-5fa9fe62cf74)
+  * [Brief Introduction to JavaScript Audio API](https://robots.thoughtbot.com/javascript-audio-api)
+  * [JavaScript oneliners](https://github.com/1-liners/1-liners)
+  * [Web Font preloading for HTML5 games](https://hacks.mozilla.org/2016/06/webfont-preloading-for-html5-games/)
 
-    ## Interviews
+  ## Interviews
 
-    * [Mostly Adequate Guide to Functional Programming - Interview with Brian Lonsdorf](http://survivejs.com/blog/mostly-interview/)
-    * [tcomb - Type checking and DDD for JavaScript - Interview with Giulio Canti](http://survivejs.com/blog/tcomb-interview/)
-    * [redux-saga - Saga Middleware for Redux to Handle Side Effects - Interview with Yassine Elouafi](http://survivejs.com/blog/redux-saga-interview/)
+  * [Mostly Adequate Guide to Functional Programming - Interview with Brian Lonsdorf](http://survivejs.com/blog/mostly-interview/)
+  * [tcomb - Type checking and DDD for JavaScript - Interview with Giulio Canti](http://survivejs.com/blog/tcomb-interview/)
+  * [redux-saga - Saga Middleware for Redux to Handle Side Effects - Interview with Yassine Elouafi](http://survivejs.com/blog/redux-saga-interview/)
 
-    ## Slides
+  ## Slides
 
-    * [Slides - D3.js v4 - What's new](https://iros.github.io/d3-v4-whats-new/)
+  * [Slides - D3.js v4 - What's new](https://iros.github.io/d3-v4-whats-new/)
 
-    ## Games
+  ## Games
 
-    * [WhitestormJS 1.0](http://whitestormjs.xyz/) - Easier Three.js.
+  * [WhitestormJS 1.0](http://whitestormjs.xyz/) - Easier Three.js.
 
-    ## Tools
+  ## Tools
 
-    * [HyperTerm](https://hyperterm.org/) - Utterly tweakable terminal written in JavaScript
-    * [Pundle](https://github.com/motion/pundle) - Peaceful Bundles (pundles!) for everyone
-    * [ChromeLens](http://chromelens.xyz/) - Chrome DevTools extension to develop for the visually impaired
-    * [Mocha 3.0.0](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md) - The popular test framework has received nice updates
-    * [Formula](http://jxnblk.com/formula/) - CSS calculator for bulletproof form and button styles that always line up
+  * [HyperTerm](https://hyperterm.org/) - Utterly tweakable terminal written in JavaScript
+  * [Pundle](https://github.com/motion/pundle) - Peaceful Bundles (pundles!) for everyone
+  * [ChromeLens](http://chromelens.xyz/) - Chrome DevTools extension to develop for the visually impaired
+  * [Mocha 3.0.0](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md) - The popular test framework has received nice updates
+  * [Formula](http://jxnblk.com/formula/) - CSS calculator for bulletproof form and button styles that always line up
 
-    ## Demos
+  ## Demos
 
-    * [The Simpsons in CSS](https://pattle.github.io/simpsons-in-css/)
+  * [The Simpsons in CSS](https://pattle.github.io/simpsons-in-css/)

@@ -108,15 +108,15 @@ body: |
   main();
 
   function main() {
-    program.version(require('../package.json').version).
-      option('-i --input <input>', 'input directory').
-      option('-o --output <output>', 'output directory').
-      parse(process.argv);
+  program.version(require('../package.json').version).
+    option('-i --input <input>', 'input directory').
+    option('-o --output <output>', 'output directory').
+    parse(process.argv);
 
-    if(!program.input) return console.error('Missing input');
-    if(!program.output) return console.error('Missing output');
+  if(!program.input) return console.error('Missing input');
+  if(!program.output) return console.error('Missing output');
 
-    yayassg(program.input, program.output);
+  yayassg(program.input, program.output);
   }
   ```
 
@@ -124,7 +124,7 @@ body: |
 
   ```js
   module.exports = function(input, output) {
-    console.log(input, output);
+  console.log(input, output);
   };
   ```
 
@@ -145,14 +145,14 @@ body: |
   var glob = require('glob');
 
   module.exports = function(input, output) {
-    async.map([
-      path.join(input, '**/*.md'),
-      path.join(input, '_layouts', '*.hbs')
-    ], glob, function(err, paths) {
-      if(err) return console.error(err);
+  async.map([
+    path.join(input, '**/*.md'),
+    path.join(input, '_layouts', '*.hbs')
+  ], glob, function(err, paths) {
+    if(err) return console.error(err);
 
-      main(paths[0], paths[1], output);
-    });
+    main(paths[0], paths[1], output);
+  });
   };
 
   function main(inputs, layouts, output) {/* TODO*/}
@@ -174,18 +174,18 @@ body: |
   // ...
 
   function main(inputs, layouts, output) {
-    async.parallel([
-      readAndProcess.bind(null, inputs, saltInputs.bind(null, output)),
-      readAndProcess.bind(null, layouts, compileLayouts)
-    ], function(err, res) {
-      if(err) return console.error(err);
+  async.parallel([
+    readAndProcess.bind(null, inputs, saltInputs.bind(null, output)),
+    readAndProcess.bind(null, layouts, compileLayouts)
+  ], function(err, res) {
+    if(err) return console.error(err);
 
-      fs.mkdir(output, transform.bind(null, res[0], res[1]));
-    });
+    fs.mkdir(output, transform.bind(null, res[0], res[1]));
+  });
   }
 
   function readAndProcess(input, process, cb) {
-    async.waterfall([readFiles.bind(null, input), process], cb);
+  async.waterfall([readFiles.bind(null, input), process], cb);
   }
   ```
 
@@ -205,16 +205,16 @@ body: |
 
   ```js
   function readFiles(inputs, cb) {
-    async.map(inputs, function(p, cb) {
-      fs.readFile(p, function(err, d) {
-        if(err) return cb(err);
+  async.map(inputs, function(p, cb) {
+    fs.readFile(p, function(err, d) {
+    if(err) return cb(err);
 
-        cb(null, {
-          data: d.toString(),
-          path: p
-        });
-      });
-    }, cb);
+    cb(null, {
+      data: d.toString(),
+      path: p
+    });
+    });
+  }, cb);
   }
   ```
 
@@ -230,19 +230,19 @@ body: |
   // ...
 
   function saltInputs(output, inputs, cb) {
-    async.map(inputs, function(input, cb) {
-      var parts = input.data.split('---\n');
+  async.map(inputs, function(input, cb) {
+    var parts = input.data.split('---\n');
 
-      cb(null, {
-        front: yaml(parts[0]),
-        content: parts[1],
-        output: path.join(output, getName(input.path)) + '.html'
-      });
-    }, cb);
+    cb(null, {
+    front: yaml(parts[0]),
+    content: parts[1],
+    output: path.join(output, getName(input.path)) + '.html'
+    });
+  }, cb);
   }
 
   function getName(v) {
-    return path.basename(v, path.extname(v));
+  return path.basename(v, path.extname(v));
   }
   ```
 
@@ -260,13 +260,13 @@ body: |
   // ...
 
   function compileLayouts(layouts, cb) {
-    var ret = {};
+  var ret = {};
 
-    layouts.forEach(function(layout) {
-      ret[getName(layout.path)] = hbs(layout.data);
-    });
+  layouts.forEach(function(layout) {
+    ret[getName(layout.path)] = hbs(layout.data);
+  });
 
-    cb(null, ret);
+  cb(null, ret);
   }
   ```
 
@@ -278,11 +278,11 @@ body: |
 
   ```js
   function transform(inputs, layouts) {
-    inputs.forEach(function(v) {
-      fs.writeFile(v.output, layouts[v.front.layout]({
-        content: v.content
-      }));
-    });
+  inputs.forEach(function(v) {
+    fs.writeFile(v.output, layouts[v.front.layout]({
+    content: v.content
+    }));
+  });
   }
   ```
 

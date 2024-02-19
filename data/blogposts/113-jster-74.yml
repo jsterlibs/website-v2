@@ -4,43 +4,43 @@ short_title: "JSter #74"
 user: bebraw
 slug: monthly-jster-july-2016-part-1
 body: |
-    > One language to rule them all. JavaScript.
+  > One language to rule them all. JavaScript.
 
-    Another two weeks have gone. I'm closer to the final release of my [table library for React](reactabular.js.org). I've also been working on [webpack 2 documentation](https://medium.com/webpack/webpack-2-docs-team-wants-you-20876c59e964) and the effort is well under way.
+  Another two weeks have gone. I'm closer to the final release of my [table library for React](reactabular.js.org). I've also been working on [webpack 2 documentation](https://medium.com/webpack/webpack-2-docs-team-wants-you-20876c59e964) and the effort is well under way.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/flitbit/diff }}
+  {{ screenshot: https://github.com/flitbit/diff }}
 
-    * [flitbit/diff](https://github.com/flitbit/diff) - Utility for calculating deep difference, capturing changes, and applying changes across objects
-    * [planttheidea/crio](https://github.com/planttheidea/crio) - Immutable objects and arrays in a natural way
-    * [Gaafar/deppie](https://github.com/Gaafar/deppie) - Simple, elegant Dependency Injection framework
-    * [openfin/fin-hypergrid](https://github.com/openfin/fin-hypergrid) - A canvas-based super high performant grid control
+  * [flitbit/diff](https://github.com/flitbit/diff) - Utility for calculating deep difference, capturing changes, and applying changes across objects
+  * [planttheidea/crio](https://github.com/planttheidea/crio) - Immutable objects and arrays in a natural way
+  * [Gaafar/deppie](https://github.com/Gaafar/deppie) - Simple, elegant Dependency Injection framework
+  * [openfin/fin-hypergrid](https://github.com/openfin/fin-hypergrid) - A canvas-based super high performant grid control
 
-    ## Articles
+  ## Articles
 
-    * [Everything Zack Bloom Knows About the Script Tag](https://eager.io/blog/everything-I-know-about-the-script-tag/)
+  * [Everything Zack Bloom Knows About the Script Tag](https://eager.io/blog/everything-I-know-about-the-script-tag/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Build Your First Thing With WebAssembly](http://cultureofdevelopment.com/blog/build-your-first-thing-with-web-assembly/)
+  * [Build Your First Thing With WebAssembly](http://cultureofdevelopment.com/blog/build-your-first-thing-with-web-assembly/)
 
-    ## Techniques
+  ## Techniques
 
-    * [Dynamic mocking with Kakapo.js](https://medium.freecodecamp.com/dynamic-mocking-with-kakapo-js-bdbd3d7b58e2)
+  * [Dynamic mocking with Kakapo.js](https://medium.freecodecamp.com/dynamic-mocking-with-kakapo-js-bdbd3d7b58e2)
 
-    ## Interviews
+  ## Interviews
 
-    * [Snabbdom interview](http://survivejs.com/blog/snabbdom-interview/) - Learn about virtual DOM and this light implementation.
+  * [Snabbdom interview](http://survivejs.com/blog/snabbdom-interview/) - Learn about virtual DOM and this light implementation.
 
-    ## Tools
+  ## Tools
 
-    * [benjamn/reify](https://github.com/benjamn/reify) - Enable ECMAScript 2015 modules in Node today
-    * [developit/undom](https://github.com/developit/undom) - A 1kb minimally viable DOM Document implementation
-    * [min](http://mincss.com/) - Minimal CSS framework
-    * [albertxing/stool](https://github.com/albertxing/stool) - A JavaScript benchmarking utility
+  * [benjamn/reify](https://github.com/benjamn/reify) - Enable ECMAScript 2015 modules in Node today
+  * [developit/undom](https://github.com/developit/undom) - A 1kb minimally viable DOM Document implementation
+  * [min](http://mincss.com/) - Minimal CSS framework
+  * [albertxing/stool](https://github.com/albertxing/stool) - A JavaScript benchmarking utility
 
-    ## Demos
+  ## Demos
 
-    * [CSS 3D Hartwig chess set (fully playable)](http://codepen.io/juliangarnier/pen/BsIih)
-    * [ManrajGrover/SingleDivProject](https://github.com/ManrajGrover/SingleDivProject) - Single div, lots of possibilities
+  * [CSS 3D Hartwig chess set (fully playable)](http://codepen.io/juliangarnier/pen/BsIih)
+  * [ManrajGrover/SingleDivProject](https://github.com/ManrajGrover/SingleDivProject) - Single div, lots of possibilities

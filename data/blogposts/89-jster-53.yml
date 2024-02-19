@@ -4,45 +4,45 @@ short_title: "JSter #53"
 user: bebraw
 slug: monthly-jster-august-2015-part-2
 body: |
-    > How do you comfort a JavaScript bug? You console it.
+  > How do you comfort a JavaScript bug? You console it.
 
-    The Webpack and React book keeps on progressing at a solid pace. We recently reached [1.7.5 milestone](http://survivejs.com/blog/survivejs-175/) with it. As the book develops, it becomes more accessible. There's also some new content on its way.
+  The Webpack and React book keeps on progressing at a solid pace. We recently reached [1.7.5 milestone](http://survivejs.com/blog/survivejs-175/) with it. As the book develops, it becomes more accessible. There's also some new content on its way.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://facebook.github.io/relay/ }}
+  {{ screenshot: https://facebook.github.io/relay/ }}
 
-    * [Typeset.js](https://blot.im/typeset/) - an HTML pre-processor for web typography
-    * [responsivelyLazy](https://ivopetkov.github.io/responsivelyLazy/) - Lazy load responsive images
-    * [nodash](https://scravy.github.io/nodash/) - Haskell [Prelude](https://hackage.haskell.org/package/base-4.7.0.0/docs/Prelude.html) for JavaScript
-    * [Relay](https://facebook.github.io/relay/) - Flux evolved by Facebook
-    * [Falcor](https://netflix.github.io/falcor/) - Netflix's alternative to Relay
+  * [Typeset.js](https://blot.im/typeset/) - an HTML pre-processor for web typography
+  * [responsivelyLazy](https://ivopetkov.github.io/responsivelyLazy/) - Lazy load responsive images
+  * [nodash](https://scravy.github.io/nodash/) - Haskell [Prelude](https://hackage.haskell.org/package/base-4.7.0.0/docs/Prelude.html) for JavaScript
+  * [Relay](https://facebook.github.io/relay/) - Flux evolved by Facebook
+  * [Falcor](https://netflix.github.io/falcor/) - Netflix's alternative to Relay
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://zombiecodekill.com/2015/08/12/the-javascript-paradox/ }}
+  {{ screenshot: http://zombiecodekill.com/2015/08/12/the-javascript-paradox/ }}
 
-    * [The ES6 Conundrum](http://www.sitepoint.com/the-es6-conundrum/)
-    * [The JavaScript Paradox](http://zombiecodekill.com/2015/08/12/the-javascript-paradox/)
-    * [Slagging Off JavaScript Frameworks](http://andyshora.com/slagging-off-javascript-frameworks.html)
-    * [ES6 In Depth - The Future](https://hacks.mozilla.org/2015/08/es6-in-depth-the-future/)
-    * [Reactive React - Interview with Michel Weststrate](http://survivejs.com/blog/mobservable-interview/)
+  * [The ES6 Conundrum](http://www.sitepoint.com/the-es6-conundrum/)
+  * [The JavaScript Paradox](http://zombiecodekill.com/2015/08/12/the-javascript-paradox/)
+  * [Slagging Off JavaScript Frameworks](http://andyshora.com/slagging-off-javascript-frameworks.html)
+  * [ES6 In Depth - The Future](https://hacks.mozilla.org/2015/08/es6-in-depth-the-future/)
+  * [Reactive React - Interview with Michel Weststrate](http://survivejs.com/blog/mobservable-interview/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [ES6 In Depth - Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
-    * [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
-    * [Flying a drone in your browser with WebBluetooth](https://hacks.mozilla.org/2015/08/flying-a-drone-in-your-browser-with-webbluetooth/)
+  * [ES6 In Depth - Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
+  * [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+  * [Flying a drone in your browser with WebBluetooth](https://hacks.mozilla.org/2015/08/flying-a-drone-in-your-browser-with-webbluetooth/)
 
-    ## Techniques
+  ## Techniques
 
-    * [Making Charts with CSS](https://css-tricks.com/making-charts-with-css/)
-    * [Localizing Times in JavaScript](https://css-tricks.com/localizing-times-in-javascript/)
+  * [Making Charts with CSS](https://css-tricks.com/making-charts-with-css/)
+  * [Localizing Times in JavaScript](https://css-tricks.com/localizing-times-in-javascript/)
 
-    ## Tools
+  ## Tools
 
-    * [complexity-report](https://www.npmjs.com/package/complexity-report) - Get complexity metrics for your code
+  * [complexity-report](https://www.npmjs.com/package/complexity-report) - Get complexity metrics for your code
 
-    ## Demos
+  ## Demos
 
-    * [Depthy](http://depthy.me/#/sample/mango) - The third dimension viewer
+  * [Depthy](http://depthy.me/#/sample/mango) - The third dimension viewer

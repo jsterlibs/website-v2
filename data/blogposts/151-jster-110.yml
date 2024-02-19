@@ -4,57 +4,57 @@ short_title: "JSter #110"
 user: bebraw
 slug: jster-110
 body: |
-    > My JavaScript, where art thou?
+  > My JavaScript, where art thou?
 
-    [React Finland](https://react-finland.fi/) is progressing steadily and we are selling "regular bird" tickets now. We've reached our financial goals. We'll use some for the next year and perhaps meetups while also invest into this year's edition to improve the experience as much as we can.
+  [React Finland](https://react-finland.fi/) is progressing steadily and we are selling "regular bird" tickets now. We've reached our financial goals. We'll use some for the next year and perhaps meetups while also invest into this year's edition to improve the experience as much as we can.
 
-    I did some traveling during the past few weeks and wrote about [my experiences on ScriptConf 2018](https://survivejs.com/blog/scriptconf-2018/) and [AgentConf 2018](https://survivejs.com/blog/agentconf-2018/). Especially the latter was a great conference to visit, and if it's possible, I'll visit both next year again.
+  I did some traveling during the past few weeks and wrote about [my experiences on ScriptConf 2018](https://survivejs.com/blog/scriptconf-2018/) and [AgentConf 2018](https://survivejs.com/blog/agentconf-2018/). Especially the latter was a great conference to visit, and if it's possible, I'll visit both next year again.
 
-    Friends at [Reason Conf](https://www.reason-conf.com/) just opened sales, so if you are interested in an emerging new language and want to visit Vienna in May, check it out!
+  Friends at [Reason Conf](https://www.reason-conf.com/) just opened sales, so if you are interested in an emerging new language and want to visit Vienna in May, check it out!
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/angus-c/just }}
+  {{ screenshot: https://github.com/angus-c/just }}
 
-    * [angus-c/just](https://github.com/angus-c/just) - A library of dependency-free utilities that do just do one thing.
-    * [jxnblk/system-components](https://github.com/jxnblk/system-components) - Create consistent design-system-driven React UI components.
-    * [Bacon.js 2.0](https://github.com/baconjs/bacon.js) - Reactive programming.
-    * [TOAST UI Editor](https://nhnent.github.io/tui.editor/) - GFM Markdown WYSIWYG Editor.
-    * [page.js](https://github.com/visionmedia/page.js) - Micro client-side router inspired by the Express router.
+  * [angus-c/just](https://github.com/angus-c/just) - A library of dependency-free utilities that do just do one thing.
+  * [jxnblk/system-components](https://github.com/jxnblk/system-components) - Create consistent design-system-driven React UI components.
+  * [Bacon.js 2.0](https://github.com/baconjs/bacon.js) - Reactive programming.
+  * [TOAST UI Editor](https://nhnent.github.io/tui.editor/) - GFM Markdown WYSIWYG Editor.
+  * [page.js](https://github.com/visionmedia/page.js) - Micro client-side router inspired by the Express router.
 
-    ## Styling
+  ## Styling
 
-    * [Stylable](https://stylable.io/) - CSS for components.
-    * [Bootstrap 4.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+  * [Stylable](https://stylable.io/) - CSS for components.
+  * [Bootstrap 4.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
-    ## Frameworks
+  ## Frameworks
 
-    * [Quasar Framework](http://quasar-framework.org/) - Build responsive websites, PWAs, hybrid mobile Apps (that look native!) and Electron apps, all simultaneously using same codebase, powered with Vue.
-    * [Nest](https://nestjs.com/) - A progressive Node.js framework for building efficient and scalable server-side applications.
-    * [GitHub](https://github.com/lukeed/polka) - A micro web server so fast, it'll make you dance!
+  * [Quasar Framework](http://quasar-framework.org/) - Build responsive websites, PWAs, hybrid mobile Apps (that look native!) and Electron apps, all simultaneously using same codebase, powered with Vue.
+  * [Nest](https://nestjs.com/) - A progressive Node.js framework for building efficient and scalable server-side applications.
+  * [GitHub](https://github.com/lukeed/polka) - A micro web server so fast, it'll make you dance!
 
-    ## Articles
+  ## Articles
 
-    * [From 200K lines of CoffeeScript to zero: making decaffeinate super-stable](https://benchling.engineering/from-200k-lines-of-coffeescript-to-zero-making-decaffeinate-super-stable-4de0ca68d9bc)
-    * [2017 JavaScript Rising Stars](https://risingstars.js.org/2017/en/)
+  * [From 200K lines of CoffeeScript to zero: making decaffeinate super-stable](https://benchling.engineering/from-200k-lines-of-coffeescript-to-zero-making-decaffeinate-super-stable-4de0ca68d9bc)
+  * [2017 JavaScript Rising Stars](https://risingstars.js.org/2017/en/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [React Native and TypeScript meets Styles](https://medium.com/@zvona/react-native-and-typescript-meets-styles-b727ecf7e677)
-    * [How JavaScript works: memory management and how to handle 4 common memory leaks](https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec)
+  * [React Native and TypeScript meets Styles](https://medium.com/@zvona/react-native-and-typescript-meets-styles-b727ecf7e677)
+  * [How JavaScript works: memory management and how to handle 4 common memory leaks](https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec)
 
-    ## Techniques
+  ## Techniques
 
-    * [shprink/web-components-todo](https://github.com/shprink/web-components-todo) - Todo list built with Web Components VS Polymer VS StencilJS VS Angular Elements.
+  * [shprink/web-components-todo](https://github.com/shprink/web-components-todo) - Todo list built with Web Components VS Polymer VS StencilJS VS Angular Elements.
 
-    ## Interviews
+  ## Interviews
 
-    * [Illuminate - Syntax highlighter for Node - Interview with Vivek Bansal](https://survivejs.com/blog/illuminate-interview/)
-    * [Logux - Replace AJAX-REST - Interview with Andrey Sitnik](https://survivejs.com/blog/logux-interview/)
+  * [Illuminate - Syntax highlighter for Node - Interview with Vivek Bansal](https://survivejs.com/blog/illuminate-interview/)
+  * [Logux - Replace AJAX-REST - Interview with Andrey Sitnik](https://survivejs.com/blog/logux-interview/)
 
-    ## Tools
+  ## Tools
 
-    * [Parcel v1.5.0 released](https://medium.com/@devongovett/parcel-v1-5-0-released-source-maps-webassembly-rust-and-more-3a6385e43b95) - Source Maps, WebAssembly, Rust, and more!
-    * [nearform/node-clinic](https://github.com/nearform/node-clinic) - Diagnose your Node.js performance issues.
-    * [aXe](https://axe-core.org/) - Easy accessibility testing.
-    * [Cuttlebelle](https://cuttlebelle.com/) - The react static site generator that separates editing and code concerns.
+  * [Parcel v1.5.0 released](https://medium.com/@devongovett/parcel-v1-5-0-released-source-maps-webassembly-rust-and-more-3a6385e43b95) - Source Maps, WebAssembly, Rust, and more!
+  * [nearform/node-clinic](https://github.com/nearform/node-clinic) - Diagnose your Node.js performance issues.
+  * [aXe](https://axe-core.org/) - Easy accessibility testing.
+  * [Cuttlebelle](https://cuttlebelle.com/) - The react static site generator that separates editing and code concerns.

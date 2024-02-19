@@ -5,333 +5,333 @@ user: bebraw
 slug: understanding-cors
 picture: /img/blog/110/cors_small.png
 body: |
-    In this guest article by [Monmohan Singh](https://twitter.com/monmohan_singh) we'll explore the topic of CORS (Cross-Origin Resource sharing). It's one of those topics that comes up often in web development. We'll go through the basics, learn what's needed to support CORS, and walk through the ideas through sample code.
+  In this guest article by [Monmohan Singh](https://twitter.com/monmohan_singh) we'll explore the topic of CORS (Cross-Origin Resource sharing). It's one of those topics that comes up often in web development. We'll go through the basics, learn what's needed to support CORS, and walk through the ideas through sample code.
 
-    ## Code Samples
+  ## Code Samples
 
-    All the code shown in this post is available at [GitHub](https://github.com/monmohan/cors-experiment). The server code has been written in Go while the client samples use JavaScript and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
+  All the code shown in this post is available at [GitHub](https://github.com/monmohan/cors-experiment). The server code has been written in Go while the client samples use JavaScript and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
 
-    Although the server code is in Go, I don't expect you to understand the language in great detail. The code examples should read well despite the language. You can run the code locally by following instructions at the [project readme](https://github.com/monmohan/cors-experiment/blob/master/README.md).
+  Although the server code is in Go, I don't expect you to understand the language in great detail. The code examples should read well despite the language. You can run the code locally by following instructions at the [project readme](https://github.com/monmohan/cors-experiment/blob/master/README.md).
 
-    ## Cross-Origin Resource Sharing (CORS)
+  ## Cross-Origin Resource Sharing (CORS)
 
-    [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) is a W3C specification that allows cross-domain communication from the browser. CORS is becoming increasingly more important as we use multiple API's and services to create a mashups and stitched user experiences. In order to understand CORS, we need to understand the concept of an **origin** first.
+  [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) is a W3C specification that allows cross-domain communication from the browser. CORS is becoming increasingly more important as we use multiple API's and services to create a mashups and stitched user experiences. In order to understand CORS, we need to understand the concept of an **origin** first.
 
-    ### What is an Origin?
+  ### What is an Origin?
 
-    Two pages have the same origin if the protocol, port (if one is specified), and host are the same for both pages. This means that `http://api.mysite.com/resource.html` has same origin as `http://api.mysite.com/somepath/resource2.html` but a different origin than `http://api.mysite.com:99/resource.html` (different port) or `https://api.mysite.com:99/resource.html` (different protocol).
+  Two pages have the same origin if the protocol, port (if one is specified), and host are the same for both pages. This means that `http://api.mysite.com/resource.html` has same origin as `http://api.mysite.com/somepath/resource2.html` but a different origin than `http://api.mysite.com:99/resource.html` (different port) or `https://api.mysite.com:99/resource.html` (different protocol).
 
-    There are some exceptions to the above rule (mostly by, surprise surprise IE!) but they are non-standard.
+  There are some exceptions to the above rule (mostly by, surprise surprise IE!) but they are non-standard.
 
-    ### Same Origin Policy
+  ### Same Origin Policy
 
-    By default, Browsers enforce **Same Origin Policy** for HTTP requests initiated from within scripts. A web application using `XMLHttpRequest` can only make HTTP requests to its own domain.
+  By default, Browsers enforce **Same Origin Policy** for HTTP requests initiated from within scripts. A web application using `XMLHttpRequest` can only make HTTP requests to its own domain.
 
-    One important thing to be aware of is that cross origin **embedding** is allowed. Browsers can load scripts (source), images, media files embedded within the page even if they are from a different origin.
+  One important thing to be aware of is that cross origin **embedding** is allowed. Browsers can load scripts (source), images, media files embedded within the page even if they are from a different origin.
 
-    ### How Does CORS Work?
+  ### How Does CORS Work?
 
-    [The CORS standard](https://www.w3.org/TR/cors/) works by adding new HTTP headers that allow servers to describe the set of origins that are permitted to read that information using a web browser. It is important to note that the servers are in control, not the client. The following examples illustrate how this happens.
+  [The CORS standard](https://www.w3.org/TR/cors/) works by adding new HTTP headers that allow servers to describe the set of origins that are permitted to read that information using a web browser. It is important to note that the servers are in control, not the client. The following examples illustrate how this happens.
 
-    In this post we will focus on the main restriction, cross origin requests using `XMLHttpRequest`.
+  In this post we will focus on the main restriction, cross origin requests using `XMLHttpRequest`.
 
-    ## Example 1 - Simple Request
+  ## Example 1 - Simple Request
 
-    Let's see what happens when we do a cross origin `XMLHttpRequest`. For this example, we will be running two servers: PageServer and ApiServer.
+  Let's see what happens when we do a cross origin `XMLHttpRequest`. For this example, we will be running two servers: PageServer and ApiServer.
 
-    **PageServer** is a simple server which serves the requested page. This server runs on a port 12345 and serves an HTML file. You can override the port by providing -port option when running the server. Here is relevant code:
+  **PageServer** is a simple server which serves the requested page. This server runs on a port 12345 and serves an HTML file. You can override the port by providing -port option when running the server. Here is relevant code:
 
-    <pre><code class="clojure">func fileHandler(w http.ResponseWriter, r *http.Request) {
-      fmt.Printf("Requested URL %v\n", r.URL.Path)
+  <pre><code class="clojure">func fileHandler(w http.ResponseWriter, r *http.Request) {
+    fmt.Printf("Requested URL %v\n", r.URL.Path)
 
-      if *setCookie {
-        http.SetCookie(w, &http.Cookie{Name: "token", Value: "secret_token"})
-      }
-
-      http.ServeFile(w, r, r.URL.Path[1:])
+    if *setCookie {
+    http.SetCookie(w, &http.Cookie{Name: "token", Value: "secret_token"})
     }
 
-    func main() {
-      flag.Parse()
-      http.HandleFunc("/", fileHandler)
-      log.Fatal(http.ListenAndServe(fmt.Sprintf("localhost:%d", *port), nil))
+    http.ServeFile(w, r, r.URL.Path[1:])
+  }
+
+  func main() {
+    flag.Parse()
+    http.HandleFunc("/", fileHandler)
+    log.Fatal(http.ListenAndServe(fmt.Sprintf("localhost:%d", *port), nil))
+  }
+  </code></pre>
+
+  Start the page server:
+
+  <pre><code class="bash">$ cd pageserver
+  $ go run pageserver.go
+  </code></pre>
+
+  **ApiServer** is a server that exposes a basic User REST API that return a JSON representing a User object based on the user name in the request url. The User is just a simple struct saved in an in-memory map. The servers will run by default on port 12346
+
+  > NOTE: You can change the port by providing the -port option when you run the program but you will need to update the HTML files to point to new host:port combination
+
+  Here's the implementation:
+
+  <pre><code class="go">var userData = map[string]User{
+    "john": User{"jdoe", "John", "Doe", "France"},
+  }
+  var port = flag.Int("port", 10001, "help message for flagname")
+
+  func userHandler(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "application/json")
+    b, _ := json.Marshal(userData[r.URL.Path[len("/users/"):]])
+    io.WriteString(w, string(b))
+
+  }
+
+  func main() {
+    flag.Parse()
+    http.HandleFunc("/users/", userHandler)
+    log.Fatal(http.ListenAndServe(fmt.Sprintf("localhost:%d", *port), nil))
+  }
+  </code></pre>
+
+  Run the simple ApiServer:
+
+  <pre><code class="bash">$ cd apiserver
+  $ go run apiserver.go
+  </code></pre>
+
+  Open the browser and load **http://localhost:12345/showuser.html** .Here is how this looks
+
+  <div class="picture"><img src="/img/blog/110/01.png" alt="ShowUser" /></div>
+
+  If you click "show", it is supposed to go to http://localhost:12346/users/john and get the user json to display but instead you see this error in console :
+
+  > showuser.html:1 XMLHttpRequest cannot load http://localhost:12346/users/john. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:12345' is therefore not allowed access.
+
+  This is known as a **Simple** Cross origin `GET` request. Simple requests are requests that meet the following criteria:
+
+  * HTTP Method matches one of `HEAD`, `GET` or `POST`
+  * HTTP Headers matches one or more of these
+    - `Accept`
+    - `Accept-Language`
+    - `Content-Language`
+    - `Content-Type`, but only if the value is one of:
+    - `application/x-www-form-urlencoded`, `multipart/form-data`, `text/plain`
+
+  Let's see what we can do to succeed in serving a simple cross origin request:
+
+  - Stop the simple apiserver
+  - Start the apiserver\_allow\_origin server.
+
+  <pre><code class="bash">
+  $ go run apiserver_allow_origin.go
+  </code></pre>
+
+  We added `Access-Control-Allow-Origin` header for any incoming `GET` request above. The value of the header is same as the value sent by browser for the `Origin` header in the request. This is equivalent to allowing requests that come from any origin (*) like this:
+
+  <pre><code class="go">func corsWrapper(fn func(http.ResponseWriter, *http.Request)) httpHandlerFunc {
+    return func(w http.ResponseWriter, r *http.Request) {
+    origin := r.Header.Get("Origin")
+    fmt.Printf("Request Origin header %s\n", origin)
+
+    if origin != "" {
+      w.Header().Set("Access-Control-Allow-Origin", origin)
     }
-    </code></pre>
 
-    Start the page server:
-
-    <pre><code class="bash">$ cd pageserver
-    $ go run pageserver.go
-    </code></pre>
-
-    **ApiServer** is a server that exposes a basic User REST API that return a JSON representing a User object based on the user name in the request url. The User is just a simple struct saved in an in-memory map. The servers will run by default on port 12346
-
-    > NOTE: You can change the port by providing the -port option when you run the program but you will need to update the HTML files to point to new host:port combination
-
-    Here's the implementation:
-
-    <pre><code class="go">var userData = map[string]User{
-      "john": User{"jdoe", "John", "Doe", "France"},
+    fn(w, r)
     }
-    var port = flag.Int("port", 10001, "help message for flagname")
+  }
+  </code></pre>
 
-    func userHandler(w http.ResponseWriter, r *http.Request) {
-      w.Header().Set("Content-Type", "application/json")
-      b, _ := json.Marshal(userData[r.URL.Path[len("/users/"):]])
-      io.WriteString(w, string(b))
+  Let's attempt clicking the "show" button again. Given we have set the header, we should get data as expected:
 
+  <pre><code class="json">{
+    "UserName":"jdoe",
+    "FirstName":"John",
+    "LastName":"Doe",
+    "Country":"France"
+  }
+  </code></pre>
+
+  Its all good until we realize that just adding `Access-Control-Allow-Origin` isn't sufficient for certain "complex" requests (or anything which isn't covered in the Simple request). An example of such a request is a `POST` request with `Content-Type` set as `application/json`.
+
+  ## Example 2 - Complex Request
+
+  To get started, point your browser to http://localhost:12345/createUser.html . This is a simple form which looks like below. Entering the data and clicking "create" send a `POST` request to the ApiServer in-memory store
+
+  <div class="picture"><img src="/img/blog/110/02.png" alt="CreateUser" /></div>
+
+  Add some string data in the form fields and click "create" button. This should convert the data to JSON and do a `POST` to http://localhost:12346/users with the JSON data as the body of the request. Here is the relevant code in **createUser.html**:
+
+  <pre><code class="javascript">function sendRequest(url) {
+    var oReq = new XMLHttpRequest();
+
+    oReq.addEventListener("load", reqListener);
+    oReq.open("POST", url);
+    oReq.setRequestHeader("Content-Type", "application/json")
+
+    var data = serializeUser($('#fcreate').serializeArray());
+
+    console.log(data)
+
+    oReq.send(JSON.stringify(data));
+  }
+  </code></pre>
+
+  But once you hit "create", the browser should show the following error:
+
+  > XMLHttpRequest cannot load http://localhost:12346/users. Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:12345' is therefore not allowed access.
+
+  ## Pre-Flight
+
+  What we called as "Complex" request actually causes two HTTP requests. The browser first issues a preflight or an `OPTIONS` request, which is basically asking the server for permission to make the actual request. Once permissions have been granted, the browser makes the actual request. In this case, the pre-flight request is something like below:
+
+  <pre><code class="bash">OPTIONS /users HTTP/1.1
+  Host: localhost:12346
+  Connection: keep-alive
+  Access-Control-Request-Method: POST
+  Origin: http://localhost:12345
+  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+  Access-Control-Request-Headers: content-type
+  Accept: */*
+  Referer: http://localhost:12345/createUser.html
+  </code></pre>
+
+  The preflight request contains a few additional headers:
+
+  - `Access-Control-Request-Method` - The HTTP method of the actual request.
+  - `Access-Control-Request-Headers` - A comma-delimited list of non-simple headers that are included in the request. Notice that all CORS related headers are prefixed with `Access-Control-`.
+
+  In order for the `POST` to succeed, the server should support this request, "granting" permission based on the above request headers. Lets do that:
+
+  - Stop apiserver\_allow\_origin
+  - Start apiserver\_preflight
+
+  <pre><code class="bash">$ go run apiserver_preflight
+  </code></pre>
+
+  What we have done here is added some code in the apiserver to respond to `OPTIONS` request, granting the permission for `GET`, and `POST` calls with `Content-Type` header.
+
+  <pre><code class="clojure">func optionsWrapper(fn func(http.ResponseWriter, *http.Request)) http.HandlerFunc {
+    return func(w http.ResponseWriter, r *http.Request) {
+    reqMethod := r.Header.Get("Access-Control-Request-Method")
+    reqHeader := r.Header.Get("Access-Control-Request-Headers")
+
+    //check for validity
+    if (r.Method == "OPTIONS") && (reqMethod == "GET" || reqMethod == "POST") &&
+      (strings.EqualFold(reqHeader, "Content-Type")) {
+      w.Header().Set("Access-Control-Allow-Methods", "POST, GET")
+      w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+      return
     }
 
-    func main() {
-      flag.Parse()
-      http.HandleFunc("/users/", userHandler)
-      log.Fatal(http.ListenAndServe(fmt.Sprintf("localhost:%d", *port), nil))
+    fn(w, r)
     }
-    </code></pre>
+  }
+  </code></pre>
 
-    Run the simple ApiServer:
+  Enter data and hit "create" button again. You will see that the request succeeded. Using chrome tools or similar debugger, the response to `OPTIONS` request can be examined as well.
 
-    <pre><code class="bash">$ cd apiserver
-    $ go run apiserver.go
-    </code></pre>
+  <pre><code class="bash">>HTTP/1.1 200 OK
+  *Access-Control-Allow-Headers: Content-Type*
+  *Access-Control-Allow-Methods: POST, GET, OPTIONS*
+  Access-Control-Allow-Origin: http://localhost:12345
+  Date: Thu, 12 May 2016 10:10:13 GMT
+  Content-Length: 0
+  Content-Type: text/plain; charset=utf-8
+  </code></pre>
 
-    Open the browser and load **http://localhost:12345/showuser.html** .Here is how this looks
+  The response headers from the server grant permission to the different cross origin request methods (comma separated list of `GET`, `POST`) and also the allowed headers (in this case `Content-Type` header).
 
-    <div class="picture"><img src="/img/blog/110/01.png" alt="ShowUser" /></div>
+  In addition, the server can also return a header called `Access-Control-Max-Age`. The value of the header indicates how long the pre-flight response can be cached by the browser and hence browsers can skip the check for that duration.
 
-    If you click "show", it is supposed to go to http://localhost:12346/users/john and get the user json to display but instead you see this error in console :
+  ## Handling Credentials
 
-    > showuser.html:1 XMLHttpRequest cannot load http://localhost:12346/users/john. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:12345' is therefore not allowed access.
+  By default, cookies are not included in CORS requests. This means that a cookie set by one origin will not sent as part of the HTTP request sent to the different origin. Let's see an example of that.
 
-    This is known as a **Simple** Cross origin `GET` request. Simple requests are requests that meet the following criteria:
+  - Stop apiserver\_preflight
+  - Start apiserver\_creds\_fail
 
-    * HTTP Method matches one of `HEAD`, `GET` or `POST`
-    * HTTP Headers matches one or more of these
-      - `Accept`
-      - `Accept-Language`
-      - `Content-Language`
-      - `Content-Type`, but only if the value is one of:
-      - `application/x-www-form-urlencoded`, `multipart/form-data`, `text/plain`
+  <pre><code class="bash">$ go run apiserver\_creds\_fail.go
+  </code></pre>
 
-    Let's see what we can do to succeed in serving a simple cross origin request:
+  - Stop pageserver
+  - Start pageserver with cookie option set so that it sets a cookie when serving the page
 
-    - Stop the simple apiserver
-    - Start the apiserver\_allow\_origin server.
+  <pre><code class="bash">$ go run pageserver.go -set-cookie
+  </code></pre>
 
-    <pre><code class="bash">
-    $ go run apiserver_allow_origin.go
-    </code></pre>
+  - Point your browser to http://localhost:12345/showusermore.html.
 
-    We added `Access-Control-Allow-Origin` header for any incoming `GET` request above. The value of the header is same as the value sent by browser for the `Origin` header in the request. This is equivalent to allowing requests that come from any origin (*) like this:
+  The UI is same as showuser.html but the pageserver_cookie server now adds a cookie `(name="token", value="secret_token")` to the page when its served.
 
-    <pre><code class="go">func corsWrapper(fn func(http.ResponseWriter, *http.Request)) httpHandlerFunc {
-      return func(w http.ResponseWriter, r *http.Request) {
-        origin := r.Header.Get("Origin")
-        fmt.Printf("Request Origin header %s\n", origin)
+  Also, the apiserver will attempt to read this cookie, and respond with additional secret data.
 
-        if origin != "" {
-          w.Header().Set("Access-Control-Allow-Origin", origin)
-        }
+  <pre><code class="go">func userHandler(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Content-Type", "application/json")
+    b, _ := json.Marshal(userData[r.URL.Path[len("/users/"):]])
+    io.WriteString(w, string(b))
 
-        fn(w, r)
-      }
+    if c, err := r.Cookie("token"); err == nil && c.Value == "secret_token" {
+    io.WriteString(w, "<br/>Show Secret Data !!")
     }
-    </code></pre>
+  }
+  </code></pre>
 
-    Let's attempt clicking the "show" button again. Given we have set the header, we should get data as expected:
+  Enter "john" in the text box and hit "show". The request doesn't succeed!
+  You will see following error in the console
 
-    <pre><code class="json">{
-      "UserName":"jdoe",
-      "FirstName":"John",
-      "LastName":"Doe",
-      "Country":"France"
+  > XMLHttpRequest cannot load http://localhost:12346/users/john. Credentials flag is 'true', but the 'Access-Control-Allow-Credentials' header is ''. It must be 'true' to allow credentials. Origin 'http://localhost:12345' is therefore not allowed access.
+
+  What happened here is that page tried to send the cookie to the different origin API server. Here is the `sendRequest` method from page
+
+  <pre><code class="javascript">function sendRequest(url) {
+    var oReq = new XMLHttpRequest();
+
+    oReq.addEventListener("load", reqListener);
+    oReq.withCredentials = true;
+    oReq.open("GET", url);
+    oReq.send();
+  }
+  </code></pre>
+
+  Notice the `oReq.withCredentials = true;` statement. The `XMLHttpRequest` object needs to set a property called `withCredentials` in order to share the cookie to the different origin server. However that's not enough.
+
+  The server should have responded with a header called `Access-Control-Allow-Credentials` with value as `true` in order for this cookie to be accepted. This request header works in conjunction with the `XMLHttpRequest` property. If `withCredentials` is `true`, but there is no `Access-Control-Allow-Credentials` header, the request will fail. Let's try again
+
+  - Stop apiserver\_creds\_fail
+  - Start apiserver\_allow\_creds
+
+  <pre><code class="bash">$ go run apiserver_allow_creds.go
+  </code></pre>
+
+  What we done now is added support for `Access-Control-Allow-Credentials` header like htis:
+
+  <pre><code class="go">func corsWrapper(fn func(http.ResponseWriter, *http.Request)) http.HandlerFunc {
+    return func(w http.ResponseWriter, r *http.Request) {
+    origin := r.Header.Get("Origin")
+    fmt.Printf("Request Origin header %s\n", origin)
+
+    if origin != "" {
+      w.Header().Set("Access-Control-Allow-Origin", origin)
+      w.Header().Set("Access-Control-Allow-Credentials", "true")
     }
-    </code></pre>
 
-    Its all good until we realize that just adding `Access-Control-Allow-Origin` isn't sufficient for certain "complex" requests (or anything which isn't covered in the Simple request). An example of such a request is a `POST` request with `Content-Type` set as `application/json`.
-
-    ## Example 2 - Complex Request
-
-    To get started, point your browser to http://localhost:12345/createUser.html . This is a simple form which looks like below. Entering the data and clicking "create" send a `POST` request to the ApiServer in-memory store
-
-    <div class="picture"><img src="/img/blog/110/02.png" alt="CreateUser" /></div>
-
-    Add some string data in the form fields and click "create" button. This should convert the data to JSON and do a `POST` to http://localhost:12346/users with the JSON data as the body of the request. Here is the relevant code in **createUser.html**:
-
-    <pre><code class="javascript">function sendRequest(url) {
-      var oReq = new XMLHttpRequest();
-
-      oReq.addEventListener("load", reqListener);
-      oReq.open("POST", url);
-      oReq.setRequestHeader("Content-Type", "application/json")
-
-      var data = serializeUser($('#fcreate').serializeArray());
-
-      console.log(data)
-
-      oReq.send(JSON.stringify(data));
+    fn(w, r)
     }
-    </code></pre>
+  }
+  </code></pre>
 
-    But once you hit "create", the browser should show the following error:
+  Again enter "john" in the text box and hit "show". You should see the following response with the secret data text:
 
-    > XMLHttpRequest cannot load http://localhost:12346/users. Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:12345' is therefore not allowed access.
+  <pre><code class="json">{
+    "UserName":"jdoe",
+    "FirstName":"John",
+    "LastName":"Doe",
+    "Country":"France"
+  }
+  </code></pre>
 
-    ## Pre-Flight
+  ## Conclusion
 
-    What we called as "Complex" request actually causes two HTTP requests. The browser first issues a preflight or an `OPTIONS` request, which is basically asking the server for permission to make the actual request. Once permissions have been granted, the browser makes the actual request. In this case, the pre-flight request is something like below:
+  Hopefully this has given a hands on experience with supporting CORS. There are few more optional headers supported by CORS. To learn more about the subject, please take a look at the links below:
 
-    <pre><code class="bash">OPTIONS /users HTTP/1.1
-    Host: localhost:12346
-    Connection: keep-alive
-    Access-Control-Request-Method: POST
-    Origin: http://localhost:12345
-    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
-    Access-Control-Request-Headers: content-type
-    Accept: */*
-    Referer: http://localhost:12345/createUser.html
-    </code></pre>
-
-    The preflight request contains a few additional headers:
-
-    - `Access-Control-Request-Method` - The HTTP method of the actual request.
-    - `Access-Control-Request-Headers` - A comma-delimited list of non-simple headers that are included in the request. Notice that all CORS related headers are prefixed with `Access-Control-`.
-
-    In order for the `POST` to succeed, the server should support this request, "granting" permission based on the above request headers. Lets do that:
-
-    - Stop apiserver\_allow\_origin
-    - Start apiserver\_preflight
-
-    <pre><code class="bash">$ go run apiserver_preflight
-    </code></pre>
-
-    What we have done here is added some code in the apiserver to respond to `OPTIONS` request, granting the permission for `GET`, and `POST` calls with `Content-Type` header.
-
-    <pre><code class="clojure">func optionsWrapper(fn func(http.ResponseWriter, *http.Request)) http.HandlerFunc {
-      return func(w http.ResponseWriter, r *http.Request) {
-        reqMethod := r.Header.Get("Access-Control-Request-Method")
-        reqHeader := r.Header.Get("Access-Control-Request-Headers")
-
-        //check for validity
-        if (r.Method == "OPTIONS") && (reqMethod == "GET" || reqMethod == "POST") &&
-          (strings.EqualFold(reqHeader, "Content-Type")) {
-          w.Header().Set("Access-Control-Allow-Methods", "POST, GET")
-          w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-          return
-        }
-
-        fn(w, r)
-      }
-    }
-    </code></pre>
-
-    Enter data and hit "create" button again. You will see that the request succeeded. Using chrome tools or similar debugger, the response to `OPTIONS` request can be examined as well.
-
-    <pre><code class="bash">>HTTP/1.1 200 OK
-    *Access-Control-Allow-Headers: Content-Type*
-    *Access-Control-Allow-Methods: POST, GET, OPTIONS*
-    Access-Control-Allow-Origin: http://localhost:12345
-    Date: Thu, 12 May 2016 10:10:13 GMT
-    Content-Length: 0
-    Content-Type: text/plain; charset=utf-8
-    </code></pre>
-
-    The response headers from the server grant permission to the different cross origin request methods (comma separated list of `GET`, `POST`) and also the allowed headers (in this case `Content-Type` header).
-
-    In addition, the server can also return a header called `Access-Control-Max-Age`. The value of the header indicates how long the pre-flight response can be cached by the browser and hence browsers can skip the check for that duration.
-
-    ## Handling Credentials
-
-    By default, cookies are not included in CORS requests. This means that a cookie set by one origin will not sent as part of the HTTP request sent to the different origin. Let's see an example of that.
-
-    - Stop apiserver\_preflight
-    - Start apiserver\_creds\_fail
-
-    <pre><code class="bash">$ go run apiserver\_creds\_fail.go
-    </code></pre>
-
-    - Stop pageserver
-    - Start pageserver with cookie option set so that it sets a cookie when serving the page
-
-    <pre><code class="bash">$ go run pageserver.go -set-cookie
-    </code></pre>
-
-    - Point your browser to http://localhost:12345/showusermore.html.
-
-    The UI is same as showuser.html but the pageserver_cookie server now adds a cookie `(name="token", value="secret_token")` to the page when its served.
-
-    Also, the apiserver will attempt to read this cookie, and respond with additional secret data.
-
-    <pre><code class="go">func userHandler(w http.ResponseWriter, r *http.Request) {
-      w.Header().Set("Content-Type", "application/json")
-      b, _ := json.Marshal(userData[r.URL.Path[len("/users/"):]])
-      io.WriteString(w, string(b))
-
-      if c, err := r.Cookie("token"); err == nil && c.Value == "secret_token" {
-        io.WriteString(w, "<br/>Show Secret Data !!")
-      }
-    }
-    </code></pre>
-
-    Enter "john" in the text box and hit "show". The request doesn't succeed!
-    You will see following error in the console
-
-    > XMLHttpRequest cannot load http://localhost:12346/users/john. Credentials flag is 'true', but the 'Access-Control-Allow-Credentials' header is ''. It must be 'true' to allow credentials. Origin 'http://localhost:12345' is therefore not allowed access.
-
-    What happened here is that page tried to send the cookie to the different origin API server. Here is the `sendRequest` method from page
-
-    <pre><code class="javascript">function sendRequest(url) {
-      var oReq = new XMLHttpRequest();
-
-      oReq.addEventListener("load", reqListener);
-      oReq.withCredentials = true;
-      oReq.open("GET", url);
-      oReq.send();
-    }
-    </code></pre>
-
-    Notice the `oReq.withCredentials = true;` statement. The `XMLHttpRequest` object needs to set a property called `withCredentials` in order to share the cookie to the different origin server. However that's not enough.
-
-    The server should have responded with a header called `Access-Control-Allow-Credentials` with value as `true` in order for this cookie to be accepted. This request header works in conjunction with the `XMLHttpRequest` property. If `withCredentials` is `true`, but there is no `Access-Control-Allow-Credentials` header, the request will fail. Let's try again
-
-    - Stop apiserver\_creds\_fail
-    - Start apiserver\_allow\_creds
-
-    <pre><code class="bash">$ go run apiserver_allow_creds.go
-    </code></pre>
-
-    What we done now is added support for `Access-Control-Allow-Credentials` header like htis:
-
-    <pre><code class="go">func corsWrapper(fn func(http.ResponseWriter, *http.Request)) http.HandlerFunc {
-      return func(w http.ResponseWriter, r *http.Request) {
-        origin := r.Header.Get("Origin")
-        fmt.Printf("Request Origin header %s\n", origin)
-
-        if origin != "" {
-          w.Header().Set("Access-Control-Allow-Origin", origin)
-          w.Header().Set("Access-Control-Allow-Credentials", "true")
-        }
-
-        fn(w, r)
-      }
-    }
-    </code></pre>
-
-    Again enter "john" in the text box and hit "show". You should see the following response with the secret data text:
-
-    <pre><code class="json">{
-      "UserName":"jdoe",
-      "FirstName":"John",
-      "LastName":"Doe",
-      "Country":"France"
-    }
-    </code></pre>
-
-    ## Conclusion
-
-    Hopefully this has given a hands on experience with supporting CORS. There are few more optional headers supported by CORS. To learn more about the subject, please take a look at the links below:
-
-    - [Browser Security Handbook](https://code.google.com/archive/p/browsersec/wikis/Part2.wiki#Same-origin_policy)
-    - [W3C Cross-Origin Resource Sharing](https://www.w3.org/TR/cors/)
-    - [HTML5 Rocks](http://www.html5rocks.com/en/tutorials/cors/#toc-introduction)
-    - [CORS on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+  - [Browser Security Handbook](https://code.google.com/archive/p/browsersec/wikis/Part2.wiki#Same-origin_policy)
+  - [W3C Cross-Origin Resource Sharing](https://www.w3.org/TR/cors/)
+  - [HTML5 Rocks](http://www.html5rocks.com/en/tutorials/cors/#toc-introduction)
+  - [CORS on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

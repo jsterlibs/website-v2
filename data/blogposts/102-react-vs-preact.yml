@@ -5,65 +5,65 @@ user: bebraw
 slug: react-vs-preact
 picture: /img/blog/102/0_small.jpg
 body: |
-    For a while, [React](https://facebook.github.io/react/) has been one of the favorite tools for front-end developers. Sometimes it can be a little heavy, though. A lighter alternative known as [Preact](https://developit.github.io/preact/) is largely compatible with React. We'll go over the differences in this post and also cover pros and cons.
+  For a while, [React](https://facebook.github.io/react/) has been one of the favorite tools for front-end developers. Sometimes it can be a little heavy, though. A lighter alternative known as [Preact](https://developit.github.io/preact/) is largely compatible with React. We'll go over the differences in this post and also cover pros and cons.
 
-    ## What Are the Differences Between React and Preact?
+  ## What Are the Differences Between React and Preact?
 
-    There are a few key differences you should take into account. Note that you can use both. It might make sense to use React during development and swap to Preact for production. You will need to make sure you will use the subset of features Preact provides, though.
+  There are a few key differences you should take into account. Note that you can use both. It might make sense to use React during development and swap to Preact for production. You will need to make sure you will use the subset of features Preact provides, though.
 
-    > [react-lite](https://github.com/Lucifier129/react-lite) is another interesting alternative worth studying.
+  > [react-lite](https://github.com/Lucifier129/react-lite) is another interesting alternative worth studying.
 
-    ### API
+  ### API
 
-    Preact supports only [stateless functional components](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#stateless-functional-components) and [ES6 class based component definitions](https://facebook.github.io/react/docs/reusable-components.html#es6-classes). Fortunately, losing `createClass` doesn't hurt that much given these two are more than enough for most development needs.
+  Preact supports only [stateless functional components](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#stateless-functional-components) and [ES6 class based component definitions](https://facebook.github.io/react/docs/reusable-components.html#es6-classes). Fortunately, losing `createClass` doesn't hurt that much given these two are more than enough for most development needs.
 
-    ### Size
+  ### Size
 
-    As Preact doesn't try to do everything that React does, its implementation can be much leaner. To give you a better idea, a minified version of React weighs around 135 kB. Serving it gzipped you should get around 80 kB. This can be pushed further by creating a production build as it strips some of the checks. Minified and gzipped version of Preact weighs mere 3kB. This difference alone is huge.
+  As Preact doesn't try to do everything that React does, its implementation can be much leaner. To give you a better idea, a minified version of React weighs around 135 kB. Serving it gzipped you should get around 80 kB. This can be pushed further by creating a production build as it strips some of the checks. Minified and gzipped version of Preact weighs mere 3kB. This difference alone is huge.
 
-    > react-lite sits somewhere in the middle somewhere between 10-20k when both gzipped and minified.
+  > react-lite sits somewhere in the middle somewhere between 10-20k when both gzipped and minified.
 
-    ### Performance
+  ### Performance
 
-    Compared to React, Preact is definitely leaner and faster as well. [Benchmarking by Stefan Krause](http://www.stefankrause.net/wp/?p=283) supports this.
+  Compared to React, Preact is definitely leaner and faster as well. [Benchmarking by Stefan Krause](http://www.stefankrause.net/wp/?p=283) supports this.
 
-    ## Pros and Cons
+  ## Pros and Cons
 
-    ### React
+  ### React
 
-    **Pros**
+  **Pros**
 
-    * It contains a very complex and at the same time a well-architected codebase.
-    * Preact contains a lot of React's features. Though Preact also offers a few advanced features as well, but it will take time before Preact will start getting recognition – just like React does – by the majority of users.
+  * It contains a very complex and at the same time a well-architected codebase.
+  * Preact contains a lot of React's features. Though Preact also offers a few advanced features as well, but it will take time before Preact will start getting recognition – just like React does – by the majority of users.
 
-    **Cons**
+  **Cons**
 
-    * The large and complex codebase makes it hard for developers (especially novices) to contribute.
-    * Given React is a library, you will have to do some of the legwork yourself. This means you'll have to figure out how to deal aspects such as data handling and routing.
+  * The large and complex codebase makes it hard for developers (especially novices) to contribute.
+  * Given React is a library, you will have to do some of the legwork yourself. This means you'll have to figure out how to deal aspects such as data handling and routing.
 
-    ### Preact
+  ### Preact
 
-    **Pros**
+  **Pros**
 
-    * Preact comes loaded with many more features than react-lite. For one, the former can be rendered to a static HTML string using [preact-render-to-string](https://www.npmjs.com/package/preact-render-to-string). Also, Preact adds many convenient features all of which are inspired by the work carried out in the React community.
-    * Both this.props and this.state can be referenced manually, which makes the process of destructuring cleaner than in vanilla React.
-    * The inputs of the **Linked State updates** state changes automatically resulting in cleaner code.
-    * Preact enables you to avail the benefits of React-style components even in older websites based on jQuery and Backbone without causing overhead.
-    * When it comes to developing a standard app that comprises of components, Preact batches state changes and thereby boosts performance considerably.
+  * Preact comes loaded with many more features than react-lite. For one, the former can be rendered to a static HTML string using [preact-render-to-string](https://www.npmjs.com/package/preact-render-to-string). Also, Preact adds many convenient features all of which are inspired by the work carried out in the React community.
+  * Both this.props and this.state can be referenced manually, which makes the process of destructuring cleaner than in vanilla React.
+  * The inputs of the **Linked State updates** state changes automatically resulting in cleaner code.
+  * Preact enables you to avail the benefits of React-style components even in older websites based on jQuery and Backbone without causing overhead.
+  * When it comes to developing a standard app that comprises of components, Preact batches state changes and thereby boosts performance considerably.
 
-    **Cons**
+  **Cons**
 
-    * Preact does not support [context](https://facebook.github.io/react/docs/context.html) yet.
-    * `refs` are not supported yet. [Support is planned](https://github.com/developit/preact/issues/50), though.
-    * React `propTypes` are not supported.
-    * Preact does not support synthetic event implementation of React. Instead, it relies on browser API. This could cause maintenance and performance issues due to impedance mismatch between the implementations if you are using them together (React for development, Preact for production).
+  * Preact does not support [context](https://facebook.github.io/react/docs/context.html) yet.
+  * `refs` are not supported yet. [Support is planned](https://github.com/developit/preact/issues/50), though.
+  * React `propTypes` are not supported.
+  * Preact does not support synthetic event implementation of React. Instead, it relies on browser API. This could cause maintenance and performance issues due to impedance mismatch between the implementations if you are using them together (React for development, Preact for production).
 
-    ## Conclusion
+  ## Conclusion
 
-    Many people have different takes on using Preact over the React. You can study the opinions of developers concerning these technologies at [the Hacker News thread](https://news.ycombinator.com/item?id=10988746).
+  Many people have different takes on using Preact over the React. You can study the opinions of developers concerning these technologies at [the Hacker News thread](https://news.ycombinator.com/item?id=10988746).
 
-    It's always better to attempt using something that introduces improvements in some already existing technology. The same is the case with React and Preact. Preact does offers a few interesting advantages over React although you'll lose something in the process.
+  It's always better to attempt using something that introduces improvements in some already existing technology. The same is the case with React and Preact. Preact does offers a few interesting advantages over React although you'll lose something in the process.
 
-    ----
+  ----
 
-    Maria Mincey is a software developer at [Xicom Technologies](http://www.xicom.biz/), a software development company. They deliver comprehensive web applications for different industry verticals.
+  Maria Mincey is a software developer at [Xicom Technologies](http://www.xicom.biz/), a software development company. They deliver comprehensive web applications for different industry verticals.

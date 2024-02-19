@@ -5,86 +5,86 @@ user: bebraw
 slug: mobile-application-trends
 picture: /img/blog/90/0_small.png
 body: |
-    In less than a decade mobile phones have transformed from calling devices to little computers. As a result mobile apps have become hugely popular. This is evidenced by the success of platforms by Apple and Google.
+  In less than a decade mobile phones have transformed from calling devices to little computers. As a result mobile apps have become hugely popular. This is evidenced by the success of platforms by Apple and Google.
 
-    As the devices have evolved, so have the demands for mobile apps. Given competition can only get tougher, it is a good idea to understand mobile UI trends. That's what this post is about. Let's go through six trends prevalent in 2015.
+  As the devices have evolved, so have the demands for mobile apps. Given competition can only get tougher, it is a good idea to understand mobile UI trends. That's what this post is about. Let's go through six trends prevalent in 2015.
 
-    ## 1. Flat UI
+  ## 1. Flat UI
 
-    <div class="picture"><img src="/img/blog/90/0.png" alt="Flat UI" /></div>
+  <div class="picture"><img src="/img/blog/90/0.png" alt="Flat UI" /></div>
 
-    Flat user interfaces can be seen as a continuation to the idea of skeuomorphism introduced by the early versions of iOS. The idea was that we can bring people to the mobile by mimicking the real world. Now that people have gotten used to mobile, something new can be tried instead. That's what flat user interfaces are about.
+  Flat user interfaces can be seen as a continuation to the idea of skeuomorphism introduced by the early versions of iOS. The idea was that we can bring people to the mobile by mimicking the real world. Now that people have gotten used to mobile, something new can be tried instead. That's what flat user interfaces are about.
 
-    They focus on simplicity and ease of use. Typically on a mobile screen you need clutter free design to facilitate quick access to what you want and flat interface just does that.
+  They focus on simplicity and ease of use. Typically on a mobile screen you need clutter free design to facilitate quick access to what you want and flat interface just does that.
 
-    Over the years flat UI evolved to incorporate some important changes. With the inclusion of new elements like subtle layering of color, gradients and animated characters this design principle has become even more interesting and effective.
+  Over the years flat UI evolved to incorporate some important changes. With the inclusion of new elements like subtle layering of color, gradients and animated characters this design principle has become even more interesting and effective.
 
-    * Flat UI is focused on content.
-    * Flat UI offers a clutter free design facilitating absolute ease of access and usability.
-    * With the evolving elements like subtle layering, animated characters and gradients, it became even more dynamic and robust.
+  * Flat UI is focused on content.
+  * Flat UI offers a clutter free design facilitating absolute ease of access and usability.
+  * With the evolving elements like subtle layering, animated characters and gradients, it became even more dynamic and robust.
 
-    ## 2. Contextual UI
+  ## 2. Contextual UI
 
-    <div class="picture"><img src="/img/blog/90/1.jpg" alt="Contextual UI" /></div>
+  <div class="picture"><img src="/img/blog/90/1.jpg" alt="Contextual UI" /></div>
 
-    Consistency throughout the app interface is something that has lost its appeal to more contextual, purposive and diverse UI elements. Thanks to a wide range of device sensors that provide timely feedback on user activities, location and preferences, now users can be approached with befitting contextual UI elements.
+  Consistency throughout the app interface is something that has lost its appeal to more contextual, purposive and diverse UI elements. Thanks to a wide range of device sensors that provide timely feedback on user activities, location and preferences, now users can be approached with befitting contextual UI elements.
 
-    For instance, when the user of a travel app is boarding a train to a different city, the app can show him a detailed list of the hotels, restaurants, hangout places, cab services and tourist attractions in the respective city.
+  For instance, when the user of a travel app is boarding a train to a different city, the app can show him a detailed list of the hotels, restaurants, hangout places, cab services and tourist attractions in the respective city.
 
-    This contextual display of content has become more popular with latest location technologies and app analytics. A context is derived from several factors including the location, typical user preference, user habits, and such.
+  This contextual display of content has become more popular with latest location technologies and app analytics. A context is derived from several factors including the location, typical user preference, user habits, and such.
 
-    * Contextual UI is practically and purposively oriented.
-    * Through contextual UI the design elements meet the app analytics and latest location based technologies.
-    * Advanced device sensors made user specific data a determinant factor in app UI design.
+  * Contextual UI is practically and purposively oriented.
+  * Through contextual UI the design elements meet the app analytics and latest location based technologies.
+  * Advanced device sensors made user specific data a determinant factor in app UI design.
 
-    ## 3. Full screen navigation
+  ## 3. Full screen navigation
 
-    <div class="picture"><img src="/img/blog/90/2.jpg" alt="Full screen navigation" /></div>
+  <div class="picture"><img src="/img/blog/90/2.jpg" alt="Full screen navigation" /></div>
 
-    Navigation holds the key position in a satisfactory mobile user interface and user experience. Both ease of use and ease of access primarily refers to the ease of navigation. Bigger navigation buttons as part of flat UI design has become popular trend for some time. But that did not put a stop to this evolving trend of navigation that continues to be bigger.
+  Navigation holds the key position in a satisfactory mobile user interface and user experience. Both ease of use and ease of access primarily refers to the ease of navigation. Bigger navigation buttons as part of flat UI design has become popular trend for some time. But that did not put a stop to this evolving trend of navigation that continues to be bigger.
 
-    Full screen navigation with large menu buttons is the latest trend that took user experience to the next level. Large menu and full screen navigation works great on mobile screens because this adds to the comfort and ease of mobile users to a great extent. Moreover, this design principle is also fully compatible with flat UI.
+  Full screen navigation with large menu buttons is the latest trend that took user experience to the next level. Large menu and full screen navigation works great on mobile screens because this adds to the comfort and ease of mobile users to a great extent. Moreover, this design principle is also fully compatible with flat UI.
 
-    * Full screen navigation is attractive at a glance.
-    * It offers extreme ease of use and ease of access.
-    * It works great with flat UI, another popular design convention.
+  * Full screen navigation is attractive at a glance.
+  * It offers extreme ease of use and ease of access.
+  * It works great with flat UI, another popular design convention.
 
-    ## 4. UI with wearable approach
+  ## 4. UI with wearable approach
 
-    <div class="picture"><img src="/img/blog/90/3.jpg" alt="UI with wearable approach" /></div>
+  <div class="picture"><img src="/img/blog/90/3.jpg" alt="UI with wearable approach" /></div>
 
-    Slowly the focus from smartphones is getting shifted towards smart wearable devices. Naturally, your app UI must be in sync with the wearable counterparts as well. Using multiple mobile, wearable and smart devices and accessing the same app from different devices is now a necessity your UI design must take into account. This means that:
+  Slowly the focus from smartphones is getting shifted towards smart wearable devices. Naturally, your app UI must be in sync with the wearable counterparts as well. Using multiple mobile, wearable and smart devices and accessing the same app from different devices is now a necessity your UI design must take into account. This means that:
 
-    * The app UI must address the display and communication capabilities of the wearable devices.
-    * UIs must be agile to offer optimum performance irrespective of the device in use.
-    * Addressing diverse screen sizes and still maintaining consistency is important for UI design.
+  * The app UI must address the display and communication capabilities of the wearable devices.
+  * UIs must be agile to offer optimum performance irrespective of the device in use.
+  * Addressing diverse screen sizes and still maintaining consistency is important for UI design.
 
-    ## 5. Storytelling
+  ## 5. Storytelling
 
-    <div class="picture"><img src="/img/blog/90/4.jpg" alt="Storytelling" /></div>
+  <div class="picture"><img src="/img/blog/90/4.jpg" alt="Storytelling" /></div>
 
-    People love to hear a story even if it is about your brand or product. Instead of giving them dry information about your product or services or brand, engaging them with a storyline will engage more audience and make more people hear. With a right mix of visuals and texts you can tell a story about the brand or product and you would instantly see people engaged.
+  People love to hear a story even if it is about your brand or product. Instead of giving them dry information about your product or services or brand, engaging them with a storyline will engage more audience and make more people hear. With a right mix of visuals and texts you can tell a story about the brand or product and you would instantly see people engaged.
 
-    * Storytelling is great for quickly grabbing interest and engaging audience for longer.
-    * Storytelling talks of ‘how’ about the brand and product rather that ‘what’.
-    * Visual engagement is crucial to make audience stay afloat and here what you have to say.
+  * Storytelling is great for quickly grabbing interest and engaging audience for longer.
+  * Storytelling talks of ‘how’ about the brand and product rather that ‘what’.
+  * Visual engagement is crucial to make audience stay afloat and here what you have to say.
 
-    ## 6. Hidden menu
+  ## 6. Hidden menu
 
-    <div class="picture"><img src="/img/blog/90/5.jpg" alt="Hidden menu" /></div>
+  <div class="picture"><img src="/img/blog/90/5.jpg" alt="Hidden menu" /></div>
 
-    Hidden menu has lately become a popular design convention. Especially for mobile devices it has a lot of significance. If you try to display everything, it will clutter the view. Hidde menu creates space and looks better. Hidden menus are often represented by a small dropdown menu icon at the top right corner of the screen offering both space and ease of access.
+  Hidden menu has lately become a popular design convention. Especially for mobile devices it has a lot of significance. If you try to display everything, it will clutter the view. Hidde menu creates space and looks better. Hidden menus are often represented by a small dropdown menu icon at the top right corner of the screen offering both space and ease of access.
 
-    * It saves lot of space on the mobile screen display.
-    * Following conventions like placing the menu icon at the top right corner is important for avoiding confusion.
-    * It looks smart and helps accessing any part of app with ease.
+  * It saves lot of space on the mobile screen display.
+  * Following conventions like placing the menu icon at the top right corner is important for avoiding confusion.
+  * It looks smart and helps accessing any part of app with ease.
 
-    ## Conclusion
+  ## Conclusion
 
-    Finally to conclude one must admit that the effectiveness of all the above mentioned design attributes cannot be judged from their independent face value. For instance, while using full screen navigation you may not be able to use storytelling for your UI to the fullest extent.
+  Finally to conclude one must admit that the effectiveness of all the above mentioned design attributes cannot be judged from their independent face value. For instance, while using full screen navigation you may not be able to use storytelling for your UI to the fullest extent.
 
-    Hidden menu is fine as long as you gave it a conventional icon and placed it prominently where users generally look for menu. Similarly, you can further add punch to your flat UI with blurred background or with subtle color hierarchy in buttons. How better you maneuver these design-attributes to the advantage of your users that remains crucial.
+  Hidden menu is fine as long as you gave it a conventional icon and placed it prominently where users generally look for menu. Similarly, you can further add punch to your flat UI with blurred background or with subtle color hierarchy in buttons. How better you maneuver these design-attributes to the advantage of your users that remains crucial.
 
-    ----
+  ----
 
-    Juned Ahmed is a IT consultant by profession and is working with [IndianAppDevelopers company](http://www.indianappdevelopers.com/) - the front runner in mobile app developers for hire. He believes in the power of mobile technologies and sharing latest information on iOS, Android development processes.
+  Juned Ahmed is a IT consultant by profession and is working with [IndianAppDevelopers company](http://www.indianappdevelopers.com/) - the front runner in mobile app developers for hire. He believes in the power of mobile technologies and sharing latest information on iOS, Android development processes.

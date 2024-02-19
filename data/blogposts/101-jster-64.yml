@@ -4,47 +4,47 @@ short_title: "JSter #64"
 user: bebraw
 slug: monthly-jster-february-2016-part-1
 body: |
-    > The good, the bad, the JavaScript
+  > The good, the bad, the JavaScript
 
-    I finally got the [the 2.0 version of my Webpack/React book out](http://survivejs.com/blog/survivejs200/). In addition to [the digital version](https://leanpub.com/survivejs_webpack_react), there's also [a paperback](http://www.amazon.com/SurviveJS-Webpack-React-apprentice-master/dp/152391050X/) available through Amazon now. I hope you enjoy it!
+  I finally got the [the 2.0 version of my Webpack/React book out](http://survivejs.com/blog/survivejs200/). In addition to [the digital version](https://leanpub.com/survivejs_webpack_react), there's also [a paperback](http://www.amazon.com/SurviveJS-Webpack-React-apprentice-master/dp/152391050X/) available through Amazon now. I hope you enjoy it!
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: http://pressurejs.com/ }}
+  {{ screenshot: http://pressurejs.com/ }}
 
-    * [Pressure.js](http://pressurejs.com/) - Easier Force Touch and 3D Touch
-    * [ScrollReveal](https://scrollrevealjs.org/) - Easy scroll animations for web and mobile browsers.
-    * [react-pagify](https://bebraw.github.io/react-pagify/) - Flexible paginator for React
-    * [Pikaday](https://github.com/dbushell/Pikaday) - Light date picker
-    * [PACE](http://github.hubspot.com/pace/docs/welcome/) - Automatic page load progress bar
-    * [Angular 2.0.0-beta2](https://github.com/angular/angular/blob/master/CHANGELOG.md#200-beta2-2016-01-28)
-    * [caolan/highland](https://github.com/caolan/highland) - High-level streams library
+  * [Pressure.js](http://pressurejs.com/) - Easier Force Touch and 3D Touch
+  * [ScrollReveal](https://scrollrevealjs.org/) - Easy scroll animations for web and mobile browsers.
+  * [react-pagify](https://bebraw.github.io/react-pagify/) - Flexible paginator for React
+  * [Pikaday](https://github.com/dbushell/Pikaday) - Light date picker
+  * [PACE](http://github.hubspot.com/pace/docs/welcome/) - Automatic page load progress bar
+  * [Angular 2.0.0-beta2](https://github.com/angular/angular/blob/master/CHANGELOG.md#200-beta2-2016-01-28)
+  * [caolan/highland](https://github.com/caolan/highland) - High-level streams library
 
-    ## Articles
+  ## Articles
 
-    * [Does Curry Help?](https://hughfdjackson.com/javascript/does-curry-help/)
-    * [How Enterprises Benefit from Node.js](https://blog.risingstack.com/how-enterprises-benefit-from-nodejs/)
-    * [Towards a Common Component Definition](http://survivejs.com/blog/towards-common-components/)
+  * [Does Curry Help?](https://hughfdjackson.com/javascript/does-curry-help/)
+  * [How Enterprises Benefit from Node.js](https://blog.risingstack.com/how-enterprises-benefit-from-nodejs/)
+  * [Towards a Common Component Definition](http://survivejs.com/blog/towards-common-components/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Hardcore JavaScript or Power of 30 Lines](http://ipestov.com/hardcore-javascript-or-power-of-30-lines/)
+  * [Hardcore JavaScript or Power of 30 Lines](http://ipestov.com/hardcore-javascript-or-power-of-30-lines/)
 
-    ## Techniques
+  ## Techniques
 
-    * [WebGL Off the Main Thread](https://hacks.mozilla.org/2016/01/webgl-off-the-main-thread/)
-    * [Enumerating methods on a JavaScript class instance](http://code.fitness/post/2016/01/javascript-enumerate-methods.html)
-    * [Understanding Garbage Collection and Memory in Node.js](https://blog.codeship.com/understanding-garbage-collection-in-node-js/)
-    * [Lenses with Immutable.js](https://medium.com/@drboolean/lenses-with-immutable-js-9bda85674780)
+  * [WebGL Off the Main Thread](https://hacks.mozilla.org/2016/01/webgl-off-the-main-thread/)
+  * [Enumerating methods on a JavaScript class instance](http://code.fitness/post/2016/01/javascript-enumerate-methods.html)
+  * [Understanding Garbage Collection and Memory in Node.js](https://blog.codeship.com/understanding-garbage-collection-in-node-js/)
+  * [Lenses with Immutable.js](https://medium.com/@drboolean/lenses-with-immutable-js-9bda85674780)
 
-    ## Tools
+  ## Tools
 
-    * [Grunt 1.0.0 rc1](http://gruntjs.com/blog/2016-02-11-grunt-1.0.0-rc1-released)
+  * [Grunt 1.0.0 rc1](http://gruntjs.com/blog/2016-02-11-grunt-1.0.0-rc1-released)
 
-    ## Services
+  ## Services
 
-    * [ESNextbin](http://esnextb.in/)
+  * [ESNextbin](http://esnextb.in/)
 
-    ## Demos
+  ## Demos
 
-    * [Road traffic simulator](http://volkhin.com/RoadTrafficSimulator/)
+  * [Road traffic simulator](http://volkhin.com/RoadTrafficSimulator/)

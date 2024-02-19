@@ -4,72 +4,72 @@ short_title: "JSter #78"
 user: bebraw
 slug: monthly-jster-september-2016-part-1
 body: |
-    > Peace and JavaScript to everyone
+  > Peace and JavaScript to everyone
 
-    Things have been progressing quite nicely. I put a lot of effort into pushing my static site generator further, but I'll get back to that later once I have something tidy to show. I also wrote a [small interview](http://survivejs.com/blog/reactabular-interview/) about my table component for React so you can get the core ideas easily.
+  Things have been progressing quite nicely. I put a lot of effort into pushing my static site generator further, but I'll get back to that later once I have something tidy to show. I also wrote a [small interview](http://survivejs.com/blog/reactabular-interview/) about my table component for React so you can get the core ideas easily.
 
-    ## Frameworks
+  ## Frameworks
 
-    {{ screenshot: https://github.com/yoshuawuyts/choo }}
+  {{ screenshot: https://github.com/yoshuawuyts/choo }}
 
-    * [Angular 2.0 Final](https://angularjs.blogspot.fi/2016/09/angular2-final.html)
-    * [BunnyJS](https://bunnyjs.com/) - Browser ES6 Framework
-    * [NX Framework](http://www.nx-framework.com/) - A next generation JavaScript framework
-    * [Polymer 2.0 Preview](https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0)
-    * [choo](https://github.com/yoshuawuyts/choo) - Sturdy frontend framework
+  * [Angular 2.0 Final](https://angularjs.blogspot.fi/2016/09/angular2-final.html)
+  * [BunnyJS](https://bunnyjs.com/) - Browser ES6 Framework
+  * [NX Framework](http://www.nx-framework.com/) - A next generation JavaScript framework
+  * [Polymer 2.0 Preview](https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0)
+  * [choo](https://github.com/yoshuawuyts/choo) - Sturdy frontend framework
 
-    ## Libraries
+  ## Libraries
 
-    * [Verbal Expressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - RegExp for Busy People
-    * [uWebSockets](https://github.com/uWebSockets/uWebSockets) - Highly scalable WebSocket server library
-    * [pageAccelerator](https://github.com/Easyfood/pageAccelerator) - A very light solution to load web pages faster
-    * [Stream.js](https://winterbe.github.io/streamjs/) - Object Streaming Pipeline for JavaScript
-    * [tracking.js](https://trackingjs.com/) - A modern approach for Computer Vision on the web
-    * [Grade.js](http://benhowdle.im/grade/) - Generate complementary gradients based on image data
-    * [sindresorhus/screenfull.js](https://github.com/sindresorhus/screenfull.js/) - Simple wrapper for cross-browser usage of the JavaScript Fullscreen API
-    * [Text Mask](https://text-mask.github.io/text-mask/) - Conform user input to a string mask
-    * [Grumbles.js](http://knpw.rs/grumbles.js/) - Detect when your users are upset
-    * [Granim.js](https://sarcadass.github.io/granim.js/) - Create fluid and interactive gradients animations (10k)
+  * [Verbal Expressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - RegExp for Busy People
+  * [uWebSockets](https://github.com/uWebSockets/uWebSockets) - Highly scalable WebSocket server library
+  * [pageAccelerator](https://github.com/Easyfood/pageAccelerator) - A very light solution to load web pages faster
+  * [Stream.js](https://winterbe.github.io/streamjs/) - Object Streaming Pipeline for JavaScript
+  * [tracking.js](https://trackingjs.com/) - A modern approach for Computer Vision on the web
+  * [Grade.js](http://benhowdle.im/grade/) - Generate complementary gradients based on image data
+  * [sindresorhus/screenfull.js](https://github.com/sindresorhus/screenfull.js/) - Simple wrapper for cross-browser usage of the JavaScript Fullscreen API
+  * [Text Mask](https://text-mask.github.io/text-mask/) - Conform user input to a string mask
+  * [Grumbles.js](http://knpw.rs/grumbles.js/) - Detect when your users are upset
+  * [Granim.js](https://sarcadass.github.io/granim.js/) - Create fluid and interactive gradients animations (10k)
 
-    ## Articles
+  ## Articles
 
-    * [How Developers use Node.js](https://blog.risingstack.com/node-js-developer-survey-results-2016/)
-    * [Why Ramda?](http://fr.umio.us/why-ramda/)
-    * [Mobile Application UI: 6 Definitive Trends in 2016](http://jster.net/blog/mobile-application-trends-2016)
-    * [10 reasons why you should give Elm a try](https://medium.com/@tibastral/10-reasons-why-you-should-give-elm-a-try-62b56d305643)
-    * [JavaScript Frameworks: Distribution Channels for Good Ideas](https://medium.com/@tomdale/javascript-frameworks-distribution-channels-for-good-ideas-9f3b95c0e293)
+  * [How Developers use Node.js](https://blog.risingstack.com/node-js-developer-survey-results-2016/)
+  * [Why Ramda?](http://fr.umio.us/why-ramda/)
+  * [Mobile Application UI: 6 Definitive Trends in 2016](http://jster.net/blog/mobile-application-trends-2016)
+  * [10 reasons why you should give Elm a try](https://medium.com/@tibastral/10-reasons-why-you-should-give-elm-a-try-62b56d305643)
+  * [JavaScript Frameworks: Distribution Channels for Good Ideas](https://medium.com/@tomdale/javascript-frameworks-distribution-channels-for-good-ideas-9f3b95c0e293)
 
-    ## Guides
+  ## Guides
 
-    * [JS Comparison Table](https://dorey.github.io/JavaScript-Equality-Table/)
+  * [JS Comparison Table](https://dorey.github.io/JavaScript-Equality-Table/)
 
-    ## Techniques
+  ## Techniques
 
-    * [FlyWeb – Pure Web Cross-Device Interaction](https://hacks.mozilla.org/2016/09/flyweb-pure-web-cross-device-interaction/)
-    * [Marxist JS](http://marxist.js.org/) - The classless JavaScript manifesto
+  * [FlyWeb – Pure Web Cross-Device Interaction](https://hacks.mozilla.org/2016/09/flyweb-pure-web-cross-device-interaction/)
+  * [Marxist JS](http://marxist.js.org/) - The classless JavaScript manifesto
 
-    ## Interviews
+  ## Interviews
 
-    * [AssetGraph Interview](http://survivejs.com/blog/assetgraph-interview/)
+  * [AssetGraph Interview](http://survivejs.com/blog/assetgraph-interview/)
 
-    ## Games
+  ## Games
 
-    * [cube composer](http://david-peter.de/cube-composer/) - Learn composition through a game
-    * [BabylonJS](http://www.babylonjs.com/) - A complete framework for building 3D games
+  * [cube composer](http://david-peter.de/cube-composer/) - Learn composition through a game
+  * [BabylonJS](http://www.babylonjs.com/) - A complete framework for building 3D games
 
-    ## Tools
+  ## Tools
 
-    * [ESBench](https://esbench.com/) - Benchmarking for ES2015 Code
-    * [Introducing debugger.html](https://hacks.mozilla.org/2016/09/introducing-debugger-html/)
-    * [byteclubfr/prez](https://github.com/byteclubfr/prez) - Generate Reveal.js slideshows from a set of markdowns
-    * [mcsoto/LogicJS](https://github.com/mcsoto/LogicJS) - Logic programming for JavaScript
-    * [Unexpected](http://unexpected.js.org/) - The extensible BDD assertion toolkit
-    * [JerryScript](http://jerryscript.net/) - JavaScript engine for Internet of Things
+  * [ESBench](https://esbench.com/) - Benchmarking for ES2015 Code
+  * [Introducing debugger.html](https://hacks.mozilla.org/2016/09/introducing-debugger-html/)
+  * [byteclubfr/prez](https://github.com/byteclubfr/prez) - Generate Reveal.js slideshows from a set of markdowns
+  * [mcsoto/LogicJS](https://github.com/mcsoto/LogicJS) - Logic programming for JavaScript
+  * [Unexpected](http://unexpected.js.org/) - The extensible BDD assertion toolkit
+  * [JerryScript](http://jerryscript.net/) - JavaScript engine for Internet of Things
 
-    ## CSS
+  ## CSS
 
-    * [Tachyons](http://tachyons.io/) - CSS Toolkit
+  * [Tachyons](http://tachyons.io/) - CSS Toolkit
 
-    ## Demos
+  ## Demos
 
-    * [Generative Art in HTML5 Canvas – Sweeping Fractal Lines](http://rectangleworld.com/blog/archives/462)
+  * [Generative Art in HTML5 Canvas – Sweeping Fractal Lines](http://rectangleworld.com/blog/archives/462)

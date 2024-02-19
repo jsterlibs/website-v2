@@ -4,80 +4,80 @@ short_title: "JSter #87"
 user: bebraw
 slug: jster-87
 body: |
-    > The Good, the Bad, the JavaScript.
+  > The Good, the Bad, the JavaScript.
 
-    A new version of the [SurviveJS webpack book](http://survivejs.com/blog/survivejs-webpack-170/) has arrived. The book is getting quite massive (around 330 pages), but the end result might be worth all the effort.
+  A new version of the [SurviveJS webpack book](http://survivejs.com/blog/survivejs-webpack-170/) has arrived. The book is getting quite massive (around 330 pages), but the end result might be worth all the effort.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/nolanlawson/marky }}
+  {{ screenshot: https://github.com/nolanlawson/marky }}
 
-    * [nolanlawson/marky](https://github.com/nolanlawson/marky) - High-resolution JavaScript timer based on performance.mark() and measure().
-    * [skatejs](https://skatejs.gitbooks.io/skatejs/content/) - Write functional and performance web components.
-    * [iType.js](https://ityped.surge.sh/) - Simple typing animation.
+  * [nolanlawson/marky](https://github.com/nolanlawson/marky) - High-resolution JavaScript timer based on performance.mark() and measure().
+  * [skatejs](https://skatejs.gitbooks.io/skatejs/content/) - Write functional and performance web components.
+  * [iType.js](https://ityped.surge.sh/) - Simple typing animation.
 
-    ## Data Manipulation
+  ## Data Manipulation
 
-    * [sanctuary](https://github.com/sanctuary-js/sanctuary) - Refuge from unsafe JavaScript.
-    * [selfrefactor/rambda](https://github.com/selfrefactor/rambda) - Faster alternative to Ramda in just 7kB.
-    * [skaterdav85/validatorjs](https://github.com/skaterdav85/validatorjs) - A data validation library in JavaScript for the browser and Node.js, inspired by Laravel's Validator.
+  * [sanctuary](https://github.com/sanctuary-js/sanctuary) - Refuge from unsafe JavaScript.
+  * [selfrefactor/rambda](https://github.com/selfrefactor/rambda) - Faster alternative to Ramda in just 7kB.
+  * [skaterdav85/validatorjs](https://github.com/skaterdav85/validatorjs) - A data validation library in JavaScript for the browser and Node.js, inspired by Laravel's Validator.
 
-    ## Data Structures
+  ## Data Structures
 
-    * [ide/mux](https://github.com/ide/mux) - A simple and convenient function that resolves promises in data structures like arrays, objects, Maps, and Sets.
-    * [pcbje/ggraph](https://github.com/pcbje/ggraph) - Graph visualization of big messy data.
-    * [Mnemonist](https://yomguithereal.github.io/mnemonist/) - Curated collection of data structures for the JavaScript language,
+  * [ide/mux](https://github.com/ide/mux) - A simple and convenient function that resolves promises in data structures like arrays, objects, Maps, and Sets.
+  * [pcbje/ggraph](https://github.com/pcbje/ggraph) - Graph visualization of big messy data.
+  * [Mnemonist](https://yomguithereal.github.io/mnemonist/) - Curated collection of data structures for the JavaScript language,
 
-    ## Routing
+  ## Routing
 
-    * [junctions.js](https://junctions.js.org/) - Simpler routing.
+  * [junctions.js](https://junctions.js.org/) - Simpler routing.
 
-    ## State Management
+  ## State Management
 
-    * [MobX 3](https://medium.com/@mweststrate/mobx-3-released-unpeeling-the-onion-ca877382f443) - Reactive state management.
+  * [MobX 3](https://medium.com/@mweststrate/mobx-3-released-unpeeling-the-onion-ca877382f443) - Reactive state management.
 
-    ## Frameworks
+  ## Frameworks
 
-    * [Mithril 1.0](http://mithril.js.org/)
+  * [Mithril 1.0](http://mithril.js.org/)
 
-    ## Articles
+  ## Articles
 
-    * [RipVanWinkle.js](https://hackernoon.com/ripvanwinkle-js-returning-to-javascript-after-5-years-1dc17c57a518)
-    * [WebGL 2 lands in Firefox](https://hacks.mozilla.org/2017/01/webgl-2-lands-in-firefox/)
-    * [Good Practices: Why you should use JavaScript whenever possible with React Native](https://blog.getexponent.com/good-practices-why-you-should-use-javascript-whenever-possible-with-react-native-26478ec22334)
-    * [You may not need to thunk](https://medium.com/@thisismissem/you-may-not-need-to-thunk-f5dc7a6fcbca)
+  * [RipVanWinkle.js](https://hackernoon.com/ripvanwinkle-js-returning-to-javascript-after-5-years-1dc17c57a518)
+  * [WebGL 2 lands in Firefox](https://hacks.mozilla.org/2017/01/webgl-2-lands-in-firefox/)
+  * [Good Practices: Why you should use JavaScript whenever possible with React Native](https://blog.getexponent.com/good-practices-why-you-should-use-javascript-whenever-possible-with-react-native-26478ec22334)
+  * [You may not need to thunk](https://medium.com/@thisismissem/you-may-not-need-to-thunk-f5dc7a6fcbca)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Developing isomorphic applications using webpack](https://hackernoon.com/developing-isomorphic-applications-using-webpack-eca814a418ad)
-    * [TypedArray or DataView: Understanding byte order](https://hacks.mozilla.org/2017/01/typedarray-or-dataview-understanding-byte-order/)
+  * [Developing isomorphic applications using webpack](https://hackernoon.com/developing-isomorphic-applications-using-webpack-eca814a418ad)
+  * [TypedArray or DataView: Understanding byte order](https://hacks.mozilla.org/2017/01/typedarray-or-dataview-understanding-byte-order/)
 
-    ## Techniques
+  ## Techniques
 
-    * [How to get a performance boost using WebAssembly](https://hackernoon.com/how-to-get-a-performance-boost-using-webassembly-8844ec6dd665)
-    * [How to Test Promises with Mocha](https://wietse.loves.engineering/testing-promises-with-mocha-90df8b7d2e35)
-    * [Acceptance testing with CodeceptJS](http://codenroll.it/acceptance-testing-with-codecept-js/)
-    * [Using Immutable Caching To Speed Up The Web](https://hacks.mozilla.org/2017/01/using-immutable-caching-to-speed-up-the-web/)
-    * [Server-side Rendering Shootout with Marko, Preact, Rax, React and Vue](https://hackernoon.com/server-side-rendering-shootout-with-marko-preact-rax-react-and-vue-25e1ae17800f)
-    * [Clean Code patterns implemented in JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
+  * [How to get a performance boost using WebAssembly](https://hackernoon.com/how-to-get-a-performance-boost-using-webassembly-8844ec6dd665)
+  * [How to Test Promises with Mocha](https://wietse.loves.engineering/testing-promises-with-mocha-90df8b7d2e35)
+  * [Acceptance testing with CodeceptJS](http://codenroll.it/acceptance-testing-with-codecept-js/)
+  * [Using Immutable Caching To Speed Up The Web](https://hacks.mozilla.org/2017/01/using-immutable-caching-to-speed-up-the-web/)
+  * [Server-side Rendering Shootout with Marko, Preact, Rax, React and Vue](https://hackernoon.com/server-side-rendering-shootout-with-marko-preact-rax-react-and-vue-25e1ae17800f)
+  * [Clean Code patterns implemented in JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 
-    ## Interviews
+  ## Interviews
 
-    * [Unexpected](http://survivejs.com/blog/unexpected-interview/)
-    * [ajv](http://survivejs.com/blog/ajv-interview/)
+  * [Unexpected](http://survivejs.com/blog/unexpected-interview/)
+  * [ajv](http://survivejs.com/blog/ajv-interview/)
 
-    ## Games
+  ## Games
 
-    * [Elevator Saga](http://play.elevatorsaga.com/)
-    * [The Founder: Change the World](http://thefounder.biz/)
-    * [Flexbox Defense](http://www.flexboxdefense.com/)
+  * [Elevator Saga](http://play.elevatorsaga.com/)
+  * [The Founder: Change the World](http://thefounder.biz/)
+  * [Flexbox Defense](http://www.flexboxdefense.com/)
 
-    ## Tools
+  ## Tools
 
-    * [Ava 0.18.0](https://github.com/avajs/ava/releases/tag/v0.18.0) - More testing goodies.
-    * [ColorMe](https://colorme.io/) - Visualize the CSS color function.
-    * [Flow Runtime](https://codemix.github.io/flow-runtime/)
+  * [Ava 0.18.0](https://github.com/avajs/ava/releases/tag/v0.18.0) - More testing goodies.
+  * [ColorMe](https://colorme.io/) - Visualize the CSS color function.
+  * [Flow Runtime](https://codemix.github.io/flow-runtime/)
 
-    ## Demos
+  ## Demos
 
-    * [Tangram Sandbox](https://tangrams.github.io/tangram-sandbox/tangram.html)
+  * [Tangram Sandbox](https://tangrams.github.io/tangram-sandbox/tangram.html)

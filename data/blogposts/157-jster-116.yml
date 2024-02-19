@@ -4,48 +4,48 @@ short_title: "JSter #116"
 user: bebraw
 slug: jster-116
 body: |
-    > New Wave of Heavy JavaScript
+  > New Wave of Heavy JavaScript
 
-    [React Finland 2018 is a wrap!](https://medium.com/react-finland/react-finland-2018-lessons-learned-754a5f29067c) The event was a great success and it's likely we'll organize it again next year as the feedback was positive.
+  [React Finland 2018 is a wrap!](https://medium.com/react-finland/react-finland-2018-lessons-learned-754a5f29067c) The event was a great success and it's likely we'll organize it again next year as the feedback was positive.
 
-    ## Libraries
+  ## Libraries
 
-    * [pshihn/rough](https://github.com/pshihn/rough) - Create graphics with a hand-drawn, sketchy, appearance.
-    * [Quiq/check-some](https://github.com/Quiq/check-some) - Component to help with form validation in React.
-    * [getify/CAF](https://github.com/getify/CAF) - Cancelable Async Functions.
-    * [TensorFlow.js](https://js.tensorflow.org/) - A WebGL accelerated, browser based JavaScript library for training and deploying ML models.
-    * [ballercat/walt](https://github.com/ballercat/walt) - JavaScript-like syntax for WebAssembly text format.
-    * [Docusaurus](https://docusaurus.io/) - Easy to Maintain Open Source Documentation Websites.
+  * [pshihn/rough](https://github.com/pshihn/rough) - Create graphics with a hand-drawn, sketchy, appearance.
+  * [Quiq/check-some](https://github.com/Quiq/check-some) - Component to help with form validation in React.
+  * [getify/CAF](https://github.com/getify/CAF) - Cancelable Async Functions.
+  * [TensorFlow.js](https://js.tensorflow.org/) - A WebGL accelerated, browser based JavaScript library for training and deploying ML models.
+  * [ballercat/walt](https://github.com/ballercat/walt) - JavaScript-like syntax for WebAssembly text format.
+  * [Docusaurus](https://docusaurus.io/) - Easy to Maintain Open Source Documentation Websites.
 
-    ## GraphQL
+  ## GraphQL
 
-    * [graphile/postgraphile](https://github.com/graphile/postgraphile) - A GraphQL API created by reflection over a PostgreSQL schema.
-    * [bradleyboy/tuql](https://github.com/bradleyboy/tuql) - Automatically create a GraphQL server from a sqlite database.
+  * [graphile/postgraphile](https://github.com/graphile/postgraphile) - A GraphQL API created by reflection over a PostgreSQL schema.
+  * [bradleyboy/tuql](https://github.com/bradleyboy/tuql) - Automatically create a GraphQL server from a sqlite database.
 
-    ## Styling
+  ## Styling
 
-    * [Tailwind CSS](https://tailwindcss.com/) - A Utility-First CSS Framework
-    for Rapid UI Development.
+  * [Tailwind CSS](https://tailwindcss.com/) - A Utility-First CSS Framework
+  for Rapid UI Development.
 
-    ## Articles
+  ## Articles
 
-    * [Introducing Nexus.js: A multi-threaded JavaScript run-time](https://dev.to/voodooattack/introducing-nexusjs-a-multi-threaded-javascript-run-time-3g6)
+  * [Introducing Nexus.js: A multi-threaded JavaScript run-time](https://dev.to/voodooattack/introducing-nexusjs-a-multi-threaded-javascript-run-time-3g6)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Build An Interactive Game of Thrones Map (Part II)](https://blog.patricktriest.com/game-of-thrones-leaflet-webpack/)
+  * [Build An Interactive Game of Thrones Map (Part II)](https://blog.patricktriest.com/game-of-thrones-leaflet-webpack/)
 
-    ## Techniques
+  ## Techniques
 
-    * [4 tips to write maintainable React components](https://blog.callstack.io/4-tips-to-write-maintainable-react-components-7d18278643d0)
+  * [4 tips to write maintainable React components](https://blog.callstack.io/4-tips-to-write-maintainable-react-components-7d18278643d0)
 
-    ## Tools
+  ## Tools
 
-    * [🚀Give Parcel a Try, You May Like It 🚀](https://medium.com/@michaelsholty/give-parcel-a-try-you-may-like-it-75cd12a2bfb8)
-    * [JamieMason/syncpack](https://github.com/JamieMason/syncpack) - Manage multiple package.json files in Lerna Monorepos.
-    * [twbs/bootlint](https://github.com/twbs/bootlint) - HTML linter for Bootstrap projects.
-    * [NectarJS](https://codeburst.io/nectarjs-compiling-javascript-into-native-binaries-for-every-platform-2efb2083a4a) - Compiling JavaScript into Native Binaries for Every Platform
+  * [🚀Give Parcel a Try, You May Like It 🚀](https://medium.com/@michaelsholty/give-parcel-a-try-you-may-like-it-75cd12a2bfb8)
+  * [JamieMason/syncpack](https://github.com/JamieMason/syncpack) - Manage multiple package.json files in Lerna Monorepos.
+  * [twbs/bootlint](https://github.com/twbs/bootlint) - HTML linter for Bootstrap projects.
+  * [NectarJS](https://codeburst.io/nectarjs-compiling-javascript-into-native-binaries-for-every-platform-2efb2083a4a) - Compiling JavaScript into Native Binaries for Every Platform
 
-    ## Services
+  ## Services
 
-    * [BundlePhobia](https://bundlephobia.com/) - Find the cost of adding a npm package to your bundle.
+  * [BundlePhobia](https://bundlephobia.com/) - Find the cost of adding a npm package to your bundle.

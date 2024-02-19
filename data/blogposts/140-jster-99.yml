@@ -4,52 +4,52 @@ short_title: "JSter #99"
 user: bebraw
 slug: jster-99
 body: |
-    > Toto, I've a feeling we're not in JavaScript anymore.
+  > Toto, I've a feeling we're not in JavaScript anymore.
 
-    My [Fall Tour](https://survivejs.com/blog/fall-tour/) is on its way. I'm running especially [webpack clinics](https://survivejs.com/clinic/) where people get a quick overview of the topic while gaining solutions to their specific problems.
+  My [Fall Tour](https://survivejs.com/blog/fall-tour/) is on its way. I'm running especially [webpack clinics](https://survivejs.com/clinic/) where people get a quick overview of the topic while gaining solutions to their specific problems.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/haltu/muuri }}
+  {{ screenshot: https://github.com/haltu/muuri }}
 
-    * [idx](https://www.npmjs.com/package/idx) - A utility function for traversing properties on objects and arrays.
-    * [spacetime](https://smallwins.github.io/spacetime/) - Manage timezones.
-    * [Muuri](https://haltu.github.io/muuri/) - MIT-licensed alternative to Masonry.
-    * [upring](https://www.npmjs.com/package/upring) - Application-level sharding for Node based on streams.
+  * [idx](https://www.npmjs.com/package/idx) - A utility function for traversing properties on objects and arrays.
+  * [spacetime](https://smallwins.github.io/spacetime/) - Manage timezones.
+  * [Muuri](https://haltu.github.io/muuri/) - MIT-licensed alternative to Masonry.
+  * [upring](https://www.npmjs.com/package/upring) - Application-level sharding for Node based on streams.
 
-    ## Architectures
+  ## Architectures
 
-    * [SAM](http://sam.js.org/) - State-Action-Model, a new reactive/functional pattern that simplifies front-end architectures.
+  * [SAM](http://sam.js.org/) - State-Action-Model, a new reactive/functional pattern that simplifies front-end architectures.
 
-    ## Programming Languages
+  ## Programming Languages
 
-    * [VVVV.js](http://vvvvjs.com/) - The visual programming language for the browser.
+  * [VVVV.js](http://vvvvjs.com/) - The visual programming language for the browser.
 
-    ## Articles
+  ## Articles
 
-    * [Why WebAssembly is Faster Than asm.js](https://hacks.mozilla.org/2017/03/why-webassembly-is-faster-than-asm-js/)
-    * [Preact internals #1: the easy parts](https://medium.com/@asolove/preact-internals-1-the-easy-parts-3a081fa36205)
-    * [Ten Things A Serious JavaScript Developer Should Learn](https://benmccormick.org/2017/07/19/ten-things-javascript/)
+  * [Why WebAssembly is Faster Than asm.js](https://hacks.mozilla.org/2017/03/why-webassembly-is-faster-than-asm-js/)
+  * [Preact internals #1: the easy parts](https://medium.com/@asolove/preact-internals-1-the-easy-parts-3a081fa36205)
+  * [Ten Things A Serious JavaScript Developer Should Learn](https://benmccormick.org/2017/07/19/ten-things-javascript/)
 
-    ## Cheat Sheets
+  ## Cheat Sheets
 
-    * [jQuery Cheat Sheet (png, pdf)](https://websitesetup.org/jquery-cheat-sheet/)
+  * [jQuery Cheat Sheet (png, pdf)](https://websitesetup.org/jquery-cheat-sheet/)
 
-    ## Techniques
+  ## Techniques
 
-    * [JavaScript tools for end-to-end testing web applications](https://mo.github.io/2017/07/20/javascript-e2e-integration-testing.html)
-    * [What's up with monomorphism?](http://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
+  * [JavaScript tools for end-to-end testing web applications](https://mo.github.io/2017/07/20/javascript-e2e-integration-testing.html)
+  * [What's up with monomorphism?](http://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
 
-    ## Interviews
+  ## Interviews
 
-    * [documentation.js - The documentation system for modern JavaScript - Interview with Tom MacWright](https://survivejs.com/blog/documentationjs-interview/)
-    * [Rill - Universal web application framework - Interview with Dylan Piercey](https://survivejs.com/blog/rill-interview/)
-    * [d-l-l - Easy, automatic, optimized DLL config handler for webpack - Interview with James Wiens](https://survivejs.com/blog/dll-interview/)
-    * [Material-UI - React Components that Implement Google's Material Design - Interview with Olivier Tassinari](https://survivejs.com/blog/material-ui-interview/)
+  * [documentation.js - The documentation system for modern JavaScript - Interview with Tom MacWright](https://survivejs.com/blog/documentationjs-interview/)
+  * [Rill - Universal web application framework - Interview with Dylan Piercey](https://survivejs.com/blog/rill-interview/)
+  * [d-l-l - Easy, automatic, optimized DLL config handler for webpack - Interview with James Wiens](https://survivejs.com/blog/dll-interview/)
+  * [Material-UI - React Components that Implement Google's Material Design - Interview with Olivier Tassinari](https://survivejs.com/blog/material-ui-interview/)
 
-    ## Tools
+  ## Tools
 
-    * [Introducing sphinx-js, a better way to document large JavaScript projects](https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/)
-    * [Introducing npx: an npm package runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
-    * [CodeceptJS 1.0](http://codecept.io/changelog/) - The popular acceptance testing tool has reached a major milestone.
-    * [CSS Triggers](https://csstriggers.com/) - Figure out what triggers a reflow.
+  * [Introducing sphinx-js, a better way to document large JavaScript projects](https://hacks.mozilla.org/2017/07/introducing-sphinx-js-a-better-way-to-document-large-javascript-projects/)
+  * [Introducing npx: an npm package runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
+  * [CodeceptJS 1.0](http://codecept.io/changelog/) - The popular acceptance testing tool has reached a major milestone.
+  * [CSS Triggers](https://csstriggers.com/) - Figure out what triggers a reflow.

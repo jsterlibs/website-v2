@@ -4,69 +4,69 @@ short_title: "JSter #80"
 user: bebraw
 slug: monthly-jster-october-2016-part-1
 body: |
-    > If you can think of a JavaScript package name, it likely exists already
+  > If you can think of a JavaScript package name, it likely exists already
 
-    Two weeks have gone again. I released a new major version of my [table component for React](http://reactabular.js.org). The tree API has solidified and there are also a few goodies in store.
+  Two weeks have gone again. I released a new major version of my [table component for React](http://reactabular.js.org). The tree API has solidified and there are also a few goodies in store.
 
-    webpack has been accepted as a part of the [Open Collective](https://opencollective.com/webpack). This means it's possible for individuals and companies to support the project now. You can read more about the scheme at the [related blog post](https://medium.com/webpack/sustaining-webpack-for-the-future-part-1-32bea7f9e8a2).
+  webpack has been accepted as a part of the [Open Collective](https://opencollective.com/webpack). This means it's possible for individuals and companies to support the project now. You can read more about the scheme at the [related blog post](https://medium.com/webpack/sustaining-webpack-for-the-future-part-1-32bea7f9e8a2).
 
-    webpack 2 documentation effort is going to the right direction as well and [the documentation MVP is nearing completion](https://medium.com/webpack/documentation-mvp-the-final-stretch-8b65f843f828#.1so9s2iz4).
+  webpack 2 documentation effort is going to the right direction as well and [the documentation MVP is nearing completion](https://medium.com/webpack/documentation-mvp-the-final-stretch-8b65f843f828#.1so9s2iz4).
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/bredele/vomit }}
+  {{ screenshot: https://github.com/bredele/vomit }}
 
-    * [iconate.js](https://bitshadow.github.io/iconate/) - Transform your icons with trendy animations
-    * [Tesseract.js](http://tesseract.projectnaptha.com/) - Pure Javascript port of the popular Tesseract OCR engine
-    * [bredele/vomit](https://github.com/bredele/vomit) - Disgustingly powerful and easy library for building user interfaces
-    * [bcherny/json-schema-to-typescript](https://github.com/bcherny/json-schema-to-typescript) - Compile JSON Schema to TypeScript
-    * [thejameskyle/pretty-format](https://github.com/thejameskyle/pretty-format) - Stringify any JavaScript value
-    * [SphinxJS](https://medium.com/@jrainlau/sphinxjs-a-very-light-js-library-which-to-encrypts-decrypts-a-string-to-from-an-image-5029230fa018) - A very light JS library which could encode a string to an image, or decode an image to a string
-    * [InversifyJS](http://inversify.io/) - A powerful IoC container for JavaScript apps powered by TypeScript
-    * [laurisvan/request-promise-lite](https://github.com/laurisvan/request-promise-lite/) - Lightweight, promiseful http/https request client
+  * [iconate.js](https://bitshadow.github.io/iconate/) - Transform your icons with trendy animations
+  * [Tesseract.js](http://tesseract.projectnaptha.com/) - Pure Javascript port of the popular Tesseract OCR engine
+  * [bredele/vomit](https://github.com/bredele/vomit) - Disgustingly powerful and easy library for building user interfaces
+  * [bcherny/json-schema-to-typescript](https://github.com/bcherny/json-schema-to-typescript) - Compile JSON Schema to TypeScript
+  * [thejameskyle/pretty-format](https://github.com/thejameskyle/pretty-format) - Stringify any JavaScript value
+  * [SphinxJS](https://medium.com/@jrainlau/sphinxjs-a-very-light-js-library-which-to-encrypts-decrypts-a-string-to-from-an-image-5029230fa018) - A very light JS library which could encode a string to an image, or decode an image to a string
+  * [InversifyJS](http://inversify.io/) - A powerful IoC container for JavaScript apps powered by TypeScript
+  * [laurisvan/request-promise-lite](https://github.com/laurisvan/request-promise-lite/) - Lightweight, promiseful http/https request client
 
-    ## Frameworks
+  ## Frameworks
 
-    * [dva](https://github.com/dvajs/dva) -  React and Redux based, lightweight and elm-style framework
-    * [Adonis](http://www.adonisjs.com/) - MVC Framework for NodeJs to write webapps with less code
+  * [dva](https://github.com/dvajs/dva) -  React and Redux based, lightweight and elm-style framework
+  * [Adonis](http://www.adonisjs.com/) - MVC Framework for NodeJs to write webapps with less code
 
-    ## Articles
+  ## Articles
 
-    * [Popularity of JavaScript Frameworks and Libraries](http://blog.honeypot.io/popularity-of-javascript-frameworks-and-libraries/)
-    * [What, Exactly, Makes Something A Progressive Web App?](https://infrequently.org/2016/09/what-exactly-makes-something-a-progressive-web-app/)
+  * [Popularity of JavaScript Frameworks and Libraries](http://blog.honeypot.io/popularity-of-javascript-frameworks-and-libraries/)
+  * [What, Exactly, Makes Something A Progressive Web App?](https://infrequently.org/2016/09/what-exactly-makes-something-a-progressive-web-app/)
 
-    ## Techniques
+  ## Techniques
 
-    * [Flattening Promise Chains](http://solutionoptimist.com/2013/12/27/javascript-promise-chains-2/)
+  * [Flattening Promise Chains](http://solutionoptimist.com/2013/12/27/javascript-promise-chains-2/)
 
-    ## Interviews
+  ## Interviews
 
-    * [Teaching JavaScript - Interview with Bianca Gandolfo](http://survivejs.com/blog/teaching-javascript-interview/)
+  * [Teaching JavaScript - Interview with Bianca Gandolfo](http://survivejs.com/blog/teaching-javascript-interview/)
 
-    ## Games
+  ## Games
 
-    * [JavaScript guessing game](https://javascript-game.firebaseapp.com/) - Guess the library/framework
+  * [JavaScript guessing game](https://javascript-game.firebaseapp.com/) - Guess the library/framework
 
-    ## Slides
+  ## Slides
 
-    * [Speech Recognition on the Web (JSConf Iceland)](https://speakerdeck.com/mcirlanaru/speech-recognition-on-the-web-jsconf-iceland)
+  * [Speech Recognition on the Web (JSConf Iceland)](https://speakerdeck.com/mcirlanaru/speech-recognition-on-the-web-jsconf-iceland)
 
-    ## Tools
+  ## Tools
 
-    * [Yarn](https://yarnpkg.com/) - A new JavaScript package manager by Facebook
-    * [googlechrome/lighthouse](https://github.com/googlechrome/lighthouse) - Auditing and performance metrics for Progressive Web Apps
-    * [PM2 v2](https://keymetrics.io/2016/08/24/pm2-v2-released/) - Supervisor for Node.js
-    * [Introducing NodeJS-Dashboard](https://formidable.com/blog/2016/10/12/introducing-nodejs-dashboard/)
-    * [csstree](https://github.com/csstree/csstree) - Fast detailed CSS parser with syntax validation
-    * [nolanlawson/optimize-js](https://github.com/nolanlawson/optimize-js) - Optimize a JavaScript file for faster initial load by wrapping eagerly-invoked functions
-    * [BDSM](https://500tech.github.io/bdsm/) - Badass Server Mocks
-    * [Introducing kyt](http://open.blogs.nytimes.com/2016/09/13/introducing-kyt-our-web-app-configuration-toolkit/) - Web application configuration toolkit by New York Times
-    * [danvk/source-map-explorer](https://github.com/danvk/source-map-explorer) - Analyze and debug space usage through source maps
+  * [Yarn](https://yarnpkg.com/) - A new JavaScript package manager by Facebook
+  * [googlechrome/lighthouse](https://github.com/googlechrome/lighthouse) - Auditing and performance metrics for Progressive Web Apps
+  * [PM2 v2](https://keymetrics.io/2016/08/24/pm2-v2-released/) - Supervisor for Node.js
+  * [Introducing NodeJS-Dashboard](https://formidable.com/blog/2016/10/12/introducing-nodejs-dashboard/)
+  * [csstree](https://github.com/csstree/csstree) - Fast detailed CSS parser with syntax validation
+  * [nolanlawson/optimize-js](https://github.com/nolanlawson/optimize-js) - Optimize a JavaScript file for faster initial load by wrapping eagerly-invoked functions
+  * [BDSM](https://500tech.github.io/bdsm/) - Badass Server Mocks
+  * [Introducing kyt](http://open.blogs.nytimes.com/2016/09/13/introducing-kyt-our-web-app-configuration-toolkit/) - Web application configuration toolkit by New York Times
+  * [danvk/source-map-explorer](https://github.com/danvk/source-map-explorer) - Analyze and debug space usage through source maps
 
-    ## CSS
+  ## CSS
 
-    * [SpinThatShit](https://matejkustec.github.io/SpinThatShit/) - A set of SCSS mixins for single element loaders and spinners
+  * [SpinThatShit](https://matejkustec.github.io/SpinThatShit/) - A set of SCSS mixins for single element loaders and spinners
 
-    ## Demos
+  ## Demos
 
-    * [Interactive Kaleidoscope](https://codepen.io/jhealey5/pen/JRGgVr)
+  * [Interactive Kaleidoscope](https://codepen.io/jhealey5/pen/JRGgVr)

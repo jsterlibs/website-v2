@@ -4,53 +4,53 @@ short_title: "JSter #90"
 user: bebraw
 slug: jster-90
 body: |
-    > Gone with the JavaScript.
+  > Gone with the JavaScript.
 
-    Interesting times. The webpack book has reached a release candidate version you can [study online](https://survivejs.com/webpack/introduction/). Almost 70,000 words and over 30 chapters later, we are nearly there. I have a date in mind for the final release and to support it, I will have [a tour in Europe around April](https://survivejs.com/blog/euro-tour-2017/). Countries include Finland, Norway, Germany, Czech, and Slovakia. I might see some of you there.
+  Interesting times. The webpack book has reached a release candidate version you can [study online](https://survivejs.com/webpack/introduction/). Almost 70,000 words and over 30 chapters later, we are nearly there. I have a date in mind for the final release and to support it, I will have [a tour in Europe around April](https://survivejs.com/blog/euro-tour-2017/). Countries include Finland, Norway, Germany, Czech, and Slovakia. I might see some of you there.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://cs.stanford.edu/people/karpathy/convnetjs/ }}
+  {{ screenshot: https://cs.stanford.edu/people/karpathy/convnetjs/ }}
 
-    * [Marko 4.0](https://medium.com/@mlrawlings/marko-4-0-is-here-837884c5f60d) - Marko by eBay is a fast UI library designed server side rendering in mind. It's up to 5-50 times faster than other alternatives. It's not a direct replacement to React and such but still worth a look.
-    * [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) - Train Deep Learning models in your browser.
-    * [hyperHTML](https://medium.com/@WebReflection/hyperhtml-a-virtual-dom-alternative-279db455ee0e) - What happens when you build a UI library on top of ES6 templates? hyperHTML happens.
+  * [Marko 4.0](https://medium.com/@mlrawlings/marko-4-0-is-here-837884c5f60d) - Marko by eBay is a fast UI library designed server side rendering in mind. It's up to 5-50 times faster than other alternatives. It's not a direct replacement to React and such but still worth a look.
+  * [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) - Train Deep Learning models in your browser.
+  * [hyperHTML](https://medium.com/@WebReflection/hyperhtml-a-virtual-dom-alternative-279db455ee0e) - What happens when you build a UI library on top of ES6 templates? hyperHTML happens.
 
-    ## Frameworks
+  ## Frameworks
 
-    * [All JavaScript frameworks are terrible](https://medium.com/@mattburgess/all-javascript-frameworks-are-terrible-e68d8865183e) - Or are they?
+  * [All JavaScript frameworks are terrible](https://medium.com/@mattburgess/all-javascript-frameworks-are-terrible-e68d8865183e) - Or are they?
 
-    ## Articles
+  ## Articles
 
-    * [Optimising the front end for the browser](https://dev.to/sanjsanj/optimising-the-front-end-for-thebrowser) - The need for speed.
-    * [Experience Virtual Reality on the web with Chrome](https://blog.google/products/chrome/experience-virtual-reality-web-chrome/) - Virtual Reality is becoming a reality (pun intended) in browsers.
+  * [Optimising the front end for the browser](https://dev.to/sanjsanj/optimising-the-front-end-for-thebrowser) - The need for speed.
+  * [Experience Virtual Reality on the web with Chrome](https://blog.google/products/chrome/experience-virtual-reality-web-chrome/) - Virtual Reality is becoming a reality (pun intended) in browsers.
 
-    ## Parsing
+  ## Parsing
 
-    * [Introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d)
-    * [Parsing absolutely anything in JavaScript using Earley algorithm](https://medium.com/@gajus/parsing-absolutely-anything-in-javascript-using-earley-algorithm-886edcc31e5e)
+  * [Introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d)
+  * [Parsing absolutely anything in JavaScript using Earley algorithm](https://medium.com/@gajus/parsing-absolutely-anything-in-javascript-using-earley-algorithm-886edcc31e5e)
 
-    ## Techniques
+  ## Techniques
 
-    * [How linting and ESLint improve code quality](https://hackernoon.com/how-linting-and-eslint-improve-code-quality-fa83d2469efe)
-    * [How to create strongly-typed npm packages](https://medium.com/@mweststrate/how-to-create-strongly-typed-npm-modules-1e1bda23a7f4)
-    * [10 React mini-patterns](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5)
+  * [How linting and ESLint improve code quality](https://hackernoon.com/how-linting-and-eslint-improve-code-quality-fa83d2469efe)
+  * [How to create strongly-typed npm packages](https://medium.com/@mweststrate/how-to-create-strongly-typed-npm-modules-1e1bda23a7f4)
+  * [10 React mini-patterns](https://hackernoon.com/10-react-mini-patterns-c1da92f068c5)
 
-    ## Interviews
+  ## Interviews
 
-    * [Code Quality Interview with João Caxaria](https://survivejs.com/blog/code-quality-interview/) - What makes code good?
-    * [hyperapp Interview with Jorge Bucaran](https://survivejs.com/blog/hyperapp-interview/) - Learn more about this light UI library inspired by Elm.
+  * [Code Quality Interview with João Caxaria](https://survivejs.com/blog/code-quality-interview/) - What makes code good?
+  * [hyperapp Interview with Jorge Bucaran](https://survivejs.com/blog/hyperapp-interview/) - Learn more about this light UI library inspired by Elm.
 
-    ## Games
+  ## Games
 
-    * [nhusher/asteroids](https://github.com/nhusher/asteroids) - 10k asteroids.
-    * [webrender/10ktower](https://github.com/webrender/10ktower) - Another 10k demo. Towers this time.
+  * [nhusher/asteroids](https://github.com/nhusher/asteroids) - 10k asteroids.
+  * [webrender/10ktower](https://github.com/webrender/10ktower) - Another 10k demo. Towers this time.
 
-    ## Tools
+  ## Tools
 
-    * [SpeedTracker](https://speedtracker.org/) - Monitor the performance of your site. What you don't measure you can't fix.
-    * [cs01/gdbgui/](https://github.com/cs01/gdbgui/) - A browser-based user interface for gdb.
+  * [SpeedTracker](https://speedtracker.org/) - Monitor the performance of your site. What you don't measure you can't fix.
+  * [cs01/gdbgui/](https://github.com/cs01/gdbgui/) - A browser-based user interface for gdb.
 
-    ## Demos
+  ## Demos
 
-    * [Path Graph](https://darioseyb.com/pathgraph/) - Visualizations for ray tracing algorithms.
+  * [Path Graph](https://darioseyb.com/pathgraph/) - Visualizations for ray tracing algorithms.

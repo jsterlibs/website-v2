@@ -4,43 +4,43 @@ short_title: "JSter #72"
 user: bebraw
 slug: monthly-jster-june-2016-part-1
 body: |
-    > New day, new JavaScript library to learn.
+  > New day, new JavaScript library to learn.
 
-    It has been another busy two weeks. The culmination point of that was a [new release of my Webpack book](http://survivejs.com/blog/survivejs-webpack-131/). I also participated in [a Webpack themed JavaScript Air](https://javascriptair.com/episodes/2016-06-08/) and [Three Devs and a Maybe podcast (Webpack again)](http://threedevsandamaybe.com/introduction-to-webpack-with-juho-veps%C3%A4l%C3%A4inen/).
+  It has been another busy two weeks. The culmination point of that was a [new release of my Webpack book](http://survivejs.com/blog/survivejs-webpack-131/). I also participated in [a Webpack themed JavaScript Air](https://javascriptair.com/episodes/2016-06-08/) and [Three Devs and a Maybe podcast (Webpack again)](http://threedevsandamaybe.com/introduction-to-webpack-with-juho-veps%C3%A4l%C3%A4inen/).
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/ }}
+  {{ screenshot: https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/ }}
 
-    * [jQuery 3.0 Final Released!](https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/)
-    * [chroma.js](https://gka.github.io/chroma.js/) - A tiny library for dealing with colors
-    * [Power Assert](https://github.com/power-assert-js/power-assert) - Descriptive assertion messages through the standard assert interface
-    * [Rellax.js](http://www.vanillalist.com/plugins/rellax-js/) - Lightweight parallax scrolling library for desktop browsers
-    * [scour.js](http://ricostacruz.com/scour/) - Traverse objects and arrays immutably
-    * [Microlight.js](https://asvd.github.io/microlight/) - A light code highlighting library
-    * [anypixel.js](https://googlecreativelab.github.io/anypixel/) - Create and control unusual displays with JavaScript
+  * [jQuery 3.0 Final Released!](https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/)
+  * [chroma.js](https://gka.github.io/chroma.js/) - A tiny library for dealing with colors
+  * [Power Assert](https://github.com/power-assert-js/power-assert) - Descriptive assertion messages through the standard assert interface
+  * [Rellax.js](http://www.vanillalist.com/plugins/rellax-js/) - Lightweight parallax scrolling library for desktop browsers
+  * [scour.js](http://ricostacruz.com/scour/) - Traverse objects and arrays immutably
+  * [Microlight.js](https://asvd.github.io/microlight/) - A light code highlighting library
+  * [anypixel.js](https://googlecreativelab.github.io/anypixel/) - Create and control unusual displays with JavaScript
 
-    ## Articles
+  ## Articles
 
-    * [Basics of building 3D games on the Web](https://hacks.mozilla.org/2016/06/basics-of-building-3d-games-on-the-web/)
-    * [10 Lodash Features You Can Replace with ES6](https://www.sitepoint.com/lodash-features-replace-es6/)
+  * [Basics of building 3D games on the Web](https://hacks.mozilla.org/2016/06/basics-of-building-3d-games-on-the-web/)
+  * [10 Lodash Features You Can Replace with ES6](https://www.sitepoint.com/lodash-features-replace-es6/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Understanding CORS](http://jster.net/blog/understanding-cors)
-    * [Implementing a Stepping Debugger in JavaScript](http://jlongster.com/Implementing-Stepping-Debugger-JavaScript)
+  * [Understanding CORS](http://jster.net/blog/understanding-cors)
+  * [Implementing a Stepping Debugger in JavaScript](http://jlongster.com/Implementing-Stepping-Debugger-JavaScript)
 
-    ## Interviews
+  ## Interviews
 
-    * [SurviveJS - npms.io interview](http://survivejs.com/blog/npms-interview/) - A new service for discovering npm packages
-    * [SurviveJS - Mikey interview](http://survivejs.com/blog/mikey-interview/) - A powerful CLI for generating React/Redux projects
+  * [SurviveJS - npms.io interview](http://survivejs.com/blog/npms-interview/) - A new service for discovering npm packages
+  * [SurviveJS - Mikey interview](http://survivejs.com/blog/mikey-interview/) - A powerful CLI for generating React/Redux projects
 
-    ## Tools
+  ## Tools
 
-    * [ALM Tools for TypeScript](http://alm.tools/) - An IDE just for TypeScript
-    * [npm has gained notification hooks](http://blog.npmjs.org/post/145260155635/introducing-hooks-get-notifications-of-npm)
+  * [ALM Tools for TypeScript](http://alm.tools/) - An IDE just for TypeScript
+  * [npm has gained notification hooks](http://blog.npmjs.org/post/145260155635/introducing-hooks-get-notifications-of-npm)
 
-    ## Demos
+  ## Demos
 
-    * [Drape](https://aatishb.github.io/drape/) - Cloth simulator
-    * [WebGL Sketches for inspiration](https://yiwenl.github.io/Sketches/)
+  * [Drape](https://aatishb.github.io/drape/) - Cloth simulator
+  * [WebGL Sketches for inspiration](https://yiwenl.github.io/Sketches/)

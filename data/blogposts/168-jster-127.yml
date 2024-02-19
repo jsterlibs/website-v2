@@ -4,47 +4,47 @@ short_title: "JSter #127"
 user: bebraw
 slug: jster-127
 body: |
-    > JavaScript was created in two weeks. Then Brendan took a break.
+  > JavaScript was created in two weeks. Then Brendan took a break.
 
-    I have good news. [GraphQL Finland](https://graphql-finland.fi/) will have a free livestream. So tune in during the conference through [@GraphQLFinland](https://twitter.com/GraphQLFinland) where we'll announce the talks and link to the video.
+  I have good news. [GraphQL Finland](https://graphql-finland.fi/) will have a free livestream. So tune in during the conference through [@GraphQLFinland](https://twitter.com/GraphQLFinland) where we'll announce the talks and link to the video.
 
-    ## Articles
+  ## Articles
 
-    * [Slaying a UI Antipattern with Web Components (and TypeScript)](https://bendyworks.com/blog/slaying-a-ui-antipattern-with-web-components-and-typescript) 
-    * [A Tale of Four Components](https://bendyworks.com/blog/tale-of-four-components) 
+  * [Slaying a UI Antipattern with Web Components (and TypeScript)](https://bendyworks.com/blog/slaying-a-ui-antipattern-with-web-components-and-typescript)
+  * [A Tale of Four Components](https://bendyworks.com/blog/tale-of-four-components)
 
-    ## Techniques
+  ## Techniques
 
-    * [Top 10 JavaScript errors from 1000+ projects (and how to avoid them)](https://codeburst.io/top-10-javascript-errors-from-1000-projects-and-how-to-avoid-them-2956ce008437) 
+  * [Top 10 JavaScript errors from 1000+ projects (and how to avoid them)](https://codeburst.io/top-10-javascript-errors-from-1000-projects-and-how-to-avoid-them-2956ce008437)
 
-    ## Graph Ql
+  ## Graph Ql
 
-    * [Volst/graphql-authentication](https://github.com/Volst/graphql-authentication) - Easy authentication with GraphQL
+  * [Volst/graphql-authentication](https://github.com/Volst/graphql-authentication) - Easy authentication with GraphQL
 
-    ## Libraries
+  ## Libraries
 
-    * [monet.js](https://monet.github.io/monet.js/) - Powerful abstractions for JavaScript
-    * [gcanti/retry-ts](https://github.com/gcanti/retry-ts) - Retry combinators for monadic actions that may fail
-    * [lukeed/kleur](https://github.com/lukeed/kleur) - The fastest Node.js library for formatting terminal text with ANSI colors~!
+  * [monet.js](https://monet.github.io/monet.js/) - Powerful abstractions for JavaScript
+  * [gcanti/retry-ts](https://github.com/gcanti/retry-ts) - Retry combinators for monadic actions that may fail
+  * [lukeed/kleur](https://github.com/lukeed/kleur) - The fastest Node.js library for formatting terminal text with ANSI colors~!
 
-    ## Opinions
+  ## Opinions
 
-    * [The case for Array#replace()](https://medium.com/@gajus/the-case-for-array-replace-cd9330707243) 
+  * [The case for Array#replace()](https://medium.com/@gajus/the-case-for-array-replace-cd9330707243)
 
-    ## Resources
+  ## Resources
 
-    * [appalaszynski/javascript-exercises](https://github.com/appalaszynski/javascript-exercises) - JavaScript exercises
-    * [jxom/awesome-react-headless-components](https://github.com/jxom/awesome-react-headless-components) - Awesome headless components for React
+  * [appalaszynski/javascript-exercises](https://github.com/appalaszynski/javascript-exercises) - JavaScript exercises
+  * [jxom/awesome-react-headless-components](https://github.com/jxom/awesome-react-headless-components) - Awesome headless components for React
 
-    ## Demos
+  ## Demos
 
-    * [AdaRoseCannon/three-paint](https://github.com/AdaRoseCannon/three-paint) - Demo using THREE.js to render into a Houdini Paint Worklet 
+  * [AdaRoseCannon/three-paint](https://github.com/AdaRoseCannon/three-paint) - Demo using THREE.js to render into a Houdini Paint Worklet
 
-    ## CSS
+  ## CSS
 
-    * [Tailwind CSS](https://tailwindcss.com/) 
-    * [DSS (Deterministic StyleSheets) is a component-oriented CSS authoring system that compiles to high-performance atomic CSS classes-based stylesheets](https://dss-lang.com/) 
+  * [Tailwind CSS](https://tailwindcss.com/)
+  * [DSS (Deterministic StyleSheets) is a component-oriented CSS authoring system that compiles to high-performance atomic CSS classes-based stylesheets](https://dss-lang.com/)
 
-    ## Tools
+  ## Tools
 
-    * [sw-yx/babel-blade](https://twitter.com/i/web/status/1047762008228200448) - babel-blade solves double declarations for React components and GraphQL queries
+  * [sw-yx/babel-blade](https://twitter.com/i/web/status/1047762008228200448) - babel-blade solves double declarations for React components and GraphQL queries

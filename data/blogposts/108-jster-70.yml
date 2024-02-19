@@ -4,47 +4,47 @@ short_title: "JSter #70"
 user: bebraw
 slug: monthly-jster-may-2016-part-1
 body: |
-    > JavaScript a day keeps the doctor away.
+  > JavaScript a day keeps the doctor away.
 
-    The book effort is progressing as usual. I published [SurviveJS - Webpack 1.2.0](http://survivejs.com/blog/survivejs-webpack-120/) in preparation for a bigger one that's coming next. Stay tuned.
+  The book effort is progressing as usual. I published [SurviveJS - Webpack 1.2.0](http://survivejs.com/blog/survivejs-webpack-120/) in preparation for a bigger one that's coming next. Stay tuned.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/mrdoob/stats.js/ }}
+  {{ screenshot: https://github.com/mrdoob/stats.js/ }}
 
-    * [stats.js](https://github.com/mrdoob/stats.js/) - Easy FPS statistics
-    * [can-zone](https://davidwalsh.name/can-zone) - Zone based error handling with JavaScript
-    * [Electron 1.0](https://github.com/blog/2167-electron-1-0-is-here)
-    * [gremlins.js](https://github.com/marmelab/gremlins.js) - Monkey testing library for web apps and Node.js
-    * [strman](https://www.npmjs.com/package/strman) - A Javascript string manipulation library without npm dependencies
+  * [stats.js](https://github.com/mrdoob/stats.js/) - Easy FPS statistics
+  * [can-zone](https://davidwalsh.name/can-zone) - Zone based error handling with JavaScript
+  * [Electron 1.0](https://github.com/blog/2167-electron-1-0-is-here)
+  * [gremlins.js](https://github.com/marmelab/gremlins.js) - Monkey testing library for web apps and Node.js
+  * [strman](https://www.npmjs.com/package/strman) - A Javascript string manipulation library without npm dependencies
 
-    ## Articles
+  ## Articles
 
-    * [Angular 2 and TypeScript](https://www.infoq.com/articles/Angular2-TypeScript-High-Level-Overview) - High level overview
+  * [Angular 2 and TypeScript](https://www.infoq.com/articles/Angular2-TypeScript-High-Level-Overview) - High level overview
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Angular: 5 Rookie Mistakes to Avoid with Angular 2](http://angularjs.blogspot.fi/2016/04/5-rookie-mistakes-to-avoid-with-angular.html)
-    * [Building a Gulp API Compatible Task Automation Tool](https://www.toptal.com/nodejs/gulp-under-the-hood)
+  * [Angular: 5 Rookie Mistakes to Avoid with Angular 2](http://angularjs.blogspot.fi/2016/04/5-rookie-mistakes-to-avoid-with-angular.html)
+  * [Building a Gulp API Compatible Task Automation Tool](https://www.toptal.com/nodejs/gulp-under-the-hood)
 
-    ## Guides
+  ## Guides
 
-    * [Introduction to Webpack with Angular 2](https://angular.io/docs/ts/latest/guide/webpack.html)
+  * [Introduction to Webpack with Angular 2](https://angular.io/docs/ts/latest/guide/webpack.html)
 
-    ## Interviews
+  ## Interviews
 
-    * [SurviveJS - Builder interview](http://survivejs.com/blog/builder-interview/)
-    * [SurviveJS - nwb Interview](http://survivejs.com/blog/nwb-interview/)
+  * [SurviveJS - Builder interview](http://survivejs.com/blog/builder-interview/)
+  * [SurviveJS - nwb Interview](http://survivejs.com/blog/nwb-interview/)
 
-    ## Techniques
+  ## Techniques
 
-    * [The Joi of Validation](http://vawks.com/blog/2014/03/22/the-joi-of-validation/)
+  * [The Joi of Validation](http://vawks.com/blog/2014/03/22/the-joi-of-validation/)
 
-    ## Tools
+  ## Tools
 
-    * [RoboHydra](http://robohydra.org/) - Server mocking tool for Node.js
-    * [svgo](https://github.com/svg/svgo) - Nodejs-based tool for optimizing SVG vector graphics files
+  * [RoboHydra](http://robohydra.org/) - Server mocking tool for Node.js
+  * [svgo](https://github.com/svg/svgo) - Nodejs-based tool for optimizing SVG vector graphics files
 
-    ## Demos
+  ## Demos
 
-    * [FRZR #5: animating lists demo](https://codepen.io/pakastin/pen/aNYZee)
+  * [FRZR #5: animating lists demo](https://codepen.io/pakastin/pen/aNYZee)

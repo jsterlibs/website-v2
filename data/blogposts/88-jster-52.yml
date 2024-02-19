@@ -4,49 +4,49 @@ short_title: "JSter #52"
 user: bebraw
 slug: monthly-jster-august-2015-part-1
 body: |
-    > Always bet on JavaScript
+  > Always bet on JavaScript
 
-    I released a new version of my free book about Webpack and React. See [SurviveJS - Webpack and React v1.7](http://survivejs.com/blog/survivejs-17/) for more details. It's moving along nicely.
+  I released a new version of my free book about Webpack and React. See [SurviveJS - Webpack and React v1.7](http://survivejs.com/blog/survivejs-17/) for more details. It's moving along nicely.
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://bevacqua.github.io/horsey/ }}
+  {{ screenshot: https://bevacqua.github.io/horsey/ }}
 
-    * [horsey](https://bevacqua.github.io/horsey/) - Progressive and customizable autocomplete component
-    * [Diaporama](http://greweb.me/diaporama/) - WebGL powered slide engine
+  * [horsey](https://bevacqua.github.io/horsey/) - Progressive and customizable autocomplete component
+  * [Diaporama](http://greweb.me/diaporama/) - WebGL powered slide engine
 
-    ## Frameworks
+  ## Frameworks
 
-    {{ screenshot: http://emberjs.com/blog/2015/08/13/ember-2-0-released.html }}
+  {{ screenshot: http://emberjs.com/blog/2015/08/13/ember-2-0-released.html }}
 
-    * [Ember.js 2.0](http://emberjs.com/blog/2015/08/13/ember-2-0-released.html) - Angular, you have been challenged.
-    * [Catberry.js](http://catberry.org/) - Catberry is a framework with Flux architecture,
-    isomorphic web-components and progressive rendering
-    * [The Rise of JavaScript Frameworks](http://weblog.west-wind.com/posts/2015/Jul/18/The-Rise-of-JavaScript-Frameworks-Part-1-Today)
+  * [Ember.js 2.0](http://emberjs.com/blog/2015/08/13/ember-2-0-released.html) - Angular, you have been challenged.
+  * [Catberry.js](http://catberry.org/) - Catberry is a framework with Flux architecture,
+  isomorphic web-components and progressive rendering
+  * [The Rise of JavaScript Frameworks](http://weblog.west-wind.com/posts/2015/Jul/18/The-Rise-of-JavaScript-Frameworks-Part-1-Today)
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://scottksmith.com/blog/2015/06/08/secure-node-apps-against-owasp-top-10-injection/ }}
+  {{ screenshot: http://scottksmith.com/blog/2015/06/08/secure-node-apps-against-owasp-top-10-injection/ }}
 
-    * [Secure Node Apps Against OWASP Top 10](http://scottksmith.com/blog/2015/06/08/secure-node-apps-against-owasp-top-10-injection/)
-    * [Overview of the JavaScript ecosystem](https://medium.com/@bojzi/overview-of-the-javascript-ecosystem-8ec4a0b7a7be)
+  * [Secure Node Apps Against OWASP Top 10](http://scottksmith.com/blog/2015/06/08/secure-node-apps-against-owasp-top-10-injection/)
+  * [Overview of the JavaScript ecosystem](https://medium.com/@bojzi/overview-of-the-javascript-ecosystem-8ec4a0b7a7be)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [ES6 In Depth: Subclassing](https://hacks.mozilla.org/2015/08/es6-in-depth-subclassing/)
-    * [ES6 In Depth: let and const](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
-    * [Understanding delete](http://perfectionkills.com/understanding-delete/)
-    * [JavaScript, changing String characters](http://philipjc.me/javascript-changing-string-characters/)
+  * [ES6 In Depth: Subclassing](https://hacks.mozilla.org/2015/08/es6-in-depth-subclassing/)
+  * [ES6 In Depth: let and const](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
+  * [Understanding delete](http://perfectionkills.com/understanding-delete/)
+  * [JavaScript, changing String characters](http://philipjc.me/javascript-changing-string-characters/)
 
-    ## Guides
+  ## Guides
 
-    * [ReCreating Megaman 2 using JS & WebGL](https://medium.com/recreating-megaman-2-using-js-webgl) - For fun and profit!
+  * [ReCreating Megaman 2 using JS & WebGL](https://medium.com/recreating-megaman-2-using-js-webgl) - For fun and profit!
 
-    ## Techniques
+  ## Techniques
 
-    * [Designing Flexible Pie Charts With CSS and SVG](http://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/)
-    * [Getting Functional with JavaScript (Part 1)](http://www.datchley.name/getting-functional-with-javascript-part-1/)
+  * [Designing Flexible Pie Charts With CSS and SVG](http://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/)
+  * [Getting Functional with JavaScript (Part 1)](http://www.datchley.name/getting-functional-with-javascript-part-1/)
 
-    ## Tools
+  ## Tools
 
-    * [WebGLStudio.js](http://webglstudio.org/)
+  * [WebGLStudio.js](http://webglstudio.org/)

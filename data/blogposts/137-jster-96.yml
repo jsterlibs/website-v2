@@ -4,45 +4,45 @@ short_title: "JSter #96"
 user: bebraw
 slug: jster-96
 body: |
-    > Every day is a JavaScript day
+  > Every day is a JavaScript day
 
-    [The Summer tour](https://survivejs.com/blog/euro-summer-tour-2017/) is progressing. I still have a few cities left including Vienna, Augsburg (also München during the visit), and London.
+  [The Summer tour](https://survivejs.com/blog/euro-summer-tour-2017/) is progressing. I still have a few cities left including Vienna, Augsburg (also München during the visit), and London.
 
-    > My webpack book is available as a [hard cover edition](https://survivejs.typeform.com/to/LUQK0T) which includes 30 minutes of consulting. Price - $100 for one, $150 for two including shipping and VAT (no surprises).
+  > My webpack book is available as a [hard cover edition](https://survivejs.typeform.com/to/LUQK0T) which includes 30 minutes of consulting. Price - $100 for one, $150 for two including shipping and VAT (no surprises).
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: https://github.com/whackashoe/antimoderate }}
+  {{ screenshot: https://github.com/whackashoe/antimoderate }}
 
-    * [whackashoe/antimoderate](https://github.com/whackashoe/antimoderate) - The progressive image loading library for great good.
-    * [erikolson186/zangodb](https://github.com/erikolson186/zangodb) - MongoDB-like interface for HTML5 IndexedDB.
-    * [gmattie/Data-Pixels](https://github.com/gmattie/Data-Pixels) - Create pixel art programmatically.
-    * [adamhaile/S](https://github.com/adamhaile/S) - Simple, clean, fast reactive programming in JavaScript.
-    * [xaviergonz/makfy](https://github.com/xaviergonz/makfy) - npm scripts on steroids.
-    * [InversifyJS](http://inversify.io/) - A powerful IoC container for JavaScript apps powered by TypeScript.
+  * [whackashoe/antimoderate](https://github.com/whackashoe/antimoderate) - The progressive image loading library for great good.
+  * [erikolson186/zangodb](https://github.com/erikolson186/zangodb) - MongoDB-like interface for HTML5 IndexedDB.
+  * [gmattie/Data-Pixels](https://github.com/gmattie/Data-Pixels) - Create pixel art programmatically.
+  * [adamhaile/S](https://github.com/adamhaile/S) - Simple, clean, fast reactive programming in JavaScript.
+  * [xaviergonz/makfy](https://github.com/xaviergonz/makfy) - npm scripts on steroids.
+  * [InversifyJS](http://inversify.io/) - A powerful IoC container for JavaScript apps powered by TypeScript.
 
-    ## Articles
+  ## Articles
 
-    * [Improving Color on the Web](https://webkit.org/blog/6682/improving-color-on-the-web/) - This looks great on a retina display.
-    * [JavaScript’s new #private class fields](https://medium.com/the-thinkmill/javascripts-new-private-class-fields-93106e37647a) - I'm not so sure of this direction.
-    * [A day without Javascript](https://sonniesedge.co.uk/blog/a-day-without-javascript) - Worse than you can imagine.
-    * [Yarn determinism](https://yarnpkg.com/blog/2017/05/31/determinism/) - Or how it's different than npm 5 and why.
+  * [Improving Color on the Web](https://webkit.org/blog/6682/improving-color-on-the-web/) - This looks great on a retina display.
+  * [JavaScript’s new #private class fields](https://medium.com/the-thinkmill/javascripts-new-private-class-fields-93106e37647a) - I'm not so sure of this direction.
+  * [A day without Javascript](https://sonniesedge.co.uk/blog/a-day-without-javascript) - Worse than you can imagine.
+  * [Yarn determinism](https://yarnpkg.com/blog/2017/05/31/determinism/) - Or how it's different than npm 5 and why.
 
-    ## Tutorials
+  ## Tutorials
 
-    * [Neural networks from scratch for JavaScript linguists (Part 1](https://hackernoon.com/neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron-632a4d1fbad2)
+  * [Neural networks from scratch for JavaScript linguists (Part 1](https://hackernoon.com/neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron-632a4d1fbad2)
 
-    ## Techniques
+  ## Techniques
 
-    * [11 things someone learned reading the flexbox spec](https://hackernoon.com/11-things-i-learned-reading-the-flexbox-spec-5f0c799c776b)
+  * [11 things someone learned reading the flexbox spec](https://hackernoon.com/11-things-i-learned-reading-the-flexbox-spec-5f0c799c776b)
 
-    ## Interviews
+  ## Interviews
 
-    * [vx - The Power of D3 with the Benefits of React - Interview with Harrison Shoff](https://survivejs.com/blog/vx-interview/)
-    * [unmarshaller - Toolbox for configuration - Interview with Sven Sauleau](https://survivejs.com/blog/unmarshaller-interview/)
+  * [vx - The Power of D3 with the Benefits of React - Interview with Harrison Shoff](https://survivejs.com/blog/vx-interview/)
+  * [unmarshaller - Toolbox for configuration - Interview with Sven Sauleau](https://survivejs.com/blog/unmarshaller-interview/)
 
-    ## Tools
+  ## Tools
 
-    * [ESLint v4.0.0](http://eslint.org/blog/2017/06/eslint-v4.0.0-released)
-    * [The Important Features and Fixes of Node.js Version 8](https://blog.risingstack.com/important-features-fixes-node-js-version-8/)
-    * [bahmutov/rambo](https://github.com/bahmutov/rambo) - Automatic Ramda solution bot.
+  * [ESLint v4.0.0](http://eslint.org/blog/2017/06/eslint-v4.0.0-released)
+  * [The Important Features and Fixes of Node.js Version 8](https://blog.risingstack.com/important-features-fixes-node-js-version-8/)
+  * [bahmutov/rambo](https://github.com/bahmutov/rambo) - Automatic Ramda solution bot.

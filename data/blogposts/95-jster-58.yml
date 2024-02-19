@@ -4,46 +4,46 @@ short_title: "JSter #58"
 user: bebraw
 slug: monthly-jster-november-2015-part-1
 body: |
-    > Coding JavaScript like it's '95
+  > Coding JavaScript like it's '95
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: http://gridifier.io/ }}
+  {{ screenshot: http://gridifier.io/ }}
 
-    * [Gridifier.io](http://gridifier.io/) - Async responsive HTML grids
-    * [wu.js](https://fitzgen.github.io/wu.js/) - Higher order functions for ES6 iterators
-    * [Vega](https://vega.github.io/vega/) - A Visualization Grammar
+  * [Gridifier.io](http://gridifier.io/) - Async responsive HTML grids
+  * [wu.js](https://fitzgen.github.io/wu.js/) - Higher order functions for ES6 iterators
+  * [Vega](https://vega.github.io/vega/) - A Visualization Grammar
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://www.smashingmagazine.com/2015/11/flexbox-interfaces-tracks-case-study/ }}
+  {{ screenshot: http://www.smashingmagazine.com/2015/11/flexbox-interfaces-tracks-case-study/ }}
 
-    * [Flexbox For Interfaces All The Way: Tracks Case Study](http://www.smashingmagazine.com/2015/11/flexbox-interfaces-tracks-case-study/)
-    * [Anatomy of a large Angular application](https://medium.com/@bojzi/anatomy-of-a-large-angular-application-f098e5e36994)
-    * [A year using Ionic to build hybrid applications](https://www.airpair.com/javascript/posts/a-year-using-ionic-to-build-hybrid-applications)
-    * [The Future of Web Development - React, Falcor, and ES6](http://engineering.widen.com/blog/future-of-the-web-react-falcor/)
+  * [Flexbox For Interfaces All The Way: Tracks Case Study](http://www.smashingmagazine.com/2015/11/flexbox-interfaces-tracks-case-study/)
+  * [Anatomy of a large Angular application](https://medium.com/@bojzi/anatomy-of-a-large-angular-application-f098e5e36994)
+  * [A year using Ionic to build hybrid applications](https://www.airpair.com/javascript/posts/a-year-using-ionic-to-build-hybrid-applications)
+  * [The Future of Web Development - React, Falcor, and ES6](http://engineering.widen.com/blog/future-of-the-web-react-falcor/)
 
-    ## Guides
+  ## Guides
 
-    * [SurviveJS - Webpack and React v1.9.5](http://survivejs.com/blog/survivejs-195/)
+  * [SurviveJS - Webpack and React v1.9.5](http://survivejs.com/blog/survivejs-195/)
 
-    ## Techniques
+  ## Techniques
 
-    * [HTML5 games: 3D collision detection](https://hacks.mozilla.org/2015/10/html-5-games-3d-collision-detection/)
-    * [Lazy, composable, and modular JavaScript](https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript)
+  * [HTML5 games: 3D collision detection](https://hacks.mozilla.org/2015/10/html-5-games-3d-collision-detection/)
+  * [Lazy, composable, and modular JavaScript](https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript)
 
-    ## Interviews
+  ## Interviews
 
-    * [react-router5 - Routing Alternative for React - Interview with Thomas Roch](http://survivejs.com/blog/react-router5/)
-    * [Baobab - Data Trees with Cursors - Interview with Guillaume Plique](http://survivejs.com/blog/baobab-interview/)
+  * [react-router5 - Routing Alternative for React - Interview with Thomas Roch](http://survivejs.com/blog/react-router5/)
+  * [Baobab - Data Trees with Cursors - Interview with Guillaume Plique](http://survivejs.com/blog/baobab-interview/)
 
-    ## Resources
+  ## Resources
 
-    * [ThreaditJS](http://threaditjs.com/) - An example application for SPA libraries/frameworks
-    * [Angular 2 Beta Burndown](http://juristr.com/apps/ng2beta/)
+  * [ThreaditJS](http://threaditjs.com/) - An example application for SPA libraries/frameworks
+  * [Angular 2 Beta Burndown](http://juristr.com/apps/ng2beta/)
 
-    ## Demos
+  ## Demos
 
-    * [Rain Effect Experiments](http://tympanus.net/Development/RainEffect/)
-    * [JavaScript synth in 4K](http://synth.bitsnbites.eu/)
-    * [Particleground demo](https://jnicol.github.io/particleground/)
+  * [Rain Effect Experiments](http://tympanus.net/Development/RainEffect/)
+  * [JavaScript synth in 4K](http://synth.bitsnbites.eu/)
+  * [Particleground demo](https://jnicol.github.io/particleground/)

@@ -4,72 +4,72 @@ short_title: "JSter #21"
 user: bebraw
 slug: monthly-jster-april-2014-part-2
 body: |
-    > 1. Think of a noun 2. Google <noun\>.js 3. If library exists, drink
+  > 1. Think of a noun 2. Google <noun\>.js 3. If library exists, drink
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/ }}
+  {{ screenshot: http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/ }}
 
-    * [jquery.adaptive-backgrounds.js](http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/)
-    * [sahilm/reddit.js](https://github.com/sahilm/reddit.js)
-    * [ripple.js](http://ripplejs.github.io/) - Reactive components
-    * [PourOver](http://newsdev.github.io/pourover/) - Filter and sort large collections
-    * [telerik/kendo-ui-core](https://github.com/telerik/kendo-ui-core)
+  * [jquery.adaptive-backgrounds.js](http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/)
+  * [sahilm/reddit.js](https://github.com/sahilm/reddit.js)
+  * [ripple.js](http://ripplejs.github.io/) - Reactive components
+  * [PourOver](http://newsdev.github.io/pourover/) - Filter and sort large collections
+  * [telerik/kendo-ui-core](https://github.com/telerik/kendo-ui-core)
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://codeofrob.com/entries/you-have-ruined-javascript.html }}
+  {{ screenshot: http://codeofrob.com/entries/you-have-ruined-javascript.html }}
 
-    * [You Have Ruined JavaScript](http://codeofrob.com/entries/you-have-ruined-javascript.html)
-    * [Stop Copying Social Code Snippets](http://philipwalton.com/articles/stop-copying-social-code-snippets/)
-    * [jQuery makes AngularJS 50% slower on an iPhone](http://blog.mikie.iki.fi/2014/04/jquery-makes-angularjs-50-slower-on.html)
-    * [Comparing Node.js Promises, Try/Catch, Angular Zone.js and yes, Zone](http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular/)
-    * [Seven JavaScript Quirks I Wish I’d Known About](http://developer.telerik.com/featured/seven-javascript-quirks-i-wish-id-known-about/)
-    * [AngularJS: The De Facto Standard for SPA Development?](http://www.bitnative.com/2014/04/14/angularjs-the-de-facto-standard-for-spa-development/)
+  * [You Have Ruined JavaScript](http://codeofrob.com/entries/you-have-ruined-javascript.html)
+  * [Stop Copying Social Code Snippets](http://philipwalton.com/articles/stop-copying-social-code-snippets/)
+  * [jQuery makes AngularJS 50% slower on an iPhone](http://blog.mikie.iki.fi/2014/04/jquery-makes-angularjs-50-slower-on.html)
+  * [Comparing Node.js Promises, Try/Catch, Angular Zone.js and yes, Zone](http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular/)
+  * [Seven JavaScript Quirks I Wish I’d Known About](http://developer.telerik.com/featured/seven-javascript-quirks-i-wish-id-known-about/)
+  * [AngularJS: The De Facto Standard for SPA Development?](http://www.bitnative.com/2014/04/14/angularjs-the-de-facto-standard-for-spa-development/)
 
-    ## Tutorials
+  ## Tutorials
 
-    {{ screenshot: http://10consulting.com/2014/02/19/d3-plus-reactjs-for-charting/ }}
+  {{ screenshot: http://10consulting.com/2014/02/19/d3-plus-reactjs-for-charting/ }}
 
-    * [D3 and React](http://10consulting.com/2014/02/19/d3-plus-reactjs-for-charting/)
-    * [Code Organization in Large AngularJS and JavaScript Applications](http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript)
+  * [D3 and React](http://10consulting.com/2014/02/19/d3-plus-reactjs-for-charting/)
+  * [Code Organization in Large AngularJS and JavaScript Applications](http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript)
 
-    ## Guides
+  ## Guides
 
-    {{ screenshot: http://survivejs.com/ }}
+  {{ screenshot: http://survivejs.com/ }}
 
-    * [Survive JavaScript](http://survivejs.com/)
-    * [JS Recipes](http://jsrecipes.org/#!/)
+  * [Survive JavaScript](http://survivejs.com/)
+  * [JS Recipes](http://jsrecipes.org/#!/)
 
-    ## Techniques
+  ## Techniques
 
-    {{ screenshot: http://www.100percentjs.com/best-way-debug-node-js/ }}
+  {{ screenshot: http://www.100percentjs.com/best-way-debug-node-js/ }}
 
-    * [How to debug Node.js? What is the best way to debug Node.js?](http://www.100percentjs.com/best-way-debug-node-js/)
-    * [Handling z-index](http://css-tricks.com/handling-z-index/)
-    * [Faster AngularJS Rendering (AngularJS and ReactJS)](http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/)
-    * [Build Tools - Make, No More](http://hadihariri.com/2014/04/21/build-make-no-more/)
-    * [Angular and SEO](http://jimmyislive.tumblr.com/post/82901672809/angularjs-and-seo)
-    * [Write Better JavaScript with Promises](http://davidwalsh.name/write-javascript-promises)
+  * [How to debug Node.js? What is the best way to debug Node.js?](http://www.100percentjs.com/best-way-debug-node-js/)
+  * [Handling z-index](http://css-tricks.com/handling-z-index/)
+  * [Faster AngularJS Rendering (AngularJS and ReactJS)](http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/)
+  * [Build Tools - Make, No More](http://hadihariri.com/2014/04/21/build-make-no-more/)
+  * [Angular and SEO](http://jimmyislive.tumblr.com/post/82901672809/angularjs-and-seo)
+  * [Write Better JavaScript with Promises](http://davidwalsh.name/write-javascript-promises)
 
-    ## Games
+  ## Games
 
-    {{ screenshot: http://www.modern.ie/en-us/virtualization-tools#escape-from-xp }}
+  {{ screenshot: http://www.modern.ie/en-us/virtualization-tools#escape-from-xp }}
 
-    * [Escape from XP](http://www.modern.ie/en-us/virtualization-tools#escape-from-xp)
-    * [Golden Krone Hotel](http://humbit.com/gkh/)
-    * [Game of Thrones - Quiz](http://codepen.io/MSchutz/pen/tygdn)
-    * [Untrusted](http://alexnisnevich.github.io/untrusted/)
+  * [Escape from XP](http://www.modern.ie/en-us/virtualization-tools#escape-from-xp)
+  * [Golden Krone Hotel](http://humbit.com/gkh/)
+  * [Game of Thrones - Quiz](http://codepen.io/MSchutz/pen/tygdn)
+  * [Untrusted](http://alexnisnevich.github.io/untrusted/)
 
-    ## Tools
+  ## Tools
 
-    * [GoyaPixel](http://jackschaedler.github.io/goya/)
+  * [GoyaPixel](http://jackschaedler.github.io/goya/)
 
-    ## Demos
+  ## Demos
 
-    {{ screenshot: http://dobtco.github.io/formbuilder/ }}
+  {{ screenshot: http://dobtco.github.io/formbuilder/ }}
 
-    * [CSS 3D Solar System](http://codepen.io/juliangarnier/pen/idhuG)
-    * [Form Builder](http://dobtco.github.io/formbuilder/)
-    * [Trianglify by @qrohlf](http://qrohlf.com/trianglify/)
-    * [Sidebar Transitions](http://tympanus.net/Development/SidebarTransitions/)
+  * [CSS 3D Solar System](http://codepen.io/juliangarnier/pen/idhuG)
+  * [Form Builder](http://dobtco.github.io/formbuilder/)
+  * [Trianglify by @qrohlf](http://qrohlf.com/trianglify/)
+  * [Sidebar Transitions](http://tympanus.net/Development/SidebarTransitions/)

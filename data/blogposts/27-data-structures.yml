@@ -6,221 +6,237 @@ slug: javascript-data-structures
 picture: /img/blog/27/complex_small.jpg
 body: |
 
-    JavaScript comes with a variety of data types and structures. As [defined in the specification](http://edutechwiki.unige.ch/en/ECMAScript_data_types) the basic primitive types are Numbers, Strings, Boolean, Null and void. In addition there complex data types: Arrays and Objects. If you have coded even a little bit using JavaScript, you have likely used most of these.
+  JavaScript comes with a variety of data types and structures. As [defined in the specification](http://edutechwiki.unige.ch/en/ECMAScript_data_types) the basic primitive types are Numbers, Strings, Boolean, Null and void. In addition there complex data types: Arrays and Objects. If you have coded even a little bit using JavaScript, you have likely used most of these.
 
-    In this post I will go through some common gotchas and help you to understand better how to get most out of the structures.
+  In this post I will go through some common gotchas and help you to understand better how to get most out of the structures.
 
-    I have adapted most of the content from a little ebook of mine, [Survive JS](http://survivejs.com/). It is freely available and a very quick read. It might not be as known as some other ebooks but you still might pick a thing or two out of it.
+  I have adapted most of the content from a little ebook of mine, [Survive JS](http://survivejs.com/). It is freely available and a very quick read. It might not be as known as some other ebooks but you still might pick a thing or two out of it.
 
-    ## Basic Primitives
+  ## Basic Primitives
 
-    <div class="picture"><img src="/img/blog/27/complex.jpg" alt="It's primitive" /><div class="caption">Primitives by <a href="http://www.flickr.com/photos/46267286@N07/8647250845/">Simon and his camera</a> (CC BY-ND)</div></div>
+  <div class="picture"><img src="/img/blog/27/complex.jpg" alt="It's primitive" /><div class="caption">Primitives by <a href="http://www.flickr.com/photos/46267286@N07/8647250845/">Simon and his camera</a> (CC BY-ND)</div></div>
 
-    As I mentioned JavaScript comes with a set of primitive types. Numbers are a bit special as they can be either integer or float. There is no clear separation unlike in some languages. There are a couple of Number related functions you should be aware of, though. The ones you will likely use the most are `parseInt` and `parseFloat`. These functions allow you to convert a string presentation, or another number, into a Number looking like an integer or a float.
+  As I mentioned JavaScript comes with a set of primitive types. Numbers are a bit special as they can be either integer or float. There is no clear separation unlike in some languages. There are a couple of Number related functions you should be aware of, though. The ones you will likely use the most are `parseInt` and `parseFloat`. These functions allow you to convert a string presentation, or another number, into a Number looking like an integer or a float.
 
-    ### parseInt and parseFloat
+  ### parseInt and parseFloat
 
-    Especially `parseInt` comes with some baggage. It is important to understand that in case `radix` parameter is not provided, it may interpret the given string as octal. That may be something you may want to avoid. That is why you should always define the radix to be sure. Consider using `parseInt('123', 10);`. Check out [MDN documentation on parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) to understand what you can achieve with the function.
+  Especially `parseInt` comes with some baggage. It is important to understand that in case `radix` parameter is not provided, it may interpret the given string as octal. That may be something you may want to avoid. That is why you should always define the radix to be sure. Consider using `parseInt('123', 10);`. Check out [MDN documentation on parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) to understand what you can achieve with the function.
 
-    `parseFloat` just parses the given string and returns it as a float Number. It is rarely used but you should be at least aware of it. Again, consult [MDN documentation on parseFloat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) to understand its behavior better.
+  `parseFloat` just parses the given string and returns it as a float Number. It is rarely used but you should be at least aware of it. Again, consult [MDN documentation on parseFloat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) to understand its behavior better.
 
-    ### Strings
+  ### Strings
 
-    <div class="picture"><img src="/img/blog/27/strings.jpg" alt="Yup, these count" /><div class="caption">Strings by <a href="http://www.flickr.com/photos/9121646@N07/1470227776/">Rogerio Melo</a> (CC NC-ND)</div></div>
+  <div class="picture"><img src="/img/blog/27/strings.jpg" alt="Yup, these count" /><div class="caption">Strings by <a href="http://www.flickr.com/photos/9121646@N07/1470227776/">Rogerio Melo</a> (CC NC-ND)</div></div>
 
-    Strings are sequences of characters by definition and come with a set of utility methods. I won't go into detail on those. There is a certain one I like to use a lot, though. It's `split`. If you perform `'your string'.split('')`, you end up with an Array of characters. After that you can use all the nice functionality JavaScript Arrays come with. Once you are done with the manipulation, just `join('')` it back to a string.
+  Strings are sequences of characters by definition and come with a set of utility methods. I won't go into detail on those. There is a certain one I like to use a lot, though. It's `split`. If you perform `'your string'.split('')`, you end up with an Array of characters. After that you can use all the nice functionality JavaScript Arrays come with. Once you are done with the manipulation, just `join('')` it back to a string.
 
-    One little quirk related to strings has to do with concatenation. Unfortunately `+` character was chosen to represent it. Sometimes this may yield interesting results. So be careful with concat. If you want to try something else, consider implementing `format` that allows you to perform string replacements easily. Internally you can piggyback on the `replace` method. Just to give you an idea of the possible syntax, consider following:
+  One little quirk related to strings has to do with concatenation. Unfortunately `+` character was chosen to represent it. Sometimes this may yield interesting results. So be careful with concat. If you want to try something else, consider implementing `format` that allows you to perform string replacements easily. Internally you can piggyback on the `replace` method. Just to give you an idea of the possible syntax, consider following:
 
-        format('{{amount}} {{object}}s on shelf', {amount: 5, object: 'bottle'});
+  ```javascript
+  format('{{amount}} {{object}}s on shelf', {amount: 5, object: 'bottle'});
+  ```
 
-    Or you could just use some existing templating engine although that might be overkill depending on your case. To make things easier, I've implemented an example based on an [earlier blog post of mine](http://www.nixtu.info/2013/03/templating-in-javascript.html) below:
+  Or you could just use some existing templating engine although that might be overkill depending on your case. To make things easier, I've implemented an example based on an [earlier blog post of mine](http://www.nixtu.info/2013/03/templating-in-javascript.html) below:
 
-        var ctx = {
-            name: 'jude'
-        };
-        var tpl = 'hey {{ name }}! {{ name }} is great';
+  ```javascript
+  var ctx = {
+    name: 'jude'
+  };
+  var tpl = 'hey {{ name }}! {{ name }} is great';
 
-        console.log(format(tpl, ctx));
+  console.log(format(tpl, ctx));
 
-        function format(tpl, ctx) {
-            return tpl.replace(/\{\{([a-zA-Z ]*)\}\}/g, function(m, g) {
-                return ctx[g.trim()] || '';
-            });
-        }
+  function format(tpl, ctx) {
+    return tpl.replace(/\{\{([a-zA-Z ]*)\}\}/g, function(m, g) {
+      return ctx[g.trim()] || '';
+    });
+  }
+  ```
 
-    Overall the algorithm is really simple. We just match each slot of our template using a regex globally and then replace them using context data. In case data is not found we inject an empty. Without that check we would end up with `undefined` which isn't particularly cool.
+  Overall the algorithm is really simple. We just match each slot of our template using a regex globally and then replace them using context data. In case data is not found we inject an empty. Without that check we would end up with `undefined` which isn't particularly cool.
 
-    As the [default methods of String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) are not enough always, people have developed libraries that provide some of the missing functionality. We have listed these [string libraries at JSter](http://jster.net/category/strings).
+  As the [default methods of String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) are not enough always, people have developed libraries that provide some of the missing functionality. We have listed these [string libraries at JSter](http://jster.net/category/strings).
 
-    ### Boolean
+  ### Boolean
 
-    Suppose you have something you wish to convert into a boolean. That's where `!!` comes in. As you know, `!` inverts a value and yields a boolean. If we perform that twice, we end up with a boolean and end up with the original truth value. Simple as that.
+  Suppose you have something you wish to convert into a boolean. That's where `!!` comes in. As you know, `!` inverts a value and yields a boolean. If we perform that twice, we end up with a boolean and end up with the original truth value. Simple as that.
 
-    There are also the following shorthands you may find handy:
+  There are also the following shorthands you may find handy:
 
-    * Ternary  - a? b: c - Selects b if a is true, else selects c
-    * Logical AND - a && b - If a, selects b, else selects a
-    * Logical OR - a || b - If a, selects a, else selects b
+  * Ternary  - a? b: c - Selects b if a is true, else selects c
+  * Logical AND - a && b - If a, selects b, else selects a
+  * Logical OR - a || b - If a, selects a, else selects b
 
-    Logical AND can be handy for checking whether object exists before accessing its value (ie. `var a = foo && foo.bar;). This can be handy if you are trying to access some property of an object that might not exist and want to avoid a ReferenceError.
+  Logical AND can be handy for checking whether object exists before accessing its value (ie. `var a = foo && foo.bar;). This can be handy if you are trying to access some property of an object that might not exist and want to avoid a ReferenceError.
 
-    Logical OR is commonly used to set default values. Consider the example below:
+  Logical OR is commonly used to set default values. Consider the example below:
 
-        function sum(a, b) {
-            a = a || 10;
-            b = b || 10;
+  ```javascript
+  function sum(a, b) {
+    a = a || 10;
+    b = b || 10;
 
-            return a + b;
-        }
+    return a + b;
+  }
+  ```
 
-    There is one gotcha in our example, though. Can you spot it? What happens if either a or b is zero by intention? That's right, our calculation will yield invalid results. How would you resolve this? I can think of a couple of ways but it's hard to give an authorative, "correct" answer.
+  There is one gotcha in our example, though. Can you spot it? What happens if either a or b is zero by intention? That's right, our calculation will yield invalid results. How would you resolve this? I can think of a couple of ways but it's hard to give an authorative, "correct" answer.
 
-    Fortunately we should get default parameter values and other goodies with ES6 as [discussed by Ariya Hidayat](http://www.sencha.com/blog/toward-modern-web-apps-with-ecmascript-6/). There are some various other goodies as well but I won't get into those at this post.
+  Fortunately we should get default parameter values and other goodies with ES6 as [discussed by Ariya Hidayat](http://www.sencha.com/blog/toward-modern-web-apps-with-ecmascript-6/). There are some various other goodies as well but I won't get into those at this post.
 
-    You can find expanded discussion on [logical operations at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators).
+  You can find expanded discussion on [logical operations at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators).
 
-    ### null and undefined
+  ### null and undefined
 
-    `null` and `undefined` are an interesting pair. `undefined` signifies an absence of value whereas `null` is a value on its own. It just happens to be a null value. If you define a variable without assigning a value to it, its value will be `undefined` by default.
+  `null` and `undefined` are an interesting pair. `undefined` signifies an absence of value whereas `null` is a value on its own. It just happens to be a null value. If you define a variable without assigning a value to it, its value will be `undefined` by default.
 
-    Generally these values get hidden below dynamic typing. You probably shouldn't check for a null explicitly. Often you can get away with something like `if(foo)` or `if(!foo)` and can hide the null or undefined.
+  Generally these values get hidden below dynamic typing. You probably shouldn't check for a null explicitly. Often you can get away with something like `if(foo)` or `if(!foo)` and can hide the null or undefined.
 
-    ## Arrays
+  ## Arrays
 
-    Arrays are just Objects in disguise. They just happen to behave like arrays in various other languages. You can also use them to simulate other data structures, such as queues and stacks, quite easily. In case you want to implement a queue with a fixed length, consider the following example:
+  Arrays are just Objects in disguise. They just happen to behave like arrays in various other languages. You can also use them to simulate other data structures, such as queues and stacks, quite easily. In case you want to implement a queue with a fixed length, consider the following example:
 
-        function queue(len) {
-            var ret = [];
+  ```javascript
+  function queue(len) {
+    var ret = [];
 
-            ret.push = function(a) {
-                if(ret.length == len) ret.shift();
-                return Array.prototype.push.apply(this, arguments);
-            };
+    ret.push = function(a) {
+      if(ret.length == len) ret.shift();
+      return Array.prototype.push.apply(this, arguments);
+    };
 
-            return ret;
-        }
+    return ret;
+  }
 
-        var a = queue(3);
-        a.push('cat');
-        a.push('dog');
-        a.push('chimp');
-        a.push('giraffe');
-        console.log(a); // should contain dog, chimp, giraffe now
+  var a = queue(3);
+  a.push('cat');
+  a.push('dog');
+  a.push('chimp');
+  a.push('giraffe');
+  console.log(a); // should contain dog, chimp, giraffe now
+  ```
 
-    We did a little trick there and overrode the default behavior of `push`. There are some extra methods hanging around but we don't care as this is just a quick and dirty solution.
+  We did a little trick there and overrode the default behavior of `push`. There are some extra methods hanging around but we don't care as this is just a quick and dirty solution.
 
-    Since the introduction of ES5 arrays have come with a set of handy methods including `map`, `filter`, `reduce` and `forEach`. These are useful especially for functional programming. You simply take some data and then transform it into a form you find useful. These methods become particularly useful when you combine them with helper functions. Consider the example below:
+  Since the introduction of ES5 arrays have come with a set of handy methods including `map`, `filter`, `reduce` and `forEach`. These are useful especially for functional programming. You simply take some data and then transform it into a form you find useful. These methods become particularly useful when you combine them with helper functions. Consider the example below:
 
-        var data = [{name: 'Bjorn'}, {name: 'Joe'}, {name: 'Rahul'}];
-        var names = data.map(prop('name'));
+  ```javascript
+  var data = [{name: 'Bjorn'}, {name: 'Joe'}, {name: 'Rahul'}];
+  var names = data.map(prop('name'));
 
-        function prop(name) {
-            return function(v) {
-                return v[name];
-            };
-        }
+  function prop(name) {
+    return function(v) {
+      return v[name];
+    };
+  }
+  ```
 
-    Especially the `map` part looks deceptively simple. We are missing list comprehensions and other jazz from vanilla JavaScript but by implementing, or using, a set of utility functions like `prop`, you can get a lot more out of it. To give you another pattern, check this out:
+  Especially the `map` part looks deceptively simple. We are missing list comprehensions and other jazz from vanilla JavaScript but by implementing, or using, a set of utility functions like `prop`, you can get a lot more out of it. To give you another pattern, check this out:
 
-        var data = [{name: 'Bjorn'}, {name: 'Joe'}, {name: 'Rahul'}];
-        var names = data.map(prop('name')).filter(not(startsWith('J')));
+  ```javascript
+  var data = [{name: 'Bjorn'}, {name: 'Joe'}, {name: 'Rahul'}];
+  var names = data.map(prop('name')).filter(not(startsWith('J')));
 
-        function startsWith(val) {
-            return function(v) {
-                return v.indexOf(val, 0);
-            };
-        }
+  function startsWith(val) {
+    return function(v) {
+      return v.indexOf(val, 0);
+    };
+  }
 
-        function not(fn) {
-            return function(v) {
-                return !fn(v);
-            };
-        }
+  function not(fn) {
+    return function(v) {
+      return !fn(v);
+    };
+  }
+  ```
 
-    Yup. We implemented a couple of more factories. The core logic is very simple and readable, though. JavaScript's closures make this way of working possible and allow us to push a lot of detail into library level.
+  Yup. We implemented a couple of more factories. The core logic is very simple and readable, though. JavaScript's closures make this way of working possible and allow us to push a lot of detail into library level.
 
-    There are other ways to compose and end up in the same result. We could for instance implement a function to literally `compose` (`compose(startsWith('J'), not)`) and build our semantics based on that. In languages such as Haskell this is actually a first order feature of the language and you may use simply `.` to pipe the result from a function to another.
+  There are other ways to compose and end up in the same result. We could for instance implement a function to literally `compose` (`compose(startsWith('J'), not)`) and build our semantics based on that. In languages such as Haskell this is actually a first order feature of the language and you may use simply `.` to pipe the result from a function to another.
 
-    Given its functionality, JavaScript provides some good tools for this sort of programming. The syntax might not be as elegant as in certain languages but there is definitely a lot of power under the hood.
+  Given its functionality, JavaScript provides some good tools for this sort of programming. The syntax might not be as elegant as in certain languages but there is definitely a lot of power under the hood.
 
-    > In order to use the ES5 features, you will need to use shims for older browsers. To get a better idea, have a look at [@kangax's excellent ES5 compatibility table](http://kangax.github.io/es5-compat-table/).
+  > In order to use the ES5 features, you will need to use shims for older browsers. To get a better idea, have a look at [@kangax's excellent ES5 compatibility table](http://kangax.github.io/es5-compat-table/).
 
-    ## Objects
+  ## Objects
 
-    <div class="picture"><img src="/img/blog/27/appleorange.jpg" alt="Apples and oranges" /><div class="caption">Apples and oranges by <a href="http://www.flickr.com/photos/26176646@N04/2492945625/">TheBusyBrain</a> (CC BY)</div></div>
+  <div class="picture"><img src="/img/blog/27/appleorange.jpg" alt="Apples and oranges" /><div class="caption">Apples and oranges by <a href="http://www.flickr.com/photos/26176646@N04/2492945625/">TheBusyBrain</a> (CC BY)</div></div>
 
-    Objects are the basic construction blocks in JavaScript. You can declare quite complex structures using them and then serialize them using the popular [JSON format](http://json.org/). In fact JSON was modeled after JavaScript objects, hence the name JavaScript Object Notation.
+  Objects are the basic construction blocks in JavaScript. You can declare quite complex structures using them and then serialize them using the popular [JSON format](http://json.org/). In fact JSON was modeled after JavaScript objects, hence the name JavaScript Object Notation.
 
-    There's the whole OOP side to Objects but I won't get into that. Instead, consider checking out [MDN's introduction to OOP in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript) to get a better idea. Personally I'm more interested in objects as a data structure.
+  There's the whole OOP side to Objects but I won't get into that. Instead, consider checking out [MDN's introduction to OOP in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript) to get a better idea. Personally I'm more interested in objects as a data structure.
 
-    Sometimes you may need to perform various transformations on object based data structures. Sure, there's the good old for-in syntax but it would be nice to be able to use map, filter and co. As it happens there are some ways to achieve this.
+  Sometimes you may need to perform various transformations on object based data structures. Sure, there's the good old for-in syntax but it would be nice to be able to use map, filter and co. As it happens there are some ways to achieve this.
 
-    ### zips
+  ### zips
 
-    To be exact, zip is a function that takes two lists and returns a list of lists like this:
+  To be exact, zip is a function that takes two lists and returns a list of lists like this:
 
-        var a = [0, 1, 2];
-        var b = ['a', 'b', 'c'];
-        var result = zip(a, b); // [[0, 'a'], [1, 'b'], [2, 'c']]
+  ```javascript
+  var a = [0, 1, 2];
+  var b = ['a', 'b', 'c'];
+  var result = zip(a, b); // [[0, 'a'], [1, 'b'], [2, 'c']]
+  ```
 
-    You can also define function `unzip` that performs the reverse and extracts two lists out of a resulting zip.
+  You can also define function `unzip` that performs the reverse and extracts two lists out of a resulting zip.
 
-    In order to make it easier to manipulate object structures, we can define two functions: `otozip` and `ziptoo`. The former converts an object to zip and the latter converts zip to an object. I've sketched out basic implementations below:
+  In order to make it easier to manipulate object structures, we can define two functions: `otozip` and `ziptoo`. The former converts an object to zip and the latter converts zip to an object. I've sketched out basic implementations below:
 
-        function otozip(o) {
-            return zip(keys(o), values(o));
-        }
+  ```javascript
+  function otozip(o) {
+    return zip(keys(o), values(o));
+  }
 
-        function zip(a, b) {
-            var ret = [];
-            var i, len;
+  function zip(a, b) {
+    var ret = [];
+    var i, len;
 
-            for(i = 0, len = Math.min(a.length, b.length); i < len; i++) {
-                ret.push([a[i], b[i]]);
-            }
+    for(i = 0, len = Math.min(a.length, b.length); i < len; i++) {
+      ret.push([a[i], b[i]]);
+    }
 
-            return ret;
-        }
+    return ret;
+  }
 
-        function keys(o) {
-            return Object.keys(o); // ES5
-        }
+  function keys(o) {
+    return Object.keys(o); // ES5
+  }
 
-        function values(o) {
-            var ret = [];
-            var k, v;
+  function values(o) {
+    var ret = [];
+    var k, v;
 
-            for(k in o) {
-                v = o[k];
+    for(k in o) {
+      v = o[k];
 
-                if(o.hasOwnProperty(k)) { // ES5
-                    ret.push(v);
-                }
-            }
+      if(o.hasOwnProperty(k)) { // ES5
+        ret.push(v);
+      }
+    }
 
-            return ret;
-        }
+    return ret;
+  }
 
-        function ziptoo(a) {
-            var ret = {};
-            var i, len;
+  function ziptoo(a) {
+    var ret = {};
+    var i, len;
 
-            a.forEach(function(v) { // ES5
-                ret[v[0]] = v[1];
-            });
+    a.forEach(function(v) { // ES5
+      ret[v[0]] = v[1];
+    });
 
-            return ret;
-        }
+    return ret;
+  }
+  ```
 
-    There's a small gotcha in that `ziptoo`. In case your zip happens to contain multiple pairs with the same first value, only the last pair will end up in the result. That is just the way objects work by design.
+  There's a small gotcha in that `ziptoo`. In case your zip happens to contain multiple pairs with the same first value, only the last pair will end up in the result. That is just the way objects work by design.
 
-    The functions add some performance overhead but ease manipulation as you can use the utilities we covered earlier. If you are using [caolan/async](https://github.com/caolan/async), you may find the pattern useful for aggregating results of various operations into objects.
+  The functions add some performance overhead but ease manipulation as you can use the utilities we covered earlier. If you are using [caolan/async](https://github.com/caolan/async), you may find the pattern useful for aggregating results of various operations into objects.
 
-    I've packaged the functionality in a module of my own. You may find it at NPM as [annozip](https://npmjs.org/package/annozip).
+  I've packaged the functionality in a module of my own. You may find it at NPM as [annozip](https://npmjs.org/package/annozip).
 
-    ## Conclusion
+  ## Conclusion
 
-    So far we have pretty much just scratched the surface a little bit. We could still discuss advanced data types, generators and such but those are better left for other posts as this one is getting quite long already. In the meantime you can check out various libraries focusing on [functional programming](http://jster.net/category/functional-programming). No doubt you will find something useful there.
+  So far we have pretty much just scratched the surface a little bit. We could still discuss advanced data types, generators and such but those are better left for other posts as this one is getting quite long already. In the meantime you can check out various libraries focusing on [functional programming](http://jster.net/category/functional-programming). No doubt you will find something useful there.
 
-    I hope you learned some little trick from this post. In case you happen to have some particular tricks in mind, do let us know at the comment section! I just covered some which I happen to find useful. Those are more or less useful depending on your usage patterns. Till the next time!
+  I hope you learned some little trick from this post. In case you happen to have some particular tricks in mind, do let us know at the comment section! I just covered some which I happen to find useful. Those are more or less useful depending on your usage patterns. Till the next time!

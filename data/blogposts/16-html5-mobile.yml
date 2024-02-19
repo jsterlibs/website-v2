@@ -4,137 +4,156 @@ short_title: Packaging HTML5 Mobile Apps
 user: olsn
 slug: tools-to-package-your-html5-app-for-mobile-devices
 body: |
-    This time we'll have a special treat for you, a guest post by **Olaf Horstmann**. A digital media developer from Stuttgart, Germany. He has worked in several locations around the globe, including the US, China and Indonesia, and runs a blog known as [indiegamr](http://indiegamr.com). Recently he published an ebook, ["From Zero to App Store"](http://indiegamr.com/zerotoappstore/). It shows you how to create and publish HTML5 games for the mobile.
+  This time we'll have a special treat for you, a guest post by **Olaf Horstmann**. A digital media developer from Stuttgart, Germany. He has worked in several locations around the globe, including the US, China and Indonesia, and runs a blog known as [indiegamr](http://indiegamr.com). Recently he published an ebook, ["From Zero to App Store"](http://indiegamr.com/zerotoappstore/). It shows you how to create and publish HTML5 games for the mobile.
 
-    ## Introduction
+  ## Introduction
 
-    While your HTML5 application/game already runs perfectly in any desktop-browser, it might not be entirely trivial to port it to mobile. Which tools or services should you use? In the following article four popular build-services and tools are compared, with conclusions on which service suits which purpose.
+  While your HTML5 application/game already runs perfectly in any desktop-browser, it might not be entirely trivial to port it to mobile. Which tools or services should you use? In the following article four popular build-services and tools are compared, with conclusions on which service suits which purpose.
 
-    {{ screenshot: http://ludei.com/tech/cocoonjs }}
+  {{ screenshot: http://ludei.com/tech/cocoonjs }}
 
-    ## CocoonJS
+  ## CocoonJS
 
-    **In one sentence**: ["CocoonJS is a platform that allows developers to deploy, accelerate, and monetize their JavaScript HTML5 games in the App store and Google Play."](http://ludei.com/tech/cocoonjs)
+  **In one sentence**: ["CocoonJS is a platform that allows developers to deploy, accelerate, and monetize their JavaScript HTML5 games in the App store and Google Play."](http://ludei.com/tech/cocoonjs)
 
-    #### Pros
+  #### Pros
 
-     CocoonJS is the only Build-Service in this list that will display your canvas content on a native, hardware-supported OpenGL-stage (Ejecta does the same, but is not a build-service). This means that your canvas app will be able to display thousands of graphic-objects without a problem. Something not currently possible with pure HTML5.
+   CocoonJS is the only Build-Service in this list that will display your canvas content on a native, hardware-supported OpenGL-stage (Ejecta does the same, but is not a build-service). This means that your canvas app will be able to display thousands of graphic-objects without a problem. Something not currently possible with pure HTML5.
 
-    CocoonJS features a launcher app for iOS and Android. It will download your zipped HTML5-contents and allows you debug it right away, so you can test your app on the device in seconds without the hassle of building and deploying it with XCode or Eclipse etc. Additionally CocoonJS features several ready-to-use plugins to access native features, Facebook or Twitter, ads or in-app purchases via JavaScript.
+  CocoonJS features a launcher app for iOS and Android. It will download your zipped HTML5-contents and allows you debug it right away, so you can test your app on the device in seconds without the hassle of building and deploying it with XCode or Eclipse etc. Additionally CocoonJS features several ready-to-use plugins to access native features, Facebook or Twitter, ads or in-app purchases via JavaScript.
 
-    The file-size limit for projects is currently 30MB but can be unlocked to be 200MB upon request.
+  The file-size limit for projects is currently 30MB but can be unlocked to be 200MB upon request.
 
-    #### Cons
+  #### Cons
 
-    CocoonJS displays HTML-markup through a WebView but its primary focus is on the accelerated projection of canvas contents. When releasing an app, some knowledge on XCode is required. The build service will only create a ready-to-use XCode project. The APK generated for Android requires signing through the command line.
+  CocoonJS displays HTML-markup through a WebView but its primary focus is on the accelerated projection of canvas contents. When releasing an app, some knowledge on XCode is required. The build service will only create a ready-to-use XCode project. The APK generated for Android requires signing through the command line.
 
-    **Price**: Currently CocoonJS is in a free beta and packaged apps will have a CocoonJS splash screen. This may be removed on a special-request. At the time of writing it is unknown how much it will cost and when they will start charging customers, but if you plan on using CocoonJS expect to start paying for the service within 2013.
+  **Price**: Currently CocoonJS is in a free beta and packaged apps will have a CocoonJS splash screen. This may be removed on a special-request. At the time of writing it is unknown how much it will cost and when they will start charging customers, but if you plan on using CocoonJS expect to start paying for the service within 2013.
 
-    #### Example Apps
+  #### Example Apps
 
-    * [Video Puzzle (iOS)](https://itunes.apple.com/us/app/videopuzzle/id417372287)
-    * [List of games in the stores](http://ludei.com/games)
+  * [Video Puzzle (iOS)](https://itunes.apple.com/us/app/videopuzzle/id417372287)
+  * [List of games in the stores](http://ludei.com/games)
 
-    ---
+  ---
 
-    {{ screenshot: http://impactjs.com/ejecta }}
+  {{ screenshot: http://impactjs.com/ejecta }}
 
-    ## Ejecta    
+  ## Ejecta
 
-    In one sentence: ["A Fast, Open Source JavaScript, Canvas & Audio Implementation for iOS"](http://impactjs.com/ejecta)
+  In one sentence: ["A Fast, Open Source JavaScript, Canvas & Audio Implementation for iOS"](http://impactjs.com/ejecta)
 
-    #### Pros
+  #### Pros
 
-    Ejecta is Open Source and free to use. It works similar to CocoonJS and displays canvas contents on a native OpenGL stage. Additional support for the GameCenter and iAds also works out of the box and since Ejecta is Open Source it can be easily extended through Objective-C. Thanks to the Open Source community there are forks available such as [Ejecta-HEART-CreateJS](https://github.com/apitaru/Ejecta-HEART-CreateJS).
+  Ejecta is Open Source and free to use. It works similar to CocoonJS and displays canvas contents on a native OpenGL stage. Additional support for the GameCenter and iAds also works out of the box and since Ejecta is Open Source it can be easily extended through Objective-C. Thanks to the Open Source community there are forks available such as [Ejecta-HEART-CreateJS](https://github.com/apitaru/Ejecta-HEART-CreateJS).
 
-    #### Cons
+  #### Cons
 
-    The only real downside of Ejecta is that it’s only available for XCode/iOS. Besides that Ejecta requires more knowledge on XCode than the other services to build and deploy a project because it is a library/tool and not a build-service. Also Ejecta focuses only on the canvas so it is not possible to display any other elements besides the canvas content.
+  The only real downside of Ejecta is that it’s only available for XCode/iOS. Besides that Ejecta requires more knowledge on XCode than the other services to build and deploy a project because it is a library/tool and not a build-service. Also Ejecta focuses only on the canvas so it is not possible to display any other elements besides the canvas content.
 
-    **Price:** Free & Open Source
+  **Price:** Free & Open Source
 
-    #### Example Apps
+  #### Example Apps
 
-    * [Biolab Disaster](https://itunes.apple.com/us/app/biolab-disaster/id433062854)
-    * [Steamclash](http://www.steamclash.com/)
+  * [Biolab Disaster](https://itunes.apple.com/us/app/biolab-disaster/id433062854)
+  * [Steamclash](http://www.steamclash.com/)
 
-    ---
+  ---
 
-    {{ screenshot: https://build.phonegap.com/ }}
+  {{ screenshot: https://build.phonegap.com/ }}
 
-    ## PhoneGap Build
+  ## PhoneGap Build
 
-    Note that in this case we refer only to PhoneGap Build service, NOT the PhoneGap technology itself. Pretty much anything the build service can do can also be achieved with PhoneGap directly, though.
+  Note that in this case we refer only to PhoneGap Build service, NOT the PhoneGap technology itself. Pretty much anything the build service can do can also be achieved with PhoneGap directly, though.
 
-    **In one sentence**: ["Simply upload your HTML5, CSS, and JavaScript assets to the Adobe® PhoneGap™ Build cloud service and we do the work of compiling for you."](https://build.phonegap.com/)
+  **In one sentence**: ["Simply upload your HTML5, CSS, and JavaScript assets to the Adobe® PhoneGap™ Build cloud service and we do the work of compiling for you."](https://build.phonegap.com/)
 
-    #### Pros
+  #### Pros
 
-     PhoneGap Build will take care of the whole build process. The built apps are ready to be uploaded directly to the app-marketplaces, so there is absolutely no knowledge on XCode, Eclipse or the like required. In addition to iOS and Android™ PhoneGap Build is able to target Windows® Phone, Blackberry® 5/6/7, WebOS and Symbian™ from the very same codebase.
-    
-    PhoneGap build supports pretty much any native function of your phone and thanks to the big and established PhoneGap community there are a ton of plugins available. Plus there is a free plan available for a single app. To test an application during development it can be installed once and then updated over the air and it also features a console on the desktop, similar to the WebKit console, which comes in really handy for debugging.
+   PhoneGap Build will take care of the whole build process. The built apps are ready to be uploaded directly to the app-marketplaces, so there is absolutely no knowledge on XCode, Eclipse or the like required. In addition to iOS and Android™ PhoneGap Build is able to target Windows® Phone, Blackberry® 5/6/7, WebOS and Symbian™ from the very same codebase.
 
-    PhoneGap Build is a project by Adobe. It's up to you to decide whether this is positive or negative.
+  PhoneGap build supports pretty much any native function of your phone and thanks to the big and established PhoneGap community there are a ton of plugins available. Plus there is a free plan available for a single app. To test an application during development it can be installed once and then updated over the air and it also features a console on the desktop, similar to the WebKit console, which comes in really handy for debugging.
 
-    #### Cons
+  PhoneGap Build is a project by Adobe. It's up to you to decide whether this is positive or negative.
 
-    While PhoneGap primarily wraps your HTML sources in a native app, it "only" uses the device’s built in technology for that (WebView). This means there is no projection on hardware-accelerated OpenGL stages or the like, which makes this technology less useful for graphically intense games. Also the maximum file-size of an uploaded projected is currently limited to 10MB and there are no official plans to extend this limit.
+  #### Cons
 
-    **Price:** Starts at $9.99/month but there is a free plan available.
+  While PhoneGap primarily wraps your HTML sources in a native app, it "only" uses the device’s built in technology for that (WebView). This means there is no projection on hardware-accelerated OpenGL stages or the like, which makes this technology less useful for graphically intense games. Also the maximum file-size of an uploaded projected is currently limited to 10MB and there are no official plans to extend this limit.
 
-    **Example Apps:** There are no official examples listed, but the technology has been proven in countless apps in the App Store.
+  **Price:** Starts at $9.99/month but there is a free plan available.
 
-    ---
+  **Example Apps:** There are no official examples listed, but the technology has been proven in countless apps in the App Store.
 
-    {{ screenshot: https://trigger.io/ }}
+  ---
 
-    ## Trigger.io
+  {{ screenshot: https://trigger.io/ }}
 
-    In one sentence: ["Apps created using our framework are native: they can use device features / UI components and can be submitted to galleries such as the App Stores and Google Play."](https://trigger.io/how-it-works/)
+  ## Trigger.io
 
-    #### Pros
+  In one sentence: ["Apps created using our framework are native: they can use device features / UI components and can be submitted to galleries such as the App Stores and Google Play."](https://trigger.io/how-it-works/)
 
-     Trigger.io works very similar to the PhoneGap technology and wraps the HTML codebase inside a WebView. Additionally it is possible to include native UI elements through JavaScript. With the Trigger.io toolkit you can build iOS apps on Windows®. The only other technology capable of this is Flash. Like with PhoneGap, no knowledge and no use of XCode or Eclipse is required. Based on its own claims, Trigger.io can be up to 5x faster than PhoneGap. It also features the use of native components like SMS, camera, location etc.
+  #### Pros
 
-    #### Cons
+   Trigger.io works very similar to the PhoneGap technology and wraps the HTML codebase inside a WebView. Additionally it is possible to include native UI elements through JavaScript. With the Trigger.io toolkit you can build iOS apps on Windows®. The only other technology capable of this is Flash. Like with PhoneGap, no knowledge and no use of XCode or Eclipse is required. Based on its own claims, Trigger.io can be up to 5x faster than PhoneGap. It also features the use of native components like SMS, camera, location etc.
 
-    Trigger.io wraps the HTML codebase inside a WebView and is therefore not as fast as CocoonJS or Ejecta when it comes to canvas applications and especially games. Beside that is Trigger.io by far the most expensive choice of all.
+  #### Cons
 
-    **Price:** The pricing starts at $19/month and ends at $799/month if you pay for a whole year. When you pay from month to month the service will be significantly more expensive and can range from 39$ all the way up to $999/month depending on the package.
+  Trigger.io wraps the HTML codebase inside a WebView and is therefore not as fast as CocoonJS or Ejecta when it comes to canvas applications and especially games. Beside that is Trigger.io by far the most expensive choice of all.
 
-    #### Example Apps
+  **Price:** The pricing starts at $19/month and ends at $799/month if you pay for a whole year. When you pay from month to month the service will be significantly more expensive and can range from 39$ all the way up to $999/month depending on the package.
 
-    * [Fetchnotes](http://www.fetchnotes.com/)
-    * [Ravel](http://ravelapp.com/)
+  #### Example Apps
 
-    ---
+  * [Fetchnotes](http://www.fetchnotes.com/)
+  * [Ravel](http://ravelapp.com/)
 
-    ## Comparison
+  ---
 
-    In the table below you can see all features and tools listed side-by-side:
+  ## Comparison
+
+  In the table below you can see all features and tools listed side-by-side:
 
 table:
-    columns: [CocoonJS, Ejecta, PhoneGap Build, Trigger.io]
-    price: [Free beta, Open Source, $0-10/month, $19-999/month]
-    platforms: ['iOS, Android', 'iOS', 'iOS, Android, WebOS, Symbian, Blackberry, Bada, WP', 'iOS, Android']
-    performance: ['native', 'native', 'WebView', 'WebView']
-    maximum project size: ['30 MB, 200 MB premium planned', 'no', '10 MB', 'no']
-    included plugins: ['Ads (almost any network), WebView, in-app payments, iOS Gamecenter, multiplayer, camera, notifications, Twitter, Facebook, Box2D', 'None but can be extended by the user', 'childbrowser, barcode scanner, analytics, Facebook, GenericPush, Custom plugins can be imported', 'Camera, file, contacts, SMS, geolocation, notifications, in-app payments, native UI elements']
-    testing: ['Launcher app, over the air, debug console available', 'Inside XCode or on the device', 'One-time install, then over the air', 'On the device through command line execution']
-    service: ['building', 'no', 'building, codesigning', 'building, codesigning']
-    branding: ['splash screen (in free version)', 'no', 'Removable splash screen', 'no']
+  columns: [CocoonJS, Ejecta, PhoneGap Build, Trigger.io]
+  price: [Free beta, Open Source, $0-10/month, $19-999/month]
+  platforms:
+    [
+      "iOS, Android",
+      "iOS",
+      "iOS, Android, WebOS, Symbian, Blackberry, Bada, WP",
+      "iOS, Android",
+    ]
+  performance: ["native", "native", "WebView", "WebView"]
+  maximum project size: ["30 MB, 200 MB premium planned", "no", "10 MB", "no"]
+  included plugins:
+    [
+      "Ads (almost any network), WebView, in-app payments, iOS Gamecenter, multiplayer, camera, notifications, Twitter, Facebook, Box2D",
+      "None but can be extended by the user",
+      "childbrowser, barcode scanner, analytics, Facebook, GenericPush, Custom plugins can be imported",
+      "Camera, file, contacts, SMS, geolocation, notifications, in-app payments, native UI elements",
+    ]
+  testing:
+    [
+      "Launcher app, over the air, debug console available",
+      "Inside XCode or on the device",
+      "One-time install, then over the air",
+      "On the device through command line execution",
+    ]
+  service: ["building", "no", "building, codesigning", "building, codesigning"]
+  branding:
+    ["splash screen (in free version)", "no", "Removable splash screen", "no"]
 
 footer: |
-    ## Conclusion
+  ## Conclusion
 
-    For games the best of the listed options is probably CocoonJS. It provides a decent build-service and requires only a minimal amount of XCode and Android SDK knowledge. If your game runs fine with PhoneGap I would prefer this technology, although unfortunately on Android the differences in canvas performance between different devices can be huge.
+  For games the best of the listed options is probably CocoonJS. It provides a decent build-service and requires only a minimal amount of XCode and Android SDK knowledge. If your game runs fine with PhoneGap I would prefer this technology, although unfortunately on Android the differences in canvas performance between different devices can be huge.
 
-    The only current downside of CocoonJS is the splash screen and the uncertainty of pricing. If budget is a critical issue and you don’t mind about not targeting Android, then Ejecta will be a very good fit for you. Be prepared to learn something about XCode in this case, though. While Trigger.io is a very good platform, I would not suggest you to use it for a canvas game. Its advantages over PhoneGap are marginal and the price is really high.
+  The only current downside of CocoonJS is the splash screen and the uncertainty of pricing. If budget is a critical issue and you don’t mind about not targeting Android, then Ejecta will be a very good fit for you. Be prepared to learn something about XCode in this case, though. While Trigger.io is a very good platform, I would not suggest you to use it for a canvas game. Its advantages over PhoneGap are marginal and the price is really high.
 
-    If you are interested in creating a HTML5 game with CocoonJS or PhoneGap, you should check out the author’s book on creating and packaging HTML5 Games at [From Zero to the Appstore](http://indiegamr.com/zerotoappstore/).
+  If you are interested in creating a HTML5 game with CocoonJS or PhoneGap, you should check out the author’s book on creating and packaging HTML5 Games at [From Zero to the Appstore](http://indiegamr.com/zerotoappstore/).
 
-    ### Thanks
+  ### Thanks
 
-    *Big thanks to Olaf for contributing this post! I for one found it really informative and I hope you did too. If you have any questions or comments to Olaf, go ahead and use the space below. In case you are interested in becoming a guest author, contact us.*
+  *Big thanks to Olaf for contributing this post! I for one found it really informative and I hope you did too. If you have any questions or comments to Olaf, go ahead and use the space below. In case you are interested in becoming a guest author, contact us.*
 
-    *Follow, JSter in [Twitter](http://twitter.com/jsterlibs) or subscribe to our [RSS](http://feeds.feedburner.com/jster) to discover new JavaScript libraries and tools*.
+  *Follow, JSter in [Twitter](http://twitter.com/jsterlibs) or subscribe to our [RSS](http://feeds.feedburner.com/jster) to discover new JavaScript libraries and tools*.

@@ -4,65 +4,65 @@ short_title: "JSter #42"
 user: bebraw
 slug: monthly-jster-march-2015-part-1
 body: |
-    > Does anyone read these things?
+  > Does anyone read these things?
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: http://mango.github.io/slideout/ }}
+  {{ screenshot: http://mango.github.io/slideout/ }}
 
-    * [Slideout.js](http://mango.github.io/slideout/) - A touch slideout navigation menu for your mobile web apps.
-    * [React v0.13](http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html)
-    * [Timesheet.js](http://sbstjn.github.io/timesheet.js/) - Generate simple timesheets using JavaScript
-    * [Underscore vs Lo-Dash](http://benmccormick.org/2014/11/12/underscore-vs-lodash/)
+  * [Slideout.js](http://mango.github.io/slideout/) - A touch slideout navigation menu for your mobile web apps.
+  * [React v0.13](http://facebook.github.io/react/blog/2015/03/10/react-v0.13.html)
+  * [Timesheet.js](http://sbstjn.github.io/timesheet.js/) - Generate simple timesheets using JavaScript
+  * [Underscore vs Lo-Dash](http://benmccormick.org/2014/11/12/underscore-vs-lodash/)
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://caspervonb.com/javascript/an-overview-of-javascript-in-2015-ecmascript-6/ }}
+  {{ screenshot: http://caspervonb.com/javascript/an-overview-of-javascript-in-2015-ecmascript-6/ }}
 
-    * [An Overview of JavaScript in 2015 (ECMAScript 6)](http://caspervonb.com/javascript/an-overview-of-javascript-in-2015-ecmascript-6/)
-    * [Inline Styles are the Future Thanks to Radium](http://formidablelabs.com/blog/2015/03/01/launching-radium/) - In React world anyway
-    * [A JS framework on every table](http://www.allenpike.com/2015/javascript-framework-fatigue/) - Can there be too many frameworks?
-    * [Angular 2: Built on TypeScript](http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx)
-    * [@rauchg's thoughts on ES6](http://rauchg.com/2015/ecmascript-6/)
+  * [An Overview of JavaScript in 2015 (ECMAScript 6)](http://caspervonb.com/javascript/an-overview-of-javascript-in-2015-ecmascript-6/)
+  * [Inline Styles are the Future Thanks to Radium](http://formidablelabs.com/blog/2015/03/01/launching-radium/) - In React world anyway
+  * [A JS framework on every table](http://www.allenpike.com/2015/javascript-framework-fatigue/) - Can there be too many frameworks?
+  * [Angular 2: Built on TypeScript](http://blogs.msdn.com/b/typescript/archive/2015/03/05/angular-2-0-built-on-typescript.aspx)
+  * [@rauchg's thoughts on ES6](http://rauchg.com/2015/ecmascript-6/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [flexbox in 5 minutes](http://flexboxin5.com/)
-    * [True isomorphic apps with React and Baobab](http://christianalfoni.github.io/javascript/2015/03/01/true-isomorphic-apps-with-react-and-baobab.html)
-    * [Lint Like It’s 2015](https://medium.com/@dan_abramov/lint-like-it-s-2015-6987d44c5b48)
-    * [The Basics Of ES6 Generators](http://davidwalsh.name/es6-generators)
-    * [How to Publish and Maintain NPM Packages?](http://www.nixtu.info/2015/02/how-to-publish-and-maintain-npm-packages.html)
-    * [Introduction to Facebook's Flux architecture](http://ryanclark.me/getting-started-with-flux/)
+  * [flexbox in 5 minutes](http://flexboxin5.com/)
+  * [True isomorphic apps with React and Baobab](http://christianalfoni.github.io/javascript/2015/03/01/true-isomorphic-apps-with-react-and-baobab.html)
+  * [Lint Like It’s 2015](https://medium.com/@dan_abramov/lint-like-it-s-2015-6987d44c5b48)
+  * [The Basics Of ES6 Generators](http://davidwalsh.name/es6-generators)
+  * [How to Publish and Maintain NPM Packages?](http://www.nixtu.info/2015/02/how-to-publish-and-maintain-npm-packages.html)
+  * [Introduction to Facebook's Flux architecture](http://ryanclark.me/getting-started-with-flux/)
 
-    ## Slides
+  ## Slides
 
-    * [CoffeeScript vs. ECMAScript 6](https://speakerdeck.com/polarblau/coffeescript-vs-ecmascript-6)
+  * [CoffeeScript vs. ECMAScript 6](https://speakerdeck.com/polarblau/coffeescript-vs-ecmascript-6)
 
-    ## Guides
+  ## Guides
 
-    * [lukehoban/es6features](https://github.com/lukehoban/es6features)
-    * [React Tips and Best Practices](http://aeflash.com/2015-02/react-tips-and-best-practices.html)
+  * [lukehoban/es6features](https://github.com/lukehoban/es6features)
+  * [React Tips and Best Practices](http://aeflash.com/2015-02/react-tips-and-best-practices.html)
 
-    ## Techniques
+  ## Techniques
 
-    * [Testing ES6 code](http://www.thomascoopman.eu/blog/Testing+ES6+code)
-    * [No promises: asynchronous JavaScript with only generators](http://www.2ality.com/2015/03/no-promises.html)
-    * [Introducing localFont](http://jaicab.com/2015/03/03/introducing-localfont-a-localstorage-solution/) - Faster font loading thanks to LocalStorage.
-    * [Boiling React Down to a Few Lines in jQuery](http://hackflow.com/blog/2015/03/08/boiling-react-down-to-few-lines-in-jquery/)
-    * [Combining JavaScript Arrays](http://davidwalsh.name/combining-js-arrays)
-    * [How to Use npm as a Build Tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
+  * [Testing ES6 code](http://www.thomascoopman.eu/blog/Testing+ES6+code)
+  * [No promises: asynchronous JavaScript with only generators](http://www.2ality.com/2015/03/no-promises.html)
+  * [Introducing localFont](http://jaicab.com/2015/03/03/introducing-localfont-a-localstorage-solution/) - Faster font loading thanks to LocalStorage.
+  * [Boiling React Down to a Few Lines in jQuery](http://hackflow.com/blog/2015/03/08/boiling-react-down-to-few-lines-in-jquery/)
+  * [Combining JavaScript Arrays](http://davidwalsh.name/combining-js-arrays)
+  * [How to Use npm as a Build Tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
 
-    ## Games
+  ## Games
 
-    * [Unity 5 Ships and Brings One Click WebGL Export to Legions of Game Developers](https://blog.mozilla.org/blog/2015/03/03/unity-5-ships-and-brings-one-click-webgl-export-to-legions-of-game-developers/)
+  * [Unity 5 Ships and Brings One Click WebGL Export to Legions of Game Developers](https://blog.mozilla.org/blog/2015/03/03/unity-5-ships-and-brings-one-click-webgl-export-to-legions-of-game-developers/)
 
-    ## Tools
+  ## Tools
 
-    * [t32k/stylestats](https://github.com/t32k/stylestats) - Get stats about your CSS
-    * [Getting bored? Change your stack](http://www.commitstrip.com/en/2015/03/02/getting-bored-change-your-stack/)
+  * [t32k/stylestats](https://github.com/t32k/stylestats) - Get stats about your CSS
+  * [Getting bored? Change your stack](http://www.commitstrip.com/en/2015/03/02/getting-bored-change-your-stack/)
 
-    ## Demos
+  ## Demos
 
-    * [JS Paint](http://jspaint.ml/) - Nostalgy
-    * [socks.js](https://gist.github.com/nbar1/6e7e0710bbe620c49b15) - Sock washing simulator
-    * [Can you get seasick using JavaScript?](https://www.shadertoy.com/view/Ms2SD1)
+  * [JS Paint](http://jspaint.ml/) - Nostalgy
+  * [socks.js](https://gist.github.com/nbar1/6e7e0710bbe620c49b15) - Sock washing simulator
+  * [Can you get seasick using JavaScript?](https://www.shadertoy.com/view/Ms2SD1)

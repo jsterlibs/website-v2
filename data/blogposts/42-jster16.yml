@@ -4,67 +4,67 @@ short_title: "JSter #16"
 user: bebraw
 slug: monthly-jster-february-2014-part-1
 body: |
-    > ['hip', 'hip'] - @iamdevloper
+  > ['hip', 'hip'] - @iamdevloper
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: http://superconductor.github.io/superconductor/ }}
+  {{ screenshot: http://superconductor.github.io/superconductor/ }}
 
-    * [Superconductor](http://superconductor.github.io/superconductor/) - Real-time visualizations. Up to million data points.
-    * [cities-autocomplete](https://github.com/basco-johnkevin/cities-autocomplete) - [Article](http://blog.john.mayonvolcanosoftware.com/cities-autocomplete-using-jquery-and-geobytes-api/)
-    * [Bootstrap Accessibility Plugin](http://paypal.github.io/bootstrap-accessibility-plugin/)
-    * [dropzone.js](http://www.dropzonejs.com/) - DnD file uploads with image previews. Not the kind of DnD you think!
-    * [jzed](https://github.com/zedshaw/jzed) - Functional alternative to jQuery. Yes, it really works.
-    * [d3-cloud](https://github.com/jasondavies/d3-cloud) - Word clouds! That's what I call cloud software.
-    * [share-button](http://carrot.github.io/share-button/) - Ditch those ugly native share widgets and replace them with something that looks nice!
-    * [InstantClick](http://instantclick.io/) - Turbocharge your website.
-    * [restyle.js](http://webreflection.blogspot.it/2014/02/restylejs-simplified-css-approach.html) - A simplified CSS approach.
+  * [Superconductor](http://superconductor.github.io/superconductor/) - Real-time visualizations. Up to million data points.
+  * [cities-autocomplete](https://github.com/basco-johnkevin/cities-autocomplete) - [Article](http://blog.john.mayonvolcanosoftware.com/cities-autocomplete-using-jquery-and-geobytes-api/)
+  * [Bootstrap Accessibility Plugin](http://paypal.github.io/bootstrap-accessibility-plugin/)
+  * [dropzone.js](http://www.dropzonejs.com/) - DnD file uploads with image previews. Not the kind of DnD you think!
+  * [jzed](https://github.com/zedshaw/jzed) - Functional alternative to jQuery. Yes, it really works.
+  * [d3-cloud](https://github.com/jasondavies/d3-cloud) - Word clouds! That's what I call cloud software.
+  * [share-button](http://carrot.github.io/share-button/) - Ditch those ugly native share widgets and replace them with something that looks nice!
+  * [InstantClick](http://instantclick.io/) - Turbocharge your website.
+  * [restyle.js](http://webreflection.blogspot.it/2014/02/restylejs-simplified-css-approach.html) - A simplified CSS approach.
 
-    ## Articles
+  ## Articles
 
-    {{ screenshot: http://labs.tmw.co.uk/2014/01/speedtesting-gulp-and-grunt/ }}
+  {{ screenshot: http://labs.tmw.co.uk/2014/01/speedtesting-gulp-and-grunt/ }}
 
-    * [Speedtesting Gulp.js and Grunt](http://labs.tmw.co.uk/2014/01/speedtesting-gulp-and-grunt/)
-    * [Meteor 1.0 is Coming](http://differential.io/blog/meteor-10-is-coming) - Dinosaurs beware?
-    * [Someone's Love Affair with AngularJS](http://redbeacon.github.io/2014/02/04/My-love-affair-with-AngularJS/)
+  * [Speedtesting Gulp.js and Grunt](http://labs.tmw.co.uk/2014/01/speedtesting-gulp-and-grunt/)
+  * [Meteor 1.0 is Coming](http://differential.io/blog/meteor-10-is-coming) - Dinosaurs beware?
+  * [Someone's Love Affair with AngularJS](http://redbeacon.github.io/2014/02/04/My-love-affair-with-AngularJS/)
 
-    ## Tutorials
+  ## Tutorials
 
-    {{ screenshot: http://toddmotto.com/mastering-the-module-pattern/ }}
+  {{ screenshot: http://toddmotto.com/mastering-the-module-pattern/ }}
 
-    * [Mastering the Module Pattern](http://toddmotto.com/mastering-the-module-pattern/)
-    * [Avoiding Anonymous JavaScript Functions](http://toddmotto.com/avoiding-anonymous-javascript-functions/)
-    * [A Re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
-    * [Why "use strict" in JavaScript Can Save You Hours](http://www.webdesignporto.com/why-use-strict-in-javascript-can-save-you-hours/)
+  * [Mastering the Module Pattern](http://toddmotto.com/mastering-the-module-pattern/)
+  * [Avoiding Anonymous JavaScript Functions](http://toddmotto.com/avoiding-anonymous-javascript-functions/)
+  * [A Re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+  * [Why "use strict" in JavaScript Can Save You Hours](http://www.webdesignporto.com/why-use-strict-in-javascript-can-save-you-hours/)
 
-    ## WebGL
+  ## WebGL
 
-    * [WebGL Water](http://madebyevan.com/webgl-water/)
+  * [WebGL Water](http://madebyevan.com/webgl-water/)
 
-    ## Games
+  ## Games
 
-    * [FlapMMO](http://flapmmo.com/) - Flap with others.
+  * [FlapMMO](http://flapmmo.com/) - Flap with others.
 
-    ## Guides
+  ## Guides
 
-    {{ screenshot: http://sathomas.me/jsdataviz/index.html }}
+  {{ screenshot: http://sathomas.me/jsdataviz/index.html }}
 
-    * [Basic JavaScript for The Impatient Programmer](http://www.2ality.com/2013/06/basic-javascript.html)
-    * [Data Visualization with JavaScript](http://sathomas.me/jsdataviz/index.html)
+  * [Basic JavaScript for The Impatient Programmer](http://www.2ality.com/2013/06/basic-javascript.html)
+  * [Data Visualization with JavaScript](http://sathomas.me/jsdataviz/index.html)
 
-    ## Tools
+  ## Tools
 
-    {{ screenshot: http://codegeekz.com/javascript-tools/ }}
+  {{ screenshot: http://codegeekz.com/javascript-tools/ }}
 
-    * [15 JavaScript Tools to Improve Your Coding Skills](http://codegeekz.com/javascript-tools/)
-    * [Nighwatch.js](http://nightwatchjs.org/) - Automated browser testing made easy. Write tests using Node.js, run against Selenium server.
-    * [JsonStub](http://www.jsonstub.com/) - Fake the backend while you develop the frontend.
-    * [ESLint](http://eslint.org/) - Now with proper [tool integrations](http://eslint.org/docs/integrations/).
+  * [15 JavaScript Tools to Improve Your Coding Skills](http://codegeekz.com/javascript-tools/)
+  * [Nighwatch.js](http://nightwatchjs.org/) - Automated browser testing made easy. Write tests using Node.js, run against Selenium server.
+  * [JsonStub](http://www.jsonstub.com/) - Fake the backend while you develop the frontend.
+  * [ESLint](http://eslint.org/) - Now with proper [tool integrations](http://eslint.org/docs/integrations/).
 
-    ## Tests
+  ## Tests
 
-    * [Do You Really Know JavaScript?](http://javascript-puzzlers.herokuapp.com/)
+  * [Do You Really Know JavaScript?](http://javascript-puzzlers.herokuapp.com/)
 
-    ## Demos
+  ## Demos
 
-    * [The Lonely Life of a Square](http://atfws.com/square.html)
+  * [The Lonely Life of a Square](http://atfws.com/square.html)

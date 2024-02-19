@@ -4,43 +4,43 @@ short_title: "JSter #62"
 user: bebraw
 slug: monthly-jster-january-2016-part-1
 body: |
-    > JavaScript Enterprise Edition would come with classes, modules, etc.
+  > JavaScript Enterprise Edition would come with classes, modules, etc.
 
-    My book project, [SurviveJS - Webpack and React](http://survivejs.com/blog/survivejs200-rc2/), reached v2.0 rc2. It might take a release candidate or two and it's ready for wider public I hope. But getting closer!
+  My book project, [SurviveJS - Webpack and React](http://survivejs.com/blog/survivejs200-rc2/), reached v2.0 rc2. It might take a release candidate or two and it's ready for wider public I hope. But getting closer!
 
-    ## Libraries
+  ## Libraries
 
-    {{ screenshot: http://blog.jquery.com/2016/01/14/jquery-3-0-beta-released/ }}
+  {{ screenshot: http://blog.jquery.com/2016/01/14/jquery-3-0-beta-released/ }}
 
-    * [jQuery 3.0 Beta Released](http://blog.jquery.com/2016/01/14/jquery-3-0-beta-released/)
-    * [Lodash 4.0.0](https://github.com/lodash/lodash/releases/tag/4.0.0) - Bye bye old IE (< 9), more ES6, more modularity, even emojis.
-    * [RxJS 5 beta](https://github.com/ReactiveX/RxJS/blob/master/CHANGELOG.md#500-beta1-2016-01-13) - Reactive programming!
-    * [timbre.js](https://mohayonao.github.io/timbre.js/beatbox.html) - Amazing looking sound synthesis library. How come nobody has built a front-end for this?
-    * [Pure Drawer](http://mac81.github.io/pure-drawer/) - Pure CSS transition effects for off-canvas views
-    * [The Grammar of Graphics](https://gigamonkey.github.io/gg/)
+  * [jQuery 3.0 Beta Released](http://blog.jquery.com/2016/01/14/jquery-3-0-beta-released/)
+  * [Lodash 4.0.0](https://github.com/lodash/lodash/releases/tag/4.0.0) - Bye bye old IE (< 9), more ES6, more modularity, even emojis.
+  * [RxJS 5 beta](https://github.com/ReactiveX/RxJS/blob/master/CHANGELOG.md#500-beta1-2016-01-13) - Reactive programming!
+  * [timbre.js](https://mohayonao.github.io/timbre.js/beatbox.html) - Amazing looking sound synthesis library. How come nobody has built a front-end for this?
+  * [Pure Drawer](http://mac81.github.io/pure-drawer/) - Pure CSS transition effects for off-canvas views
+  * [The Grammar of Graphics](https://gigamonkey.github.io/gg/)
 
-    ## Articles
+  ## Articles
 
-    * [Angular 2 versus React: There Will Be Blood](https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51)
-    * [Should I use a video as a background?](https://css-tricks.com/should-i-use-a-video-as-a-background/)
+  * [Angular 2 versus React: There Will Be Blood](https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51)
+  * [Should I use a video as a background?](https://css-tricks.com/should-i-use-a-video-as-a-background/)
 
-    ## Tutorials
+  ## Tutorials
 
-    * [How to write a codemod](https://vramana.github.io/blog/2015/12/21/codemod-tutorial/)
-    * [Codemods: Path to painless upgrades in Ember](https://vramana.github.io/blog/2016/01/13/codemods-path-to-painless-updgrade-in-ember/)
-    * [What's in a Number?](https://ada.is/blog/2016/01/08/number/)
-    * [How do Promises Work?](http://robotlolita.me/2015/11/15/how-do-promises-work.html)
+  * [How to write a codemod](https://vramana.github.io/blog/2015/12/21/codemod-tutorial/)
+  * [Codemods: Path to painless upgrades in Ember](https://vramana.github.io/blog/2016/01/13/codemods-path-to-painless-updgrade-in-ember/)
+  * [What's in a Number?](https://ada.is/blog/2016/01/08/number/)
+  * [How do Promises Work?](http://robotlolita.me/2015/11/15/how-do-promises-work.html)
 
-    ## Techniques
+  ## Techniques
 
-    * ["Real" Mixins with JavaScript Classes](http://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/)
+  * ["Real" Mixins with JavaScript Classes](http://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/)
 
-    ## Games
+  ## Games
 
-    * [JADSDS](https://pixelslivewallpaper.github.io/jadsdsengine/indexb.htm) - A friendly JavaScript based animator
-    * [p2.js soft wheel vehicle tutorial](http://steffe.se/?p=1737)
-    * [Cannon.js](http://www.cannonjs.org/) - Physics engine
+  * [JADSDS](https://pixelslivewallpaper.github.io/jadsdsengine/indexb.htm) - A friendly JavaScript based animator
+  * [p2.js soft wheel vehicle tutorial](http://steffe.se/?p=1737)
+  * [Cannon.js](http://www.cannonjs.org/) - Physics engine
 
-    ## Demos
+  ## Demos
 
-    * [Hover Effect Ideas](http://tympanus.net/Development/HoverEffectIdeas/)
+  * [Hover Effect Ideas](http://tympanus.net/Development/HoverEffectIdeas/)
