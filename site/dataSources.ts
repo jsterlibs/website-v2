@@ -6,7 +6,7 @@ import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
 import getMarkdown from "./transforms/markdown.ts";
 import { getJson } from "../scripts/utils.ts";
-import type { LoadApi } from "https://deno.land/x/gustwind@v0.52.3/types.ts";
+import type { LoadApi } from "https://deno.land/x/gustwind@v0.62.0/types.ts";
 
 import categories from "../data/categories.json" assert {
   type: "json",
@@ -20,16 +20,6 @@ import parentCategories from "../data/parent-categories.json" assert {
 import type { BlogPost, Category, Library, Tag } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
-
-type MarkdownWithFrontmatter = {
-  data: {
-    slug: string;
-    title: string;
-    date: Date;
-    keywords: string[];
-  };
-  content: string;
-};
 
 const config = configSync();
 
@@ -64,18 +54,15 @@ function init({ load }: { load: LoadApi }) {
       }
 
       return {
-        // TODO: Better without nesting
-        blogPost: {
-          path: matchingBlogPost?.path,
-          id,
-          title: matchingBlogPost?.title || "",
-          // @ts-ignore: Typo in the original data
-          shortTitle: matchingBlogPost?.short_title,
-          slug: matchingBlogPost?.slug || "",
-          date,
-          type: matchingBlogPost?.type || "static",
-          user: matchingBlogPost?.user || "",
-        },
+        path: matchingBlogPost?.path,
+        id,
+        title: matchingBlogPost?.title || "",
+        // @ts-ignore: Typo in the original data
+        shortTitle: matchingBlogPost?.short_title,
+        slug: matchingBlogPost?.slug || "",
+        date,
+        type: matchingBlogPost?.type || "static",
+        user: matchingBlogPost?.user || "",
       };
     });
 
@@ -88,10 +75,8 @@ function init({ load }: { load: LoadApi }) {
     return { ...blogPost, body: markdown(yaml.body).content };
   }
 
-  async function indexLibraries() {
-    const libraries = await getLibraries();
-
-    return libraries.map((library) => ({ library }));
+  function indexLibraries() {
+    return getLibraries();
   }
 
   function processLibrary(library: Library) {
@@ -134,7 +119,9 @@ function init({ load }: { load: LoadApi }) {
               // no-op: Error here is ok as then it means the cache file doesn't exist yet
             }
 
+            // TODO: Restore using an external API
             // It looks like the missing repos have stargazers set to undefined.
+            /*
             try {
               const response = await fetch(
                 `https://cf-api.jster.net/stargazers?organization=${
@@ -187,6 +174,7 @@ function init({ load }: { load: LoadApi }) {
 
               return { ...library, stargazers: undefined };
             }
+            */
           }
 
           return { ...library, stargazers: undefined };
@@ -198,7 +186,7 @@ function init({ load }: { load: LoadApi }) {
   }
 
   function indexCategories() {
-    return categories.map((category) => ({ category }));
+    return categories;
   }
 
   async function processCategory(category: Category) {
@@ -226,17 +214,15 @@ function init({ load }: { load: LoadApi }) {
         .map(async (
           { name, path },
         ) => ({
-          tag: {
-            id: name.split(".").slice(0, -1).join(),
-            title: name.split(".").slice(0, -1).join(),
-            libraries: (await getJson<Category[]>(path)).map((c) => {
-              const foundLibrary = libraries.find((l) => l.id === c.library.id);
+          id: name.split(".").slice(0, -1).join(),
+          title: name.split(".").slice(0, -1).join(),
+          libraries: (await getJson<Category[]>(path)).map((c) => {
+            const foundLibrary = libraries.find((l) => l.id === c.library.id);
 
-              if (foundLibrary) {
-                return foundLibrary;
-              }
-            }).filter(Boolean),
-          },
+            if (foundLibrary) {
+              return foundLibrary;
+            }
+          }).filter(Boolean),
         })),
     );
   }

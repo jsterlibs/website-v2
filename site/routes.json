@@ -36,11 +36,10 @@
         },
         "dataSources": [{
           "operation": "processCategory",
-          "firstParameter": "category",
           "parameters": [],
           "name": "categories"
         }],
-        "slug": "category.id"
+        "slug": "id"
       },
       "layout": "categoryPage",
       "meta": {
@@ -64,11 +63,10 @@
         },
         "dataSources": [{
           "operation": "processTag",
-          "firstParameter": "tag",
           "parameters": [],
           "name": "tags"
         }],
-        "slug": "tag.id"
+        "slug": "id"
       },
       "layout": "categoryPage",
       "meta": {
@@ -92,11 +90,10 @@
         },
         "dataSources": [{
           "operation": "processLibrary",
-          "firstParameter": "library",
           "parameters": [],
           "name": "libraries"
         }],
-        "slug": "library.id"
+        "slug": "id"
       },
       "layout": "libraryPage",
       "meta": {
@@ -139,11 +136,10 @@
         },
         "dataSources": [{
           "operation": "processBlogPost",
-          "firstParameter": "blogPost",
           "parameters": [],
           "name": "document"
         }],
-        "slug": "blogPost.id"
+        "slug": "id"
       },
       "layout": "blogPage",
       "meta": {
