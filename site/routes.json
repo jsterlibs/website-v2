@@ -64,7 +64,7 @@
         "dataSources": [{
           "operation": "processTag",
           "parameters": [],
-          "name": "tags"
+          "name": "categories"
         }],
         "slug": "id"
       },
