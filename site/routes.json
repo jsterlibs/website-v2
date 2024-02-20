@@ -37,7 +37,7 @@
         "dataSources": [{
           "operation": "processCategory",
           "parameters": [],
-          "name": "categories"
+          "name": "category"
         }],
         "slug": "id"
       },
@@ -64,7 +64,7 @@
         "dataSources": [{
           "operation": "processTag",
           "parameters": [],
-          "name": "categories"
+          "name": "category"
         }],
         "slug": "id"
       },
@@ -91,7 +91,7 @@
         "dataSources": [{
           "operation": "processLibrary",
           "parameters": [],
-          "name": "libraries"
+          "name": "library"
         }],
         "slug": "id"
       },
