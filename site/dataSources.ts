@@ -1,8 +1,8 @@
 import YAML from "https://esm.sh/yaml@1.10.2";
-import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
-import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
+// import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
+// import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
 import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
-import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
+// import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
 import getMarkdown from "./transforms/markdown.ts";
 import { getJson } from "../scripts/utils.ts";
@@ -21,7 +21,7 @@ import type { BlogPost, Category, Library, Tag } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
 
-const config = configSync();
+// const config = configSync();
 
 const cacheDirectory = ".gustwind_cache";
 
@@ -46,33 +46,40 @@ function init({ load }: { load: LoadApi }) {
       },
     ));
 
-    const ret = blogIndex.map(({ id, date }: IndexEntry) => {
-      const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
+    return (await Promise.all(
+      blogIndex.map(async ({ id, date }: IndexEntry) => {
+        const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
 
-      if (!matchingBlogPost) {
-        console.warn("No matching blog post found for", id);
-      }
+        if (!matchingBlogPost) {
+          console.warn("No matching blog post found for", id);
+        }
 
-      return {
-        path: matchingBlogPost?.path,
-        id,
-        title: matchingBlogPost?.title || "",
-        // @ts-ignore: Typo in the original data
-        shortTitle: matchingBlogPost?.short_title,
-        slug: matchingBlogPost?.slug || "",
-        date,
-        type: matchingBlogPost?.type || "static",
-        user: matchingBlogPost?.user || "",
-      };
-    });
+        const yaml = YAML.parse(await load.textFile(matchingBlogPost?.path));
 
-    return ret.toReversed();
+        return {
+          path: matchingBlogPost?.path,
+          id,
+          title: matchingBlogPost?.title || "",
+          // @ts-ignore: Typo in the original data
+          shortTitle: matchingBlogPost?.short_title,
+          slug: matchingBlogPost?.slug || "",
+          date,
+          type: matchingBlogPost?.type || "static",
+          user: matchingBlogPost?.user || "",
+          // This is needed for RSS
+          body: markdown(yaml.body).content,
+        };
+      }),
+    )).toReversed();
   }
 
-  async function processBlogPost(blogPost: BlogPost) {
+  function processBlogPost(blogPost: BlogPost) {
+    /*
     const yaml = YAML.parse(await load.textFile(blogPost.path));
 
     return { ...blogPost, body: markdown(yaml.body).content };
+    */
+    return blogPost;
   }
 
   function indexLibraries() {

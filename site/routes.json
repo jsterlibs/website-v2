@@ -156,7 +156,6 @@
   },
   "atom.xml": {
     "layout": "rssPage",
-    "type": "xml",
     "meta": {
       "title": "JSter",
       "description": "JSter blog"

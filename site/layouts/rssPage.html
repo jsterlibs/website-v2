@@ -20,7 +20,7 @@
       <published &children="(dateToISO (get props date))"></published>
       <content
         type="text/html"
-        &children="(concat '<![CDATA[' (markdown (get props body)) ']]')"
+        &children="(concat '<![CDATA[' (get props body) ']]>')"
       ></content>
     </entry>
   </noop>
