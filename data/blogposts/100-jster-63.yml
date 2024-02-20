@@ -1,0 +1,47 @@
+type: static
+title: "JSter #63: News of January 2016 - Part 2"
+short_title: "JSter #63"
+user: bebraw
+slug: monthly-jster-january-2016-part-2
+body: |
+  > Ain't got nothing but JavaScript. Eight days a week.
+
+  My Webpack and React book reached [2.0.0-rc3](http://survivejs.com/blog/survivejs200-rc3/). Feedback still keeps on coming so I'm still working towards a final release. After that the work starts again, but with a different direction.
+
+  If you want to ask me anything about Webpack or React, feel free to join my [AmA](https://github.com/survivejs/ama/issues) (Ask me Anything).
+
+  ## Libraries
+
+  {{ screenshot: http://www.sitepoint.com/parallel-javascript-with-paralleljs/ }}
+
+  * [voxel.css](http://voxelcss.com/) - Use this to get that Minecrafty feeling.
+  * [The Only Correct Script Loader Ever Made](https://blog.formidable.com/the-only-correct-script-loader-ever-made-de507420e2b8)
+  * [msvbg/warbler](https://github.com/msvbg/warbler) - A simple parser combinator library with emphasis on ease of use
+  * [Parallel JavaScript with ParallelJS](http://www.sitepoint.com/parallel-javascript-with-paralleljs/)
+  * [Feature.js](http://featurejs.com/) - Simple feature detection
+
+  ## Articles
+
+  * [The State Of Meteor Part 2: What Happens Next](https://www.discovermeteor.com/blog/the-state-of-meteor-part-2-what-happens-next/)
+  * [2016 - The Year of Web Streams](https://jakearchibald.com/2016/streams-ftw/)
+  * [What To Expect From JavaScript In 2016](http://developer.telerik.com/featured/what-to-expect-from-javascript-in-2016-frameworks/)
+
+  ## Tutorials
+
+  * [Create circular SVG charts with Circles](http://lugolabs.com/circles)
+
+  ## Guides
+
+  * [Simple Guide to Finding a JavaScript Memory Leak in Node.js](http://www.alexkras.com/simple-guide-to-finding-a-javascript-memory-leak-in-node-js/)
+
+  ## Techniques
+
+  * [Rendering Realtime Caustics in WebGL](https://medium.com/@evanwallace/rendering-realtime-caustics-in-webgl-2a99a29a0b2c)
+
+  ## Tools
+
+  * [ericclemmons/npm-install-webpack-plugin](https://github.com/ericclemmons/npm-install-webpack-plugin) - Install dependencies to your Webpack project automatically.
+
+  ## Demos
+
+  * [Simulating The World (In Emoji)](http://ncase.me/simulating/)

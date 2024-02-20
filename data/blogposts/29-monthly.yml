@@ -1,0 +1,106 @@
+type: static
+title: "Monthly JSter #6: News of August 2013"
+short_title: "Monthly JSter #6"
+user: bebraw
+slug: monthly-jster-august-2013
+body: |
+  The JS people have been busy as ever it seems. Time to go through some highlights of the month.
+
+  Remember that Monthly JSter is available as [a newsletter](https://buttondown.email/jster). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content.
+
+  Psst. If you happen to come by some awesome content and would like us to feature it, poke [@jsterlibs](https://twitter.com/jsterlibs) at Twitter.
+
+  ## Libraries
+
+  {{ screenshot: http://yeoman.io/blog/hello-1.0.html }}
+
+  * [Ember 1.0](http://emberjs.com/blog/2013/08/31/ember-1-0-released.html) - The long awaited Ember 1.0 is here! And just in time for Monthly JSter. [JSter entry](http://jster.net/library/ember-js)
+  * [Bootstrap 3](http://blog.getbootstrap.com/2013/08/19/bootstrap-3-released/) - Another long awaited release. Now with mobile first approach.
+  * [Yeoman 1.0](http://yeoman.io/blog/hello-1.0.html) - The Kraken is out! More generators than the doctor prescribed.
+  * [jsep](http://jsep.from.so/) - A simple JavaScript expression parser written in JavaScript.
+  * [polyfill](https://github.com/jonathantneal/polyfill) - Polyfill combinator that selectively polyfills what the browser needs.
+  * [URI.js](https://github.com/medialize/URI.js) - Mutate URIs easily.
+  * [intention.js](http://intentionjs.com/) - Light weight way to dynamically restructure HTML in a responsive manner.
+  * [task.js](http://taskjs.org/)
+  * [Verbal Expressions](http://thechangelog.com/stop-writing-regular-expressions-express-them-with-verbal-expressions/)
+
+  ### UI
+
+  {{ screenshot: http://wagerfield.github.io/parallax/ }}
+
+  * [Fine Uploader 3.8](http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-directly-to-amazon-s3-from-your-browser/) - Now with S3 uploads. [JSter entry](http://jster.net/library/fine-uploader)
+  * [NProgress.js](http://ricostacruz.com/nprogress/) - A monoscopic progress bar. [JSter entry](http://jster.net/library/nprogress-js)
+  * [Parsley.js](http://parsleyjs.org/) - Powerful form validation. [JSter entry](http://jster.net/library/parsley-js)
+  * [Brick](http://mozilla.github.io/brick/) - UI Components for Modern Web Apps. [JSter entry](http://jster.net/library/brick)
+  * [parallax.js](http://wagerfield.github.io/parallax/)
+
+  ## Articles
+
+  {{ screenshot: http://readwrite.com/2013/08/09/why-javascript-will-become-the-dominant-programming-language-of-the-enterprise }}
+
+  * [The "Other" Interface: Atomic Design With Sass](http://coding.smashingmagazine.com/2013/08/02/other-interface-atomic-design-sass/)
+  * [Advanced SCSS](https://gist.github.com/jareware/4738651)
+  * [JavaScript Promises](http://wildermuth.com/2013/8/3/JavaScript_Promises) - Understand the pattern!
+  * [Init.js: A Guide to the Why and How of Full-Stack JavaScript](http://www.toptal.com/javascript/guide-to-full-stack-javascript-initjs)
+  * [Toward Modern Web Apps with ECMAScript 6](http://www.sencha.com/blog/toward-modern-web-apps-with-ecmascript-6)
+  * [Introducing FuzzDB](https://blog.mozilla.org/security/2013/08/16/introducing-fuzzdb/)
+  * [Why JavaScript Will Become The Dominant Programming Language Of The Enterprise](http://readwrite.com/2013/08/09/why-javascript-will-become-the-dominant-programming-language-of-the-enterprise)
+  * [Get Most Out of JavaScript Data Structures](http://jster.net/blog/javascript-data-structures)
+  * [Sorted Maps in JavaScript](http://jster.net/blog/sorted-maps-in-javascript#.UiMQwmT08U8)
+  * [JavaScript Best Practices Part 1](http://www.thinkful.com/learn/javascript-best-practices-1/)
+
+  ### MVC
+
+  {{ screenshot: http://joelhooks.com/blog/2013/08/03/learn-angularjs-in-a-weekend/ }}
+
+  * [JavaScript Frameworks Are Amazing and Nobody Is Happy](http://wekeroad.com/2013/08/22/js-frameworks-are-amazing-and-no-one-is-happy)
+  * [Organizing frontend code of a single page app](http://eeroanttila.wordpress.com/2013/08/01/organizing-frontend-code-of-a-single-page-app/)
+  * [Why Does Angular.js Rock?](http://angular-tips.com/blog/2013/08/why-does-angular-dot-js-rock/)
+  * [Learn AngularJS this Weekend](http://joelhooks.com/blog/2013/08/03/learn-angularjs-in-a-weekend/)
+  * [Backbone.js Tips And Patterns](http://coding.smashingmagazine.com/2013/08/09/backbone-js-tips-patterns/)
+
+  ### Graphics
+
+  * [How to Do a Procedural City in 100 Lines](http://learningthreejs.com/blog/2013/08/02/how-to-do-a-procedural-city-in-100lines/)
+  * [Using WebGL to Add 3D Effects to Your Website](http://html5hub.com/using-webgl-to-add-3d-effects-to-your-website/)
+  * [Zero to Sixty in One Second](http://acko.net/blog/zero-to-sixty-in-one-second/)
+
+  ## Resources
+
+  {{ screenshot: http://easings.net/ }}
+
+  * [AngularJS-Learning](https://github.com/jmcunningham/AngularJS-Learning) - The largest(?) collection of Angular related resources.
+  * [The JavaScript Magazine](https://flipboard.com/section/the-javascript-%26-html5-magazine-bmOTsK) - Especially useful for those using Flipboard.
+  * [Stop writing Regular Expressions. Express them with Verbal Expressions](http://thechangelog.com/stop-writing-regular-expressions-express-them-with-verbal-expressions/)
+  * [easings.net](http://easings.net/) - If you animate, you will love this
+  * [Learn JS](http://www.learn-js.org/) - Interactive JavaScript tutorials
+  * [Code Combat](http://codecombat.com/) - If you want to learn by martial arts, this might be a better choice.
+  * [Ember Cookbook 1.0](https://github.com/emberjs/website/issues/663)
+
+  ## Tools
+
+  {{ screenshot: http://jqueryboilerplate.com/ }}
+
+  * [Emmet LiveStyle](http://livestyle.emmet.io/) - Bidirectional editing for Chrome, Safari and Sublime Text. It will change your life. At least a little bit.
+  * [jQuery Boilerplate](http://jqueryboilerplate.com/) - So that developing jQuery plugins is less tedious.
+  * [MEAN stack Boilerplate](http://www.mean.io/) - Starting point for some MEAN work.
+  * [ZeroDarkMatrix Theme for Chrome](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme) - Chrome Inspector looks good in black, doesn't it?
+  * [Tridiv](http://tridiv.com/) - Web based editor for creating 3D shapes in CSS. [Demo](http://codepen.io/juliangarnier/details/hzDAF)
+
+  ## Hardware
+
+  {{ screenshot: http://technical.io/ }}
+
+  * [Tessel](http://technical.io/) - JavaScript right on the hardware
+  * [Espruino](http://www.espruino.com/) - Another alternative
+
+  ## Demos
+
+  * [Paper plane animation](http://codepen.io/meanyack/pen/KIJdD)
+  * [disc](http://hughsk.github.io/disc/)
+  * [Camera icon](http://kojika17.com/demo/4lines/)
+  * [Wrist watch](http://www.wrist.im/)
+
+  ## Conclusion
+
+  > The only color Chuck Norris uses in his CSS declarations? #bada55

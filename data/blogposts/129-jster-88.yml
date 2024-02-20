@@ -1,0 +1,47 @@
+type: static
+title: "JSter #88: Libraries and bits"
+short_title: "JSter #88"
+user: bebraw
+slug: jster-88
+body: |
+  > Gone in the JavaScript.
+
+  My [webpack book reached another milestone release](https://survivejs.com/blog/survivejs-webpack-18/). This time around I put heavy focus on new content. There's still some left to develop, but it's getting close to paper.
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/localForage/localForage }}
+
+  * [localForage](https://github.com/localForage/localForage) - Easy web storage.
+  * [mo](http://mojs.io/) - Motion graphics for the web.
+  * [Tone.js](https://tonejs.github.io/) - Interactive music in the browser.
+  * [A-Frame](https://aframe.io/) - WebVR made easy.
+  * [hyperapp](https://github.com/hyperapp/hyperapp) - 1k library for building JavaScript applications.
+  * [sudodoki/copy-to-clipboard](https://github.com/sudodoki/copy-to-clipboard) - Copy to clipboard using JavaScript.
+  * [bvaughn/js-search](https://github.com/bvaughn/js-search) - Efficient client-side search.
+
+  ## Frameworks
+
+  * [Stem.js](https://stemjs.org/) - The framework that tries not to be a framework.
+
+  ## Tutorials
+
+  * [Introduction to WebAssembly](https://rsms.me/wasm-intro)
+
+  ## Games
+
+  * [DAB0mB/radial-snake](https://github.com/DAB0mB/radial-snake)
+
+  ## Slides
+
+  * [webpack2 slides](https://sokra.github.io/slides/webpack2/) by Tobias.
+
+  ## Tools
+
+  * [Pixel Glass](https://yoksel.github.io/pixel-glass-js/) - Check how your markup fits the design.
+  * [IonicaBizau/node-cobol](https://github.com/IonicaBizau/node-cobol) - Run COBOL from Node.
+  * [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - For science.
+
+  ## Demos
+
+  * [bastianallgeier/letter](https://github.com/bastianallgeier/letter) - Create letters in browser.

@@ -1,0 +1,37 @@
+type: static
+title: "JSter #129: Libraries and then some"
+short_title: "JSter #129"
+user: bebraw
+slug: jster-129
+body: |
+  > From here to JavaScript
+
+  It has been busy times as [React Finland 2019](https://react-finland.fi/) preparations have begun. The date has been set to 24-26.4. [I visited HalfStack London 2018](https://survivejs.com/blog/halfstack-2018/) recently to gain further conference experience.
+
+  ## Libraries
+
+  * [noble](https://github.com/noble/noble) - A Node.js BLE (Bluetooth Low Energy) central module
+  * [ericclemmons/hot-module](https://github.com/ericclemmons/hot-module) - Reload changed files in Node *without* restarting the server (like nodemon/piping/etc.)
+  * [davidkpiano/xstate](https://github.com/davidkpiano/xstate) - State machines and statecharts for the modern web
+  * [sasha240100/between.js](https://github.com/sasha240100/between.js) - Lightweight JavaScript (ES6) tweening engine
+  * [elbywan/wretch](https://github.com/elbywan/wretch) - A tiny wrapper built around fetch with an intuitive syntax
+
+  ## APIs
+
+  * [Page Lifecycle API](https://developers.google.com/web/updates/2018/07/page-lifecycle-api)
+
+  ## Opinions
+
+  * [What if we stop using null?](https://medium.com/@oleg008/what-if-we-stop-using-null-d705302b545e)
+
+  ## Tutorials
+
+  * [Welcome to the world of Statecharts](https://statecharts.github.io/)
+
+  ## Tools
+
+  * [jxnblk/mdx-deck](https://github.com/jxnblk/mdx-deck) - MDX-based presentation decks
+
+  ## Games
+
+  * [js13k - 1024 moves](https://js13kgames.com/games/1024-moves/index.html)

@@ -1,0 +1,79 @@
+type: static
+title: "JSter #18: News of March 2014 - Part 1"
+short_title: "JSter #18"
+user: bebraw
+slug: monthly-jster-march-2014-part-1
+body: |
+  > Fisherman's favorite MVC framework? ... Angular of course!
+
+  ## Libraries
+
+  {{ screenshot: http://brunjo.github.io/rowGrid.js/ }}
+
+  * [CSShake](http://elrumordelaluz.github.io/csshake/) - Shaking CSS classes. So jittery.
+  * [ponyfood.js](https://github.com/raimohanska/ponyfood.js) - Vegetarian JavaScript FRP powered by cute ponies
+  * [RowGrid.js](http://brunjo.github.io/rowGrid.js/) - A jQuery plugin for placing items in straight rows.
+
+  ## Articles
+
+  {{ screenshot: http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript }}
+
+  * [Dependency Injection in JavaScript](http://krasimirtsonev.com/blog/article/Dependency-injection-in-JavaScript)
+  * [Frequently Misunderstood JavaScript Concepts](http://bolinfest.com/javascript/misunderstood.html)
+  * [Lessons learnt building ViziCities](https://hacks.mozilla.org/2014/03/lessons-learnt-building-vizicities/)
+  * [@0mbre's RequireJS Itches and How He Scratched Them Using Browserify](http://blog.m4nu.co/the-requirejs-itches-and-how-i-scratched-them-with-browserify/)
+  * [A criticism of the Single Var Pattern in JavaScript, and a simple alternative](http://danielhough.co.uk/blog/single-var-pattern-rant/)
+
+  ## Node.js
+
+  {{ screenshot: http://www.infoworld.com/t/javascript/nodejs-arrives-the-jvm-237435 }}
+
+  * [Node.js Arrives for the JVM](http://www.infoworld.com/t/javascript/nodejs-arrives-the-jvm-237435)
+  * [How @caolan Wants to Write Node: Stream All the Things!](http://caolanmcmahon.com/posts/how_i_want_to_write_node_stream_all_the_things_new/)
+
+  ## Tutorials
+
+  {{ screenshot: http://css-tricks.com/basics-css-blend-modes/ }}
+
+  * [Basics of CSS Blend Modes](http://css-tricks.com/basics-css-blend-modes/)
+  * [Making a Particle Engine Using JavaScript (part 2)](http://lonely-pixel.com/blog/making-a-particle-engine-using-javascript-part-2)
+  * [How to Make a Flappy Bird in HTML5 - Part 1](http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-1/)
+  * [A modern JavaScript router in 100 lines](http://krasimirtsonev.com/blog/article/A-modern-JavaScript-router-in-100-lines-history-api-pushState-hash-url)
+
+  ## Guides
+
+  * [You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
+
+  ## Techniques
+
+  {{ screenshot: http://sdevgame.wordpress.com/2013/08/27/angularjs-drag-n-drop-re-order-in-ngrepeat/ }}
+
+  * [AngularJS drag ‘n’ drop re-order in ngRepeat](http://sdevgame.wordpress.com/2013/08/27/angularjs-drag-n-drop-re-order-in-ngrepeat/)
+  * [Rounding Decimals in JavaScript](http://www.jacklmoore.com/notes/rounding-in-javascript/)
+  * [DNode: Make PHP and Node.js talk to each other](http://bergie.iki.fi/blog/dnode-make_php_and_node-js_talk_to_each_other/)
+  * [JavaScript String: substring, substr, slice](http://ariya.ofilabs.com/2014/02/javascript-string-substring-substr-slice.html)
+
+  ## Games
+
+  * [Ping Pong WebGL](http://mortimergoro.github.io/PingPongWebGL/) - I'm actually better than that in real life.
+  * [Puzzle Script Drod](http://www.puzzlescript.net/play.html?p=9200013)
+
+  ## Slides
+
+  {{ screenshot: https://speakerdeck.com/rauschma/the-four-layers-of-javascript-oop }}
+
+  * [The Four Layers of JavaScript OOP](https://speakerdeck.com/rauschma/the-four-layers-of-javascript-oop)
+
+  ## Tools
+
+  {{ screenshot: http://glyphrstudio.com/ }}
+
+  * [Glyphr Studio](http://glyphrstudio.com/) - Free, HTML5 based font editor
+  * [Tailspin](http://wthimbleby.github.io/tailspin/) - Reversible JavaScript in JavaScript. Handy for developing an interactive programming environment.
+
+  ## Demos
+
+  * [Top Pens of 2013](http://codepen.io/2013/popular)
+  * [Sliding Image Panels with CSS3](http://www.html5tricks.com/demo/SlidingImagePanels/)
+  * [Jurassic Systems](http://www.jurassicsystems.com/)
+  * [Car Visualizer Classics](http://carvisualizer.plus360degrees.com/classics/)

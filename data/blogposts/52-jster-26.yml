@@ -1,0 +1,72 @@
+type: static
+title: "JSter #26: News of July 2014 - Part 1"
+short_title: "JSter #26"
+user: bebraw
+slug: monthly-jster-july-2014-part-1
+body: |
+  > World Cup done, time to code some JS.
+
+  ## Libraries
+
+  {{ screenshot: http://rubaxa.github.io/Ply/ }}
+
+  * [Ply](http://rubaxa.github.io/Ply/) - Nice alerts
+  * [krasimir/gifffer](https://github.com/krasimir/gifffer) - Prevent autoplaying of GIFs
+  * [Formly for Angular](http://nimbly.github.io/angular-formly/) - JSON Schema forms with Angular
+  * [AppliedMathematicsANU/plexus-form](https://github.com/AppliedMathematicsANU/plexus-form) - JSON Schema forms with React
+  * [Bootsta.386](http://kristopolous.github.io/BOOTSTRA.386/)
+  * [Bounce.js](http://bouncejs.com/)
+  * [Epoch by Fastly](http://fastly.github.io/epoch/) - Real-time charting
+
+  ## Articles
+
+  {{ screenshot: http://blog.jquery.com/2014/07/03/dont-use-jquery-latest-js/ }}
+
+  * [Don’t Use jquery-latest.js](http://blog.jquery.com/2014/07/03/dont-use-jquery-latest-js/)
+  * [Breakpoints And The Future Of Websites](http://www.smashingmagazine.com/2014/07/08/breakpoints-and-the-future-websites/)
+  * [How and why Prezi turned to JavaScript](https://medium.com/prezi-engineering/how-and-why-prezi-turned-to-javascript-56e0ca57d135)
+  * [How @bebraw Learned to Stop Worrying and Love React](http://www.nixtu.info/2014/07/how-i-learned-to-stop-worrying-and-love.html)
+
+  ## Tutorials
+
+  {{ screenshot: http://designmodo.com/svg-patterns/ }}
+
+  * [How to Use SVG Patterns](http://designmodo.com/svg-patterns/)
+  * [React.js: an interactive tutorial to get started](http://webdesignporto.com/react-js-an-interactive-tutorial-to-get-started/)
+
+  ## Guides
+
+  {{ screenshot: http://www.sitepoint.com/complete-guide-reducing-page-weight/ }}
+
+  * [The Complete Guide to Reducing Page Weight](http://www.sitepoint.com/complete-guide-reducing-page-weight/)
+  * [simpl.info](http://simpl.info/) - Simplest possible examples of JS, HTML and CSS
+
+  ## Techniques
+
+  {{ screenshot: http://www.html5rocks.com/en/tutorials/speed/v8/ }}
+
+  * [Performance Tips for JavaScript in V8](http://www.html5rocks.com/en/tutorials/speed/v8/)
+  * [Responsive gallery with directional-aware hover](http://creative-punch.net/2014/02/responsive-gallery-directional-aware-hover/)
+  * [CSS: Star Rater](http://rog.ie/blog/css-star-rater)
+  * [Compiling JSX with Sweet.js using Readtables](http://jlongster.com/Compiling-JSX-with-Sweet.js-using-Readtables)
+  * [CSS Gradients with background-blend-mode](http://bennettfeely.com/gradients/)
+
+  ## Tools
+
+  {{ screenshot: http://breach.cc/ }}
+
+  * [Json Resume](http://jsonresume.org/)
+  * [Breach](http://breach.cc/) - A browser for the HTML5 era
+  * [Dirty Markup](http://www.dirtymarkup.com/) - Cleans dirty markup
+  * [Deb.js: the Tiniest Debugger in the World](http://code.tutsplus.com/tutorials/debjs-the-tiniest-debugger-in-the-world--cms-21565)
+  * [Trianglify by @qrohlf](http://qrohlf.com/trianglify/) - Triangle backgrounds
+
+  ## Videos
+
+  * [bolshchikov/js-must-watch](bolshchikov/js-must-watch)
+
+  ## Demos
+
+  * [The Lifecycle of the HIV virus](http://3d.cl3ver.com/16l9j5)
+  * [3D CSS Typography](http://codepen.io/noahblon/pen/CsxfH)
+  * [Visual Experiments](http://aelgru.github.io/)

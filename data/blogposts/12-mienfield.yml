@@ -1,0 +1,62 @@
+type: interview
+title: "How to build Minesweeper MMO? An interview with Mienfield.com author"
+short_title: How to build Minesweeper MMO?
+includes:
+  [
+    "Tiler.JS",
+    "Hammer.js",
+    "MarionetteJS",
+    "AngularJs",
+    "yepnope.js",
+    "Anima",
+    "Lo-Dash",
+  ]
+slug: mienfield-author-interview
+user: bebraw2
+profile:
+  name: Serge Borbit
+  twitter: borbit
+  github: borbit
+  bio: "Creator of Mienfield game: Minesweeper MMO based on HTML5 technologies. Front-End Engineer from Lviv, Ukraine."
+  photo: http://m.c.lnkd.licdn.com/media/p/1/000/1f8/1b9/025df51.jpg
+body: |
+
+  Today we'd like to announce a new interview section on JSter. We will ask professional JS developers (and open-source) contributors to share their experience, ask for sources of their motivation.
+
+  Our guest, [@borbit](twitter.com/borbit), has taken minesweeper the game to a completely new level. He recreated it in HTML5, making it a complete MMO game. That's right. You can play it with your friends now.
+
+  Traditionally developing this sort of games has been an arduous process. These days HTML5 based technologies have provided new alternatives as [mienfield.com](http://mienfield.com) proves.
+
+  What is it like to build HTML5 games? Are the technologies really ready for that? In this interview @borbit shares his experience.
+
+  {{ screenshot: Mienfield }}
+
+  #### Hi, @borbit. How did you end up developing a MMO version of minesweeper? Can you describe the history of the project?
+
+  Hi, @bebraw. I was really inspired by guys from Massively FUN. They created an awesome game called Word2 ([wordsquared.com](http://wordsquared.com/)). I liked the idea of an endless puzzle, so I've decided to build something similar. Since I am a big fan of original minesweeper game, the idea immediately came to my mind.
+
+  At the beginning, it was a "just for fun" project where I could gain some experience in modern web technologies. My friends and colleagues really liked the idea, they saw a potential in it, so that was huge motivation for me to continue working on Minefield.
+
+  #### What kind of technology do you use? What difficulties have you had during development and how did you solve them?
+
+  The biggest challenge for me was implementation of robust server logic. Since it was endless and multiplayer I had to care about fast field generation and preventing of race conditions. The solution to make generation fast was cutting the whole field on certain tiles with specified size (20x20 cells). This approach gave a possibility to "lazy" generate the field only where people were playing. Race conditions are being resolved on the database layer by means of [compare-and-swap](http://en.wikipedia.org/wiki/Compare-and-swap) methodology.
+
+  On server side I use **Node.js**. It is a big, fast-growing platform with fantastic community behind it. Big number of rich, well tested modules let me entirely concentrate on the game implementation. It had almost everything I wanted for implementing Minefield. Also, I am very happy with choice of **Redis as a database**. It is lightning-fast, advanced key-value store with support of various data structures for all occasions.
+
+  On client side I had a few difficulties with graphics implementation. I had to care about speed of field rendering and animations. The whole field is represented as a grid of tiles. Since I coudn't find any suitable library for this kind of UI, I started developing [Tiler](https://github.com/borbit/tiler). Each tile contains three Canvas elements: background layer, foreground layer and animation layer. This is a quite standard approach to canvas drawing optimization, it is being used to avoid unnecessary canvas state changes.
+
+  #### Where did you find the free time for this project? ;)
+
+  I've been working on Minefield at my spare time and unfortunately there is always not enough of it. I wish I had more (dreaming about full time job on HTML5 games).
+
+  #### What advice would you give to other JS developers thinking of building their own games?
+
+  Let's build awesome multiplayer games! You will definitely get lots of fun developing it!
+
+  #### As we are JavaScript libraries site, please share your favorite libs you use and you'd like to recommend.
+
+footer: |
+
+  @borbit, thanks for this interview. We wish good luck to your Minefield and other upcoming JavaScript and HTML5 projects.
+
+  We will have more talks with interesting persons making a JavaScript world brighter. Don't miss it. Follow us in [Twitter](http://twitter.com/jsterlibs) or subscribe to [Jster's RSS feed](http://feeds.feedburner.com/jster).

@@ -5,7 +5,13 @@
       "description": "JSter catalogues JavaScript libraries per purpose"
     },
     "layout": "siteIndex",
-    "dataSources": ["parentCategories"]
+    "dataSources": [
+      {
+        "operation": "getParentCategories",
+        "parameters": [],
+        "name": "parentCategories"
+      }
+    ]
   },
   "catalog": {
     "meta": {
@@ -13,23 +19,37 @@
       "description": "JavaScript libraries per category"
     },
     "layout": "catalogIndex",
-    "dataSources": ["parentCategories"]
+    "dataSources": [
+      {
+        "operation": "getParentCategories",
+        "parameters": [],
+        "name": "parentCategories"
+      }
+    ]
   },
   "category": {
     "expand": {
       "matchBy": {
-        "dataSource": "categories",
+        "indexer": {
+          "operation": "indexCategories",
+          "parameters": []
+        },
+        "dataSources": [{
+          "operation": "processCategory",
+          "parameters": [],
+          "name": "category"
+        }],
         "slug": "id"
       },
       "layout": "categoryPage",
       "meta": {
         "title": {
           "utility": "get",
-          "parameters": ["match", "name"]
+          "parameters": ["context", "name"]
         },
         "description": {
           "utility": "get",
-          "parameters": ["match", "description"]
+          "parameters": ["context", "description"]
         }
       }
     }
@@ -37,18 +57,26 @@
   "tag": {
     "expand": {
       "matchBy": {
-        "dataSource": "tags",
+        "indexer": {
+          "operation": "indexTags",
+          "parameters": []
+        },
+        "dataSources": [{
+          "operation": "processTag",
+          "parameters": [],
+          "name": "category"
+        }],
         "slug": "id"
       },
       "layout": "categoryPage",
       "meta": {
         "title": {
           "utility": "get",
-          "parameters": ["match", "name"]
+          "parameters": ["context", "name"]
         },
         "description": {
           "utility": "get",
-          "parameters": ["match", "description"]
+          "parameters": ["context", "description"]
         }
       }
     }
@@ -56,18 +84,26 @@
   "library": {
     "expand": {
       "matchBy": {
-        "dataSource": "libraries",
+        "indexer": {
+          "operation": "indexLibraries",
+          "parameters": []
+        },
+        "dataSources": [{
+          "operation": "processLibrary",
+          "parameters": [],
+          "name": "library"
+        }],
         "slug": "id"
       },
       "layout": "libraryPage",
       "meta": {
         "title": {
           "utility": "get",
-          "parameters": ["match", "name"]
+          "parameters": ["context", "name"]
         },
         "description": {
           "utility": "get",
-          "parameters": ["match", "description"]
+          "parameters": ["context", "description"]
         }
       }
     }
@@ -85,32 +121,51 @@
       "title": "JSter – Blog",
       "description": "News relevant to JavaScript"
     },
-    "dataSources": ["blogPosts"],
+    "dataSources": [
+      {
+        "operation": "indexBlog",
+        "parameters": [],
+        "name": "blogPosts"
+      }
+    ],
     "expand": {
       "matchBy": {
-        "dataSource": "blogPosts",
+        "indexer": {
+          "operation": "indexBlog",
+          "parameters": []
+        },
+        "dataSources": [{
+          "operation": "processBlogPost",
+          "parameters": [],
+          "name": "document"
+        }],
         "slug": "id"
       },
       "layout": "blogPage",
       "meta": {
         "title": {
           "utility": "get",
-          "parameters": ["match", "name"]
+          "parameters": ["context", "document.title"]
         },
         "description": {
           "utility": "get",
-          "parameters": ["match", "description"]
+          "parameters": ["context", "document.description"]
         }
       }
     }
   },
   "atom.xml": {
     "layout": "rssPage",
-    "type": "xml",
     "meta": {
       "title": "JSter",
       "description": "JSter blog"
     },
-    "dataSources": ["blogPosts"]
+    "dataSources": [
+      {
+        "operation": "indexBlog",
+        "parameters": [],
+        "name": "blogPosts"
+      }
+    ]
   }
 }

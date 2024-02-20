@@ -1,0 +1,35 @@
+type: static
+title: "JSter #113: Libraries and Techniques Mostly"
+short_title: "JSter #113"
+user: bebraw
+slug: jster-113
+body: |
+  > Keep calm, and code JavaScript.
+
+  [My webpack book supports webpack 4 now!](https://survivejs.com/blog/webpack-book-updated-to-webpack-4/). There will be [webpack workshops with Tobias in Munich early May](https://survivejs.com/blog/webpack-in-munich-may-2018/) as well.
+
+  > I will do a small online session at [React Dev Summit](https://reactdevsummit.com/). Use the coupon `JUHO` to get 10% off. The live stream is free.
+
+  ## Libraries
+
+  * [hugmanrique/turbo-ws](https://github.com/hugmanrique/turbo-ws) - Blazing fast low-level WebSocket server.
+  * [PropelML](http://propelml.org/) - What the creator of Node has been up to?
+  * [terkelg/prompts](https://github.com/terkelg/prompts) - Lightweight, beautiful and user-friendly interactive prompts.
+
+  ## Articles
+
+  * [Third party CSS is not safe](https://jakearchibald.com/2018/third-party-css-is-not-safe/)
+
+  ## Techniques
+
+  * [Responsive Components: a Solution to the Container Queries Problem](https://philipwalton.com/articles/responsive-components-a-solution-to-the-container-queries-problem/)
+  * [More State Machine - From Reflection to Statecharts](http://raganwald.com/2018/03/03/reflections.html)
+  * [Bootstrap a Reason-React project with Parcel](https://dev.to/scastiel/bootstrap-a-reason-react-project-with-parcel--13fj)
+  * [Hyperapp + Parcel = 😎 – Daftcode Blog](https://blog.daftcode.pl/hyperapp-parcel-71823bd93f1c)
+  * [Localize your React App with Zero Dependencies](https://medium.com/@MahmoudAlyuDeen/localize-your-react-app-with-zero-dependencies-ea14e0698cf7)
+  * [Synode: understanding and automatically preventing injection attacks on Node.js](https://blog.acolyer.org/2018/03/12/synode-understanding-and-automatically-preventing-injection-attacks-on-node-js/)
+  * [Last minute node debugging](https://remysharp.com/2018/03/03/last-minute-node-debugging)
+
+  ## Tips
+
+  * [17 JavaScript / Node performance coding tips to make applications faster](http://voidcanvas.com/javascript-performant-coding-tips/)

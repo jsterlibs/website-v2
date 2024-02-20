@@ -1,0 +1,99 @@
+type: static
+title: "Monthly JSter #10: News of November 2013"
+short_title: "Monthly JSter #10"
+user: bebraw
+slug: monthly-jster-november-2013-part-1
+body: |
+  JSter #10 has arrived and is again packed with content. Remember, if you happen to come by some cool stuff you wish to share, you can always poke us at [Twitter](https://twitter.com/jsterlibs).
+
+  Remember that Monthly JSter is available as [a newsletter](https://buttondown.email/jster). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content including interviews or book reviews.
+
+  ## Libraries
+
+  {{ screenshot: http://www.javelinjs.com/ }}
+
+  * [AngularJS 1.2.0](http://blog.angularjs.org/2013/11/angularjs-120-timely-delivery.html) - The long awaited release is here. [JSter entry](http://jster.net/library/angularjs)
+  * [progressbar.js](http://bug7a.github.io/progressbar.js/) - Who wouldn't need a progress bar every once in a while? [JSter entry](http://jster.net/library/progressbar-js)
+  * [Dart 1.0: A Stable SDK for Structured Web Apps](http://blog.chromium.org/2013/11/dart-10-stable-sdk-for-structured-web.html) - Dart 1.0 is here! [JSter entry](http://jster.net/library/dart)
+  * [dogescript in the WOWser](http://zachbruggeman.me/dogescript/) - CoffeeScript has been challenged.
+  * [Javelin](http://www.javelinjs.com/) - A large, bloated library with an unintuitive, verbose syntax and very few features by Facebook. [JSter entry](http://jster.net/library/javelin)
+
+  ## Articles
+
+  {{ screenshot: http://christianheilmann.com/2013/10/31/perpetuating-terrible-javascript-practices/ }}
+
+  * [Perpetuating Terrible JavaScript Practices](http://christianheilmann.com/2013/10/31/perpetuating-terrible-javascript-practices/) - Sometimes even big corporations get it wrong.
+  * [JavaScript has a Unicode Problem](http://mathiasbynens.be/notes/javascript-unicode) - Even if something looks the same it's necessarily so. Fortunately ES6 comes to rescue.
+  * [JavaScript Cryptography Considered Harmful](http://www.matasano.com/articles/javascript-cryptography/) - Yes, it's a cliché title. TLDR; Don't use crypto inside browser. It's hard even if you know what you are doing. Just go SSL.
+  * [Which CSS Measurements to Use When](http://demosthenes.info/blog/775/Which-CSS-Measurements-To-Use-When)
+  * [The Future of Web Apps Is -- Ready? -- Isomorphic JavaScript](http://venturebeat.com/2013/11/08/the-future-of-web-apps-is-ready-isomorphic-javascript/) - Yup. The pendulum is about to swing back. First it was all about backend, then about frontend and now people realize both are somewhat important.
+  * [How and Why Building a 3D Soft Engine? Well, It's Simply...](http://codehum.com/page/how-and-why-building-a-3d-soft-engine-well-its-simply/) - Learn to understand 3D by starting from the basics.
+
+  ## Angular.js
+
+  {{ screenshot: http://blog.scalyr.com/2013/10/31/angularjs-1200ms-to-35ms/ }}
+
+  * [Video Tutorial: AngularJS Fundamentals in 60-ish Minutes](http://weblogs.asp.net/dwahlin/archive/2013/04/12/video-tutorial-angularjs-fundamentals-in-60-ish-minutes.aspx)
+  * [Make Your Own AngularJS, Par 1: Scopes and Digest](http://teropa.info/blog/2013/11/03/make-your-own-angular-part-1-scopes-and-digest.html) - Implementing some of the core concepts yourself will give you insight on how they work actually.
+  * [Optimizing AngularJS: 1200ms to 35ms](http://blog.scalyr.com/2013/10/31/angularjs-1200ms-to-35ms/)
+  * [Little-known Directives of Angular.js](http://codetunes.com/2013/little-known-angular-directives/)
+  * [Promises in AngularJS, Explained as a Cartoon](http://andyshora.com/promises-angularjs-explained-as-cartoon.html)
+
+  ## Backbone.js
+
+  {{ screenshot: http://pragmatic-backbone.com/ }}
+
+  * [A Pragmatic Guide to Backbone.js Apps](http://pragmatic-backbone.com/)
+
+  ## Ember.js
+
+  {{ screenshot: http://coding.smashingmagazine.com/2013/11/07/an-in-depth-introduction-to-ember-js/ }}
+
+  * [An In-Depth Introduction to Ember.js](http://coding.smashingmagazine.com/2013/11/07/an-in-depth-introduction-to-ember-js/)
+  * [Understanding Nesting in Ember.js](http://ugisozols.com/blog/2013/11/05/understanding-nesting-in-emberjs/)
+
+  ## Presentations
+
+  {{ screenshot: http://www.slideshare.net/EyalV/whats-new-in-ecmascript-60 }}
+
+  * [What's new in ECMAScript 6.0](http://www.slideshare.net/EyalV/whats-new-in-ecmascript-60)
+
+  ## Techniques
+
+  {{ screenshot: http://css-tricks.com/tinted-images-multiple-backgrounds/ }}
+
+  * [A Plain English Guide to JavaScript Prototypes](http://sporto.github.io/blog/2013/02/22/a-plain-english-guide-to-javascript-prototypes/) - Once you understand how the chain works, you have cracked most of it.
+  * [JavaScript Tutorial: Getter & Setter Properties](http://xahlee.info/js/js_getter_and_setter_properties.html) - If you have ever used Python's properties, you will love this. The syntax is a bit cumbersome but the functionality is somewhat priceless.
+  * [Tinted Images with Multiple Backgrounds](http://css-tricks.com/tinted-images-multiple-backgrounds/)
+  * [Fast Image Filters with WebGL](http://phoboslab.org/log/2013/11/fast-image-filters-with-webgl)
+  * [String Interpolation Method for underscore.js](https://gist.github.com/josdejong/4537647)
+  * [Extending JavaScript with Inline Unit Tests](http://sergimansilla.com/blog/extending-js-inline-unit-tests/)
+  * [Functional Data Structures in JavaScript with Mori](http://sitr.us/2013/11/04/functional-data-structures.html)
+  * [Live Editing WebGL Shaders with Firefox Developer Tools](https://hacks.mozilla.org/2013/11/live-editing-webgl-shaders-with-firefox-developer-tools/)
+
+  ## Resources
+
+  {{ screenshot: http://zero.milosz.ca/ }}
+
+  * [Zeroes in JavaScript](http://zero.milosz.ca/) - No, it's not PHP. It's JavaScript.
+  * [Popular Coding Conventions on GitHub](http://sideeffect.kr/popularconvention/#javascript) - How conventional are you?
+  * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+  ## Tools
+
+  {{ screenshot: http://jscode.org/ }}
+
+  * [JSbeautifier](http://jsbeautifier.org/) - Got some mess to clean up? JSbeautifier will do that for you. In addition to JavaScript it supports HTML, JSON etc.
+  * [jsCode](http://jscode.org/) - Generate and share your own JavaScript coding guidelines.
+
+  ## Demos
+
+  {{ screenshot: http://www.jasondavies.com/maps/rotate/ }}
+
+  * [Project Shapeshifter](http://shapeshifter.io/) - 3D modeling in your browser.
+  * [Rotate the World](http://www.jasondavies.com/maps/rotate/) - D3 is so great.
+  * [Filling text with CSS](http://codepen.io/lbebber/pen/xrwja)
+
+  ## Conclusion
+
+  > You have to understand this in JavaScript.

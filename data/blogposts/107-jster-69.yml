@@ -1,0 +1,55 @@
+type: static
+title: "JSter #69: News of April 2016 - Part 2"
+short_title: "JSter #69"
+user: bebraw
+slug: monthly-jster-april-2016-part-2
+body: |
+  > There are only two inevitable things in life: JavaScript and taxes.
+
+  Things are progressing quite well with my [SurviveJS](http://survivejs.com/) effort. I was invited to arrange a React workshop. As a result I created [a set of slides](https://survivejs.github.io/training/). There are ten themes and each contains exercises at the end. So if you want to pick up basic understanding of React and the surrounding ecosystem, this could be a good chance to achieve that.
+
+  I also published [SurviveJS - Webpack v1.1.0](http://survivejs.com/blog/survivejs-webpack-110/). As usual, there are minor tweaks, but also major improvements. There's more content now and I migrated to a smarter way to configure Webpack. It takes some pain out of the process and makes it easier to maintain complex configurations.
+
+  ## Libraries
+
+  {{ screenshot: https://medium.com/the-vue-point/announcing-vue-js-2-0-8af1bde7ab9 }}
+
+  * [Announcing Vue.js 2.0](https://medium.com/the-vue-point/announcing-vue-js-2-0-8af1bde7ab9)
+  * [Angular 2 Release Candidate](https://github.com/angular/angular/blob/master/CHANGELOG.md)
+  * [polygoat](https://github.com/sonnyp/polygoat) - Make JavaScript functions that support both promise and callback styles
+  * [Chart.js 2.0](http://www.chartjs.org/)
+  * [xstream](http://staltz.com/xstream/) - An extremely intuitive, small, and fast functional reactive stream library for JavaScript
+  * [Umbrella JS](http://umbrellajs.com/) - Tiny library for DOM manipulation, events and AJAX
+
+  ## Articles
+
+  * [What's new in Node v6?](https://blog.risingstack.com/whats-new-in-node-v6/)
+  * [Less React, more JS](https://medium.com/@sebjwallace/less-react-more-js-409e6e26e1)
+  * [Angular: Angular 2 + React Native](http://angularjs.blogspot.fi/2016/04/angular-2-react-native.html)
+
+  ## Tutorials
+
+  * [WebUSB and JavaScript Robotics](https://iceddev.com/blog/webusb-and-javascript-robotics/)
+
+  ## Interviews
+
+  * [SurviveJS - Kotatsu interview](http://survivejs.com/blog/kotatsu-interview/) - Less boilerplate
+  * [SurviveJS - Hashnode interview](http://survivejs.com/blog/hashnode-interview/) - A community of coders
+  * [SurviveJS - FRZR interview](http://survivejs.com/blog/frzr-interview/) - Learn about a light view library
+
+  ## Techniques
+
+  * [Modularize legacy javascript](https://medium.com/@lpaulger/modularize-legacy-javascript-2758ffcdcd3e)
+  * [4 Types of Memory Leaks in JavaScript and How to Get Rid Of Them](https://auth0.com/blog/2016/01/26/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/)
+
+  ## Slides
+
+  * [Drawing on Canvas](http://kosamari.com/presentation/openvis-2016/)
+
+  ## Resources
+
+  * [Awesome list of ESLint resources](https://github.com/dustinspecker/awesome-eslint)
+
+  ## Tools
+
+  * [Bublé – the blazing fast, batteries-included ES2015 compiler](http://buble.surge.sh/)

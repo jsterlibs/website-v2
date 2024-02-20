@@ -1,0 +1,93 @@
+type: static
+title: "Which JavaScript Frameworks to Use for Mobile Development?"
+short_title: "Mobile Frameworks"
+user: bebraw
+slug: javascript-mobile-frameworks
+body: |
+  Mobile applications specifically designed for mobile devices are part of a very fast growing market. Many app designers do not even need prior development knowledge. Knowledge of HTML, CSS and JavaScript will be enough to get you started. Any mobile application developed with web technology can now be used across multiple platforms
+
+  Thanks to the advancement in these products it is an excellent time for anyone to learn how to develop mobile apps. There are many tools online to assist in creating these mobile apps. Some of the best are:
+
+  ## Ionic
+
+  {{ screenshot: http://ionicframework.com/ }}
+
+  [Ionic framework](http://ionicframework.com/) helps you to build mobile applications using common web technologies. It has a large variety of tools to assist new and experienced designers with the creation of interactive apps. It utilizes Angular.js. This enables two-way data binding and excellent interaction with APIs and backend services.
+
+  ## Mobile Angular UI
+
+  {{ screenshot: http://mobileangularui.com/ }}
+
+  [Mobile Angular UI](http://mobileangularui.com/) uses HTML 5 but in conjunction with Bootstrap 3 as well as the aforementioned Angular.js. It also utilises Bootstrap 3 mobile components. These are features which are not available in the standard Bootstrap 3, examples are overlays and sidebars. Impressive user interfaces can be created with a few simple Angular.js directives and only the necessary responsive media queries. These have been reduced to files to be added as needed.
+
+  ## Intel XDK
+
+  {{ screenshot: https://software.intel.com/en-us/xdk/docs/intel-xdk-introduction }}
+
+  [Intel XDK](https://software.intel.com/en-us/xdk/docs/intel-xdk-introduction) is a free to use application and is available on Linux as well as Windows and Mac. Whilst you are developing UI frameworks it is capable of supporting Twitter bootstrap, jQuery Mobile and Topcoat. There are also some standard templates to assist the novice in getting started.  An excellent feature of this product is the live preview on a connected device. This shows as you develop your app and allows you to manipulate it as you go for the best result.
+
+  ## Appcelerator Titanium
+
+  {{ screenshot: http://www.appcelerator.com/titanium/ }}
+
+  [Appcelerator Titanium](http://www.appcelerator.com/titanium/) is an open source mobile application framework which allows all users to contribute to improving the framework and apps created. The apps can be created for several different mobile platforms and is an excellent way to create hybrid mobile apps. There is a choice of backend services – mobile platform APIs or cloud based services. There are also independent APIs which allow easy access to phone hardware. The application uses Alloy which is a MVC framework. Modules developed using the framework are very easy to apply to different apps which is a huge timesaver for developers creating many different apps.
+
+  ## Sencha Touch
+
+  {{ screenshot: https://www.sencha.com/products/touch/ }}
+
+  [Sencha Touch](https://www.sencha.com/products/touch/) is another product built on top of HTML 5. This product allows apps to be created which will work on iOS, Android and Blackberry.  It is very popular with those developers who specialise in hybrid apps. It is very easy to use as it provides the same feel regardless of which platform it is operating on. The downside of this product is the time taken to get started. Although anyone with basic knowledge can use it, a developer who invests time in researching its tools and functions will achieve far better results.
+
+  ## Kendo UI
+
+  {{ screenshot: http://www.telerik.com/kendo-ui }}
+
+  [Kendo UI](http://www.telerik.com/kendo-ui) is another product which uses HTML 5. The HTML 5 is a firm favourite for many mobile application development programs. This program utilises jQuery and several of its widgets. Any developer who has used jQuery before will find it very easy to use Kendo UI. The widgets remain licensed to Telerik but the majority of the rest of the program has been open sourced to allow the product to develop. There are several video tutorials to assist in getting started with this software.
+
+  ## Comparison
+
+  Which of the frameworks we just mentioned would you like to try out first?
+
+  <table>
+    <thead>
+      <tr>
+        <td>Framework</td>
+        <td>Related Technologies</td>
+        <td>Why to use for mobile?</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ionic</td>
+        <td>Angular.js, SASS</td>
+        <td>Two-way data binding, good interaction with backend services and APIs</td>
+      </tr>
+      <tr>
+        <td>Mobile Angular UI</td>
+        <td>Angular UI</td>
+        <td>Good quality interactive apps, impressive user interfaces</td>
+      </tr>
+      <tr>
+        <td>Intel XDK</td>
+        <td>jQuery Mobile, Topcoat</td>
+        <td>Live preview on a connected device, simplified workflow for designers</td>
+      </tr>
+      <tr>
+        <td>Appcelerator Titanium</td>
+        <td>Alloy</td>
+        <td>Hybrid mobile apps, real-time analytics</td>
+      </tr>
+      <tr>
+        <td>Sencha Touch</td>
+        <td></td>
+        <td>Easy to develop apps</td>
+      </tr>
+      <tr>
+        <td>Kendo UI</td>
+        <td>jQuery</td>
+        <td>Video tutorials, easy to use for app development, nice collection of widgets</td>
+      </tr>
+    </tbody>
+  </table>
+
+  This is a guest post by Jason Phillips and [Parking Games 365](http://www.parkinggames365.net/)!

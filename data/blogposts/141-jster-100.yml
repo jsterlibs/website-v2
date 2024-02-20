@@ -1,0 +1,45 @@
+type: static
+title: "JSter #100: Libraries, articles, and more"
+short_title: "JSter #100"
+user: bebraw
+slug: jster-100
+body: |
+  > I see JavaScript people.
+
+  My third Euro tour is progressing in hot Vienna. This has been a good time for me to relax a bit before further challenges (two major talks next month). Incidentally this is the hundredth post to this list!
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/harc/ohm }}
+
+  * [harc/ohm](https://github.com/harc/ohm) - A library and language for building parsers, interpreters, compilers, etc.
+  * [Feathers](https://feathersjs.com/) - An open source REST and realtime API layer for modern applications.
+  * [PolymerLabs/lit-html](https://github.com/PolymerLabs/lit-html) - HTML template literals in JavaScript.
+  * [wooorm/refractor](https://github.com/wooorm/refractor) - Lightweight, robust, elegant virtual syntax highlighting using Prism.
+
+  ## Articles
+
+  * [JavaScript Framework Battle: ‘Hello World’ in each Command-line interface](https://medium.com/dailyjs/javascript-framework-battle-hello-world-in-each-cli-cfdba8bf5e4b)
+  * [myshov/history-of-javascript](https://github.com/myshov/history-of-javascript) - History of JavaScript.
+  * [vasanthk/react-bits](https://github.com/vasanthk/react-bits) - React patterns, techniques, tips and tricks.
+  * [Have we forgotten how to program…](http://das.encs.concordia.ca/blog/why-do-developers-use-trivial-packages-npm/)
+  * [Why WebAssembly is Faster Than asm.js](https://hacks.mozilla.org/2017/03/why-webassembly-is-faster-than-asm-js/)
+
+  ## Techniques
+
+  * [Cold and hot callbacks](https://staltz.com/cold-and-hot-callbacks.html) - Understand the difference.
+  * [React is Slow, React is Fast: Optimizing React Apps in Practice](https://medium.com/dailyjs/react-is-slow-react-is-fast-optimizing-react-apps-in-practice-394176a11fba)
+  * [Intersection Observer comes to Firefox](https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox/)
+
+  ## Interviews
+
+  * [A practitioner’s perspective on A-Frame - Interview with Roland Dubois](https://hacks.mozilla.org/2017/03/a-practitioners-perspective-on-a-frame-interview-with-roland-dubois/)
+  * [Next.js - Framework for server-rendered React apps - Interview with Arunoda Susiripala](https://survivejs.com/blog/nextjs-interview/)
+  * [Rekit - Toolkit for building scalable React applications - Interview with Nate Wang](https://survivejs.com/blog/rekit-interview/)
+  * [Redux-First Router - Just dispatch actions - Interview with James Gillmore](https://survivejs.com/blog/redux-first-router-interview/)
+
+  ## Tools
+
+  * [Up by TJ Holowaychuk](https://medium.com/@tjholowaychuk/up-b3db1ca930ee) - Easier Serverless.
+  * [Babel v7.0.0-alpha.19](https://github.com/babel/babel/releases/tag/v7.0.0-alpha.19)
+  * [RunKit is Node prototyping](https://runkit.com) - Prototype and explore your ideas.

@@ -1,0 +1,37 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="p-4 mx-auto max-w-3xl flex flex-row gap-2">
+      <div class="prose lg:prose-xl">
+        <h1 &children="(get context library.name)"></h1>
+        <p &children="(get context library.description)"></p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4">
+          <div &visibleIf="(get context library.stargazers)">
+            <a
+              &children="(concat 'Stars: ' (get context library.stargazers))"
+            />
+            <div>
+              <h2 class="text-xl">Links</h2>
+              <ul class="flex flex-row gap-2">
+                <li &visibleIf="(get context library.links.site)">
+                  <a &href="(get context library.links.site)">Site</a>
+                </li>
+                <li &visibleIf="(get context library.links.github)">
+                  <a &href="(get context library.links.github)">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            &visibleIf="(get context library.tags.length)"
+            class="flex flex-col gap-2"
+          >
+            <h2 class="text-xl">Tags</h2>
+            <SimpleTags &tags="(get context library.tags)" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </slot>
+</BaseLayout>

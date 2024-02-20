@@ -1,0 +1,43 @@
+type: static
+title: "JSter #130: Libraries and more"
+short_title: "JSter #130"
+user: bebraw
+slug: jster-130
+body: |
+  > Where there's JavaScript, there's trouble.
+
+  Another two weeks have gone and we are getting closer to xmas. I went to HalfStack London a while ago. [Read my travel report](https://survivejs.com/blog/halfstack-2018/).
+
+  ## Libraries
+
+  * [wayfair/data-snapshot](https://github.com/wayfair/data-snapshot) - A generic mock data manager for JavaScript tests, that helps you use data from real endpoints in tests.
+  * [KostyaTretyak/marked-ts](https://github.com/KostyaTretyak/marked-ts) - A full-featured markdown parser and compiler, written in TypeScript.
+  * [e-oj/Magic-Grid](https://github.com/e-oj/Magic-Grid) - A simple, lightweight Javascript library for dynamic grid layouts
+
+  ## Tutorials
+
+  * [The ultimate guide to Schema Stitching in GraphQL](https://blog.hasura.io/the-ultimate-guide-to-schema-stitching-in-graphql-f30178ac0072)
+
+  ## Articles
+
+  * [The Cost Of JavaScript In 2018](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
+  * [Implementing Search in GraphQL](https://medium.com/open-graphql/implementing-search-in-graphql-11d5f71f179)
+
+  ## Frameworks
+
+  * [Introducing Fusion.js: A Plugin-based Universal Web Framework](https://eng.uber.com/fusionjs/)
+
+  ## Guides
+
+  * [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms) - Algorithms and data structures implemented in JavaScript with explanations and links to further readings
+
+  ## Tools
+
+  * [cristianoc/genType](https://github.com/cristianoc/genType) - Auto generation of idiomatic bindings between Reason and JavaScript: either vanilla or typed with TypeScript/FlowType.
+  * [GoogleChromeLabs/ndb](https://github.com/GoogleChromeLabs/ndb) - An improved debugging experience for Node.js, enabled by Chrome DevTools
+  * [Announcing TypeScript 3.0](https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/)
+  * [webhint](https://webhint.io/) - The hinting engine for web best practices
+
+  ## Services
+
+  * [IPFS is the Distributed Web](https://ipfs.io/)

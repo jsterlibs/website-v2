@@ -16,6 +16,7 @@ type Library = {
 type DataContext = Record<string, unknown> | Record<string, unknown>[];
 type ParentCategory = { title: string; children: Category[] };
 type BlogPost = {
+  path: string;
   id: string;
   title: string;
   shortTitle: string;
@@ -35,6 +36,11 @@ type BlogPost = {
     photo: string;
   };
 };
+type Tag = {
+  id: string;
+  title: string;
+  libraries: Library[];
+};
 
 export type {
   Attributes,
@@ -43,4 +49,5 @@ export type {
   DataContext,
   Library,
   ParentCategory,
+  Tag,
 };

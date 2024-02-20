@@ -1,0 +1,68 @@
+type: static
+title: "JSter #77: News of August 2016 - Part 2"
+short_title: "JSter #77"
+user: bebraw
+slug: monthly-jster-august-2016-part-2
+body: |
+  > Rock and JavaScript.
+
+  Reactabular, that React table component of mine, [reached 3.0](http://reactabular.js.org/). I also gave a presentation related to the topic. Check out the [slides](https://survivejs.github.io/react-api-design).
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/pakastin/redom }}
+
+  * [RE:DOM](https://redom.js.org/) - DOM rethought
+  * [Typography.js](https://kyleamathews.github.io/typography.js/) - Nice typography for the web
+  * [Intro.js](http://introjs.com/)
+
+  ## Articles
+
+  * [Demythstifying Web Components](http://www.backalleycoder.com/2016/08/26/demythstifying-web-components/)
+  * [Test262 is a JavaScript Sideshow](https://bocoup.com/weblog/test262-is-a-javascript-sideshow) - Finding the quirks of JavaScript
+  * [Restrictive programming](http://www.macwright.org/2016/08/21/restrictive-not-opinionated.html)
+
+  ## Tutorials
+
+  * [Building Real-Time Collaboration Applications in Three.js](http://hecodes.com/2016/08/building-real-time-collaboration-applications-three-js/)
+  * [How to Bundle JavaScript With Rollup](https://code.lengstorf.com/learn-rollup-js/)
+  * [Telescope: Build your own Hacker News, Reddit, or Product Hunt.](http://www.telescopeapp.org/)
+
+  ## Guides
+
+  * [Lodash FP Guide](https://github.com/lodash/lodash/wiki/FP-Guide)
+  * [Itsy bitsy data structures](https://github.com/thejameskyle/itsy-bitsy-data-structures)
+
+  ## Techniques
+
+  * [Handle Errors in a Node App](http://jaketrent.com/post/handle-errors-node-app/)
+  * [Using Feature Queries in CSS](https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/)
+
+  ## Interviews
+
+  * [PureScript - Strongly Typed Programming Language Compiling to JavaScript - Interview with Phil Freeman](http://survivejs.com/blog/purescript-interview/)
+
+  ## Games
+
+  * [Duck hunt in JavaScript](https://github.com/MattSurabian/DuckHunt-JS)
+  * [Bombsweeper!](https://bombsweeper.js.org/) - Minesweeper in JavaScript
+
+  ## Languages
+
+  * [TypeScript 2.0 Release Candidate](https://blogs.msdn.microsoft.com/typescript/2016/08/30/announcing-typescript-2-0-rc/)
+  * [BuckleScript 1.0](https://bloomberg.github.io/bucklescript/) - OCaml for the web
+
+  ## Tools
+
+  * [hyperlink](https://github.com/Munter/hyperlink) - Check your site links for errors
+  * [Prosecco](https://prosecco.surge.sh/) - The fast, future-friendly minifier by Rich Harris
+  * [Carbide Alpha](https://alpha.trycarbide.com/) - Interactive editor
+  * [Keystone CMS 4.0.0 Beta](https://github.com/keystonejs/keystone/issues/3415)
+  * [slow-deps](https://www.npmjs.com/package/slow-deps) - Measure which dependencies in a project are slowest to install
+  * [DocumentCSS](http://documentcss.com/) - Create living style guides with interactive examples, that change as your design does
+  * [gmetais/sw-delta](https://github.com/gmetais/sw-delta) - An incremental cache for the web
+
+  ## Demos
+
+  * [Easiest spinner](https://codepen.io/tnottu/pen/QEPREE)
+  * [Pokeball 3D](https://codepen.io/Sukk4/pen/VjNowW)

@@ -1,0 +1,58 @@
+<div x-state="{ libraries: [] }">
+  <div class="flex gap-1" &visibleIf="(get context todo)">
+    <button
+      onclick="setState(state => ({ libraries: state.libraries.toSorted((a, b) => a.name.localeCompare(b.name)) }))"
+    >
+      Sort libraries (asc.)
+    </button>
+    <button
+      onclick="setState(state => ({ libraries: state.libraries.toSorted((a, b) => -a.name.localeCompare(b.name)) }))"
+    >
+      Sort libraries (desc.)
+    </button>
+  </div>
+  <ul
+    class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+    x-each="state.libraries"
+    x-ssr
+    &foreach="(get props libraries)"
+  >
+    <li
+      class="my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4"
+      x-template
+    >
+      <SiteLink
+        class="bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg"
+        x="state.value.name"
+        @href="state.value.url"
+        &children="(get props name)"
+        &href="(concat /library/ (get props id))"
+      ></SiteLink>
+      <div class="flex justify-between">
+        <div &visibleIf="(get props stargazers)" class="flex gap-1">
+          <span>Stars:</span>
+          <span
+            &children="(get props stargazers)"
+            x="state.value.stargazers"
+            x-attr
+          ></span>
+        </div>
+        <SiteLink
+          &visibleIf="(get props links.site)"
+          &href="(get props links.site)"
+          @href="state.value.links.site"
+        >
+          Homepage
+        </SiteLink>
+        <SiteLink
+          &visibleIf="(get props links.github)"
+          &href="(get props links.github)"
+          @href="state.value.links.github"
+        >
+          GitHub page
+        </SiteLink>
+      </div>
+      <Tags &tags="(get props tags)" />
+    </li>
+  </ul>
+</div>

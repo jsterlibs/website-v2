@@ -1,0 +1,66 @@
+type: static
+title: "JSter #49: News of June 2015 - Part 2"
+short_title: "JSter #49"
+user: bebraw
+slug: monthly-jster-june-2015-part-2
+body: |
+  > It takes two to JavaScript
+
+  ## Libraries
+
+  {{ screenshot: https://bitshadow.github.io/iconate/ }}
+
+  * [iconate.js](https://bitshadow.github.io/iconate/) - Transform your icons with trendy animations
+  * [Knwl.js](http://loadfive.com/os/knwl/) - A Javascript Natural Language Parser
+  * [7 Useful HTML5 UI Frameworks For Mobile App Development](http://jster.net/blog/7-mobile-ui-frameworks)
+  * [An overview of Javascript reactive frameworks](http://rrees.me/2015/06/04/overview-of-javascript-reactive-frameworks/)
+
+  ## Articles
+
+  {{ screenshot: http://blog.startifact.com/posts/graphql-and-rest.html }}
+
+  * [GraphQL and REST](http://blog.startifact.com/posts/graphql-and-rest.html)
+  * [The state of Web Components](https://hacks.mozilla.org/2015/06/the-state-of-web-components/)
+  * [How not to write an API](http://getpostdelete.com/how-not-to-write-an-api.html)
+  * [The Evolution of Flux Frameworks](https://medium.com/@dan_abramov/the-evolution-of-flux-frameworks-6c16ad26bb31)
+  * [Angular — New features in AngularJS 1.4](https://medium.com/angularjs-meetup-south-london/angular-new-features-in-angular-1-4-b9b47077a8b2)
+  * [From asm.js to WebAssembly](https://brendaneich.com/2015/06/from-asm-js-to-webassembly/)
+  * [Replicating Art With JS](http://jsart.co/11/replicating-art-with-js/)
+
+  ## Tutorials
+
+  {{ screenshot: http://grigio.org/meteor-react-and-material-ui-the-easy-way/ }}
+
+  * [Meteor, React and Material UI the easy way](http://grigio.org/meteor-react-and-material-ui-the-easy-way/)
+  * [React Native For Beginners](http://devdactic.com/react-native-for-beginners/)
+  * [ES6 In Depth: Arrow functions](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
+  * [ES6 In Depth: Destructuring](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
+  * [Using Webpack to build React components and their assets](http://simonsmith.io/using-webpack-to-build-react-components-and-their-assets/)
+  * [Building SVG Icons with React](http://jxnblk.com/react-icons/)
+
+  ## Guides
+
+  * [ES6 Interactive Guide](http://projects.formidablelabs.com/es6-interactive-guide/)
+
+  ## Techniques
+
+  * [Asynchronous ReactJS Component loading with Webpack](http://blog.netgusto.com/asynchronous-reactjs-component-loading-with-webpack/)
+  * [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)
+  * [Adding authentication to your React Flux app](https://auth0.com/blog/2015/04/09/adding-authentication-to-your-react-flux-app/)
+  * [React Native – Share Your Application Logic on Web and Mobile](http://gofore.com/ohjelmistokehitys/react-native-share-application-logic-web-mobile/)
+  * [Dealing with streams using RxJs](https://speakerdeck.com/hugocrd/dealing-with-streams-using-rxjs)
+
+  ## Resources
+
+  * [olistic/warriorjs](https://github.com/olistic/warriorjs) - Learn JavaScript the warrior way
+  * [A Nice Collection of React Resources](https://react.zeef.com/nick.raienko)
+  * [MicheleBertoli/css-in-js](https://github.com/MicheleBertoli/css-in-js)
+
+  ## Tools
+
+  * [tota11y - an accessibility visualization toolkit](http://engineering.khanacademy.org/posts/tota11y.htm)
+  * [npm 3.0.0](https://github.com/npm/npm/releases/tag/v3.0.0)
+  * [cssarrowplease](http://cssarrowplease.com/)
+  * [10 Web Development Tools to Speed You Up](http://jster.net/blog/speed-you-up-your-web-development)
+  * [Tern](http://ternjs.net/doc/demo.html) - Better editor tooling for JavaScript
+  * [skidding/cosmos](https://github.com/skidding/cosmos) - A development tool for designing truly encapsulated React components

@@ -1,0 +1,70 @@
+type: static
+title: "JSter #20: News of April 2014 - Part 1"
+short_title: "JSter #20"
+user: bebraw
+slug: monthly-jster-april-2014-part-1
+body: |
+  > JavaScript - There can only be one.
+
+  ## Libraries
+
+  {{ screenshot: http://snapsvg.io/ }}
+
+  * [Snap.svg](http://snapsvg.io/)
+  * [Extensionizr](http://extensionizr.com/) - Write a Chrome plugin in 60 seconds
+  * [WinJS: The Windows Library for JavaScript](http://msdn.microsoft.com/en-us/windows/dn632015)
+  * [nosir/obelisk.js](https://github.com/nosir/obelisk.js)
+  * [webkit.js](http://trevorlinton.github.io/webkit.js/demo.html)
+
+  ## Articles
+
+  {{ screenshot: http://viralpatel.net/blogs/javascript-tips-tricks/ }}
+
+  * [21 JavaScript Tips & Tricks for JavaScript Developers](http://viralpatel.net/blogs/javascript-tips-tricks/)
+  * [New canvas features](http://blogs.adobe.com/webplatform/2014/04/01/new-canvas-features/)
+  * [The Netflix Tech Blog: Going Reactive](http://techblog.netflix.com/2014/03/going-reactive-asynchronous-javascript.html)
+  * [Superpacking JS Demos – I, Hacker](http://daeken.com/2011-08-31_Superpacking_JS_Demos.html)
+  * [String Templating Considered Harmful](http://flippinawesome.org/2014/03/24/string-templating-considered-harmful/) - Obligatory "Considered Harmful" article.
+
+  ## Tutorials
+
+  {{ screenshot: http://creditcardjs.com/credit-card-type-detection }}
+
+  * [How to correctly detect credit card type](http://creditcardjs.com/credit-card-type-detection)
+  * [Debugging Asynchronous JavaScript with Chrome DevTools](http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/)
+  * [Recreating the OS X Dock](http://zurb.com/playground/osx-dock)
+  * [Build a sentiment analysis application with Node.js, Express, sentiment and ntwitter](https://www.ibm.com/developerworks/library/wa-nodejs-app/)
+
+  ## Guides
+
+  {{ screenshot: http://blog.sourcing.io/mvc-style-guide }}
+
+  * [JavaScript MVC Style Guide](http://blog.sourcing.io/mvc-style-guide)
+
+  ## Techniques
+
+  {{ screenshot: http://css-tricks.com/frosting-glass-css-filters/ }}
+
+  * [Frosting Glass with CSS Filters](http://css-tricks.com/frosting-glass-css-filters/)
+  * [Stripes in CSS](http://css-tricks.com/stripes-css/)
+  * [Removing Unused CSS](http://addyosmani.com/blog/removing-unused-css/)
+  * [Comparison of async approaches](https://github.com/yortus/asyncawait/tree/master/comparison)
+
+  ## Games
+
+  * [Goldfish](http://ondras.github.io/goldfish/) - Roguelike.
+
+  ## Tools
+
+  {{ screenshot: http://pesticide.io/ }}
+
+  * [Pesticide](http://pesticide.io/) - CSS debugging made easy.
+  * [google/tracing](https://github.com/google/tracing-framework)
+  * [Online CSS3 Code Generator With a Simple Graphical Interface](http://enjoycss.com/)
+  * [t32k/stylestats](https://github.com/t32k/stylestats)
+
+  ## Demos
+
+  * [Impressionist paintings with Canvas](http://mattdesl.github.io/impressionist/app/)
+  * [Progress Button Styles](http://tympanus.net/Development/ProgressButtonStyles/)
+  * [Simple 8](http://schweigi.github.io/assembler-simulator/)

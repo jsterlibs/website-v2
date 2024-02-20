@@ -1,0 +1,74 @@
+type: static
+title: "JSter #19: News of March 2014 - Part 2"
+short_title: "JSter #19"
+user: bebraw
+slug: monthly-jster-march-2014-part-2
+body: |
+  > JavaScript - The Final Frontier
+
+  ## Libraries
+
+  {{ screenshot: http://linqjs.codeplex.com/ }}
+
+  * [gremlins.js - Monkey testing](https://github.com/marmelab/gremlins.js)
+  * [Carota - Rich text editor](http://earwicker.com/carota/)
+  * [linq.js](http://linqjs.codeplex.com/)
+  * [MicIO.js](http://colinbookman.com/2014/03/23/micio/)
+  * [accounting.js](http://josscrowcroft.github.io/accounting.js/)
+
+  ## Articles
+
+  {{ screenshot: https://hacks.mozilla.org/2014/03/audio-tags-web-components-web-audio-%E2%99%A5/ }}
+
+  * [Audio Tags: Web Components + Web Audio = ♥](https://hacks.mozilla.org/2014/03/audio-tags-web-components-web-audio-%E2%99%A5/)
+  * [The Truth about False in JavaScript](http://blog.falafel.com/Blogs/BasemEmara/basem-emara/2014/03/14/the-truth-about-false-in-javascript)
+  * [jsDelivr – The advanced open source public CDN](https://hacks.mozilla.org/2014/03/jsdelivr-the-advanced-open-source-public-cdn/)
+  * [AngularJS 2.0 - What's in Store?](http://blog.angularjs.org/2014/03/angular-20.html)
+
+  ## Tutorials
+
+  {{ screenshot: http://creative-punch.net/2014/02/making-animated-radial-menu-css3-javascript/ }}
+
+  * [CSS Diner](http://flukeout.github.io/)
+  * [What Books Didn't Tell You About ES5 Descriptors - Part 1](http://webreflection.blogspot.fi/2014/03/what-books-wont-tell-you-about-es5.html)
+  * [Making an animated radial menu with CSS3 and JavaScript](http://creative-punch.net/2014/02/making-animated-radial-menu-css3-javascript/)
+  * [Learn Your Bacon](http://bacon-game.herokuapp.com/)
+
+  ## Guides
+
+  {{ screenshot: http://speakingjs.com/es5/ }}
+
+  * [Speaking JavaScript](http://speakingjs.com/es5/)
+  * [WTF, HTML and CSS?](http://wtfhtmlcss.com/)
+
+  ## Techniques
+
+  {{ screenshot: http://nicolasgallagher.com/custom-css-preprocessing/ }}
+
+  * [Custom CSS preprocessing](http://nicolasgallagher.com/custom-css-preprocessing/)
+  * [Tree Traversal with ES6 Generator](http://h3manth.com/new/blog/2014/tree-traversal-with-es6-generator/)
+  * [Reactive Programming in JavaScript](http://engineering.silk.co/post/80056130804/reactive-programming-in-javascript)
+
+  ## Games
+
+  {{ screenshot: http://www.lessmilk.com/ }}
+
+  * [Lessmilk - One HTML5 game per week](http://www.lessmilk.com/)
+  * [Nabokos.exe](http://hexapod.itch.io/nabokos)
+  * [Limbs Repair Station](http://rezoner.net/labs/limbs/)
+
+  ## Tools
+
+  * [StyleStats - CSS statistics](https://github.com/t32k/stylestats)
+  * [geopattern](http://btmills.github.io/geopattern/geopattern.html)
+  * [Slate](https://github.com/slate/slate) - IRC client built with Node.js
+
+  ## Demos
+
+  {{ screenshot: http://js1k.com/2014-dragons/demos }}
+
+  * [Urban Jungle Street View](http://inear.se/urbanjungle/)
+  * [CSS 3D Clouds](http://cssdeck.com/labs/css-3d-clouds)
+  * [Visualizing Git Concepts with D3](http://www.wei-wang.com/ExplainGitWithD3/)
+  * [JS1K](http://js1k.com/2014-dragons/demos) - There be dragons
+  * [Gradients](http://codepen.io/hans/pen/uDmzf)

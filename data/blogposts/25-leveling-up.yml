@@ -1,0 +1,109 @@
+type: static
+title: "Leveling Up with HTML5 Games Contests"
+short_title: "Leveling Up with HTML5 Games"
+user: EvanBurchard
+slug: leveling-up-with-html5-games-contests
+body: |
+  Evan Burchard is the author of [The Web Game Developer's Cookbook](http://www.amazon.com/The-Web-Game-Developers-Cookbook/dp/0321898389) and the Final Boss at [FightMagicRun](http://fightmagicrun.com).  A founding trustee of the [Awesome Foundation](http://awesomefoundation.org), he loves rooting for the underdog and helping new coders get started.
+
+  ## Introduction
+
+  Traditionally web based games have been developed using a platform such as Flash. During the past few years the situation has begun to change, though. Particularly the emergence of HTML5 technologies has lead to some new trends. HTML5 games are one such trend.
+
+  I've listed some reasons below why getting into HTML5 game development may be worth your while.
+
+  * You started programming because of games.
+  * You find yourself saying "I use jQuery for most stuff" when asked about JS. Games get you working with real JS.
+  * Your JavaScript is not as good as your server-side code in another language (Ruby, Java, Python, etc.).
+  * You have never thought about performance in JavaScript. Games tend to execute code in a large loop, so performance must be considered.
+  * You want to learn Node.js, but learning Node.js AND real JS at the same time seems too complicated.
+  * You want to actually make money selling games. This is possible, and getting easier all the time.
+
+  [jster.net](http://jster.net) shows currently nearly 100 more reasons, or game engines. When you add in various commercial and cross-platform engines, that number grows significantly. So you could say there are plenty of starting points.
+
+  To make HTML5 games with these engines, you could read a book or a tutorial in isolation, but learning in the right context is important. If you want to learn quickly, consider entering a contest.  Proving to yourself that you can quickly make a game feels good, and you will uncover knowledge gaps that you might sweep under the rug if you were just following a book or a tutorial.
+
+  There are two main types of competitions: game jams and contests. Jams are more community oriented whereas contests focus more on the result.
+
+  ## Game Jams
+
+  Game Jams are a well established concept among game makers, and tend to have entrants who use tools like GameMaker, Unity, and Flash libraries that aid their ability to make games quickly. The focus tends to be on the games rather than the tools. They are unlike tech conferences where improving in technologies and techniques is paramount.
+
+  In-person jams like the Global Game Jam are a great way to collaborate and learn more about game design as well as game development. That said, these also provide challenges to developers because they tend to only last for a day or two.  Global Game Jam and Ludum Dare* both have a 48 hour window to make a game from scratch. Typically even large jams don't have prizes for winners, but that doesn't stop big names like Notch, the maker of minecraft, from participating.**
+
+  On the smaller side of things, impromptu jams spring up all the time.  All it takes is a few friends wanting to try out new ideas and share them with others. Because jams can be organized informally and with short notice, a search for "game jam", "gamejam" or "#gamejam" on Twitter will give more up to date information on upcoming contests than relying on Google search.
+
+  Here are a few popular game jams you should know about:
+
+  ### Yearly
+
+  {{ screenshot: http://globalgamejam.org }}
+
+  * [Global Game Jam](http://globalgamejam.org/) ([Entry](http://radstronomical.com/media/ekg.html))
+  * [Nordic Game Jam](http://nordicgamejam.org/) ([Audience Award 2nd Place](http://joon.be/toy/pressx/))
+
+  ### Three per Year
+
+  {{ screenshot: http://www.ludumdare.com }}
+
+  * [Ludum Dare](http://www.ludumdare.com) ([2nd Place Overall](http://www.ludumdare.com/compo/ludum-dare-26))
+
+  ### Monthly
+
+  {{ screenshot: http://22jams.com }}
+
+  * [Mini Ludum Dare](http://www.ludumdare.com)
+  * [22 Jams](http://22jams.com/)
+
+  ## Contests
+
+  Throughout the year, there are dozens of contests. Some are specific to a platform such as Flash, iPhone, or HTML5.  Some require use of a specific game engine or development environment. Some have a social mission and others are just for fun.
+
+  For the most part, they are infrequent, so if you miss them, you might have to wait a year to participate. And that's assuming the contest will happen again.  On the plus side, unlike game jams, they usually offer prizes of cash or free tools and services.
+
+  On the downside, hefty sponsorship sometimes means that sponsors require a licensing agreement as a condition of entry.  It is not uncommon for contests to be longer than a typical 2 day jam length.
+
+  Here of some contests of note:
+
+  ### Yearly
+
+  {{ screenshot: http://www.igf.com }}
+
+  * [Independent Games Festival](http://www.igf.com) ([Excellence in Narrative Winner](http://www.newgrounds.com/portal/view/591565))
+  * [Life.Love. Game Design Challenge](http://www.jenniferann.org/) ([Door Prize](http://www.jenniferann.org/what-kind-of-monster/2013-video-game-to-stop-teen-dating-violence.htm))
+  * [Node Knockout](http://nodeknockout.com/) ([Overall Winner](http://somethingcoded.nko3.jitsu.com/))
+  * [JS1K](http://js1k.com/) ([8th Place](http://js1k.com/2012-love/demo/1175)
+
+  ### Past
+
+  {{ screenshot: http://js13kgames.com }}
+
+  * [JS13KGames](http://js13kgames.com/) ([1st Place](http://js13kgames.com/games/spacepi/index.html))
+  * [Udacity Game Development Challenge](http://blog.udacity.com/2013/05/html5-game-development-contest-winners.html) ([1st Place](http://cs255.foxesandshotguns.com/))
+  * [Mozilla's Game On](https://gameon.mozilla.org/en-US/)([Best Web-Only Game](http://bombermine.com/#/))
+  * [GitHub Game Off](https://blog.mozilla.org/gameon/2013/01/08/github-game-off-winners/) ([Winner](http://gregbatha.com/branches/))
+  * [An Event Apart 10K](http://10k.aneventapart.com/)([Grand Prize Winner](http://10k.aneventapart.com/2/Uploads/621/))
+
+  ### Upcoming
+
+  {{ screenshot: https://developer.tizen.org/contests/tizen-app-challenge }}
+
+  * [Tizen App Challenge](https://developer.tizen.org/contests/tizen-app-challenge)
+
+  You can also use [CompoHub](http://compohub.net/) to keep track of upcoming competitions.
+
+  ## FightMagicRun.com
+
+  {{ screenshot: http://fightmagicrun.com }}
+
+  [FiMaRu](http://fightmagicrun.com) has a fresh take on game contests.  The 48-hour timeframe is preserved from the larger game jam tradition, because it's enough time to do something interesting, but not enough time for an otherwise fun event to feel like a burden.  It's weekly, so you can reliably participate in a contest any time you want.  It's HTML5 specific, so everyone making games can help move the web forward.
+
+  Participation does not imply any transfer of rights as it does in some contests.  And the prize is $100, which is enough to be about as interesting as a big poker night, but small enough to ensure a good mix of beginners and established game devs.  $100 also allows for the contest to be weekly. The details of the contest are explained [here](http://fightmagicrun.com/blog/posts/contest-details). And yes, you can [register](http://fightmagicrun.com) for a contest this weekend.
+
+  ## Conclusion
+
+  If you're looking to lock down your JavaScript better or make a game in an intense, but short timeframe, competitions are everywhere.  You have your pick from anything to huge events like Global Game Jam to smaller jams with friends to 4 million dollar competitions to 100 dollar competitions.  And when you find the context to learn and create games with people you like, it won't just be fun for you, you'll also be making fun for others.
+
+  *Ludum Dare also has a 72 hour competition.
+
+  **One of Notch's entries: [https://s3.amazonaws.com/ld48/index.html](https://s3.amazonaws.com/ld48/index.html)

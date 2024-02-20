@@ -1,0 +1,74 @@
+type: static
+title: "JSter #47: News of May 2015 - Part 2"
+short_title: "JSter #47"
+user: bebraw
+slug: monthly-jster-may-2015-part-2
+body: |
+  > There's no script like JavaScript
+
+  As hinted in the previous entry I have been working on a book. I have some good news. The Webpack/React book has [an official site](http://survivejs.com/) now. You can find the content there in case you are curious about the topic.
+
+  ## Libraries
+
+  {{ screenshot: http://www.ractivejs.org/ }}
+
+  * [Polymer 1.0](https://www.polymer-project.org/1.0/) - Web Components. Now.
+  * [Ractive.js](http://www.ractivejs.org/) - Reactive templating
+  * [jQuery.my](http://jquerymy.com/) - Easy two way bindings for jQuery
+  * [Elemental UI](http://elemental-ui.com/) - Promising UI library for React
+  * [React DnD 1.0](http://gaearon.github.io/react-dnd/) - Drag and Drop. Not Dungeons and Dragons.
+  * [Vorlon.JS](http://vorlonjs.com/) - Platform-agnostic tool for remotely debugging and testing your JavaScript
+
+  ## Articles
+
+  {{ screenshot: http://jlongster.com/Why-React-Native-is-Different }}
+
+  * [Why React Native is Different](http://jlongster.com/Why-React-Native-is-Different)
+  * [10 Top Mistakes AngularJS Developers Make](https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make)
+  * [Paranoid coding](http://glebbahmutov.com/blog/paranoid-coding/)
+  * [Decoupled object models in JavaScript](http://www.syntaxsuccess.com/viewarticle/decoupled-object-models-in-javascript)
+  * [How Netflix modularized their JavaScript Codebase](http://www.theserverside.com/tip/How-Netflix-modularized-their-JavaScript-Codebase)
+  * [An introduction to JavaScript-based DDoS](https://blog.cloudflare.com/an-introduction-to-javascript-based-ddos/)
+  * [API Design &: The Bind Operator](https://medium.com/@matthewwithanm/api-design-the-bind-operator-5a22d255bb18)
+
+  ## Tutorials
+
+  {{ screenshot: https://blog.algolia.com/modern-javascript-libraries-the-isomorphic-way/ }}
+
+  * [Milliseconds Matter Modern JavaScript libraries: the isomorphic way](https://blog.algolia.com/modern-javascript-libraries-the-isomorphic-way/)
+  * [Handling Complex State with Baobab](http://www.christianalfoni.com/articles/2015_04_26_Handling-complex-state-with-Baobab)
+  * [An Introduction To Graphical Effects in CSS](https://blogs.adobe.com/dreamweaver/2015/04/an-introduction-to-graphical-effects-in-css.html)
+  * [Building an Open Source React Component](http://davidtheclark.com/building-react-aria-menubutton/)
+  * [An Introduction to the Futuristic New Router in AngularJS](http://www.sitepoint.com/introduction-futuristic-new-router-angularjs/)
+  * [GraphQL Introduction](https://facebook.github.io/react/blog/2015/05/01/graphql-introduction.html)
+
+  ## Slides
+
+  * [Eliminate JavaScript Code Smells](http://elijahmanor.com/talks/js-smells/)
+
+  ## Techniques
+
+  * [Better Asynchronous JavaScript](http://eng.localytics.com/better-asynchronous-javascript/)
+  * [Immutability in React](http://www.sitepoint.com/immutability-react/)
+  * [The React.js Way: Flux Architecture with Immutable.js](http://blog.risingstack.com/the-react-js-way-flux-architecture-with-immutable-js/)
+  * [Best Practices for Building Large React.js Applications](http://blog.siftscience.com/blog/2015/best-practices-for-building-large-react-applications)
+  * [Rendering React Components on the Server](http://www.crmarsh.com/react-ssr/)
+  * [ES6 In Depth: Generators](https://hacks.mozilla.org/2015/05/es6-in-depth-generators/)
+  * [ES6 In Depth: Iterators and the for-of loop](https://hacks.mozilla.org/2015/04/es6-in-depth-iterators-and-the-for-of-loop/)
+
+  ## Comics
+
+  * [Not Invented Here](http://notinventedhe.re/on/2015-5-19)
+
+  ## Tools
+
+  * [react-component-boilerplate](https://survivejs.github.io/react-component-boilerplate/)
+  * [component playground](http://projects.formidablelabs.com/component-playground/) - Render React components with editable source and live preview
+  * [Visual Studio Code](https://code.visualstudio.com/Docs/editingevolved) - Visual Studio goes full hipster!
+  * [Wallaby](http://wallabyjs.com/) - Commercial, intelligent test runner that runs your tests continuously
+
+  ## Demos
+
+  * [JS1k Train Window - post mortem](http://birdgames.nl/2015/05/js1k-post-mortem-train-window/)
+  * [Spring](http://oos.moxiecode.com/js_webgl/spring/) - 3D demo
+  * [Future Crew: Second Reality](https://archive.org/details/msdos_2ND_REAL_shareware) - Classic

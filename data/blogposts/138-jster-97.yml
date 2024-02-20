@@ -1,0 +1,58 @@
+type: static
+title: "JSter #97: Libraries and more"
+short_title: "JSter #97"
+user: bebraw
+slug: jster-97
+body: |
+  > It takes two to JavaScript
+
+  The [Summer tour](https://survivejs.com/blog/euro-summer-tour-2017/) is nearing its end. Only Augsburg and London remain before a short visit to Finland.
+
+  Third tour is already being planned. It will likely begin from Vienna in form of [webpack clinics](https://survivejs.com/clinic/) at [the end of July](https://survivejs.doodle.com/poll/mihayszmt5teb858). A clinic is a supercharged version of [my workshops](https://survivejs.com/workshop/). You will learn a lot about webpack in a two hour intense session as I walk you through my material in a small group.
+
+  I'm also going to participate in [WebExpo2017](https://www.webexpo.net/prague2017/) in September (22-23rd). It's great to return to Prague again.
+
+  PS. There's a [hard-cover Edition of the webpack Book](https://survivejs.com/blog/hardcover-webpack-book/) available now.
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/mapbox/polylabel }}
+
+  * [mapbox/polylabel](https://github.com/mapbox/polylabel) - A fast algorithm for finding the pole of inaccessibility of a polygon
+  * [steffest/bassoontracker](https://github.com/steffest/bassoontracker) - Web based old-school Amiga music tracker in plain old JavaScript
+  * [renovate](https://www.npmjs.com/package/renovate) - Keep npm dependencies up-to-date
+  * [emotion](https://emotion.now.sh/) - High performance JavaScript for your CSS
+  * [faceyspacey/redux-first-router](https://github.com/faceyspacey/redux-first-router#the-gist) - Seamless Redux-first routing
+
+  ## Animation
+
+  * [SVG Morpheus](https://alexk111.github.io/SVG-Morpheus/) - JavaScript library enabling SVG icons to morph from one to the other
+  * [veltman/flubber](https://github.com/veltman/flubber) - Tools for smoother shape animations
+
+  ## Articles
+
+  * [DOM handleEvent: a cross-platform standard since year 2000](https://medium.com/@WebReflection/dom-handleevent-a-cross-platform-standard-since-year-2000-5bf17287fd38)
+
+  ## Opinions
+
+  * [Progressing the web](https://adactio.com/journal/12461)
+  * [Functional programming in Javascript is an antipattern](https://hackernoon.com/functional-programming-in-javascript-is-an-antipattern-58526819f21e)
+  * [A Unified Styling Language](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
+
+  ## Interviews
+
+  * [Most.js](https://survivejs.com/blog/most-interview/) - Monadic streams for reactive programming - Interview with Brian Cavalier
+  * [React Alicante](https://survivejs.com/blog/react-alicante-interview/) - The international React.js conference in Spain - Interview with Victoria Quirante
+  * [Working with Junior Developers](https://survivejs.com/blog/junior-interview/) - Interview with Aimee Knight
+
+  ## Tools
+
+  * [webpack v3](https://github.com/webpack/webpack/releases/tag/v3.0.0)
+  * [Mimic](https://mimic.js.org/) - Seamless Client Side Mocks
+  * [iotaCSS](https://www.iotacss.com/) - Smart open source SASS based OOCSS framework built for scale
+
+  ## Demos
+
+  * [Data Structures Memory Usage in JavaScript](https://roman01la.github.io/js-memory-usage/)
+  * [Sketch-RNN Demos](https://aiexperiments.withgoogle.com/sketch-rnn-demo) - Draw together with a neural network
+  * [HNPWA](https://hnpwa.com/) - Hacker News as a PWA against different technologies

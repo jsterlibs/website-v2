@@ -1,0 +1,58 @@
+type: static
+title: "JSter #103: Libraries, Articles, techniques, and more"
+short_title: "JSter #103"
+user: bebraw
+slug: jster-103
+body: |
+  > JavaScript, now.
+
+  I spent roughly a week in Prague and wrote about my [experiences in WebExpo 2017](https://survivejs.com/blog/webexpo-2017/). In short, another great place in Europe to visit.
+
+  In other news, we are going to organize [React Finland](https://react-finland.fi/) at the end of April 2018 in Helsinki. The event will gather around three hundred React enthusiasts. We'll have a workshop day and two days for presentations in a single-track format.
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/xtuc/async-reactor }}
+
+  * [React v16.0](https://reactjs.org/blog/2017/09/26/react-v16.0.html) - Major version of the popular user interface library.
+  * [Draggable](https://shopify.github.io/draggable/) - A lightweight, responsive, modern drag and drop library.
+  * [xtuc/async-reactor](https://github.com/xtuc/async-reactor) - Render async Stateless Functional Components in React.
+  * [jeromeetienne/AR.js](https://github.com/jeromeetienne/AR.js) - Efficient Augmented Reality for the Web. 60 fps on mobile!
+  * [Liike](https://liike.js.org/) - Tiny tweening library.
+
+  ## Articles
+
+  * [To type or not to type: quantifying detectable bugs in JavaScript](https://blog.acolyer.org/2017/09/19/to-type-or-not-to-type-quantifying-detectable-bugs-in-javascript/amp/)
+  * [JavaScript development is not fun for Paul anymore](https://medium.com/@paulvm/javascript-development-is-not-fun-for-me-anymore-ac4e9d7b89a3)
+
+  ## Tutorials
+
+  * [How Andrew Built His Own “React” in Two Days](https://codeburst.io/how-i-built-my-own-react-in-two-days-and-why-i-did-it-969c3d048f78)
+
+  ## Techniques
+
+  * [Myers diff in linear space: implementation](https://blog.jcoglan.com/2017/04/25/myers-diff-in-linear-space-implementation/)
+  * [Yes, That Web Project Should Be a PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa)
+  * [Creating Awesome SPAs With React](https://hackernoon.com/creating-awesome-spas-with-react-66b4e2043621)
+  * [Building the DOM faster: speculative parsing, async, defer and preload](https://hacks.mozilla.org/2017/09/building-the-dom-faster-speculative-parsing-async-defer-and-preload/)
+
+  ## Interviews
+
+  * [Kea - High level abstraction between React and Redux](https://survivejs.com/blog/kea-interview/) - Interview with Marius Andra
+
+  ## Slides
+
+  * [What if Tomas told you that HTTP can be fast?](http://delved.org/What-if-I-told-you-that-HTTP-can-be-fast/#/0)
+  * [Lightning Fast React Apps](https://speakerdeck.com/siakaramalegos/lightning-fast-react-apps) by Sia Karamalegos.
+
+  ## Languages
+
+  * [Announcing CoffeeScript 2](http://coffeescript.org/announcing-coffeescript-2/) - Not a joke.
+
+  ## Tools
+
+  * [Blendid](https://www.viget.com/articles/blendid) - One build tool to rule them all?
+
+  ## Demos
+
+  * [AMAZ3D](http://js13kgames.com/entries/amaz3d) - Amazing game in only 13k.

@@ -1,0 +1,50 @@
+type: static
+title: "JSter #56: News of October 2015 - Part 1"
+short_title: "JSter #56"
+user: bebraw
+slug: monthly-jster-october-2015-part-1
+body: |
+  > JavaScript is just a great tower of Babel
+
+  My book about Webpack and React keeps on progressing solidly. Of course it is a continuous struggle against technology that goes forward constantly but it feels like a major milestone is near and a paper version is in sight. See [SurviveJS v1.9.0](http://survivejs.com/blog/survivejs-19/) announcement for more information.
+
+  ## Libraries
+
+  {{ screenshot: https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html }}
+
+  * [zenorocha/clipboard.js](https://github.com/zenorocha/clipboard.js) - Manage clipboard through JavaScript
+  * [spin.js](https://fgnass.github.io/spin.js/) - Customizable spinners
+  * [React v0.14](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html)
+  * [UpUp](https://www.talater.com/upup/) - a tiny script that makes sure your site is always there for your users
+  * [Popmotion](http://popmotion.io/) - a 12kb JavaScript motion engine
+
+  ## Articles
+
+  {{ screenshot: http://blog.xebia.com/2015/10/08/babel-free-backend-prototype/ }}
+
+  * [Babel-free backend prototype – challenge accepted](http://blog.xebia.com/2015/10/08/babel-free-backend-prototype/)
+  * [Design Considerations: Text on Images](https://css-tricks.com/design-considerations-text-images/)
+  * [The State of JavaScript on Android in 2015 is... poor](https://meta.discourse.org/t/the-state-of-javascript-on-android-in-2015-is-poor/33889)
+  * [Why We Need WebAssembly: An Interview with Brendan Eich](https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723)
+  * [GopherJS](http://www.gopherjs.org/blog/2015/09/28/surprises-in-gopherjs-performance/) - JavaScript performance can be surprising when compared with Go.
+
+  ## Interviews
+
+  * [react-bootstrap](http://survivejs.com/blog/react-bootstrap-interview/) - Bridging React with Bootstrap
+  * [Cerebral](http://survivejs.com/blog/cerebral-interview/) - A good, emerging solution for structuring your React application
+
+  ## Guides
+
+  * [Javascript in one picture](https://coodict.github.io/javascript-in-one-pic/)
+
+  ## Slides
+
+  * [Back to the Future with AngularJS 2 by Gion Kunz](http://slides.com/gionkunz/back-to-the-future-angularjs2)
+
+  ## Tools
+
+  * [Document ES6 with ESDoc](http://jonathancreamer.com/document-es6-with-esdoc/)
+
+  ## Demos
+
+  * [PCE.js Classic Mac OS in the Browser](https://jamesfriend.com.au/pce-js/pce-js-apps/)

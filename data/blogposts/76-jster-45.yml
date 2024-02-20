@@ -1,0 +1,73 @@
+type: static
+title: "JSter #45: News of April 2015 - Part 2"
+short_title: "JSter #45"
+user: bebraw
+slug: monthly-jster-april-2015-part-2
+body: |
+  > Every day is a JS day
+
+  ## Libraries
+
+  {{ screenshot: http://lab.ejci.net/favico.js/ }}
+
+  * [dkoes/3Dmol.js](https://github.com/dkoes/3Dmol.js) - 3D molecule visualization
+  * [favico.js](http://lab.ejci.net/favico.js/) - Animate favicons
+  * [RQ](http://www.rq.crockford.com/) - Manage asynchronity with Mr. Crockford
+  * [ubolonton/js-csp](https://github.com/ubolonton/js-csp) - CSP channels for Javascript
+
+  ## Articles
+
+  {{ screenshot: http://www.stridenyc.com/blog/2015/3/4/coming-to-react-from-angular }}
+
+  * [Coming to React from Angular](http://www.stridenyc.com/blog/2015/3/4/coming-to-react-from-angular)
+  * [The Dao of Immutability](https://medium.com/javascript-scene/the-dao-of-immutability-9f91a70c88cd)
+  * [The WTF Factor: Quantifying JS Library Weirdness](http://larseidnes.com/2015/01/05/the-wtf-factor-quantifying-js-library-weirdness/)
+  * [React Native: The Future of Mobile App Development](http://jster.net/blog/react-native-is-the-future)
+  * [Principles of Flux](https://medium.com/@goatslacker/principles-of-flux-ea872bc20772)
+
+  ## Tutorials
+
+  {{ screenshot: http://blog.codeprototype.com/2015/04/15/write-reacts-component-in-functional-way-with-ramda-and-pointfree-md/ }}
+
+  * [Write React components in a functional way with Ramda and PointFree](http://blog.codeprototype.com/2015/04/15/write-reacts-component-in-functional-way-with-ramda-and-pointfree-md/)
+  * [ES6 arrow functions, syntax and lexical scoping](http://toddmotto.com/es6-arrow-functions-syntaxes-and-lexical-scoping/)
+  * [Blackjackin with React Jay Esse](https://up.svbtle.com/blackjackin-with-react-js)
+  * [Packing the web like a boss](http://www.technology-ebay.de/the-teams/mobile-de/blog/packing-the-web-like-a-boss.html)
+
+  ## Slides
+
+  * [9 Anti-patterns for Node.js Teams](http://www.slideshare.net/jeharrell/9-antipatterns-for-nodejs-teams)
+  * [Design Strategies for JavaScript API](https://speakerdeck.com/ariya/design-strategies-for-javascript-api)
+  * [DevTools: State Of The Union 2015](https://speakerdeck.com/addyosmani/devtools-state-of-the-union-2015)
+  * [Controllable React Components](https://speakerdeck.com/lettertwo/controllable-react-components)
+
+  ## Guides
+
+  * [SurviveJS - Webpack and React](https://leanpub.com/survivejs_webpack/read) - Upcoming React/Webpack book
+  * [WebGL Fundamentals](http://webglfundamentals.org/)
+
+  ## Techniques
+
+  * [Functional programming with Ramda](https://medium.com/@kevinle/functional-programming-with-ramda-5c56d09c518e)
+  * [Get an Absolute URL with JavaScript](http://davidwalsh.name/get-absolute-url)
+  * [Cut and Copy Commands](http://updates.html5rocks.com/2015/04/cut-and-copy-commands)
+  * [Blowing up LocalStorage (or what happens when you exceed quota)](http://www.raymondcamden.com/2015/04/14/blowing-up-localstorage-or-what-happens-when-you-exceed-quota)
+  * [The Ultimate Webpack Setup for Backend](http://christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup)
+
+  ## Tools
+
+  * [DevTools Timeline: Now Providing the Full Story](http://updates.html5rocks.com/2015/04/devtools-timeline-improvements)
+  * [Mimosa](http://mimosa.io/) - Tired of Grunt, Gulp etc. ?
+  * [sinelaw/infernu](https://github.com/sinelaw/infernu) - Type inference and checking for a safer JavaScript
+  * [React Native v0.4](https://facebook.github.io/react/blog/2015/04/17/react-native-v0.4.html)
+  * [spite/ShaderEditorExtension](https://github.com/spite/ShaderEditorExtension) - Debug WebGL shaders in Chrome
+
+  ## Services
+
+  * [Libscore](http://libscore.com/) - See library usage per popular sites
+  * [W3C mobileOK Checker](http://validator.w3.org/mobile/)
+  * [JS.ORG](http://dns.js.org/) - Get a nice domain for your JavaScript project - for free
+
+  ## Demos
+
+  * [Solar System of JS](https://shaunlebron.github.io/solar-system-of-js/)

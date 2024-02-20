@@ -1,0 +1,80 @@
+type: static
+title: "JSter #81: News of October 2016 - Part 2"
+short_title: "JSter #81"
+user: bebraw
+slug: monthly-jster-october-2016-part-2
+body: |
+  > If you can think of a common word, there's a npm package for it
+
+  Busy days. To prepare for the future, I [compiled my presentations to a site](http://presentations.survivejs.com). Check it out for slides on React, webpack, and more.
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/nosir/obelisk.js }}
+
+  * [vivus.js](https://maxwellito.github.io/vivus/) - Bring your SVGs to life
+  * [obelisk.js](https://github.com/nosir/obelisk.js) - JavaScript library for building pixel isometric graphics with HTML5 canvas
+  * [Talisman](https://yomguithereal.github.io/talisman/) - A straightforward and modular NLP, machine learning and fuzzy matching library for JavaScript
+  * [GraphicsJS](http://www.graphicsjs.org/) - A lightweight JavaScript graphics library with the intuitive API, based on SVG/VML technology
+  * [ZeroClipboard v2.x](http://zeroclipboard.org/)
+  * [Waypoints](http://imakewebthings.com/waypoints/) - Trigger a function when you scroll to an element
+  * [Minigrid](http://minigrid.js.org/) - Minimal 2kb zero dependency cascading grid layout without pain
+  * [nanobar.js](http://nanobar.jacoborus.codes/) - Very lightweight progress bars. (699 gzipped bytes of vanilla js)
+
+  ## Frameworks
+
+  * [Weex](https://alibaba.github.io/weex/) - A framework for building Mobile cross-platform UI
+
+  ## Articles
+
+  * [A Javascript journey with only six characters](http://jazcash.com/a-javascript-journey-with-only-six-characters/)
+  * [Parsing JSON is a Minefield](http://seriot.ch/parsing_json.html)
+  * [Choosing GraphQL to build Drift’s messaging platform](https://medium.com/drift-engineering/choosing-graphql-to-build-drifts-messaging-platform-8b4310facbc1)
+  * [Node.js, TC-39, and Modules](https://hackernoon.com/node-js-tc-39-and-modules-a1118aecf95e)
+  * [Sustaining webpack for the future: Part 2](https://medium.com/webpack/sustaining-webpack-for-the-future-part-2-7055282d7864)
+  * [JavaScript projects regroup under a new foundation - JS Foundation](http://www.infoworld.com/article/3131489/javascript/javascript-projects-regroup-under-a-new-foundation.html)
+
+  ## Techniques
+
+  * [Stop using `typeof` in JavaScript, we have better solution](https://medium.com/@nsisodiya/stop-using-typeof-in-javascript-we-have-better-solution-5a09bfaa02a4)
+  * [Using clustering to create a new D3.js color scale](https://medium.com/@dschnr/using-clustering-to-create-a-new-d3-js-color-scale-dec4ccd639d2)
+  * [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+  * [How to be* a compiler](https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4)
+  * [Run Express server in your browser](https://glebbahmutov.com/blog/run-express-server-in-your-browser/)
+  * [Safer, more predictable `npm` publishing with `publish-diff`](https://formidable.com/blog/2016/10/19/introducing-publish-diff/)
+  * [Stub Dependencies in Node Without Proxyquire](http://jaketrent.com/post/stub-dependencies-node-without-proxyquire/)
+  * [Reactive Animations with CSS Variables by David Khourshid](http://slides.com/davidkhourshid/reactanim)
+
+  ## Technology
+
+  * [V8 JavaScript Engine: WebAssembly Browser Preview](https://v8project.blogspot.fi/2016/10/webassembly-browser-preview.html)
+  * [What’s new in IndexedDB 2.0?](https://hacks.mozilla.org/2016/10/whats-new-in-indexeddb-2-0/)
+  * [Do you need Service Worker in your web app?](https://codingbox.io/do-you-need-service-worker-in-your-web-app-d68131d65e2c)
+
+  ## Architecture
+
+  * [Functional frontend architecture](https://github.com/paldepind/functional-frontend-architecture)
+  * [Almin.js](https://almin.js.org/) - Flux/CQRS patterns for JavaScript application.
+
+  ## Interviews
+
+  * [RE:DOM - Tiny but Super Fast DOM Library - Interview with Juha Lindstedt](http://survivejs.com/blog/redom-interview/)
+  * [Glamor - Inline CSS for React et al - Interview with Sunil Pai](http://survivejs.com/blog/glamor-interview/)
+
+  ## Slides
+
+  * [Advanced Webpack](http://presentations.survivejs.com/advanced-webpack/)
+  * [Structuring React Projects](http://presentations.survivejs.com/structuring-react-projects/)
+
+  ## Tools
+
+  * [BackstopJS](https://garris.github.io/BackstopJS/) - Catch CSS curve balls
+  * [CSS icons](http://cssicon.space/)
+  * [siege](https://www.npmjs.com/package/siege) - HTTP benchmark your site
+  * [npm v4.0.0](https://github.com/npm/npm/releases/tag/v4.0.0)
+  * [benoror/better-npm-run](https://github.com/benoror/better-npm-run) - Better NPM scripts runner
+
+  ## Demos
+
+  * [RainbowHunt](http://rainbowhunt.com/) - Rain demo
+  * [purag/archsim](https://github.com/purag/archsim) - A JavaScript processor simulator to design and execute any assembly language architecture

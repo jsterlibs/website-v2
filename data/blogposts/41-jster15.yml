@@ -1,0 +1,92 @@
+type: static
+title: "Monthly JSter #15: News of January 2014"
+short_title: "Monthly JSter #15"
+user: bebraw
+slug: monthly-jster-january-2014-part-2
+body: |
+  So we managed to beat January. Good riddance! As usual it was a busy month for JS peeps. A lot of new libraries came out and a good deal of excellent content became available.
+
+  I won't stall you any longer. Dig in!
+
+  ## Libraries
+
+  {{ screenshot: http://blog.jquery.com/2014/01/24/jquery-1-11-and-2-1-released/ }}
+
+  * [jQuery 1.11 and 2.1 Released](http://blog.jquery.com/2014/01/24/jquery-1-11-and-2-1-released/)
+  * [Knwl.js](https://github.com/loadfive/knwl.js) - A natural language processor
+  * [Webkit.js](http://badassjs.com/post/73526882798/webkit-js-its-happening-for-real-with-emscriptens) - It's happening for real
+  * [sprintft.js](https://github.com/alexei/sprintf.js) - And C neckbeards cried tears of joy
+  * [Mediator.js](https://github.com/ajacksified/Mediator.js) - An implementation of the mediator pattern for asynchronous events in JavaScript
+  * [PhotoJShop](http://cube3x.com/2014/01/photojshop-jquery-photo-editing-library/)
+  * [slidr.js](http://www.bchanx.com/slidr) - Slide transitions!
+  * [em-dosbox](https://github.com/dreamlayers/em-dosbox/) - Besides old DOS games it runs Windows 3.1 too. Solitaire time!
+  * [fn.js](http://eliperelman.com/fn.js/) - Functional love for everyone
+  * [fit.js](http://soulwire.github.io/fit.js/) - Fit things into other things
+  * [Shore](https://github.com/Codingbean/Shore) - Waveform generator
+
+  ## Articles
+
+  {{ screenshot: https://blog.mozilla.org/luke/2014/01/14/asm-js-aot-compilation-and-startup-performance/ }}
+
+  * [asm.js AOT Compilation and Startup Performance](https://blog.mozilla.org/luke/2014/01/14/asm-js-aot-compilation-and-startup-performance/)
+  * [JavaScript Generators and Preventing Callback Hell](http://www.sitepoint.com/javascript-generators-preventing-callback-hell/)
+  * [Why Zurb Dropped Zepto](http://zurb.com/article/1293/why-we-dropped-zepto)
+  * [7 JavaScript Tips to Make You Feel Smarter](https://medium.com/cool-code-pal/a1286881aed7) - And make other people hate you while at it.
+
+  ## Debugging
+
+  {{ screenshot: http://keyholesoftware.com/2014/01/06/advanced-debugging-techniques-in-javascript-part-1/ }}
+
+  * [Advanced Debugging Techniques in JavaScript - Part 1](http://keyholesoftware.com/2014/01/06/advanced-debugging-techniques-in-javascript-part-1/)
+  * [Advanced JavaScript Debugging with console.table()](http://blog.mariusschulz.com/2013/11/13/advanced-javascript-debugging-with-consoletable)
+
+  ## Tutorials
+
+  {{ screenshot: http://coding.smashingmagazine.com/2014/01/13/better-javascript-library-for-the-dom/ }}
+
+  * [Writing A Better JavaScript Library For The DOM](http://coding.smashingmagazine.com/2014/01/13/better-javascript-library-for-the-dom/)
+  * [A Dive into Plain JavaScript](http://blog.adtile.me/2014/01/16/a-dive-into-plain-javascript/)
+  * [Mastering the Module Pattern](http://toddmotto.com/mastering-the-module-pattern/)
+
+  ## Socket.io
+
+  * [Token-based Authentication with Socket.io](http://blog.auth0.com/2014/01/15/auth-with-socket-io/)
+
+  ## Performance
+
+  * [We spent a week making Trello boards load extremely fast. Here’s how we did it.](http://blog.fogcreek.com/we-spent-a-week-making-trello-boards-load-extremely-fast-heres-how-we-did-it/)
+
+  ## WebGL
+
+  {{ screenshot: https://hacks.mozilla.org/2014/01/webgl-deferred-shading/ }}
+
+  * [WebGL Deferred Shading](https://hacks.mozilla.org/2014/01/webgl-deferred-shading/)
+  * [Build with Chrome](http://www.buildwithchrome.com/) - Admit it. You always wanted to become a Lego engineer.
+
+  ## Games
+
+  {{ screenshot: http://gamasutra.com/blogs/AustinHallock/20140108/208242/10_of_the_Best_HTML5_Games_from_2013.php }}
+
+  * [10 of the Best HTML5 Games from 2013](http://gamasutra.com/blogs/AustinHallock/20140108/208242/10_of_the_Best_HTML5_Games_from_2013.php)
+
+  ## Node.js
+
+  {{ screenshot: http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/ }}
+
+  * [What's New in Node.js v0.12 - Performance Optimizations](http://strongloop.com/strongblog/performance-node-js-v-0-12-whats-new/)
+
+  ## Guides
+
+  {{ screenshot: http://www.jstherightway.org/ }}
+
+  * [JavaScript - The Right Way](http://www.jstherightway.org/)
+  * [You Might Not Need jQuery](http://youmightnotneedjquery.com/)
+
+  ## Tools
+
+  * [JSCS](https://github.com/mdevils/node-jscs) - JavaScript code checker
+  * [html5test](http://html5test.com/) - How well does your browser support HTML5?
+
+  ## Conclusion
+
+  > Where's the }); key on this keyboard?

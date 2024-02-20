@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feed
+  __reference="https://kevincox.ca/2022/05/06/rss-feed-best-practices/"
+  xmlns="http://www.w3.org/2005/Atom"
+>
+  <title &children="(get context meta.siteName)"></title>
+  <id &children="(get context meta.url)"></id>
+  <link rel="alternate" &href="(get context meta.url)" />
+  <link rel="self" &href="(urlJoin (get context meta.url) atom.xml)" />
+  <updated &children="(dateToISO (get context meta.built))"></updated>
+  <noop &foreach="(get context blogPosts)">
+    <entry>
+      <title &children="(get props title)"></title>
+      <link
+        rel="alternate"
+        type="text/html"
+        &href="(urlJoin (get context meta.url) blog (get props slug))"
+      />
+      <id &children="(get props slug)"></id>
+      <published &children="(dateToISO (get props date))"></published>
+      <content
+        type="text/html"
+        &children="(concat '<![CDATA[' (get props body) ']]>')"
+      ></content>
+    </entry>
+  </noop>
+</feed>

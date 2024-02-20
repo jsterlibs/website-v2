@@ -1,0 +1,46 @@
+type: static
+title: "JSter #111: Libraries, the Usual"
+short_title: "JSter #111"
+user: bebraw
+slug: jster-111
+body: |
+  > Toto, I've a feeling we're not in JavaScript anymore.
+
+  [React Finland](https://react-finland.fi/) (24-26.4) is getting closer. I've been developing the technology around it and the process has taught me a lot about technologies like GraphQL. I'll likely publish a blog post about my learnings so far.
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/sindresorhus/modern-normalize }}
+
+  * [sindresorhus/modern-normalize](https://github.com/sindresorhus/modern-normalize)
+  * [neo-async](https://www.npmjs.com/package/neo-async) - A faster drop-in replacement for async.
+  * [nact](https://nact.io/) - Nact is Redux but for the server.
+  * [react-functional](https://www.npmjs.com/package/react-functional) - Add lifecycle methods to stateless functional components, without the class noise.
+  * [giuseppeg/dss](https://github.com/giuseppeg/dss) - Deterministic Style Sheets.
+  * [DmitrySoshnikov/regexp-tree](https://github.com/DmitrySoshnikov/regexp-tree) - Regular expressions processor in JavaScript.
+
+  ## Articles
+
+  * [An Overview of JavaScript Testing in 2018](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3)
+
+  ## Tutorials
+
+  * ['Hey user, you already see me!!!11'](https://dev.to/btdev/hey-user-you-already-see-me11---svg-based-image-lazyloading-as-a-matter-of-enjoyable-ux-1de9) - SVG-based image lazyloading as a matter of enjoyable UX.
+
+  ## Guides
+
+  * [An Exhaustive Guide to Writing Dockerfiles for Node.js Web Apps](https://blog.hasura.io/an-exhaustive-guide-to-writing-dockerfiles-for-node-js-web-apps-bbee6bd2f3c4)
+
+  ## Interviews
+
+  * [Parket - A state management library inspired by mobx-state-tree - Interview with Leah Ullmann](https://survivejs.com/blog/parket-interview/)
+  * [substyle - Build Styling Agnostic Components for React - Interview with Jan-Felix Schwarz](https://survivejs.com/blog/substyle-interview/)
+
+  ## Games
+
+  * [rage8885/OpenSC2K](https://github.com/rage8885/OpenSC2K) - SimCity 2000 in JavaScript.
+
+  ## Tools
+
+  * [nebrius/request-inspector](https://github.com/nebrius/request-inspector) - A request timing diagnostic tool for Web and Node.js applications.
+  * [Parcel v1.6.0: Zero Config ES6+ and JSX, Node and Electron Targets, Bundle Statistics, and more!](https://medium.com/@devongovett/parcel-v1-6-0-46f4a2514668)

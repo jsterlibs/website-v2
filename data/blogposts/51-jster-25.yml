@@ -1,0 +1,74 @@
+type: static
+title: "JSter #25: News of June 2014 - Part 2"
+short_title: "JSter #25"
+user: bebraw
+slug: monthly-jster-june-2014-part-2
+body: |
+  > Summer of JavaScript
+
+  ## Libraries
+
+  {{ screenshot: http://getspringy.com/ }}
+
+  * [codemix/fast.js](https://github.com/codemix/fast.js)
+  * [string.js](http://stringjs.com/)
+  * [D4](http://visible.io/) - D3 evolved.
+  * [Springy](http://getspringy.com/) - A force directed graph layout algorithm
+  * [Collections for JavaScript](http://www.collectionsjs.com/)
+  * [min](http://minfwk.com/) - Tiny CSS framework
+  * [Octicons](http://octicons.github.com/)
+
+  ## Articles
+
+  {{ screenshot: http://arstechnica.com/information-technology/2014/06/mozilla-puts-a-development-environment-into-the-browser-with-webide/ }}
+
+  * [Mozilla puts a development environment into the browser with WebIDE](http://arstechnica.com/information-technology/2014/06/mozilla-puts-a-development-environment-into-the-browser-with-webide/)
+  * [Hey Underscore, You're Doing It Wrong!](https://thenewcircle.com/s/post/1468/hey_underscore_you_are_doing_it_wrong_brian_lonsdorf)
+  * [Why Ramda?](http://fr.umio.us/why-ramda/) - Why underscore is so oldskool?
+  * [weaning yourself off jquery](http://substack.net/weaning_yourself_off_jquery)
+
+  ## Tutorials
+
+
+  {{ screenshot: http://bocoup.com/weblog/building-command-line-tools-in-node-with-liftoff/ }}
+
+  * [Building Command Line Tools in Node with Liftoff](http://bocoup.com/weblog/building-command-line-tools-in-node-with-liftoff/)
+  * [Controlling the Canvas with JavaScript Objects by Rachel Smith on CodePen](http://codepen.io/rachsmith/blog/controlling-the-canvas-with-javascript-objects)
+  * [Make Your Own AngularJS, Part 1: Scopes And Digest](http://teropa.info/blog/2013/11/03/make-your-own-angular-part-1-scopes-and-digest.html)
+
+  ## Guides
+
+
+  {{ screenshot: http://kiro.me/blog/typeof_nan.html }}
+
+  * [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+  * [NaN and typeof](http://kiro.me/blog/typeof_nan.html)
+  * [Introducing the Web Audio Editor in Firefox Developer Tools](https://hacks.mozilla.org/2014/06/introducing-the-web-audio-editor-in-firefox-developer-tools/)
+  * [substack/browserify-handbook](https://github.com/substack/browserify-handbook)
+
+  ## Techniques
+
+
+  {{ screenshot: http://fr.umio.us/favoring-curry/ }}
+
+  * [Favoring Curry](http://fr.umio.us/favoring-curry/)
+  * [Minimal Angular module/syntax approach using an IIFE](http://toddmotto.com/minimal-angular-module-syntax-approach-using-an-iife/)
+  * [Prefill Your Own Forms in Dev](http://css-tricks.com/prefill-forms-dev/)
+
+  ## Tools
+
+  {{ screenshot: https://developers.google.com/web/starter-kit/ }}
+
+  * [World Cup...in JSON](http://worldcup.sfg.io/)
+  * [Web Starter Kit](https://developers.google.com/web/starter-kit/)
+  * [wavepot](http://wavepot.com/) - The audio editor you have been missing.
+  * [ki](http://ki-lang.org/) - A lisp for your JavaScript
+  * [m59peacemaker/JavaScript.HardcoreMode](https://github.com/m59peacemaker/JavaScript.HardcoreMode)
+
+  ## Demos
+
+  {{ screenshot: http://pattle.github.io/simpsons-in-css/ }}
+
+  * [The Simpsons in CSS](http://pattle.github.io/simpsons-in-css/)
+  * [WebGL Globe](http://www.alexras.info/code/orbital_objects/)
+  * [CSS3 Waving Flags](http://codepen.io/christopheschwyzer/pen/htvdE)

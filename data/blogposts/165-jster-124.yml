@@ -1,0 +1,45 @@
+type: static
+title: "JSter #124: Libraries and more"
+short_title: "JSter #124"
+user: bebraw
+slug: jster-124
+body: |
+  > The day JavaScript stopped working
+
+  [My fall is going to be quite busy as I'll travel across Europe](https://survivejs.com/blog/fall-2018-events/). You'll see me in Prague, Yerevan, Zagreb, and Helsinki at least.
+
+  ## Libraries
+
+  * [gajus/roarr](https://github.com/gajus/roarr) - JSON logger for Node.js and browser
+  * [yalla](https://github.com/yallajs/yalla) - ES6 Templating Engine
+  * [developit/histore](https://github.com/developit/histore) - 200b key-value store backed by navigation state
+  * [terkelg/prompts](https://github.com/terkelg/prompts) - Lightweight, beautiful and user-friendly interactive prompts
+  * [Rich-Harris/shimport](https://github.com/Rich-Harris/shimport) - Use JavaScript modules in all browsers, including dynamic imports
+  * [kepler.gl](http://kepler.gl/) - Make an impact with your location data
+
+  ## Components
+
+  * [serverless/components](https://github.com/serverless/components) - An easier way to build applications with cloud services
+
+  ## Articles
+
+  * [A tour of JavaScript timers on the web](https://nolanlawson.com/2018/09/01/a-tour-of-javascript-timers-on-the-web/)
+  * [JavaScript vs. TypeScript vs. ReasonML](http://2ality.com/2018/03/javascript-typescript-reasonml.html)
+  * [17 Best React Native Experts and Blogs To Follow In 2018](https://ideamotive.co/blog/best-react-native-experts-blogs/)
+  * [ES2018: Javascript's new features in 2018](https://medium.freecodecamp.org/es9-javascripts-state-of-art-in-2018-9a350643f29c)
+
+  ## Tools
+
+  * [Poi](https://poi.js.org/) - A zero-config bundler for the web
+  * [Rich-Harris/agadoo](https://github.com/Rich-Harris/agadoo) - Check whether a package is tree-shakeable
+  * [Babel 7 has been released](https://babeljs.io/blog/2018/08/27/7.0.0)
+  * [egoist/maid](https://github.com/egoist/maid) - Markdown driven task runner
+  * [mozilla/brackets](https://github.com/mozilla/brackets) - An open source code editor for the web, written in JavaScript, HTML and CSS
+
+  ## Services
+
+  * [JavaScript Type Coercion](https://angularjs-de.github.io/javascript-type-coercion/#/)
+
+  ## Testing
+
+  * [BigTest](https://bigtestjs.io/) - A suite of JavaScript libraries and a framework to test your application

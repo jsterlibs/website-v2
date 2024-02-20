@@ -1,0 +1,63 @@
+type: static
+title: "JSter #106: Libraries, Articles, and more"
+short_title: "JSter #106"
+user: bebraw
+slug: jster-106
+body: |
+  > There's no script like JavaScript.
+
+  [React Finland](https://react-finland.fi/) (end of April 2018) ticket sales are getting closer, so remember to tune in to get one if you want to visit this northern country.
+
+  I [split my webpack book into two books](https://survivejs.com/blog/survivejs-webpack-and-maintenance/) recently. You can [preview the maintenance book](https://survivejs.com/maintenance/) online to get a better idea of the new one. The book lists a large number of good practices and helps you to improve your JavaScript projects.
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/PolymerLabs/lit-html }}
+
+  * [PolymerLabs/lit-html](https://github.com/PolymerLabs/lit-html) - HTML template literals in JavaScript.
+  * [deck.gl](https://uber.github.io/deck.gl/#/) - Large-scale WebGL-powered data visualization.
+  * [TickTock JS](https://yuschick.github.io/TickTock/) - Making digital time mechanical.
+  * [Frappe Charts](https://frappe.github.io/charts/) - GitHub-inspired simple and modern charts for the web with zero dependencies.
+  * [Server.js](https://serverjs.io/) - Express alternative for Node.js.
+  * [Luxon](https://moment.github.io/luxon/) - A powerful, modern, and friendly wrapper for Javascript dates and times.
+  * [Solidarity](https://shift.infinite.red/solidarity-the-cli-for-developer-sanity-672fa81b98e9) - Add Solidarity to your project for multi-machine peace of mind.
+
+  ## Frameworks
+
+  * [AngularJS 5.0](https://blog.angular.io/version-5-0-0-of-angular-now-available-37e414935ced)
+
+  ## CSS
+
+  * [Emotion 8](https://medium.com/@tkh44/emotion-8-9f892346d0af) - The popular CSS-in-JS solution has gained support for source maps and more.
+  * [rofrischmann/elodin](https://github.com/rofrischmann/elodin) - Quality and Optimisation tools for CSS in JavaScript
+
+  ## Articles
+
+  * [The Cost Of JavaScript by Addy Osmani](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)
+  * [Go beyond console.log with the Firefox Debugger – Mozilla Hacks – the Web developer blog](https://hacks.mozilla.org/2017/11/go-beyond-console-log-with-the-firefox-debugger/)
+  * [Back to the future with Proxy](https://medium.com/@gooddev.sergey/back-to-the-future-with-proxy-62f835f68c8d)
+  * [Slaying a UI Antipattern in React](https://medium.com/javascript-inside/slaying-a-ui-antipattern-in-react-64a3b98242c)
+
+  ## Techniques
+
+  * [Into the Great Unknown - Migrating from Mocha to Jest](https://ebaytech.berlin/into-the-great-unknown-migrating-from-mocha-to-jest-3baced083c7e)
+  * [Fast and precise type checking for JavaScript](https://blog.acolyer.org/2017/11/08/fast-and-precise-type-checking-for-javascript/)
+  * [A model for reasoning about JavaScript Promises](https://blog.acolyer.org/2017/11/10/a-model-for-reasoning-about-javascript-promises/)
+  * [Writing JavaScript with accessibility in mind](https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9)
+
+  ## Interviews
+
+  * [react-lite - Implementation of React optimized for small size - Interview with Jade](https://survivejs.com/blog/react-lite-interview/)
+
+  ## Slides
+
+  * [React - Quo Vadis?](https://presentations.survivejs.com/react-quo-vadis/) - Current state of React and where it's going.
+
+  ## Tools
+
+  * [Cheerp 2.0RC1](http://blog.leaningtech.com/2017/11/cheerp-c-to-webassembly-20rc1-released.html) - C/C++ to WebAssembly, mixed JavaScript/Wasm output, 30-90% smaller than Emscripten.
+  * [subfont](https://www.npmjs.com/package/subfont) - A command line tool to statically analyse your page in order to generate the most optimal web font subsets, then inject them into your page.
+
+  ## Demos
+
+  * [Field Play](https://anvaka.github.io/fieldplay/) - Play with maths in a field simulation.

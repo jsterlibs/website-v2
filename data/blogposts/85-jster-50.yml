@@ -1,0 +1,79 @@
+type: static
+title: "JSter #50: News of July 2015 - Part 1"
+short_title: "JSter #50"
+user: bebraw
+slug: monthly-jster-july-2015-part-1
+body: |
+  > You know it's a JavaScript project when half of the files at project root are dotfiles
+
+  As [SurviveJS](http://survivejs.com/) has begun to gain some steam behind it I've set up [a blog](http://survivejs.com/blog/) and [a mailing list](https://buttondown.email/jster) for it. Now the focus is on bumping up the quality of the current Webpack and React related book and going for a bigger release. So if you are interested in these topics, consider signing up.
+
+  ## Libraries
+
+  {{ screenshot: https://paulkinzett.github.io/toolbar/ }}
+
+  * [Cycle.js](http://cycle.js.org/) - A fully reactive JavaScript framework for Human-Computer Interaction
+  * [Toolbar.js](https://paulkinzett.github.io/toolbar/) - A jQuery plugin that creates tooltip style toolbars
+  * [Dynamics.js](http://dynamicsjs.com/) - Create physics-based animations
+  * [Transducers.js](http://jlongster.com/Transducers.js--A-JavaScript-Library-for-Transformation-of-Data) - A JavaScript Library for Transformation of Data
+  * [Boron](http://madscript.com/boron/) - Nice looking modals for React
+  * [rtfeldman/seamless-immutable](https://github.com/rtfeldman/seamless-immutable) - Immutable, backwards compatible data structures for normal Arrays and Objects
+  * [js.org](http://stats.js.org/) - 10k most popular JavaScript projects on GitHub
+
+  ## Articles
+
+  {{ screenshot: https://medium.com/google-developers/introducing-incremental-dom-e98f79ce2c5f }}
+
+  * [Introducing Incremental DOM](https://medium.com/google-developers/introducing-incremental-dom-e98f79ce2c5f) - Google's turn to push the web forward.
+  * [How to Become a Great JavaScript Developer](http://blog.ustunozgur.com/javascript/programming/books/videos/2015/06/17/how_to_be_a_great_javascript_software_developer.html)
+
+  ## Tutorials
+
+  {{ screenshot: http://rigsomelight.com/2015/06/09/straightforward-live-functional-javascript-building-the-yome-widget.html }}
+
+  * [Straightforward (Live) Functional JavaScript: Building the Yome Widget](http://rigsomelight.com/2015/06/09/straightforward-live-functional-javascript-building-the-yome-widget.html)
+  * [React Lessons](http://insin.github.io/react-lessons/) - Interactive React lessons
+  * [Crafting a 3D React Carousel](http://davidwalsh.name/3d-carousel)
+  * [ES6 In Depth: Collections](https://hacks.mozilla.org/2015/06/es6-in-depth-collections/)
+  * [ES6 In Depth: Symbols](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)
+  * [Setting Up a Simple Isomorphic React app](http://jmfurlott.com/tutorial-setting-up-a-simple-isomorphic-react-app/)
+
+  ## Slides
+
+  * [A Brief History of client-side JS: Why React is Awesome](https://prezi.com/x7h8k4vw8qla/a-brief-history-of-client-side-js-why-react-is-awesome/)
+
+  ## Guides
+
+  * [A Guide to React.js Tools and Libraries](http://www.toptal.com/react/navigating-the-react-ecosystem)
+  * [Understanding npm](https://unpm.nodesource.com/) - Amazing visualization about npm
+
+  ## Resources
+
+  * [ericdouglas/ES6-Learning](https://github.com/ericdouglas/ES6-Learning) - If you need to a list of ES6 resources to go through look no further
+  * [kolodny/exercises](https://github.com/kolodny/exercises) - Basic JavaScript coding challenges and interview questions
+  * [coodict/javascript-in-one-pic](https://github.com/coodict/javascript-in-one-pic) - Learn JavaScript in one picture
+  * [For the Badge](http://forthebadge.com/) - If you need a badge, might as well pick one from here
+
+  ## Techniques
+
+  * [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)
+  * [bling dot js](https://gist.github.com/paulirish/12fb951a8b893a454b32) - I.e. how to get most of the power of jQuery without jQuery
+
+  ## Comics
+
+  * [Relentless Persistence](http://cube-drone.com/comics/c/relentless-persistence)
+
+  ## Tools
+
+  * [haydenbleasel/favicons](https://github.com/haydenbleasel/favicons) - Favicon generator for Node.js
+  * [symdiff](https://symdiff.github.io/) - symdiff helps you to figure out which style definitions to remove from your project
+  * [MetaES](http://metaes.org/) - JavaScript interpreter implemented in JavaScript. The world is complete now.
+  * [7 Tools for Hassle Free JavaScript Development](http://jster.net/blog/7-hassle-free-tools)
+  * [facebook/graphql](https://github.com/facebook/graphql) - Time to go RESTless?
+  * [flyjs/fly](https://github.com/flyjs/fly) - New generation build system. Think it as a Koa version of Gulp.
+
+  ## Demos
+
+  * [JavaScript Karplus-Strong](http://amid.fish/javascript-karplus-strong/) - Guitar synthesizer
+  * [Sound of JS](http://soundofjs.com/) - What does your JavaScript sound like?
+  * [codegolf/pac-man](https://github.com/codegolf/pac-man) - Pacman golfed under 0.5k of JavaScript

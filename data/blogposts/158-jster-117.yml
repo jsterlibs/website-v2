@@ -1,0 +1,39 @@
+type: static
+title: "JSter #117: Libraries and techniques"
+short_title: "JSter #117"
+user: bebraw
+slug: jster-117
+body: |
+  > Just JavaScript it.
+
+  Not much to say this time around. A new version of [my table framework for React](https://reactabular.js.org/) is progressing steadily.
+
+  ## Libraries
+
+  * [lukeed/trouter](https://github.com/lukeed/trouter) - A fast, small-but-mighty, familiar fish router
+  * [Nerv](https://nerv.aotu.io/) - A blazing fast React alternative, compatible with IE8 and React 16.
+  * [ow](https://github.com/sindresorhus/ow) - Function argument validation for humans.
+
+  ## Frameworks
+
+  * [Version 6 of Angular Now Available](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
+  * [stimulus](https://github.com/stimulusjs/stimulus) - A modest JavaScript framework for the HTML you already have.
+
+  ## CSS
+
+  * [Milligram](https://milligram.io/) - A minimalist CSS framework.
+
+  ## Articles
+
+  * [The Brutal Lifecycle of JavaScript Frameworks](https://stackoverflow.blog/2018/01/11/brutal-lifecycle-javascript-frameworks/)
+
+  ## Guides
+
+  * [Progressive Web Apps core guides on MDN Web Docs](https://hacks.mozilla.org/2018/05/progressive-web-apps-core-guides-on-mdn-web-docs/)
+
+  ## Techniques
+
+  * [Keep webpack Fast: A Field Guide for Better Build Performance](https://slack.engineering/keep-webpack-fast-a-field-guide-for-better-build-performance-f56a5995e8f1)
+  * [Cover Your Apps While Still Using npm](https://dzone.com/articles/cover-your-apps-while-still-using-npm)
+  * [React.Fragment and Semantic HTML](https://blog.jmes.tech/react-fragment-and-semantic-html/)
+  * [Production Bundling With Bazel](https://blog.nrwl.io/production-bundling-with-bazel-839ac4c52041)

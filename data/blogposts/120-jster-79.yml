@@ -1,0 +1,86 @@
+type: static
+title: "JSter #79: News of September 2016 - Part 2"
+short_title: "JSter #79"
+user: bebraw
+slug: monthly-jster-september-2016-part-2
+body: |
+  > JavaScript is the yellow language in GitHub
+
+  Two weeks went fast. I put serious effort into upgrading my training material. Consider the following slide sets:
+
+  * [JavaScript in 2016](http://survivejs.github.io/javascript-in-2016)
+  * [React in 2016](http://survivejs.github.io/react-in-2016)
+  * [State Management in React](https://survivejs.github.io/state-management-in-react/)
+
+  The material will likely live as more training gigs appear and I understand the topic better.
+
+  ## Libraries
+
+  {{ screenshot: https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8 }}
+
+  * [Vue 2.0 has been released](https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8)
+  * [timeago.js](http://timeago.org/) - Tiny (2Kb) library for formatting dates. No dependencies.
+  * [Exponent](https://getexponent.com/) - Write native mobile applications using JavaScript
+  * [Hyperform](http://hyperform.js.org/) - Capture form validation back from the browser
+  * [Master the DOM with RE:DOM – Medium](https://medium.com/re-dom/master-the-dom-bc1a2a06089b)
+  * [jsnlog](http://nodejs.jsnlog.com/) - Log exceptions on client and server under Node.js
+  * [Cesium](https://cesiumjs.org/) - 3D globes and maps with JavaScript
+  * [Leaflet 1.0](http://leafletjs.com/2016/09/27/leaflet-1.0-final.html) - The popular mapping library reached a milestone release
+  * [g9 Gallery](http://omrelli.ug/g9/gallery/) - Automatically interactive graphics
+  * [Maquette](http://maquettejs.org/) - Pure and simple virtual DOM library
+  * [tj/mdconf](https://github.com/tj/mdconf) - Markdown driven configuration
+  * [developit/jsxobj](https://github.com/developit/jsxobj) - Build JSON using JSX
+
+  ## Frameworks
+
+  * [argon.js](http://argonjs.io/) - A framework for adding augmented reality content to web applications
+
+  ## Scripts
+
+  * [deanhume/image-beast](https://github.com/deanhume/image-beast) - 1 kB script that decides the leanest image format to return based on your browser
+
+  ## Articles
+
+  * [Modernization of Reactivity](https://davidwalsh.name/modernization-reactivity)
+  * [I Promise this was a bad idea](https://korynunn.wordpress.com/2016/09/19/i-promise-this-was-a-bad-idea/)
+
+  ## Guides
+
+  * [JS MythBusters](https://mythbusters.js.org/) - An optimization handbook from a high level point of view
+
+  ## Techniques
+
+  * [Building an Angular 2 Application for Production](http://blog.mgechev.com/2016/06/26/tree-shaking-angular2-production-build-rollup-javascript/)
+
+  ## Interviews
+
+  * [react-game-kit interview with Ken Wheeler](http://survivejs.com/blog/react-game-kit-interview/)
+  * [Reactotron interview with Steve Kellock](http://survivejs.com/blog/reactotron-interview/)
+
+  ## Languages
+
+  * [TypeScript 2.0 is now available!](https://blogs.msdn.microsoft.com/typescript/2016/09/22/announcing-typescript-2-0/)
+
+  ## Games
+
+  * [JavaScript vs C++: Creating the same 3D game in both](http://www.irrlicht3d.org/pivot/entry.php?id=1513)
+
+  ## Templates
+
+  * [A responsive HTML email template](https://github.com/leemunroe/responsive-html-email-template)
+
+  ## Fonts
+
+  * [CSS Font Stack: Web Safe and Web Font Family with HTML and CSS code.](http://www.cssfontstack.com/)
+
+  ## Tools
+
+  * [A collection of critical path CSS tools](https://github.com/addyosmani/critical-path-css-tools)
+  * [Pesticide](http://pesticide.io/) - A chrome plugin for debugging layout issues
+  * [uber/image-diff](https://github.com/uber/image-diff) - Create image differential between two images
+  * [wearekuva/oui](https://github.com/wearekuva/oui) - Objects go in, UI comes out
+
+  ## Demos
+
+  * [100+ Emulators Written in JavaScript](https://hackerlists.com/javascript-emulators/)
+  * [Rain simulator](http://pluvior.com/raindrops.html) - The fall is here

@@ -1,0 +1,48 @@
+type: static
+title: "JSter #93: Techniques, and more"
+short_title: "JSter #93"
+user: bebraw
+slug: jster-93
+body: |
+  > The search for JavaScript.
+
+  The euro tour is finally over. I saw more cities than I can remember and learned a lot about Europe. You can learn more from my [tour recap post](https://survivejs.com/blog/euro-tour-2017-recap/).
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/sindresorhus/promise-fun }}
+
+  * [Hedron](https://jsbros.github.io/hedron/) - A no-frills grid system for minimalists.
+  * [sindresorhus/promise-fun](https://github.com/sindresorhus/promise-fun) - Promise packages, patterns, chat, and tutorials.
+  * [MatteoGabriele/vue-analytics](https://github.com/MatteoGabriele/vue-analytics) - Vue plugin for Google Analytics
+
+  ## Articles
+
+  * [History of SPA frameworks: AngularJS 1.x and nostalgia.](https://medium.com/@vladimirmetnew/history-of-spa-frameworks-angularjs-1-x-and-nostalgia-2e4a00df5ee2)
+  * [Self-driving cars in the browser](http://janhuenermann.com/projects/learning-to-drive)
+
+  ## Tutorials
+
+  * [Getting Started with Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)
+
+  ## Techniques
+
+  * [Decorating Async Javascript Functions](http://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
+  * [Doubling Down on Cross-Browser Testing](https://hacks.mozilla.org/2017/03/doubling-down-on-cross-browser-testing/)
+  * [Refactoring Node with Higher-Order Functions](http://blog.rangle.io/refactoring-node-with-higher-order-functions/)
+  * [IndexedDB: the good parts](https://nolanlawson.github.io/offlinefirst-2016-03/)
+  * [The second case for function tree](http://www.christianalfoni.com/articles/2017_04_16_The-second-case-for-function-tree)
+
+  ## Interviews
+
+  * [CodeSandbox - Online React Playground - Interview with Ives van Hoorne](https://survivejs.com/blog/codesandbox-interview/)
+  * [Fluture - Fantasy Land compliant alternative to Promises - Interview with Aldwin Vlasblom](https://survivejs.com/blog/fluture-interview/)
+  * [Scrimba - Interactive Screencasts Created in an Instant - Interview with Per Harald Borgen](https://survivejs.com/blog/scrimba-interview/)
+
+  ## Tools
+
+  * [Sizzy](https://medium.com/@kitze/introducing-sizzy-a-tool-for-developing-responsive-websites-crazy-fast-39a8c0061992) - A tool for developing responsive websites crazy-fast.
+  * [MRokas/SmartDebug.JS](https://github.com/MRokas/SmartDebug.JS) - Next-generation debugging through Stack Overflow.
+  * [pnpm](https://pnpm.js.org/) - Fast, disk space efficient package manager.
+  * [Tools for Radicals](https://hackernoon.com/tools-for-radicals-73b7cbbfc276)
+  * [d3.express - A better way to code](https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0)

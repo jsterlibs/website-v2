@@ -1,0 +1,61 @@
+type: static
+title: "JSter #134: Libraries and more"
+short_title: "JSter #134"
+user: bebraw
+slug: jster-134
+body: |
+  > I JavaScript, therefore I am
+
+  [React Finland](https://react-finland.fi/) has moved to selling regular bird tickets and the conference is rapidly approaching.
+
+  ## Libraries
+
+  * [H5P](https://h5p.org/) - Create and Share Rich HTML5 Content and Applications
+  * [znck/lazy-hydration](https://github.com/znck/lazy-hydration) - Lazy Hydration for Vue SSR
+  * [spoonx/wetland](https://github.com/spoonx/wetland) - A Node.js ORM, mapping-based. Works with MySQL, PostgreSQL, SQLite and more
+  * [lukeed/formee](https://github.com/lukeed/formee) - A tiny (532B) library for handling `<form>` elements
+
+  ## Frameworks
+
+  * [DoneJS](https://donejs.com/) - An open source JavaScript framework that makes it easy to build high performance, real-time web and mobile applications.
+
+  ## Generators
+
+  * [Gridsome](https://gridsome.org/) - Vue.js-powered static site generator
+
+  ## Tools
+
+  * [ts-earch](https://gillchristian.xyz/ts-earch) - Search engine for TypeScript
+  * [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer
+  * [State Machines: The XState Visualizer](https://kyleshevlin.com/xstate-visualizer/)
+  * [Static Site Boilerplate](http://staticsiteboilerplate.com/)
+
+  ## Services
+
+  * [coetry/reval](https://github.com/coetry/reval) - Evaluate javascript expressions as a microservice
+
+  ## Testing
+
+  * [Functional Programming Fundamentals](https://www.matthewgerstman.com/functional-programming-fundamentals/)
+
+  ## Articles
+
+  * [RE:DOM is a tiny JavaScript library with a huge personality](https://jaxenter.com/redom-javascript-library-154723.html)
+  * [Vue.js is the absolute rockstar of the JavaScript ecosystem](https://jaxenter.com/javascript-superstars-report-154573.html)
+
+  ## Fun
+
+  * [Athari/CssGitHubWindows](https://github.com/Athari/CssGitHubWindows) - GitHub but themed as Windows
+
+  ## GraphQL
+
+  * [Five Common Problems in GraphQL Apps (And How to Fix Them)](https://medium.freecodecamp.org/five-common-problems-in-graphql-apps-and-how-to-fix-them-ac74d37a293c)
+  * [GraphQL vs REST](https://blog.graphqleditor.com/graphql-vs-rest-errors/)
+
+  ## Languages
+
+  * [JS++](https://onux.com/jspp/) - JavaScript Classes, Modules, Type Checking and more
+
+  ## Techniques
+
+  * [Animating URLs with JavasSript and Emojis](http://matthewrayfield.com/articles/animating-urls-with-javascript-and-emojis/)

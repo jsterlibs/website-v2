@@ -1,0 +1,74 @@
+type: static
+title: "JSter #51: News of July 2015 - Part 2"
+short_title: "JSter #51"
+user: bebraw
+slug: monthly-jster-july-2015-part-2
+body: |
+  > Every day is a JavaScript day
+
+  I've been working hard on my book about Webpack and React. Both are emerging technologies and this has been a good time to put something together on those just for the experience alone.
+
+  The book reached an important milestone with its [1.5 release](http://survivejs.com/blog/survivejs-15/). Check the free online edition out. You can get fresh news related to the book through [its mailing list](https://buttondown.email/jster) so free free to subscribe.
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/tessalt/echo-chamber-js }}
+
+  * [tessalt/echo-chamber-js](https://github.com/tessalt/echo-chamber-js) - Create an illusion of comments
+  * [router5](http://router5.github.io/) - Light HTML5 Router
+  * [xtypejs](http://xtype.js.org/) - Elegant, highly efficient data validation for JavaScript Apps
+  * [Forest D3](http://robinforest.net/forest-d3/) - Charting with D3
+  * [autoresponsive-react](https://xudafeng.github.io/autoresponsive-react/) - An Auto Responsive Grid Layout Library for React.js
+  * [canalplus/rx-player](https://github.com/canalplus/rx-player) - HTML5 video player with rx
+  * [chenglou/react-motion](https://github.com/chenglou/react-motion) - Better animations for React.js
+  * [Spectacle - a Spectabular Presentation Library Based on React.js](http://projects.formidablelabs.com/spectacle/)
+
+  ## Frameworks
+
+  * [Materialize](http://materializecss.com/) - A modern responsive front-end framework based on Material Design
+
+  ## Articles
+
+  {{ screenshot: http://www.codereadability.com/javascript-default-parameters-with-or-operator/ }}
+
+  * [You Might Not Need Underscore](https://www.reindex.io/blog/you-might-not-need-underscore)
+  * [Don't use ||](http://www.codereadability.com/javascript-default-parameters-with-or-operator/)
+  * [Practical Questions Around Web Components](http://ianfeather.co.uk/practical-questions-around-web-components/)
+  * [GraphQL in the age of REST APIs](https://medium.com/chute-engineering/graphql-in-the-age-of-rest-apis-b10f2bf09bba)
+  * [Essential Steps: Long Term Support for Node.js](https://medium.com/@nodesource/essential-steps-long-term-support-for-node-js-8ecf7514dbd)
+  * [React.js + Performance = ?](https://aerotwist.com/blog/react-plus-performance-equals-what/)
+
+  ## Tutorials
+
+  * [ES6 In Depth: Classes](https://hacks.mozilla.org/2015/07/es6-in-depth-classes/)
+  * [ES6 In Depth: Proxies](https://hacks.mozilla.org/2015/07/es6-in-depth-proxies-and-reflect/)
+  * [How to Self Detect a Memory Leak in Node](http://www.nearform.com/nodecrunch/self-detect-memory-leak-node/)
+  * [React Contexts and Dependency Injection](http://jaysoo.ca/2015/06/09/react-contexts-and-dependency-injection/)
+
+  ## Guides
+
+  * [Making Performant React.js Applications](http://greweb.me/2015/08/making-performant-react-applications/)
+  * [Understanding Prototypes, Delegation & Composition](http://www.datchley.name/understanding-prototypes-delegation-composition/)
+
+  ## Techniques
+
+  * [Exploring ES2016 Decorators](https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841)
+
+  ## Resources
+
+  * [A Quick Look at React.js Books](http://survivejs.com/blog/react-books/)
+  * [A Quick Tour Of ES6 (Or, The Bits You’ll Actually Use)](http://jamesknelson.com/es6-the-bits-youll-actually-use/)
+
+  ## Tools
+
+  * [ESLint 1.0.0 released](http://eslint.org/blog/2015/07/eslint-1.0.0-released/)
+  * [purifycss/purifycss - Clean up your CSS](https://github.com/purifycss/purifycss)
+  * [React.js - Complementary Tools](https://github.com/facebook/react/wiki/Complementary-Tools)
+  * [skidding/cosmos - A tool to help you design React.js components](https://github.com/skidding/cosmos)
+
+  ## Demos
+
+  * [City based visualization of popular JavaScript libraries](https://github.com/aserg-ufmg/JSCity/wiki/JSCITY)
+  * [Chill the lion](http://codepen.io/Yakudoo/pen/YXxmYR)
+  * [Hack Physics and JavaScript (part 1) by Rachel Smith on CodePen](http://codepen.io/rachsmith/blog/hack-physics-and-javascript-1)
+  * [Divvy Vision - Chicago Bike share visualization](http://divvy.vision/)

@@ -1,0 +1,42 @@
+type: static
+title: "JSter #104: Libraries, Articles, and more"
+short_title: "JSter #104"
+user: bebraw
+slug: jster-104
+body: |
+  > One JavaScript library too far.
+
+  [My newest book about maintenance](https://github.com/survivejs/maintenance-book) keeps progressing steadily and is close to its first release. You can already peruse the initial contents online!
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/bvaughn/js-worker-search }}
+
+  * [bvaughn/js-worker-search](https://github.com/bvaughn/js-worker-search) - JavaScript client-side search API with web-worker support.
+  * [alvarcarto/url-to-pdf-api](https://github.com/alvarcarto/url-to-pdf-api) - Self-hosted service for rendering HTML to PDF.
+  * [DIO](https://dio.js.org/) - Develop light, declarative UIs using JavaScript.
+  * [Micromodal.js](https://micromodal.now.sh/) - Micromodal.js is a lightweight, configurable and a11y-enabled modal library written in pure JavaScript.
+  * [unfetch](https://www.npmjs.com/package/unfetch) - Tiny 500b fetch "barely-polyfill".
+
+  ## Articles
+
+  * [Observables and Finnish Notation](https://medium.com/@benlesh/observables-and-finnish-notation-df8356ed1c9b) - Not only Hungarians have a notation. Now Finns have one too.
+  * [JavaScript's Promise Leaks Memory](https://alexn.org/blog/2017/10/11/javascript-promise-leaks-memory.html)
+  * [Business logic as a data structure](https://www.jsblog.io/articles/christianalfoni/business_logic_as_a_data_structure)
+  * [Mikeal has seen the future, it’s full of HTML](https://medium.com/@mikeal/ive-seen-the-future-it-s-full-of-html-2577246f2210)
+
+  ## Techniques
+
+  * [Unit Testing Vue.js Components with the Official Vue Testing Tools and Jest](https://alexjoverm.github.io/series/Unit-Testing-Vue-js-Components-with-the-Official-Vue-Testing-Tools-and-Jest/)
+  * [Asynchronous stack traces: why await beats .then()](https://mathiasbynens.be/notes/async-stack-traces)
+
+  ## Games
+
+  * [Snakesilk game engine](https://github.com/snakesilk/snakesilk-engine)
+
+  ## Tools
+
+  * [Project Glimpse](http://node.getglimpse.com/) - Full-stack Node.js web diagnostics.
+  * [Workbox](https://workboxjs.org/) - JavaScript Libraries for Progressive Web Apps.
+  * [webpack v3.7.0](https://github.com/webpack/webpack/releases/tag/v3.7.0)
+  * [How codesandbox makes packages work in the browser; announcing the new packager](https://hackernoon.com/how-we-make-npm-packages-work-in-the-browser-announcing-the-new-packager-6ce16aa4cee6)

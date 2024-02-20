@@ -1,0 +1,144 @@
+type: static
+title: "Monthly JSter #7: News of September 2013"
+short_title: "Monthly JSter #7"
+user: bebraw
+slug: monthly-jster-september-2013
+body: |
+  September, another month filled with JavaScript coding! The community definitely kept busy again. This time we have an extra dose of demos available. You might also be interested in [js13k entries](http://js13kgames.com/).
+
+  Remember that Monthly JSter is available as [a newsletter](https://buttondown.email/jster). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content.
+
+  ## Libraries
+
+  {{ screenshot: http://html9responsiveboilerstrapjs.com/ }}
+
+  * [HTML9 Responsive Boilerstrap JS](http://html9responsiveboilerstrapjs.com/) - Do I need to say more?
+  * [annyang!](https://www.talater.com/annyang/) - Speech recognition for your site!
+  * [OJ](http://ojjs.org/) - Build websites with objects. Weird but strangely working idea.
+  * [json.human.js](http://marianoguerra.github.io/json.human.js/) - JSON formatting for human beings, not just programmers.
+  * [Fabric.js 1.3](http://fabricjs.com/) - Fabric.js reached version 1.3. See [change log](https://github.com/kangax/fabric.js/blob/master/CHANGELOG.md) for details.
+  * [steganography.js](http://www.peter-eigenschink.at/projects/steganographyjs/) - Hide data into images on your site. For whatever good that might do...
+  * [browser-specific-css](https://github.com/sureshdsk/browser-specific-css) - Write CSS aimed for specific browser, device or operating system.
+  * [choc](http://www.fullstack.io/choc/) - Step through code in a visual manner. Perfect for education.
+
+  ### UI
+
+  {{ screenshot: http://designmodo.github.io/Flat-UI/ }}
+
+  * [favico.js](http://lab.ejci.net/favico.js/) - Finally a way to do cool stuff with favicons!
+  * [Flat UI](http://designmodo.github.io/Flat-UI/) - It doesn't get flatter than this.
+  * [tabler](https://github.com/BrandwatchLtd/tabler) - Build dynamic tables on client side. [JSter entry](http://jster.net/library/tabler-js)
+  * [TogetherJS](https://togetherjs.com/) - Allow collaboration on your site.
+  * [CLNDR](http://kylestetz.github.io/CLNDR/) - Calendar plugin for jQuery with some class. [JSter entry](http://jster.net/library/cldnr)
+  * [Semantic UI](http://semantic-ui.com/) - Humanize your semantics.
+  * [FastActive](https://github.com/jonathanstark/FastActive) - Make websites and web apps feel as responsive as native apps on touch devices.
+  * [ZorroJS](http://quasimondo.com/ZorroJS/) - Combine transparency of PNGs with size of JPGs.
+
+  ## Articles
+
+  {{ screenshot: http://flippinawesome.org/2013/08/19/ractive-js-expressions-and-the-new-wave-of-reactive-programming/ }}
+
+  * [Ractive.js Expressions and the New Wave of Reactive Programming](http://flippinawesome.org/2013/08/19/ractive-js-expressions-and-the-new-wave-of-reactive-programming/)
+  * [Internationalization API tips and tricks](http://generatedcontent.org/post/60400838960/intltips)
+  * [Implementing Native Drag and Drop](http://blog.teamtreehouse.com/implementing-native-drag-and-drop)
+  * [Five Helpful Tips When Using RequireJS](http://tech.pro/blog/1561/five-helpful-tips-when-using-requirejs)
+  * [More maintainable Gruntfiles](http://www.thomasboyt.com/2013/09/01/maintainable-grunt.html)
+  * [Taming Big Data - Interview with Udi Falkson of iknow.io](http://jster.net/blog/taming-big-data-with-udi-falkson)
+  * [You’re Optimizing The Wrong Things](http://ericleads.com/2013/04/youre-optimizing-the-wrong-things/)
+  * [How to Become a JavaScript Badass](http://www.clientcide.com/deep-thoughts/how-to-become-a-javascript-badass/)
+  * [Extreme Javascript Minimization](http://mainroach.blogspot.in/2013/09/extreme-javascript-minimization.html)
+  * [Quick Tip – Empty a JavaScript Array](http://dotnet.dzone.com/articles/quick-tip-%E2%80%93-empty-javascript)
+
+  ### Backend
+
+  {{ screenshot: http://martinfowler.com/articles/asyncJS.html }}
+
+  * [Testing Asynchronous JavaScript](http://martinfowler.com/articles/asyncJS.html)
+  * [Analysis of generators and other async patterns in node](http://spion.github.io/posts/analysis-generators-and-other-async-patterns-node.html)
+  * [ES6 on Node.js](http://h3manth.com/new/blog/2013/es6-on-nodejs/)
+  * [What is the MEAN stack?](http://tamaspiros.co.uk/2013/09/19/what-is-the-mean-stack/)
+
+  ### MVC
+
+  {{ screenshot: http://www.ng-newsletter.com/posts/d3-on-angular.html }}
+
+  * [Backbone Is Not Enough](http://blog.shinetech.com/2013/09/06/backbone-is-not-enough/)
+  * [Learn AngularJS With These 5 Practical Examples](http://tutorialzine.com/2013/08/learn-angularjs-5-examples/)
+  * [D3 on AngularJS](http://www.ng-newsletter.com/posts/d3-on-angular.html)
+  * [10 Reasons Why You Should Use AngularJS](http://www.sitepoint.com/10-reasons-use-angularjs/)
+  * [Frameworkless JavaScript](https://moot.it/blog/technology/frameworkless-javascript.html)
+
+  ### UI
+
+  {{ screenshot: http://philipwalton.github.io/solved-by-flexbox/ }}
+
+  * [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
+  * [Write Your CSS with JavaScript](http://davidwalsh.name/write-css-javascript)
+
+  ## Resources
+
+  {{ screenshot: http://garann.github.io/template-chooser/ }}
+
+  * [favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)
+  * [Template engine chooser](http://garann.github.io/template-chooser/)
+  * [A Collection of Page Transitions](http://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/)
+  * [Dungeons & Developers](http://www.dungeonsanddevelopers.com/)
+  * [SICP in JavaScript](http://www.comp.nus.edu.sg/~cs1101s/sicp/)
+  * [ECMAScript 5 compatibility table](http://kangax.github.io/es5-compat-table/) - There's one for [ES6](http://kangax.github.io/es5-compat-table/es6/) too. Truly a lifesaver.
+  * [Sigh, JavaScript](http://sighjavascript.tumblr.com/)
+  * [BrowserSwarm](http://www.browserswarm.com/) - Testing automation.
+  * [SMACSS](http://smacss.com/) - Also known as "Scalable and Modular Architecture for CSS"
+  * [JavaScript Allonge is Free](http://braythwayt.com/2013/10/01/javascript-allonge-is-free.html) - It's an ebook.
+
+  ## Tools
+
+  {{ screenshot: http://getfireshell.com/ }}
+
+  * [FireShell](http://getfireshell.com/) - Fiercely quick front-end boilerplate and workflows.
+  * [Google Web Designer](https://www.google.com/webdesigner/) - Bring ideas (or ads) to life across screens.
+
+  ## Services
+
+  {{ screenshot: http://thecodeplayer.com/ }}
+
+  * [Errormator](https://errormator.com/) - Track errors and performance issues in your app.
+  * [node-modules](http://node-modules.com/) - Yet another search engine for Node.js modules.
+  * [Codewars](http://www.codewars.com/) - Katas, lots of them.
+  * [Code Avengers](http://www.codeavengers.com/) - Courses, challenges and the shiz.
+  * [HERE API](http://developer.here.com/javascript-apis/api-explorer) - Alternative to Google Maps.
+  * [TheCodePlayer](http://thecodeplayer.com/) - Video style walkthroughs showing how to create something from scratch.
+  * [debuggify](https://www.debuggify.net/) - Error analytics for modern JavaScript applications.
+
+  ## Hardware
+
+  {{ screenshot: http://www.dragoninnovation.com/projects/22-tessel }}
+
+  * [Tessel](http://www.dragoninnovation.com/projects/22-tessel) - It's available now.
+
+  ## Games
+
+  {{ screenshot: http://jswarrior.fusioncharts.com/ }}
+
+  * [The JavaScript Warrior](http://jswarrior.fusioncharts.com/) - Runs on JavaScript. Literally.
+  * [Learn Node.js via Adventures](http://nodeschool.io/)
+  * [HelloRun](http://hellorun.helloenjoy.com/)
+  * [JSNES](http://fir.sh/projects/jsnes/)
+
+  ## Demos
+
+  {{ screenshot: http://jsmess.textfiles.com/ }}
+
+  * [Chirp](https://github.com/rezoner/chirp/wiki/Chirp-composer---reference) - Chiptunes in JavaScript.
+  * [sthlmjs meetup slides](http://www.christianostman.com/sthlmjs/) - A different kind of WebGL presentation.
+  * [Pacman in CSS](http://codepen.io/anon/pen/goKce) - Omnomnom.
+  * [Just a reflektor](https://www.justareflektor.com/), [source](https://github.com/unit9/justareflektor)
+  * [Tearable cloth in asm.js](http://jlongster.com/s/lljs-cloth/)
+  * [World in 1k](http://aem1k.com/world/)
+  * [JavaScript MESS](http://jsmess.textfiles.com/) - Nostalgy.
+  * [FikaScript](http://fikascript.se/) - Swedish version of JavaScript. Jättebra!
+  * [jor1k](http://s-macke.github.io/jor1k/) - OpenRISC OR1K Javascript Emulator Running Linux.
+  * [Projekktor](http://www.projekktor.com/demos/audioslideshow/) - Audio synced slides.
+
+  ## Conclusion
+
+  > To make a mistake is human and to repeat that mistake over millions of browsers is JavaScript.

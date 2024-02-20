@@ -1,0 +1,85 @@
+type: static
+title: "7 Useful HTML5 UI Frameworks For Mobile App Development"
+short_title: "7 UI Frameworks for Mobile"
+user: bebraw
+slug: 7-mobile-ui-frameworks
+body: |
+  Thanks to the advanced mobile app development frameworks available out there mobile application development is easier than ever. There is no dearth of prolific frameworks that facilitate developers to build captivating and trendy applications with a flair.
+
+  With the incessantly increasing demand of HTML5 mobile applications in the market, web developers are seeking tools and frameworks that can help them deliver remarkable UX. Fortunately, today we have HTML5 UI frameworks that are specifically designed to ensure an intuitive and classy interface to augment the usability of apps.
+
+  This post will showcase some of the best HTML5 UI frameworks available in the market.
+
+  ## What is a UI Framework?
+
+  <div class="picture"><img src="/img/blog/82/html5ui.jpg" alt="HTML5 UI Framework" /></div>
+
+  UI frameworks are basically libraries that empowers developers to efficiently build applications that deliver a high end user experience. These libraries include some CSS and JavaScript based files, which are then required to be used in an HTML file. These advanced web technologies make them ideal for both native hybrid and mobile web application development.
+
+  The hybrid apps feature a native wrapper that empowers HTML5 to control the entire UX, and they are developed via some wrapping technology like Cordova. A wrapping technology facilitates HTML5 to efficiently access the native functions of a targeted device.
+
+  Now, I hope it's clear that how an HTML5 UI framework can augment the usability of an application. Here are some impeccable frameworks that make a much sought after choice; let's explore them one by one.
+
+  ## Twitter Bootstrap 3
+
+  {{ screenshot: http://getbootstrap.com/ }}
+
+  [Twitter Bootstrap3](http://getbootstrap.com/) is the most popular UI framework for developing stunning mobile web applications. This advanced HTML, CSS and JavaScript compliant framework enable individuals from a novice to an expert to efficiently develop a desired mobile app.
+
+  It is specifically built to make front-end development a breeze, the source code of the framework implements famous Sass and LESS CSS preprocessors, and add to agile app development. Bootstrap3 is ideal to create responsive HTML5 applications with spectacular interface that can run seamlessly on any device.
+
+  ## Ionic Framework
+
+  {{ screenshot: http://ionicframework.com/ }}
+
+  [Ionic Framework](http://ionicframework.com/) is a cutting edge hybrid tool that heightens hybrid mobile app development with the HTML5 technology. Its powerful, open source, front-end SDK enables one to design beautiful applications without compromising on the app quality.
+
+  It features a mobile-optimized library jam-packed with gestures, components (based on web technologies, including HTML, CSS and JavaScript), and resourceful tools. You can proficiently develop intriguing and highly interactive applications.
+
+  Works for a client-side MVC (Model View Controller) architecture, the Ionic framework is developed with Sass preprocessor and optimized for AngularJS. This helps deliver enticing performance with expeditious, feature-rich, powerful mobile applications. And, this is not it. The framework is not only ideal for app development, but also streamlines app testing process.
+
+  ## jQuery Mobile
+
+  {{ screenshot: https://jquerymobile.com/ }}
+
+  [jQuery Mobile](https://jquerymobile.com/) is the most commonly used HTML5 framework that is available around for a while now. This minimalist framework is built on the top of jQuery UI foundation. It delivers touch-optimized and responsive HTML5 apps that can smoothly run on various devices. It helps create cross-platform compatible results, and thus, makes a viable choice.
+
+  ## Kendo UI
+
+  {{ screenshot: http://www.telerik.com/kendo-ui }}
+
+  [Kendo UI](http://www.telerik.com/kendo-ui) is yet another prolific HTML5 and JavaScript mobile app development UI framework that helps create apps with out of the box design and functionalities. It heavily depends on a set of various jQuery-powered UI widgets.
+
+  It is lightweight and expedites the development process without leaving the app quality behind. This open source framework supports the integration with both the powerful AngularJS and Bootstrap. While there are numerous ready-to-use themes, it also includes a built-in theme builder to help tailor the look and feel of an app in a desired manner.
+
+  ## Topcoat
+
+  {{ screenshot: http://topcoat.io/ }}
+
+  [Adobe Topcoat](http://topcoat.io/) is a fabulous HTML5 UI framework that offers blissful features to develop modern mobile apps for free. The framework relies heavily on CSS instead of JavaScript, this provides a great control to designers. It, thus, facilitates designers to develop highly creative mobile applications with a flair.
+
+  You can develop impressive aesthetics with this captivating tool and ensure its success with a unique and engaging design. Although, the tool is primarily designed to meet the needs of desktop browsers, the integrated mobile stylesheet makes it perfect to develop touch-optimized mobile applications for mobile browsers.
+
+  ## Sencha Touch
+
+  <div class="picture"><img src="/img/blog/82/sencha.jpg" alt="Sencha Touch" /></div>
+
+  [Sencha Touch](http://www.sencha.com/products/touch/) is one of the popular cross-platform HTML5 app development framework. It is an MVC (Modern View Controller) based framework and has gained a great momentum for developing hybrid applications.
+
+  It is exceptionally powerful and enables experts to deliver web applications with an amazing native look and feel. The intuitive interface of the tool makes it easy to develop pleasing applications embracing latest web design trends.
+
+  ## Monaca
+
+  <div class="picture"><img src="/img/blog/82/monaca.jpg" alt="Monaca" /></div>
+
+  [Monaca](https://monaca.io/) is yet another commercial mobile application development platform that supports Cordova plugins and HTML5 APIs. It facilitates flexible hybrid application development with cloud based IDEs with resourceful tools and services. You can seamlessly and flawlessly manage the app development process.
+
+  By using the suitable Cordava plugin, you can proficiently compile and launch your application on multiple mobile platforms. Moreover, being a framework agnostic, it allows one to work with a desired framework to reap the benefits of its cloud-powered services.
+
+  ## Conclusion
+
+  Although there is a huge array of HTML UI frameworks, only a few of them are reliable and worthwhile. Above mentioned are some of the commendable HTML5 UI frameworks that augment mobile app development while ensuring miraculous user experience. All these frameworks have their own benefits, so you must take your prime objectives and target audience into account to streamline your choice with a framework which is most suitable for your project.
+
+  ---
+
+  This was a guest post by Addison Cohen. He is a mobile app developer working with Appsted Ltd, the leading [mobile application development company](http://www.appsted.com/) which delivers most comprehensive mobile application solutions. He loves sharing latest information on mobile technologies like iOS, Android development processes.

@@ -1,0 +1,81 @@
+type: static
+title: "Monthly JSter #8: News of October 2013"
+short_title: "Monthly JSter #8"
+user: bebraw
+slug: monthly-jster-october-2013-part-1
+body: |
+  Okay guys. We're going to try something a little different here. On average we tweet around three times per day at [@jsterlibs](https://twitter.com/jsterlibs). Roughly that means 90 links or so per month. That's a lot to click through.
+
+  As a result I'm trying out something a little different here. How would a bi-weekly publishing schedule sound? Then it's 45 links and I have time to include some commentary and there's less to click through. Everybody wins!
+
+  Remember that Monthly JSter is available as [a newsletter](https://buttondown.email/jster). Our [RSS feed](http://feeds.feedburner.com/jster) contains some occasional extra content including interviews.
+
+  ## Libraries
+
+  {{ screenshot: http://github.hubspot.com/odometer/ }}
+
+  * [httpinvoke](https://github.com/jakutis/httpinvoke) - HTTP client library that shows a lot of promise!
+  * [Bluebird](https://github.com/petkaantonov/bluebird) - A promise library with stellar performance.
+  * [Odometer](http://github.hubspot.com/odometer/) - Awesome looking way to perform number transitions.
+  * [FormBuilder](https://github.com/dobtco/formbuilder) - Let your users build their own forms. Useful for survey builders etc. [Demo](http://dobtco.github.io/formbuilder/).
+
+  ## Articles
+
+  {{ screenshot: http://flippinawesome.org/2013/09/30/functional-reactive-programming-in-javascript/ }}
+
+  * [Node.js and the new web front-end](http://www.nczonline.net/blog/2013/10/07/node-js-and-the-new-web-front-end/) - The good news is that we can leave business logic for the languages that are a good fit for that and insulate ourselves from that.
+  * [How to Make a Bootstrap 3 Theme The Proper Way](http://css.dzone.com/articles/how-make-bootstrap-3-theme)
+  * [Functional Reactive Programming in JavaScript](http://flippinawesome.org/2013/09/30/functional-reactive-programming-in-javascript/)
+  * [Size Does Matter: Choosing a Javascript MVC Framework](http://www.funnyant.com/choosing-javascript-mvc-framework/)
+  * [API first architecture or the fat vs thin server debate](http://www.leaseweblabs.com/2013/10/api-first-architecture-fat-vs-thin-server-debate/)
+  * [10 Time-Saving JavaScript Code Snippets For Web Developers](http://www.bestdesigntuts.com/10-time-saving-javascript-code-snippets-for-web-developers)
+  * [How-to: Heap Snapshots and Handling Node.js Memory Leaks](http://strongloop.com/strongblog/how-to-heap-snapshots/) - The StrongLoop guys strike again. With quality content.
+
+  ## Presentations
+
+  * [JavaScript Testing Tactics](http://blog.testdouble.com/posts/2013-10-03-javascript-testing-tactics.html)
+  * [Grown-up JavaScript with AngularJS](http://www.slideshare.net/sotomajor/grownup-javascript-with-angularjs) - Slides only.
+  * [JavaScript for Designers](http://rachelnabors.com/javascript-for-designers/) - Show this to your designer friends!
+
+  ## Resources
+
+  {{ screenshot: http://ngmodules.org/ }}
+
+  * [ngmodules](http://ngmodules.org/) - Find your Angular modules here.
+  * [bento](http://www.bentobox.io/) - Everything you need to know about web development apparently fits into a bento box.
+  * [Animate.css](http://daneden.me/animate/) - A collection of cool, fun(!) and cross-browser animations.
+  * [The Big List of D3.js Examples](http://christopheviau.com/d3list/)
+  * [Collection of Promise Experiments](http://jsbin.com/OqUWagu/24)
+
+  ## Tools
+
+  {{ screenshot: http://nodeos.github.io/ }}
+
+  * [harp](http://harpjs.com/) - The static web server with built-in preprocessing. Need to host some Markdown files quick and get them rendered? Harp does that.
+  * [StackEdit](http://benweet.github.io/stackedit/) - A sweet, web-based MarkDown editor.
+  * [NodeOS](http://nodeos.github.io/) - Not a troll, I promise.
+  * [nwm](https://github.com/mixu/nwm) - Window manager for X11 developed using Node.js.
+  * [JSIL](http://jsil.org/) - JSIL transforms .NET applications and libraries into cross-browser JavaScript. So if you are into dotnet, this might be your thing.
+  * [html5snippet](http://html5snippet.net/) - More competition to jsbin, jsfiddle and co.
+  * [Strider CD](http://stridercd.com/) - Open source continuous integration and deployment server.
+  * [cubic-bezier](http://cubic-bezier.com/) - Understand how `cubic-bezier` CSS declaration works.
+
+  ## Games
+
+  {{ screenshot: http://toys.usvsth3m.com/javascript-under-pressure/ }}
+
+  * [You Can't JavaScript Under Pressure](http://toys.usvsth3m.com/javascript-under-pressure/) - Or can you? Extra challenge: use only functional solutions.
+  * [Hover](http://www.hover.ie/) - Yes, it's the same they included in CD-ROM version of Windows 95. Nostalgy!
+  * [Full Screen Mario](http://www.fullscreenmario.com/) - Tidit-tiddyti-ti...
+
+  ## Demos
+
+  * [LSO Play](http://play.lso.co.uk/) - Experience LSO's performance from the pole position. Never before has an orchestra been this close to the audience.
+  * [1987 ray-tracer ported to WebGL](http://plunk.org/~grantham/ray1/) - The WebGL port is realtime. Quite sweet actually.
+  * [MacPaint](http://www.cloudpaint.com/client/index.php)
+  * [Digital Landscapes](http://littleworkshop.fr/landscapes/) - Beautiful landscapes implemented in WebGL.
+  * [The Zoomquilt](http://zoomquilt.org/) - Supposedly deadmau5 works well with this. You didn't hear that from me, though.
+
+  ## Conclusion
+
+  > When a JavaScript date has gone bad - "Don't call me, I'll callback you. I promise!"

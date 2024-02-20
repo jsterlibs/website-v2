@@ -1,0 +1,64 @@
+type: static
+title: "Developing Games in JavaScript – Where to Start?"
+short_title: "Developing Games"
+user: bebraw
+slug: developing-games-where-to-start
+body: |
+  Developing a game can be a challenging, complex task particularly if your aim is to make it attractive and packed with lots of capabilities. During the past few years JavaScript has become a good alternative to native development. It allows you to target many platforms at once.
+
+  The problem of course is where and how to start. You can definitely develop everything from scratch but often you might not have the time or interest to do all that. There are various libraries and frameworks available that encapsulate the most common concerns. Given the sheer amount of those, I’ll focus just on a few and try to go through basic functionality you might expect.
+
+  ## Phaser - Desktop and Mobile HTML5 Game Framework
+
+  {{ screenshot: http://phaser.io/ }}
+
+  To get some initial idea of what Phaser, an open source licensed framework, is capable of, check out [game mechanic explorer](http://gamemechanicexplorer.com/) implemented using it. The mechanics are useful beyond Phaser so it’s a good resource to bookmark.
+  Phaser deals with a large amount of game development related concerns. I’ve listed its main features below:
+
+  * Abstract interface over WebGL and Canvas (uses whichever is available behind the scenes)
+  * Preloader to get your game assets loaded properly
+  * Physics support through three different solutions ranging from something very light to a system with polygon and spring support
+  * Sprites - besides showing graphics, you can deal with input as well. They can also be animated and grouped for easier handling.
+  * Particle engine for jet streams and such
+  * Multiple input options ranging from keyboard and mouse to touch
+  * Sound support through various backends (Web Audio, HTML Audio)
+  * Tilemaps so you can get that Zelda clone done
+  * Device scaling to support multiple targets better
+
+  In addition their engine is a plugin based one meaning it should be easy to extend in case you are missing something. If this sounded interesting, head to [http://phaser.io/](http://phaser.io/) in order to learn more about the engine.
+
+  ## Crafty - Code like a fox
+
+  {{ screenshot: http://craftyjs.com/ }}
+
+  Crafty, another open source alternative, shares a lot in common feature-wise. There is no WebGL support as of yet, though. The idea is the same in that there is a common interface over Canvas and DOM. It would not surprise me if Crafty supported WebGL one of these days.
+
+  Physics-wise it’s a more limited alternative as well. It looks like there is some third party support for the popular Box2D library and some basic collision detect in the library itself but that’s about it.
+
+  Rest seems more or less equal. When it comes to tilemaps, there’s a nice third party editor available: [https://github.com/Kibo/TiledMapBuilder](https://github.com/Kibo/TiledMapBuilder).
+
+  To get started with Crafty, head to [http://craftyjs.com/](http://craftyjs.com/).
+
+  ## Pixi Renderer - 2D webGL renderer with canvas fallback
+
+  {{ screenshot: http://www.pixijs.com/ }}
+
+  Based on their tagline open source (MIT) Pixi focuses on performance. It is also a library, not an entire framework, so you are expected to use other libraries for the missing bits, such as audio or physics. You will get a lot of ready, though, as Pixi deals with asset loading, sprites and device interaction for you.
+
+  If you prefer to build your game out of perhaps easier to understand bits, Pixi could be a nice starting point: [http://www.pixijs.com/](http://www.pixijs.com/).
+
+  ## Impact - The Awesomest Way to Create Even More Awesome HTML5 Games!
+
+  {{ screenshot: http://impactjs.com/ }}
+
+  You could say the tagline of Impact doesn’t hold anything back. It comes with all the bells and whistles and there is a level editor included to make development easier. This doesn’t come for free, though. Expect to shell out $99 for a license. See [http://impactjs.com/](http://impactjs.com/) for more information.
+
+  ## Conclusion
+
+  I know there are heaps of JavaScript game engines out there. It is difficult to say where to start. It all depends on what you are going to do and how much you are willing to invest. If you want to go the commercial route, you might as well pick [Unity](http://unity3d.com/). On the other hand some of the alternatives discussed here could do the trick as well.
+
+  There are pretty much two different approaches you could choose from. You can either pick a framework and hope it covers most, if not all, of your needs. Alternatively you could compose your game out of smaller libraries each of which cover some specific task. In this case you would pick something like Pixi and choose libraries to complement it as you hit the boundaries.
+
+  That said it is possible to extend frameworks such as Phaser and Crafty thanks to their flexible architecture. In practice it is a little difficult to say where the limits of this approach are. In the worst case you will need to modify the frameworks themselves to get things done but then this problem applies to libraries as well.
+
+  This post was written in collaboration with Jason Phillips and [Dirt Bike Games 365](http://www.dirtbikegames365.com/).

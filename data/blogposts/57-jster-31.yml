@@ -1,0 +1,68 @@
+type: static
+title: "JSter #31: News of September 2014 - Part 2"
+short_title: "JSter #31"
+user: bebraw
+slug: monthly-jster-september-2014-part-2
+body: |
+  > Two minutes to JS.
+
+  ## Libraries
+
+  {{ screenshot: http://lafikl.github.io/steady.js/ }}
+
+  * [axios](https://www.npmjs.org/package/axios) - Promise based http client modeled after AngularJS $http. Works both client and serverside.
+  * [Steady.js](http://lafikl.github.io/steady.js/) - Just say no to jank on scroll.
+  * [JointJS](http://www.jointjs.com/) - Not what you think. JointJS actually provides means to build graphs and jointed shiz.
+  * [ng-admin: Add an AngularJS admin GUI to any RESTful API](http://marmelab.com/blog/2014/09/15/easy-backend-for-your-restful-api.html) - How come I never thought to implement something like this?
+  * [Echo.js, simple JavaScript image lazy loading](http://toddmotto.com/echo-js-simple-javascript-image-lazy-loading/) - Hooray for laziness!
+  * [KaTeX – The fastest math typesetting library for the web](http://khan.github.io/KaTeX/) - Yup, perfect for math freaks.
+  * [paypal/accessible-html5-video-player](https://github.com/paypal/accessible-html5-video-player) - It must be accessible because PayPal says so.
+  * [angular-data](http://angular-data.pseudobry.com/) - Finally Angular gets some backbone.
+  * [ComcastifyJS by theonion](http://theonion.github.io/comcastifyjs/) - If you think the images load too fast, try this.
+  * [Chartist](http://gionkunz.github.io/chartist-js/) - Responsive charts for everyone and their granny.
+  * [WinJS](http://dev.windows.com/en-us/develop/winjs) - Enjoy the Metro experience now on more platforms!
+  * [way.js](http://gwendall.github.io/way/) - Quick and simple two-way bindings. Because they are so cool anyway.
+
+  ## Articles
+
+  {{ screenshot: http://radar.oreilly.com/2014/09/the-future-of-angularjs.html }}
+
+  * [ECMAScript 6 modules: the final syntax](http://www.2ality.com/2014/09/es6-modules-final.html) - Better learn this and transpile it to production.
+  * [The Future of AngularJS](http://radar.oreilly.com/2014/09/the-future-of-angularjs.html) - Yes, there's a future. It's not all React folks.
+  * [CSS vs. JS Animation: Which is Faster?](http://davidwalsh.name/css-js-animation)
+
+  ## Tutorials
+
+  * [petehunt/webpack-howto](https://github.com/petehunt/webpack-howto) - Get started with webpack and understand why it's the way of the future to package your web apps.
+  * [Zero Viscosity: D3.js Step by Step](http://zeroviscosity.com/category/d3-js-step-by-step) - D3 can seem complex on the first sight. Going through this guide will help you get started.
+  * [Using D3 and SVG Filters to Create a Fog of War Effect](http://vasir.net/blog/data-visualization/using-d3-and-svg-filters-to-create-fog-of-war) - WarCraft anyone?
+
+  ## Guides
+
+  * [Node.js Production Practices](https://www.joyent.com/developers/node) - So you got your Node app to production. What next?
+  * [A JavaScript Refresh](http://www.bytearray.org/?p=5591) - Refresh your JavaScript knowledge.
+
+  ## Techniques
+
+  * [Building JavaScript projects with Make](https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/) - Who would have thought the old champion would still continue to reign?
+
+  ## Games
+
+  * [CodeSpells: Express Yourself With Magic by ThoughtSTEM](https://www.kickstarter.com/projects/thoughtstem/codespells-express-yourself-with-magic) - Not just any magic. The JavaScript kind.
+
+  ## Tools
+
+  {{ screenshot: http://runtimejs.org/ }}
+
+  * [npm 2.0.0](http://blog.npmjs.org/post/98131109725/npm-2-0-0) - The biggest and most beautiful Node package manager reached 2.0.0. What that means for you?
+  * [Runtime.JS](http://runtimejs.org/) - Operating system kernel in JS. Why? Because.
+  * [Node-RED](http://nodered.org/) - Wire internet of things using Node and nodes. Yeah, this thing comes with a node editor. Pun intended.
+  * [BootSwatchr.com](http://bootswatchr.com/) - Generate themes for Bootstrap without tears.
+  * [inikulin/ineed](https://github.com/inikulin/ineed) - Web scraping and HTML preprocessing the easy way. Personally I use just request, async and cheerio but maybe that's just me.
+  * [vthibault/roBrowser](https://github.com/vthibault/roBrowser) - A browser thinger for a game known as Ragnarok Online. Vikings?!?
+
+  ## Demos
+
+  * [WebGL Fluid Experiment](http://haxiomic.github.io/GPU-Fluid-Experiments/html5/) - Guaranteed to melt your computer.
+  * [BrainBrowser v2.1.0](https://brainbrowser.cbrain.mcgill.ca/) - So what does it look like up there?
+  * [JS SIMD Demo](http://sunfishcode.github.io/blog/2014/09/09/js-simd.html) - If you know what SIMD means, check this out. If you don't know what SIMD means, check this out.

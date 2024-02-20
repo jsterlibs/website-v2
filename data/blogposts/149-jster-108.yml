@@ -1,0 +1,41 @@
+type: static
+title: "JSter #108: Libraries, Techniques, and more"
+short_title: "JSter #108"
+user: bebraw
+slug: jster-108
+body: |
+  > JavaScript another day.
+
+  [React Finland](https://react-finland.fi/) (24-26.4.2018 in Helsinki) ticket sales are getting close. Stay tuned!
+
+  ## Libraries
+
+  {{ screenshot: https://github.com/WebReflection/ecma }}
+
+  * [WebReflection/ecma](https://github.com/WebReflection/ecma) - The simplest way to load ES modules or bundled fallbacks.
+  * [upup](https://www.npmjs.com/package/upup) - Kickstarting the Offline First Revolution.
+  * [Font Awesome 5.0](https://fontawesome.com/) - A new major release of the popular font library.
+
+  ## Testing
+
+  * [mrijk/speculaas](https://github.com/mrijk/speculaas) - Node implementation of clojure.spec.
+  * [eddyerburgh/avoriaz](https://github.com/eddyerburgh/avoriaz) - A Vue.js testing utility library.
+
+  ## Techniques
+
+  * [Actual Input Latency: cross-browser measurement and the Hasal testing framework](https://hacks.mozilla.org/2017/12/actual-input-latency-and-the-hasal-testing-framework/)
+  * [Styling React](https://survivejs.com/react/advanced-techniques/styling-react/)
+  * [Understanding React Components](https://survivejs.com/react/getting-started/understanding-react-components/)
+  * [Lazy, composable, and modular JavaScript](https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript)
+
+  ## Interviews
+
+  * [Redux Form - The best way to manage your form state in Redux - Interview with Erik Rasmussen](https://survivejs.com/blog/redux-form-interview/)
+  * [Redux Zero - Single Store, No Reducers - Interview with Matheus Lima](https://survivejs.com/blog/redux-zero-interview/)
+
+  ## Tools
+
+  * [Poi](https://poi.js.org/) - Delightful web development.
+  * [developit/microbundle](https://github.com/developit/microbundle) - Zero-configuration bundler for tiny modules.
+  * [Stencil](https://stenciljs.com/) - The magical, reusable web component generator.
+  * [webpack v4.0.0-alpha.1](https://github.com/webpack/webpack/releases/tag/v4.0.0-alpha.1)
