@@ -1,8 +1,8 @@
 import YAML from "https://esm.sh/yaml@1.10.2";
-// import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
-// import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
+import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
+import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
 import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
-// import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
+import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
 import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
 import getMarkdown from "./transforms/markdown.ts";
 import { getJson } from "../scripts/utils.ts";
@@ -21,7 +21,7 @@ import type { BlogPost, Category, Library, Tag } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
 
-// const config = configSync();
+const config = configSync();
 
 const cacheDirectory = ".gustwind_cache";
 
@@ -128,7 +128,6 @@ function init({ load }: { load: LoadApi }) {
 
             // TODO: Restore using an external API
             // It looks like the missing repos have stargazers set to undefined.
-            /*
             try {
               const response = await fetch(
                 `https://cf-api.jster.net/stargazers?organization=${
@@ -181,7 +180,6 @@ function init({ load }: { load: LoadApi }) {
 
               return { ...library, stargazers: undefined };
             }
-            */
           }
 
           return { ...library, stargazers: undefined };
