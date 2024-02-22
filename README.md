@@ -1,5 +1,3 @@
-[![vr scripts](https://badges.velociraptor.run/flat.svg)](https://velociraptor.run)
-
 # JSter - Website v2
 
 This repository contains the source for jster.net.
@@ -7,6 +5,7 @@ This repository contains the source for jster.net.
 ## Usage
 
 See `deno task` for available build targets.
+
 ### Decompressing cache
 
 Run the following:
