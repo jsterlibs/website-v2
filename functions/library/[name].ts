@@ -1,3 +1,6 @@
+// TODO: How to import template and related components?
+// import libraryPage from "../../site/layouts/libraryPage.html" with { type: "file" };
+
 export async function onRequest(
   context: ExecutionContext & { params: { name?: string } },
 ): Promise<Response> {
