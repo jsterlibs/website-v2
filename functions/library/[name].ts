@@ -1,5 +1,4 @@
-// TODO: How to import template and related components?
-// import libraryPage from "../../site/layouts/libraryPage.html" with { type: "file" };
+import { render } from "../../render.ts";
 
 export async function onRequest(
   context: ExecutionContext & { params: { name?: string } },
@@ -14,12 +13,12 @@ export async function onRequest(
     `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
 
   try {
-    // 1. Get library data somehow (fetch from the site itself or from github?)
+    // TODO: Validate the shape of the data here
     const data = await fetch(url).then((res) => res.json());
 
     // 2. TODO: Render through template
-    // 3. TODO: Later - add data from GitHub and other sources + cache for a day
-    return new Response(`Hello, ${JSON.stringify(data, null, 2)}!`);
+    // 3. TODO: Add data from GitHub and other sources + cache for a day
+    return new Response(render(data as Record<string, unknown>));
   } catch (error) {}
 
   return new Response("Not found", { status: 404 });

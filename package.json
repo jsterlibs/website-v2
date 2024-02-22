@@ -13,5 +13,9 @@
   },
   "keywords": [],
   "author": "Juho Vepsäläinen",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "breezewind": "^1.2.0",
+    "htmlisp": "^0.1.0"
+  }
 }
