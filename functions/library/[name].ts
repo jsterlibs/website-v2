@@ -18,7 +18,7 @@ export async function onRequest(
 
     // 2. TODO: Render through template
     // 3. TODO: Add data from GitHub and other sources + cache for a day
-    return new Response(render(data as Record<string, unknown>));
+    return new Response(render("libraryPage", data as Record<string, unknown>));
   } catch (error) {}
 
   return new Response("Not found", { status: 404 });

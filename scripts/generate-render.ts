@@ -17,20 +17,40 @@ async function generateRenderLayout() {
   await Deno.writeTextFile("render.ts", generateCode());
 }
 
+// TODO: Maybe the real solution to this problem is to allow Gustwind plugin system
+// to be run directly in Node!
 function generateCode() {
-  return `import { htmlToBreezewind } from 'htmlisp';
+  return `// IMPORTANT! This code has been generated, do not alter it directly
+import { htmlToBreezewind } from 'htmlisp';
 import breezewind from 'breezewind';
 import breezewindExtensions from 'breezewind';
 // TODO: Import and initialize twind
 
 // TODO: Include global utilities
-// TODO: Include components
-// TODO: Include utilities (set up imports per component)
-// TODO: Do the same for layouts -> likely possible to reduce to the same problem
+const globalUtilities = {};
 
-function render(ctx: Record<string, unknown>) {
+// TODO: Include component utilities (set up imports per component)
+const componentUtilities = {};
+
+// TODO: Include layouts
+const layouts = {};
+
+// TODO: Include components
+const components = {};
+
+function render(layoutName: string, context: Record<string, unknown>) {
   // TODO: Initialize rendering logic
-  return 'hello from render';
+  return breezewind({
+    component: layouts[layoutName],
+    components: { ...layouts, ...components },
+    extensions: [
+      breezewindExtensions.visibleIf,
+      breezewindExtensions.foreach,
+    ],
+    context,
+    globalUtilities,
+    componentUtilities,
+  });
 }
 
 export { render };`;
