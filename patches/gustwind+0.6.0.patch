@@ -1,0 +1,22 @@
+diff --git a/node_modules/gustwind/esm/gustwind-node/mod.js b/node_modules/gustwind/esm/gustwind-node/mod.js
+index e19e971..aa24535 100644
+--- a/node_modules/gustwind/esm/gustwind-node/mod.js
++++ b/node_modules/gustwind/esm/gustwind-node/mod.js
+@@ -1,4 +1,4 @@
+-import process from "process";
++import process from "node:process";
+ import { applyPlugins, importPlugins } from "../gustwind-utilities/plugins.js";
+ import { evaluatePluginsDefinition } from "../utilities/evaluatePluginsDefinition.js";
+ async function build(initLoadApi, // TODO: Add a default implementation of the load api for node
+diff --git a/node_modules/gustwind/esm/gustwind-utilities/plugins.js b/node_modules/gustwind/esm/gustwind-utilities/plugins.js
+index 5951034..03dbd81 100644
+--- a/node_modules/gustwind/esm/gustwind-utilities/plugins.js
++++ b/node_modules/gustwind/esm/gustwind-utilities/plugins.js
+@@ -1,5 +1,5 @@
+-import { join as joinPath } from "path";
+-import process from "process";
++import { join as joinPath } from "node:path";
++import process from "node:process";
+ const DEBUG = process.env.DEBUG === "1";
+ async function importPlugins({ cwd, initialImportedPlugins, pluginDefinitions, outputDirectory, initLoadApi, mode, }) {
+     const loadedPluginDefinitions = [];
