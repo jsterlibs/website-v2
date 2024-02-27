@@ -8,9 +8,9 @@
   "[md]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescript]": {
+  /*"[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
-  },
+  },*/
   "[typescriptreact]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },

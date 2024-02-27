@@ -20,10 +20,13 @@ async function generateRenderLayout() {
 function generateCode() {
   return `// IMPORTANT! This code has been generated, do not alter it directly
 import { build } from "gustwind";
+import { initLoadApi } from "./utils/loadApi.ts";
 import plugins from "./plugins.json";
 
 function render(layoutName: string, context: Record<string, unknown>) {
   console.log(build, plugins, layoutName, context);
+
+  return build(initLoadApi, plugins, "blog")
 }
 
 export { render };`;
