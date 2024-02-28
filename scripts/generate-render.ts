@@ -17,13 +17,17 @@ async function generateRenderLayout() {
   await Deno.writeTextFile("render.ts", generateCode());
 }
 
+// TODO: 1. Try plugin imports
+// TODO: 2. Rewrite plugins definition to use plugin imports
 function generateCode() {
   return `// IMPORTANT! This code has been generated, do not alter it directly
 import { build } from "gustwind";
+import { plugin } from "gustwind/plugins/breezewind-renderer/mod.ts";
 import { initLoadApi } from "./utils/loadApi.ts";
 import plugins from "./plugins.json";
 
 function render(layoutName: string, context: Record<string, unknown>) {
+  console.log('plugin', plugin);
   console.log(build, plugins, layoutName, context);
 
   return build("./", initLoadApi, plugins, "blog");
