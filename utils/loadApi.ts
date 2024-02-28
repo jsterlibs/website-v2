@@ -1,5 +1,6 @@
-import fs from "node:fs/promises";
-// TODO: Replace dir() with a a Node glob if possible
+// TODO: Replace fs with something else
+// import fs from "node:fs/promises";
+// TODO: Replace dir() with a Node glob if possible
 // import { dir } from "../utilities/fs.ts";
 
 // TODO: Figure out why these are not found
@@ -42,7 +43,8 @@ function initLoadApi(tasks: Tasks): LoadApi {
         payload: { path, type: "" },
       });
 
-      return fs.readFile(path, { encoding: "utf-8" });
+      return Promise.resolve("foobar");
+      // return fs.readFile(path, { encoding: "utf-8" });
     },
     textFileSync(path: string) {
       tasks.push({
@@ -50,7 +52,8 @@ function initLoadApi(tasks: Tasks): LoadApi {
         payload: { path, type: "" },
       });
 
-      return fs.readFileSync(path, { encoding: "utf-8" });
+      return "barfoo";
+      // return fs.readFileSync(path, { encoding: "utf-8" });
     },
   };
 }
