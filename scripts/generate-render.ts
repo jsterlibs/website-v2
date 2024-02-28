@@ -19,15 +19,16 @@ async function generateRenderLayout() {
 
 // TODO: 1. Try plugin imports
 // TODO: 2. Rewrite plugins definition to use plugin imports
+// TODO: Check meta and  breezewind-renderer plugins
 function generateCode() {
   return `// IMPORTANT! This code has been generated, do not alter it directly
 import { build } from "gustwind";
-import { plugin } from "gustwind/plugins/breezewind-renderer/mod.ts";
+// import { plugin } from "gustwind/plugins/meta/mod.ts";
 import { initLoadApi } from "./utils/loadApi.ts";
 import plugins from "./plugins.json";
 
 function render(layoutName: string, context: Record<string, unknown>) {
-  console.log('plugin', plugin);
+  // console.log('plugin', plugin);
   console.log(build, plugins, layoutName, context);
 
   return build("./", initLoadApi, plugins, "blog");
