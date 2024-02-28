@@ -1,5 +1,5 @@
 diff --git a/node_modules/gustwind/esm/gustwind-utilities/plugins.js b/node_modules/gustwind/esm/gustwind-utilities/plugins.js
-index 5951034..03dbd81 100644
+index e2cfaeb..bcbb3ab 100644
 --- a/node_modules/gustwind/esm/gustwind-utilities/plugins.js
 +++ b/node_modules/gustwind/esm/gustwind-utilities/plugins.js
 @@ -1,5 +1,5 @@
@@ -11,7 +11,7 @@ index 5951034..03dbd81 100644
  async function importPlugins({ cwd, initialImportedPlugins, pluginDefinitions, outputDirectory, initLoadApi, mode, }) {
      const loadedPluginDefinitions = [];
 diff --git a/node_modules/gustwind/esm/plugins/breezewind-renderer/mod.js b/node_modules/gustwind/esm/plugins/breezewind-renderer/mod.js
-index 4d83f7c..abb9854 100644
+index 4d83f7c..3d33941 100644
 --- a/node_modules/gustwind/esm/plugins/breezewind-renderer/mod.js
 +++ b/node_modules/gustwind/esm/plugins/breezewind-renderer/mod.js
 @@ -1,5 +1,5 @@
@@ -82,7 +82,7 @@ index 5f3e900..09d0c9b 100644
  // Note that this works only in production mode for now!
  const plugin = {
 diff --git a/node_modules/gustwind/esm/plugins/twind/mod.js b/node_modules/gustwind/esm/plugins/twind/mod.js
-index 7a575f1..d49318a 100644
+index 7a575f1..9c44c65 100644
 --- a/node_modules/gustwind/esm/plugins/twind/mod.js
 +++ b/node_modules/gustwind/esm/plugins/twind/mod.js
 @@ -1,4 +1,4 @@
