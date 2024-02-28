@@ -3,7 +3,13 @@ import pluginDefinition from "../plugins.json" with { type: 'json'};
 
 await Deno.writeTextFile("render.ts", generateCode());
 
-// TODO: 1. Generate plugin imports here in a static form and pass them to build
+// TODO: Alter this to work based on the new definition and pick only
+// the server portions from the plugin definition.
+//
+// Another important thing to do is to convert path lookups into imports
+// so that they can be bundled in.
+//
+// Both need adaptation at Gustwind.
 function generateCode() {
   return `// IMPORTANT! This code has been generated, do not alter it directly
 import { build } from "gustwind";
