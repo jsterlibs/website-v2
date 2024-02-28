@@ -26,7 +26,7 @@ import plugins from "./plugins.json";
 function render(layoutName: string, context: Record<string, unknown>) {
   console.log(build, plugins, layoutName, context);
 
-  return build(initLoadApi, plugins, "blog");
+  return build("./", initLoadApi, plugins, "blog");
 }
 
 export { render };`;

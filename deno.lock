@@ -97,11 +97,11 @@
       "dependencies": [
         "npm:@cloudflare/workers-types@^4.20240222.0",
         "npm:breezewind@^1.2.0",
-        "npm:gustwind@^0.6.0",
+        "npm:gustwind@^0.7.0",
         "npm:htmlisp@^0.1.0",
         "npm:patch-package@^8.0.0",
         "npm:typescript@^5.3.3",
-        "npm:wrangler@^3.29.0"
+        "npm:wrangler@^3.30.0"
       ]
     }
   }
