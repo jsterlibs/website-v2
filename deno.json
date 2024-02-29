@@ -9,5 +9,10 @@
     "compress:cache": "tar -zcf build/cache.tar.gz .gustwind_cache",
     "decompress:cache": "wget -c $CACHE_LOCATION -O - | tar -xz",
     "generate:manifest": "deno run -A --unstable ./scripts/generate-manifest.ts"
+  },
+  "imports": {
+    "@twind/preset-autoprefix": "https://esm.sh/@twind/preset-autoprefix@1.0.5",
+    "@twind/preset-tailwind": "https://esm.sh/@twind/preset-tailwind@1.1.1",
+    "@twind/preset-typography": "https://esm.sh/@twind/preset-typography@1.0.5"
   }
 }
