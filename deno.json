@@ -11,6 +11,14 @@
     "generate:manifest": "deno run -A --unstable ./scripts/generate-manifest.ts"
   },
   "imports": {
+    "highlight.js": "https://unpkg.com/@highlightjs/cdn-assets@11.9.0/es/core.min.js",
+    "highlight.js/lib/languages/bash": "https://unpkg.com/highlight.js@11.9.0/es/languages/bash",
+    "highlight.js/lib/languages/javascript": "https://unpkg.com/highlight.js@11.9.0/es/languages/javascript",
+    "highlight.js/lib/languages/json": "https://unpkg.com/highlight.js@11.9.0/es/languages/json",
+    "highlight.js/lib/languages/typescript": "https://unpkg.com/highlight.js@11.9.0/es/languages/typescript",
+    "highlight.js/lib/languages/yaml": "https://unpkg.com/highlight.js@11.9.0/es/languages/yaml",
+    "marked": "https://unpkg.com/marked@9.1.5/lib/marked.esm.js",
+    "@twind/core": "https://esm.sh/@twind/core@1.1.1",
     "@twind/preset-autoprefix": "https://esm.sh/@twind/preset-autoprefix@1.0.5",
     "@twind/preset-tailwind": "https://esm.sh/@twind/preset-tailwind@1.1.1",
     "@twind/preset-typography": "https://esm.sh/@twind/preset-typography@1.0.5"

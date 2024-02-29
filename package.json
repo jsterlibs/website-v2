@@ -5,10 +5,13 @@
   "main": "index.js",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240222.0",
+    "@twind/core": "^1.1.1",
     "@twind/preset-autoprefix": "^1.0.7",
     "@twind/preset-tailwind": "^1.1.4",
     "@twind/preset-typography": "^1.0.7",
     "gustwind": "^0.11.0",
+    "highlight.js": "^11.9.0",
+    "marked": "^12.0.0",
     "patch-package": "^8.0.0",
     "typescript": "^5.3.3",
     "wrangler": "^3.30.0"
