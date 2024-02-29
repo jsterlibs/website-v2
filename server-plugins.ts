@@ -10,7 +10,9 @@ import meta from "./site/meta.json";
 import { components, componentUtilities } from "./manifest";
 
 export default [
-  htmlispEdgePlugin.init({ components, componentUtilities, globalUtilities }),
-  metaPlugin.init({ meta }),
-  twindPlugin.init({ twindSetup }),
+  htmlispEdgePlugin.init({
+    options: { components, componentUtilities, globalUtilities },
+  }),
+  metaPlugin.init({ options: { meta } }),
+  twindPlugin.init({ options: { twindSetup } }),
 ];
