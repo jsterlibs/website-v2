@@ -8,6 +8,6 @@
     "serve:linked": "gustwind -s -p 3000 -i ./build",
     "compress:cache": "tar -zcf build/cache.tar.gz .gustwind_cache",
     "decompress:cache": "wget -c $CACHE_LOCATION -O - | tar -xz",
-    "generate:render": "deno run -A --unstable ./scripts/generate-render.ts"
+    "generate:manifest": "deno run -A --unstable ./scripts/generate-manifest.ts"
   }
 }
