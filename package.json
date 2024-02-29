@@ -12,7 +12,7 @@
   },
   "scripts": {
     "postinstall": "patch-package",
-    "start": "wrangler pages dev ."
+    "start": "wrangler pages dev . --compatibility-flags=\"nodejs_compat\""
   },
   "keywords": [],
   "author": "Juho Vepsäläinen",
