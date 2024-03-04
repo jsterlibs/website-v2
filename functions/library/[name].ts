@@ -1,4 +1,4 @@
-import { render } from "../../render.ts";
+import { initRender } from "../../render.ts";
 
 export async function onRequest(
   context: ExecutionContext & { params: { name?: string } }
@@ -14,6 +14,8 @@ export async function onRequest(
   try {
     // TODO: Validate the shape of the data here
     const data = await fetch(url).then((res) => res.json());
+
+    const render = await initRender();
 
     console.log("fetched data", data);
 
