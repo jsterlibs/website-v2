@@ -1279,7 +1279,7 @@ index 5f3e900..821798c 100644
  };
  export { plugin };
 diff --git a/node_modules/gustwind/esm/plugins/twind/mod.js b/node_modules/gustwind/esm/plugins/twind/mod.js
-index 3176b6d..b0c63b0 100644
+index 3176b6d..230a592 100644
 --- a/node_modules/gustwind/esm/plugins/twind/mod.js
 +++ b/node_modules/gustwind/esm/plugins/twind/mod.js
 @@ -1,35 +1,37 @@
