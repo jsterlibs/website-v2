@@ -1,0 +1,37 @@
+type: static
+title: "JSter #214: Libraries and more"
+short_title: "JSter #214"
+user: bebraw
+slug: jster-214
+body: |
+  > It seems we serve the same JavaScript.
+
+  There's nothing specific to announce this time around. Keep doing good work.
+
+  ## Libraries
+
+  * [input-otp - Simple OTP entry component for React](https://buff.ly/49TX539)
+  * [capo.js: get your ﹤𝚑𝚎𝚊𝚍﹥ in order](https://buff.ly/3Img9M0)
+  * [Fuse.js - Powerful, lightweight fuzzy-search library, with zero dependencies](https://buff.ly/3uR9iH4)
+  * [pragmatic-drag-and-drop - Tiny library for dnd](https://buff.ly/3wuW1Vb)
+  * [WebReflection/literal-map - A Map that acts like an object literal to better reflect Python dictionaries in JS](https://buff.ly/3UO1tww)
+  * [facebook/react-strict-dom: React Strict DOM (RSD) is a subset of React DOM, imperative DOM, and CSS that supports web and native targets](https://buff.ly/3wwp4rb)
+  * [htmz - a low power tool for html](https://buff.ly/3T3Slm4)
+  * [QwikDev/pwa: Turn your Qwik Application into an offline compatible PWA](https://buff.ly/3IhVg4B)
+  * [WebReflection/partial: Partial function / Class application.](https://buff.ly/49wBlKC)
+
+  ## Articles
+
+  * [Building a better-sqlite3 compatible JavaScript package with Rust](https://buff.ly/4bWWVd9)
+  * [JavaScript Bloat in 2024](https://buff.ly/49BkTc6)
+  * [The next evolution of serverless is stateful • Solving the decision problem](https://buff.ly/3SxWo8y)
+
+  ## Tools
+
+  * [mcollina/borp: node:test runner wrapper with TypeScript support](https://buff.ly/3OVuQsW)
+  * [Introducing SafeTest: A Novel Approach to Front End Testing](https://buff.ly/49aEXSI)
+
+  ## Demos
+
+  * [random() distribution visualizer](https://buff.ly/3T0bVyy)
+  * [Demonstration code - SQLite/Turso combined with React](https://buff.ly/3SziY0M)
