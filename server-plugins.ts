@@ -1,3 +1,4 @@
+import { plugin as edgeRouterPlugin } from "gustwind/plugins/edge-router";
 import { plugin as htmlispEdgePlugin } from "gustwind/plugins/htmlisp-edge-renderer";
 import { plugin as metaPlugin } from "gustwind/plugins/meta";
 import { plugin as twindPlugin } from "gustwind/plugins/twind";
@@ -10,6 +11,21 @@ import meta from "./site/meta.json";
 import { components, componentUtilities } from "./manifest";
 
 export default [
+  edgeRouterPlugin.init({
+    library: {
+      layout: "libraryPage",
+      meta: {
+        title: {
+          utility: "get",
+          parameters: ["context", "name"],
+        },
+        description: {
+          utility: "get",
+          parameters: ["context", "description"],
+        },
+      },
+    },
+  }),
   htmlispEdgePlugin.init({
     options: { components, componentUtilities, globalUtilities },
   }),
