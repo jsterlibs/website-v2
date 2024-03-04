@@ -18,10 +18,7 @@ export async function onRequest(
     console.log("fetched data", data);
 
     // 2. TODO: Render through template
-    const { markup } = await render(
-      "libraryPage",
-      data as Record<string, unknown>
-    );
+    const markup = await render("libraryPage", data as Record<string, unknown>);
 
     console.log("rendered markup", markup);
 
