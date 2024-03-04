@@ -14,31 +14,24 @@ export default [
   [
     edgeRouterPlugin,
     {
-      options: {
-        routes: {
-          library: {
-            layout: "libraryPage",
-            meta: {
-              title: {
-                utility: "get",
-                parameters: ["context", "name"],
-              },
-              description: {
-                utility: "get",
-                parameters: ["context", "description"],
-              },
+      routes: {
+        library: {
+          layout: "libraryPage",
+          meta: {
+            title: {
+              utility: "get",
+              parameters: ["context", "name"],
+            },
+            description: {
+              utility: "get",
+              parameters: ["context", "description"],
             },
           },
         },
       },
     },
   ],
-  [
-    htmlispEdgePlugin,
-    {
-      options: { components, componentUtilities, globalUtilities },
-    },
-  ],
-  [metaPlugin, { options: { meta } }],
-  [twindPlugin, { options: { twindSetup } }],
+  [htmlispEdgePlugin, { components, componentUtilities, globalUtilities }],
+  [metaPlugin, { meta }],
+  [twindPlugin, { twindSetup }],
 ];
