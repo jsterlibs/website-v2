@@ -13,21 +13,17 @@ export async function onRequest(
 
   try {
     // TODO: Validate the shape of the data here
-    const data = await fetch(url).then((res) => res.json());
-
+    const library = await fetch(url).then((res) => res.json());
     const render = await initRender();
 
-    console.log("fetched data", data);
+    const { markup } = await render("library", { library });
 
-    console.log("render fn", render);
-
-    // 2. TODO: Render through template
-    const markup = await render("library", data as Record<string, unknown>);
-
-    console.log("rendered markup", markup);
-
-    // 3. TODO: Add data from GitHub and other sources + cache for a day
-    return new Response(markup);
+    // TODO: Add data from GitHub and other sources + cache for a day
+    return new Response(markup, {
+      headers: {
+        "content-type": "text/html;charset=UTF-8",
+      },
+    });
   } catch (error) {
     console.error(error);
   }
