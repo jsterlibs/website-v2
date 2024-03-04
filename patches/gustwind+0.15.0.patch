@@ -741,16 +741,16 @@ index 5567b4b..8300513 100644
  };
  export { plugin };
 diff --git a/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js b/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
-index 83b6300..2d5ef3b 100644
+index e1d70ca..837c697 100644
 --- a/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
 +++ b/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
 @@ -1,4 +1,4 @@
 -import process from "process";
 +import process from "node:process";
+ import { htmlToBreezewind } from "../../htmlisp/mod.js";
  import { applyUtilities } from "../../breezewind/applyUtility.js";
  import { defaultUtilities } from "../../breezewind/defaultUtilities.js";
- import { getComponents } from "../../gustwind-utilities/getComponents.js";
-@@ -6,96 +6,104 @@ import { renderComponent } from "../../gustwind-utilities/renderComponent.js";
+@@ -6,100 +6,110 @@ import { renderComponent } from "../../gustwind-utilities/renderComponent.js";
  const DEBUG = process.env.DEBUG === "1";
  // TODO: See if rendering should be decoupled from routing somehow to allow usage without a router
  const plugin = {
@@ -918,7 +918,7 @@ index 83b6300..2d5ef3b 100644
 -                    case "getComponents":
 -                        return { result: getComponents(pluginContext.components) };
 -                    case "getRenderer":
--                        return { result: pluginContext.components[payload].component };
+-                        return { result: pluginContext.components[payload] };
 -                }
 -            },
 -        };
@@ -934,12 +934,19 @@ index 83b6300..2d5ef3b 100644
 +          case "getComponents":
 +            return { result: getComponents(pluginContext.components) };
 +          case "getRenderer":
-+            return { result: pluginContext.components[payload].component };
++            return { result: pluginContext.components[payload] };
 +        }
 +      },
 +    };
 +  },
  };
+ // TODO: It would be good to merge this with the utility
+ function getComponents(components) {
+-    return Object.fromEntries(Object.entries(components).map(([k, v]) => [k, htmlToBreezewind(v)]));
++  return Object.fromEntries(
++    Object.entries(components).map(([k, v]) => [k, htmlToBreezewind(v)])
++  );
+ }
  export { plugin };
 diff --git a/node_modules/gustwind/esm/plugins/meta/mod.js b/node_modules/gustwind/esm/plugins/meta/mod.js
 index 5291fcc..4beeaab 100644
@@ -1279,7 +1286,7 @@ index 5f3e900..821798c 100644
  };
  export { plugin };
 diff --git a/node_modules/gustwind/esm/plugins/twind/mod.js b/node_modules/gustwind/esm/plugins/twind/mod.js
-index 3176b6d..230a592 100644
+index 3176b6d..b0c63b0 100644
 --- a/node_modules/gustwind/esm/plugins/twind/mod.js
 +++ b/node_modules/gustwind/esm/plugins/twind/mod.js
 @@ -1,35 +1,37 @@
