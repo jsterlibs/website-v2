@@ -12,17 +12,19 @@ import { components, componentUtilities } from "./manifest";
 
 export default [
   edgeRouterPlugin.init({
-    routes: {
-      library: {
-        layout: "libraryPage",
-        meta: {
-          title: {
-            utility: "get",
-            parameters: ["context", "name"],
-          },
-          description: {
-            utility: "get",
-            parameters: ["context", "description"],
+    options: {
+      routes: {
+        library: {
+          layout: "libraryPage",
+          meta: {
+            title: {
+              utility: "get",
+              parameters: ["context", "name"],
+            },
+            description: {
+              utility: "get",
+              parameters: ["context", "description"],
+            },
           },
         },
       },
