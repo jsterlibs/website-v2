@@ -741,7 +741,7 @@ index 5567b4b..8300513 100644
  };
  export { plugin };
 diff --git a/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js b/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
-index e1d70ca..837c697 100644
+index 0c58aac..e8e4756 100644
 --- a/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
 +++ b/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
 @@ -1,4 +1,4 @@
@@ -750,7 +750,7 @@ index e1d70ca..837c697 100644
  import { htmlToBreezewind } from "../../htmlisp/mod.js";
  import { applyUtilities } from "../../breezewind/applyUtility.js";
  import { defaultUtilities } from "../../breezewind/defaultUtilities.js";
-@@ -6,100 +6,110 @@ import { renderComponent } from "../../gustwind-utilities/renderComponent.js";
+@@ -7,103 +7,113 @@ import { renderComponent } from "../../gustwind-utilities/renderComponent.js";
  const DEBUG = process.env.DEBUG === "1";
  // TODO: See if rendering should be decoupled from routing somehow to allow usage without a router
  const plugin = {
@@ -831,7 +831,7 @@ index e1d70ca..837c697 100644
 +          },
 +        };
 +      },
-+      render: ({ route, context, pluginContext }) => {
++      render: ({ routes, route, context, pluginContext }) => {
 +        const { components, globalUtilities } = pluginContext;
 +        const componentsLookup = getComponents(components);
 +        const layout = componentsLookup[route.layout];
@@ -844,7 +844,10 @@ index e1d70ca..837c697 100644
 +          component: layout,
 +          components: componentsLookup,
 +          context,
-+          globalUtilities,
++          globalUtilities: getGlobalUtilities({
++            globalUtilities,
++            routes,
++          }),
 +          componentUtilities: options.componentUtilities,
 +        });
 +      },
@@ -874,7 +877,7 @@ index e1d70ca..837c697 100644
 +                  pluginContext: { globalUtilities: options.globalUtilities },
                  };
 -            },
--            render: ({ route, context, pluginContext }) => {
+-            render: ({ routes, route, context, pluginContext }) => {
 -                const { components, globalUtilities } = pluginContext;
 -                const componentsLookup = getComponents(components);
 -                const layout = componentsLookup[route.layout];
@@ -885,7 +888,10 @@ index e1d70ca..837c697 100644
 -                    component: layout,
 -                    components: componentsLookup,
 -                    context,
--                    globalUtilities,
+-                    globalUtilities: getGlobalUtilities({
+-                        globalUtilities,
+-                        routes,
+-                    }),
 -                    componentUtilities: options.componentUtilities,
 -                });
 -            },
