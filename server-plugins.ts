@@ -11,28 +11,34 @@ import meta from "./site/meta.json";
 import { components, componentUtilities } from "./manifest";
 
 export default [
-  edgeRouterPlugin.init({
-    options: {
-      routes: {
-        library: {
-          layout: "libraryPage",
-          meta: {
-            title: {
-              utility: "get",
-              parameters: ["context", "name"],
-            },
-            description: {
-              utility: "get",
-              parameters: ["context", "description"],
+  [
+    edgeRouterPlugin,
+    {
+      options: {
+        routes: {
+          library: {
+            layout: "libraryPage",
+            meta: {
+              title: {
+                utility: "get",
+                parameters: ["context", "name"],
+              },
+              description: {
+                utility: "get",
+                parameters: ["context", "description"],
+              },
             },
           },
         },
       },
     },
-  }),
-  htmlispEdgePlugin.init({
-    options: { components, componentUtilities, globalUtilities },
-  }),
-  metaPlugin.init({ options: { meta } }),
-  twindPlugin.init({ options: { twindSetup } }),
+  ],
+  [
+    htmlispEdgePlugin,
+    {
+      options: { components, componentUtilities, globalUtilities },
+    },
+  ],
+  [metaPlugin, { options: { meta } }],
+  [twindPlugin, { options: { twindSetup } }],
 ];
