@@ -1,13 +1,17 @@
-import * as Html5Entities from "../utilities/html5entities";
-import { install, tw } from "@twind/core";
-import { marked } from "marked";
-import highlight from "highlight.js";
-import highlightBash from "highlight.js/lib/languages/bash";
-import highlightJS from "highlight.js/lib/languages/javascript";
-import highlightJSON from "highlight.js/lib/languages/json";
-import highlightTS from "highlight.js/lib/languages/typescript";
-import highlightYAML from "highlight.js/lib/languages/yaml";
-import twindSetup from "../twindSetup";
+import { install, tw } from "npm:@twind/core";
+import { marked } from "npm:marked";
+import highlight from "npm:highlight.js";
+
+// TODO: For some reason Deno import map doesn't work for this case
+// TODO: This is because of import()
+import highlightBash from "npm:highlight.js/lib/languages/bash";
+import highlightJS from "npm:highlight.js/lib/languages/javascript";
+import highlightJSON from "npm:highlight.js/lib/languages/json";
+import highlightTS from "npm:highlight.js/lib/languages/typescript";
+import highlightYAML from "npm:highlight.js/lib/languages/yaml";
+
+import * as Html5Entities from "../utilities/html5entities.ts";
+import twindSetup from "../twindSetup.ts";
 
 highlight.registerLanguage("bash", highlightBash);
 highlight.registerLanguage("javascript", highlightJS);

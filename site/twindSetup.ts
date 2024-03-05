@@ -1,6 +1,6 @@
-import presetAutoprefix from "@twind/preset-autoprefix";
-import presetTailwind from "@twind/preset-tailwind";
-import presetTypography from "@twind/preset-typography";
+import presetAutoprefix from "npm:@twind/preset-autoprefix";
+import presetTailwind from "npm:@twind/preset-tailwind";
+import presetTypography from "npm:@twind/preset-typography";
 import meta from "./meta.json" assert { type: "json" };
 
 export default {

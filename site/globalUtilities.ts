@@ -1,4 +1,4 @@
-import { urlJoin } from "./utilities/urlJoin";
+import { urlJoin } from "./utilities/urlJoin.ts";
 
 function init() {
   return { urlJoin };
