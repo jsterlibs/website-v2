@@ -8,7 +8,7 @@ import meta from "./site/meta.json";
 
 // The manifest is a generated file since the edge relies on static imports which
 // complicates things a little.
-import { components, componentUtilities } from "./manifest";
+import { components, componentUtilities } from "./manifest.ts";
 
 export default [
   [
