@@ -1,4 +1,5 @@
 import { initRender } from "../../render.ts";
+import { ZLibrary } from "../../types.ts";
 
 type Env = { API_AUTH: string };
 
@@ -20,9 +21,11 @@ export async function onRequest(
   const url = `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
 
   try {
-    // TODO: Validate the shape of the data here
     const library = await fetch(url).then((res) => res.json());
     const render = await initRender();
+
+    // In case library does not have a valid shape, this will throw
+    ZLibrary.parse(library);
 
     const { markup } = await render("library", { library });
 

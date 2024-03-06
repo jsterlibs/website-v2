@@ -1,18 +1,23 @@
+import { z } from "zod";
+
 // deno-lint-ignore no-explicit-any
 type Attributes = Record<string, any>;
 type Category = { id: string; title: string; url: string; library: Library };
-type Library = {
-  id: string;
-  description: string;
-  logo?: string;
-  name: string;
-  links: {
-    site?: string;
-    github?: string;
-  };
-  tags: string[];
-  stargazers?: number;
-};
+
+const ZLibrary = z.object({
+  id: z.string(),
+  description: z.string(),
+  logo: z.string().optional(),
+  name: z.string(),
+  links: z.object({
+    site: z.string().optional(),
+    github: z.string().optional(),
+  }),
+  tags: z.array(z.string()),
+  stargazers: z.number().optional(),
+});
+type Library = z.infer<typeof ZLibrary>;
+
 type DataContext = Record<string, unknown> | Record<string, unknown>[];
 type ParentCategory = { title: string; children: Category[] };
 type BlogPost = {
@@ -42,6 +47,7 @@ type Tag = {
   libraries: Library[];
 };
 
+export { ZLibrary };
 export type {
   Attributes,
   BlogPost,
