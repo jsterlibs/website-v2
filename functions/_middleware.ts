@@ -16,6 +16,7 @@ const abTest = async (context: EventContext<Env, "", {}>) => {
         // Cache results at the browser for one day
         "Cache-Control": `max-age=${ONE_DAY}`,
       },
+      ONE_DAY,
       context.next
     );
   }

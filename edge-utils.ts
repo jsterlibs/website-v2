@@ -4,6 +4,7 @@ async function isr(
   kv: KVNamespace,
   waitUntil: (promise: Promise<any>) => void,
   headers: HeadersInit,
+  expirationTtl: number, // Given in seconds
   getResponse: () => Promise<Response>
 ) {
   const url = new URL(request.url);
@@ -43,7 +44,8 @@ async function isr(
         const res = new Response(response.body);
         const markup = await res.text();
 
-        waitUntil(kv.put(key, markup));
+        // https://developers.cloudflare.com/kv/api/write-key-value-pairs/#create-expiring-keys
+        waitUntil(kv.put(key, markup, { expirationTtl }));
 
         return new Response(markup, { headers: response.headers });
       }
