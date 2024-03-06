@@ -1,27 +1,26 @@
 <svg
   __reference="https://tailwindcomponents.com/component/circular-progress-bar"
-  class="w-20 h-20"
+  class="w-10 h-10"
 >
   <circle
     class="text-gray-300"
     stroke-width="5"
     stroke="currentColor"
     fill="transparent"
-    r="30"
-    cx="40"
-    cy="40"
+    &r="(get props radius)"
+    cx="20"
+    cy="20"
   />
   <circle
     class="text-primary"
     stroke-width="5"
-    stroke-dasharray="188.4"
-    __todo="evaluate dashoffset and accept 40 as a prop"
-    stroke-dashoffset="188.4 - 40 / 100 * 188.4"
+    &stroke-dasharray="(calculateCircumference (get props radius))"
+    &stroke-dashoffset="(calculateDashOffset (get props radius) (get props value))"
     stroke-linecap="round"
     stroke="currentColor"
     fill="transparent"
-    r="30"
-    cx="40"
-    cy="40"
+    &r="(get props radius)"
+    cx="20"
+    cy="20"
   />
 </svg>

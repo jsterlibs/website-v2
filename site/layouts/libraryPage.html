@@ -33,10 +33,77 @@
           </div>
         </div>
       </div>
-      <div &visibleIf="(get context library.security)">
-        <h2 class="text-xl">Security</h2>
-        <div class="flex flex-row gap-4"><CircularProgress /></div>
-        <div class="flex flex-row gap-4">TODO</div>
+      <div
+        &visibleIf="(get context library.security)"
+        class="flex flex-col gap-2"
+      >
+        <h2 class="text-xl">Security metrics</h2>
+        <div>
+          <h3 class="text-lg">Scores</h3>
+          <div class="flex flex-row gap-2">
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.supplyChain)"
+              />
+              <div>Supply chain</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.quality)"
+              />
+              <div>Quality</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.maintenance)"
+              />
+              <div>Maintenance</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.vulnerability)"
+              />
+              <div>Vulnerability</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.license)"
+              />
+              <div>License</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            Dependency count:&nbsp;
+            <span
+              &children="(get context library.security.metrics.dependencyCount)"
+            />
+          </div>
+          <div>
+            Dependency vulnerability count:&nbsp;
+            <span
+              &children="(get context library.security.metrics.dependencyVulnerabilityCount)"
+            />
+          </div>
+        </div>
+        <div>
+          Source:&nbsp;
+          <SiteLink
+            &href="(concat https://socket.dev/npm/package/ (get context library.name))"
+            >socket.dev</SiteLink
+          >
+        </div>
       </div>
     </div>
   </slot>
