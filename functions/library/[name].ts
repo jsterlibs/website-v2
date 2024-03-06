@@ -72,7 +72,12 @@ async function fetchSecurity(
           Authorization: `Bearer ${apiAuth}`,
         },
       }
-    ).then((res) => res.json<Library["security"]>());
+    ).then((res) => res.json<Library["security"] & { error: string }>());
+
+    // TODO: It would be better to catch the errors somehow
+    if (metrics.error) {
+      return;
+    }
 
     return metrics;
   } catch (error) {}
