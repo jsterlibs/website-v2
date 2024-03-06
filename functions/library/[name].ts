@@ -5,13 +5,16 @@ const ONE_DAY = ONE_HOUR * 24;
 
 // Reference: https://developers.cloudflare.com/workers/examples/cache-using-fetch/
 export async function onRequest(
-  context: ExecutionContext & { params: { name?: string } }
+  context: ExecutionContext & { params: { name?: string } },
+  env: { API_AUTH: string }
 ): Promise<Response> {
   const { name } = context.params;
 
   if (!name) {
     return new Response("Not found", { status: 404 });
   }
+
+  console.log("env", env);
 
   const url = `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
 
