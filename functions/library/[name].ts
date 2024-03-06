@@ -6,6 +6,7 @@ type Env = { API_AUTH: string };
 const ONE_HOUR = 60 * 60;
 const ONE_DAY = ONE_HOUR * 24;
 
+// TODO: Pull readme markdown from GitHub to render
 // Reference: https://developers.cloudflare.com/workers/examples/cache-using-fetch/
 export async function onRequest(
   context: ExecutionContext & { params: { name?: string }; env: Env }
@@ -31,7 +32,12 @@ export async function onRequest(
       library.stargazers = stargazers;
     }
 
-    // TODO: Include security metrics
+    const security = await fetchSecurity(context.env.API_AUTH, library.name);
+
+    if (security) {
+      library.security = security;
+    }
+
     const { markup } = await render("library", { library });
 
     return new Response(markup, {
@@ -56,7 +62,28 @@ function fetchLibrary(name: string): Promise<Library> {
   return fetch(url).then((res) => res.json());
 }
 
-async function fetchStargazers(apiAuth: string, githubUrl?: string) {
+async function fetchSecurity(
+  apiAuth: string,
+  name: string
+): Promise<Library["security"]> {
+  try {
+    const metrics = await fetch(
+      `https://cf-api.jster.net/security?name=${name}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiAuth}`,
+        },
+      }
+    ).then((res) => res.json<{ stargazers: number }>());
+
+    return metrics;
+  } catch (error) {}
+}
+
+async function fetchStargazers(
+  apiAuth: string,
+  githubUrl?: string
+): Promise<Library["stargazers"]> {
   if (!githubUrl) {
     return;
   }

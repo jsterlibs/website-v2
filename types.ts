@@ -15,6 +15,22 @@ const ZLibrary = z.object({
   }),
   tags: z.array(z.string()),
   stargazers: z.number().optional(),
+  // There is more data available but only a subset is used for now.
+  security: z
+    .object({
+      score: z.object({
+        supplyChain: z.number(),
+        quality: z.number(),
+        maintenance: z.number(),
+        vulnerability: z.number(),
+        license: z.number(),
+      }),
+      metrics: z.object({
+        dependencyCount: z.number(),
+        dependencyVulnerabilityCount: z.number(),
+      }),
+    })
+    .optional(),
 });
 type Library = z.infer<typeof ZLibrary>;
 
