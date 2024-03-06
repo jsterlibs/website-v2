@@ -30,7 +30,7 @@ export async function onRequest(
       library.stargazers = stargazers;
     }
 
-    const security = await fetchSecurity(context.env.API_AUTH, library.name);
+    const security = await fetchSecurity(library.name);
 
     if (security) {
       library.security = security;
@@ -60,29 +60,41 @@ function fetchLibrary(name: string): Promise<Library> {
   return fetch(url).then((res) => res.json());
 }
 
-async function fetchSecurity(
-  apiAuth: string,
-  name: string
-): Promise<Library["security"]> {
+async function fetchSecurity(name: string): Promise<Library["security"]> {
   try {
-    const metrics = await fetch(
-      `https://cf-api.jster.net/security?name=${name}`,
-      {
-        headers: {
-          Authorization: `Bearer ${apiAuth}`,
-        },
-      }
-    ).then((res) => res.json<Library["security"] & { error: string }>());
+    const { metrics, score, error } = await fetch(
+      // TODO: Figure out a good way to get npm names of packages
+      // as the current solution does not feel ideal
+      `https://socket.dev/api/npm/package-info/score?name=${name
+        .trim()
+        .toLowerCase()}&low_priority=1`
+    ).then((res) =>
+      res.json<{
+        metrics: Record<string, number>;
+        score: Record<string, { score: number }>;
+        error: string;
+      }>()
+    );
 
-    // TODO: It would be better to catch the errors somehow
-    if (metrics.error) {
+    if (error) {
       return;
     }
 
-    return metrics;
+    return {
+      // @ts-expect-error TODO: Type and validate this accurately
+      metrics,
+      score: {
+        supplyChain: score.supplyChainRisk.score,
+        quality: score.quality.score,
+        maintenance: score.maintenance.score,
+        vulnerability: score.vulnerability.score,
+        license: score.license.score,
+      },
+    };
   } catch (error) {}
 }
 
+// TODO: Move the logic here so it's in one place
 async function fetchStargazers(
   apiAuth: string,
   githubUrl?: string
