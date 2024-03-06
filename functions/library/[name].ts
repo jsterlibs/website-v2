@@ -74,7 +74,7 @@ async function fetchSecurity(
           Authorization: `Bearer ${apiAuth}`,
         },
       }
-    ).then((res) => res.json<{ stargazers: number }>());
+    ).then((res) => res.json<Library["security"]>());
 
     return metrics;
   } catch (error) {}
@@ -106,7 +106,7 @@ async function fetchStargazers(
           Authorization: `Bearer ${apiAuth}`,
         },
       }
-    ).then((res) => res.json<{ stargazers: number }>());
+    ).then((res) => res.json<{ stargazers: Library["stargazers"] }>());
 
     return stargazers;
   } catch (error) {}

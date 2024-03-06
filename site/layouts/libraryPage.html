@@ -1,17 +1,17 @@
 <BaseLayout>
   <slot name="content">
-    <div class="p-4 mx-auto max-w-3xl flex flex-row gap-2">
-      <div class="prose lg:prose-xl">
-        <h1 &children="(get context library.name)"></h1>
-        <p &children="(get context library.description)"></p>
-      </div>
-      <div class="flex flex-col gap-4">
+    <div class="p-4 mx-auto max-w-3xl flex flex-col gap-4">
+      <div class="flex flex-row gap-2">
+        <div class="prose lg:prose-xl">
+          <h1 &children="(get context library.name)"></h1>
+          <p &children="(get context library.description)"></p>
+        </div>
         <div class="flex flex-col gap-4">
-          <div>
-            <div
-              &visibleIf="(get context library.stargazers)"
-              &children="(concat 'Stars: ' (get context library.stargazers))"
-            />
+          <div class="flex flex-col gap-4">
+            <div &visibleIf="(get context library.stargazers)">
+              <h2 class="text-xl">Stars</h2>
+              <div &children="(get context library.stargazers)"></div>
+            </div>
             <div>
               <h2 class="text-xl">Links</h2>
               <ul class="flex flex-row gap-2">
@@ -23,15 +23,20 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div
-            &visibleIf="(get context library.tags.length)"
-            class="flex flex-col gap-2"
-          >
-            <h2 class="text-xl">Tags</h2>
-            <SimpleTags &tags="(get context library.tags)" />
+            <div
+              &visibleIf="(get context library.tags.length)"
+              class="flex flex-col gap-2"
+            >
+              <h2 class="text-xl">Tags</h2>
+              <SimpleTags &tags="(get context library.tags)" />
+            </div>
           </div>
         </div>
+      </div>
+      <div &visibleIf="(get context library.security)">
+        <h2 class="text-xl">Security</h2>
+        <div class="flex flex-row gap-4"><CircularProgress /></div>
+        <div class="flex flex-row gap-4">TODO</div>
       </div>
     </div>
   </slot>
