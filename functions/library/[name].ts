@@ -65,6 +65,7 @@ async function fetchSecurity(name: string): Promise<Library["security"]> {
     const { metrics, score, error } = await fetch(
       // TODO: Figure out a good way to get npm names of packages
       // as the current solution does not feel ideal
+      // Note that the endpoint accepts a version parameter. I.e., version=16.0.0
       `https://socket.dev/api/npm/package-info/score?name=${name
         .trim()
         .toLowerCase()}&low_priority=1`
