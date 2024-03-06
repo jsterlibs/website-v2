@@ -3,22 +3,20 @@ import { dir } from "https://deno.land/x/gustwind@v0.64.0/utilities/fs.ts";
 const layouts = await loadFiles({
   path: "./site/layouts",
   extension: ".html",
-  readFile: true,
+  includeExtension: true,
 });
 const components = await loadFiles({
   path: "./site/components",
   extension: ".html",
-  readFile: true,
+  includeExtension: true,
 });
 const layoutUtilities = await loadFiles({
   path: "./site/layouts",
   extension: ".server.ts",
-  readFile: false,
 });
 const componentUtilities = await loadFiles({
   path: "./site/components",
   extension: ".server.ts",
-  readFile: false,
 });
 
 await Deno.writeTextFile("manifest.ts", generateCode());
@@ -30,22 +28,32 @@ ${componentUtilities
   .concat(layoutUtilities)
   .map(
     ([k, v]) =>
-      `import * as ${k} from "./${v.split(".").slice(0, -1).join(".")}";`
+      `import * as ${k}Utilities from "./${v
+        .split(".")
+        .slice(0, -1)
+        .join(".")}";`
+  )
+  .join("\n")}
+
+${components
+  .concat(layouts)
+  .map(
+    ([k, v]) => `import ${k} from "./${v.split(".").slice(0, -1).join(".")}";`
   )
   .join("\n")}
 
 const componentUtilities = {
 ${componentUtilities
   .concat(layoutUtilities)
-  .map(([k]) => `  ${k},`)
+  .map(([k]) => `  ${k}: ${k}Utilities,`)
   .join("\n")}
 };
 
 const components = {
-  ${components
-    .concat(layouts)
-    .map(([k, v]) => `"${k}": \`${v}\``)
-    .join(",\n")}
+${components
+  .concat(layouts)
+  .map(([k]) => `  ${k},`)
+  .join("\n")}
 };
 
 export { components, componentUtilities };`;
@@ -54,11 +62,11 @@ export { components, componentUtilities };`;
 async function loadFiles({
   path,
   extension,
-  readFile,
+  includeExtension,
 }: {
   path: string;
   extension: string;
-  readFile: boolean;
+  includeExtension?: boolean;
 }) {
   // TODO: Inference doesn't work because the script is not in Deno env
   const files: { name: string; path: string }[] = await dir({
@@ -70,7 +78,7 @@ async function loadFiles({
   return Promise.all(
     files.map(async ({ name, path }) => [
       name.split(".")[0],
-      readFile ? await Deno.readTextFile(path) : path,
+      includeExtension ? path + extension : path,
     ])
   );
 }
