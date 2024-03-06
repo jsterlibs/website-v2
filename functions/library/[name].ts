@@ -1,4 +1,4 @@
-import { initRender } from "../../render.ts";
+import { render } from "../../render.ts";
 import { ZLibrary } from "../../types.ts";
 
 type Env = { API_AUTH: string };
@@ -16,20 +16,17 @@ export async function onRequest(
     return new Response("Not found", { status: 404 });
   }
 
-  console.log("env", context.env.API_AUTH);
-
-  const url = `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
-
   try {
-    const library = await fetch(url).then((res) => res.json());
-    const render = await initRender();
+    const library = await fetchLibrary(name);
 
     // In case library does not have a valid shape, this will throw
     ZLibrary.parse(library);
 
+    const { API_AUTH } = context.env;
+    // TODO: Add data from GitHub and other sources
+
     const { markup } = await render("library", { library });
 
-    // TODO: Add data from GitHub and other sources
     return new Response(markup, {
       headers: {
         "Content-Type": "text/html;charset=UTF-8",
@@ -44,4 +41,10 @@ export async function onRequest(
   return new Response("Not found", {
     status: 404,
   });
+}
+
+function fetchLibrary(name: string) {
+  const url = `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
+
+  return fetch(url).then((res) => res.json());
 }
