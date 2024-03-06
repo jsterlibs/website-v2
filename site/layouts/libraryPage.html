@@ -7,8 +7,9 @@
       </div>
       <div class="flex flex-col gap-4">
         <div class="flex flex-col gap-4">
-          <div &visibleIf="(get context library.stargazers)">
-            <a
+          <div>
+            <div
+              &visibleIf="(get context library.stargazers)"
               &children="(concat 'Stars: ' (get context library.stargazers))"
             />
             <div>

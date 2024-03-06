@@ -1,5 +1,5 @@
 import { render } from "../../render.ts";
-import { ZLibrary } from "../../types.ts";
+import { ZLibrary, type Library } from "../../types.ts";
 
 type Env = { API_AUTH: string };
 
@@ -22,9 +22,16 @@ export async function onRequest(
     // In case library does not have a valid shape, this will throw
     ZLibrary.parse(library);
 
-    const { API_AUTH } = context.env;
-    // TODO: Add data from GitHub and other sources
+    const stargazers = await fetchStargazers(
+      context.env.API_AUTH,
+      library.links?.github
+    );
 
+    if (stargazers) {
+      library.stargazers = stargazers;
+    }
+
+    // TODO: Include security metrics
     const { markup } = await render("library", { library });
 
     return new Response(markup, {
@@ -43,8 +50,45 @@ export async function onRequest(
   });
 }
 
-function fetchLibrary(name: string) {
+function fetchLibrary(name: string): Promise<Library> {
   const url = `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
 
   return fetch(url).then((res) => res.json());
+}
+
+async function fetchStargazers(apiAuth: string, githubUrl?: string) {
+  if (!githubUrl) {
+    return;
+  }
+
+  const parts = githubUrl.split("github.com/")[1];
+  const [org, repository] = parts.split("/");
+
+  if (!org || !repository) {
+    return;
+  }
+
+  try {
+    const { stargazers } = await fetch(
+      `https://cf-api.jster.net/stargazers?organization=${trim(
+        org,
+        "/"
+      )}&repository=${trim(repository, "/")}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiAuth}`,
+        },
+      }
+    ).then((res) => res.json<{ stargazers: number }>());
+
+    return stargazers;
+  } catch (error) {}
+}
+
+// https://stackoverflow.com/a/32516190/228885
+function trim(s: string, c: string) {
+  if (c === "]") c = "\\]";
+  if (c === "^") c = "\\^";
+  if (c === "\\") c = "\\\\";
+  return s?.replace(new RegExp("^[" + c + "]+|[" + c + "]+$", "g"), "");
 }
