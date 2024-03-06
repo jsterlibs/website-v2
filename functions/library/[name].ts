@@ -6,6 +6,7 @@ type Env = { API_AUTH: string };
 const ONE_HOUR = 60 * 60;
 const ONE_DAY = ONE_HOUR * 24;
 
+// TODO: Cache results ISR style to a KV for some time
 // TODO: Pull readme markdown from GitHub to render
 // Reference: https://developers.cloudflare.com/workers/examples/cache-using-fetch/
 export async function onRequest(
