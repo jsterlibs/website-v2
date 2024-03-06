@@ -1,16 +1,17 @@
 <BaseLayout>
   <slot name="content">
-    <div class="p-4 mx-auto max-w-3xl flex flex-row gap-2">
-      <div class="prose lg:prose-xl">
-        <h1 &children="(get context library.name)"></h1>
-        <p &children="(get context library.description)"></p>
-      </div>
-      <div class="flex flex-col gap-4">
+    <div class="p-4 mx-auto max-w-3xl flex flex-col gap-4">
+      <div class="flex flex-row gap-2">
+        <div class="prose lg:prose-xl">
+          <h1 &children="(get context library.name)"></h1>
+          <p &children="(get context library.description)"></p>
+        </div>
         <div class="flex flex-col gap-4">
-          <div &visibleIf="(get context library.stargazers)">
-            <a
-              &children="(concat 'Stars: ' (get context library.stargazers))"
-            />
+          <div class="flex flex-col gap-4">
+            <div &visibleIf="(get context library.stargazers)">
+              <h2 class="text-xl">Stars</h2>
+              <div &children="(get context library.stargazers)"></div>
+            </div>
             <div>
               <h2 class="text-xl">Links</h2>
               <ul class="flex flex-row gap-2">
@@ -22,14 +23,86 @@
                 </li>
               </ul>
             </div>
+            <div
+              &visibleIf="(get context library.tags.length)"
+              class="flex flex-col gap-2"
+            >
+              <h2 class="text-xl">Tags</h2>
+              <SimpleTags &tags="(get context library.tags)" />
+            </div>
           </div>
-          <div
-            &visibleIf="(get context library.tags.length)"
-            class="flex flex-col gap-2"
+        </div>
+      </div>
+      <div
+        &visibleIf="(get context library.security)"
+        class="flex flex-col gap-2"
+      >
+        <h2 class="text-xl">Security metrics</h2>
+        <div>
+          <h3 class="text-lg">Scores</h3>
+          <div class="flex flex-row gap-2">
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.supplyChain)"
+              />
+              <div>Supply chain</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.quality)"
+              />
+              <div>Quality</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.maintenance)"
+              />
+              <div>Maintenance</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.vulnerability)"
+              />
+              <div>Vulnerability</div>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+              <CircularProgress
+                padding="5"
+                radius="15"
+                &value="(get context library.security.score.license)"
+              />
+              <div>License</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            Dependency count:&nbsp;
+            <span
+              &children="(get context library.security.metrics.dependencyCount)"
+            />
+          </div>
+          <div>
+            Dependency vulnerability count:&nbsp;
+            <span
+              &children="(get context library.security.metrics.dependencyVulnerabilityCount)"
+            />
+          </div>
+        </div>
+        <div>
+          Source:&nbsp;
+          <SiteLink
+            &href="(concat https://socket.dev/npm/package/ (get context library.name))"
+            >socket.dev</SiteLink
           >
-            <h2 class="text-xl">Tags</h2>
-            <SimpleTags &tags="(get context library.tags)" />
-          </div>
         </div>
       </div>
     </div>

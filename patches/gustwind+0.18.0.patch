@@ -1,0 +1,1309 @@
+diff --git a/node_modules/gustwind/esm/gustwind-utilities/plugins.js b/node_modules/gustwind/esm/gustwind-utilities/plugins.js
+index d5bf043..db897c4 100644
+--- a/node_modules/gustwind/esm/gustwind-utilities/plugins.js
++++ b/node_modules/gustwind/esm/gustwind-utilities/plugins.js
+@@ -1,336 +1,397 @@
+-import { join as joinPath } from "path";
+-import process from "process";
++import { join as joinPath } from "node:path";
++import process from "node:process";
+ const DEBUG = process.env.DEBUG === "1";
+-async function importPlugins({ cwd, initialImportedPlugins, pluginDefinitions, outputDirectory, initLoadApi, mode, }) {
+-    const loadedPluginDefinitions = [];
+-    let initialTasks = [];
+-    if (initialImportedPlugins) {
+-        initialImportedPlugins.forEach(({ plugin, tasks }) => {
+-            loadedPluginDefinitions.push(plugin);
+-            initialTasks = initialTasks.concat(tasks);
+-        });
+-    }
+-    // TODO: Probably this logic should be revisited to make it more robust
+-    // with dependency cycles etc.
+-    // TODO: Validate that all plugin dependencies exist in configuration
+-    for await (const pluginDefinition of pluginDefinitions) {
+-        const { plugin, tasks } = await importPlugin({
+-            cwd,
+-            pluginModule: pluginDefinition.module || await import(pluginDefinition.path.startsWith("http")
+-                ? pluginDefinition.path
+-                : joinPath(cwd, pluginDefinition.path))
+-                .then(({ plugin }) => plugin),
+-            options: pluginDefinition.options,
+-            outputDirectory,
+-            initLoadApi,
+-            mode,
+-        });
+-        initialTasks = initialTasks.concat(tasks);
+-        const { dependsOn } = plugin.meta;
+-        const dependencyIndex = loadedPluginDefinitions.findIndex(({ meta: { name } }) => dependsOn?.includes(name));
+-        // If there are dependencies, make sure the plugin is evaluated last
+-        if (dependencyIndex < 0) {
+-            loadedPluginDefinitions.unshift(plugin);
+-        }
+-        else {
+-            loadedPluginDefinitions.push(plugin);
+-        }
++async function importPlugins({
++  cwd,
++  initialImportedPlugins,
++  pluginDefinitions,
++  outputDirectory,
++  initLoadApi,
++  mode,
++}) {
++  const loadedPluginDefinitions = [];
++  let initialTasks = [];
++  if (initialImportedPlugins) {
++    initialImportedPlugins.forEach(({ plugin, tasks }) => {
++      loadedPluginDefinitions.push(plugin);
++      initialTasks = initialTasks.concat(tasks);
++    });
++  }
++  // TODO: Probably this logic should be revisited to make it more robust
++  // with dependency cycles etc.
++  // TODO: Validate that all plugin dependencies exist in configuration
++  for await (const pluginDefinition of pluginDefinitions) {
++    const { plugin, tasks } = await importPlugin({
++      cwd,
++      pluginModule:
++        pluginDefinition.module ||
++        (await import(
++          pluginDefinition.path.startsWith("http")
++            ? pluginDefinition.path
++            : joinPath(cwd, pluginDefinition.path)
++        ).then(({ plugin }) => plugin)),
++      options: pluginDefinition.options,
++      outputDirectory,
++      initLoadApi,
++      mode,
++    });
++    initialTasks = initialTasks.concat(tasks);
++    const { dependsOn } = plugin.meta;
++    const dependencyIndex = loadedPluginDefinitions.findIndex(
++      ({ meta: { name } }) => dependsOn?.includes(name)
++    );
++    // If there are dependencies, make sure the plugin is evaluated last
++    if (dependencyIndex < 0) {
++      loadedPluginDefinitions.unshift(plugin);
++    } else {
++      loadedPluginDefinitions.push(plugin);
+     }
+-    await applyOnTasksRegistered({
++  }
++  await applyOnTasksRegistered({
++    plugins: loadedPluginDefinitions,
++    tasks: initialTasks,
++  });
++  await sendMessages(loadedPluginDefinitions);
++  // The idea is to proxy routes from all routers so you can use multiple
++  // routers or route definitions to aggregate everything together.
++  const router = {
++    // Last definition wins
++    getAllRoutes() {
++      return applyGetAllRoutes({ plugins: loadedPluginDefinitions });
++    },
++    // First match wins
++    matchRoute(allRoutes, url) {
++      return applyMatchRoutes({
++        allRoutes,
+         plugins: loadedPluginDefinitions,
+-        tasks: initialTasks,
+-    });
+-    await sendMessages(loadedPluginDefinitions);
+-    // The idea is to proxy routes from all routers so you can use multiple
+-    // routers or route definitions to aggregate everything together.
+-    const router = {
+-        // Last definition wins
+-        getAllRoutes() {
+-            return applyGetAllRoutes({ plugins: loadedPluginDefinitions });
+-        },
+-        // First match wins
+-        matchRoute(allRoutes, url) {
+-            return applyMatchRoutes({
+-                allRoutes,
+-                plugins: loadedPluginDefinitions,
+-                url,
+-            });
+-        },
+-    };
+-    return { plugins: loadedPluginDefinitions, router };
++        url,
++      });
++    },
++  };
++  return { plugins: loadedPluginDefinitions, router };
+ }
+-async function importPlugin({ cwd, pluginModule, options, outputDirectory, initLoadApi, mode }) {
+-    const tasks = [];
+-    const api = await pluginModule.init({
+-        cwd,
+-        mode,
+-        options,
+-        outputDirectory,
+-        load: initLoadApi(tasks),
+-    });
+-    return {
+-        plugin: {
+-            meta: pluginModule.meta,
+-            api,
+-            context: api.initPluginContext ? await api.initPluginContext() : {},
+-        },
+-        tasks,
+-    };
++async function importPlugin({
++  cwd,
++  pluginModule,
++  options,
++  outputDirectory,
++  initLoadApi,
++  mode,
++}) {
++  const tasks = [];
++  const api = await pluginModule.init({
++    cwd,
++    mode,
++    options,
++    outputDirectory,
++    load: initLoadApi(tasks),
++  });
++  return {
++    plugin: {
++      meta: pluginModule.meta,
++      api,
++      context: api.initPluginContext ? await api.initPluginContext() : {},
++    },
++    tasks,
++  };
+ }
+ async function sendMessages(plugins) {
+-    const messageSenders = plugins.map(({ api, context }) => [api.sendMessages, context])
+-        .filter(Boolean);
+-    const send = getSend(plugins);
+-    for await (const [sendMessagesFn, pluginContext] of messageSenders) {
+-        if (sendMessagesFn) {
+-            // @ts-expect-error It's not clear how to type context
+-            await sendMessagesFn({ send, pluginContext });
+-        }
++  const messageSenders = plugins
++    .map(({ api, context }) => [api.sendMessages, context])
++    .filter(Boolean);
++  const send = getSend(plugins);
++  for await (const [sendMessagesFn, pluginContext] of messageSenders) {
++    if (sendMessagesFn) {
++      // @ts-expect-error It's not clear how to type context
++      await sendMessagesFn({ send, pluginContext });
+     }
++  }
+ }
+ async function preparePlugins(plugins) {
+-    let prepareTasks = [];
+-    const prepareBuilds = plugins.map(({ api, context }) => [api.prepareBuild, context])
+-        .filter(Boolean);
+-    const send = getSend(plugins);
+-    for await (const [prepareBuild, pluginContext] of prepareBuilds) {
+-        if (prepareBuild) {
+-            // @ts-expect-error It's not clear how to type context
+-            const tasksToAdd = await prepareBuild({ send, pluginContext });
+-            if (tasksToAdd) {
+-                prepareTasks = prepareTasks.concat(tasksToAdd);
+-            }
+-        }
++  let prepareTasks = [];
++  const prepareBuilds = plugins
++    .map(({ api, context }) => [api.prepareBuild, context])
++    .filter(Boolean);
++  const send = getSend(plugins);
++  for await (const [prepareBuild, pluginContext] of prepareBuilds) {
++    if (prepareBuild) {
++      // @ts-expect-error It's not clear how to type context
++      const tasksToAdd = await prepareBuild({ send, pluginContext });
++      if (tasksToAdd) {
++        prepareTasks = prepareTasks.concat(tasksToAdd);
++      }
+     }
+-    return prepareTasks;
++  }
++  return prepareTasks;
+ }
+ async function finishPlugins(plugins) {
+-    let finishTasks = [];
+-    const finishBuilds = plugins.map(({ api, context }) => [api.finishBuild, context])
+-        .filter(Boolean);
+-    const send = getSend(plugins);
+-    for await (const [finishBuild, pluginContext] of finishBuilds) {
+-        if (finishBuild) {
+-            // @ts-expect-error It's not clear how to type context
+-            const tasksToAdd = await finishBuild({ send, pluginContext });
+-            if (tasksToAdd) {
+-                finishTasks = finishTasks.concat(tasksToAdd);
+-            }
+-        }
++  let finishTasks = [];
++  const finishBuilds = plugins
++    .map(({ api, context }) => [api.finishBuild, context])
++    .filter(Boolean);
++  const send = getSend(plugins);
++  for await (const [finishBuild, pluginContext] of finishBuilds) {
++    if (finishBuild) {
++      // @ts-expect-error It's not clear how to type context
++      const tasksToAdd = await finishBuild({ send, pluginContext });
++      if (tasksToAdd) {
++        finishTasks = finishTasks.concat(tasksToAdd);
++      }
+     }
+-    return finishTasks;
++  }
++  return finishTasks;
+ }
+ async function cleanUpPlugins(plugins, routes) {
+-    const cleanUps = plugins.map(({ api, context }) => [api.cleanUp, context])
+-        .filter(Boolean);
+-    for await (const [cleanUp, pluginContext] of cleanUps) {
+-        if (cleanUp) {
+-            // @ts-expect-error It's not clear how to type context
+-            await cleanUp({ routes, pluginContext });
+-        }
++  const cleanUps = plugins
++    .map(({ api, context }) => [api.cleanUp, context])
++    .filter(Boolean);
++  for await (const [cleanUp, pluginContext] of cleanUps) {
++    if (cleanUp) {
++      // @ts-expect-error It's not clear how to type context
++      await cleanUp({ routes, pluginContext });
+     }
++  }
+ }
+-async function applyPlugins({ plugins, url, routes, route, initialContext, }) {
+-    const send = getSend(plugins);
+-    const context = {
+-        ...initialContext,
+-        ...(await applyPrepareContext({
+-            plugins,
+-            send,
+-            route,
+-            url,
+-        })),
+-    };
+-    const { tasks } = await applyBeforeEachRenders({
+-        context,
+-        plugins,
+-        route,
+-        send,
+-        url,
+-    });
+-    await applyOnTasksRegistered({ plugins, tasks });
+-    const markup = await applyRenders({
+-        context,
+-        plugins,
+-        routes,
+-        route,
+-        send,
+-        url,
+-    });
+-    return {
+-        markup: await applyAfterEachRenders({
+-            context,
+-            markup,
+-            plugins,
+-            route,
+-            send,
+-            url,
+-        }),
+-        tasks,
+-    };
++async function applyPlugins({ plugins, url, routes, route, initialContext }) {
++  const send = getSend(plugins);
++  const context = {
++    ...initialContext,
++    ...(await applyPrepareContext({
++      plugins,
++      send,
++      route,
++      url,
++    })),
++  };
++  const { tasks } = await applyBeforeEachRenders({
++    context,
++    plugins,
++    route,
++    send,
++    url,
++  });
++  await applyOnTasksRegistered({ plugins, tasks });
++  const markup = await applyRenders({
++    context,
++    plugins,
++    routes,
++    route,
++    send,
++    url,
++  });
++  return {
++    markup: await applyAfterEachRenders({
++      context,
++      markup,
++      plugins,
++      route,
++      send,
++      url,
++    }),
++    tasks,
++  };
+ }
+ async function applyGetAllRoutes({ plugins }) {
+-    const getAllRoutes = plugins.map(({ api, context }) => [api.getAllRoutes, context])
+-        .filter(Boolean);
+-    let allRoutes = {};
+-    let allTasks = [];
+-    for await (const [routeGetter, pluginContext] of getAllRoutes) {
+-        if (routeGetter) {
+-            // @ts-expect-error It's not clear how to type context
+-            const { routes, tasks } = await routeGetter({ pluginContext });
+-            allRoutes = { ...allRoutes, ...routes };
+-            allTasks = allTasks.concat(tasks);
+-        }
++  const getAllRoutes = plugins
++    .map(({ api, context }) => [api.getAllRoutes, context])
++    .filter(Boolean);
++  let allRoutes = {};
++  let allTasks = [];
++  for await (const [routeGetter, pluginContext] of getAllRoutes) {
++    if (routeGetter) {
++      // @ts-expect-error It's not clear how to type context
++      const { routes, tasks } = await routeGetter({ pluginContext });
++      allRoutes = { ...allRoutes, ...routes };
++      allTasks = allTasks.concat(tasks);
+     }
+-    return { routes: allRoutes, tasks: allTasks };
++  }
++  return { routes: allRoutes, tasks: allTasks };
+ }
+ async function applyMatchRoutes({ allRoutes, plugins, url }) {
+-    const matchRoutes = plugins.map(({ api, context }) => [api.matchRoute, context])
+-        .filter(Boolean);
+-    for await (const [matchRoute, pluginContext] of matchRoutes) {
+-        const matchedRoute = matchRoute &&
+-            // @ts-expect-error It's not clear how to type context
+-            matchRoute(allRoutes, url, pluginContext);
+-        if (matchedRoute) {
+-            return matchedRoute;
+-        }
++  const matchRoutes = plugins
++    .map(({ api, context }) => [api.matchRoute, context])
++    .filter(Boolean);
++  for await (const [matchRoute, pluginContext] of matchRoutes) {
++    const matchedRoute =
++      matchRoute &&
++      // @ts-expect-error It's not clear how to type context
++      matchRoute(allRoutes, url, pluginContext);
++    if (matchedRoute) {
++      return matchedRoute;
+     }
+-    return false;
++  }
++  return false;
+ }
+ async function applyPrepareContext({ plugins, route, send, url }) {
+-    let context = {};
+-    const prepareContexts = plugins.map(({ api, context }) => [api.prepareContext, context])
+-        .filter(Boolean);
+-    for await (const [prepareContext, pluginContext] of prepareContexts) {
+-        if (prepareContext) {
+-            // @ts-expect-error It's not clear how to type context
+-            const ret = await prepareContext({ send, route, url, pluginContext });
+-            if (ret?.context) {
+-                context = { ...context, ...ret.context };
+-            }
+-        }
++  let context = {};
++  const prepareContexts = plugins
++    .map(({ api, context }) => [api.prepareContext, context])
++    .filter(Boolean);
++  for await (const [prepareContext, pluginContext] of prepareContexts) {
++    if (prepareContext) {
++      // @ts-expect-error It's not clear how to type context
++      const ret = await prepareContext({ send, route, url, pluginContext });
++      if (ret?.context) {
++        context = { ...context, ...ret.context };
++      }
+     }
+-    return context;
++  }
++  return context;
+ }
+ async function applyBeforeEachRenders({ context, plugins, route, send, url }) {
+-    let tasks = [];
+-    const beforeEachRenders = plugins.map(({ api }) => api.beforeEachRender)
+-        .filter(Boolean);
+-    for await (const beforeEachRender of beforeEachRenders) {
+-        const tasksToAdd = 
+-        // @ts-expect-error We know beforeEachRender should be defined by now
+-        await beforeEachRender({ context, route, send, url });
+-        if (tasksToAdd) {
+-            tasks = tasks.concat(tasksToAdd);
+-        }
++  let tasks = [];
++  const beforeEachRenders = plugins
++    .map(({ api }) => api.beforeEachRender)
++    .filter(Boolean);
++  for await (const beforeEachRender of beforeEachRenders) {
++    const tasksToAdd =
++      // @ts-expect-error We know beforeEachRender should be defined by now
++      await beforeEachRender({ context, route, send, url });
++    if (tasksToAdd) {
++      tasks = tasks.concat(tasksToAdd);
+     }
+-    return { tasks };
++  }
++  return { tasks };
+ }
+ async function applyRenders({ context, plugins, route, routes, send, url }) {
+-    const renders = plugins.map(({ api, context }) => [api.render, context]);
+-    let markup = "";
+-    // In the current design, we pick only the markup of the last renderer.
+-    // TODO: Does it even make sense to have multiple renderers in the system?
+-    for await (const [render, pluginContext] of renders) {
+-        if (render) {
+-            markup =
+-                // @ts-expect-error We know render should be defined by now
+-                await render({ context, route, routes, send, url, pluginContext });
+-        }
++  const renders = plugins.map(({ api, context }) => [api.render, context]);
++  let markup = "";
++  // In the current design, we pick only the markup of the last renderer.
++  // TODO: Does it even make sense to have multiple renderers in the system?
++  for await (const [render, pluginContext] of renders) {
++    if (render) {
++      markup =
++        // @ts-expect-error We know render should be defined by now
++        await render({ context, route, routes, send, url, pluginContext });
+     }
+-    return markup;
++  }
++  return markup;
+ }
+ async function applyOnTasksRegistered({ plugins, tasks }) {
+-    const send = getSend(plugins);
+-    const tasksRegistered = plugins.map(({ api }) => api.onTasksRegistered)
+-        .filter(Boolean);
+-    for await (const cb of tasksRegistered) {
+-        if (cb) {
+-            await cb({ send, tasks });
+-        }
++  const send = getSend(plugins);
++  const tasksRegistered = plugins
++    .map(({ api }) => api.onTasksRegistered)
++    .filter(Boolean);
++  for await (const cb of tasksRegistered) {
++    if (cb) {
++      await cb({ send, tasks });
+     }
++  }
+ }
+-async function applyAfterEachRenders({ context, markup, plugins, route, send, url }) {
+-    const afterEachRenders = plugins.map(({ api }) => api.afterEachRender)
+-        .filter(Boolean);
+-    for await (const afterEachRender of afterEachRenders) {
+-        // TODO: Later on this should be able to create new tasks to run
+-        // @ts-expect-error We know afterEachRender should be defined by now
+-        const { markup: updatedMarkup } = await afterEachRender({
+-            context,
+-            markup,
+-            route,
+-            send,
+-            url,
+-        });
+-        markup = updatedMarkup;
+-    }
+-    return markup;
++async function applyAfterEachRenders({
++  context,
++  markup,
++  plugins,
++  route,
++  send,
++  url,
++}) {
++  const afterEachRenders = plugins
++    .map(({ api }) => api.afterEachRender)
++    .filter(Boolean);
++  for await (const afterEachRender of afterEachRenders) {
++    // TODO: Later on this should be able to create new tasks to run
++    // @ts-expect-error We know afterEachRender should be defined by now
++    const { markup: updatedMarkup } = await afterEachRender({
++      context,
++      markup,
++      route,
++      send,
++      url,
++    });
++    markup = updatedMarkup;
++  }
++  return markup;
+ }
+ function getSend(plugins) {
+-    return async (pluginName, message) => {
+-        if (pluginName === "*") {
+-            DEBUG && console.log("Send to all", message);
+-            const messageResults = (await Promise.all(plugins.map(async (plugin) => {
+-                const { api, context: pluginContext } = plugin;
+-                if (api.onMessage) {
+-                    const payload = await api.onMessage({ message, pluginContext });
+-                    plugin.context = {
+-                        ...pluginContext,
+-                        ...payload?.pluginContext,
+-                    };
+-                    if (payload) {
+-                        return payload;
+-                    }
+-                }
+-            }))).filter(Boolean);
+-            // @ts-expect-error Make typing more strict here
+-            const sends = messageResults.flatMap((s) => s.send).filter(Boolean);
+-            // @ts-expect-error Make typing more strict here
+-            const results = messageResults.flatMap((s) => s.result).filter(Boolean);
+-            DEBUG &&
+-                console.log("Send to all, received from plugins", sends, results);
+-            // TODO: What to do with sends triggered by messages? Maybe it would be
+-            // better to drop support for this and handle it otherwise?
+-            await Promise.all(sends.map((message) => Promise.all(plugins.map(async (plugin) => {
+-                const { api } = plugin;
+-                if (api.onMessage) {
+-                    // @ts-expect-error TS inference fails here
+-                    const payload = await api.onMessage({ message });
+-                    plugin.context = {
+-                        ...plugin.context,
+-                        ...payload?.pluginContext,
+-                    };
+-                }
+-            }))));
+-            return results;
+-        }
+-        else {
+-            const foundPlugin = plugins.find(({ meta: { name } }) => pluginName === name);
+-            // Handle ping as a special case
+-            if (message.type === "ping") {
+-                return !!foundPlugin;
+-            }
+-            if (foundPlugin) {
+-                if (foundPlugin.api.onMessage) {
+-                    const payload = await foundPlugin.api.onMessage({
+-                        message,
+-                        pluginContext: foundPlugin.context,
+-                    });
+-                    foundPlugin.context = {
+-                        ...foundPlugin.context,
+-                        ...payload?.pluginContext,
+-                    };
+-                    return payload?.result;
+-                }
+-                else {
+-                    throw new Error(`Plugin ${pluginName} does not have an onMessage handler`);
+-                }
+-            }
+-            else {
+-                throw new Error(`Tried to send a plugin (${pluginName}) that does not exist`);
++  return async (pluginName, message) => {
++    if (pluginName === "*") {
++      DEBUG && console.log("Send to all", message);
++      const messageResults = (
++        await Promise.all(
++          plugins.map(async (plugin) => {
++            const { api, context: pluginContext } = plugin;
++            if (api.onMessage) {
++              const payload = await api.onMessage({ message, pluginContext });
++              plugin.context = {
++                ...pluginContext,
++                ...payload?.pluginContext,
++              };
++              if (payload) {
++                return payload;
++              }
+             }
++          })
++        )
++      ).filter(Boolean);
++      // @ts-expect-error Make typing more strict here
++      const sends = messageResults.flatMap((s) => s.send).filter(Boolean);
++      // @ts-expect-error Make typing more strict here
++      const results = messageResults.flatMap((s) => s.result).filter(Boolean);
++      DEBUG &&
++        console.log("Send to all, received from plugins", sends, results);
++      // TODO: What to do with sends triggered by messages? Maybe it would be
++      // better to drop support for this and handle it otherwise?
++      await Promise.all(
++        sends.map((message) =>
++          Promise.all(
++            plugins.map(async (plugin) => {
++              const { api } = plugin;
++              if (api.onMessage) {
++                // @ts-expect-error TS inference fails here
++                const payload = await api.onMessage({ message });
++                plugin.context = {
++                  ...plugin.context,
++                  ...payload?.pluginContext,
++                };
++              }
++            })
++          )
++        )
++      );
++      return results;
++    } else {
++      const foundPlugin = plugins.find(
++        ({ meta: { name } }) => pluginName === name
++      );
++      // Handle ping as a special case
++      if (message.type === "ping") {
++        return !!foundPlugin;
++      }
++      if (foundPlugin) {
++        if (foundPlugin.api.onMessage) {
++          const payload = await foundPlugin.api.onMessage({
++            message,
++            pluginContext: foundPlugin.context,
++          });
++          foundPlugin.context = {
++            ...foundPlugin.context,
++            ...payload?.pluginContext,
++          };
++          return payload?.result;
++        } else {
++          throw new Error(
++            `Plugin ${pluginName} does not have an onMessage handler`
++          );
+         }
+-    };
++      } else {
++        throw new Error(
++          `Tried to send a plugin (${pluginName}) that does not exist`
++        );
++      }
++    }
++  };
+ }
+-export { applyAfterEachRenders, applyBeforeEachRenders, applyOnTasksRegistered, applyPlugins, applyPrepareContext, applyRenders, cleanUpPlugins, finishPlugins, importPlugin, importPlugins, preparePlugins, };
++export {
++  applyAfterEachRenders,
++  applyBeforeEachRenders,
++  applyOnTasksRegistered,
++  applyPlugins,
++  applyPrepareContext,
++  applyRenders,
++  cleanUpPlugins,
++  finishPlugins,
++  importPlugin,
++  importPlugins,
++  preparePlugins,
++};
+diff --git a/node_modules/gustwind/esm/plugins/copy/mod.js b/node_modules/gustwind/esm/plugins/copy/mod.js
+index 5567b4b..8300513 100644
+--- a/node_modules/gustwind/esm/plugins/copy/mod.js
++++ b/node_modules/gustwind/esm/plugins/copy/mod.js
+@@ -1,20 +1,23 @@
+-import * as path from "path";
++import * as path from "node:path";
+ const plugin = {
+-    meta: {
+-        name: "gustwind-copy-plugin",
+-        description: "${name} allows copying files from a given directory within the build output. This is useful for bringing for example image assets to a website.",
+-    },
+-    init({ cwd, options: { inputPath, outputPath }, outputDirectory }) {
+-        return {
+-            finishBuild: () => [{
+-                    type: "copyFiles",
+-                    payload: {
+-                        inputDirectory: path.join(cwd, inputPath),
+-                        outputDirectory,
+-                        outputPath,
+-                    },
+-                }],
+-        };
+-    },
++  meta: {
++    name: "gustwind-copy-plugin",
++    description:
++      "${name} allows copying files from a given directory within the build output. This is useful for bringing for example image assets to a website.",
++  },
++  init({ cwd, options: { inputPath, outputPath }, outputDirectory }) {
++    return {
++      finishBuild: () => [
++        {
++          type: "copyFiles",
++          payload: {
++            inputDirectory: path.join(cwd, inputPath),
++            outputDirectory,
++            outputPath,
++          },
++        },
++      ],
++    };
++  },
+ };
+ export { plugin };
+diff --git a/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js b/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
+index 8ece8a0..bf9a0cd 100644
+--- a/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
++++ b/node_modules/gustwind/esm/plugins/htmlisp-edge-renderer/mod.js
+@@ -1,4 +1,4 @@
+-import process from "process";
++import process from "node:process";
+ import { htmlToBreezewind } from "../../htmlisp/mod.js";
+ import { applyUtilities } from "../../breezewind/applyUtility.js";
+ import { defaultUtilities } from "../../breezewind/defaultUtilities.js";
+@@ -7,108 +7,124 @@ import { renderComponent } from "../../gustwind-utilities/renderComponent.js";
+ const DEBUG = process.env.DEBUG === "1";
+ // TODO: See if rendering should be decoupled from routing somehow to allow usage without a router
+ const plugin = {
+-    meta: {
+-        name: "htmlisp-edge-renderer-plugin",
+-        description: "${name} implements an edge-compatible way to render through HTMLisp templating language.",
+-        dependsOn: ["gustwind-meta-plugin"],
+-    },
+-    init({ options, mode }) {
+-        // TODO: Push this style check to the plugin system core
+-        if (!options.globalUtilities) {
+-            throw new Error("htmlisp-edge-renderer-plugin - globalUtilitiesPath was not provided");
++  meta: {
++    name: "htmlisp-edge-renderer-plugin",
++    description:
++      "${name} implements an edge-compatible way to render through HTMLisp templating language.",
++    dependsOn: ["gustwind-meta-plugin"],
++  },
++  init({ options, mode }) {
++    // TODO: Push this style check to the plugin system core
++    if (!options.globalUtilities) {
++      throw new Error(
++        "htmlisp-edge-renderer-plugin - globalUtilitiesPath was not provided"
++      );
++    }
++    return {
++      initPluginContext: () => {
++        return options;
++      },
++      prepareContext: async ({ url, route, send }) => {
++        const meta = await send("gustwind-meta-plugin", {
++          type: "getMeta",
++          payload: undefined,
++        });
++        const runtimeMeta = {
++          built: new Date().toString(),
++        };
++        if (mode === "development") {
++          runtimeMeta.url = url;
+         }
++        const context = {
++          ...runtimeMeta,
++          // @ts-expect-error Figure out how to type this
++          ...meta,
++          ...route.meta,
++          ...route.context,
++        };
+         return {
+-            initPluginContext: () => {
+-                return options;
+-            },
+-            prepareContext: async ({ url, route, send }) => {
+-                const meta = await send("gustwind-meta-plugin", {
+-                    type: "getMeta",
+-                    payload: undefined,
+-                });
+-                const runtimeMeta = {
+-                    built: (new Date()).toString(),
+-                };
+-                if (mode === "development") {
+-                    runtimeMeta.url = url;
+-                }
+-                const context = {
+-                    ...runtimeMeta,
+-                    // @ts-expect-error Figure out how to type this
+-                    ...meta,
+-                    ...route.meta,
+-                    ...route.context,
++          context: {
++            ...context,
++            url,
++            meta: await applyUtilities(
++              context,
++              // @ts-expect-error This is ok
++              defaultUtilities,
++              { context }
++            ),
++          },
++        };
++      },
++      render: ({ routes, route, context, pluginContext }) => {
++        const { components, globalUtilities } = pluginContext;
++        const componentsLookup = getComponents(components);
++        const layout = componentsLookup[route.layout];
++        if (!layout) {
++          throw new Error(
++            "htmlisp-edge-renderer-plugin - layout to render was not found"
++          );
++        }
++        return renderComponent({
++          component: layout,
++          components: componentsLookup,
++          context,
++          globalUtilities: getGlobalUtilities({
++            globalUtilities,
++            routes,
++          }),
++          componentUtilities: getComponentUtilities(
++            options.componentUtilities,
++            routes
++          ),
++        });
++      },
++      onMessage: ({ message, pluginContext }) => {
++        const { type, payload } = message;
++        switch (type) {
++          case "fileChanged": {
++            DEBUG &&
++              console.log("htmlisp-edge-renderer - file changed", payload);
++            switch (payload.type) {
++              case "components": {
++                return {
++                  send: [{ type: "reloadPage", payload: undefined }],
++                  pluginContext: { components: options.components },
+                 };
++              }
++              case "globalUtilities": {
+                 return {
+-                    context: {
+-                        ...context,
+-                        url,
+-                        meta: await applyUtilities(context, 
+-                        // @ts-expect-error This is ok
+-                        defaultUtilities, { context }),
+-                    },
++                  send: [{ type: "reloadPage", payload: undefined }],
++                  pluginContext: { globalUtilities: options.globalUtilities },
+                 };
+-            },
+-            render: ({ routes, route, context, pluginContext }) => {
+-                const { components, globalUtilities } = pluginContext;
+-                const componentsLookup = getComponents(components);
+-                const layout = componentsLookup[route.layout];
+-                if (!layout) {
+-                    throw new Error("htmlisp-edge-renderer-plugin - layout to render was not found");
+-                }
+-                return renderComponent({
+-                    component: layout,
+-                    components: componentsLookup,
+-                    context,
+-                    globalUtilities: getGlobalUtilities({
+-                        globalUtilities,
+-                        routes,
+-                    }),
+-                    componentUtilities: getComponentUtilities(options.componentUtilities, routes),
+-                });
+-            },
+-            onMessage: ({ message, pluginContext }) => {
+-                const { type, payload } = message;
+-                switch (type) {
+-                    case "fileChanged": {
+-                        DEBUG &&
+-                            console.log("htmlisp-edge-renderer - file changed", payload);
+-                        switch (payload.type) {
+-                            case "components": {
+-                                return {
+-                                    send: [{ type: "reloadPage", payload: undefined }],
+-                                    pluginContext: { components: options.components },
+-                                };
+-                            }
+-                            case "globalUtilities": {
+-                                return {
+-                                    send: [{ type: "reloadPage", payload: undefined }],
+-                                    pluginContext: { globalUtilities: options.globalUtilities },
+-                                };
+-                            }
+-                            case "paths": {
+-                                return { send: [{ type: "reloadPage", payload: undefined }] };
+-                            }
+-                        }
+-                        // Reload anyway
+-                        return { send: [{ type: "reloadPage", payload: undefined }] };
+-                    }
+-                    case "getComponents":
+-                        return { result: getComponents(pluginContext.components) };
+-                    case "getRenderer":
+-                        return { result: pluginContext.components[payload] };
+-                }
+-            },
+-        };
+-    },
++              }
++              case "paths": {
++                return { send: [{ type: "reloadPage", payload: undefined }] };
++              }
++            }
++            // Reload anyway
++            return { send: [{ type: "reloadPage", payload: undefined }] };
++          }
++          case "getComponents":
++            return { result: getComponents(pluginContext.components) };
++          case "getRenderer":
++            return { result: pluginContext.components[payload] };
++        }
++      },
++    };
++  },
+ };
+ // TODO: It would be good to merge this with the matching utility
+ function getComponents(components) {
+-    return Object.fromEntries(Object.entries(components).map(([k, v]) => [k, htmlToBreezewind(v)]));
++  return Object.fromEntries(
++    Object.entries(components).map(([k, v]) => [k, htmlToBreezewind(v)])
++  );
+ }
+ // TODO: It would be good to merge this with the matching utility
+ function getComponentUtilities(componentUtilities, routes) {
+-    return Object.fromEntries(Object.entries(componentUtilities).map(([k, v]) => [k, v.init({ routes })])
+-        .filter((n) => Boolean(n)));
++  return Object.fromEntries(
++    Object.entries(componentUtilities)
++      .map(([k, v]) => [k, v.init({ routes })])
++      .filter((n) => Boolean(n))
++  );
+ }
+ export { plugin };
+diff --git a/node_modules/gustwind/esm/plugins/meta/mod.js b/node_modules/gustwind/esm/plugins/meta/mod.js
+index 5291fcc..4beeaab 100644
+--- a/node_modules/gustwind/esm/plugins/meta/mod.js
++++ b/node_modules/gustwind/esm/plugins/meta/mod.js
+@@ -1,46 +1,47 @@
+-import * as path from "path";
++import * as path from "node:path";
+ const plugin = {
+-    meta: {
+-        name: "gustwind-meta-plugin",
+-        description: "${name} allows loading meta information from a given JSON file to be used by other plugins.",
+-    },
+-    init({ cwd, options, load }) {
+-        return {
+-            initPluginContext: async () => {
++  meta: {
++    name: "gustwind-meta-plugin",
++    description:
++      "${name} allows loading meta information from a given JSON file to be used by other plugins.",
++  },
++  init({ cwd, options, load }) {
++    return {
++      initPluginContext: async () => {
++        const meta = await loadMeta();
++        return { meta };
++      },
++      onMessage: async ({ message, pluginContext }) => {
++        const { type, payload } = message;
++        switch (type) {
++          case "fileChanged": {
++            switch (payload.type) {
++              case "meta": {
+                 const meta = await loadMeta();
+-                return { meta };
+-            },
+-            onMessage: async ({ message, pluginContext }) => {
+-                const { type, payload } = message;
+-                switch (type) {
+-                    case "fileChanged": {
+-                        switch (payload.type) {
+-                            case "meta": {
+-                                const meta = await loadMeta();
+-                                return {
+-                                    send: [{ type: "reloadPage", payload: undefined }],
+-                                    pluginContext: { meta },
+-                                };
+-                            }
+-                        }
+-                        break;
+-                    }
+-                    case "getMeta":
+-                        return { result: pluginContext.meta };
+-                }
+-            },
+-        };
+-        function loadMeta() {
+-            if (options.meta) {
+-                return options.meta;
++                return {
++                  send: [{ type: "reloadPage", payload: undefined }],
++                  pluginContext: { meta },
++                };
++              }
+             }
+-            return options.inputPath
+-                ? load.json({
+-                    path: path.join(cwd, options.inputPath),
+-                    type: "meta",
+-                })
+-                : Promise.resolve({});
++            break;
++          }
++          case "getMeta":
++            return { result: pluginContext.meta };
+         }
+-    },
++      },
++    };
++    function loadMeta() {
++      if (options.meta) {
++        return options.meta;
++      }
++      return options.inputPath
++        ? load.json({
++            path: path.join(cwd, options.inputPath),
++            type: "meta",
++          })
++        : Promise.resolve({});
++    }
++  },
+ };
+ export { plugin };
+diff --git a/node_modules/gustwind/esm/plugins/pagefind/mod.js b/node_modules/gustwind/esm/plugins/pagefind/mod.js
+index c1dd3bb..bfb9bd7 100644
+--- a/node_modules/gustwind/esm/plugins/pagefind/mod.js
++++ b/node_modules/gustwind/esm/plugins/pagefind/mod.js
+@@ -1,31 +1,32 @@
+-import * as path from "path";
++import * as path from "node:path";
+ import * as pagefind from "pagefind";
+ const plugin = {
+-    meta: {
+-        name: "gustwind-pagefind-plugin",
+-        description: "${name} implements side-wide search using PageFind underneath. Make sure to integrate the results with the <PageFind> component.",
+-    },
+-    init({ cwd, outputDirectory }) {
+-        return {
+-            finishBuild: async () => {
+-                const { index } = await pagefind.createIndex({});
+-                if (!index) {
+-                    throw new Error("pagefind failed to create an index");
+-                }
+-                await index.addDirectory({
+-                    path: path.join(cwd, outputDirectory),
+-                });
+-                const { files } = await index.getFiles();
+-                return files.map(({ path: file, content: data }) => ({
+-                    type: "writeFile",
+-                    payload: {
+-                        outputDirectory,
+-                        file: path.join("pagefind", file),
+-                        data,
+-                    },
+-                }));
+-            },
+-        };
+-    },
++  meta: {
++    name: "gustwind-pagefind-plugin",
++    description:
++      "${name} implements side-wide search using PageFind underneath. Make sure to integrate the results with the <PageFind> component.",
++  },
++  init({ cwd, outputDirectory }) {
++    return {
++      finishBuild: async () => {
++        const { index } = await pagefind.createIndex({});
++        if (!index) {
++          throw new Error("pagefind failed to create an index");
++        }
++        await index.addDirectory({
++          path: path.join(cwd, outputDirectory),
++        });
++        const { files } = await index.getFiles();
++        return files.map(({ path: file, content: data }) => ({
++          type: "writeFile",
++          payload: {
++            outputDirectory,
++            file: path.join("pagefind", file),
++            data,
++          },
++        }));
++      },
++    };
++  },
+ };
+ export { plugin };
+diff --git a/node_modules/gustwind/esm/plugins/sitemap/mod.js b/node_modules/gustwind/esm/plugins/sitemap/mod.js
+index 5f3e900..821798c 100644
+--- a/node_modules/gustwind/esm/plugins/sitemap/mod.js
++++ b/node_modules/gustwind/esm/plugins/sitemap/mod.js
+@@ -1,33 +1,40 @@
+-import * as path from "path";
+-import { generateSitemap, sitemapToXML, } from "../../deps/deno.land/x/sitemap@v1.1.1/mod.js";
++import * as path from "node:path";
++import {
++  generateSitemap,
++  sitemapToXML,
++} from "../../deps/deno.land/x/sitemap@v1.1.1/mod.js";
+ // Note that this works only in production mode for now!
+ const plugin = {
+-    meta: {
+-        name: "gustwind-sitemap-plugin",
+-        description: "${name} writes a sitemap.xml file based on project output.",
+-        dependsOn: ["gustwind-meta-plugin"],
+-    },
+-    init({ cwd, outputDirectory }) {
+-        return {
+-            finishBuild: async ({ send }) => {
+-                const meta = await send("gustwind-meta-plugin", {
+-                    type: "getMeta",
+-                    payload: undefined,
+-                });
+-                const sitemap = await generateSitemap(
+-                // @ts-expect-error How to type this?
+-                meta.url, path.join(cwd, outputDirectory));
+-                const sitemapXML = sitemapToXML(sitemap);
+-                return [{
+-                        type: "writeTextFile",
+-                        payload: {
+-                            outputDirectory,
+-                            file: "sitemap.xml",
+-                            data: sitemapXML,
+-                        },
+-                    }];
++  meta: {
++    name: "gustwind-sitemap-plugin",
++    description: "${name} writes a sitemap.xml file based on project output.",
++    dependsOn: ["gustwind-meta-plugin"],
++  },
++  init({ cwd, outputDirectory }) {
++    return {
++      finishBuild: async ({ send }) => {
++        const meta = await send("gustwind-meta-plugin", {
++          type: "getMeta",
++          payload: undefined,
++        });
++        const sitemap = await generateSitemap(
++          // @ts-expect-error How to type this?
++          meta.url,
++          path.join(cwd, outputDirectory)
++        );
++        const sitemapXML = sitemapToXML(sitemap);
++        return [
++          {
++            type: "writeTextFile",
++            payload: {
++              outputDirectory,
++              file: "sitemap.xml",
++              data: sitemapXML,
+             },
+-        };
+-    },
++          },
++        ];
++      },
++    };
++  },
+ };
+ export { plugin };
+diff --git a/node_modules/gustwind/esm/plugins/twind/mod.js b/node_modules/gustwind/esm/plugins/twind/mod.js
+index 3176b6d..b0c63b0 100644
+--- a/node_modules/gustwind/esm/plugins/twind/mod.js
++++ b/node_modules/gustwind/esm/plugins/twind/mod.js
+@@ -1,35 +1,37 @@
+-import * as path from "path";
++import * as path from "node:path";
+ import { extract, install } from "@twind/core";
+ const plugin = {
+-    meta: {
+-        name: "gustwind-twind-plugin",
+-        description: "${name} implements Twind styling integration to the site giving access to Tailwind semantics.",
+-        dependsOn: [],
+-    },
+-    init: ({ cwd, options }) => {
+-        async function prepareStylesheet() {
+-            let twindSetup = {};
+-            // TODO: What if neither has been defined?
+-            if (options.twindSetup) {
+-                twindSetup = options.twindSetup;
+-            }
+-            if (options.setupPath) {
+-                twindSetup = await import("file://" + path.join(cwd, options.setupPath))
+-                    .then((m) => m.default);
+-            }
+-            // TODO: Figure out why enabling hash breaks markdown transform styling
+-            install({ ...twindSetup, hash: false });
++  meta: {
++    name: "gustwind-twind-plugin",
++    description:
++      "${name} implements Twind styling integration to the site giving access to Tailwind semantics.",
++    dependsOn: [],
++  },
++  init: ({ cwd, options }) => {
++    async function prepareStylesheet() {
++      let twindSetup = {};
++      // TODO: What if neither has been defined?
++      if (options.twindSetup) {
++        twindSetup = options.twindSetup;
++      }
++      if (options.setupPath) {
++        twindSetup = await import(
++          "file://" + path.join(cwd, options.setupPath)
++        ).then((m) => m.default);
++      }
++      // TODO: Figure out why enabling hash breaks markdown transform styling
++      install({ ...twindSetup, hash: false });
++    }
++    return {
++      prepareBuild: prepareStylesheet,
++      prepareContext: prepareStylesheet,
++      afterEachRender({ markup, url }) {
++        if (url.endsWith(".xml")) {
++          return { markup };
+         }
+-        return {
+-            prepareBuild: prepareStylesheet,
+-            prepareContext: prepareStylesheet,
+-            afterEachRender({ markup, url }) {
+-                if (url.endsWith(".xml")) {
+-                    return { markup };
+-                }
+-                // https://web.dev/defer-non-critical-css/
+-                // TODO: Consider restoring CSS extraction
+-                /*
++        // https://web.dev/defer-non-critical-css/
++        // TODO: Consider restoring CSS extraction
++        /*
+                 const styleTag = options.extractCSS
+                   ? `<link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="styles.css"></noscript>`
+                   : getStyleTag(stylesheet);
+@@ -41,21 +43,24 @@ const plugin = {
+                   TODO: Setup a task to write styles.css
+                 }
+                 */
+-                // https://twind.style/packages/@twind/core#extract
+-                const { html, css } = extract(markup);
+-                return {
+-                    markup: html.replace("</head>", `<style data-twind>${css}</style></head>`),
+-                };
+-            },
+-            onMessage: ({ message }) => {
+-                const { type } = message;
+-                // TODO: What to do if there's no setupPath (directly twindSetup for example)
+-                if (type === "getStyleSetupPath" && options.setupPath) {
+-                    const twindSetupPath = path.join(cwd, options.setupPath);
+-                    return { result: twindSetupPath };
+-                }
+-            },
++        // https://twind.style/packages/@twind/core#extract
++        const { html, css } = extract(markup);
++        return {
++          markup: html.replace(
++            "</head>",
++            `<style data-twind>${css}</style></head>`
++          ),
+         };
+-    },
++      },
++      onMessage: ({ message }) => {
++        const { type } = message;
++        // TODO: What to do if there's no setupPath (directly twindSetup for example)
++        if (type === "getStyleSetupPath" && options.setupPath) {
++          const twindSetupPath = path.join(cwd, options.setupPath);
++          return { result: twindSetupPath };
++        }
++      },
++    };
++  },
+ };
+ export { plugin };

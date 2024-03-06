@@ -81,33 +81,6 @@
       }
     }
   },
-  "library": {
-    "expand": {
-      "matchBy": {
-        "indexer": {
-          "operation": "indexLibraries",
-          "parameters": []
-        },
-        "dataSources": [{
-          "operation": "processLibrary",
-          "parameters": [],
-          "name": "library"
-        }],
-        "slug": "id"
-      },
-      "layout": "libraryPage",
-      "meta": {
-        "title": {
-          "utility": "get",
-          "parameters": ["context", "name"]
-        },
-        "description": {
-          "utility": "get",
-          "parameters": ["context", "description"]
-        }
-      }
-    }
-  },
   "about": {
     "meta": {
       "title": "JSter – About",

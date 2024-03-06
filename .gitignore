@@ -1,4 +1,7 @@
 build/
 node_modules
+.dev.vars
 .env
 .gustwind_cache
+.wrangler
+manifest.ts

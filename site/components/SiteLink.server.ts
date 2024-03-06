@@ -26,11 +26,19 @@ function init({ routes }: { routes: Routes }) {
       return url;
     }
 
+    // TODO: Change the validation so that on the edge it's reading static routes
+    // TODO: This means there should be access to env here (pass through a parameter)
+    // and likely static, expanded routes should be available here as well
+    // TODO: An easy option would be to skip validation only on edge and keep it in the static environment
+    return url;
+
+    /*
     throw new Error(
-      `Failed to find matching url for "${url}" from ${
-        Object.keys(routes).join(", ")
-      }`,
+      `Failed to find matching url for "${url}" from ${Object.keys(routes).join(
+        ", "
+      )}`
     );
+    */
   }
 
   return { validateUrl };
