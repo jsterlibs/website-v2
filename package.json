@@ -14,7 +14,7 @@
     "marked": "^12.0.0",
     "patch-package": "^8.0.0",
     "typescript": "^5.3.3",
-    "wrangler": "^3.30.1"
+    "wrangler": "^3.31.0"
   },
   "scripts": {
     "postinstall": "patch-package",
