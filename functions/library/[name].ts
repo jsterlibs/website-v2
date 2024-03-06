@@ -1,5 +1,9 @@
 import { initRender } from "../../render.ts";
 
+const ONE_HOUR = 60 * 60;
+const ONE_DAY = ONE_HOUR * 24;
+
+// Reference: https://developers.cloudflare.com/workers/examples/cache-using-fetch/
 export async function onRequest(
   context: ExecutionContext & { params: { name?: string } }
 ): Promise<Response> {
@@ -28,5 +32,11 @@ export async function onRequest(
     console.error(error);
   }
 
-  return new Response("Not found", { status: 404 });
+  return new Response("Not found", {
+    headers: {
+      // Cache results at the browser for one day
+      "Cache-Control": `max-age=${ONE_DAY}`,
+    },
+    status: 404,
+  });
 }
