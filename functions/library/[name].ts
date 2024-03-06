@@ -22,10 +22,12 @@ export async function onRequest(
 
     const { markup } = await render("library", { library });
 
-    // TODO: Add data from GitHub and other sources + cache for a day
+    // TODO: Add data from GitHub and other sources
     return new Response(markup, {
       headers: {
-        "content-type": "text/html;charset=UTF-8",
+        "Content-Type": "text/html;charset=UTF-8",
+        // Cache results at the browser for one day
+        "Cache-Control": `max-age=${ONE_DAY}`,
       },
     });
   } catch (error) {
@@ -33,10 +35,6 @@ export async function onRequest(
   }
 
   return new Response("Not found", {
-    headers: {
-      // Cache results at the browser for one day
-      "Cache-Control": `max-age=${ONE_DAY}`,
-    },
     status: 404,
   });
 }
