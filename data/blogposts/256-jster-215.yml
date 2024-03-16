@@ -11,6 +11,7 @@ body: |
   ## Libraries
 
   * [jantimon/next-yak: a streamlined CSS-in-JS solution tailor-made for Next.js, seamlessly combining the expressive power of styled-components syntax with efficient build-time extraction and minimal runtime footprint](https://buff.ly/4ab7ZC2)
+  * [path-unified: Isomorphic path utilities](https://www.npmjs.com/package/path-unified)
 
   ## Tools
 
