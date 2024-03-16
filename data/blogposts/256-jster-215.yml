@@ -1,0 +1,36 @@
+type: static
+title: "JSter #215: Libraries and more"
+short_title: "JSter #215"
+user: bebraw
+slug: jster-215
+body: |
+  > I am become JavaScript.
+
+  There's nothing specific to announce although I have been working on something potentially interesting. Keep on coding.
+
+  ## Libraries
+
+  * [jantimon/next-yak: a streamlined CSS-in-JS solution tailor-made for Next.js, seamlessly combining the expressive power of styled-components syntax with efficient build-time extraction and minimal runtime footprint](https://buff.ly/4ab7ZC2)
+
+  ## Tools
+
+  * [react-geiger - Geiger meter but for React performance](https://buff.ly/3TCyMSg)
+  * [thepassle/module-graph - Visualize the module graph of your application easily through JavaScript](https://buff.ly/4c88VZG)
+  * [Cypress Vs SafeTest](https://buff.ly/3wCEjz4)
+
+  ## Articles
+
+  * [Comparison of JavaScript runtime performance in server usage](https://buff.ly/3IAqT9o)
+  * [Case Study: 2023 refresh of lynnandtonic.com](https://buff.ly/3ImYhjR)
+  * [Why React Server Components Are Breaking Builds to Win Tomorrow](https://buff.ly/42Zlz95)
+
+  ## Techniques
+
+  * [How to read files quickly in JavaScript?](https://buff.ly/3IBKIx4)
+  * [Simple RSC With Vinxi](https://buff.ly/49CekGE)
+  * [Challenges in developing for multiple runtimes - case Oak](https://buff.ly/3wKig9Q)
+  * [No Outer margin](https://buff.ly/49IqWfq)
+
+  ## Languages
+
+  * [Announcing TypeScript 5.4 RC](https://buff.ly/3TnOFfa)
