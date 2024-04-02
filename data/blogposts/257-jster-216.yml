@@ -1,0 +1,42 @@
+type: static
+title: "JSter #216: Libraries and more"
+short_title: "JSter #216"
+user: bebraw
+slug: jster-216
+body: |
+  > Think big, think JavaScript, never show any sign of weakness
+
+  Spring is literally around the corner in Finland. Just a month to go till the snow is mostly gone!
+
+  ## Libraries
+
+  * [WebReflection/qsa-observer: handle elements lifecycle through CSS selectors](https://buff.ly/3YZQEr7)
+  * [fabiospampinato/flimsy: A single-file <1kb min+gzip simplified implementation of the reactive core of Solid, optimized for clean code.](https://buff.ly/3w1PD4L)
+  * [nairihar/threadshare: Simplify inter-thread data sharing in Node.js worker_threads with ThreadShare.](https://buff.ly/489B8x1)
+  * [atlassian/pragmatic-drag-and-drop: Fast drag and drop for any experience on any tech stack](https://buff.ly/3VH1iTU)
+  * [codepoint-iterator - A utility converting an iterable of UTF-8 filled Uint8Array's into Unicode code points](https://buff.ly/3TyTaCe)
+  * [unadlib/mutative: Efficient immutable updates, 2-6x faster than naive handcrafted reducer, and more than 10x faster than Immer.](https://buff.ly/3SATlwL)
+  * [path-unified - Isomorphic path utilities for browser and server](https://buff.ly/48R67Nr)
+
+  ## Techniques
+
+  * [Optimization techniques for JavaScript](https://buff.ly/3VEhkOt)
+  * [Self unregistering service workers](https://buff.ly/3IQQUBp)
+  * [Nexar - Application architecture for Next.js App Router apps](https://buff.ly/3OoT0vw)
+  * [require(esm) in Node.js](https://buff.ly/4cnoNY4)
+
+  ## Frameworks
+
+  * [Angular and Wiz Are Better Together](https://buff.ly/3J0Orom)
+  * [Firebolt - A new full-stack framework for React](https://firebolt.dev/)
+  * [SemanticComputing/sampo-ui: Sampo-UI – A framework for building user interfaces for semantic portals](https://buff.ly/3OqWk9E)
+  * [WinterJS 1.0 - The fastest JavaScript server](https://buff.ly/48VD2Au)
+  * [Announcing AnalogJS 1.0 for Angular 🚀](https://buff.ly/3T9Vn7a)
+
+  ## Articles
+
+  * [Deno in 2023 -](https://buff.ly/490kH65)
+
+  ## Services
+
+  * [JSR: the JavaScript Registry - a superset of npm built with modern development flows in mind](https://jsr.io/)
