@@ -1,0 +1,46 @@
+type: static
+title: "JSter #217: Libraries and more"
+short_title: "JSter #217"
+user: bebraw
+slug: jster-217
+body: |
+  > This is JavaScript!
+
+  I've working on a new revision of [SurviveJS website](https://survivejs.com/) based on [Gustwind](https://gustwind.js.org/). This type of work is good in testing framework ideas and fixing oversights in the original design and I think the end result will be worth the effort.
+
+  ## Libraries
+
+  * [xstate/store Simple event-based state management](https://buff.ly/3JblQN0)
+  * [aralroca/diff-dom-streaming - HTML Streaming Over the Wire! 🥳 Diff DOM algorithm with streaming to make only the necessary modifications, insertions and deletions between a DOM node and an HTML stream reader](https://buff.ly/3Q1bxii)
+  * [openapi-zod-client - From openapi to Zod types](https://buff.ly/3TL4o6W)
+  * [Reasonable Colors](https://buff.ly/3rna49Y)
+  * [Superstate - Typesafe statecharts library](https://buff.ly/3J6MfM8)
+
+  ## Techniques
+
+  * [How JSR was built](https://buff.ly/3W1lTTd)
+
+  ## Editors
+
+  * [deco - Open-Source web editor based on Preact, Tailwind and TypeScript](https://buff.ly/3TYIqgX)
+
+  ## Typescript
+
+  * [woltsu/tsynamo: Type-friendly TypeScript DynamoDB query builder!](https://buff.ly/3TLkA84)
+  * [ArkType - TypeScript's 1:1 validator, optimized from editor to runtime](https://arktype.io/)
+
+  ## Demos
+
+  * [cloudflare/orange - Build your own Zoom with CloudFlare Calls and WebRTC](https://buff.ly/3VTzagx)
+
+  ## Frameworks
+
+  * [ElysiaJS - Ergonomic Framework for Humans](https://buff.ly/48rqmmb)
+
+  ## React
+
+  * [MistCSS - Write React components using CSS only](https://buff.ly/3TK888D)
+
+  ## Components
+
+  * [Cally: small, feature-rich calendar components](https://buff.ly/3vF6IEv)
