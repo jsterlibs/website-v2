@@ -1,0 +1,36 @@
+type: static
+title: "JSter #218: Libraries and more"
+short_title: "JSter #218"
+user: bebraw
+slug: jster-218
+body: |
+  > All JavaScript is good JavaScript.
+
+  I'm close to done with my [SurviveJS](https://survivejs.com) rework. The new site will have more content while being much lighter and faster to compile so that's all good.
+
+  ## Libraries
+
+  * [TypeSpec - Describe your APIs concisely and more](https://typespec.io/)
+  * [React 19 Beta](https://buff.ly/4d8s2Dn)
+  * [json-editor - JSON Schema Based Editor](https://buff.ly/4b6aVQQ)
+  * [rjsf-team/react-jsonschema-form: A React component for building Web forms from JSON Schema.](https://buff.ly/49P5CEh)
+  * [Introducing Declarative Routing for NextJS and React-Router](https://buff.ly/3JgvNZq)
+  * [tatethurston/nextjs-routes: Type safe routing for Next.js](https://buff.ly/448qaWZ)
+  * [Loro – Reimagine state management with CRDTs](https://www.loro.dev/)
+
+  ## Techniques
+
+  * [Default exports in CommonJS libraries](https://buff.ly/4di8HPV)
+  * [Are Inline Styles Faster than CSS?](https://buff.ly/3JrSqul)
+
+  ## Tools
+
+  * [VisBug v0.4.0 release notes](https://buff.ly/4a17Dgy)
+  * [Kuto, a reverse JS bundler](https://buff.ly/49Pkano)
+  * [ESLint v9.0.0 released](https://buff.ly/3TJ5bFi)
+
+  ## Articles
+
+  * [Sam's Experience with Qwik After 6 Months of Development](https://buff.ly/3TNMz7n)
+  * [Deep Dive into Rspack & Webpack Tree Shaking](https://buff.ly/3vWfnm8)
+  * [Why does my video player embed load so much JavaScript?](https://buff.ly/3Jg1eU1)
