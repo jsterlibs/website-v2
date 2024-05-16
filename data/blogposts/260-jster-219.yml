@@ -1,0 +1,39 @@
+type: static
+title: "JSter #219: Frameworks and more"
+short_title: "JSter #219"
+user: bebraw
+slug: jster-219
+body: |
+  > What are you prepared to JavaScript?
+
+  I recently completed the rewrite of [survivejs.com](https://survivejs.com/) although I still have to write a blog post describing the technical bits behind it as quite a lot of development effort went into the site. As [Future Frontend](https://futurefrontend.com/) (13-14.6, Helsinki) conference takes place in a month, that has been keeping me busy.
+
+  ## Frameworks
+
+  * [Gracile - A thin, full-stack, web framework](https://buff.ly/3IOlGel)
+  * [hex2f/marz: 🚀 A Fast and Lightweight React Server Components Framework for Bun](https://buff.ly/3sVhEMw)
+  * [VanJS: A 1.0kB Grab 'n Go Reactive UI Framework without React/JSX](https://vanjs.org/)
+  * [DML - Object oriented web programming framework](https://buff.ly/3UL8Sw9)
+  * [Supercharge — an open-source Node.js framework, not just a web framework](https://buff.ly/3UB424l)
+
+  ## Libraries
+
+  * [lxsmnsyc/seroval: Stringify JS values](https://buff.ly/45Z20OE)
+
+  ## Games
+
+  * [Athena Crisis, a game implemented in JavaScript, is now open source](https://buff.ly/4dHueSl)
+
+  ## Tools
+
+  * [nksaraf/vinxi: The JavaScript Server SDK](https://buff.ly/3ELxDzx)
+  * [API Extractor helps you develop better TypeScript projects](https://buff.ly/46eJDFX)
+  * [tshy - TypeScript hybridizer](https://buff.ly/3RmNVGC)
+
+  ## Techniques
+
+  * [Natural sorting of strings containing numbers](https://buff.ly/3QBpBzj)
+  * [New alternatives to innerHTML](https://buff.ly/3Wrk7eq)
+  * [How Omri saved 16% of their bundle size using a Babel plugin](https://buff.ly/3Wu5nvi)
+  * [Islands & Server Components & Resumability, Oh My!](https://buff.ly/3ZkKr9C)
+  * [Printing music with CSS Grid](https://buff.ly/4a1sIaD)
