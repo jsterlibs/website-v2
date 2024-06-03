@@ -1,0 +1,49 @@
+type: static
+title: "JSter #220: Tools and more"
+short_title: "JSter #220"
+user: bebraw
+slug: jster-220
+body: |
+  > It's supposed to be JavaScript.
+
+  [Future Frontend 2024](https://futurefrontend.com/) conference is getting close (13-14.6). We'll produce a live stream and it will be announced through our [X account](https://x.com/future_frontend) in a week or so.
+
+  ## Tools
+
+  * [yoavbls/pretty-ts-errors: 🔵 Make TypeScript errors prettier and human-readable in VSCode 🎀](https://buff.ly/3MKKKGl)
+  * [yanthomasdev/lunaria: The missing localization management toolchain for open-source projects](https://buff.ly/3KnGp9H)
+  * [Rustify your JavaScript tooling](https://buff.ly/3yB0OFD)
+  * [recheck - The trustworthy ReDoS checker](https://buff.ly/3rsPCYq)
+  * [npmgraph - Render dependency graph of a package](https://buff.ly/3PwYl3D)
+
+  ## Techniques
+
+  * [Practical barrel file guide for library authors](https://buff.ly/4572umi)
+  * [Speeding up the JavaScript ecosystem - Server Side JSX](https://buff.ly/3UMHzAn)
+  * [Unblocking the Main Thread: Refactoring from Sync to Async in JavaScript](https://buff.ly/3ULQbY5)
+
+  ## Demos
+
+  * [Qlock - A JavaScript Quine Clock](https://buff.ly/4aHNm04)
+
+  ## Libraries
+
+  * [aidenybai/pattycake: Zero-runtime pattern matching](https://buff.ly/3RExx4b)
+  * [ofcoerce - Lightweight type coercion library](https://buff.ly/3wIsOXp)
+  * [Swiper - The Most Modern Mobile Touch Slider](https://buff.ly/2sNTBQs)
+  * [Introducing PigmentCSS: the next generation of CSS-in-JS](https://buff.ly/4dP6VWY)
+
+  ## Services
+
+  * [Orama - A resilient, innovative and open-source search experience to achieve seamless integration with your infrastructure and data](https://buff.ly/3ZtaB9W)
+
+  ## Articles
+
+  * [Quantifying the Impact of Styled Components on Server Response Times](https://buff.ly/3V7Teeu)
+  * [The Design System Ecosystem](https://buff.ly/3RqzcdG)
+  * [The surprising cost of using image through CSS background property](https://buff.ly/3wt0J6h)
+
+  ## Frameworks
+
+  * [SolidStart 1.0: The Shape of Frameworks to Come](https://buff.ly/3K9DmSa)
+  * [Byte - Simplify your API development with a minimal, performant JavaScript framework](https://buff.ly/3WHDkZA)
