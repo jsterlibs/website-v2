@@ -35,7 +35,7 @@
     /* Specify a set of entries that re-map imports to additional lookup locations. */
     "paths": {
       /* For some reason marked doesn't resolve otherwise on CF */
-      "npm:marked": ["node_modules/marked/lib/marked.esm.js"],
+      "npm:marked@12.0.0": ["node_modules/marked/lib/marked.esm.js"],
       "npm:*": ["node_modules/*"]
     },
 

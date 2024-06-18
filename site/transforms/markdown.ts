@@ -1,5 +1,5 @@
 import { install, tw } from "npm:@twind/core";
-import { marked } from "npm:marked";
+import { marked } from "npm:marked@12.0.0";
 import highlight from "npm:highlight.js";
 
 // TODO: For some reason Deno import map doesn't work for this case
