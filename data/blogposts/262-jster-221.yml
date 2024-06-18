@@ -1,0 +1,45 @@
+type: static
+title: "JSter #221: Libraries and more"
+short_title: "JSter #221"
+user: bebraw
+slug: jster-221
+body: |
+  > Think big, Think JavaScript
+
+  [Future Frontend 2024](https://futurefrontend.com/) is a wrap and I hope to edit the final videos during the next weeks as I receive the material.
+
+  ## Libraries
+
+  * [Editor.js - Free block-style editor with a universal JSON output](https://buff.ly/2I5wVkw)
+  * [WebReflection/buffer-to-base64: A base64 encoder/decoder with gzip or deflate abilities.](https://buff.ly/4ednhJb)
+  * [jakebailey/every-ts: A utility to build and bisect any version of TypeScript](https://buff.ly/4cbte7G)
+  * [ascorbic/cdn-cache-control - Easy cache header handling](https://buff.ly/45ceJy9)
+
+  ## Frameworks
+
+  * [Trigger - The open source background jobs framework](https://buff.ly/3wR0deN)
+
+  ## Tools
+
+  * [TanStack/config: Configuration and tools for publishing and maintaining high-quality JavaScript packages](https://buff.ly/3S3MrRz)
+  * [ortoni-report - Better Playwright reports](https://buff.ly/4epTNHX)
+  * [lukeautry/tsoa: Build OpenAPI-compliant REST APIs using TypeScript and Node](https://buff.ly/32PkPns)
+  * [RecipeUI - Open source alternative to Postman](https://buff.ly/46arsAK)
+  * [Turborepo 2.0 - Monorepos go brr](https://buff.ly/4aTZ1ZE)
+
+  ## Runtimes
+
+  * [Redfire75369/spiderfire: JavaScript Runtime built with Mozilla's SpiderMonkey Engine](https://buff.ly/3th9r5s)
+
+  ## Languages
+
+  * [Announcing TypeScript 5.5 RC](https://buff.ly/4aM7Qoo)
+
+  ## Demos
+
+  * [Demonstration of a simple Lorenz attractor that emits SVG](https://buff.ly/4aMkQKG)
+
+  ## Articles
+
+  * [Why @mjhbessey is over with GraphQL after six years of using it](https://buff.ly/4elkFsX)
+  * [Simplify sharing with built-in APIs and progressive enhancement](https://buff.ly/3Q2c5VR)
