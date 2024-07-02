@@ -1,0 +1,39 @@
+type: static
+title: "JSter #222: Libraries and more"
+short_title: "JSter #222"
+user: bebraw
+slug: jster-222
+body: |
+  > It's a JavaScript.
+
+  I set up [a playlist based on Future Frontend 2024 content](https://www.youtube.com/playlist?list=PLKGgD1M40S4icv0bsHGriGw8pI9YjDZtk). There's also a [photo album](https://www.flickr.com/photos/react-finland/albums/72177720318407680/).
+
+  ## Libraries
+
+  * [Announcing TanStack Query v5](https://buff.ly/3S4vsiu)
+  * [stan-js - Fast and elegant state management solution with minimal configuration for your React, React Native and even vanilla-js apps](https://buff.ly/45HRcVV)
+  * [Shoelace: A forward-thinking library of web components.](https://buff.ly/2Yzr15u)
+
+
+  ## Tools
+
+  * [Node.js Mobile](https://buff.ly/474cqNc)
+  * [Payload CMS - Node & React TypeScript Headless CMS](https://buff.ly/39uojQj)
+  * [oxc - A suite of high-performance tools for JavaScript and TypeScript written in Rust](https://buff.ly/3PNal14)
+  * [React Internals Explorer - easily see how React works](https://buff.ly/3KLajVA)
+
+  ## CSS
+
+  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](https://buff.ly/443uN3r)
+
+  ## TypeScript
+
+  * [Runtype Benchmarks for TypeScript](https://buff.ly/3Qpxvfv)
+  * [tsperf - TypeScript performance made easy](https://buff.ly/3RP7SpQ)
+  * [Announcing TypeScript 5.5](https://buff.ly/45GfdwM)
+
+  ## Techniques
+
+  * [Thinking Locally with Signals](https://buff.ly/3tvgO9J)
+  * [Skip links on ikea](https://buff.ly/46tbH8y)
+  * [Node module size: See how Adam reduced it by 90%](https://buff.ly/2xhTlZe)
