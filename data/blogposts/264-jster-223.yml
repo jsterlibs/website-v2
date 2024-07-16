@@ -1,0 +1,45 @@
+type: static
+title: "JSter #223: Libraries and more"
+short_title: "JSter #223"
+user: bebraw
+slug: jster-223
+body: |
+  > Hey kid, say hello to your JavaScript for me.
+
+  There's nothing specific to announce. Carry on.
+
+  ## Libraries
+
+  * [edgejs - Simple templating engine for the edge](https://buff.ly/4646Fy1)
+  * [WebReflection/linkedom: A triple-linked lists based DOM implementation.](https://buff.ly/40lyyk0)
+  * [LittleJS - The Tiny Fast JavaScript Game Engine](https://buff.ly/3S3jyUU)
+  * [neotraverse - a light alternative to traverse](https://buff.ly/4bNF73a)
+  * [Typesense - Fast, typo-tolerant open source search engine](https://buff.ly/2GCJX9D)
+  * [lucia-auth/lucia: Authentication, simple and clean](https://buff.ly/3tXnmht)
+  * [AutoAnimate - Add motion to your apps with a single line of code](https://buff.ly/3wJmHxP)
+  * [WebReflection/sabayon: SharedArrayBuffer always on.](https://buff.ly/3XGVpHz)
+
+  ## Demos
+
+  * [WebVM - Linux virtualization in WebAssembly](https://webvm.io/)
+
+  ## Opinions
+
+  * [A Rant about Front-end Development](https://buff.ly/3zgdwtJ)
+
+  ## Techniques
+
+  * [Speeding up the JavaScript ecosystem - Isolated Declarations](https://buff.ly/45WAbrg)
+
+  ## Articles
+
+  * [5 Misconceptions about React Server Components](https://buff.ly/3W1zsSd)
+  * [Great animations](https://buff.ly/3XNDbEu)
+
+  ## Frameworks
+
+  * [javaScriptKampala/z-js: The literally low overhead js framework](https://buff.ly/3L4wpCF)
+
+  ## Tools
+
+  * [Mako - An extremely fast, production-grade web bundler based on Rust](https://makojs.dev/)
