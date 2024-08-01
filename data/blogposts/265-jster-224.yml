@@ -1,0 +1,43 @@
+type: static
+title: "JSter #224: Libraries and more"
+short_title: "JSter #224"
+user: bebraw
+slug: jster-224
+body: |
+  > Round up the usual JavaScripts!
+
+  We produced [a mood video of Future Frontend 2024](https://www.youtube.com/watch?v=UNWLX6QI3ow) in case you want to see what happened at the recent event.
+
+  ## Techniques
+
+  * [Garbage collection and closures](https://buff.ly/3ykSXvY)
+  * [Styling Tables the Modern CSS Way](https://buff.ly/3zRfIrV)
+  * [Handling Time Zone in JavaScript](https://buff.ly/3QUglHd)
+
+  ## Libraries
+
+  * [MapLibre - performant open source mapping library](https://maplibre.org/)
+  * [lxsmnsyc/seroval: Stringify JS values](https://buff.ly/45Z20OE)
+  * [@lazarv/react-server - The easiest way to build React apps with server-side rendering](https://buff.ly/4dgJaGj)
+  * [mjackson/fetch-super-headers: A drop-in replacement for JavaScript `Headers` with type-safe access](https://buff.ly/3W9MRXd)
+  * [neg4n/d3-no-dom: 📊 Fully use D3.js (Data Driven Documents) in environments without DOM. Perfect for serverless e.g. Vercel Functions](https://buff.ly/3zN1JU3)
+
+  ## Articles
+
+  * [An update on invokers: Invoker commands in HTML](https://buff.ly/3y5mJF3)
+  * [Benchmarking AWS Lambda Cold Starts Across JavaScript Runtimes](https://buff.ly/3YgOm8I)
+  * [A cleaner node modules ecosystem](https://buff.ly/3WCEvbZ)
+
+  ## Shims
+
+  * [invoker shim for HTML command and commandfor](https://buff.ly/3WDHbq8)
+
+  ## Tools
+
+  * [Wasp - Develop full stack apps faster](https://buff.ly/2JSmWm0)
+  * [Add code, not dependencies, with Sly CLi](https://buff.ly/3Wrch47)
+  * [thepassle/module-replacements-codemods](https://buff.ly/4fd1lOY)
+
+  ## Frameworks
+
+  * [Hono - Ultrafast web framework](https://buff.ly/3PwRrNg)
