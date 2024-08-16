@@ -1,0 +1,43 @@
+type: static
+title: "JSter #225: Libraries and more"
+short_title: "JSter #225"
+user: bebraw
+slug: jster-225
+body: |
+  > You're gonna need a bigger JavaScript
+
+  Summer is close to over. There's still time to prepare for Winter.
+
+  ## Libraries
+
+  * [WebReflection/gist-fs: A daily rate-limited way to have free storage in the wild.](https://buff.ly/3M21eII)
+  * [Cheerio 1.0 Released, Batteries Included](https://buff.ly/3AfZQzw)
+
+  ## Tools
+
+  * [unjs/nitro: Create, build and deploy universal web servers. The open engine powering Nuxt and open to everyone.](https://buff.ly/3ueVHZL)
+  * [callstack/reassure: Performance testing companion for React and React Native](https://buff.ly/493svUl)
+  * [pakastin/nomoji: Replace emojis in text with SVG images](https://buff.ly/46FigWn)
+  * [MDTS - Exceptional Content & Docs with Next.js](https://buff.ly/3tyvJ3d)
+
+  ## Techniques
+
+  * [Memory Management in V8, garbage collection and improvements](https://buff.ly/3BR3NWr)
+  * [Streaming HTML out of order without JavaScript](https://buff.ly/3SjmBcn)
+  * [From Cypress to Playwright - cost, migration steps, timeline and AI tools](https://buff.ly/4dzz1oi)
+  * [Async Derivations in Reactivity](https://buff.ly/3LTBrlK)
+  * [Lexical state updates](https://buff.ly/47O5Xqh)
+
+  ## Articles
+
+  * [The Sneaky Costs of Scaling Serverless](https://buff.ly/46FgNiG)
+  * [A Wild Next.js Bug Chase](https://buff.ly/3WRWFH6)
+  * [Concurrent React, External Stores, and Tearing](https://buff.ly/47dW4Bb)
+
+  ## SDKs
+
+  * [web-infra-dev/midscene: An AI-powered automation SDK can control the page, perform assertions, and extract data in JSON format using natural language.](https://buff.ly/4dxk328)
+
+  ## UI
+
+  * [daisyUI — Tailwind CSS Components](https://buff.ly/3cW66hi)
