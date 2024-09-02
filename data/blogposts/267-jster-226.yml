@@ -1,0 +1,43 @@
+type: static
+title: "JSter #226: Libraries and more"
+short_title: "JSter #226"
+user: bebraw
+slug: jster-226
+body: |
+  > What took you so JavaScript?
+
+  Given there's a lot of hype around AI, I took the bait and [interviewed Janos Dobronszki](https://survivejs.com/blog/singulatron-interview/) over at SurviveJS blog. Janos developed a tool called Singulatron that lets you run open source models easily on your own machine giving benefits, like having completely control over how your data is used.
+
+  ## Libraries
+
+  * [Announcing TypedSQL: Make your raw SQL queries type-safe with Prisma ORM](https://buff.ly/4768Nb1)
+  * [bramus/style-observer: MutationObserver for CSS. Get notified when the computed value of a CSS property changes.](https://buff.ly/4e25TGo)
+  * [WebSID - Commodore 64 synthesizer](https://buff.ly/4g6t3Ns)
+  * [PgTyped - Typesafe SQL in Typescript](https://pgtyped.dev/)
+  * [Radashi - A collection of TypeScript utilities](https://buff.ly/4704TA9)
+  * [Instant - the realtime client-side database](https://buff.ly/3WW49aD)
+  * [Paraglide - Simple i18n for applications](https://buff.ly/4dtE7m9)
+  * [Elementary Audio - A JavaScript library for digital audio signal processing](https://buff.ly/4e7AVwL)
+  * [kucherenko/jscpd: Copy/paste detector for programming source code.](https://buff.ly/3HFSB40)
+
+  ## Tools
+
+  * [Announcing Rspack 1.0](https://buff.ly/4dL2GLB)
+
+  ## Articles
+
+  * [An SSR Performance Showdown](https://buff.ly/3yHauPq)
+  * [Why web application size matters](https://buff.ly/3YYiUMI)
+  * [Video with alpha transparency on the web](https://buff.ly/3SVcUk3)
+
+  ## Services
+
+  * [Project IDX - Develop apps online with Google Gemini](https://idx.dev/)
+
+  ## Collections
+
+  * [notthetup/awesome-webaudio: A curated list of awesome WebAudio packages and resources.](https://buff.ly/3YPWxJj)
+
+  ## Fonts
+
+  * [Font with a built-in syntax highlighting](https://buff.ly/3WPTn5Z)
