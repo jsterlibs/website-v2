@@ -1,0 +1,46 @@
+type: static
+title: "JSter #227: Libraries and more"
+short_title: "JSter #227"
+user: bebraw
+slug: jster-227
+body: |
+  > With JavaScript, there's always a thing that you don't see coming.
+
+  I have just a couple of quick things to mention: 1. there's a [petition to free JavaScript from its trademark](https://javascript.tm/) to allow free usage of the term 2. [today's Future Frontend meetup (18:00-21:00) where we built a techno will be livestreamed](https://www.youtube.com/live/7X-hnRPMths).
+
+  ## Libraries
+
+  * [dnd kit – a modern drag and drop toolkit for React](https://dndkit.com/)
+  * [@pekkis/finnish-name-randomizer - Generate random Finnish names](https://buff.ly/3ZeXF9M)
+  * [toad-scheduler - In-memory TypeScript scheduler](https://buff.ly/494zahy)
+  * [TypeSpec - Describe APIs](https://buff.ly/3vNg6pm)
+  * [tinybench - A simple, tiny and lightweight benchmarking library!](https://buff.ly/3w25sLm)
+  * [electric-sql/pglite: Lightweight Postgres packaged as WASM into a TypeScript library for the browser, Node.js, Bun and Deno](https://buff.ly/3uWk5Qk)
+
+  ## Articles
+
+  * [A different way to think about TypeScript](https://buff.ly/3AnZ5Va)
+  * [The State of ES5 on the Web](https://buff.ly/4cYD1hn)
+  * [The Great npm Garbage Patch](https://buff.ly/46LjEH8)
+
+  ## Science
+
+  * [MSc thesis - Impact of React component libraries on developer experience - An empirical study on component libraries' styling approaches](https://buff.ly/4eltHF9)
+
+  ## Techniques
+
+  * [JavaScript RORO pattern](https://buff.ly/3XEyrAk)
+  * [What is atomic state management?](https://buff.ly/4d1NGYM)
+  * [The Monospace Web](https://buff.ly/3YXpJOM)
+
+  ## Frameworks
+
+  * [KaibanJS - AI agent framework for JavaScript](https://buff.ly/3XEvoYM)
+
+  ## Tools
+
+  * [Announcing Rsbuild 1.0](https://buff.ly/3Xci0cY)
+
+  ## Languages
+
+  * [Announcing TypeScript 5.6 RC](https://buff.ly/4fYe4oT)
