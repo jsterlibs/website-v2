@@ -1,0 +1,39 @@
+type: static
+title: "JSter #228: Libraries and more"
+short_title: "JSter #228"
+user: bebraw
+slug: jster-228
+body: |
+  > You are the JavaScript one
+
+  We've started selling tickets for next year's Future Frontend conference. It will take place 27-28.5 at Espoo, Finland (close to Helsinki) and we'll focus on the intersection of AI, web design and development. The super early bird tickets (199€) are available until the end of October and you can [learn more about Future Frontend 2025](https://futurefrontend.com/blog/ff25/) at the conference website.
+
+  ## Libraries
+
+  * [webpro/reveal-md: reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file](https://buff.ly/3BpBVOC)
+  * [Slidev - Presentation slides for developers](https://sli.dev/)
+  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](https://buff.ly/443uN3r)
+  * [decs/typeschema: 🛵 Universal adapter for TypeScript schema validation.](https://buff.ly/3HWxevO)
+  * [Fulldev UI - Astro component and block library, open-source](https://ui.full.dev/)
+  * [Fastify v5 is Here!](https://buff.ly/4dcWFq3)
+
+  ## Frameworks
+
+  * [i18next - i18n framework for JavaScript](https://buff.ly/3I9qRoO)
+  * [WXT - Next-gen Web Extension Framework](https://wxt.dev/)
+
+  ## Tools
+
+  * [Deno 2.0 Release Candidate](https://buff.ly/3TCw5Qg)
+  * [SafeQL - Write safe SQL queries with confidence](https://safeql.dev/)
+  * [ts-blank-space - Fast TS type eraser](https://buff.ly/3TzQzsW)
+
+  ## Articles
+
+  * [Why Varun switched from Cypress to Playwright](https://buff.ly/4ehsLSG)
+  * [Detailed React. Reconciliation, Renderers, Fiber, Virtual Tree](https://buff.ly/3OwgNJZ)
+
+  ## Techniques
+
+  * [Partial Prerendering for Everyone with Cloudflare Workers • Solving the decision problem](https://buff.ly/3Y52RMB)
+  * [Custom Elements Everywhere](https://buff.ly/3SDcyxs)
