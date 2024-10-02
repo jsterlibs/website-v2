@@ -4,6 +4,7 @@ compatibility_flags = ["nodejs_compat"]
 kv_namespaces = [
   { binding = "PAGE_CACHE", id = "b264a863ed0942708142d84a238fde76", preview_id = "45cb524c2410437ea11592c1a3fdcbd0" },
 ]
+pages_build_output_dir = "./build"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
