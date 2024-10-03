@@ -62,13 +62,12 @@ function fetchLibrary(name: string): Promise<Library> {
 
 async function fetchSecurity(name: string): Promise<Library["security"]> {
   try {
+    const npmName = name.trim().toLowerCase();
     const { metrics, score, error } = await fetch(
       // TODO: Figure out a good way to get npm names of packages
       // as the current solution does not feel ideal
       // Note that the endpoint accepts a version parameter. I.e., version=16.0.0
-      `https://socket.dev/api/npm/package-info/score?name=${name
-        .trim()
-        .toLowerCase()}&low_priority=1`
+      `https://socket.dev/api/npm/package-info/score?name=${npmName}&low_priority=1`
     ).then((res) =>
       res.json<{
         metrics: Record<string, number>;
@@ -82,6 +81,7 @@ async function fetchSecurity(name: string): Promise<Library["security"]> {
     }
 
     return {
+      npmName,
       // @ts-expect-error TODO: Type and validate this accurately
       metrics,
       score: {

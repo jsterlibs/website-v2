@@ -97,10 +97,10 @@
             />
           </div>
         </div>
-        <div>
+        <div &visibleIf="(get context library.npmName)">
           Source:&nbsp;
           <SiteLink
-            &href="(concat https://socket.dev/npm/package/ (cleanUrl (get context library.name)))"
+            &href="(concat https://socket.dev/npm/package/ (get context library.npmName))"
             >socket.dev</SiteLink
           >
         </div>
