@@ -1,7 +1,11 @@
 import { urlJoin } from "./utilities/urlJoin.ts";
 
 function init() {
-  return { urlJoin };
+  function clearUrl(s: string) {
+    return s.trim().toLowerCase();
+  }
+
+  return { clearUrl, urlJoin };
 }
 
 export { init };
