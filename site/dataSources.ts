@@ -8,15 +8,9 @@ import getMarkdown from "./transforms/markdown.ts";
 import { getJson } from "../scripts/utils.ts";
 import type { LoadApi } from "https://deno.land/x/gustwind@v0.62.0/types.ts";
 
-import categories from "../data/categories.json" assert {
-  type: "json",
-};
-import blogIndex from "../data/blogposts.json" assert {
-  type: "json",
-};
-import parentCategories from "../data/parent-categories.json" assert {
-  type: "json",
-};
+import categories from "../data/categories.json" assert { type: "json" };
+import blogIndex from "../data/blogposts.json" assert { type: "json" };
+import parentCategories from "../data/parent-categories.json" assert { type: "json" };
 import type { BlogPost, Category, Library, Tag } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
@@ -34,8 +28,8 @@ function init({ load }: { load: LoadApi }) {
       extension: ".yml",
       type: "",
     });
-    const blogPosts: BlogPost[] = await Promise.all(blogPostFiles.map(
-      async ({ name, path }) => {
+    const blogPosts: BlogPost[] = await Promise.all(
+      blogPostFiles.map(async ({ name, path }) => {
         const yaml = YAML.parse(await load.textFile(path));
 
         return {
@@ -43,34 +37,36 @@ function init({ load }: { load: LoadApi }) {
           path,
           ...yaml,
         };
-      },
-    ));
+      })
+    );
 
-    return (await Promise.all(
-      blogIndex.map(async ({ id, date }: IndexEntry) => {
-        const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
+    return (
+      await Promise.all(
+        blogIndex.map(async ({ id, date }: IndexEntry) => {
+          const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
 
-        if (!matchingBlogPost) {
-          console.warn("No matching blog post found for", id);
-        }
+          if (!matchingBlogPost) {
+            console.warn("No matching blog post found for", id);
+          }
 
-        const yaml = YAML.parse(await load.textFile(matchingBlogPost?.path));
+          const yaml = YAML.parse(await load.textFile(matchingBlogPost?.path));
 
-        return {
-          path: matchingBlogPost?.path,
-          id,
-          title: matchingBlogPost?.title || "",
-          // @ts-ignore: Typo in the original data
-          shortTitle: matchingBlogPost?.short_title,
-          slug: matchingBlogPost?.slug || "",
-          date,
-          type: matchingBlogPost?.type || "static",
-          user: matchingBlogPost?.user || "",
-          // This is needed for RSS
-          body: markdown(yaml.body).content,
-        };
-      }),
-    )).toReversed();
+          return {
+            path: matchingBlogPost?.path,
+            id,
+            title: matchingBlogPost?.title || "",
+            // @ts-ignore: Typo in the original data
+            shortTitle: matchingBlogPost?.short_title,
+            slug: matchingBlogPost?.slug || "",
+            date,
+            type: matchingBlogPost?.type || "static",
+            user: matchingBlogPost?.user || "",
+            // This is needed for RSS
+            body: markdown(yaml.body).content,
+          };
+        })
+      )
+    ).toReversed();
   }
 
   function processBlogPost(blogPost: BlogPost) {
@@ -117,17 +113,18 @@ function init({ load }: { load: LoadApi }) {
             const cachePath = join(cacheDirectory, library.name + ".json");
 
             try {
-              const cachedLibrary = JSON.parse(
-                await load.textFile(cachePath),
-              );
+              const cachedLibrary = JSON.parse(await load.textFile(cachePath));
 
               return { stargazers: undefined, ...cachedLibrary };
             } catch (_error) {
               // no-op: Error here is ok as then it means the cache file doesn't exist yet
             }
 
+            return { ...library, stargazers: undefined };
+
             // TODO: Restore using an external API
             // It looks like the missing repos have stargazers set to undefined.
+            /*
             try {
               const response = await fetch(
                 `https://cf-api.jster.net/stargazers?organization=${
@@ -180,11 +177,12 @@ function init({ load }: { load: LoadApi }) {
 
               return { ...library, stargazers: undefined };
             }
+            */
           }
 
           return { ...library, stargazers: undefined };
         })
-      ),
+      )
     );
 
     return enhancedLibraries.filter(Boolean);
@@ -199,11 +197,11 @@ function init({ load }: { load: LoadApi }) {
 
     return {
       ...category,
-      libraries: (await getJson<Library[]>(
-        `data/categories/${category.id}.json`,
-      )).map((l) => libraries.find((library) => library.id === l.id)).filter(
-        Boolean,
-      ),
+      libraries: (
+        await getJson<Library[]>(`data/categories/${category.id}.json`)
+      )
+        .map((l) => libraries.find((library) => library.id === l.id))
+        .filter(Boolean),
     };
   }
 
@@ -215,20 +213,21 @@ function init({ load }: { load: LoadApi }) {
     const libraries = await getLibraries();
 
     return Promise.all(
-      (await load.dir({ path: "./data/tags", extension: ".json", type: "" }))
-        .map(async (
-          { name, path },
-        ) => ({
-          id: name.split(".").slice(0, -1).join(),
-          title: name.split(".").slice(0, -1).join(),
-          libraries: (await getJson<Category[]>(path)).map((c) => {
+      (
+        await load.dir({ path: "./data/tags", extension: ".json", type: "" })
+      ).map(async ({ name, path }) => ({
+        id: name.split(".").slice(0, -1).join(),
+        title: name.split(".").slice(0, -1).join(),
+        libraries: (await getJson<Category[]>(path))
+          .map((c) => {
             const foundLibrary = libraries.find((l) => l.id === c.library.id);
 
             if (foundLibrary) {
               return foundLibrary;
             }
-          }).filter(Boolean),
-        })),
+          })
+          .filter(Boolean),
+      }))
     );
   }
 
