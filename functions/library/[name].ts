@@ -21,10 +21,14 @@ export async function onRequest(
     // In case library does not have a valid shape, this will throw
     ZLibrary.parse(library);
 
+    // TODO: Restore
+    /*
     const stargazers = await fetchStargazers(
       context.env.API_AUTH,
       library.links?.github
     );
+    */
+    const stargazers = 0;
 
     if (stargazers) {
       library.stargazers = stargazers;
