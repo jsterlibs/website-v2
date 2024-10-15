@@ -1,0 +1,46 @@
+type: static
+title: "JSter #229: Libraries and more"
+short_title: "JSter #229"
+user: bebraw
+slug: jster-229
+body: |
+  > That's your JavaScript
+
+  I recently [interviewed Dariel Vila about KaibanJS for my blog](https://survivejs.com/blog/kaibanjs-interview/). KaibanJS is a framework that helps you orchestrate your AI agents. The interesting thing is that it's the first solution of its kind for JavaScript and the approach feels intuitive.
+
+  ## Libraries
+
+  * [superlucky84/state-ref: Universal state management library that can be easily integrated into UI libraries](https://buff.ly/3Y1lgZ7)
+  * [Agentic - stdlib for TypeScript based AI agents](https://buff.ly/4eDmYHb)
+  * [stacksjs/bun-spreadsheets: Easily generate spreadsheets, like CSVs and Excel files.](https://buff.ly/3zEA1t1)
+
+  ## Tools
+
+  * [Announcing Deno 2](https://buff.ly/4h1bkre)
+
+  ## Frameworks
+
+  * [KaibanJS - JavaScript Framework for Building Multi-Agent Systems](https://buff.ly/3XEvoYM)
+  * [One, a React Framework](https://onestack.dev/)
+  * [Waku - The minimal React framework](https://waku.gg/)
+  * [Stricli - a framework for developing CLI applications with TypeScript](https://buff.ly/4dsaHUO)
+
+  ## Polyfills
+
+  * [ungap/raw-json: JSON.rawJSON and isRawJSON ponyfill](https://buff.ly/4gSamxw)
+
+  ## Languages
+
+  * [_hyperscript - a small scripting language for the web](https://buff.ly/3Sxbwoy)
+
+  ## Articles
+
+  * [Compound Components](https://buff.ly/3BzpKPk)
+
+  ## Resources
+
+  * [Web Animation recipes](https://buff.ly/3NzpgLX)
+
+  ## Techniques
+
+  * [Solved by CSS Scroll-Driven Animations: hide a header when scrolling down, show it again when scrolling up](https://buff.ly/47ODXDO)
