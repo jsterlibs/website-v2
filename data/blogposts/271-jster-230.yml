@@ -1,0 +1,50 @@
+type: static
+title: "JSter #230: Libraries and more"
+short_title: "JSter #230"
+user: bebraw
+slug: jster-230
+body: |
+  > An imaginary JavaScript?
+
+  Winter is coming, but JavaScript ecosystem keeps on going despite the ice and snow.
+
+  ## Libraries
+
+  * [TinyBase - The reactive data store for local-first apps](https://tinybase.org/)
+  * [rhettlunn/is-odd-ai: Why check if something is odd simply, when you can do it with ✨AI✨](https://buff.ly/4eTWvFz)
+
+  ## Frameworks
+
+  * [Next.js 15](https://buff.ly/3YmCTDc)
+  * [Medusa 2.0 - a composable e-commerce framework](https://buff.ly/4hgEBOZ)
+  * [Svelte 5 is alive](https://buff.ly/4eYP5kr)
+  * [Catalyst - a highly composable framework](https://buff.ly/3Yu3Beb)
+  * [Introducing Express v5: A New Era for Node.js Framework](https://buff.ly/408uiqc)
+  * [The story of web framework Hono, from the creator of Hono](https://buff.ly/3U9LUOz)
+  * [Introducing Brisa: Full-stack Web Platform Framework 🔥](https://buff.ly/4exo4nV)
+  * [openwebf/webf: Build flutter apps with HTML/CSS and JavaScript.](https://buff.ly/4dM2z1u)
+
+  ## Tools
+
+  * [yamadashy/repopack: 📦 Repopack is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, and Gemini.](https://buff.ly/3CbgqkT)
+  * [nolanlawson/fuite: A tool for finding memory leaks in web apps](https://buff.ly/32env2a)
+  * [EvoMaster - AI driven open source fuzzer for common web APIs (REST, GraphQL, RPC)](https://buff.ly/3ND7kjr)
+  * [Gitlip - Git hosted on Cloudflare](https://buff.ly/4eanoUM)
+  * [Announcing Nx 20](https://buff.ly/3NrHFKe)
+
+  ## Techniques
+
+  * [Streaming HTML out of order without JavaScript](https://buff.ly/3SjmBcn)
+
+  ## Theses
+
+  * [BSc thesis - Survey of the current state of 3D production pipelines for the web](https://buff.ly/4gSPUN8)
+
+  ## Boilerplates
+
+  * [DevVault - Next.js boilerplate for your next startup](https://buff.ly/48r8EiJ)
+
+  ## Articles
+
+  * [State of Frontend 2024](https://buff.ly/3fLI1bH)
+  * [A future for Web Components without the Shadow DOM](https://buff.ly/4h5Lv9I)
