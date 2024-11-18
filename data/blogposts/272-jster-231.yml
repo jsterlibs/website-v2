@@ -1,0 +1,48 @@
+type: static
+title: "JSter #231: Libraries and more"
+short_title: "JSter #231"
+user: bebraw
+slug: jster-231
+body: |
+  > JavaScript. It lives forever. Right there in your heart.
+
+  I just finished a busy week at [Web Summit](https://websummit.com/) and I still have a writeup to do. Interestingly enough the event doesn't have much to do with the web although it started from those origins.
+
+  ## Libraries
+
+  * [Plaiceholder - Beautiful image placeholders without the hassle](https://buff.ly/3JINxgr)
+  * [brimdata/react-arborist: The complete tree view component for React](https://buff.ly/3VPFFkr)
+  * [ChrisShank/perfect-arrow: A custom element to declaratively define perfect arrows.](https://buff.ly/49CE9pm)
+  * [mastodon-post Web Component](https://buff.ly/3vxxHSA)
+  * [Legend State - Performant state manager for React](https://buff.ly/4cehd22)
+
+  ## Frameworks
+
+  * [Tailus UI - an alternative to shadcn](https://tailus.io/)
+
+  ## Platforms
+
+  * [evoluhq/evolu: Local-first platform designed for privacy, ease of use, and no vendor lock-in](https://buff.ly/3tbygQt)
+
+  ## SDKs
+
+  * [AgentQL for fullstack developers: announcing our JavaScript SDK](https://buff.ly/4hFkmup)
+
+  ## Simulators
+
+  * [CPU ALU Adder Simulator](https://buff.ly/3TGfeuV)
+
+  ## Techniques
+
+  * [On popover accessibility - what the browser does and doesn't do](https://buff.ly/4a3WvR7)
+  * [Lossy CSS compression for fun and loss (or profit)](https://buff.ly/49YeBUi)
+  * [Making content-aware components using CSS :has(), grid, and quantity queries](https://buff.ly/3C2Eu9y)
+
+  ## Tools
+
+  * [stackblitz-labs/pkg.pr.new: Continuous (Preview) Releases for your libraries!](https://buff.ly/3YSIKS3)
+  * [vlt - Develop, Run, Distribute, Discover, and Secure your Javascript Packages](https://www.vlt.sh/)
+
+  ## Articles
+
+  * [State of Node.js Performance 2023](https://buff.ly/43pCMr6)
