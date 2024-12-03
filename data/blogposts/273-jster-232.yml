@@ -1,0 +1,45 @@
+type: static
+title: "JSter #232: Libraries and more"
+short_title: "JSter #232"
+user: bebraw
+slug: jster-232
+body: |
+  > You’re playing it safe, just waiting for me to JavaScript up.
+
+  Only a couple of weeks until xmas. It's a good time to pick up [advent of code](https://adventofcode.com/).
+
+  ## Articles
+
+  * [If Not React, Then What?](https://buff.ly/4fR2vzz)
+
+  ## Guides
+
+  * [Welcome to the world of Statecharts](https://buff.ly/3JJTIAU)
+
+  ## Techniques
+
+  * [Anchor Positioning Is Disruptive](https://buff.ly/4fXFXgb)
+  * [Building data-centric apps with a reactive relational database](https://buff.ly/3MA9ApD)
+  * [Rendering performant Sanity.io images](https://buff.ly/3zPk5Bw)
+
+  ## Frameworks
+
+  * [Mastra - The TypeScript AI framework](https://mastra.ai/)
+  * [better-auth: The most comprehensive authentication framework for TypeScript](https://buff.ly/49bRXs5)
+
+  ## Libraries
+
+  * [JonasKruckenberg/imagetools: Load and transform images using a toolbox of custom import directives!](https://buff.ly/3ZcS4is)
+  * [humanwhocodes/crosspost: A JavaScript utility for posting across multiple social networks at once](https://buff.ly/3V9uCl1)
+  * [React Router v7](https://buff.ly/49253bk)
+  * [nanostores - A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores](https://buff.ly/3Z1yHsM)
+
+  ## Books
+
+  * [Adactio: Journal—Going Offline is online for free](https://buff.ly/3CMh8W6)
+
+  ## Tools
+
+  * [Vite 6.0 is out!](https://buff.ly/4i7QQ0x)
+  * [Deno 2.1: Wasm Imports and other enhancements](https://buff.ly/3ZhGm7t)
+  * [Announcing TypeScript 5.7](https://buff.ly/3Z3iGCp)
