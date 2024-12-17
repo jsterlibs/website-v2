@@ -1,0 +1,40 @@
+type: static
+title: "JSter #233: Libraries and more"
+short_title: "JSter #233"
+user: bebraw
+slug: jster-233
+body: |
+  > You have no idea what I'm JavaScript of.
+
+  This is the last JSter post of the year. See you next year.
+
+  ## Libraries
+
+  * [latitude-dev/latitude: Developer-first embedded analytics](https://buff.ly/4bCXrvT)
+  * [srcl - Open source monospace component library for React](https://buff.ly/3ZwmdcR)
+  * [UAParser.js - Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent & Client Hints data using JavaScript. Supports browser & node.js environment. Also available as jQuery plugin & TypeScript-ready development.](https://uaparser.dev/)
+  * [React v19 is now stable](https://buff.ly/4ikcSxn)
+
+  ## Guides
+
+  * [An intro to TSConfig for JavaScript Developers](https://buff.ly/4bzPWG1)
+
+  ## Techniques
+
+  * [Plain Vanilla - Simple components minimally](https://buff.ly/41ww1Gm)
+  * [Spot Non-Composited Animations in Chrome DevTools](https://buff.ly/3ZKufAb)
+  * [Avoiding unnecessary cleanup work in disconnectedCallback](https://buff.ly/3ViYQC2)
+  * [Understanding the Hoisting Behavior of let and const](https://buff.ly/3ZAWpxy)
+
+  ## Papers
+
+  * [Overview of Web Application Performance Optimization Techniques](https://buff.ly/4ggbudF)
+
+  ## Tools
+
+  * [Impala - Very simple React and Preact static site generator](https://buff.ly/3KcWyzk)
+  * [Astro 5.0](https://buff.ly/3Vkjq5f)
+
+  ## Components
+
+  * [snow-fall Web Component](https://buff.ly/3HiI7Yh)
