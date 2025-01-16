@@ -1,0 +1,35 @@
+type: static
+title: "JSter #235: Libraries and more"
+short_title: "JSter #235"
+user: bebraw
+slug: jster-235
+body: |
+  > Why is the JavaScript gone?
+
+  I have managed to acquire most of the topics for [Future Frontend 2025 (27-28.5)](https://futurefrontend.com/). It has been interesting to observe how AI affects the conference program as it is difficult to ignore its impact.
+
+  ## Frameworks
+
+  * [hypermodeinc/modus: Modus: an open source, serverless framework for building intelligent functions and APIs, powered by WebAssembly](https://buff.ly/3YRyKIO)
+  * [JavaScript Frameworks - Heading into 2025](https://buff.ly/421fLxc)
+
+  ## Libraries
+
+  * [potree - WebGL point cloud viewer for large datasets](https://buff.ly/4f84DTd)
+  * [Radashi - TypeScript utility library](https://buff.ly/4704TA9)
+  * [Vega - Visualization grammars](https://buff.ly/2LlLLF3)
+
+  ## Tools
+
+  * [drawdb-io/drawdb: Free, simple, and intuitive online database diagram editor and SQL generator.](https://buff.ly/3YQjaNB)
+  * [sonda - Universal visualizer and analyzer for JavaScript and CSS bundles](https://buff.ly/3CcTCBr)
+  * [Grasp - Search, replace, and refactor your JavaScript code based on its structure rather than its text](https://buff.ly/3Uwl0Ax)
+
+  ## Articles
+
+  * [The Performance Inequality Gap, 2024](https://buff.ly/4ar3lzB)
+
+  ## Papers
+
+  * [Survey of Edge Databases for the Web](https://www.researchgate.net/publication/388001154_Survey_of_Edge_Databases_for_the_Web)
+  * [Comparison of web performance optimization techniques -1990s vs. 2020s](https://www.researchgate.net/publication/387485302_Comparison_of_web_performance_optimization_techniques_-1990s_vs_2020s)
