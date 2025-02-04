@@ -1,0 +1,40 @@
+type: static
+title: "JSter #236: Libraries and more"
+short_title: "JSter #236"
+user: bebraw
+slug: jster-236
+body: |
+  > Another day, another JavaScript post
+
+  Not much to say. Keep on coding.
+
+  ## Libraries
+
+  * [tokenami: CSS-in-JS reinvented for scalable, typesafe design systems. A modern approach to just-in-time atomic CSS using CSS variables — no bundler required.](https://buff.ly/4bKnFNY)
+  * [nuqs - Type-safe search params state manager for React frameworks](https://buff.ly/4fzdH3L)
+  * [Starbase - SQLite on the edge](https://buff.ly/3YEdHId)
+  * [unjs/capnp-es: 🔥 TypeScript implementation of the Cap'n Proto serialization.](https://buff.ly/4jyMMY6)
+  * [Announcing ArkType 2.0](https://buff.ly/4jnGYjQ)
+  * [Unpic 1.0 – Image components for every framework](https://buff.ly/3E3JhbM)
+  * [tinylibs/picospinner: A lightweight, no dependency, pluggable CLI spinner library.](https://buff.ly/48IwXsB)
+
+  ## Articles
+
+  * [Managing Timezones in JavaScript Apps](https://buff.ly/4hLzAy5)
+  * [Google begins requiring JavaScript for Google Search](https://buff.ly/4jhG3Sb)
+  * [create-react-app is a zombie application](https://buff.ly/40NLf9l)
+  * [How to achieve instant navigations on the web](https://buff.ly/4hyWV61)
+
+  ## Frameworks
+
+  * [Angular 2025 Strategy](https://buff.ly/4jc490C)
+  * [Frontend frameworks, a 2024 year in review](https://buff.ly/4jilHbt)
+  * [Ember 6.0 Released](https://buff.ly/4hcAR0g)
+  * [Nue - A standards first web framework](https://buff.ly/40D4ouy)
+
+  ## Tools
+
+  * [Boa v0.20 - an ECMAScript engine written in Rust](https://buff.ly/4htyGFr)
+  * [Node.js — Upcoming CVE for End-of-Life Node.js Versions](https://buff.ly/4hp6weE)
+  * [Tailwind CSS v4.0](https://buff.ly/3Cg51kh)
+  * [Vitest 3.0 is out!](https://buff.ly/3WqXJkt)
