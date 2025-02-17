@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [Vento - a new templating engine for Deno](https://vento.js.org/)
-  * [Modern.js - Inspire Creativity in Modern Web Developmen](https://modernjs.dev/en/)
+  * [Modern.js - Inspire Creativity in Modern Web Development](https://modernjs.dev/en/)
   * [cloudflare/workers-graphql-server: 🔥Lightning-fast, globally distributed Apollo GraphQL server, deployed at the edge using Cloudflare Workers](https://github.com/cloudflare/workers-graphql-server)
   * [OpenAuth - Universal, standards-based auth provider](https://openauth.js.org/)
   * [Style-observer: JS to observe CSS property changes, for reals](https://lea.verou.me/blog/2025/style-observer/)
