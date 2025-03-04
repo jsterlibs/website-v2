@@ -1,0 +1,35 @@
+type: static
+title: "JSter #237: Libraries and more"
+short_title: "JSter #237"
+user: bebraw
+slug: jster-237
+body: |
+  > My JavaScript.
+
+  Keep on coding.
+
+  ## Libraries
+
+  * [Vento - a new templating engine for Deno](https://vento.js.org/)
+  * [Modern.js - Inspire Creativity in Modern Web Development](https://modernjs.dev/en/)
+  * [cloudflare/workers-graphql-server: 🔥Lightning-fast, globally distributed Apollo GraphQL server, deployed at the edge using Cloudflare Workers](https://github.com/cloudflare/workers-graphql-server)
+  * [OpenAuth - Universal, standards-based auth provider](https://openauth.js.org/)
+  * [Style-observer: JS to observe CSS property changes, for reals](https://lea.verou.me/blog/2025/style-observer/)
+
+  ## Toolkits
+
+  * [JStack - Full-Stack Next.js & TypeScript Toolkit](https://jstack.app/)
+
+  ## Tools
+
+  * [Sonda - Universal visualizer and analyzer for JavaScript and CSS](https://sonda.dev/)
+  * [sitespeedio/browsertime: Measure and Optimize Web Performance](https://github.com/sitespeedio/browsertime)
+
+  ## Articles
+
+  * [You should write modern CSS, today](https://jeremias.codes/2024/11/you-should-write-modern-css-today/)
+  * [Reflections on managing state](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)
+  * [Simple Web Performance Mentoring](https://calendar.perfplanet.com/2024/simple-web-performance-mentoring/)
+  * [Sunsetting Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
+  * [Move on to ESM-only](https://antfu.me/posts/move-on-to-esm-only)
+  * [Preact Signals, why it matters](https://www.jovidecroock.com/blog/signals/)
