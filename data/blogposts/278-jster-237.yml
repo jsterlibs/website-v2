@@ -1,39 +1,35 @@
 type: static
-title: "JSter #238: Libraries and more"
-short_title: "JSter #238"
+title: "JSter #237: Libraries and more"
+short_title: "JSter #237"
 user: bebraw
-slug: jster-238
+slug: jster-237
 body: |
-  > I feel the need - the need for JavaScript.
+  > My JavaScript.
 
-  It's less than three months until [Future Frontend](https://futurefrontend.com/) (27-28.5, Espoo, Finland). It's not going to be a big conference (~200 people) but that's just good for the vibes.
+  Keep on coding.
 
   ## Libraries
 
-  * [NextGlobeGen - Localize your Next.js App Router routes and content to serve your application for all users around the world](https://buff.ly/40oML1m)
-  * [effector - Write business logic with ease](https://effector.dev/)
+  * [Vento - a new templating engine for Deno](https://vento.js.org/)
+  * [Modern.js - Inspire Creativity in Modern Web Development](https://modernjs.dev/en/)
+  * [cloudflare/workers-graphql-server: 🔥Lightning-fast, globally distributed Apollo GraphQL server, deployed at the edge using Cloudflare Workers](https://github.com/cloudflare/workers-graphql-server)
+  * [OpenAuth - Universal, standards-based auth provider](https://openauth.js.org/)
+  * [Style-observer: JS to observe CSS property changes, for reals](https://lea.verou.me/blog/2025/style-observer/)
 
-  ## Articles
+  ## Toolkits
 
-  * [LLM bots + Next.js image optimization = recipe for bankruptcy (post-mortem)](https://buff.ly/QxkbU6a)
-  * [JavaScript hashing speed comparison: MD5 versus SHA-256](https://buff.ly/40tTG9t)
-  * [A list of reasons why you should be using Cloudflare Workers for building your AI agent infrastructure/product/personal assistant](https://buff.ly/3VDdqEE)
-
-  ## Mailing lists
-
-  * [This week in React](http://thisweekinreact.com/?utm_source=jster) - Join over 47.000 React developers
+  * [JStack - Full-Stack Next.js & TypeScript Toolkit](https://jstack.app/)
 
   ## Tools
 
-  * [Announcing TypeScript 5.8](https://buff.ly/4ke8S2t)
-  * [Lightpanda - the future of browser automation (scraping, AI agents, etc.)](https://buff.ly/4hHwZVq)
+  * [Sonda - Universal visualizer and analyzer for JavaScript and CSS](https://sonda.dev/)
+  * [sitespeedio/browsertime: Measure and Optimize Web Performance](https://github.com/sitespeedio/browsertime)
 
-  ## Techniques
+  ## Articles
 
-  * [Refactoring with codemods](https://buff.ly/4jbvcsM)
-  * [Debug your view transitions with Inspection Chamber](https://buff.ly/4acT9fd)
-  * [1-billion row challenge with Node.js](https://buff.ly/3Pri8Cc)
-  * [Speeding up the JavaScript ecosystem - Rust and JavaScript Plugins](https://buff.ly/4k8utcv)
-  * [Getting Real (small) With Compression Dictionaries](https://buff.ly/4gYAxlD)
-  * [Downsize your JavaScript: Mastering Bundler Optimizations](https://buff.ly/3ZJ9cg2)
-  * [Snapshot testing styled-components with Vitest](https://buff.ly/4hFXvP6)
+  * [You should write modern CSS, today](https://jeremias.codes/2024/11/you-should-write-modern-css-today/)
+  * [Reflections on managing state](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)
+  * [Simple Web Performance Mentoring](https://calendar.perfplanet.com/2024/simple-web-performance-mentoring/)
+  * [Sunsetting Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)
+  * [Move on to ESM-only](https://antfu.me/posts/move-on-to-esm-only)
+  * [Preact Signals, why it matters](https://www.jovidecroock.com/blog/signals/)
