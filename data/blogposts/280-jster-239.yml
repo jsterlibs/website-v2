@@ -1,0 +1,44 @@
+type: static
+title: "JSter #239: Libraries and more"
+short_title: "JSter #239"
+user: bebraw
+slug: jster-239
+body: |
+  > That'll do, JavaScript. That'll do.
+
+  Winter is coming near its end in Finland. We likely have about one or two months of snow left before it gets too bright and warm. Fortunately curtains exist.
+
+  ## Libraries
+
+  * [Xterm.js - Build terminals in browser](http://xtermjs.org/)
+  * [Introducing Mentoss: The fetch mocker](https://buff.ly/3CyOJmw)
+  * [WebReflection/buffered-clone - A structured clone equivalent able to encode and decode as a buffer](https://buff.ly/40PNGZ3)
+  * [uhop/stream-json - The micro-library of Node.js stream components for creating custom JSON processing pipelines with a minimal memory footprint](https://buff.ly/4gdva1a)
+  * [standard-schema: A standard interface for TypeScript schema validation libraries](https://buff.ly/4ga4spY)
+
+  ## Tools
+
+  * [Node-Based UIs in React - React Flow](https://buff.ly/45Y1oJm)
+  * [alloc/tsc-lint: Find tsconfig files and use them for linting in parallel](https://buff.ly/3WSqcQB)
+
+  ## Articles
+
+  * [The hidden cost of the internet: how your website is silently contributing to climate change (and how to fix it)](https://buff.ly/4gA5POW)
+  * [Page bloat update: How does ever-increasing page size affect your business and your users?](https://buff.ly/4hpoAWG)
+  * [Build for the Web, Build on the Web, Build with the Web](https://buff.ly/40p5Dfv)
+
+  ## TypeScript
+
+  * [A 10x Faster TypeScript](https://buff.ly/QJ2gcBm)
+
+  ## Techniques
+
+  * [Fast & Smooth Third-Party Web Fonts](https://buff.ly/3CC561K)
+
+  ## Css
+
+  * [Chrome - CSS attr() gets an upgrade](https://buff.ly/3EaDgKj)
+
+  ## Frameworks
+
+  * [PlasmoHQ/plasmo: 🧩 The Browser Extension Framework](https://buff.ly/40vlOsF)
