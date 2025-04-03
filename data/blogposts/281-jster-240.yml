@@ -1,0 +1,40 @@
+type: static
+title: "JSter #240: Libraries and more"
+short_title: "JSter #240"
+user: bebraw
+slug: jster-240
+body: |
+  > You know, you don't JavaScript much, do you?
+
+  It's less than two months to [Future Frontend](https://futurefrontend.com/) (27-28.5, Espoo, Finland). I also have my [doctoral defense](https://www.aalto.fi/fi/tapahtumat/vaitos-tietotekniikan-alalta-msc-juho-vepsalainen) at 30.5 so it will be a busy week for certain someone.
+
+  ## Libraries
+
+  * [Announcing TanStack Form v1](https://buff.ly/k2HN7k2)
+  * [Tempo - The easiest way to work with Dates in JavaScript](https://buff.ly/KfUkKCp)
+  * [React Bits - Animated UI Components For React](https://buff.ly/gAAEm00)
+  * [quansync-dev/quansync: "Superposition" between sync and async](https://buff.ly/C9vobXY)
+  * [unjs/unstorage: 💾 Unstorage provides an async Key-Value storage API with conventional features like multi driver mounting, watching and working with metadata, dozens of built-in drivers and a tiny core.](https://buff.ly/4hD7DIi)
+
+  ## Techniques
+
+  * [Monitoring JavaScript Bundle Size Changes in Remix](https://buff.ly/OLvZUMz)
+  * [Remix - Split Route Modules](https://buff.ly/DceHYRO)
+  * [The Modern 2025 Web Components Tech Stack](https://buff.ly/93DMHzg)
+  * [View Transition API: Single Page Apps Without a Framework](https://buff.ly/4bh70BI)
+  * [Rethinking Find-in-Page Accessibility: Making Hidden Text Work for Everyone](https://buff.ly/4i5pZlg)
+
+  ## Frameworks
+
+  * [Solito = React Native + Next.js](https://solito.dev/)
+  * [Lynx - Native apps the web way](https://lynxjs.org/)
+  * [JimSchofield/minne: An ultra-light web component framework](https://buff.ly/3CZyEXv)
+
+  ## Tools
+
+  * [Node Modules Inspector](https://buff.ly/rngzoaJ)
+  * [antfu/vitest-package-exports: An Vitest util to get all exported APIs of a package and prevent unintended breaking changes.](https://buff.ly/0E6HsIu)
+
+  ## Articles
+
+  * [The web on mobile](https://buff.ly/4ba5Qb7)
