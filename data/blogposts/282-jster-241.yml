@@ -1,0 +1,39 @@
+type: static
+title: "JSter #241: Libraries and more"
+short_title: "JSter #241"
+user: bebraw
+slug: jster-241
+body: |
+  > A man without JavaScript is just a shadow of himself
+
+  Spring is near in Finland, not much to go.
+
+  ## Libraries
+
+  * [How to Get Started with LynxJS. “Write Once, Render Anywhere”](https://buff.ly/LoBpjZz)
+  * [Introducing Zod 4 beta](https://v4.zod.dev/v4)
+  * [ygwyg/diverce: vercel nextjs -> cloudflare workers](https://buff.ly/XjohDDw)
+  * [lukeautry/tsoa: Build OpenAPI-compliant REST APIs using TypeScript and Node](https://buff.ly/7kjuNvT)
+  * [Valibot v1 - The 1 kB schema library](https://buff.ly/oGtpN00)
+
+  ## Articles
+
+  * [CSS: Classes Seriously Sprawling](https://buff.ly/ok8bLW4)
+  * [Why Documenso Moved off Next.js](https://documenso.com/blog/why-we-moved-off-next-js)
+  * [You should know this before choosing Next.js](https://buff.ly/tqTJRWX)
+  * [Testing design systems in 2025](https://buff.ly/PPTfrGg)
+
+  ## Frameworks
+
+  * [Nue - Apps lighter than a React button](https://buff.ly/srTAkYJ)
+
+  ## Tools
+
+  * [Hey API - High-quality tools for interacting with APIs](https://heyapi.dev/)
+  * [Introducing vike-server](https://buff.ly/aXLnU1N)
+  * [Fumadocs - Build excellent documentation with less effort using Next.js](https://buff.ly/VVkHkeK)
+  * [nodejs/amaro: Node.js TypeScript wrapper](https://buff.ly/OGNPgzW)
+
+  ## Opinions
+
+  * [Stop Using and Recommending React](https://buff.ly/rRvZJn7)
