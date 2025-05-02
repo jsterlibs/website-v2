@@ -1,0 +1,41 @@
+type: static
+title: "JSter #242: Libraries and more"
+short_title: "JSter #242"
+user: bebraw
+slug: jster-242
+body: |
+  > I only JavaScript to calm my nerves.
+
+  [Future Frontend](https://futurefrontend.com/) (27-28.5, Espoo, Finland) is getting closer as it occurs at the end of the month. There are still some tickets left and I'm sure we'll fill our space well. There's also sauna in store.
+
+  ## Libraries
+
+  * [danielroe/beasties: A library to inline your app's critical CSS and lazy-load the rest.](https://buff.ly/Xzq3fCh)
+  * [Anime.js 4.0 - JavaScript Animation Engine](https://animejs.com/)
+
+  ## Frameworks
+
+  * [GSAP web animation framework is now free](https://buff.ly/btNQ8iq)
+  * [Next.js 15.3 with Turbopack for builds](https://buff.ly/FAIzDKq)
+  * [nordcraft - the open-source visual frontend framework](https://buff.ly/SUBcYiP)
+  * [mastra: The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.](https://buff.ly/OfyawxN)
+
+  ## Techniques
+
+  * [A guide to destructuring in JavaScript](https://buff.ly/kQlHGbe)
+  * [Building Reusable Components with React 19 Actions](https://buff.ly/GOTXs44)
+
+  ## Tooling
+
+  * [Hey API - High-quality tools for interacting with APIs](https://heyapi.dev/)
+
+  ## Articles
+
+  * [React for Two Computers](https://buff.ly/22Q8Pcc)
+  * [Simplify sharing with built-in APIs and progressive enhancement](https://buff.ly/PU47TcU)
+  * [Revealed: React's experimental animations API](https://buff.ly/EDtlt5O)
+
+  ## Tools
+
+  * [Storybook 9 is now in beta](https://buff.ly/0ANxiCI)
+  * [plv8: V8 Engine Javascript Procedural Language add-on for PostgreSQL](https://buff.ly/QnRMZza)
