@@ -1,0 +1,36 @@
+type: static
+title: "JSter #243: Libraries and more"
+short_title: "JSter #243"
+user: bebraw
+slug: jster-243
+body: |
+  > They call me Mister JavaScript!
+
+  [Future Frontend](https://futurefrontend.com/) takes place in a week and a half and [my defense](https://www.aalto.fi/en/events/public-defence-in-computer-science-msc-juho-vepsalainen) is a couple of days after that so it will be a busy week.
+
+  ## Libraries
+
+  * [LegendApp/legend-list: A high-performance list component for React Native](https://buff.ly/U3kBmWu)
+  * [unnoq/orpc: Typesafe APIs Made Simple 🪄](https://buff.ly/PS4bZOz)
+  * [TinyBase - A reactive data store & sync engine](https://tinybase.org/)
+  * [Node.js Authentication from Lucia to Better Auth](https://buff.ly/J2mNwlY)
+
+  ## Techniques
+
+  * [Real-world uses of TypeScript’s utility types](https://buff.ly/y1WhwmR)
+  * [Faster Lazy Loading in React Router v7.5+](https://buff.ly/9XYY7Ki)
+
+  ## React
+
+  * [Impossible Components in React](https://buff.ly/euE9qMj)
+  * [JSX Over The Wire](https://ift.tt/DvMqBuy)
+  * [Advanced React in the Wild](https://buff.ly/m3lBsOJ)
+
+  ## Frameworks
+
+  * [RedwoodSDK - The React Framework for Cloudflare](https://rwsdk.com/)
+  * [LLM-first Web Framework](https://buff.ly/ujxLKGg)
+
+  ## Guides
+
+  * [Heydon/principles-of-web-accessibility: How to approach accessible web interface design](https://buff.ly/y1jmkLk)
