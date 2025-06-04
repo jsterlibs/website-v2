@@ -1,0 +1,46 @@
+type: static
+title: "JSter #244: Libraries and more"
+short_title: "JSter #244"
+user: bebraw
+slug: jster-244
+body: |
+  > There can be only one JavaScript
+
+  [Future Frontend conference](https://futurefrontend.com/) ran last week and from my perspective it was a success in many ways. I also [completed my doctoral defense successfully](https://survivejs.com/research/).
+
+  Since there's somehow less action in the JavaScript space (or I notice less of it), I'll move to a monthly schedule with the mailing list for now. This may also be a sign of stability or shift of focus to AI/LLM.
+
+  ## Libraries
+
+  * [bholmesdev/simple-rsc: A simple React Server Components implementation that you can build yourself 🙌](https://buff.ly/8g5dSIx)
+  * [React Virtuoso - Virtualization with React](https://virtuoso.dev/)
+  * [luwes/little-vdom: 🍼 650B Virtual DOM - Use reactive JSX with minimal overhead](https://buff.ly/qxzAVxs)
+  * [Next-Yak - Zero-runtime CSS-in-JS for Next.js powered by Rust](https://yak.js.org/)
+  * [ValueMelody/melody-auth: A turnkey OAuth & authentication system, designed for both Cloudflare Workers and Node.js](https://buff.ly/3tSYYsU)
+  * [Slidev - Presentation slides for developers](https://sli.dev/)
+  * [tscircuit - Code Electronics with React](https://buff.ly/vUSSVMr)
+
+  ## Techniques
+
+  * [Handling routes in JavaScript projects](https://buff.ly/nynYmjh)
+  * [Progressive JSON](https://buff.ly/XbkWdEF)
+  * [Types as axioms, or: playing god with static types](https://buff.ly/dIkUW5t)
+  * [Collaborative Text Editing without CRDTs or OT](https://buff.ly/fj7Q7du)
+  * [Polishing your typography with line height units](https://ilo.im/163hyx)
+  * [Untangling the LLM spaghetti with ElectricSQL](https://buff.ly/wgfgFFB)
+
+  ## Tools
+
+  * [ESLint can now lint HTML using the html-eslint language plugin](https://buff.ly/HMJn3B1)
+  * [formalsec/explode-js: Automated Exploit Generation for Node.js Packages](https://buff.ly/14oDdza)
+
+  ## Articles
+
+  * [Why Northflank ditched Next.js and never looked back](https://northflank.com/blog/why-we-ditched-next-js-and-never-looked-back)
+  * [RSC for Astro Developers](https://buff.ly/TDUu738)
+  * [How Hardcover Fell Out of Love with Next.js and Back in Love with Ruby on Rails & Inertia.js](https://buff.ly/WHQTNvl)
+  * [JavaScript, when is this?](https://buff.ly/Tuiss4T)
+
+  ## Boilerplates
+
+  * [CSS boilerplate - Sensible CSS defaults for a new project](https://buff.ly/MLu7XO6)
