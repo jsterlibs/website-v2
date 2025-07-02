@@ -1,0 +1,62 @@
+type: static
+title: "JSter #245: Libraries and more"
+short_title: "JSter #245"
+user: bebraw
+slug: jster-245
+body: |
+  > You know, you don't JavaScript much, do you?
+
+  [Future Frontend 2025 was a success and we wrote a recap about the event.](https://futurefrontend.com/blog/ff25-recap/) Apart from that, it has been a pretty cool and rainy Summer in Finland so far and we were somehow lucky during the conference. If you want to participate the next one (8-9.6.26, Espoo, Finland), [consider preregistering to Future Frontend 2026](https://ti.to/future-frontend/2026/with/pre-registration-for-the-conference).
+
+  ## Libraries
+
+  * [Kelp - UI library for people who love HTML, powered by modern CSS and Web Components](https://kelpui.com/)
+  * [Jesterhearts/ratatui-wgpu: A wgpu based rendering backend for ratatui.](https://buff.ly/02U3mjG)
+  * [wzhudev/reverse-linear-sync-engine: A reverse engineering of Linear's sync engine. Endorsed by its co-founder & CTO.](https://buff.ly/K5VejMf)
+  * [unnoq/orpc: Typesafe APIs Made Simple 🪄 h](https://buff.ly/tFl441R)
+  * [cloudflare/workers-oauth-provider: OAuth provider library for Cloudflare Workers](https://buff.ly/SwjW5pP)
+  * [Unpic - The best images for every framework](https://unpic.pics/)
+  * [molefrog/wouter: 🥢 A minimalist-friendly ~2.1KB routing for React and Preact h](https://buff.ly/eSuvsRO)
+  * [Shopify Storefront Web Components - Add Shopify to Any Site](https://buff.ly/FhHvN8D)
+  * [Introducing Zod 4 - runtime typechecker](https://zod.dev/v4)
+
+  ## Frameworks
+
+  * [LiveStore is a next-generation state management framework based on reactive SQLite and built-in sync engine.](https://buff.ly/r9qBMwo)
+  * [H3 v2 beta](https://buff.ly/XRSi9OM)
+
+  ## Articles
+
+  * [Boa - Implementing Temporal, the new date/time API for JavaScript (and Rust!)](https://buff.ly/KG3YXP2)
+  * [Selfish reasons for building accessible UIs](https://buff.ly/q2sNNun)
+  * [Next.js 15.1+ is unusable outside of Vercel](https://buff.ly/H4pJMSj)
+
+  ## Opinions
+
+  * [JavaScript broke the web (and called it progress)](https://buff.ly/d49jzZ5)
+
+  ## Techniques
+
+  * [Frontend test coverage with Storybook 9](https://buff.ly/Wb8KkCP)
+  * [Pick E2E Tests To Run Using AI Summaries](https://buff.ly/SjrwE5T)
+  * [How to Choose the Right Playwright Locators](https://buff.ly/pxKF7UL)
+  * [Seamlessly Blend PHP with Node.js](https://ilo.im/164g4x)
+
+  ## Tools
+
+  * [Vite 7.0 is out!](https://buff.ly/zeNv8pT)
+  * [Nx 21.2 Release: Big upgrades to Angular 20, NestJS 11, and Storybook 9](https://buff.ly/8b2Zepw)
+  * [Jest 30: Faster, Leaner, Better](https://buff.ly/lomoU4t)
+  * [Amaro - Node.js TypeScript wrapper](https://buff.ly/Uc21cE0)
+  * [Vitest 3.2 is out!](https://buff.ly/OOMBNI8)
+  * [Announcing Rolldown-Vite](https://buff.ly/C3Wg318)
+  * [Storybook 9 - The lean, mean component testing machine](https://buff.ly/QjBLt65)
+
+  ## Demos
+
+  * [Nintendo Switch Homescreen recreated with CSS and a li'l bit of JS](https://buff.ly/u49ESPk)
+
+  ## Languages
+
+  * [Civet - Code more TypeScript with less syntax](https://civet.dev/)
+  * [Announcing TypeScript Native Previews](https://buff.ly/15C0FyT)
