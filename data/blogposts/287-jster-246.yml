@@ -1,0 +1,74 @@
+type: static
+title: "JSter #246: Libraries and more"
+short_title: "JSter #246"
+user: bebraw
+slug: jster-246
+body: |
+  > To JavaScript or to not JavaScript
+
+  Another month, another list of links to explore.
+
+  ## Libraries
+
+  * [unnoq/mini-orpc: Simplified implementation of oRPC that includes essential features to help you understand the core concepts](https://buff.ly/pliJp6g)
+  * [kettanaito/rettime: A type-safe marriage of `EventTarget` and `EventEmitter`.](https://buff.ly/wCO8CPo)
+  * [fabian-hiller/formisch: The modular and type-safe form library for any framework](https://buff.ly/fNCE9Pn)
+  * [stan-smith/OpenFLOW: Make beautiful isometric infrastructure diagrams](https://buff.ly/7RvnoeI)
+
+  ## Frameworks
+
+  * [Layer Cake is a graphics framework for Svelte](https://buff.ly/84qXsmx)
+  * [Next.js 15.4](https://buff.ly/Kat5a10)
+
+  ## History
+
+  * [The many, many, many JavaScript runtimes of the last decade](https://ilo.im/165oqw)
+  * [The History of React Through Code](https://buff.ly/7YDOhju)
+
+  ## Techniques
+
+  * [It's time for modern CSS to kill the SPA](https://ilo.im/165muq)
+  * [A handy use of subgrid to enhance a simple layout](https://buff.ly/qNX8Sz8)
+  * [Taming JS Proxy API](https://buff.ly/PSjqHFd)
+  * [Simple live reload for developing static sites](https://buff.ly/Zd5dmmw)
+  * [An email regex for reasonable people](https://buff.ly/WFit6kL)
+  * [Give footnotes the boot](https://buff.ly/e5UCtM9)
+  * [Next.js Promise Racing](https://buff.ly/HXkYSL3)
+  * [Resilient Import Maps - Better Theme Development and Beyond (2025)](https://buff.ly/lGsOx6B)
+  * [Tips for making regular expressions easier to use in JavaScript](https://buff.ly/FcAuovV)
+
+  ## Tools
+
+  * [JoviDeCroock/preact-mcp - MCP server for Preact ecosystem](https://buff.ly/QPtIMWh)
+  * [fx – a terminal JSON viewer & processor](https://fx.wtf/)
+  * [lirantal/npq: safely install npm packages by auditing them pre-install stage](https://buff.ly/UnQud2V)
+  * [ArnaudBarre/tsl: An extension of tsc for type-aware linting](https://buff.ly/Bw7M52O)
+  * [Deno 2.4: deno bundle is back](https://buff.ly/EN1Mw6l)
+  * [Announcing TypeScript 5.9](https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/)
+
+  ## Articles
+
+  * [Tapas Spent 40 Hours Writing Tests That Broke in 2 Weeks — A Confession Story](https://buff.ly/0gMc5yX)
+  * [JavaScript dos and donts](https://buff.ly/TTJKLRu)
+
+  ## Magazines
+
+  * [WebAssembly - ACM Queue](https://buff.ly/D565rMf)
+
+  ## Security
+
+  * [Active Supply Chain Attack: npm Phishing Campaign Leads to Prettier Tooling Packages Compromise](https://bit.ly/4kQuh0P)
+
+  ## Quiz
+
+  * [The JavaScript Date Quiz](https://jsdate.wtf/)
+
+  ## Opinions
+
+  * [Why React Is No Longer the Undisputed Champion of JavaScript](https://buff.ly/NwITNO6)
+  * [Conferences, Clarity, and Smokescreens](https://buff.ly/1GDVRgb)
+  * [The time is right for a DOM templating API](https://buff.ly/Gw2Qsjn)
+
+  ## Components
+
+  * [DavidHDev/react-bits: An open source collection of animated, interactive & fully customizable React components for building stunning, memorable websites.](https://buff.ly/qnolfEw)
