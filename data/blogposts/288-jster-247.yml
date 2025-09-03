@@ -1,0 +1,61 @@
+type: static
+title: "JSter #247: Libraries and more"
+short_title: "JSter #247"
+user: bebraw
+slug: jster-247
+body: |
+  > I don't have money, but I have JavaScript.
+
+  I have been looking into vibecoding lately. It's impressive an disappointing at the same time.
+
+  ## Frameworks
+
+  * [Pico CSS - Minimal CSS Framework for semantic HTML](https://picocss.com/)
+  * [trueadm/ripple: Ripple is a TypeScript UI framework for the web.](https://buff.ly/UQO74fK)
+
+  ## Libraries
+
+  * [React Flow - Node-Based UIs in React](https://buff.ly/LSCQ8a7)
+  * [Transformers.js - State-of-the-art Machine Learning for the Web](https://buff.ly/M0I9Bf7)
+  * [Apache ECharts v6](https://buff.ly/Me24Agt)
+  * [jqjs - Pure-JavaScript implementation of the jq JSON query language](https://buff.ly/wFgHFRu)
+  * [uhtml V5](https://buff.ly/b7Uu04K)
+  * [MingCute Icon - Carefully Designed Icon Library](https://buff.ly/7ljxMet)
+  * [UnsuckJS - Enhance HTML with lightweight JavaScript libraries](https://unsuckjs.com/)
+
+  ## Techniques
+
+  * [A Clock That Doesn't Snap](https://buff.ly/dbsXNFc)
+  * [A gentle introduction to anchor positioning](https://buff.ly/4BnPbdy)
+  * [Speeding up the JavaScript ecosystem - Semver](https://buff.ly/a6DkYmB)
+  * [Why semantic HTML still matters](https://buff.ly/K3znaou)
+  * [HTML popovers shown on interest should be accessible on mobile devices](https://buff.ly/FK7HaRC)
+  * [React Server and Client Component Composition in Practice](https://buff.ly/CZYQKSt)
+  * [Composable Adopted Stylesheets](https://buff.ly/Kr273bm)
+  * [One weird trick to reduce Eleventy Image Build Times by 60%](https://buff.ly/uHkwkK1)
+  * [Modern Node.js Patterns for 2025](https://buff.ly/z7R1x9l)
+  * [Making a faded text effect in (mostly) CSS](https://buff.ly/wtVOijv)
+  * [`vi.mock` Is a Footgun: Why `vi.spyOn` Should Be Your Default](https://buff.ly/py4SkhP)
+
+  ## Tools
+
+  * [Oxlint Type-Aware Preview - The JavaScript Oxidation Compiler](https://buff.ly/hBcWZSu)
+  * [Penpot: The Design Tool for Design & Code Collaboration](https://penpot.app/)
+  * [stacksjs/buddy-bot: 🐶 Automated & optimized dependency updates for JavaScript & TypeScript projects. Like Renovate & Dependabot.](https://buff.ly/Ap6gEpz)
+
+  ## Demos
+
+  * [ghuntley/vibepad - leftpad with Claude](https://buff.ly/pV8V58N)
+
+  ## Articles
+
+  * [Reflections on the React community by Lee Robinson](https://buff.ly/NC7gUMz)
+  * [How Do Committees Fail To Invent?](https://buff.ly/3j3qaQB)
+  * [The web isn’t URL-shaped anymore](https://ilo.im/165rul)
+  * [Building an Async Combobox with useSuspenseQuery() and useDeferredValue() in React](https://buff.ly/CXUqNSS)
+  * [What evil martians learned from creating PostCSS](https://buff.ly/FXDPKcb)
+  * [How Ryan Built a Full-Stack React Framework 4x Faster Than Next.js With 4x More Throughput](https://buff.ly/5ZMHgyO)
+
+  ## Languages
+
+  * [Announcing TypeScript 5.9](https://buff.ly/YU9K28j)
