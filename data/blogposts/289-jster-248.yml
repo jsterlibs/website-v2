@@ -1,0 +1,72 @@
+type: static
+title: "JSter #248: Libraries and more"
+short_title: "JSter #248"
+user: bebraw
+slug: jster-248
+body: |
+  > It takes two to JavaScript
+
+  The Winter is coming. Snow in a month or so.
+
+  ## Manifestos
+
+  * [A Progressive Complexity Manifesto](https://buff.ly/7Ws6oZG)
+
+  ## Articles
+
+  * [How to migrate your website from Next.js to Astro](https://buff.ly/jqlVG3Q)
+  * [Web Sustainability Guidelines (WSG) becomes a first public Draft Note](https://buff.ly/CavxPbz)
+  * [Web Standards and the Fall of the House of Iamus](https://buff.ly/02Eymfb)
+  * [The bloat of edge-case first libraries](https://buff.ly/ze7Byvs)
+  * [Why do browsers throttle JavaScript timers?](https://ilo.im/166jbx)
+  * [You no longer need JavaScript](https://ilo.im/166h9e)
+  * [state-ref - Building the State Management Library by Jinwoo Kim](https://buff.ly/No5phY6)
+
+  ## Libraries
+
+  * [Quiet UI - a UI library for the web](https://quietui.org/)
+  * [React 19.2](https://buff.ly/Acc7liO)
+  * [mini-lit - Lightweight Lit components with shadcn-inspired theming, Tailwind CSS v4 styling, and Lucide icons](https://buff.ly/oEc3kcY)
+  * [Cap'n Web: a new RPC system for browsers and web servers](https://buff.ly/1QOkJIL)
+  * [Isograph v0.4.0 — the one with the VSCode extension](https://buff.ly/w5vtlDK)
+  * [varlock - Magic env files built for sharing](https://varlock.dev/)
+  * [nolimits4web/swiper: Most modern mobile touch slider with hardware accelerated transitions](https://buff.ly/NV3vhvm)
+  * [Introducing hx-optimistic: Make Your HTMX Apps Feel Instant](https://buff.ly/kjsQLcg)
+  * [PrimeReact - React UI Component Library](https://buff.ly/cR6qLqA)
+  * [WebReflection/file-tree: A file tree component for the web](https://buff.ly/65cHutw)
+
+  ## Techniques
+
+  * [Progressive Complexity: When Islands Should be a Continent](https://buff.ly/NTkwrSh)
+  * [Simple, Accessible Multi-Select UI](https://buff.ly/PvYoroY)
+  * [Liquid Glass in the Browser: Refraction with CSS and SVG](https://buff.ly/gGL5nIF)
+  * [Don't Inherit the Box Model](https://buff.ly/SLsX8W3)
+  * [The Basics of Anchor Positioning](https://ilo.im/166gee)
+  * [Unit Formatting with Intl in JavaScript](https://buff.ly/g2R3cv4)
+
+  ## Security
+
+  * [Popular Tinycolor npm Package Compromised in Supply Chain Attack](https://t.co/u5Mb20g6qw)
+  * [npm Author Qix Compromised via Phishing Email in Major Supply Chain Attack](https://buff.ly/rYRH4fQ)
+
+  ## Opinions
+
+  * [React Won by Default – And It's Killing Frontend Innovation](https://buff.ly/Q5kWzIt)
+
+  ## Guides
+
+  * [A complete guide to HTTP caching](https://buff.ly/RkSSEM0)
+
+  ## Performance
+
+  * [Obs.js: context-aware web performance for everyone](https://buff.ly/f51yeDa)
+  * [Making Sense of the Performance Extensibility API](https://buff.ly/hPL0wwb)
+
+  ## Tools
+
+  * [Mastro: the simplest website generator you’ve ever seen.](https://buff.ly/Y1fV9wT)
+  * [Introducing CEM Language Server](https://buff.ly/R0c9pRg) - The missing LSP for Web Components
+
+  ## Ai
+
+  * [web-infra-dev/midscene: Your AI Operator for Web, Android, Automation & Testing.](https://buff.ly/m00XplF)
