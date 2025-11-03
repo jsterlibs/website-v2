@@ -1,0 +1,57 @@
+type: static
+title: "JSter #249: Libraries and more"
+short_title: "JSter #249"
+user: bebraw
+slug: jster-249
+body: |
+  > If we can't see the JavaScript in each other, we've already lost the fight.
+
+  Maybe I mentioned it already but [remember to preregister for next year's Future Frontend conference](https://futurefrontend.com/) that takes place 8-9.6.26 at Espoo, Finland.
+
+  ## Libraries
+
+  * [alien-signals - The lightest signal library](https://buff.ly/MHkpDNd)
+  * [idiomorph - a DOM-merging algorithm](https://buff.ly/NzzOiwK)
+  * [WebReflection/usignal: A blend of and solid-js basic reactivity API](@preacthttps://buff.ly/j5SxILH)
+  * [Lift HTML - a tiny Web Components helper library](https://buff.ly/54TgRcU)
+  * [OpenFreeMap - Easy to integrate maps](https://buff.ly/oYCN5WW)
+  * [uptake - Run a Bun cluster with a shared "worker" module](https://buff.ly/kd3ZJCs)
+
+  ## Frameworks
+
+  * [Ember 6.8 Released](https://buff.ly/dJssHXv)
+  * [Mastra - The TypeScript AI framework](https://mastra.ai/)
+  * [Datastar - The hypermedia framework](https://buff.ly/QJORPy0)
+
+  ## Tools
+
+  * [Evalite - Test AI-powered apps in TypeScript](https://buff.ly/WuXpe6d)
+  * [Vitest 4.0 is out](https://buff.ly/x8YbOwm)
+  * [Hyperview - Native mobile apps, as easy as creating a web site](https://buff.ly/vfWnGrz)
+  * [Ultracite - The AI-ready formatter that helps you write and generate code faster](https://buff.ly/skEgQOA)
+  * [Knip - Declutter your JavaScript & TypeScript projects](https://knip.dev/)
+  * [ossjs/release: Minimalistic, opinionated, and predictable release automation tool.](https://buff.ly/Oa3BO9C)
+  * [Bruno - Fast, Git-Friendly Open Source API Client](https://buff.ly/47jFSLq)
+
+  ## Articles
+
+  * [Importing vs fetching JSON](https://ilo.im/167ucx)
+  * [The future of Lodash](https://buff.ly/5zgVNxf)
+  * [Datastar attribute plugin for signal value translation](https://buff.ly/or0NRWl)
+  * [The killer feature of Web Components](https://buff.ly/1IVMkut)
+  * [Unpacking Remix 3 Pt.1: Frontend](https://buff.ly/fqCAPEt)
+  * [The Perils of Reactivity](https://buff.ly/igf21t7)
+  * [11ty Hacks for Fun and Performance](https://buff.ly/eWwaCMV)
+
+  ## Tutorials
+
+  * [Create Type-Safe API Clients: A Complete Guide](https://buff.ly/LxeD6lQ)
+  * [Build a guessing game with the Prompt API](https://buff.ly/jcW5yXn)
+
+  ## Runtimes
+
+  * [Node.js v25.0 is available](https://buff.ly/zA66SEo)
+
+  ## News
+
+  * [Introducing the React Foundation](https://buff.ly/OWirsdw)
