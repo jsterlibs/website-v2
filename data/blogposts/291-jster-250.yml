@@ -1,0 +1,65 @@
+type: static
+title: "JSter #250: Libraries and more"
+short_title: "JSter #250"
+user: bebraw
+slug: jster-250
+body: |
+  > JavaScript Bells, JavaScript Bells, JavaScript all the way!
+
+  The good thing about Winter is that it reminds us the value of Summer. We'll run the next Future Frontend conference (Espoo, Finland) at 8-9.6.26 so [register to the conference while the tickets are still kind of cheap](https://futurefrontend.com/blog/ff26/).
+
+  ## Security
+
+  * [Critical Security Vulnerability in React Server Components – Update your React now](https://m.cje.io/444mM0y)
+  * [Why XSS Persists in This Frameworks Era?](https://buff.ly/kcwubY5)
+
+  ## Tools
+
+  * [Tusk Drift - Automated API Testing From Live Traffic](https://buff.ly/d8gmhLK)
+  * [HTML Size Analyzer by DebugBear](https://buff.ly/8q8l96G)
+  * [JSX Tool - React Dev Tools for Styling](https://jsxtool.com/)
+  * [Count Cachula - Local-first performance without the complexity](https://buff.ly/ve5K0TG)
+  * [aidenybai/react-scan: Scan for React performance issues and eliminate slow renders in your app](https://buff.ly/Dr7Y0C7)
+  * [Mediabunny - Complete media toolkit](https://buff.ly/3RsFfxi)
+  * [pakastin/nomoji: Replace emojis in text with SVG images](https://buff.ly/BXM6zxv)
+  * [Storybook 10](https://buff.ly/eSuJ9uS)
+
+  ## Libraries
+
+  * [buttondown/sniper-link - Confirm emails easily](https://buff.ly/05zkI6N)
+  * [Valibot v1.2](https://buff.ly/rNq6Jah)
+  * [Prisma 7 Release: Rust-Free, Faster, and More Compatible](https://buff.ly/R7Zw62f)
+  * [hackfixme/miu: A small JavaScript data binding library](https://buff.ly/rtaxoJ5)
+  * [bigskysoftware/fixi - Experimental hypermedia controls](https://buff.ly/nReDfhL)
+  * [Transformers.js - State of art machine learning for the web](https://buff.ly/AGukSml)
+  * [gavoja/twcss - A tiny Tailwind alternative](https://buff.ly/u5lJAKI)
+  * [Interpol: A Low-Level Take on Tweening and Motion](https://buff.ly/6lKkaay)
+
+  ## Articles
+
+  * [The Performance Inequality Gap 2026](https://ilo.im/168o3w)
+  * [</> htmx ~ The fetch()ening](https://buff.ly/cXpQN3g)
+  * [Musings on Isomorphic First Frameworks](https://buff.ly/ip2YC4Z)
+  * [What's an interactive element?](https://buff.ly/cJOoh6a)
+  * [ChatGPT sez Build with semantics first – HTML Accessibility](https://buff.ly/ZlxKeCC)
+  * [An Introduction to the World Wide Web for Very Senior Programmers](https://buff.ly/rfcY9Cn)
+  * [Loren Built the Same App 10 Times: Evaluating Frameworks for Mobile Performance](https://buff.ly/hFxAA9q)
+
+  ## Techniques
+
+  * [How to "officially" deprecate methods with Node.js utilities](https://buff.ly/MQsiKu6)
+  * [Your URL Is Your State](https://buff.ly/cd9xcGA)
+  * [Simplify Your Code: Functional Core, Imperative Shell](https://buff.ly/E9IzTMY)
+
+  ## Opinions
+
+  * [Tooltip Components Should Not Exist](https://buff.ly/tXAoQDO)
+  * [The fate of small open source libraries in the era of AI](https://buff.ly/Yl9Dtqq)
+
+  ## Frameworks
+
+  * [VoltAgent - TypeScript AI Agent Framework](https://buff.ly/sGDvlQh)
+
+  ## Demos
+
+  * [The Perfect Date Picker](https://buff.ly/lXW2VQh)
