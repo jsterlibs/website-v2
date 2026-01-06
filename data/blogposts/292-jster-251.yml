@@ -1,0 +1,68 @@
+type: static
+title: "JSter #251: Libraries and more"
+short_title: "JSter #251"
+user: bebraw
+slug: jster-251
+body: |
+  > JavaScriptcalypse now!
+
+  I've been sketching out [Future Frontend 2026](https://futurefrontend.com/) and I think we'll have a solid program for the conference again.
+
+  ## Frameworks
+
+  * [Elysia - Ergonomic Framework for Humans](https://elysiajs.com/)
+  * [CopilotKit: React UI + elegant infrastructure for AI Copilots, AI chatbots, and in-app AI agents. The Agentic last-mile 🪁](https://buff.ly/1Bkt20c)
+
+  ## Libraries
+
+  * [fp-pack - A practical functional toolkit for JavaScript and TypeScript. If you know functions, pipes, and currying, you can use it immediately](https://buff.ly/tSH3WkR)
+  * [Announcing jax-js: an ML library for the web](https://buff.ly/hwPjlvO)
+  * [2Dphysics - Tiny physics engine written in JavaScript](https://buff.ly/BhDa6Y8)
+  * [Introducing Fate - tRPC with better ergonomics for React](https://buff.ly/6tXBZWX)
+  * [Base UI is available now](https://base-ui.com/)
+  * [Automerge - Version control for your data](https://buff.ly/7AUCsmP)
+  * [dlemstra/magick-wasm: The WASM library for ImageMagick](https://buff.ly/Daqp3Rp)
+
+  ## Articles
+
+  * [The Curious Case of the Shallow Session SPAs](https://buff.ly/AzPnxdM)
+  * [JSON Schema Demystified: Understanding Schemas, Dialects, Vocabularies, and Metaschemas](https://buff.ly/JVrgbRM)
+
+  ## Runtimes
+
+  * [require(esm) in Node.js: from experiment to stability](https://buff.ly/W9bfGcE)
+  * [bellard/mquickjs: Micro QuickJS Javascript Engine for embedded systems](https://buff.ly/jSZJpgI)
+
+  ## Tools
+
+  * [Introducing Flint - a new linter](https://buff.ly/QqhYjDy)
+  * [roman01la/blender-react: A Blender addon that lets you create and manage 3D scenes using React components](https://buff.ly/rq9HkzU)
+  * [Vite 8 Beta: The Rolldown-powered Vite](https://buff.ly/Ksux52M)
+  * [Announcing Oxfmt Alpha](https://buff.ly/glmczLP)
+
+  ## Books
+
+  * [gibbok/typescript-book: The Concise TypeScript Book: A Concise Guide to Effective Development in TypeScript. Free and Open Source.](https://buff.ly/x20olf7)
+
+  ## Jokes
+
+  * [TailwindSQL - SQL Queries with Tailwind Syntax](https://buff.ly/xxIqsap)
+  * [donlon/cloudflare-error-page: Cloudflare error page generator](https://buff.ly/4sCOEWQ)
+
+  ## Demos
+
+  * [bidicalc - Spreadsheet with a twist](https://buff.ly/QRUma4Y)
+
+  ## Security
+
+  * [NPM Security Best Practices: How to Protect Your Packages After the 2025 Shai Hulud Attack](https://buff.ly/YaiEpm2)
+  * [No more tokens! Locking down npm Publish Workflows](https://buff.ly/hgd2Vxk)
+  * [Denial of Service and Source Code Exposure in React Server Components – Update your React now](https://buff.ly/k93yE26)
+
+  ## Resources
+
+  * [bluwy/tsconfig-grimoire: A collection of sacred information to deal with tsconfig.json for tooling authors and maintainers](https://buff.ly/u08k7kw)
+
+  ## Tutorials
+
+  * [Build your own router](https://buff.ly/GaoTRlM)
