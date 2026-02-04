@@ -1,0 +1,72 @@
+type: static
+title: "JSter #252: Libraries and more"
+short_title: "JSter #252"
+user: bebraw
+slug: jster-252
+body: |
+  > Here we JavaScript again.
+
+  I wrote [a post about my conference themes](https://futurefrontend.com/blog/ff26-themes/) so you have a better idea what to await from Future Frontend 2026 (8-9.6, Espoo, Finland).
+
+  ## Libraries
+
+  * [sprusr/mewmap: Interactive maps powered by SVG 🐈](https://buff.ly/CrVjc22)
+  * [supertalk - A type-safe, unified communication library for Web Workers, Iframes, and Node.js worker threads.](https://buff.ly/7dhR5gN)
+  * [jQuery 4.0.0](https://ilo.im/169xh1)
+  * [A polyfill for the HTML switch element](https://buff.ly/86WpJSU)
+
+
+  ## Applications
+
+  * [JSCAD - JavaScript CAD](https://jscad.app/)
+
+  ## Articles
+
+  * [A 2x faster Rollup?](https://buff.ly/QQKY4O4)
+  * [The Incredible Overcomplexity of the Shadcn Radio Button](https://buff.ly/LQ9E7d7)
+  * [The 2025 Web Almanac with new insights is available now](https://buff.ly/FWwjlUC)
+
+  ## Books
+
+  * [Free book - Accessibility For Everyone by Laura Kalbag](https://buff.ly/tgpZNJs)
+  * [The Micro-Frontend Architecture Handbook](https://buff.ly/wTtGP09)
+
+  ## Tutorials
+
+  * [Build a dinosaur runner game with Deno, pt. 4](https://buff.ly/Sk3ow2u)
+
+  ## Runtimes
+
+  * [Node.js 25.4.0](https://buff.ly/RbDfyrH)
+
+  ## Security
+
+  * [Denial of Service and Source Code Exposure in React Server Components Again](https://buff.ly/UkSnyuS)
+  * [CVEs affecting the Svelte ecosystem - Update as soon as you can](https://buff.ly/RvKo6bp)
+  * [Node.js — Mitigating Denial-of-Service Vulnerability from Unrecoverable Stack Space Exhaustion for React, Next.js, and APM Users](https://buff.ly/Zca5zGq)
+
+  ## Tools
+
+  * [blackboardsh/electrobun: Build ultra fast, tiny, and cross-platform desktop apps with Typescript.](https://buff.ly/sUIrqAI)
+  * [Fontra - The browser based font editor](https://fontra.xyz/)
+  * [lloydi/PolyPane-Config - Useful polypane configurations for a11y testing](https://buff.ly/OFlILUo)
+  * [kettanaito/playwright-persona: Authentication in Playwright using personas.](https://buff.ly/edL2uT6)
+
+  ## Demos
+
+  * [Google Balls](https://buff.ly/2rDZXko)
+
+  ## News
+
+  * [Astro is joining Cloudflare](https://buff.ly/2LFWjZC)
+
+  ## Browsers
+
+  * [Just the Browser](https://buff.ly/IDkzzu9)
+
+  ## Techniques
+
+  * [Replacing Toasts with Accessible User Feedback Patterns](https://buff.ly/GBOogVj)
+  * [Date is out, Temporal is in](https://ilo.im/169o2x)
+  * [Using your design system colors with contrast-color()](https://buff.ly/QoNykvr)
+  * [Managing TypeScript Packages in Monorepos](https://buff.ly/UvtGw5u)
