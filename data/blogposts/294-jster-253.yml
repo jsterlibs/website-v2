@@ -1,0 +1,60 @@
+type: static
+title: "JSter #253: Libraries and more"
+short_title: "JSter #253"
+user: bebraw
+slug: jster-253
+body: |
+  > When things go bad, don't JavaScript them.
+
+  I recently gave a lecture about hypermedia and how it might be the solution for lighter web applications. [You can find my lecture slides here.](https://www.researchgate.net/publication/400934202_Hypermedia_-_The_solution_for_lighter_web_applications)
+
+  ## Libraries
+
+  * [florianschepp/bsky-comments: A zero-dependency Web Component to embed Bluesky discussion threads on any website.](https://buff.ly/7qRHxMy)
+  * [gitbrent/PptxGenJS: Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.](https://buff.ly/G5PMAmc)
+  * [shuding/better-all - Better Promise.all with automatic dependency optimization](https://buff.ly/kN0kpkr)
+  * [nuqs - Type-safe search params state management for React](https://nuqs.dev/)
+
+
+  ## Tools
+
+  * [varlock - Manage your .env](https://varlock.dev/)
+  * [Knip - Declutter your JavaScript & TypeScript projects](https://knip.dev/)
+  * [vercel-labs/agent-browser: Browser automation CLI for AI agents](https://buff.ly/pK0aUdl)
+  * [fpapado/svg-use: Tools and bundler plugins, to ergonomically load SVG files via use[href]](https://buff.ly/WHGvolC)
+  * [Introducing Hono CLI](https://buff.ly/Y1AeMod)
+  * [npmx - Package Browser for the npm Registry](https://npmx.dev/)
+  * [React2AWS - Infrastructure as React Components](https://buff.ly/l9hN9Aq)
+
+  ## Articles
+
+  * [Why is WebAssembly a second-class language on the web?](https://buff.ly/JO0GXC4)
+  * [We deserve a better streams API for JavaScript](https://bit.ly/46xsUQh)
+  * [How Cloudflare rebuilt Next.js with AI in one week](https://buff.ly/R7MszG9)
+  * [Fastest Frontend Tooling for Humans & AI](https://buff.ly/Vse96uZ)
+  * [WebMCP – a much needed way to make agents play with rather than against the web](https://buff.ly/H8lVvWW)
+  * [JS-heavy approaches are not compatible with long-term performance goals](https://buff.ly/7qqBd9V)
+  * [Solid.js Best Practices](https://buff.ly/38C2S1Y)
+  * [Death to Scroll Fade!](https://buff.ly/2aKV7qG)
+
+  ## Runtimes
+
+  * [Node.js 24.14.0 (LTS)](https://buff.ly/WoberlV)
+
+  ## Games
+
+  * [VoxJong - CSS Mahjong Solitaire](https://voxjong.com/)
+  * [Descent in three.js](https://buff.ly/4Xa4qVj)
+  * [mrdoob/three-quake: A WIP port of Quake (1996) to Three.js.](https://buff.ly/0WdVo3V)
+
+  ## Demos
+
+  * [RYBitten SVG Color Sphere](https://buff.ly/1qbOnHo)
+
+  ## Frameworks
+
+  * [Ember 6.10 Released](https://buff.ly/FzyFxLZ)
+
+  ## Guides
+
+  * [Guide to testing React apps with Morph LLM](https://buff.ly/bnWs3ZW)
