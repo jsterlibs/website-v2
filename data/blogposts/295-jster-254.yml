@@ -1,0 +1,72 @@
+type: static
+title: "JSter #254: Libraries and more"
+short_title: "JSter #254"
+user: bebraw
+slug: jster-254
+body: |
+  > You can’t see it, but it’s JavaScript.
+
+  Only two months to this year's [Future Frontend conference](https://futurefrontend.com/) at Espoo, Finland!
+
+  ## Libraries
+
+  * [chenglou/pretext - Pure JavaScript/TypeScript library for multiline text measurement & layout](https://buff.ly/FuurpYA)
+  * [SuperSonic - SuperCollider's Synthesis Engine in the Browser](https://buff.ly/rLsloCD)
+  * [tinylibs/tinyclip: A tiny, cross-platform clipboard utility.](https://buff.ly/OMqtpfX)
+
+  ## Frameworks
+
+  * [Introducing EmDash — the spiritual successor to WordPress that solves plugin security](https://bit.ly/4c0Aa99)
+  * [ArrowJS - Web framework designed for building with agents](https://arrow-js.com/)
+  * [Nitro v3 Beta is here](https://buff.ly/gNiuGoW)
+  * [Astro 6.0](https://buff.ly/MSyf23i)
+  * [StateSurface - Hypermedia inspired state-layout mapping runtime](https://buff.ly/iqqgEr1)
+  * [Solid.js v2.0.0 Beta - The <Suspense> is Over](https://buff.ly/n7pbS3C)
+
+  ## Security
+
+  * [Securing Local Development Environment Against Dependency Supply Chain Attacks](https://buff.ly/abKc9Xc)
+  * [LavaMoat - Proactive supply-chain security at runtime](https://buff.ly/SQVQEJf)
+
+  ## Articles
+
+  * [Guided Meditation for Developers](https://buff.ly/gRWtEZV)
+  * [Two React Design Choices Developers Don’t Like—But Can’t Avoid](https://buff.ly/h1PSho3)
+  * [Making React ProseMirror really, really fast](https://buff.ly/ddK3HtC)
+  * [Lies I was Told About Collaborative Editing, Part 2: Why we don't use Yjs](https://buff.ly/keCFcgP)
+  * [Evolving the Node.js Release Schedule](https://buff.ly/G7VF4Lp)
+  * [How Strawberry Rewrote 130K Lines from React to Svelte in Two Weeks](https://buff.ly/Wu46ySp)
+
+  ## Tools
+
+  * [Vitest 4.1 is out!](https://buff.ly/Uzah5JU)
+  * [npmx - Package Browser for the npm Registry](https://npmx.dev/)
+  * [Vite 8.0 is out!](https://ilo.im/16bd5y)
+  * [Penpot - Like Figma but open source](https://buff.ly/VpiJVsw)
+
+  ## Runtimes
+
+  * [Announcing TypeScript 6.0](https://buff.ly/2eJPRue)
+  * [capricorn86/happy-dom: A JavaScript implementation of a web browser without its graphical user interface](https://buff.ly/7FHwQYP)
+
+  ## Components
+
+  * [Cally: small, feature-rich calendar components](https://buff.ly/eJZsiAd)
+
+  ## Demos
+
+  * [Audio Trails — Real-Time Microphone Visualizer](https://buff.ly/FyGIlDe)
+
+  ## Standards
+
+  * [Temporal: The 9-Year Journey to Fix Time in JavaScript](https://buff.ly/F7gxAhM)
+  * [Source Maps: Shipping Features Through Standards](https://buff.ly/p3KMXl6)
+
+  ## Techniques
+
+  * [Building a Procedural Hex Map with Wave Function Collapse](https://buff.ly/Y95NMNe)
+  * [Making keyboard navigation effortless](https://buff.ly/20rwsGu)
+
+  ## Benchmarks
+
+  * [SPA vs. Hypermedia: Real-World Performance Under Load](https://buff.ly/RIxHiKk)

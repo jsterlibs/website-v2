@@ -1745,10 +1745,16 @@
     "url": "/blog/jster-252",
     "date": "2026-02-04 09:47:59"
   },
-    {
+  {
     "id": "jster-253",
     "title": "JSter #253: Libraries and more",
     "url": "/blog/jster-253",
     "date": "2026-03-04 10:47:59"
+  },
+  {
+    "id": "jster-254",
+    "title": "JSter #254: Libraries and more",
+    "url": "/blog/jster-254",
+    "date": "2026-04-04 10:47:59"
   }
 ]
