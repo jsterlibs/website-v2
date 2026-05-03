@@ -1,0 +1,74 @@
+type: static
+title: "JSter #255: Libraries and more"
+short_title: "JSter #255"
+user: bebraw
+slug: jster-255
+body: |
+  > Summer is the best day of the year.
+
+  It's only about a month to this year's [Future Frontend](https://futurefrontend.com/) conference. I was also able to set up a seminar titled [AI meets SDLC](https://www.sdlcai.org/) for 13.10 at Aalto University. In addition I made my [scientific writing book](https://learnscientificwriting.com/) available to the public through the web. I've also been developing [a new experimental tool for slide authoring](https://slideotter.com/).
+
+  ## Libraries
+
+  - [WebReflection/d1-tags: Tagged-template helpers for Cloudflare D1](https://buff.ly/7ASDuJY)
+  - [Vue Data UI](https://buff.ly/loMlnnk)
+  - [alibaba/page-agent: JavaScript in-page GUI agent. Control web interfaces with natural language](https://buff.ly/JJUuIfl)
+
+  ## Runtimes
+
+  - [JSSE: A JavaScript Engine Built by an Agent](https://buff.ly/AAFcbet)
+
+  ## Techniques
+
+  - [ChatGPT, Claude, and Gemini Render Markdown in the Browser. I Don't](https://buff.ly/cYzkWVi)
+  - [Uses for nested promises](https://buff.ly/W0RdYEg)
+
+  ## Icons
+
+  - [Lucide - Beautiful and consistent icons](https://lucide.dev/)
+
+  ## Articles
+
+  - [Async, Sync, in Between](https://buff.ly/Dt5kBd7)
+  - [Signals, the push-pull based algorithm](https://buff.ly/tiFhdRK)
+  - [Test IDs are an a11y smell](https://buff.ly/kCFTSd1)
+  - [Under the hood of MDN's new frontend](https://ilo.im/16c0es)
+  - [The Three Pillars of JavaScript Bloat](https://buff.ly/7DnG2XG)
+  - [The 49MB Web Page](https://ilo.im/16bcfg)
+
+  ## Frameworks
+
+  - [Fresh 2.3: Zero JS by default, View Transitions, and Temporal support](https://buff.ly/0Apk8Zw)
+  - [Gea — Lightweight Reactive UI Framework](https://geajs.com/)
+  - [Datastar v1.0.0 - Hypermedia + SSE for profit and fun](https://buff.ly/AMXH6hU)
+  - [Spiceflow - The Type Safe TypeScript API Framework for React](https://buff.ly/wuYe94a)
+  - [StreamUI/hyperstar: Server-driven UI for real-time web apps. No client code, no state sync, just TypeScript & JSX on the server, and every client sees the same thing](https://buff.ly/17mjLpt)
+
+  ## Services
+
+  - [Vite Plugin Registry](https://buff.ly/iSoxFAL) - Discover plugins for your build tools
+
+  ## Tools
+
+  - [jokull/agent-cms: Agent-first headless CMS on Cloudflare Workers. MCP-driven schema + content management, GraphQL delivery, FTS5 + Vectorize search.](https://buff.ly/Vj1YzFb)
+  - [cloudflare/vinext](https://buff.ly/SSObm1A) - Vite plugin that reimplements the Next.js API surface — deploy anywhere
+  - [tsdown - The Elegant Bundler for Libraries](https://tsdown.dev/)
+  - [npmgraph - NPM Dependency Diagrams](https://buff.ly/Mfayx89)
+  - [paulmillr/jsbt: JS Build Tools: helpers for building, benchmarking & testing secure JS apps.](https://buff.ly/0yZxGlt)
+
+  ## Typescript
+
+  - [TSRX](https://tsrx.dev/) - TypeScript Language Extension for Declarative UI
+  - [TypeScript 7.0 Beta](https://ilo.im/16ccl3)
+
+  ## Standards
+
+  - [Standard HTML Video & Audio Lazy-loading is Coming!](https://buff.ly/fNNqbuR)
+
+  ## Demos
+
+  - [Pascal - a 3D building editor built with React Three Fiber and WebGPU](https://buff.ly/lCsBSrP)
+
+  ## Security
+
+  - [Attackers Are Hunting High-Impact Node.js Maintainers in a Campaign](https://buff.ly/WutAbXZ)
