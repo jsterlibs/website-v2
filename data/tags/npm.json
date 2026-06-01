@@ -647,5 +647,37 @@
       },
       "tags": ["npm"]
     }
+  },
+  {
+    "title": "@vijaypjavvadi/bdd2pw",
+    "url": "/library/vijaypjavvadi-bdd2pw",
+    "id": "vijaypjavvadi-bdd2pw",
+    "library": {
+      "id": "vijaypjavvadi-bdd2pw",
+      "description": "Scaffold runnable Playwright TypeScript tests from Gherkin .feature files. Auto-detects existing Page Objects, optionally scans live pages via Microsoft Playwright MCP, and emits POMs and specs ready for execution.",
+      "logo": "/images/repo.png",
+      "name": "@vijaypjavvadi/bdd2pw",
+      "links": {
+        "site": "https://www.npmjs.com/package/@vijaypjavvadi/bdd2pw",
+        "github": "https://github.com/javvadivijayprasad/bdd2pw"
+      },
+      "tags": ["bdd", "e2e-testing", "npm", "testing", "typescript"]
+    }
+  },
+  {
+    "title": "@vijaypjavvadi/sel2pw",
+    "url": "/library/vijaypjavvadi-sel2pw",
+    "id": "vijaypjavvadi-sel2pw",
+    "library": {
+      "id": "vijaypjavvadi-sel2pw",
+      "description": "Selenium to Playwright TypeScript migration toolkit using deterministic AST conversion. It helps convert Selenium test suites into Playwright-ready TypeScript code.",
+      "logo": "/images/repo.png",
+      "name": "@vijaypjavvadi/sel2pw",
+      "links": {
+        "site": "https://www.npmjs.com/package/@vijaypjavvadi/sel2pw",
+        "github": "https://github.com/javvadivijayprasad/sel2pw"
+      },
+      "tags": ["e2e-testing", "npm", "testing", "typescript"]
+    }
   }
 ]
