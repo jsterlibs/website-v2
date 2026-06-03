@@ -10,15 +10,15 @@
   "devDependencies": {
     "@cloudflare/workers-types": "4.20240222.0",
     "@types/node": "24.12.4",
-    "gustwind": "0.120.0",
+    "gustwind": "0.121.0",
     "highlight.js": "11.11.1",
     "marked": "12.0.0",
     "typescript": "5.3.3",
     "wrangler": "3.114.17"
   },
   "scripts": {
-    "build": "gustwind --build --output ./build --route-concurrency 1",
-    "build:validate": "gustwind --build --output ./build --route-concurrency 1 --validate",
+    "build": "gustwind --build --output ./build",
+    "build:validate": "gustwind --build --output ./build --validate",
     "start": "gustwind --develop --port 3000",
     "serve": "gustwind --serve --input ./build --port 3000",
     "pages:dev": "wrangler pages dev build --compatibility-flags=\"nodejs_compat\" --compatibility-date=2024-03-05",

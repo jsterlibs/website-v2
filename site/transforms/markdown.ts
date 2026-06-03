@@ -105,9 +105,6 @@ function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
 
           return `<img src="${href}" alt="${alt}" class="${className}" width="${width}" height="${height}" />`;
         },
-        html(html: string) {
-          return escapeHtml(html);
-        },
         link(href: string, title: string, text: string) {
           if (href === null) {
             return text;
