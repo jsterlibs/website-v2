@@ -1,4 +1,5 @@
 import { marked } from "marked";
+import type { Tokens } from "marked";
 import highlight from "highlight.js";
 
 import highlightBash from "highlight.js/lib/languages/bash";
@@ -22,11 +23,6 @@ marked.setOptions({
   gfm: true,
   breaks: false,
   pedantic: false,
-  smartLists: true,
-  smartypants: true,
-  highlight: (code: string, language: string) => {
-    return highlight.highlight(code, { language }).value;
-  },
 });
 
 function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
@@ -38,21 +34,16 @@ function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
     // https://github.com/markedjs/marked/blob/master/src/Renderer.js
     marked.use({
       renderer: {
-        code(code: string, infostring: string): string {
+        code(this: any, { text, lang: infostring }: Tokens.Code): string {
+          let code = text;
           const lang =
             ((infostring || "").match(/\S*/) || [])[0] ||
             DEFAULT_CODE_LANGUAGE;
 
           const canHighlight = highlight.getLanguage(lang);
 
-          // @ts-ignore How to type this?
-          if (this.options.highlight && canHighlight) {
-            // @ts-ignore How to type this?
-            const out = this.options.highlight(code, lang);
-
-            if (out != null && out !== code) {
-              code = out;
-            }
+          if (canHighlight) {
+            code = highlight.highlight(code, { language: lang }).value;
           }
 
           if (!canHighlight) {
@@ -73,16 +64,17 @@ function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
             "</code></pre>\n"
           );
         },
-        heading(text: string, level: number, raw: string) {
+        heading(this: any, { tokens, depth, text: raw }: Tokens.Heading) {
+          const text = this.parser.parseInline(tokens);
           const slug = slugify(raw);
 
-          tableOfContents.push({ slug, level, text });
+          tableOfContents.push({ slug, level: depth, text });
 
           return (
             '<a href="#' +
             slug +
             '"><h' +
-            level +
+            depth +
             ' class="' +
             "inline" +
             '"' +
@@ -91,12 +83,16 @@ function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
             '">' +
             text +
             "</h" +
-            level +
+            depth +
             ">" +
             "</a>\n"
           );
         },
-        image(href: string, title: string, text: string) {
+        image(this: any, { href, text, tokens }: Tokens.Image) {
+          if (tokens) {
+            text = this.parser.parseInline(tokens, this.parser.textRenderer);
+          }
+
           const textParts = text ? text.split("|") : [];
           const alt = textParts[0] || "";
           const width = textParts[1] || "";
@@ -105,7 +101,9 @@ function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
 
           return `<img src="${href}" alt="${alt}" class="${className}" width="${width}" height="${height}" />`;
         },
-        link(href: string, title: string, text: string) {
+        link(this: any, { href, title, tokens }: Tokens.Link) {
+          const text = this.parser.parseInline(tokens);
+
           if (href === null) {
             return text;
           }
@@ -128,7 +126,8 @@ function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
           out += ">" + escapeHtml(parts[0]) + "</a>";
           return out;
         },
-        list(body: string, ordered: string, start: number) {
+        list(this: any, { items, ordered, start }: Tokens.List) {
+          const body = items.map((item) => this.listitem(item)).join("");
           const type = ordered ? "ol" : "ul",
             startatt = ordered && start !== 1 ? ' start="' + start + '"' : "",
             klass = ordered
