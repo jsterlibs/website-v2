@@ -1,7 +1,12 @@
 import presetAutoprefix from "npm:@twind/preset-autoprefix";
 import presetTailwind from "npm:@twind/preset-tailwind";
 import presetTypography from "npm:@twind/preset-typography";
-import meta from "./meta.json" with { type: "json" };
+
+const colors = {
+  primary: "#3a2fa6",
+  secondary: "#84ebec",
+  tertiary: "#ffffff",
+};
 
 export default {
   presets: [presetAutoprefix(), presetTailwind(), presetTypography()],
@@ -16,7 +21,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors: meta.colors,
+      colors,
     },
   },
   hash: false,
