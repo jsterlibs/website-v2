@@ -4,6 +4,9 @@
   "description": "jster.net website",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=24.11.0"
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20240222.0",
     "@types/node": "24.12.4",
