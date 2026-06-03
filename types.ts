@@ -40,6 +40,7 @@ type ParentCategory = { title: string; children: Category[] };
 type BlogPost = {
   path: string;
   id: string;
+  url: string;
   title: string;
   shortTitle: string;
   slug: string;

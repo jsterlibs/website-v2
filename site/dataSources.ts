@@ -68,7 +68,7 @@ function init({ load }: { load: LoadApi }) {
 
     return (
       await Promise.all(
-        blogIndex.map(async ({ id, date }: IndexEntry) => {
+        blogIndex.map(async ({ id, url, date }: IndexEntry) => {
           const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
 
           if (!matchingBlogPost) {
@@ -78,6 +78,7 @@ function init({ load }: { load: LoadApi }) {
           return {
             path: matchingBlogPost?.path,
             id,
+            url,
             title: matchingBlogPost?.title || "",
             titleHtml: raw(escapeHtml(matchingBlogPost?.title || "")),
             // @ts-ignore: Typo in the original data

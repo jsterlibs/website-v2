@@ -27,6 +27,8 @@ marked.setOptions({
 
 function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
   return function transformMarkdown(input: string) {
+    input = normalizeInlineMarkdown(input);
+
     // https://github.com/markedjs/marked/issues/545
     const tableOfContents: { slug: string; level: number; text: string }[] = [];
 
@@ -151,6 +153,30 @@ function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
 
     return { content: marked(input), tableOfContents };
   };
+}
+
+function normalizeInlineMarkdown(input: string) {
+  const lines = input.replace(/\r\n/g, "\n").split("\n");
+
+  while (lines.length && !lines[0].trim()) {
+    lines.shift();
+  }
+
+  while (lines.length && !lines.at(-1)?.trim()) {
+    lines.pop();
+  }
+
+  const indent = Math.min(
+    ...lines
+      .filter((line) => line.trim())
+      .map((line) => line.match(/^\s*/)?.[0].length || 0),
+  );
+
+  if (!Number.isFinite(indent) || indent === 0) {
+    return lines.join("\n");
+  }
+
+  return lines.map((line) => line.slice(indent)).join("\n");
 }
 
 function escapeHtml(input: string) {
