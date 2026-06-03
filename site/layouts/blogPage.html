@@ -2,7 +2,7 @@
   <slot name="content">
     <div class="p-4 mx-auto max-w-5xl prose lg:prose-xl">
       <h1 &children="(get context document.title)"></h1>
-      <div &children="(get context document.body)"></div>
+      <div &children="(get context document.bodyHtml)"></div>
     </div>
   </slot>
 </BaseLayout>

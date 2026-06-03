@@ -1,18 +1,19 @@
-import { join } from "https://deno.land/std@0.107.0/path/mod.ts";
+import { readdir, readFile } from "node:fs/promises";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 
 function getJson<R>(filePath: string): Promise<R> {
-  return Deno.readTextFile(filePath).then((d) => JSON.parse(d));
+  return readFile(filePath, "utf8").then((d) => JSON.parse(d));
 }
 
 function getJsonSync<R>(filePath: string): R {
-  return JSON.parse(Deno.readTextFileSync(filePath));
+  return JSON.parse(readFileSync(filePath, "utf8"));
 }
 
 function last<O>(array: O[]) {
   return array[array.length - 1];
 }
 
-// deno-lint-ignore no-explicit-any
 const isObject = (a: any) => typeof a === "object";
 
 function get<O = Record<string, unknown>>(dataContext: O, key: string): string {
@@ -34,7 +35,7 @@ function get<O = Record<string, unknown>>(dataContext: O, key: string): string {
 async function dir(p: string) {
   const ret = [];
 
-  for await (const { name } of Deno.readDir(p)) {
+  for (const { name } of await readdir(p, { withFileTypes: true })) {
     ret.push({ path: join(p, name), name });
   }
 
@@ -44,7 +45,7 @@ async function dir(p: string) {
 function dirSync(p: string) {
   const ret = [];
 
-  for (const { name } of Deno.readDirSync(p)) {
+  for (const { name } of readdirSync(p, { withFileTypes: true })) {
     ret.push({ path: join(p, name), name });
   }
 

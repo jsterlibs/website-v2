@@ -1,18 +1,10 @@
-import YAML from "https://esm.sh/yaml@1.10.2";
-import { configSync } from "https://deno.land/std@0.134.0/dotenv/mod.ts";
-import { trim } from "https://deno.land/x/fae@v1.0.0/trim.ts";
-import { pLimit } from "https://deno.land/x/p_limit@v1.0.0/mod.ts";
-import { ensureFileSync } from "https://deno.land/std@0.141.0/fs/mod.ts";
-import { join } from "https://deno.land/std@0.141.0/path/mod.ts";
+import { join } from "node:path";
+import { raw } from "gustwind/htmlisp";
+import YAML from "yaml";
 import getMarkdown from "./transforms/markdown.ts";
-import { getJson } from "../scripts/utils.ts";
-import type { LoadApi } from "https://deno.land/x/gustwind@v0.62.0/types.ts";
+import { getJson, getJsonSync } from "../scripts/utils.ts";
+import type { LoadApi } from "gustwind";
 
-import categories from "../data/categories.json" with { type: "json" };
-import blogIndex from "../data/blogposts.json" with { type: "json" };
-import parentCategories from "../data/parent-categories.json" with {
-  type: "json",
-};
 import type { BlogPost, Category, Library, Tag } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
@@ -21,9 +13,10 @@ type BlogPostFile = {
   path: string;
 };
 
-const config = configSync();
-
 const cacheDirectory = ".gustwind_cache";
+const categories = getJsonSync<Category[]>("data/categories.json");
+const blogIndex = getJsonSync<IndexEntry[]>("data/blogposts.json");
+const parentCategories = getJsonSync("data/parent-categories.json");
 
 function parseBlogPostFile(content: string, path: string) {
   if (path.endsWith(".md")) {
@@ -46,6 +39,7 @@ function parseBlogPostFile(content: string, path: string) {
 
 function init({ load }: { load: LoadApi }) {
   const markdown = getMarkdown(load);
+  let librariesPromise: Promise<Library[]> | undefined;
 
   async function indexBlog() {
     const blogPostFiles: BlogPostFile[] = [
@@ -85,6 +79,7 @@ function init({ load }: { load: LoadApi }) {
             path: matchingBlogPost?.path,
             id,
             title: matchingBlogPost?.title || "",
+            titleHtml: raw(escapeHtml(matchingBlogPost?.title || "")),
             // @ts-ignore: Typo in the original data
             shortTitle: matchingBlogPost?.short_title,
             slug: matchingBlogPost?.slug || "",
@@ -100,12 +95,7 @@ function init({ load }: { load: LoadApi }) {
   }
 
   function processBlogPost(blogPost: BlogPost) {
-    /*
-    const yaml = YAML.parse(await load.textFile(blogPost.path));
-
-    return { ...blogPost, body: markdown(yaml.body).content };
-    */
-    return blogPost;
+    return { ...blogPost, bodyHtml: raw(markdown(blogPost.body || "").content) };
   }
 
   function indexLibraries() {
@@ -120,99 +110,49 @@ function init({ load }: { load: LoadApi }) {
   // That feels like a good spot for supporting middlewares or webpack style
   // loaders.
   async function getLibraries(): Promise<Library[]> {
+    if (librariesPromise) {
+      return librariesPromise;
+    }
+
+    librariesPromise = loadLibraries();
+
+    return librariesPromise;
+  }
+
+  async function loadLibraries(): Promise<Library[]> {
     const libraries = await load.dir({
       path: "./data/libraries",
       extension: ".json",
       type: "",
     });
-    const limit = pLimit(8);
     const enhancedLibraries = await Promise.all(
-      await libraries.map(({ path }) =>
-        limit(async () => {
-          const library = await getJson<Library>(path);
+      await libraries.map(async ({ path }) => {
+        const library = await getJson<Library>(path);
 
-          if (library.links.github) {
-            const parts = library.links.github?.split("github.com/")[1];
-            const [org, repository] = parts.split("/");
+        if (library.links.github) {
+          const parts = library.links.github?.split("github.com/")[1];
+          const [org, repository] = parts.split("/");
 
-            if (!org || !repository) {
-              return library;
-            }
+          if (!org || !repository) {
+            return library;
+          }
 
-            // Check cache before requesting
-            const cachePath = join(cacheDirectory, library.name + ".json");
+          // Check cache before requesting
+          const cachePath = join(cacheDirectory, library.name + ".json");
 
-            try {
-              const cachedLibrary = JSON.parse(await load.textFile(cachePath));
+          try {
+            const cachedLibrary = JSON.parse(await load.textFile(cachePath));
 
-              return { stargazers: undefined, ...cachedLibrary };
-            } catch (_error) {
-              // no-op: Error here is ok as then it means the cache file doesn't exist yet
-            }
-
-            return { ...library, stargazers: undefined };
-
-            // TODO: Restore using an external API
-            // It looks like the missing repos have stargazers set to undefined.
-            /*
-            try {
-              const response = await fetch(
-                `https://cf-api.jster.net/stargazers?organization=${
-                  trim(org, "/")
-                }&repository=${trim(repository, "/")}`,
-                {
-                  headers: {
-                    "Authorization": `Bearer ${config.API_AUTH}`,
-                  },
-                },
-              );
-              const { stargazers } = await response.text().then((text) => {
-                try {
-                  return JSON.parse(text);
-                } catch (_error) {
-                  // no-op: Error is expected here as some libraries don't have this data
-                  // because they aren't hosted on GitHub for example.
-                }
-
-                return 0;
-              });
-
-              if (stargazers === "undefined") {
-                // Write to cache even if stargazers were not found
-                ensureFileSync(cachePath);
-                await Deno.writeTextFile(
-                  cachePath,
-                  JSON.stringify(
-                    { ...library, stargazers: undefined },
-                    null,
-                    2,
-                  ),
-                );
-
-                return;
-              }
-
-              const ret = {
-                ...library,
-                stargazers,
-              };
-
-              // Write to cache
-              ensureFileSync(cachePath);
-              await Deno.writeTextFile(cachePath, JSON.stringify(ret, null, 2));
-
-              return ret;
-            } catch (error) {
-              console.error("Failed to get stargazers", error);
-
-              return { ...library, stargazers: undefined };
-            }
-            */
+            return { stargazers: undefined, ...cachedLibrary };
+          } catch (_error) {
+            // no-op: Error here is ok as then it means the cache file doesn't exist yet
           }
 
           return { ...library, stargazers: undefined };
-        })
-      ),
+        }
+
+        return { ...library, stargazers: undefined };
+      }),
     );
 
     return enhancedLibraries.filter(Boolean);
@@ -276,6 +216,13 @@ function init({ load }: { load: LoadApi }) {
     processCategory,
     processTag,
   };
+}
+
+function escapeHtml(input: string) {
+  return input
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
 export { init };

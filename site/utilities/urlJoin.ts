@@ -1,5 +1,4 @@
-// Copy from https://bundle.deno.dev/https://deno.land/x/url_join@1.0.0/mod.ts
-// to avoid Deno/Node interop issues.
+// Local copy of url_join to avoid another runtime dependency.
 const urlJoin = function (...args) {
   let input;
   if (typeof args[0] === "object") {

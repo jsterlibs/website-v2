@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@utility btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+@utility btn-blue {
+  @apply bg-blue-500 text-white hover:bg-blue-700;
+}
+
+@utility btn-muted {
+  @apply font-light text-gray-500;
+}
+
+@utility mask-text {
+  color: transparent;
+  text-shadow: 0 0 black;
+}
+
+@utility pointer-events-all {
+  pointer-events: all;
+}

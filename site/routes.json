@@ -5,13 +5,12 @@
       "description": "JSter catalogues JavaScript libraries per purpose"
     },
     "layout": "siteIndex",
-    "dataSources": [
-      {
+    "dataSources": {
+      "parentCategories": {
         "operation": "getParentCategories",
-        "parameters": [],
-        "name": "parentCategories"
+        "parameters": []
       }
-    ]
+    }
   },
   "catalog": {
     "meta": {
@@ -19,27 +18,28 @@
       "description": "JavaScript libraries per category"
     },
     "layout": "catalogIndex",
-    "dataSources": [
-      {
+    "dataSources": {
+      "parentCategories": {
         "operation": "getParentCategories",
-        "parameters": [],
-        "name": "parentCategories"
+        "parameters": []
       }
-    ]
+    }
   },
   "category": {
     "expand": {
       "matchBy": {
+        "name": "categories",
         "indexer": {
           "operation": "indexCategories",
           "parameters": []
         },
-        "dataSources": [{
-          "operation": "processCategory",
-          "parameters": [],
-          "name": "category"
-        }],
         "slug": "id"
+      },
+      "dataSources": {
+        "category": {
+          "operation": "processCategory",
+          "parameters": []
+        }
       },
       "layout": "categoryPage",
       "meta": {
@@ -57,16 +57,18 @@
   "tag": {
     "expand": {
       "matchBy": {
+        "name": "tags",
         "indexer": {
           "operation": "indexTags",
           "parameters": []
         },
-        "dataSources": [{
-          "operation": "processTag",
-          "parameters": [],
-          "name": "category"
-        }],
         "slug": "id"
+      },
+      "dataSources": {
+        "category": {
+          "operation": "processTag",
+          "parameters": []
+        }
       },
       "layout": "categoryPage",
       "meta": {
@@ -94,25 +96,26 @@
       "title": "JSter – Blog",
       "description": "News relevant to JavaScript"
     },
-    "dataSources": [
-      {
+    "dataSources": {
+      "blogPosts": {
         "operation": "indexBlog",
-        "parameters": [],
-        "name": "blogPosts"
+        "parameters": []
       }
-    ],
+    },
     "expand": {
       "matchBy": {
+        "name": "blogPosts",
         "indexer": {
           "operation": "indexBlog",
           "parameters": []
         },
-        "dataSources": [{
-          "operation": "processBlogPost",
-          "parameters": [],
-          "name": "document"
-        }],
         "slug": "id"
+      },
+      "dataSources": {
+        "document": {
+          "operation": "processBlogPost",
+          "parameters": []
+        }
       },
       "layout": "blogPage",
       "meta": {
@@ -133,12 +136,11 @@
       "title": "JSter",
       "description": "JSter blog"
     },
-    "dataSources": [
-      {
+    "dataSources": {
+      "blogPosts": {
         "operation": "indexBlog",
-        "parameters": [],
-        "name": "blogPosts"
+        "parameters": []
       }
-    ]
+    }
   }
 }

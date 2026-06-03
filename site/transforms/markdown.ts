@@ -1,17 +1,12 @@
-import { install, tw } from "npm:@twind/core";
-import { marked } from "npm:marked@12.0.0";
-import highlight from "npm:highlight.js";
+import { marked } from "marked";
+import highlight from "highlight.js";
 
-// TODO: For some reason Deno import map doesn't work for this case
-// TODO: This is because of import()
-import highlightBash from "npm:highlight.js/lib/languages/bash";
-import highlightJS from "npm:highlight.js/lib/languages/javascript";
-import highlightJSON from "npm:highlight.js/lib/languages/json";
-import highlightTS from "npm:highlight.js/lib/languages/typescript";
-import highlightYAML from "npm:highlight.js/lib/languages/yaml";
+import highlightBash from "highlight.js/lib/languages/bash";
+import highlightJS from "highlight.js/lib/languages/javascript";
+import highlightJSON from "highlight.js/lib/languages/json";
+import highlightTS from "highlight.js/lib/languages/typescript";
+import highlightYAML from "highlight.js/lib/languages/yaml";
 
-import * as Html5Entities from "../utilities/html5entities.ts";
-import twindSetup from "../twindSetup.ts";
 
 highlight.registerLanguage("bash", highlightBash);
 highlight.registerLanguage("javascript", highlightJS);
@@ -21,11 +16,12 @@ highlight.registerLanguage("typescript", highlightTS);
 highlight.registerLanguage("ts", highlightTS);
 highlight.registerLanguage("yaml", highlightYAML);
 
+const DEFAULT_CODE_LANGUAGE = "plaintext";
+
 marked.setOptions({
   gfm: true,
   breaks: false,
   pedantic: false,
-  sanitize: false,
   smartLists: true,
   smartypants: true,
   highlight: (code: string, language: string) => {
@@ -33,9 +29,7 @@ marked.setOptions({
   },
 });
 
-install(twindSetup);
-
-function getTransformMarkdown() {
+function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
   return function transformMarkdown(input: string) {
     // https://github.com/markedjs/marked/issues/545
     const tableOfContents: { slug: string; level: number; text: string }[] = [];
@@ -45,17 +39,14 @@ function getTransformMarkdown() {
     marked.use({
       renderer: {
         code(code: string, infostring: string): string {
-          const lang = ((infostring || "").match(/\S*/) || [])[0];
+          const lang =
+            ((infostring || "").match(/\S*/) || [])[0] ||
+            DEFAULT_CODE_LANGUAGE;
+
+          const canHighlight = highlight.getLanguage(lang);
 
           // @ts-ignore How to type this?
-          if (this.options.highlight) {
-            if (!lang) {
-              // TODO: Figure out what to do in this case
-              console.error("Missing language for", code);
-
-              return code;
-            }
-
+          if (this.options.highlight && canHighlight) {
             // @ts-ignore How to type this?
             const out = this.options.highlight(code, lang);
 
@@ -64,15 +55,15 @@ function getTransformMarkdown() {
             }
           }
 
-          code = code.replace(/\n$/, "") + "\n";
-
-          if (!lang) {
-            return "<pre><code>" + code + "</code></pre>\n";
+          if (!canHighlight) {
+            code = escapeHtml(code);
           }
+
+          code = code.replace(/\n$/, "") + "\n";
 
           return (
             '<pre class="' +
-            tw`overflow-auto -mx-4 md:mx-0 bg-gray-100` +
+            "overflow-auto -mx-4 md:mx-0 bg-gray-100" +
             '"><code class="' +
             // @ts-ignore How to type this?
             this.options.langPrefix +
@@ -93,7 +84,7 @@ function getTransformMarkdown() {
             '"><h' +
             level +
             ' class="' +
-            tw`inline` +
+            "inline" +
             '"' +
             ' id="' +
             slug +
@@ -112,9 +103,10 @@ function getTransformMarkdown() {
           const height = textParts[2] || "";
           const className = textParts[3] || "";
 
-          return `<img src="${href}" alt="${alt}" class="${tw(
-            className
-          )}" width="${width}" height="${height}" />`;
+          return `<img src="${href}" alt="${alt}" class="${className}" width="${width}" height="${height}" />`;
+        },
+        html(html: string) {
+          return escapeHtml(html);
         },
         link(href: string, title: string, text: string) {
           if (href === null) {
@@ -122,21 +114,21 @@ function getTransformMarkdown() {
           }
 
           if (text === "<file>") {
-            return this.code(Deno.readTextFileSync(href), href.split(".")[1]);
+            return this.code(load?.textFileSync(href) || "", href.split(".")[1]);
           }
 
           const parts = text.split("|");
 
           let out =
             '<a class="' +
-            tw(["underline"].concat(parts[1])) +
+            ["underline"].concat(parts[1]).filter(Boolean).join(" ") +
             '" href="' +
             href +
             '"';
           if (title) {
             out += ' title="' + title + '"';
           }
-          out += ">" + parts[0] + "</a>";
+          out += ">" + escapeHtml(parts[0]) + "</a>";
           return out;
         },
         list(body: string, ordered: string, start: number) {
@@ -150,7 +142,7 @@ function getTransformMarkdown() {
             type +
             startatt +
             ' class="' +
-            tw(klass) +
+            klass +
             '">\n' +
             body +
             "</" +
@@ -161,8 +153,15 @@ function getTransformMarkdown() {
       },
     });
 
-    return { content: Html5Entities.decode(marked(input)), tableOfContents };
+    return { content: marked(input), tableOfContents };
   };
+}
+
+function escapeHtml(input: string) {
+  return input
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
 function slugify(idBase: string) {
