@@ -8,36 +8,68 @@ import getMarkdown from "./transforms/markdown.ts";
 import { getJson } from "../scripts/utils.ts";
 import type { LoadApi } from "https://deno.land/x/gustwind@v0.62.0/types.ts";
 
-import categories from "../data/categories.json" assert { type: "json" };
-import blogIndex from "../data/blogposts.json" assert { type: "json" };
-import parentCategories from "../data/parent-categories.json" assert { type: "json" };
+import categories from "../data/categories.json" with { type: "json" };
+import blogIndex from "../data/blogposts.json" with { type: "json" };
+import parentCategories from "../data/parent-categories.json" with {
+  type: "json",
+};
 import type { BlogPost, Category, Library, Tag } from "../types.ts";
 
 type IndexEntry = { id: string; title: string; url: string; date: string };
+type BlogPostFile = {
+  name: string;
+  path: string;
+};
 
 const config = configSync();
 
 const cacheDirectory = ".gustwind_cache";
 
+function parseBlogPostFile(content: string, path: string) {
+  if (path.endsWith(".md")) {
+    const frontmatterMatch = content.match(
+      /^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/,
+    );
+
+    if (!frontmatterMatch) {
+      throw new Error(`Missing frontmatter in ${path}`);
+    }
+
+    return {
+      ...YAML.parse(frontmatterMatch[1]),
+      body: content.slice(frontmatterMatch[0].length),
+    };
+  }
+
+  return YAML.parse(content);
+}
+
 function init({ load }: { load: LoadApi }) {
   const markdown = getMarkdown(load);
 
   async function indexBlog() {
-    const blogPostFiles = await load.dir({
-      path: "./data/blogposts",
-      extension: ".yml",
-      type: "",
-    });
+    const blogPostFiles: BlogPostFile[] = [
+      ...(await load.dir({
+        path: "./data/blogposts",
+        extension: ".yml",
+        type: "",
+      })),
+      ...(await load.dir({
+        path: "./data/blogposts",
+        extension: ".md",
+        type: "",
+      })),
+    ];
     const blogPosts: BlogPost[] = await Promise.all(
       blogPostFiles.map(async ({ name, path }) => {
-        const yaml = YAML.parse(await load.textFile(path));
+        const blogPost = parseBlogPostFile(await load.textFile(path), path);
 
         return {
           name,
           path,
-          ...yaml,
+          ...blogPost,
         };
-      })
+      }),
     );
 
     return (
@@ -48,8 +80,6 @@ function init({ load }: { load: LoadApi }) {
           if (!matchingBlogPost) {
             console.warn("No matching blog post found for", id);
           }
-
-          const yaml = YAML.parse(await load.textFile(matchingBlogPost?.path));
 
           return {
             path: matchingBlogPost?.path,
@@ -62,9 +92,9 @@ function init({ load }: { load: LoadApi }) {
             type: matchingBlogPost?.type || "static",
             user: matchingBlogPost?.user || "",
             // This is needed for RSS
-            body: markdown(yaml.body).content,
+            body: markdown(matchingBlogPost?.body || "").content,
           };
-        })
+        }),
       )
     ).toReversed();
   }
@@ -182,7 +212,7 @@ function init({ load }: { load: LoadApi }) {
 
           return { ...library, stargazers: undefined };
         })
-      )
+      ),
     );
 
     return enhancedLibraries.filter(Boolean);
@@ -227,7 +257,7 @@ function init({ load }: { load: LoadApi }) {
             }
           })
           .filter(Boolean),
-      }))
+      })),
     );
   }
 
