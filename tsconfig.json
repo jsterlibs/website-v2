@@ -28,21 +28,18 @@
     /* Modules */
     "module": "node16" /* Specify what module code is generated. */,
     // "rootDir": "./",                                  /* Specify the root folder within your source files. */
-    "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+    "moduleResolution": "node16" /* Specify how TypeScript looks up a file from a given module specifier. */,
 
     /* Specify the base directory to resolve non-relative module names. */
     "baseUrl": "./",
     /* Specify a set of entries that re-map imports to additional lookup locations. */
-    "paths": {
-      /* For some reason marked doesn't resolve otherwise on CF */
-      "npm:marked@12.0.0": ["node_modules/marked/lib/marked.esm.js"],
-      "npm:*": ["node_modules/*"]
-    },
+    "paths": {},
 
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
     "types": [
-      "@cloudflare/workers-types/2023-07-01"
+      "@cloudflare/workers-types/2023-07-01",
+      "node"
     ] /* Specify type package names to be included without being referenced in a source file. */,
     // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
     "resolveJsonModule": true /* Enable importing .json files */,
@@ -106,7 +103,7 @@
     // "allowUnusedLabels": true,                        /* Disable error reporting for unused labels. */
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
 
-    // Follow Deno convention for imports
+    // Allow local TypeScript extension imports used by Gustwind modules
     "allowImportingTsExtensions": true,
 
     /* Completeness */

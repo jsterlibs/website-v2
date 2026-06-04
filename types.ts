@@ -2,7 +2,6 @@ import { z } from "zod";
 
 type Env = { API_AUTH: string; PAGE_CACHE: KVNamespace };
 
-// deno-lint-ignore no-explicit-any
 type Attributes = Record<string, any>;
 type Category = { id: string; title: string; url: string; library: Library };
 
@@ -41,6 +40,7 @@ type ParentCategory = { title: string; children: Category[] };
 type BlogPost = {
   path: string;
   id: string;
+  url: string;
   title: string;
   shortTitle: string;
   slug: string;
