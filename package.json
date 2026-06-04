@@ -25,7 +25,8 @@
     "compress:cache": "tar -zcf build/cache.tar.gz .gustwind",
     "decompress:cache": "node ./scripts/decompress-cache.mjs",
     "copy:css": "node ./scripts/copy-tailwind-css.mjs",
-    "generate:manifest": "node ./scripts/generate-manifest.mjs"
+    "generate:manifest": "node ./scripts/generate-manifest.mjs",
+    "fetch:new-jster": "node ./scripts/fetch-new-jster.mjs"
   },
   "keywords": [],
   "author": "Juho Vepsäläinen",
