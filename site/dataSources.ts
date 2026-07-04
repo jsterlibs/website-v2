@@ -12,6 +12,9 @@ type BlogPostFile = {
   name: string;
   path: string;
 };
+type IndexedBlogPost = BlogPost & {
+  bodyHtml: ReturnType<typeof raw>;
+};
 
 const cacheDirectory = ".gustwind_cache";
 const categories = getJsonSync<Category[]>("data/categories.json");
@@ -39,9 +42,21 @@ function parseBlogPostFile(content: string, path: string) {
 
 function init({ load }: { load: LoadApi }) {
   const markdown = getMarkdown(load);
+  let blogPostsPromise: Promise<IndexedBlogPost[]> | undefined;
   let librariesPromise: Promise<Library[]> | undefined;
+  let librariesByIdPromise: Promise<Map<string, Library>> | undefined;
 
-  async function indexBlog() {
+  function indexBlog() {
+    if (blogPostsPromise) {
+      return blogPostsPromise;
+    }
+
+    blogPostsPromise = loadBlogPosts();
+
+    return blogPostsPromise;
+  }
+
+  async function loadBlogPosts() {
     const blogPostFiles: BlogPostFile[] = [
       ...(await load.dir({
         path: "./data/blogposts",
@@ -70,6 +85,8 @@ function init({ load }: { load: LoadApi }) {
       await Promise.all(
         blogIndex.map(async ({ id, url, date }: IndexEntry) => {
           const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
+          const bodySource = matchingBlogPost?.body || "";
+          const body = markdown(bodySource).content;
 
           if (!matchingBlogPost) {
             console.warn("No matching blog post found for", id);
@@ -88,7 +105,8 @@ function init({ load }: { load: LoadApi }) {
             type: matchingBlogPost?.type || "static",
             user: matchingBlogPost?.user || "",
             // This is needed for RSS
-            body: markdown(matchingBlogPost?.body || "").content,
+            body,
+            bodyHtml: raw(body),
           };
         }),
       )
@@ -96,6 +114,10 @@ function init({ load }: { load: LoadApi }) {
   }
 
   function processBlogPost(blogPost: BlogPost) {
+    if ("bodyHtml" in blogPost) {
+      return blogPost;
+    }
+
     return { ...blogPost, bodyHtml: raw(markdown(blogPost.body || "").content) };
   }
 
@@ -118,6 +140,18 @@ function init({ load }: { load: LoadApi }) {
     librariesPromise = loadLibraries();
 
     return librariesPromise;
+  }
+
+  async function getLibrariesById(): Promise<Map<string, Library>> {
+    if (librariesByIdPromise) {
+      return librariesByIdPromise;
+    }
+
+    librariesByIdPromise = getLibraries().then(
+      (libraries) => new Map(libraries.map((library) => [library.id, library])),
+    );
+
+    return librariesByIdPromise;
   }
 
   async function loadLibraries(): Promise<Library[]> {
@@ -164,14 +198,14 @@ function init({ load }: { load: LoadApi }) {
   }
 
   async function processCategory(category: Category) {
-    const libraries = await getLibraries();
+    const librariesById = await getLibrariesById();
 
     return {
       ...category,
       libraries: (
         await getJson<Library[]>(`data/categories/${category.id}.json`)
       )
-        .map((l) => libraries.find((library) => library.id === l.id))
+        .map((l) => librariesById.get(l.id))
         .filter(Boolean),
     };
   }
@@ -181,7 +215,7 @@ function init({ load }: { load: LoadApi }) {
   }
 
   async function indexTags() {
-    const libraries = await getLibraries();
+    const librariesById = await getLibrariesById();
 
     return Promise.all(
       (
@@ -191,7 +225,7 @@ function init({ load }: { load: LoadApi }) {
         title: name.split(".").slice(0, -1).join(),
         libraries: (await getJson<Category[]>(path))
           .map((c) => {
-            const foundLibrary = libraries.find((l) => l.id === c.library.id);
+            const foundLibrary = librariesById.get(c.library.id);
 
             if (foundLibrary) {
               return foundLibrary;
