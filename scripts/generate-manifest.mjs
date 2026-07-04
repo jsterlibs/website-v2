@@ -13,10 +13,12 @@ const layoutUtilities = await loadFiles({
   path: "./site/layouts",
   extension: ".server.ts",
 });
-const componentUtilities = await loadFiles({
-  path: "./site/components",
-  extension: ".server.ts",
-});
+const componentUtilities = (
+  await loadFiles({
+    path: "./site/components",
+    extension: ".server.ts",
+  })
+).filter(([name]) => name !== "Markdown");
 
 await writeFile("manifest.ts", generateCode());
 
