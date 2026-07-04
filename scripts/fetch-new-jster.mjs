@@ -16,6 +16,61 @@ const ANNOUNCEMENT_RE = /\b(?:Check\s+)?JSter\s+#(\d+)/i;
 const URL_RE = /(https?:\/\/\S+)\s*$/;
 const SHORT_URL_HOST_RE = /(^|\.)buff\.ly$|(^|\.)bit\.ly$|(^|\.)ilo\.im$/i;
 const DEFAULT_CATEGORY = "Uncategorized";
+const CATEGORY_ORDER = [
+  "Libraries",
+  "Frameworks",
+  "Articles",
+  "Techniques",
+  "Tools",
+  "Runtimes",
+];
+const CATEGORY_RULES = [
+  {
+    category: "Runtimes",
+    weight: 8,
+    patterns: [
+      /\b(?:node(?:\.js)?|deno|bun|ecmascript|tc39|v8|javascript\s+engine|js\s+engine|runtime|wasm|webassembly)\b/i,
+      /\btypescript\s+\d/i,
+    ],
+  },
+  {
+    category: "Frameworks",
+    weight: 7,
+    patterns: [
+      /\b(?:framework|react|vue|angular|svelte|astro|next(?:\.js)?|nuxt|solid|qwik|remix|ember|preact|hono|fastify|express|nestjs|vitepress|docusaurus)\b/i,
+    ],
+  },
+  {
+    category: "Tools",
+    weight: 6,
+    patterns: [
+      /\b(?:tool|cli|lsp|formatter|validator|compiler|bundler|build|test(?:ing|s)?|debugger|lint(?:er)?|package\s+manager|npm|pnpm|yarn|vite|webpack|rollup|parcel|esbuild|rspack|rsbuild|biome|eslint|prettier|playwright|vitest|jest|storybook|codemod|diff|editor|devtools|database|sql)\b/i,
+    ],
+  },
+  {
+    category: "Techniques",
+    weight: 5,
+    patterns: [
+      /\b(?:api|web\s+api|browser\s+api|css|html|dom|pointerevent|event|cach(?:e|ing)|performance|accessibility|a11y|security|streams?|workers?|service\s+worker|web\s+components|canvas|webgl|animation|state\s+management|routing|patterns?|architecture)\b/i,
+    ],
+  },
+  {
+    category: "Libraries",
+    weight: 4,
+    patterns: [
+      /\b(?:library|lib|component|hook|sdk|client|module|plugin|polyfill|widget|parser|renderer|chart|visuali[sz]ation|date|validation|schema|forms?|table|grid|audio|video|image|map|crypto|storage|search\s+params)\b/i,
+    ],
+  },
+  {
+    category: "Articles",
+    weight: 3,
+    patterns: [
+      /\b(?:article|blog|guide|tutorial|explainer|case\s+study|how\s+to|building|writing|why|what|lessons?|notes?|thoughts?|turn|best|custom|practical|approach)\b/i,
+    ],
+  },
+];
+const ARTICLE_HOST_RE = /(?:^|\.)((?:blog|docs|developer|dev|engineering|learn)\.|medium\.com$|dev\.to$|hashnode\.dev$|substack\.com$)/i;
+const GITHUB_HOST_RE = /(^|\.)github\.com$/i;
 
 main().catch((error) => {
   console.error(error.message || error);
@@ -71,7 +126,8 @@ async function main() {
     ? fetchedEntries
     : await expandEntryUrls(fetchedEntries);
   const existingEntries = existingPost ? parseMarkdownEntries(existingPost.body) : [];
-  const entries = mergeEntries(existingEntries, transformGitHubTitles(expandedEntries));
+  const categorizedEntries = categorizeEntries(transformGitHubTitles(expandedEntries));
+  const entries = mergeEntries(existingEntries, categorizedEntries);
   const sortedEntries = sortEntries(entries, existingEntries);
   const title = `JSter #${nextNumber}: Libraries and more`;
   const markdown = renderPost({
@@ -531,7 +587,7 @@ function mergeEntries(existingEntries, fetchedEntries) {
       title: existing.title || entry.title,
       url: entry.url,
       description: existing.description || "",
-      category: existing.category || "",
+      category: existing.category || entry.category || "",
     };
   });
 }
@@ -554,7 +610,7 @@ function sortEntries(entries, existingEntries) {
 }
 
 function getCategoryOrder(entries) {
-  return entries.reduce((order, entry) => {
+  const existingOrder = entries.reduce((order, entry) => {
     const category = normalizeCategory(entry.category);
 
     if (category && !order.includes(category)) {
@@ -563,6 +619,16 @@ function getCategoryOrder(entries) {
 
     return order;
   }, []);
+
+  return CATEGORY_ORDER.reduce((order, category) => {
+    const normalized = normalizeCategory(category);
+
+    if (!order.includes(normalized)) {
+      order.push(normalized);
+    }
+
+    return order;
+  }, existingOrder);
 }
 
 function compareCategory(a, b, categoryOrder) {
@@ -594,6 +660,69 @@ function transformGitHubTitles(entries) {
 
     return github ? { ...entry, title: github[1] } : entry;
   });
+}
+
+function categorizeEntries(entries) {
+  return entries.map((entry) => {
+    if (entry.category) {
+      return entry;
+    }
+
+    return { ...entry, category: categorizeEntry(entry) };
+  });
+}
+
+function categorizeEntry(entry) {
+  const text = `${entry.title} ${entry.description || ""} ${entry.url}`;
+  const scores = CATEGORY_RULES.reduce((ret, rule) => {
+    const matched = rule.patterns.filter((pattern) => pattern.test(text)).length;
+
+    if (matched) {
+      ret[rule.category] = (ret[rule.category] || 0) + matched * rule.weight;
+    }
+
+    return ret;
+  }, {});
+
+  addUrlScore(scores, entry.url);
+
+  const best = Object.entries(scores).sort((a, b) => b[1] - a[1])[0];
+
+  return best?.[0] || fallbackCategory(entry.url);
+}
+
+function addUrlScore(scores, url) {
+  const parsed = parseUrl(url);
+
+  if (!parsed) {
+    return;
+  }
+
+  if (GITHUB_HOST_RE.test(parsed.hostname)) {
+    scores.Libraries = (scores.Libraries || 0) + 3;
+  }
+
+  if (ARTICLE_HOST_RE.test(parsed.hostname)) {
+    scores.Articles = (scores.Articles || 0) + 2;
+  }
+}
+
+function fallbackCategory(url) {
+  const parsed = parseUrl(url);
+
+  if (parsed && GITHUB_HOST_RE.test(parsed.hostname)) {
+    return "Libraries";
+  }
+
+  return "Articles";
+}
+
+function parseUrl(url) {
+  try {
+    return new URL(url);
+  } catch (_error) {
+    return null;
+  }
 }
 
 function renderPost({ number, title, preamble, entries }) {
