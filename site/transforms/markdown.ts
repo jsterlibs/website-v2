@@ -1,13 +1,18 @@
-import { marked } from "marked";
-import type { Tokens } from "marked";
-import highlight from "highlight.js";
-
+import {
+  defineHastPlugin,
+  defineMdastPlugin,
+  markdownToHtml,
+} from "satteri";
+import type { MarkdownToHtmlResult } from "satteri";
+import type { Code, Heading, Image, Link, Paragraph } from "mdast";
+import type { Element, RootContent } from "hast";
+import type { LoadApi } from "gustwind";
+import highlight from "highlight.js/lib/core";
 import highlightBash from "highlight.js/lib/languages/bash";
 import highlightJS from "highlight.js/lib/languages/javascript";
 import highlightJSON from "highlight.js/lib/languages/json";
 import highlightTS from "highlight.js/lib/languages/typescript";
 import highlightYAML from "highlight.js/lib/languages/yaml";
-
 
 highlight.registerLanguage("bash", highlightBash);
 highlight.registerLanguage("javascript", highlightJS);
@@ -18,141 +23,247 @@ highlight.registerLanguage("ts", highlightTS);
 highlight.registerLanguage("yaml", highlightYAML);
 
 const DEFAULT_CODE_LANGUAGE = "plaintext";
+const CODE_LANGUAGE_PREFIX = "language-";
 
-marked.setOptions({
-  gfm: true,
-  breaks: false,
-  pedantic: false,
-});
+type TableOfContentsEntry = { slug: string; level: number; text: string };
+type HeadingAnchor = TableOfContentsEntry;
 
-function getTransformMarkdown(load?: { textFileSync(path: string): string }) {
+function getTransformMarkdown(load?: Pick<LoadApi, "textFileSync">) {
   return function transformMarkdown(input: string) {
     input = normalizeInlineMarkdown(input);
 
-    // https://github.com/markedjs/marked/issues/545
-    const tableOfContents: { slug: string; level: number; text: string }[] = [];
+    const tableOfContents: TableOfContentsEntry[] = [];
+    const headingAnchors = tableOfContents;
+    const data = { tableOfContents };
+    const result = markdownToHtml(input, {
+      data,
+      features: {
+        gfm: true,
+        frontmatter: false,
+      },
+      mdastPlugins: [createJsterMdastPlugin({ headingAnchors, load })],
+      hastPlugins: [createJsterHastPlugin({ headingAnchors })],
+    }) as MarkdownToHtmlResult;
 
-    // https://marked.js.org/using_pro#renderer
-    // https://github.com/markedjs/marked/blob/master/src/Renderer.js
-    marked.use({
-      renderer: {
-        code(this: any, { text, lang: infostring }: Tokens.Code): string {
-          let code = text;
-          const lang =
-            ((infostring || "").match(/\S*/) || [])[0] ||
-            DEFAULT_CODE_LANGUAGE;
+    return { content: result.html, tableOfContents };
+  };
+}
 
-          const canHighlight = highlight.getLanguage(lang);
+function createJsterMdastPlugin(
+  { headingAnchors, load }: {
+    headingAnchors: HeadingAnchor[];
+    load?: Pick<LoadApi, "textFileSync">;
+  },
+) {
+  return defineMdastPlugin({
+    name: "jster-markdown-mdast",
+    code(node: Readonly<Code>, ctx) {
+      ctx.replaceNode(node, {
+        rawHtml: renderCodeBlock({
+          code: node.value,
+          lang: node.lang || DEFAULT_CODE_LANGUAGE,
+        }),
+      });
+    },
+    heading(node: Readonly<Heading>, ctx) {
+      const text = ctx.textContent(node);
 
-          if (canHighlight) {
-            code = highlight.highlight(code, { language: lang }).value;
-          }
+      headingAnchors.push({
+        slug: slugify(text),
+        level: node.depth,
+        text,
+      });
+    },
+    paragraph(node: Readonly<Paragraph>, ctx) {
+      if (node.children.length !== 1) {
+        return;
+      }
 
-          if (!canHighlight) {
-            code = escapeHtml(code);
-          }
+      const [child] = node.children;
 
-          code = code.replace(/\n$/, "") + "\n";
+      if (!isLinkNode(child) || ctx.textContent(child) !== "<file>") {
+        return;
+      }
 
-          return (
-            '<pre class="' +
-            "overflow-auto -mx-4 md:mx-0 bg-gray-100" +
-            '"><code class="' +
-            // @ts-ignore How to type this?
-            this.options.langPrefix +
-            lang +
-            '">' +
-            code +
-            "</code></pre>\n"
-          );
-        },
-        heading(this: any, { tokens, depth, text: raw }: Tokens.Heading) {
-          const text = this.parser.parseInline(tokens);
-          const slug = slugify(raw);
+      ctx.replaceNode(node, {
+        rawHtml: renderCodeBlock({
+          code: load?.textFileSync(child.url) || "",
+          lang: child.url.split(".")[1],
+        }),
+      });
+    },
+    image(node: Readonly<Image>, ctx) {
+      const textParts = node.alt ? node.alt.split("|") : [];
+      const alt = textParts[0] || "";
+      const width = textParts[1] || "";
+      const height = textParts[2] || "";
+      const className = textParts[3] || "";
 
-          tableOfContents.push({ slug, level: depth, text });
+      ctx.replaceNode(node, {
+        rawHtml:
+          `<img src="${escapeAttribute(node.url)}" alt="${escapeAttribute(alt)}" class="${escapeAttribute(className)}" width="${escapeAttribute(width)}" height="${escapeAttribute(height)}" />`,
+      });
+    },
+  });
+}
 
-          return (
-            '<a href="#' +
-            slug +
-            '"><h' +
-            depth +
-            ' class="' +
-            "inline" +
-            '"' +
-            ' id="' +
-            slug +
-            '">' +
-            text +
-            "</h" +
-            depth +
-            ">" +
-            "</a>\n"
-          );
-        },
-        image(this: any, { href, text, tokens }: Tokens.Image) {
-          if (tokens) {
-            text = this.parser.parseInline(tokens, this.parser.textRenderer);
-          }
+function createJsterHastPlugin(
+  { headingAnchors }: { headingAnchors: HeadingAnchor[] },
+) {
+  let headingIndex = 0;
 
-          const textParts = text ? text.split("|") : [];
-          const alt = textParts[0] || "";
-          const width = textParts[1] || "";
-          const height = textParts[2] || "";
-          const className = textParts[3] || "";
+  return defineHastPlugin({
+    name: "jster-markdown-hast",
+    element: [
+      {
+        filter: ["h1", "h2", "h3", "h4", "h5", "h6"],
+        visit(node: Readonly<Element>, ctx) {
+          const anchor = headingAnchors[headingIndex++];
+          const slug = anchor?.slug ?? slugify(ctx.textContent(node));
 
-          return `<img src="${href}" alt="${alt}" class="${className}" width="${width}" height="${height}" />`;
-        },
-        link(this: any, { href, title, tokens }: Tokens.Link) {
-          const text = this.parser.parseInline(tokens);
-
-          if (href === null) {
-            return text;
-          }
-
-          if (text === "<file>") {
-            return this.code(load?.textFileSync(href) || "", href.split(".")[1]);
-          }
-
-          const parts = text.split("|");
-
-          let out =
-            '<a class="' +
-            ["underline"].concat(parts[1]).filter(Boolean).join(" ") +
-            '" href="' +
-            href +
-            '"';
-          if (title) {
-            out += ' title="' + title + '"';
-          }
-          out += ">" + escapeHtml(parts[0]) + "</a>";
-          return out;
-        },
-        list(this: any, { items, ordered, start }: Tokens.List) {
-          const body = items.map((item) => this.listitem(item)).join("");
-          const type = ordered ? "ol" : "ul",
-            startatt = ordered && start !== 1 ? ' start="' + start + '"' : "",
-            klass = ordered
-              ? "list-decimal list-inside"
-              : "list-disc list-inside";
-          return (
-            "<" +
-            type +
-            startatt +
-            ' class="' +
-            klass +
-            '">\n' +
-            body +
-            "</" +
-            type +
-            ">\n"
-          );
+          ctx.replaceNode(node, {
+            type: "element",
+            tagName: "a",
+            properties: { href: `#${slug}` },
+            children: [{
+              type: "element",
+              tagName: node.tagName,
+              properties: {
+                ...node.properties,
+                class: "inline",
+                id: slug,
+              },
+              children: node.children,
+            }],
+          });
         },
       },
-    });
+      {
+        filter: ["a"],
+        visit(node: Readonly<Element>, ctx) {
+          const text = ctx.textContent(node);
+          const parts = text.split("|");
+          const className = ["underline"].concat(parts[1]).filter(Boolean).join(
+            " ",
+          );
+          const replacement: Element = {
+            type: "element",
+            tagName: "a",
+            properties: {
+              ...node.properties,
+              class: className,
+            },
+            children: node.children,
+          };
 
-    return { content: marked(input), tableOfContents };
+          if (parts.length > 1) {
+            replacement.children = [{ type: "text", value: parts[0] }];
+          }
+
+          ctx.replaceNode(node, replacement);
+        },
+      },
+      {
+        filter: ["ul"],
+        visit(node: Readonly<Element>, ctx) {
+          ctx.setProperty(node, "class", "list-disc list-inside");
+        },
+      },
+      {
+        filter: ["ol"],
+        visit(node: Readonly<Element>, ctx) {
+          ctx.setProperty(node, "class", "list-decimal list-inside");
+        },
+      },
+      {
+        filter: ["pre"],
+        visit(node: Readonly<Element>, ctx) {
+          const code = node.children.find(isCodeElement);
+
+          if (!code) {
+            return;
+          }
+
+          ctx.replaceNode(node, renderCodeElement({
+            code: ctx.textContent(code),
+            lang: getCodeLanguage(code),
+          }));
+        },
+      },
+    ],
+  });
+}
+
+function isCodeElement(node: RootContent): node is Element {
+  return node.type === "element" && node.tagName === "code";
+}
+
+function isLinkNode(node: Paragraph["children"][number]): node is Link {
+  return node.type === "link";
+}
+
+function getCodeLanguage(code: Readonly<Element>) {
+  const className = code.properties?.className ?? code.properties?.class;
+  const classes = Array.isArray(className) ? className : [className];
+  const languageClass = classes.find((value): value is string =>
+    typeof value === "string" && value.startsWith(CODE_LANGUAGE_PREFIX)
+  );
+
+  return languageClass?.slice(CODE_LANGUAGE_PREFIX.length);
+}
+
+function renderCodeElement(
+  { code, lang }: {
+    code: string;
+    lang?: string;
+  },
+): Element {
+  const normalizedLang = normalizeCodeLanguage(lang);
+
+  return {
+    type: "element",
+    tagName: "pre",
+    properties: { class: "overflow-auto -mx-4 md:mx-0 bg-gray-100" },
+    children: [{
+      type: "element",
+      tagName: "code",
+      properties: { class: CODE_LANGUAGE_PREFIX + normalizedLang },
+      children: [{
+        type: "raw",
+        value: highlightCode({ code, lang: normalizedLang }),
+      }],
+    }],
   };
+}
+
+function renderCodeBlock(
+  { code, lang }: {
+    code: string;
+    lang?: string;
+  },
+) {
+  const normalizedLang = normalizeCodeLanguage(lang);
+
+  return '<pre class="overflow-auto -mx-4 md:mx-0 bg-gray-100"><code class="' +
+    CODE_LANGUAGE_PREFIX +
+    normalizedLang +
+    '">' +
+    highlightCode({ code, lang: normalizedLang }) +
+    "</code></pre>\n";
+}
+
+function normalizeCodeLanguage(lang?: string) {
+  return lang || DEFAULT_CODE_LANGUAGE;
+}
+
+function highlightCode(
+  { code, lang }: { code: string; lang: string },
+) {
+  const renderedCode = highlight.getLanguage(lang)
+    ? highlight.highlight(code, { language: lang }).value
+    : escapeHtml(code);
+
+  return renderedCode.replace(/\n$/, "") + "\n";
 }
 
 function normalizeInlineMarkdown(input: string) {
@@ -162,7 +273,7 @@ function normalizeInlineMarkdown(input: string) {
     lines.shift();
   }
 
-  while (lines.length && !lines.at(-1)?.trim()) {
+  while (lines.length && !lines[lines.length - 1]?.trim()) {
     lines.pop();
   }
 
@@ -184,6 +295,10 @@ function escapeHtml(input: string) {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
+}
+
+function escapeAttribute(input: string) {
+  return escapeHtml(input).replace(/"/g, "&quot;");
 }
 
 function slugify(idBase: string) {
