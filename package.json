@@ -31,7 +31,7 @@
   "author": "Juho Vepsäläinen",
   "license": "MIT",
   "dependencies": {
-    "htmlisp": "0.90.0",
+    "htmlisp": "0.100.0",
     "satteri": "0.9.4",
     "yaml": "2.9.0",
     "zod": "4.4.3"
