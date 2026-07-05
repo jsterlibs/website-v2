@@ -10,15 +10,15 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/localForage/localForage }}
+  {{ screenshot: /library/localforage }}
 
-  * [localForage](https://github.com/localForage/localForage) - Easy web storage.
+  * [localForage](/library/localforage) - Easy web storage.
   * [mo](http://mojs.io/) - Motion graphics for the web.
   * [Tone.js](https://tonejs.github.io/) - Interactive music in the browser.
   * [A-Frame](https://aframe.io/) - WebVR made easy.
-  * [hyperapp](https://github.com/hyperapp/hyperapp) - 1k library for building JavaScript applications.
-  * [sudodoki/copy-to-clipboard](https://github.com/sudodoki/copy-to-clipboard) - Copy to clipboard using JavaScript.
-  * [bvaughn/js-search](https://github.com/bvaughn/js-search) - Efficient client-side search.
+  * [hyperapp](/library/hyperapp) - 1k library for building JavaScript applications.
+  * [sudodoki/copy-to-clipboard](/library/copy-to-clipboard) - Copy to clipboard using JavaScript.
+  * [bvaughn/js-search](/library/js-search) - Efficient client-side search.
 
   ## Frameworks
 
@@ -30,7 +30,7 @@ body: |
 
   ## Games
 
-  * [DAB0mB/radial-snake](https://github.com/DAB0mB/radial-snake)
+  * [DAB0mB/radial-snake](/library/radial-snake)
 
   ## Slides
 
@@ -39,8 +39,8 @@ body: |
   ## Tools
 
   * [Pixel Glass](https://yoksel.github.io/pixel-glass-js/) - Check how your markup fits the design.
-  * [IonicaBizau/node-cobol](https://github.com/IonicaBizau/node-cobol) - Run COBOL from Node.
-  * [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - For science.
+  * [IonicaBizau/node-cobol](/library/node-cobol) - Run COBOL from Node.
+  * [minimaxir/big-list-of-naughty-strings](/library/big-list-of-naughty-strings) - For science.
 
   ## Demos
 

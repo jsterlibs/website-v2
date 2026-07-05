@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [TensorFlow.js](https://js.tensorflow.org/) - A JavaScript library for training and deploying ML models in the browser and on Node.js.
-  * [Fluture](https://github.com/fluture-js/Fluture) - FantasyLand compliant (monadic) alternative to Promises.
+  * [Fluture](/library/fluture) - FantasyLand compliant (monadic) alternative to Promises.
   * [Luxon](https://moment.github.io/luxon/) - A powerful, modern, and friendly wrapper for Javascript dates and times.
 
   ## Articles
@@ -26,7 +26,7 @@ body: |
 
   ## Tools
 
-  * [ry/deno](https://github.com/ry/deno) - A secure TypeScript runtime on V8.
+  * [ry/deno](/library/deno) - A secure TypeScript runtime on V8.
   * [pnpm version 2 is out!](https://medium.com/pnpm/pnpm-version-2-is-out-a015268254d5) - pnpm, a npm client alternative, has reached a new major version. It maintains each package version only once on your computer making it both fast and space conserving.
   * [Vue Design System](https://vueds.com/) - Design systems for Vue.js.
-  * [JSUI](https://github.com/kitze/JSUI) - A graphical application for visualizing your project and maintaining it.
+  * [JSUI](/library/jsui) - A graphical application for visualizing your project and maintaining it.

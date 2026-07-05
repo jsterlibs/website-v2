@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/automat/controlkit.js }}
+  {{ screenshot: /library/controlkit-js }}
 
-  * [automat/controlkit.js](https://github.com/automat/controlkit.js) - A lightweight controller and GUI library.
+  * [automat/controlkit.js](/library/controlkit-js) - A lightweight controller and GUI library.
   * [AOS](https://michalsnik.github.io/aos/) - Animate on scroll library.
   * [ScrollMagic](http://scrollmagic.io/) - Magical scroll interactions.
   * [unified](https://unifiedjs.github.io/) - An interface for processing text with syntax trees and transforming between them.
   * [Pressure.js](https://pressurejs.com/) - Handle different touch interfaces through a single interface.
-  * [Freactal](https://github.com/FormidableLabs/freactal) - State management for React and React-like libraries.
+  * [Freactal](/library/freactal) - State management for React and React-like libraries.
 
   ## Tutorials
 
@@ -34,6 +34,6 @@ body: |
 
   ## Tools
 
-  * [tkh44/babel-plugin-sitrep](https://github.com/tkh44/babel-plugin-sitrep) - Log all assignments and the return value of a function with a simple comment.
+  * [tkh44/babel-plugin-sitrep](/library/babel-plugin-sitrep) - Log all assignments and the return value of a function with a simple comment.
   * [Prepack](https://prepack.io/) - A tool for making JavaScript code run faster.
   * [Yarn 1.0](https://code.facebook.com/posts/274518539716230) - Workspaces and other goodies.

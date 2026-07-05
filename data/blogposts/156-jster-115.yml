@@ -10,10 +10,10 @@ body: |
 
   ## Libraries
 
-  * [Niryo/controllerim](https://github.com/Niryo/controllerim) - MobX-inspired state management for React.
-  * [s-macke/VoxelSpace](https://github.com/s-macke/VoxelSpace) - Terrain rendering algorithm in less than 20 lines of code.
+  * [Niryo/controllerim](/library/controllerim) - MobX-inspired state management for React.
+  * [s-macke/VoxelSpace](/library/voxelspace) - Terrain rendering algorithm in less than 20 lines of code.
   * [Savvior](http://savvior.org/) - A multi-column layout alternative to Salvattore or Masonry, without CSS driven configuration or absolute positioning.
-  * [rangle/redux-beacon](https://github.com/rangle/redux-beacon) - Analytics integration for Redux and ngrx/store.
+  * [rangle/redux-beacon](/library/redux-beacon) - Analytics integration for Redux and ngrx/store.
 
   ## Tutorials
 
@@ -25,7 +25,7 @@ body: |
 
   ## Tools
 
-  * [xaviergonz/makfy](https://github.com/xaviergonz/makfy) - npm scripts on steroids.
+  * [xaviergonz/makfy](/library/makfy) - npm scripts on steroids.
   * [Spirit](https://spiritapp.io/) - Easy web animations for designers.
 
   ## Interviews

@@ -10,41 +10,41 @@ body: |
 
   ## Tools
 
-  * [yoavbls/pretty-ts-errors: 🔵 Make TypeScript errors prettier and human-readable in VSCode 🎀](https://buff.ly/3MKKKGl)
-  * [yanthomasdev/lunaria: The missing localization management toolchain for open-source projects](https://buff.ly/3KnGp9H)
-  * [Rustify your JavaScript tooling](https://buff.ly/3yB0OFD)
-  * [recheck - The trustworthy ReDoS checker](https://buff.ly/3rsPCYq)
-  * [npmgraph - Render dependency graph of a package](https://buff.ly/3PwYl3D)
+  * [yoavbls/pretty-ts-errors: 🔵 Make TypeScript errors prettier and human-readable in VSCode 🎀](/library/pretty-ts-errors)
+  * [yanthomasdev/lunaria: The missing localization management toolchain for open-source projects](/library/lunaria)
+  * [Rustify your JavaScript tooling](https://dev.to/thepassle/rustify-your-javascript-tooling-2doj)
+  * [recheck - The trustworthy ReDoS checker](https://makenowjust-labs.github.io/recheck/)
+  * [npmgraph - Render dependency graph of a package](https://npmgraph.js.org/)
 
   ## Techniques
 
-  * [Practical barrel file guide for library authors](https://buff.ly/4572umi)
-  * [Speeding up the JavaScript ecosystem - Server Side JSX](https://buff.ly/3UMHzAn)
-  * [Unblocking the Main Thread: Refactoring from Sync to Async in JavaScript](https://buff.ly/3ULQbY5)
+  * [Practical barrel file guide for library authors](https://thepassle.netlify.app/blog/practical-barrel-file-guide-for-library-authors)
+  * [Speeding up the JavaScript ecosystem - Server Side JSX](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-9/)
+  * [Unblocking the Main Thread: Refactoring from Sync to Async in JavaScript](https://brightinventions.pl/blog/refactoring-from-sync-to-async-in-javascript/)
   * [JavaScript patterns - Pyramid of doom](https://survivejs.com/blog/pyramid-of-doom/)
 
   ## Demos
 
-  * [Qlock - A JavaScript Quine Clock](https://buff.ly/4aHNm04)
+  * [Qlock - A JavaScript Quine Clock](http://aem1k.com/qlock/)
 
   ## Libraries
 
-  * [aidenybai/pattycake: Zero-runtime pattern matching](https://buff.ly/3RExx4b)
-  * [ofcoerce - Lightweight type coercion library](https://buff.ly/3wIsOXp)
-  * [Swiper - The Most Modern Mobile Touch Slider](https://buff.ly/2sNTBQs)
-  * [Introducing PigmentCSS: the next generation of CSS-in-JS](https://buff.ly/4dP6VWY)
+  * [aidenybai/pattycake: Zero-runtime pattern matching](/library/pattycake)
+  * [ofcoerce - Lightweight type coercion library](/library/ofcoerce)
+  * [Swiper - The Most Modern Mobile Touch Slider](https://swiperjs.com/)
+  * [Introducing PigmentCSS: the next generation of CSS-in-JS](https://mui.com/blog/introducing-pigment-css/)
 
   ## Services
 
-  * [Orama - A resilient, innovative and open-source search experience to achieve seamless integration with your infrastructure and data](https://buff.ly/3ZtaB9W)
+  * [Orama - A resilient, innovative and open-source search experience to achieve seamless integration with your infrastructure and data](https://oramasearch.com/)
 
   ## Articles
 
-  * [Quantifying the Impact of Styled Components on Server Response Times](https://buff.ly/3V7Teeu)
-  * [The Design System Ecosystem](https://buff.ly/3RqzcdG)
-  * [The surprising cost of using image through CSS background property](https://buff.ly/3wt0J6h)
+  * [Quantifying the Impact of Styled Components on Server Response Times](https://blog.levineandrew.com/quantifying-the-impact-of-styled-components-on-server-response-times)
+  * [The Design System Ecosystem](https://bradfrost.com/blog/post/the-design-system-ecosystem/)
+  * [The surprising cost of using image through CSS background property](https://sudh.online/blog/improving-lcp)
 
   ## Frameworks
 
-  * [SolidStart 1.0: The Shape of Frameworks to Come](https://buff.ly/3K9DmSa)
-  * [Byte - Simplify your API development with a minimal, performant JavaScript framework](https://buff.ly/3WHDkZA)
+  * [SolidStart 1.0: The Shape of Frameworks to Come](https://www.solidjs.com/blog/solid-start-the-shape-frameworks-to-come)
+  * [Byte - Simplify your API development with a minimal, performant JavaScript framework](https://bytejs.pages.dev/)

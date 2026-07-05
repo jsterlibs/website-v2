@@ -10,8 +10,8 @@ body: |
 
   ## Libraries
 
-  * [andyrichardson/fielder](https://github.com/andyrichardson/fielder) - A field-first form library for React and React Native
-  * [jneen/parsimmon](https://github.com/jneen/parsimmon) - A monadic LL(infinity) parser combinator library for JavaScript
+  * [andyrichardson/fielder](/library/fielder) - A field-first form library for React and React Native
+  * [jneen/parsimmon](/library/parsimmon) - A monadic LL(infinity) parser combinator library for JavaScript
 
   ## Articles
 
@@ -38,11 +38,11 @@ body: |
 
   ## Tools
 
-  * [rsms/estrella](https://github.com/rsms/estrella) - Lightweight and versatile build tool based on the esbuild compiler
-  * [elsaland/elsa](https://github.com/elsaland/elsa) - Elsa is a minimal, fast and secure runtime for JavaScript and TypeScript written in Go
-  * [snyk/vulncost](https://github.com/snyk/vulncost) - Find security vulnerabilities in open source npm packages while you code
+  * [rsms/estrella](/library/estrella) - Lightweight and versatile build tool based on the esbuild compiler
+  * [elsaland/elsa](/library/elsa) - Elsa is a minimal, fast and secure runtime for JavaScript and TypeScript written in Go
+  * [snyk/vulncost](/library/vulncost) - Find security vulnerabilities in open source npm packages while you code
   * [Preconstruct](https://preconstruct.tools/) - Dev and build your code painlessly in monorepos
-  * [intuit/auto](https://github.com/intuit/auto) - Generate releases based on semantic version labels on pull requests
+  * [intuit/auto](/library/auto) - Generate releases based on semantic version labels on pull requests
 
   ## React
 

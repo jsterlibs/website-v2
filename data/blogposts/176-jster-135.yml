@@ -10,10 +10,10 @@ body: |
 
   ## Libraries
 
-  * [daltonwebdev/console.chat](https://github.com/daltonwebdev/console.chat) - Chat in your console
+  * [daltonwebdev/console.chat](/library/console-chat) - Chat in your console
   * [Overmind](https://overmindjs.org/) - Frictionless state management. [See also the interview](https://survivejs.com/blog/overmind-interview/).
-  * [modernserf/zebu](https://github.com/modernserf/zebu) - A compiler for little languages in tagged template strings
-  * [lukeed/httpie](https://github.com/lukeed/httpie) - A Node.js HTTP client as easy as pie!
+  * [modernserf/zebu](/library/zebu) - A compiler for little languages in tagged template strings
+  * [lukeed/httpie](/library/httpie) - A Node.js HTTP client as easy as pie!
 
   ## Frameworks
 
@@ -26,7 +26,7 @@ body: |
 
   ## Tools
 
-  * [KidkArolis/healthier](https://github.com/KidkArolis/healthier) - Opinionated, style-agnostic linter
+  * [KidkArolis/healthier](/library/healthier) - Opinionated, style-agnostic linter
 
   ## Services
 

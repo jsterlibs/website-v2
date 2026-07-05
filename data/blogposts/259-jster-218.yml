@@ -11,26 +11,26 @@ body: |
   ## Libraries
 
   * [TypeSpec - Describe your APIs concisely and more](https://typespec.io/)
-  * [React 19 Beta](https://buff.ly/4d8s2Dn)
-  * [json-editor - JSON Schema Based Editor](https://buff.ly/4b6aVQQ)
-  * [rjsf-team/react-jsonschema-form: A React component for building Web forms from JSON Schema.](https://buff.ly/49P5CEh)
-  * [Introducing Declarative Routing for NextJS and React-Router](https://buff.ly/3JgvNZq)
-  * [tatethurston/nextjs-routes: Type safe routing for Next.js](https://buff.ly/448qaWZ)
+  * [React 19 Beta](https://react.dev/blog/2024/12/05/react-19)
+  * [json-editor - JSON Schema Based Editor](/library/json-editor)
+  * [rjsf-team/react-jsonschema-form: A React component for building Web forms from JSON Schema.](/library/react-jsonschema-form)
+  * [Introducing Declarative Routing for NextJS and React-Router](https://javascript.plainenglish.io/introducing-declarative-routing-for-nextjs-and-react-router-dbf34edc7542)
+  * [tatethurston/nextjs-routes: Type safe routing for Next.js](/library/nextjs-routes)
   * [Loro – Reimagine state management with CRDTs](https://www.loro.dev/)
 
   ## Techniques
 
-  * [Default exports in CommonJS libraries](https://buff.ly/4di8HPV)
+  * [Default exports in CommonJS libraries](https://blog.andrewbran.ch/default-exports-in-commonjs-libraries/)
   * [Are Inline Styles Faster than CSS?](https://buff.ly/3JrSqul)
 
   ## Tools
 
-  * [VisBug v0.4.0 release notes](https://buff.ly/4a17Dgy)
-  * [Kuto, a reverse JS bundler](https://buff.ly/49Pkano)
-  * [ESLint v9.0.0 released](https://buff.ly/3TJ5bFi)
+  * [VisBug v0.4.0 release notes](https://nerdy.dev/a-2024-visbug-update)
+  * [Kuto, a reverse JS bundler](https://samthor.au/2024/kuto/)
+  * [ESLint v9.0.0 released](https://eslint.org/blog/2024/04/eslint-v9.0.0-released/)
 
   ## Articles
 
-  * [Sam's Experience with Qwik After 6 Months of Development](https://buff.ly/3TNMz7n)
-  * [Deep Dive into Rspack & Webpack Tree Shaking](https://buff.ly/3vWfnm8)
+  * [Sam's Experience with Qwik After 6 Months of Development](https://blog.partialty.com/post/my-experience-with-qwik-after-6-months-of-development)
+  * [Deep Dive into Rspack & Webpack Tree Shaking](https://github.com/orgs/web-infra-dev/discussions/17)
   * [Why does my video player embed load so much JavaScript?](https://www.mux.com/blog/what-is-a-video-playback-engine)

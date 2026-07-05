@@ -10,12 +10,12 @@ body: |
 
   ## Frameworks
 
-  * [egoist/saber](https://github.com/egoist/saber.js) - A minimalistic framework for building static website using Vue.js
+  * [egoist/saber](/library/saber-js) - A minimalistic framework for building static website using Vue.js
   * [Introducing Dojo 2.0!](https://dojo.io/blog/2018/05/02/2018-05-02-Dojo2-0-0-release/)
 
   ## Data Structures
 
-  * [funkia/list](https://github.com/funkia/list) - An immutable list with unmatched performance and a comprehensive functional API.
+  * [funkia/list](/library/list) - An immutable list with unmatched performance and a comprehensive functional API.
   * [Composable, Immutable property access with Lenses in Typescript](https://medium.com/@reidev275/composable-immutable-property-access-with-lenses-in-typescript-798da4ddc30e)
 
   ## Articles
@@ -29,9 +29,9 @@ body: |
 
   ## Tools
 
-  * [ds300/patch-package](https://github.com/ds300/patch-package/) - Fix broken node modules with no fuss
+  * [ds300/patch-package](/library/patch-package) - Fix broken node modules with no fuss
   * [Strapi](https://strapi.io/) - API creation made simple, secure and fast.
-  * [rvpanoz/luna](https://github.com/rvpanoz/luna) - Modern UI for npm
+  * [rvpanoz/luna](/library/luna) - Modern UI for npm
 
   ## Demos
 

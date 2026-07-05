@@ -10,20 +10,20 @@ body: |
 
   ## Libraries
 
-  * [gvergnaud/ts-pattern](https://github.com/gvergnaud/ts-pattern) - The exhaustive Pattern Matching library for TypeScript, with smart type inference
+  * [gvergnaud/ts-pattern](/library/ts-pattern) - The exhaustive Pattern Matching library for TypeScript, with smart type inference
   * [SQLite On The Web: Absurd-sql](https://hackaday.com/2021/08/24/sqlite-on-the-web-absurd-sql/)
 
   ## Tools
 
   * [PyScript](https://pyscript.net/) - Python but in browser
   * [pure JS WiFi QR Code Generator](https://qifi.org/)
-  * [ghiscoding/lerna-lite](https://github.com/ghiscoding/lerna-lite) - Automate your workspace version & publish by using conventional-changelog-commits
-  * [lerna](https://github.com/lerna/lerna) - Lerna has reached end of life
+  * [ghiscoding/lerna-lite](/library/lerna-lite) - Automate your workspace version & publish by using conventional-changelog-commits
+  * [lerna](/library/lerna) - Lerna has reached end of life
   * [Retheme.org](https://retheme.org/) - The internet without ads
   * [Jest 28: Shedding weight and improving compatibility 🫶](https://jestjs.io/blog/2022/04/25/jest-28)
   * [Node.js 18 is now available!](https://nodejs.org/en/blog/announcements/v18-release-announce/)
-  * [dutiyesh/chrome-extension-cli](https://github.com/dutiyesh/chrome-extension-cli) - The CLI for your next Chrome Extension
-  * [BuilderIO/mitosis](https://github.com/BuilderIO/mitosis) - Write components once, run everywhere. Compiles to Vue, React, Solid, Angular, Svelte, and more
+  * [dutiyesh/chrome-extension-cli](/library/chrome-extension-cli) - The CLI for your next Chrome Extension
+  * [BuilderIO/mitosis](/library/mitosis) - Write components once, run everywhere. Compiles to Vue, React, Solid, Angular, Svelte, and more
   * [Storybook Lazy Compilation for Webpack](https://storybook.js.org/blog/storybook-lazy-compilation-for-webpack/)
   * [AST explorer](https://astexplorer.net/)
   * [Rome formatter is now available](https://rome.tools/blog/2022/04/05/rome_formatter_release)

@@ -10,10 +10,10 @@ body: |
 
   ## Libraries
 
-  * [sprusr/mewmap: Interactive maps powered by SVG 🐈](https://buff.ly/CrVjc22)
-  * [supertalk - A type-safe, unified communication library for Web Workers, Iframes, and Node.js worker threads.](https://buff.ly/7dhR5gN)
-  * [jQuery 4.0.0](https://ilo.im/169xh1)
-  * [A polyfill for the HTML switch element](https://buff.ly/86WpJSU)
+  * [sprusr/mewmap: Interactive maps powered by SVG 🐈](/library/mewmap)
+  * [supertalk - A type-safe, unified communication library for Web Workers, Iframes, and Node.js worker threads.](/library/supertalk)
+  * [jQuery 4.0.0](https://blog.jquery.com/2026/01/17/jquery-4-0-0/)
+  * [A polyfill for the HTML switch element](https://blog.tomayac.com/2026/01/12/a-polyfill-for-the-html-switch-element/)
 
 
   ## Applications
@@ -22,51 +22,51 @@ body: |
 
   ## Articles
 
-  * [A 2x faster Rollup?](https://buff.ly/QQKY4O4)
-  * [The Incredible Overcomplexity of the Shadcn Radio Button](https://buff.ly/LQ9E7d7)
-  * [The 2025 Web Almanac with new insights is available now](https://buff.ly/FWwjlUC)
+  * [A 2x faster Rollup?](https://thundraa.com/insights/a-2x-faster-rollup/)
+  * [The Incredible Overcomplexity of the Shadcn Radio Button](https://paulmakeswebsites.com/writing/shadcn-radio-button/)
+  * [The 2025 Web Almanac with new insights is available now](https://almanac.httparchive.org/en/2025/)
 
   ## Books
 
-  * [Free book - Accessibility For Everyone by Laura Kalbag](https://buff.ly/tgpZNJs)
-  * [The Micro-Frontend Architecture Handbook](https://buff.ly/wTtGP09)
+  * [Free book - Accessibility For Everyone by Laura Kalbag](https://accessibilityforeveryone.site/)
+  * [The Micro-Frontend Architecture Handbook](https://www.freecodecamp.org/news/complete-micro-frontends-guide/)
 
   ## Tutorials
 
-  * [Build a dinosaur runner game with Deno, pt. 4](https://buff.ly/Sk3ow2u)
+  * [Build a dinosaur runner game with Deno, pt. 4](https://deno.com/blog/build-a-game-with-deno-4)
 
   ## Runtimes
 
-  * [Node.js 25.4.0](https://buff.ly/RbDfyrH)
+  * [Node.js 25.4.0](https://nodejs.org/en/blog/release/v25.4.0)
 
   ## Security
 
-  * [Denial of Service and Source Code Exposure in React Server Components Again](https://buff.ly/UkSnyuS)
-  * [CVEs affecting the Svelte ecosystem - Update as soon as you can](https://buff.ly/RvKo6bp)
-  * [Node.js — Mitigating Denial-of-Service Vulnerability from Unrecoverable Stack Space Exhaustion for React, Next.js, and APM Users](https://buff.ly/Zca5zGq)
+  * [Denial of Service and Source Code Exposure in React Server Components Again](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components)
+  * [CVEs affecting the Svelte ecosystem - Update as soon as you can](https://svelte.dev/blog/cves-affecting-the-svelte-ecosystem)
+  * [Node.js — Mitigating Denial-of-Service Vulnerability from Unrecoverable Stack Space Exhaustion for React, Next.js, and APM Users](https://nodejs.org/en/blog/vulnerability/january-2026-dos-mitigation-async-hooks)
 
   ## Tools
 
-  * [blackboardsh/electrobun: Build ultra fast, tiny, and cross-platform desktop apps with Typescript.](https://buff.ly/sUIrqAI)
+  * [blackboardsh/electrobun: Build ultra fast, tiny, and cross-platform desktop apps with Typescript.](/library/electrobun)
   * [Fontra - The browser based font editor](https://fontra.xyz/)
-  * [lloydi/PolyPane-Config - Useful polypane configurations for a11y testing](https://buff.ly/OFlILUo)
-  * [kettanaito/playwright-persona: Authentication in Playwright using personas.](https://buff.ly/edL2uT6)
+  * [lloydi/PolyPane-Config - Useful polypane configurations for a11y testing](/library/polypane-config)
+  * [kettanaito/playwright-persona: Authentication in Playwright using personas.](/library/playwright-persona)
 
   ## Demos
 
-  * [Google Balls](https://buff.ly/2rDZXko)
+  * [Google Balls](https://googleballs.com/)
 
   ## News
 
-  * [Astro is joining Cloudflare](https://buff.ly/2LFWjZC)
+  * [Astro is joining Cloudflare](https://blog.cloudflare.com/astro-joins-cloudflare/)
 
   ## Browsers
 
-  * [Just the Browser](https://buff.ly/IDkzzu9)
+  * [Just the Browser](https://justthebrowser.com/)
 
   ## Techniques
 
-  * [Replacing Toasts with Accessible User Feedback Patterns](https://buff.ly/GBOogVj)
-  * [Date is out, Temporal is in](https://ilo.im/169o2x)
-  * [Using your design system colors with contrast-color()](https://buff.ly/QoNykvr)
-  * [Managing TypeScript Packages in Monorepos](https://buff.ly/UvtGw5u)
+  * [Replacing Toasts with Accessible User Feedback Patterns](https://dev.to/miasalazar/replacing-toasts-with-accessible-user-feedback-patterns-1p8l)
+  * [Date is out, Temporal is in](https://piccalil.li/blog/date-is-out-and-temporal-is-in/)
+  * [Using your design system colors with contrast-color()](https://daverupert.com/2026/01/contrast-color-with-custom-design-tokens/)
+  * [Managing TypeScript Packages in Monorepos](https://nx.dev/blog/managing-ts-packages-in-monorepos)

@@ -10,34 +10,34 @@ body: |
 
   ## Libraries
 
-  * [hwchase17/langchainjs - Building applications with LLMs through composability](https://buff.ly/3xuUR9l)
-  * [Introducing Valibot, a < 1kb Zod Alternative](https://buff.ly/3Y5rQxA)
-  * [natemoo-re/clack: Effortlessly build beautiful command-line apps](https://buff.ly/3ltlfxz)
-  * [Code Hike - Not just a syntax highlighter](https://buff.ly/43xrdOp)
+  * [hwchase17/langchainjs - Building applications with LLMs through composability](/library/langchainjs)
+  * [Introducing Valibot, a < 1kb Zod Alternative](https://www.builder.io/blog/introducing-valibot)
+  * [natemoo-re/clack: Effortlessly build beautiful command-line apps](/library/clack)
+  * [Code Hike - Not just a syntax highlighter](https://codehike.org/)
 
   ## Frameworks
 
-  * [Analog - Full stack metaframework for Angular](https://buff.ly/3JMLOrO)
-  * [Fresh 1.3 - Simplified Route Components and More](https://buff.ly/3Doh4IY)
+  * [Analog - Full stack metaframework for Angular](https://analogjs.org/)
+  * [Fresh 1.3 - Simplified Route Components and More](https://deno.com/blog/fresh-1.3)
 
   ## Articles
 
-  * [Routing on the web is complicated - our routers should be simple](https://buff.ly/3KgFmJR)
+  * [Routing on the web is complicated - our routers should be simple](https://tonysull.co/articles/routing-is-complicated/)
   * [On building the enterprise-grade Node.js applications](https://buff.ly/3XGj1sd)
-  * [JS Class fields potentially harmful](https://buff.ly/3lIbf3w)
-  * [The Market for Lemons](https://buff.ly/3YmzUJ8)
+  * [JS Class fields potentially harmful](https://webreflection.medium.com/js-class-fields-potentially-harmful-62d68f1a05f3)
+  * [The Market for Lemons](https://infrequently.org/2023/02/the-market-for-lemons/)
 
   ## Tools
 
-  * [ossjs/release: Minimalistic, opinionated, and predictable release automation tool.](https://buff.ly/3EhRXZz)
-  * [fabiospampinato/banal: On-demand bundle analyzer, powered by esbuild.](https://buff.ly/3OkWv6G)
+  * [ossjs/release: Minimalistic, opinionated, and predictable release automation tool.](/library/release)
+  * [fabiospampinato/banal: On-demand bundle analyzer, powered by esbuild.](/library/banal)
 
   ## Techniques
 
-  * [WebContainers - Dev environments. In your web app](https://buff.ly/410pjWh)
-  * [Rendering strategies: CSR, SSR, SSG, ISR](https://buff.ly/3I83pZL)
-  * [Visual design rules you can safely follow every time](https://buff.ly/3kWK7gP)
+  * [WebContainers - Dev environments. In your web app](https://webcontainers.io/)
+  * [Rendering strategies: CSR, SSR, SSG, ISR](https://dev.to/sjsouvik/rendering-strategies-csr-ssr-ssg-isr-4c5k)
+  * [Visual design rules you can safely follow every time](https://anthonyhobday.com/sideprojects/saferules/)
 
   ## Standards
 
-  * [Messaging Layer Security is now an internet standard](https://buff.ly/3Qf12sS)
+  * [Messaging Layer Security is now an internet standard](https://blog.mozilla.org/en/mozilla/messaging-layer-security-is-now-an-internet-standard/)

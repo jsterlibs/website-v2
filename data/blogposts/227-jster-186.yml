@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [11ty/is-land](https://github.com/11ty/is-land) - A new performance-focused way to add interactive client-side components to your web site
+  * [11ty/is-land](/library/is-land) - A new performance-focused way to add interactive client-side components to your web site
   * [Corset](https://corset.dev/) - Cascading binding sheets
-  * [WebReflection/weak-value](https://github.com/WebReflection/weak-value) - A Map with weakly referenced values, instead of keys
+  * [WebReflection/weak-value](/library/weak-value) - A Map with weakly referenced values, instead of keys
   * [React Calendar](https://www.react-calendar.com/)
-  * [11ty/webc](https://github.com/11ty/webc) - Single File Web Components
+  * [11ty/webc](/library/webc) - Single File Web Components
   * [Pyodide](https://pyodide.org/en/stable/index.html) - Python distribution for the browser and Node.js based on WebAssembly
 
   ## Articles
@@ -29,10 +29,10 @@ body: |
 
   ## Tools
 
-  * [dudykr/stc](https://github.com/dudykr/stc) - Speedy TypeScript type checker
+  * [dudykr/stc](/library/stc) - Speedy TypeScript type checker
   * [Turbopack](https://turbo.build/pack) - The successor of webpack
   * [Node.js 19 is now available!](https://nodejs.org/en/blog/announcements/v19-release-announce/)
-  * [rollup/rollup/releases/tag/v3.0.0](https://github.com/rollup/rollup/releases/tag/v3.0.0) - Rollup v3.0
+  * [rollup/rollup/releases/tag/v3.0.0](/library/rollup) - Rollup v3.0
   * [Lightning CSS](https://lightningcss.dev/) - An extremely fast CSS parser, transformer, bundler, and minifier.
 
   ## Frameworks

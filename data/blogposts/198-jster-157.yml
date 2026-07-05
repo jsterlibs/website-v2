@@ -10,23 +10,23 @@ body: |
 
   ## Libraries
 
-  * [aribouius/jsonapi-react](https://github.com/aribouius/jsonapi-react) - A minimal JSON:API client and React hooks for fetching, updating, and caching remote data.
+  * [aribouius/jsonapi-react](/library/jsonapi-react) - A minimal JSON:API client and React hooks for fetching, updating, and caching remote data.
   * [Hooked on Redux](https://hooked-on-redux.js.org/) - Redux on hooks
   * [RoughNotation](https://roughnotation.com/) - A small JavaScript library to create and animate annotations on a web page
   * [MediumEditor](https://yabwe.github.io/medium-editor/) - The dead simple inline editor toolbar.
   * [Photon](https://silvia-odwyer.github.io/photon/) - A WebAssembly Image Processing Library
-  * [ryansolid/solid](https://github.com/ryansolid/solid) - A declarative JavaScript library for creating user interfaces
+  * [ryansolid/solid](/library/solid) - A declarative JavaScript library for creating user interfaces
   * [Local-first database: gun.js](https://jaredforsyth.com/posts/local-first-database-gun-js/)
-  * [leeoniya/uPlot](https://github.com/leeoniya/uPlot) - A small (< 25 KB min), fast chart for time series, lines, areas, ohlc & bars
+  * [leeoniya/uPlot](/library/uplot) - A small (< 25 KB min), fast chart for time series, lines, areas, ohlc & bars
   * [Tabulator](http://tabulator.info/) - The easy to use, fully featured, interactive table JavaScript library
 
   ## Tools
 
   * [AudioMass](https://audiomass.co/) - A free, open source, web-based Audio and Waveform Editor
   * [Introducing Snowpack 2.0](https://www.snowpack.dev/posts/2020-05-26-snowpack-2-0-release/) - A build system for the modern web
-  * [lud2k/ts-react-display-name](https://github.com/lud2k/ts-react-display-name) - Typescript transformer that adds displayName to React components.
-  * [ericclemmons/amplify-flow](https://github.com/ericclemmons/amplify-flow) - Native app for GitHub issue management for Amplify JS
-  * [typescript-eslint/typescript-eslint/releases/tag/v3.0.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v3.0.0) - A new major release
+  * [lud2k/ts-react-display-name](/library/ts-react-display-name) - Typescript transformer that adds displayName to React components.
+  * [ericclemmons/amplify-flow](/library/amplify-flow) - Native app for GitHub issue management for Amplify JS
+  * [typescript-eslint/typescript-eslint/releases/tag/v3.0.0](/library/typescript-eslint) - A new major release
 
   ## Styling
 
@@ -50,11 +50,11 @@ body: |
 
   ## Testing
 
-  * [mfrachet/cypress-audit](https://github.com/mfrachet/cypress-audit) - Integration of Cypress with other test tooling
+  * [mfrachet/cypress-audit](/library/cypress-audit) - Integration of Cypress with other test tooling
 
   ## Data Structures
 
-  * [protobuf.js](https://github.com/protobufjs/protobuf.js) - A serialized data structure
+  * [protobuf.js](/library/protobuf-js) - A serialized data structure
   * [MessagePack: It's like JSON. but fast and small.](https://msgpack.org/index.html)
 
   ## Techniques

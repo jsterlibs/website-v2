@@ -11,10 +11,10 @@ body: |
   ## Libraries
 
   * [gpu.js](http://gpu.rocks/) - GPU Accelerated JavaScript
-  * [cristianbote/goober](https://github.com/cristianbote/goober) - A less than 1KB 🎉css-in-js alternative with a familiar API
-  * [gajus/slonik](https://github.com/gajus/slonik) - A PostgreSQL client with strict types, detail logging and assertions
-  * [KaTeX](https://github.com/KaTeX/KaTeX) - Fast math typesetting for the web
-  * [infusion/BitSet.js](https://github.com/infusion/BitSet.js) - An arbitrary size Bit-Vector implementation in JavaScript 
+  * [cristianbote/goober](/library/goober) - A less than 1KB 🎉css-in-js alternative with a familiar API
+  * [gajus/slonik](/library/slonik) - A PostgreSQL client with strict types, detail logging and assertions
+  * [KaTeX](/library/katex) - Fast math typesetting for the web
+  * [infusion/BitSet.js](/library/bitset-js) - An arbitrary size Bit-Vector implementation in JavaScript 
 
   ## Interviews
 
@@ -48,7 +48,7 @@ body: |
 
   ## Tools
 
-  * [lasso](https://github.com/lasso-js/lasso) - Advanced JavaScript module bundler, asset pipeline and optimizer
+  * [lasso](/library/lasso) - Advanced JavaScript module bundler, asset pipeline and optimizer
 
   ## UI
 

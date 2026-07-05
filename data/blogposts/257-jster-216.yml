@@ -10,32 +10,32 @@ body: |
 
   ## Libraries
 
-  * [WebReflection/qsa-observer: handle elements lifecycle through CSS selectors](https://buff.ly/3YZQEr7)
-  * [fabiospampinato/flimsy: A single-file <1kb min+gzip simplified implementation of the reactive core of Solid, optimized for clean code.](https://buff.ly/3w1PD4L)
-  * [nairihar/threadshare: Simplify inter-thread data sharing in Node.js worker_threads with ThreadShare.](https://buff.ly/489B8x1)
-  * [atlassian/pragmatic-drag-and-drop: Fast drag and drop for any experience on any tech stack](https://buff.ly/3VH1iTU)
-  * [codepoint-iterator - A utility converting an iterable of UTF-8 filled Uint8Array's into Unicode code points](https://buff.ly/3TyTaCe)
-  * [unadlib/mutative: Efficient immutable updates, 2-6x faster than naive handcrafted reducer, and more than 10x faster than Immer.](https://buff.ly/3SATlwL)
-  * [path-unified - Isomorphic path utilities for browser and server](https://buff.ly/48R67Nr)
+  * [WebReflection/qsa-observer: handle elements lifecycle through CSS selectors](/library/qsa-observer)
+  * [fabiospampinato/flimsy: A single-file <1kb min+gzip simplified implementation of the reactive core of Solid, optimized for clean code.](/library/flimsy)
+  * [nairihar/threadshare: Simplify inter-thread data sharing in Node.js worker_threads with ThreadShare.](/library/worker-map)
+  * [atlassian/pragmatic-drag-and-drop: Fast drag and drop for any experience on any tech stack](/library/pragmatic-drag-and-drop)
+  * [codepoint-iterator - A utility converting an iterable of UTF-8 filled Uint8Array's into Unicode code points](/library/codepoint-iterator)
+  * [unadlib/mutative: Efficient immutable updates, 2-6x faster than naive handcrafted reducer, and more than 10x faster than Immer.](/library/mutative)
+  * [path-unified - Isomorphic path utilities for browser and server](/library/path-unified)
 
   ## Techniques
 
-  * [Optimization techniques for JavaScript](https://buff.ly/3VEhkOt)
-  * [Self unregistering service workers](https://buff.ly/3IQQUBp)
-  * [Nexar - Application architecture for Next.js App Router apps](https://buff.ly/3OoT0vw)
-  * [require(esm) in Node.js](https://buff.ly/4cnoNY4)
+  * [Optimization techniques for JavaScript](https://romgrk.com/posts/optimizing-javascript)
+  * [Self unregistering service workers](https://thepassle.netlify.app/blog/self-unregistering-service-workers)
+  * [Nexar - Application architecture for Next.js App Router apps](https://www.nexar.dev/home.html)
+  * [require(esm) in Node.js](https://joyeecheung.github.io/blog/2024/03/18/require-esm-in-node-js/)
 
   ## Frameworks
 
-  * [Angular and Wiz Are Better Together](https://buff.ly/3J0Orom)
+  * [Angular and Wiz Are Better Together](https://blog.angular.dev/angular-and-wiz-are-better-together-91e633d8cd5a)
   * [Firebolt - A new full-stack framework for React](https://firebolt.dev/)
-  * [SemanticComputing/sampo-ui: Sampo-UI – A framework for building user interfaces for semantic portals](https://buff.ly/3OqWk9E)
-  * [WinterJS 1.0 - The fastest JavaScript server](https://buff.ly/48VD2Au)
-  * [Announcing AnalogJS 1.0 for Angular 🚀](https://buff.ly/3T9Vn7a)
+  * [SemanticComputing/sampo-ui: Sampo-UI – A framework for building user interfaces for semantic portals](/library/sampo-ui)
+  * [WinterJS 1.0 - The fastest JavaScript server](https://wasmer.io/posts/winterjs-v1)
+  * [Announcing AnalogJS 1.0 for Angular 🚀](https://dev.to/analogjs/announcing-analogjs-10-19an)
 
   ## Articles
 
-  * [Deno in 2023](https://buff.ly/490kH65)
+  * [Deno in 2023](https://deno.com/blog/deno-in-2023)
 
   ## Services
 

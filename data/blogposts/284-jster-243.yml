@@ -10,27 +10,27 @@ body: |
 
   ## Libraries
 
-  * [LegendApp/legend-list: A high-performance list component for React Native](https://buff.ly/U3kBmWu)
-  * [unnoq/orpc: Typesafe APIs Made Simple 🪄](https://buff.ly/PS4bZOz)
+  * [LegendApp/legend-list: A high-performance list component for React Native](/library/legend-list)
+  * [unnoq/orpc: Typesafe APIs Made Simple 🪄](/library/orpc)
   * [TinyBase - A reactive data store & sync engine](https://tinybase.org/)
-  * [Node.js Authentication from Lucia to Better Auth](https://buff.ly/J2mNwlY)
+  * [Node.js Authentication from Lucia to Better Auth](https://www.nodejs-security.com/blog/nodejs-authentication-migration-from-lucia-to-better-auth)
 
   ## Techniques
 
-  * [Real-world uses of TypeScript’s utility types](https://buff.ly/y1WhwmR)
-  * [Faster Lazy Loading in React Router v7.5+](https://buff.ly/9XYY7Ki)
+  * [Real-world uses of TypeScript’s utility types](https://piccalil.li/blog/real-world-uses-of-typescripts-utility-types/)
+  * [Faster Lazy Loading in React Router v7.5+](https://remix.run/blog/faster-lazy-loading)
 
   ## React
 
-  * [Impossible Components in React](https://buff.ly/euE9qMj)
+  * [Impossible Components in React](https://overreacted.io/impossible-components/)
   * [JSX Over The Wire](https://ift.tt/DvMqBuy)
-  * [Advanced React in the Wild](https://buff.ly/m3lBsOJ)
+  * [Advanced React in the Wild](https://largeapps.dev/case-studies/advanced/)
 
   ## Frameworks
 
   * [RedwoodSDK - The React Framework for Cloudflare](https://rwsdk.com/)
-  * [LLM-first Web Framework](https://buff.ly/ujxLKGg)
+  * [LLM-first Web Framework](https://blog.mgechev.com/2025/04/19/llm-first-web-framework/)
 
   ## Guides
 
-  * [Heydon/principles-of-web-accessibility: How to approach accessible web interface design](https://buff.ly/y1jmkLk)
+  * [Heydon/principles-of-web-accessibility: How to approach accessible web interface design](https://github.com/Heydon/principles-of-web-accessibility)

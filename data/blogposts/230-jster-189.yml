@@ -11,11 +11,11 @@ body: |
   ## Libraries
 
   * [Vessel.js](https://shiplab.github.io/vesseljs/) - Design ships in JavaScript
-  * [11ty/eleventy-activity-feed](https://github.com/11ty/eleventy-activity-feed) - One feed to rule them all
+  * [11ty/eleventy-activity-feed](/library/eleventy-activity-feed) - One feed to rule them all
   * [visx](https://airbnb.io/visx/) - A collection of expressive, low-level visualization primitives for React
   * [React Virtuoso](https://virtuoso.dev/) - Powerful yet easy-to-use React components that can render enormous data sets
-  * [vanilla-jsoneditor](https://www.npmjs.com/package/vanilla-jsoneditor) - A web-based tool to view, edit, format, transform, and validate JSON
-  * [ts-safeql/safeql](https://github.com/ts-safeql/safeql) - Validate and auto-generate TypeScript types from raw SQL queries in PostgreSQL
+  * [vanilla-jsoneditor](/library/vanilla-jsoneditor) - A web-based tool to view, edit, format, transform, and validate JSON
+  * [ts-safeql/safeql](/library/safeql) - Validate and auto-generate TypeScript types from raw SQL queries in PostgreSQL
   * [hyperfetch](https://hyperfetch.bettertyped.com/) - Data Fetching, Offline First, Caching, Queueing
 
   ## Articles
@@ -33,9 +33,9 @@ body: |
   * [Announcing TypeScript 5.0 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta/)
   * [Astro 2.0](https://astro.build/blog/astro-2/) - The major site generator has reached a new milestone
   * [LocatorJS](https://www.locatorjs.com/) - Click on a component to go to its code
-  * [pixel-point/fontpie](https://github.com/pixel-point/fontpie) - Get your layout shifts optimized with a CLI-generated piece of CSS
+  * [pixel-point/fontpie](/library/fontpie) - Get your layout shifts optimized with a CLI-generated piece of CSS
   * [val town](https://www.val.town/) - Write scripts and run
-  * [zachleat/speedlify](https://github.com/zachleat/speedlify) - Benchmark the web performance and accessibility of sites over time
+  * [zachleat/speedlify](/library/speedlify) - Benchmark the web performance and accessibility of sites over time
 
   ## Techniques
 

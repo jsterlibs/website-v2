@@ -16,18 +16,18 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/mapbox/polylabel }}
+  {{ screenshot: /library/polylabel }}
 
-  * [mapbox/polylabel](https://github.com/mapbox/polylabel) - A fast algorithm for finding the pole of inaccessibility of a polygon
-  * [steffest/bassoontracker](https://github.com/steffest/bassoontracker) - Web based old-school Amiga music tracker in plain old JavaScript
-  * [renovate](https://www.npmjs.com/package/renovate) - Keep npm dependencies up-to-date
+  * [mapbox/polylabel](/library/polylabel) - A fast algorithm for finding the pole of inaccessibility of a polygon
+  * [steffest/bassoontracker](/library/bassoontracker) - Web based old-school Amiga music tracker in plain old JavaScript
+  * [renovate](/library/renovate) - Keep npm dependencies up-to-date
   * [emotion](https://emotion.now.sh/) - High performance JavaScript for your CSS
-  * [faceyspacey/redux-first-router](https://github.com/faceyspacey/redux-first-router#the-gist) - Seamless Redux-first routing
+  * [faceyspacey/redux-first-router](/library/redux-first-router) - Seamless Redux-first routing
 
   ## Animation
 
   * [SVG Morpheus](https://alexk111.github.io/SVG-Morpheus/) - JavaScript library enabling SVG icons to morph from one to the other
-  * [veltman/flubber](https://github.com/veltman/flubber) - Tools for smoother shape animations
+  * [veltman/flubber](/library/flubber) - Tools for smoother shape animations
 
   ## Articles
 
@@ -47,7 +47,7 @@ body: |
 
   ## Tools
 
-  * [webpack v3](https://github.com/webpack/webpack/releases/tag/v3.0.0)
+  * [webpack v3](/library/webpack)
   * [Mimic](https://mimic.js.org/) - Seamless Client Side Mocks
   * [iotaCSS](https://www.iotacss.com/) - Smart open source SASS based OOCSS framework built for scale
 

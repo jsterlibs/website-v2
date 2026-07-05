@@ -10,30 +10,30 @@ body: |
 
   ## Libraries
 
-  * [How to Get Started with LynxJS. “Write Once, Render Anywhere”](https://buff.ly/LoBpjZz)
+  * [How to Get Started with LynxJS. “Write Once, Render Anywhere”](https://medium.com/@hakoniemi/how-to-get-started-with-lynxjs-c1053f0ad9cc)
   * [Introducing Zod 4 beta](https://v4.zod.dev/v4)
-  * [ygwyg/diverce: vercel nextjs -> cloudflare workers](https://buff.ly/XjohDDw)
-  * [lukeautry/tsoa: Build OpenAPI-compliant REST APIs using TypeScript and Node](https://buff.ly/7kjuNvT)
-  * [Valibot v1 - The 1 kB schema library](https://buff.ly/oGtpN00)
+  * [ygwyg/diverce: vercel nextjs -> cloudflare workers](/library/diverce)
+  * [lukeautry/tsoa: Build OpenAPI-compliant REST APIs using TypeScript and Node](/library/tsoa)
+  * [Valibot v1 - The 1 kB schema library](https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/)
 
   ## Articles
 
-  * [CSS: Classes Seriously Sprawling](https://buff.ly/ok8bLW4)
+  * [CSS: Classes Seriously Sprawling](https://www.adavanzo.com/articles/2025/css-class-seriously-sprawling)
   * [Why Documenso Moved off Next.js](https://documenso.com/blog/why-we-moved-off-next-js)
-  * [You should know this before choosing Next.js](https://buff.ly/tqTJRWX)
-  * [Testing design systems in 2025](https://buff.ly/PPTfrGg)
+  * [You should know this before choosing Next.js](https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/)
+  * [Testing design systems in 2025](https://www.reshaped.so/blog/testing-design-systems)
 
   ## Frameworks
 
-  * [Nue - Apps lighter than a React button](https://buff.ly/srTAkYJ)
+  * [Nue - Apps lighter than a React button](https://nuejs.org/blog/large-scale-apps/)
 
   ## Tools
 
   * [Hey API - High-quality tools for interacting with APIs](https://heyapi.dev/)
-  * [Introducing vike-server](https://buff.ly/aXLnU1N)
-  * [Fumadocs - Build excellent documentation with less effort using Next.js](https://buff.ly/VVkHkeK)
-  * [nodejs/amaro: Node.js TypeScript wrapper](https://buff.ly/OGNPgzW)
+  * [Introducing vike-server](https://vike.dev/blog/vike-server)
+  * [Fumadocs - Build excellent documentation with less effort using Next.js](https://www.fumadocs.dev/)
+  * [nodejs/amaro: Node.js TypeScript wrapper](/library/amaro)
 
   ## Opinions
 
-  * [Stop Using and Recommending React](https://buff.ly/rRvZJn7)
+  * [Stop Using and Recommending React](https://blog.lusito.info/stop-using-and-recommending-react.html)

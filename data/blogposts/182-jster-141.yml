@@ -31,7 +31,7 @@ body: |
 
   ## Tools
 
-  * [jsdeflate](https://www.npmjs.com/package/jsdeflate) - Compressor for big/huge JavaScript files
+  * [jsdeflate](/library/jsdeflate) - Compressor for big/huge JavaScript files
 
   ## Books
 

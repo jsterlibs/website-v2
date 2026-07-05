@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [callbag](https://github.com/callbag/callbag) - A standard for JS callbacks that enables lightweight observables and iterables.
-  * [fastpriorityqueue](https://www.npmjs.com/package/fastpriorityqueue) - A fast, heap-based priority queue in JavaScript.
+  * [callbag](/library/callbag) - A standard for JS callbacks that enables lightweight observables and iterables.
+  * [fastpriorityqueue](/library/fastpriorityqueue) - A fast, heap-based priority queue in JavaScript.
   * [Uppy File Uploader](https://uppy.io/)
   * [Chevrotain](https://sap.github.io/chevrotain/docs/) - Parser Building Toolkit for JavaScript.
-  * [vincentriemer/assign.macro](https://github.com/vincentriemer/assign.macro) - A babel-macro to transpile `Object.assign`-style expressions to direct assignments for maximum performance.
+  * [vincentriemer/assign.macro](/library/assign-macro) - A babel-macro to transpile `Object.assign`-style expressions to direct assignments for maximum performance.
   * [ml5js](https://ml5js.org/) - Friendly Machine Learning for the Web.
 
   ## Articles
@@ -40,7 +40,7 @@ body: |
 
   ## Tools
 
-  * [accessibilityjs](https://github.com/github/accessibilityjs) - Client side accessibility error scanner.
+  * [accessibilityjs](/library/accessibilityjs) - Client side accessibility error scanner.
 
   ## Demos
 

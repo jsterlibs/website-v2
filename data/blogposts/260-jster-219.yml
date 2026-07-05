@@ -10,30 +10,30 @@ body: |
 
   ## Frameworks
 
-  * [Gracile - A thin, full-stack, web framework](https://buff.ly/3IOlGel)
-  * [hex2f/marz: 🚀 A Fast and Lightweight React Server Components Framework for Bun](https://buff.ly/3sVhEMw)
+  * [Gracile - A thin, full-stack, web framework](https://gracile.js.org/)
+  * [hex2f/marz: 🚀 A Fast and Lightweight React Server Components Framework for Bun](/library/marz)
   * [VanJS: A 1.0kB Grab 'n Go Reactive UI Framework without React/JSX](https://vanjs.org/)
-  * [DML - Object oriented web programming framework](https://buff.ly/3UL8Sw9)
-  * [Supercharge — an open-source Node.js framework, not just a web framework](https://buff.ly/3UB424l)
+  * [DML - Object oriented web programming framework](/library/dml)
+  * [Supercharge — an open-source Node.js framework, not just a web framework](https://superchargejs.com/)
 
   ## Libraries
 
-  * [lxsmnsyc/seroval: Stringify JS values](https://buff.ly/45Z20OE)
+  * [lxsmnsyc/seroval: Stringify JS values](/library/seroval)
 
   ## Games
 
-  * [Athena Crisis, a game implemented in JavaScript, is now open source](https://buff.ly/4dHueSl)
+  * [Athena Crisis, a game implemented in JavaScript, is now open source](https://cpojer.net/posts/athena-crisis-open-source)
 
   ## Tools
 
-  * [nksaraf/vinxi: The JavaScript Server SDK](https://buff.ly/3ELxDzx)
-  * [API Extractor helps you develop better TypeScript projects](https://buff.ly/46eJDFX)
-  * [tshy - TypeScript hybridizer](https://buff.ly/3RmNVGC)
+  * [nksaraf/vinxi: The JavaScript Server SDK](/library/vinxi)
+  * [API Extractor helps you develop better TypeScript projects](https://api-extractor.com/)
+  * [tshy - TypeScript hybridizer](https://isaacs.github.io/tshy/)
 
   ## Techniques
 
-  * [Natural sorting of strings containing numbers](https://buff.ly/3QBpBzj)
+  * [Natural sorting of strings containing numbers](https://robinmalfait.com/blog/natural-sorting-of-strings-containing-numbers)
   * [New alternatives to innerHTML](https://buff.ly/3Wrk7eq)
-  * [How Omri saved 16% of their bundle size using a Babel plugin](https://buff.ly/3Wu5nvi)
-  * [Islands & Server Components & Resumability, Oh My!](https://buff.ly/3ZkKr9C)
-  * [Printing music with CSS Grid](https://buff.ly/4a1sIaD)
+  * [How Omri saved 16% of their bundle size using a Babel plugin](https://engineering.monday.com/the-superpower-of-babel-how-we-saved-16-on-our-bundle-size/)
+  * [Islands & Server Components & Resumability, Oh My!](https://dev.to/playfulprogramming/islands-server-components-resumability-oh-my-319d)
+  * [Printing music with CSS Grid](https://cruncher.ch/blog/printing-music-with-css-grid/)

@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - If regular expressions are too much for you, try verbal expressions
-  * [RauliL/pakertaja](https://github.com/RauliL/pakertaja) - JavaScript library for building HTML
-  * [ruiaraujo/graphql-jit](https://github.com/ruiaraujo/graphql-jit) - GraphQL execution using a JIT compiler
+  * [JSVerbalExpressions](/library/jsverbalexpressions) - If regular expressions are too much for you, try verbal expressions
+  * [RauliL/pakertaja](/library/pakertaja) - JavaScript library for building HTML
+  * [ruiaraujo/graphql-jit](/library/graphql-jit) - GraphQL execution using a JIT compiler
   * [NSFW.js](https://shift.infinite.red/avoid-nightmares-nsfw-js-ab7b176978b1) - Avoid nightmares
-  * [optimalbits/bull](https://github.com/optimalbits/bull) - Premium Queue package for handling distributed jobs and messages in NodeJS
+  * [optimalbits/bull](/library/bull) - Premium Queue package for handling distributed jobs and messages in NodeJS
 
   ## Articles
 

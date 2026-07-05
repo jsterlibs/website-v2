@@ -10,39 +10,39 @@ body: |
 
   ## Libraries
 
-  * [pilcrowOnPaper/monaco: A simple OAuth library made for fun](https://buff.ly/3FWHW4l)
-  * [Melt UI - Open source UI library for Svelte](https://buff.ly/49xEta6)
-  * [LocatorJS - click on any component to go to code.](https://buff.ly/3UsfNrw)
-  * [jsep - JavaScript expression parser](https://buff.ly/3StcYbp)
-  * [bufferhead-code/nextjs-use-php - Use PHP code right within your React / Next.js App. With "use php";](https://buff.ly/3FITKHd)
+  * [pilcrowOnPaper/monaco: A simple OAuth library made for fun](/library/monaco)
+  * [Melt UI - Open source UI library for Svelte](https://www.melt-ui.com/)
+  * [LocatorJS - click on any component to go to code.](https://www.locatorjs.com/)
+  * [jsep - JavaScript expression parser](/library/jsep)
+  * [bufferhead-code/nextjs-use-php - Use PHP code right within your React / Next.js App. With "use php";](/library/nextjs-use-php)
 
   ## Articles
 
-  * [Removing list styles without affecting semantics](https://buff.ly/3StO5fB)
-  * [Usability madness of the Modern Javascript UI](https://buff.ly/3u5EcLf)
-  * [Speeding up the JavaScript ecosystem - Tailwind CSS](https://buff.ly/40hLDLn)
+  * [Removing list styles without affecting semantics](https://www.matuzo.at/blog/2023/removing-list-styles-without-affecting-semantics)
+  * [Usability madness of the Modern Javascript UI](https://www.findkit.com/usability-madness-of-the-modern-javascript-ui/)
+  * [Speeding up the JavaScript ecosystem - Tailwind CSS](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-8/)
 
   ## Languages
 
-  * [bigskysoftware/_hyperscript: a small scripting language for the web](https://buff.ly/3Sxbwoy)
+  * [bigskysoftware/_hyperscript: a small scripting language for the web](https://github.com/bigskysoftware/_hyperscript)
 
   ## Tools
 
-  * [msw v2.0 - msw testing tool has reached a new major version](https://buff.ly/470fcTF)
-  * [Docusaurus 3.0 is available](https://buff.ly/3QEOjiQ)
+  * [msw v2.0 - msw testing tool has reached a new major version](/library/msw)
+  * [Docusaurus 3.0 is available](https://docusaurus.io/blog/releases/3.0)
 
   ## Frameworks
 
-  * [Hono - Ultrafast web framework for the Edges](https://buff.ly/3PwRrNg)
+  * [Hono - Ultrafast web framework for the Edges](https://hono.dev/)
 
   ## Content Management
 
-  * [Decap CMS - Open-Source Content Management System](https://buff.ly/3Qp7yLR)
+  * [Decap CMS - Open-Source Content Management System](https://decapcms.org/)
 
   ## Typescript
 
-  * [Announcing TypeScript 5.3 RC](https://buff.ly/46WEJO5)
+  * [Announcing TypeScript 5.3 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-rc/)
 
   ## Boilerplates
 
-  * [haydenbleasel/next-forge: A production-grade boilerplate for modern Next.js apps.](https://buff.ly/3Sijjqb)
+  * [haydenbleasel/next-forge: A production-grade boilerplate for modern Next.js apps.](https://github.com/vercel/next-forge)

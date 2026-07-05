@@ -18,11 +18,11 @@ body: |
 
   ## Libraries
 
-  * [luwes/super-template](https://github.com/luwes/super-template) - Build-less template inheritance in the browser. Handy for example or demo pages.
-  * [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) - TypeScript ORM for SQL
+  * [luwes/super-template](/library/super-template) - Build-less template inheritance in the browser. Handy for example or demo pages.
+  * [drizzle-team/drizzle-orm](/library/drizzle-orm) - TypeScript ORM for SQL
   * [openapi-stack](https://openapistack.co/) - Full stack typesafe API-first development for REST
-  * [WebReflection/promise](https://github.com/WebReflection/promise) - Abortable and Resolvable Promises
-  * [tldraw/signia](https://github.com/tldraw/signia) - Reactive signals that scale, by tldraw
+  * [WebReflection/promise](/library/promise) - Abortable and Resolvable Promises
+  * [tldraw/signia](/library/signia) - Reactive signals that scale, by tldraw
 
   ## Toolkits
 
@@ -32,7 +32,7 @@ body: |
 
   * [Jake](https://jakejs.com/) - JavaScript build tool / task runner for NodeJS
   * [Rspack](https://www.rspack.dev/) - Rust-based, webpack compatible bundler
-  * [Boshen/oxc](https://github.com/Boshen/oxc) - The JavaScript Oxidation Compiler -> Linter
+  * [Boshen/oxc](/library/oxc) - The JavaScript Oxidation Compiler -> Linter
 
   ## Articles
 

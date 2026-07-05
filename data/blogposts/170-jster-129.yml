@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [noble](https://github.com/noble/noble) - A Node.js BLE (Bluetooth Low Energy) central module
-  * [ericclemmons/hot-module](https://github.com/ericclemmons/hot-module) - Reload changed files in Node *without* restarting the server (like nodemon/piping/etc.)
-  * [davidkpiano/xstate](https://github.com/davidkpiano/xstate) - State machines and statecharts for the modern web
-  * [sasha240100/between.js](https://github.com/sasha240100/between.js) - Lightweight JavaScript (ES6) tweening engine
-  * [elbywan/wretch](https://github.com/elbywan/wretch) - A tiny wrapper built around fetch with an intuitive syntax
+  * [noble](/library/noble) - A Node.js BLE (Bluetooth Low Energy) central module
+  * [ericclemmons/hot-module](/library/hot-module) - Reload changed files in Node *without* restarting the server (like nodemon/piping/etc.)
+  * [davidkpiano/xstate](/library/xstate) - State machines and statecharts for the modern web
+  * [sasha240100/between.js](/library/between-js) - Lightweight JavaScript (ES6) tweening engine
+  * [elbywan/wretch](/library/wretch) - A tiny wrapper built around fetch with an intuitive syntax
 
   ## APIs
 
@@ -30,7 +30,7 @@ body: |
 
   ## Tools
 
-  * [jxnblk/mdx-deck](https://github.com/jxnblk/mdx-deck) - MDX-based presentation decks
+  * [jxnblk/mdx-deck](/library/mdx-deck) - MDX-based presentation decks
 
   ## Games
 

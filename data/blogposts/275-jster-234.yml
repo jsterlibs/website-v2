@@ -10,33 +10,33 @@ body: |
 
   ## Libraries
 
-  * [Recharts - A composable charting library built on React components](https://buff.ly/3UlaKuU)
-  * [Victory - React.js components for modular charting and data visualization](https://buff.ly/3AbxTJh)
-  * [capricorn86/happy-dom: A JavaScript implementation of a web browser without its graphical user interface](https://buff.ly/4gzK6Yx)
-  * [react-R/reactR: React for R](https://buff.ly/3XxNJWs)
-  * [pg-nano: Type-safe calls to Postgres UDFs, rapid SQL-first schema development, libpq-based client library](https://buff.ly/3T7t2PC)
-  * [nodejs/amaro: Node.js TypeScript wrapper](https://buff.ly/3zUfpfY)
-  * [WebReflection/promise: Abortable and Resolvable Promises.](https://buff.ly/3W88zw6)
-  * [errsole/errsole.js: Node.js logger with a built-in dashboard](https://buff.ly/4eM8cyA)
+  * [Recharts - A composable charting library built on React components](https://recharts.org/en-US/)
+  * [Victory - React.js components for modular charting and data visualization](https://nearform.com/open-source/victory/)
+  * [capricorn86/happy-dom: A JavaScript implementation of a web browser without its graphical user interface](/library/happy-dom)
+  * [react-R/reactR: React for R](/library/reactr)
+  * [pg-nano: Type-safe calls to Postgres UDFs, rapid SQL-first schema development, libpq-based client library](/library/pg-nano)
+  * [nodejs/amaro: Node.js TypeScript wrapper](/library/amaro)
+  * [WebReflection/promise: Abortable and Resolvable Promises.](/library/promise)
+  * [errsole/errsole.js: Node.js logger with a built-in dashboard](/library/errsole-js)
   * [ReactRx - Hooks for combining React with Rx observables](https://react-rx.dev/)
-  * [matcha.css - Drop-in semantic styling library in pure CSS](https://buff.ly/44ZLZIW)
+  * [matcha.css - Drop-in semantic styling library in pure CSS](https://matcha.mizu.sh/)
   * [Base UI - Unstyled UI components for building accessible web apps and design systems](https://base-ui.com/)
 
   ## Frameworks
 
-  * [ruvnet/drupaljs - Drupal ported to JavaScript](https://buff.ly/3zmSNop)
+  * [ruvnet/drupaljs - Drupal ported to JavaScript](/library/drupaljs)
   * [AdonisJS - A fully featured web framework for Node.js](https://adonisjs.com/)
 
   ## Articles
 
-  * [The unique position of Vite in our ecosystem](https://buff.ly/4h53Raa)
-  * [A Guide To Accessible Form Validation](https://buff.ly/3Z5jrdb)
-  * [A nice overview on how closures can bite you in React and cause memory leaks.](https://buff.ly/4e1opj6)
+  * [The unique position of Vite in our ecosystem](https://silvenon.com/blog/vite-and-frameworks)
+  * [A Guide To Accessible Form Validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/)
+  * [A nice overview on how closures can bite you in React and cause memory leaks.](https://www.schiener.io/2024-03-03/react-closures)
 
   ## Techniques
 
-  * [Mutable Derivations in Reactivity](https://buff.ly/3BSTxmi)
-  * [Deep Cloning Objects in JavaScript, the Modern Way](https://buff.ly/3Rg4Kkv)
-  * [Dual Publishing ESM and CJS Modules with tsup and Are the Types Wrong?](https://buff.ly/3WfCTUn)
-  * [CSS-only Custom Range Slider with Motion](https://buff.ly/3XJWnmb)
-  * [On compliance vs readability: Generating text colors with CSS](https://buff.ly/3yotktU)
+  * [Mutable Derivations in Reactivity](https://dev.to/playfulprogramming/mutable-derivations-in-reactivity-2ffl)
+  * [Deep Cloning Objects in JavaScript, the Modern Way](https://www.builder.io/blog/structured-clone)
+  * [Dual Publishing ESM and CJS Modules with tsup and Are the Types Wrong?](https://johnnyreilly.com/dual-publishing-esm-cjs-modules-with-tsup-and-are-the-types-wrong)
+  * [CSS-only Custom Range Slider with Motion](https://www.bram.us/2024/06/06/css-only-custom-range-slider-with-motion/)
+  * [On compliance vs readability: Generating text colors with CSS](https://lea.verou.me/blog/2024/contrast-color/)

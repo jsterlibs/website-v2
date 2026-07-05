@@ -10,7 +10,7 @@ body: |
 
   ## Libraries
 
-  * [WICG/virtual-scroller](https://github.com/WICG/virtual-scroller) - Virtual scroller built on top of the web platform
+  * [WICG/virtual-scroller](/library/virtual-scroller) - Virtual scroller built on top of the web platform
 
   ## Toolkits
 
@@ -39,7 +39,7 @@ body: |
   ## Tools
 
   * [mattpocock/boilersuit](https://twitter.com/i/web/status/1158290308964204544) - A super-powered generator for selectors, reducers, actions, constants and sagas in react-boilerplate
-  * [open-draft/msw](https://github.com/open-draft/msw) - Client-side runtime API mocking using Service Workers
+  * [open-draft/msw](/library/msw) - Client-side runtime API mocking using Service Workers
 
   ## Tutorials
 

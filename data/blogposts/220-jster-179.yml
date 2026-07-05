@@ -10,18 +10,18 @@ body: |
 
   ## Libraries
 
-  * [porsager/postgres](https://github.com/porsager/postgres) - The Fastest full featured PostgreSQL client for Node.js and Deno
-  * [capsidjs/capsid](https://github.com/capsidjs/capsid) - Declarative DOM programming library. Lightweight (1.79 kb)
-  * [phiresky/sql.js-httpvfs](https://github.com/phiresky/sql.js-httpvfs) - sql.js is a light wrapper around SQLite compiled with EMScripten for use in the browser
+  * [porsager/postgres](/library/postgres) - The Fastest full featured PostgreSQL client for Node.js and Deno
+  * [capsidjs/capsid](/library/capsid) - Declarative DOM programming library. Lightweight (1.79 kb)
+  * [phiresky/sql.js-httpvfs](/library/sql-js-httpvfs) - sql.js is a light wrapper around SQLite compiled with EMScripten for use in the browser
 
   ## Frameworks
 
   * [Vanilla](https://vanillaframework.io/) - A simple, extensible CSS framework
-  * [robtweed/golgi](https://github.com/robtweed/golgi) - Dynamically-loading WebComponent Assembly UI Framework
+  * [robtweed/golgi](/library/golgi) - Dynamically-loading WebComponent Assembly UI Framework
 
   ## Tools
 
-  * [mbalabash/sdc-check](https://github.com/mbalabash/sdc-check) - Easy-to-use tool to inform you about potential risks in your project dependencies list
+  * [mbalabash/sdc-check](/library/sdc-check) - Easy-to-use tool to inform you about potential risks in your project dependencies list
   * [Histoire](https://histoire.dev/) - Fast stories powered by Vite
 
   ## Environments

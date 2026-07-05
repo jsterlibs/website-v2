@@ -12,13 +12,13 @@ body: |
 
   * [Blobity](https://blobity.dev/) - The cursor rethought
   * [Sigma.js](https://www.sigmajs.org/) - JavaScript library aimed at visualizing graphs of thousands of nodes and edges
-  * [@monaco-editor/react](https://www.npmjs.com/package/@monaco-editor/react) - Monaco editor for React
+  * [@monaco-editor/react](/library/monaco-editor) - Monaco editor for React
   * [dnd kit](https://dndkit.com/) - Modern drag and drop toolkit for React
-  * [matubu/speed_highlight_js](https://github.com/matubu/speed_highlight_js) - Light, fast, and easy to use, dependencies free javascript syntax highlighter
-  * [josdejong/jsoneditor](https://github.com/josdejong/jsoneditor) - A web-based tool to view, edit, format, and validate JSON
-  * [lucacasonato/fresh](https://github.com/lucacasonato/fresh) - Preact, but super edgy
-  * [automerge](https://github.com/automerge/automerge) - A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically
-  * [josdejong/workerpool](https://github.com/josdejong/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
+  * [matubu/speed_highlight_js](/library/speed-highlight-js) - Light, fast, and easy to use, dependencies free javascript syntax highlighter
+  * [josdejong/jsoneditor](/library/jsoneditor) - A web-based tool to view, edit, format, and validate JSON
+  * [lucacasonato/fresh](/library/fresh) - Preact, but super edgy
+  * [automerge](/library/automerge) - A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically
+  * [josdejong/workerpool](/library/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
   * [Vizzu](https://vizzuhq.com/) - JavaScript library for animated data stories and visualizations
   * [Rematch](https://rematchjs.org/) - Rematch is Redux best practices without the boilerplate
   * [Introducing MUI Core v5.0](https://mui.com/blog/mui-core-v5/) - The UI library for React has reached a new major version
@@ -36,12 +36,12 @@ body: |
 
   ## Tools
 
-  * [qawolf](https://github.com/qawolf/qawolf) - Create browser tests 10x faster
+  * [qawolf](/library/qawolf) - Create browser tests 10x faster
   * [Announcing Parcel v2!](https://parceljs.org/blog/v2/)
-  * [amzn/style-dictionary](https://github.com/amzn/style-dictionary) - A build system for creating cross-platform styles
+  * [amzn/style-dictionary](/library/style-dictionary) - A build system for creating cross-platform styles
   * [Lume](https://lumeland.github.io/) - A static site generator for Deno
   * [Storybook on-demand architecture](https://storybook.js.org/blog/storybook-on-demand-architecture/)
-  * [nodejs/corepack](https://github.com/nodejs/corepack) - Zero-runtime-dependency package acting as bridge between Node projects and their package managers
+  * [nodejs/corepack](/library/corepack) - Zero-runtime-dependency package acting as bridge between Node projects and their package managers
 
   ## Articles
 

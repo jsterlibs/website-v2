@@ -10,23 +10,23 @@ body: |
 
   ## Libraries
 
-  * [pmndrs/jotai](https://github.com/pmndrs/jotai) - Primitive, flexible state management for React
-  * [zillow/react-slider](https://github.com/zillow/react-slider) - Accessible, CSS agnostic, slider component for React
-  * [yjs](https://github.com/yjs/yjs) - Peer-to-peer shared types
-  * [fakenickels/let-anything](https://github.com/fakenickels/let-anything) - Monadic syntax for JavaScript
+  * [pmndrs/jotai](/library/jotai) - Primitive, flexible state management for React
+  * [zillow/react-slider](/library/react-slider) - Accessible, CSS agnostic, slider component for React
+  * [yjs](/library/yjs) - Peer-to-peer shared types
+  * [fakenickels/let-anything](/library/let-anything) - Monadic syntax for JavaScript
 
   ## Frameworks
 
-  * [github/catalyst](https://github.com/github/catalyst) - Catalyst is a set of patterns and techniques for developing components within a complex application
+  * [github/catalyst](/library/catalyst) - Catalyst is a set of patterns and techniques for developing components within a complex application
   * [Aleph.js](https://alephjs.org/) - The React Framework in Deno
 
   ## Tools
 
-  * [siddharthkp/bundlesize](https://github.com/siddharthkp/bundlesize) - Keep your bundle size in check
-  * [wclr/yalc](https://github.com/wclr/yalc) - Work with yarn/npm packages locally like a boss
+  * [siddharthkp/bundlesize](/library/bundlesize) - Keep your bundle size in check
+  * [wclr/yalc](/library/yalc) - Work with yarn/npm packages locally like a boss
   * [Squircley](https://squircley.app/) - SVG generator for the famous shape
-  * [mutantcornholio/veendor](https://github.com/mutantcornholio/veendor) - A tool for storing your npm dependencies in arbitrary storage
-  * [ljosberinn/eslint-config-galex](https://github.com/ljosberinn/eslint-config-galex) - Impressive collection of ESLint rules
+  * [mutantcornholio/veendor](/library/veendor) - A tool for storing your npm dependencies in arbitrary storage
+  * [ljosberinn/eslint-config-galex](/library/eslint-config-galex) - Impressive collection of ESLint rules
 
   ## Articles
 

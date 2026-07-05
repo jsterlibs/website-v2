@@ -16,12 +16,12 @@ body: |
 
   ## Libraries
 
-  * [wooorm/starry-night](https://github.com/wooorm/starry-night) - Syntax highlighting, like GitHub
+  * [wooorm/starry-night](/library/starry-night) - Syntax highlighting, like GitHub
   * [Preview.js](https://previewjs.com/) - Preview UI components in your IDE instantly
   * [Panolens.js](https://pchen66.github.io/Panolens/) - A JavaScript panorama viewer
-  * [yjs](https://github.com/yjs/yjs) - Shared data types for building collaborative software
-  * [coder/code-server](https://github.com/coder/code-server) - VS Code in the browser
-  * [terotests/robowatch](https://github.com/terotests/robowatch) - Directory event watch with configuration
+  * [yjs](/library/yjs) - Shared data types for building collaborative software
+  * [coder/code-server](/library/code-server) - VS Code in the browser
+  * [terotests/robowatch](/library/robowatch) - Directory event watch with configuration
   * [Zag](https://zagjs.com/) - UI components powered by Finite State Machines
 
   ## Tools
@@ -29,11 +29,11 @@ body: |
   * [Flutter 3 is available](https://docs.flutter.dev/whats-new#may-11-2022-google-io-edition-flutter-3-release)
   * [Meta Open Source is transferring Jest to the OpenJS Foundation](https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/)
   * [Slinkity](https://slinkity.dev/) - To eleventy and beyond
-  * [metiss](https://github.com/metissio/metiss) - Eliminate bugs via intelligent tests generation
-  * [usmanyunusov/nano-staged](https://github.com/usmanyunusov/nano-staged) - Tiny tool to run commands for modified, staged, and committed files in a GIT repository
-  * [projen](https://github.com/projen/projen) - A new generation of project generators
-  * [eemeli/ibid](https://github.com/eemeli/ibid) - Tools to automate your releases and changelogs, esp. for monorepos
-  * [ericclemmons/click-to-component](https://github.com/ericclemmons/click-to-component) - Option+Click React components in your browser to instantly open the source in VS Code
+  * [metiss](/library/metiss) - Eliminate bugs via intelligent tests generation
+  * [usmanyunusov/nano-staged](/library/nano-staged) - Tiny tool to run commands for modified, staged, and committed files in a GIT repository
+  * [projen](/library/projen) - A new generation of project generators
+  * [eemeli/ibid](/library/ibid) - Tools to automate your releases and changelogs, esp. for monorepos
+  * [ericclemmons/click-to-component](/library/click-to-component) - Option+Click React components in your browser to instantly open the source in VS Code
 
   ## Slides
 

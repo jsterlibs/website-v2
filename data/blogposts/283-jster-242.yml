@@ -10,20 +10,20 @@ body: |
 
   ## Libraries
 
-  * [danielroe/beasties: A library to inline your app's critical CSS and lazy-load the rest.](https://buff.ly/Xzq3fCh)
+  * [danielroe/beasties: A library to inline your app's critical CSS and lazy-load the rest.](/library/beasties)
   * [Anime.js 4.0 - JavaScript Animation Engine](https://animejs.com/)
 
   ## Frameworks
 
-  * [GSAP web animation framework is now free](https://buff.ly/btNQ8iq)
-  * [Next.js 15.3 with Turbopack for builds](https://buff.ly/FAIzDKq)
-  * [nordcraft - the open-source visual frontend framework](https://buff.ly/SUBcYiP)
-  * [mastra: The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.](https://buff.ly/OfyawxN)
+  * [GSAP web animation framework is now free](https://gsap.com/blog/3-13/)
+  * [Next.js 15.3 with Turbopack for builds](https://nextjs.org/blog/next-15-3)
+  * [nordcraft - the open-source visual frontend framework](/library/nordcraft)
+  * [mastra: The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.](/library/mastra)
 
   ## Techniques
 
-  * [A guide to destructuring in JavaScript](https://buff.ly/kQlHGbe)
-  * [Building Reusable Components with React 19 Actions](https://buff.ly/GOTXs44)
+  * [A guide to destructuring in JavaScript](https://piccalil.li/blog/a-guide-to-destructuring-in-javascript/)
+  * [Building Reusable Components with React 19 Actions](https://aurorascharff.no/posts/building-reusable-components-with-react19-actions/)
 
   ## Tooling
 
@@ -31,11 +31,11 @@ body: |
 
   ## Articles
 
-  * [React for Two Computers](https://buff.ly/22Q8Pcc)
-  * [Simplify sharing with built-in APIs and progressive enhancement](https://buff.ly/PU47TcU)
-  * [Revealed: React's experimental animations API](https://buff.ly/EDtlt5O)
+  * [React for Two Computers](https://overreacted.io/react-for-two-computers/)
+  * [Simplify sharing with built-in APIs and progressive enhancement](https://piccalil.li/blog/simplify-sharing-with-built-in-apis-and-progressive-enhancement/)
+  * [Revealed: React's experimental animations API](https://motion.dev/magazine/reacts-experimental-view-transition-api)
 
   ## Tools
 
-  * [Storybook 9 is now in beta](https://buff.ly/0ANxiCI)
-  * [plv8: V8 Engine Javascript Procedural Language add-on for PostgreSQL](https://buff.ly/QnRMZza)
+  * [Storybook 9 is now in beta](https://storybook.js.org/blog/storybook-9-beta/)
+  * [plv8: V8 Engine Javascript Procedural Language add-on for PostgreSQL](/library/plv8)

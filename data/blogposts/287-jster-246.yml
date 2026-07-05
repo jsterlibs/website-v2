@@ -10,54 +10,54 @@ body: |
 
   ## Libraries
 
-  * [unnoq/mini-orpc: Simplified implementation of oRPC that includes essential features to help you understand the core concepts](https://buff.ly/pliJp6g)
-  * [kettanaito/rettime: A type-safe marriage of `EventTarget` and `EventEmitter`.](https://buff.ly/wCO8CPo)
-  * [fabian-hiller/formisch: The modular and type-safe form library for any framework](https://buff.ly/fNCE9Pn)
-  * [stan-smith/OpenFLOW: Make beautiful isometric infrastructure diagrams](https://buff.ly/7RvnoeI)
+  * [unnoq/mini-orpc: Simplified implementation of oRPC that includes essential features to help you understand the core concepts](/library/mini-orpc)
+  * [kettanaito/rettime: A type-safe marriage of `EventTarget` and `EventEmitter`.](/library/rettime)
+  * [fabian-hiller/formisch: The modular and type-safe form library for any framework](/library/formisch)
+  * [stan-smith/OpenFLOW: Make beautiful isometric infrastructure diagrams](/library/openflow)
 
   ## Frameworks
 
-  * [Layer Cake is a graphics framework for Svelte](https://buff.ly/84qXsmx)
-  * [Next.js 15.4](https://buff.ly/Kat5a10)
+  * [Layer Cake is a graphics framework for Svelte](https://layercake.graphics/)
+  * [Next.js 15.4](https://nextjs.org/blog/next-15-4)
 
   ## History
 
-  * [The many, many, many JavaScript runtimes of the last decade](https://ilo.im/165oqw)
-  * [The History of React Through Code](https://buff.ly/7YDOhju)
+  * [The many, many, many JavaScript runtimes of the last decade](https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/)
+  * [The History of React Through Code](https://playfulprogramming.com/posts/react-history-through-code/)
 
   ## Techniques
 
-  * [It's time for modern CSS to kill the SPA](https://ilo.im/165muq)
-  * [A handy use of subgrid to enhance a simple layout](https://buff.ly/qNX8Sz8)
-  * [Taming JS Proxy API](https://buff.ly/PSjqHFd)
-  * [Simple live reload for developing static sites](https://buff.ly/Zd5dmmw)
-  * [An email regex for reasonable people](https://buff.ly/WFit6kL)
-  * [Give footnotes the boot](https://buff.ly/e5UCtM9)
-  * [Next.js Promise Racing](https://buff.ly/HXkYSL3)
-  * [Resilient Import Maps - Better Theme Development and Beyond (2025)](https://buff.ly/lGsOx6B)
-  * [Tips for making regular expressions easier to use in JavaScript](https://buff.ly/FcAuovV)
+  * [It's time for modern CSS to kill the SPA](https://www.jonoalderson.com/conjecture/its-time-for-modern-css-to-kill-the-spa/)
+  * [A handy use of subgrid to enhance a simple layout](https://piccalil.li/blog/a-handy-use-of-subgrid-to-enhance-a-simple-layout/)
+  * [Taming JS Proxy API](https://webreflection.medium.com/taming-js-proxy-api-d38e1f425f51)
+  * [Simple live reload for developing static sites](https://leanrada.com/notes/simple-live-reload/)
+  * [An email regex for reasonable people](https://colinhacks.com/essays/reasonable-email-regex)
+  * [Give footnotes the boot](https://jakearchibald.com/2025/give-footnotes-the-boot/)
+  * [Next.js Promise Racing](https://playfulprogramming.com/posts/nextjs-promise-race/)
+  * [Resilient Import Maps - Better Theme Development and Beyond (2025)](https://shopify.engineering/resilient-import-maps)
+  * [Tips for making regular expressions easier to use in JavaScript](https://2ality.com/2025/06/javascript-regexp-tips.html)
 
   ## Tools
 
-  * [JoviDeCroock/preact-mcp - MCP server for Preact ecosystem](https://buff.ly/QPtIMWh)
+  * [JoviDeCroock/preact-mcp - MCP server for Preact ecosystem](/library/preact-mcp)
   * [fx – a terminal JSON viewer & processor](https://fx.wtf/)
-  * [lirantal/npq: safely install npm packages by auditing them pre-install stage](https://buff.ly/UnQud2V)
-  * [ArnaudBarre/tsl: An extension of tsc for type-aware linting](https://buff.ly/Bw7M52O)
-  * [Deno 2.4: deno bundle is back](https://buff.ly/EN1Mw6l)
+  * [lirantal/npq: safely install npm packages by auditing them pre-install stage](/library/npq)
+  * [ArnaudBarre/tsl: An extension of tsc for type-aware linting](/library/tsl)
+  * [Deno 2.4: deno bundle is back](https://deno.com/blog/v2.4)
   * [Announcing TypeScript 5.9](https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/)
 
   ## Articles
 
-  * [Tapas Spent 40 Hours Writing Tests That Broke in 2 Weeks — A Confession Story](https://buff.ly/0gMc5yX)
-  * [JavaScript dos and donts](https://buff.ly/TTJKLRu)
+  * [Tapas Spent 40 Hours Writing Tests That Broke in 2 Weeks — A Confession Story](https://dev.to/atapas/i-spent-40-hours-writing-tests-that-broke-in-2-weeks-a-confession-story-5a3o)
+  * [JavaScript dos and donts](https://muan.co/posts/javascript)
 
   ## Magazines
 
-  * [WebAssembly - ACM Queue](https://buff.ly/D565rMf)
+  * [WebAssembly - ACM Queue](https://queue.acm.org/issuedetail.cfm?issue=3747201)
 
   ## Security
 
-  * [Active Supply Chain Attack: npm Phishing Campaign Leads to Prettier Tooling Packages Compromise](https://bit.ly/4kQuh0P)
+  * [Active Supply Chain Attack: npm Phishing Campaign Leads to Prettier Tooling Packages Compromise](https://socket.dev/blog/npm-phishing-campaign-leads-to-prettier-tooling-packages-compromise?utm_content=bufferfb99f&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 
   ## Quiz
 
@@ -65,10 +65,10 @@ body: |
 
   ## Opinions
 
-  * [Why React Is No Longer the Undisputed Champion of JavaScript](https://buff.ly/NwITNO6)
-  * [Conferences, Clarity, and Smokescreens](https://buff.ly/1GDVRgb)
-  * [The time is right for a DOM templating API](https://buff.ly/Gw2Qsjn)
+  * [Why React Is No Longer the Undisputed Champion of JavaScript](https://thenewstack.io/why-react-is-no-longer-the-undisputed-champion-of-javascript/)
+  * [Conferences, Clarity, and Smokescreens](https://infrequently.org/2025/06/conferences-clarity-and-smokescreens/)
+  * [The time is right for a DOM templating API](https://justinfagnani.com/2025/06/26/the-time-is-right-for-a-dom-templating-api/)
 
   ## Components
 
-  * [DavidHDev/react-bits: An open source collection of animated, interactive & fully customizable React components for building stunning, memorable websites.](https://buff.ly/qnolfEw)
+  * [DavidHDev/react-bits: An open source collection of animated, interactive & fully customizable React components for building stunning, memorable websites.](https://github.com/DavidHDev/react-bits)

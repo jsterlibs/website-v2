@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [Plaiceholder - Beautiful image placeholders without the hassle](https://buff.ly/3JINxgr)
-  * [brimdata/react-arborist: The complete tree view component for React](https://buff.ly/3VPFFkr)
-  * [ChrisShank/perfect-arrow: A custom element to declaratively define perfect arrows.](https://buff.ly/49CE9pm)
-  * [mastodon-post Web Component](https://buff.ly/3vxxHSA)
-  * [Legend State - Performant state manager for React](https://buff.ly/4cehd22)
+  * [Plaiceholder - Beautiful image placeholders without the hassle](https://plaiceholder.co/docs)
+  * [brimdata/react-arborist: The complete tree view component for React](/library/react-arborist)
+  * [ChrisShank/perfect-arrow: A custom element to declaratively define perfect arrows.](/library/quiver)
+  * [mastodon-post Web Component](https://darn.es/mastodon-post-web-component/)
+  * [Legend State - Performant state manager for React](https://legendapp.com/open-source/state/intro/introduction/)
 
   ## Frameworks
 
@@ -22,27 +22,27 @@ body: |
 
   ## Platforms
 
-  * [evoluhq/evolu: Local-first platform designed for privacy, ease of use, and no vendor lock-in](https://buff.ly/3tbygQt)
+  * [evoluhq/evolu: Local-first platform designed for privacy, ease of use, and no vendor lock-in](https://github.com/evoluhq/evolu)
 
   ## SDKs
 
-  * [AgentQL for fullstack developers: announcing our JavaScript SDK](https://buff.ly/4hFkmup)
+  * [AgentQL for fullstack developers: announcing our JavaScript SDK](https://www.agentql.com/blog/javascript-sdk)
 
   ## Simulators
 
-  * [CPU ALU Adder Simulator](https://buff.ly/3TGfeuV)
+  * [CPU ALU Adder Simulator](https://www.sprout24.net/adder/)
 
   ## Techniques
 
-  * [On popover accessibility - what the browser does and doesn't do](https://buff.ly/4a3WvR7)
-  * [Lossy CSS compression for fun and loss (or profit)](https://buff.ly/49YeBUi)
-  * [Making content-aware components using CSS :has(), grid, and quantity queries](https://buff.ly/3C2Eu9y)
+  * [On popover accessibility - what the browser does and doesn't do](https://hidde.blog/popover-accessibility/)
+  * [Lossy CSS compression for fun and loss (or profit)](https://blog.danieljanus.pl/lossy-css-compression/)
+  * [Making content-aware components using CSS :has(), grid, and quantity queries](https://piccalil.li/blog/making-content-aware-components-using-css-has-grid-and-quantity-queries/)
 
   ## Tools
 
-  * [stackblitz-labs/pkg.pr.new: Continuous (Preview) Releases for your libraries!](https://buff.ly/3YSIKS3)
+  * [stackblitz-labs/pkg.pr.new: Continuous (Preview) Releases for your libraries!](/library/pkg-pr-new)
   * [vlt - Develop, Run, Distribute, Discover, and Secure your Javascript Packages](https://www.vlt.sh/)
 
   ## Articles
 
-  * [State of Node.js Performance 2023](https://buff.ly/43pCMr6)
+  * [State of Node.js Performance 2023](https://blog.rafaelgss.dev/state-of-nodejs-performance-2023)

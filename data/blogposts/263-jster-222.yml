@@ -10,30 +10,30 @@ body: |
 
   ## Libraries
 
-  * [Announcing TanStack Query v5](https://buff.ly/3S4vsiu)
-  * [stan-js - Fast and elegant state management solution with minimal configuration for your React, React Native and even vanilla-js apps](https://buff.ly/45HRcVV)
-  * [Shoelace: A forward-thinking library of web components.](https://buff.ly/2Yzr15u)
+  * [Announcing TanStack Query v5](https://tanstack.com/blog/announcing-tanstack-query-v5)
+  * [stan-js - Fast and elegant state management solution with minimal configuration for your React, React Native and even vanilla-js apps](https://codemask-labs.github.io/stan-js/)
+  * [Shoelace: A forward-thinking library of web components.](https://shoelace.style/)
 
 
   ## Tools
 
-  * [Node.js Mobile](https://buff.ly/474cqNc)
-  * [Payload CMS - Node & React TypeScript Headless CMS](https://buff.ly/39uojQj)
-  * [oxc - A suite of high-performance tools for JavaScript and TypeScript written in Rust](https://buff.ly/3PNal14)
-  * [React Internals Explorer - easily see how React works](https://buff.ly/3KLajVA)
+  * [Node.js Mobile](https://nodejs-mobile.github.io/blog/reboot/)
+  * [Payload CMS - Node & React TypeScript Headless CMS](https://payloadcms.com/)
+  * [oxc - A suite of high-performance tools for JavaScript and TypeScript written in Rust](/library/oxc)
+  * [React Internals Explorer - easily see how React works](https://jser.dev/2024-05-11-introducing-rie/)
 
   ## CSS
 
-  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](https://buff.ly/443uN3r)
+  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](https://panda-css.com/)
 
   ## TypeScript
 
-  * [Runtype Benchmarks for TypeScript](https://buff.ly/3Qpxvfv)
-  * [tsperf - TypeScript performance made easy](https://buff.ly/3RP7SpQ)
-  * [Announcing TypeScript 5.5](https://buff.ly/45GfdwM)
+  * [Runtype Benchmarks for TypeScript](https://moltar.github.io/typescript-runtime-type-benchmarks/)
+  * [tsperf - TypeScript performance made easy](https://tsperf.dev/)
+  * [Announcing TypeScript 5.5](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/)
 
   ## Techniques
 
-  * [Thinking Locally with Signals](https://buff.ly/3tvgO9J)
-  * [Skip links on ikea](https://buff.ly/46tbH8y)
-  * [Node module size: See how Adam reduced it by 90%](https://buff.ly/2xhTlZe)
+  * [Thinking Locally with Signals](https://dev.to/playfulprogramming/thinking-locally-with-signals-3b7h)
+  * [Skip links on ikea](https://matuzo.at/blog/2023/ikea-skip-links)
+  * [Node module size: See how Adam reduced it by 90%](https://tsh.io/blog/reduce-node-modules-for-better-performance)

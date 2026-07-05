@@ -10,16 +10,16 @@ body: |
 
   ## Libraries
 
-  * [prismake/typegql](https://github.com/prismake/typegql) - Create GraphQL schema with TypeScript classes
-  * [graphql-compose](https://www.npmjs.com/package/graphql-compose) - A library for generating GraphQL schemas
+  * [prismake/typegql](/library/typegql) - Create GraphQL schema with TypeScript classes
+  * [graphql-compose](/library/graphql-compose) - A library for generating GraphQL schemas
   * [Muuri](https://haltu.github.io/muuri/) - Responsive, sortable, filterable and draggable grid layouts
-  * [jaydenseric/next-graphql-react](https://github.com/jaydenseric/next-graphql-react) - Next.js config and App decorators for graphql-react, enabling server side rendered GraphQL queries
+  * [jaydenseric/next-graphql-react](/library/next-graphql-react) - Next.js config and App decorators for graphql-react, enabling server side rendered GraphQL queries
   * [harp.gl](https://www.harp.gl/) - 3d web map rendering engine
-  * [pqina/filepond](https://github.com/pqina/filepond) - A flexible and fun JavaScript file upload library
-  * [Vincit/objection.js](https://github.com/Vincit/objection.js) - An SQL-friendly ORM for Node.js 
-  * [mauriciosantos/Buckets-JS](https://github.com/mauriciosantos/Buckets-JS) - A complete, fully tested and documented data structure library written in pure JavaScript
-  * [lukeed/mri](https://github.com/lukeed/mri) - Quickly scan for CLI flags and arguments
-  * [lukeed/kleur](https://github.com/lukeed/kleur) - The fastest Node.js library for formatting terminal text with ANSI colors~!
+  * [pqina/filepond](/library/filepond) - A flexible and fun JavaScript file upload library
+  * [Vincit/objection.js](/library/objection-js) - An SQL-friendly ORM for Node.js 
+  * [mauriciosantos/Buckets-JS](/library/buckets-js) - A complete, fully tested and documented data structure library written in pure JavaScript
+  * [lukeed/mri](/library/mri) - Quickly scan for CLI flags and arguments
+  * [lukeed/kleur](/library/kleur) - The fastest Node.js library for formatting terminal text with ANSI colors~!
 
   ## TypeScript
 
@@ -34,17 +34,17 @@ body: |
 
   ## Tools
 
-  * [voidcosmos/npkill](https://github.com/voidcosmos/npkill) - List any node_modules directories in your system, as well as the space they take up. You can then select which ones you want to erase to free up space
-  * [eslint-config-es](https://www.npmjs.com/package/eslint-config-es) - A strict ESLint configuration for ES2015+ and TypeScript
-  * [akx/npm-dep](https://github.com/akx/npm-dep) - Generate dependency graphs of npm packages
-  * [nodejs/citgm](https://github.com/nodejs/citgm) - citgm is a simple tool for pulling down an arbitrary module from npm and testing it using a specific version of the node runtime
-  * [nanoprobe](https://www.npmjs.com/package/nanoprobe) - A CLI to help better understand the massive amount of information that surrounds Node.js versions.
+  * [voidcosmos/npkill](/library/npkill) - List any node_modules directories in your system, as well as the space they take up. You can then select which ones you want to erase to free up space
+  * [eslint-config-es](/library/eslint-config-es) - A strict ESLint configuration for ES2015+ and TypeScript
+  * [akx/npm-dep](/library/npm-dep) - Generate dependency graphs of npm packages
+  * [nodejs/citgm](/library/citgm) - citgm is a simple tool for pulling down an arbitrary module from npm and testing it using a specific version of the node runtime
+  * [nanoprobe](/library/nanoprobe) - A CLI to help better understand the massive amount of information that surrounds Node.js versions.
   * [QuickJS Javascript Engine](https://bellard.org/quickjs/)
-  * [entropic-dev/entropic](https://github.com/entropic-dev/entropic) - A package registry for anything, but mostly JavaScript
-  * [kristopolous/_inject](https://github.com/kristopolous/_inject) - JavaScript Code Injection for Debugging
-  * [ericclemmons/node-recorder](https://github.com/ericclemmons/node-recorder) - Simple recording & replaying of HTTP requests for predictable development & testing
-  * [Schniz/fnm](https://github.com/Schniz/fnm) - Fast and simple Node.js version manager, built in native ReasonML
-  * [Kickball/awesome-selfhosted](https://github.com/Kickball/awesome-selfhosted) - Awesome self-hosted services and tools
+  * [entropic-dev/entropic](/library/entropic) - A package registry for anything, but mostly JavaScript
+  * [kristopolous/_inject](/library/inject) - JavaScript Code Injection for Debugging
+  * [ericclemmons/node-recorder](/library/node-recorder) - Simple recording & replaying of HTTP requests for predictable development & testing
+  * [Schniz/fnm](/library/fnm) - Fast and simple Node.js version manager, built in native ReasonML
+  * [Kickball/awesome-selfhosted](/library/awesome-selfhosted) - Awesome self-hosted services and tools
 
   ## Techniques
 

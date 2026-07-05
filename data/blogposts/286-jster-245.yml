@@ -11,52 +11,52 @@ body: |
   ## Libraries
 
   * [Kelp - UI library for people who love HTML, powered by modern CSS and Web Components](https://kelpui.com/)
-  * [Jesterhearts/ratatui-wgpu: A wgpu based rendering backend for ratatui.](https://buff.ly/02U3mjG)
-  * [wzhudev/reverse-linear-sync-engine: A reverse engineering of Linear's sync engine. Endorsed by its co-founder & CTO.](https://buff.ly/K5VejMf)
-  * [unnoq/orpc: Typesafe APIs Made Simple 🪄 h](https://buff.ly/tFl441R)
-  * [cloudflare/workers-oauth-provider: OAuth provider library for Cloudflare Workers](https://buff.ly/SwjW5pP)
+  * [Jesterhearts/ratatui-wgpu: A wgpu based rendering backend for ratatui.](/library/ratatui-wgpu)
+  * [wzhudev/reverse-linear-sync-engine: A reverse engineering of Linear's sync engine. Endorsed by its co-founder & CTO.](/library/reverse-linear-sync-engine)
+  * [unnoq/orpc: Typesafe APIs Made Simple 🪄 h](/library/orpc)
+  * [cloudflare/workers-oauth-provider: OAuth provider library for Cloudflare Workers](/library/workers-oauth-provider)
   * [Unpic - The best images for every framework](https://unpic.pics/)
-  * [molefrog/wouter: 🥢 A minimalist-friendly ~2.1KB routing for React and Preact h](https://buff.ly/eSuvsRO)
-  * [Shopify Storefront Web Components - Add Shopify to Any Site](https://buff.ly/FhHvN8D)
+  * [molefrog/wouter: 🥢 A minimalist-friendly ~2.1KB routing for React and Preact h](/library/wouter)
+  * [Shopify Storefront Web Components - Add Shopify to Any Site](https://shopify.dev/docs/api/storefront-web-components)
   * [Introducing Zod 4 - runtime typechecker](https://zod.dev/v4)
 
   ## Frameworks
 
-  * [LiveStore is a next-generation state management framework based on reactive SQLite and built-in sync engine.](https://buff.ly/r9qBMwo)
-  * [H3 v2 beta](https://buff.ly/XRSi9OM)
+  * [LiveStore is a next-generation state management framework based on reactive SQLite and built-in sync engine.](/library/livestore)
+  * [H3 v2 beta](https://h3.dev/blog/v2-beta)
 
   ## Articles
 
-  * [Boa - Implementing Temporal, the new date/time API for JavaScript (and Rust!)](https://buff.ly/KG3YXP2)
-  * [Selfish reasons for building accessible UIs](https://buff.ly/q2sNNun)
-  * [Next.js 15.1+ is unusable outside of Vercel](https://buff.ly/H4pJMSj)
+  * [Boa - Implementing Temporal, the new date/time API for JavaScript (and Rust!)](https://boajs.dev/blog/2025/06/15/temporal-impl-1)
+  * [Selfish reasons for building accessible UIs](https://nolanlawson.com/2025/06/16/selfish-reasons-for-building-accessible-uis/)
+  * [Next.js 15.1+ is unusable outside of Vercel](https://omarabid.com/nextjs-vercel/)
 
   ## Opinions
 
-  * [JavaScript broke the web (and called it progress)](https://buff.ly/d49jzZ5)
+  * [JavaScript broke the web (and called it progress)](https://www.jonoalderson.com/conjecture/javascript-broke-the-web-and-called-it-progress/)
 
   ## Techniques
 
-  * [Frontend test coverage with Storybook 9](https://buff.ly/Wb8KkCP)
-  * [Pick E2E Tests To Run Using AI Summaries](https://buff.ly/SjrwE5T)
-  * [How to Choose the Right Playwright Locators](https://buff.ly/pxKF7UL)
-  * [Seamlessly Blend PHP with Node.js](https://ilo.im/164g4x)
+  * [Frontend test coverage with Storybook 9](https://storybook.js.org/blog/frontend-test-coverage-with-storybook-9/)
+  * [Pick E2E Tests To Run Using AI Summaries](https://glebbahmutov.com/blog/pick-tests-using-ai/)
+  * [How to Choose the Right Playwright Locators](https://argos-ci.com/blog/playwright-locators)
+  * [Seamlessly Blend PHP with Node.js](https://blog.platformatic.dev/seamlessly-blend-php-with-nodejs)
 
   ## Tools
 
-  * [Vite 7.0 is out!](https://buff.ly/zeNv8pT)
-  * [Nx 21.2 Release: Big upgrades to Angular 20, NestJS 11, and Storybook 9](https://buff.ly/8b2Zepw)
-  * [Jest 30: Faster, Leaner, Better](https://buff.ly/lomoU4t)
-  * [Amaro - Node.js TypeScript wrapper](https://buff.ly/Uc21cE0)
-  * [Vitest 3.2 is out!](https://buff.ly/OOMBNI8)
-  * [Announcing Rolldown-Vite](https://buff.ly/C3Wg318)
-  * [Storybook 9 - The lean, mean component testing machine](https://buff.ly/QjBLt65)
+  * [Vite 7.0 is out!](https://vite.dev/blog/announcing-vite7)
+  * [Nx 21.2 Release: Big upgrades to Angular 20, NestJS 11, and Storybook 9](https://nx.dev/blog/nx-21-2-release)
+  * [Jest 30: Faster, Leaner, Better](https://jestjs.io/blog/2025/06/04/jest-30)
+  * [Amaro - Node.js TypeScript wrapper](/library/amaro)
+  * [Vitest 3.2 is out!](https://vitest.dev/blog/vitest-3-2.html)
+  * [Announcing Rolldown-Vite](https://voidzero.dev/posts/announcing-rolldown-vite)
+  * [Storybook 9 - The lean, mean component testing machine](https://storybook.js.org/blog/storybook-9/)
 
   ## Demos
 
-  * [Nintendo Switch Homescreen recreated with CSS and a li'l bit of JS](https://buff.ly/u49ESPk)
+  * [Nintendo Switch Homescreen recreated with CSS and a li'l bit of JS](https://nerdy.dev/nintendo-switch-homescreen-css-recreation)
 
   ## Languages
 
   * [Civet - Code more TypeScript with less syntax](https://civet.dev/)
-  * [Announcing TypeScript Native Previews](https://buff.ly/15C0FyT)
+  * [Announcing TypeScript Native Previews](https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/)

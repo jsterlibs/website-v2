@@ -10,37 +10,37 @@ body: |
 
   ## Libraries
 
-  * [xstate/store Simple event-based state management](https://buff.ly/3JblQN0)
-  * [aralroca/diff-dom-streaming - HTML Streaming Over the Wire! 🥳 Diff DOM algorithm with streaming to make only the necessary modifications, insertions and deletions between a DOM node and an HTML stream reader](https://buff.ly/3Q1bxii)
-  * [openapi-zod-client - From openapi to Zod types](https://buff.ly/3TL4o6W)
-  * [Reasonable Colors](https://buff.ly/3rna49Y)
-  * [Superstate - Typesafe statecharts library](https://buff.ly/3J6MfM8)
+  * [xstate/store Simple event-based state management](/library/xstate-2)
+  * [aralroca/diff-dom-streaming - HTML Streaming Over the Wire! 🥳 Diff DOM algorithm with streaming to make only the necessary modifications, insertions and deletions between a DOM node and an HTML stream reader](/library/diff-dom-streaming)
+  * [openapi-zod-client - From openapi to Zod types](/library/openapi-zod-client)
+  * [Reasonable Colors](https://www.reasonable.work/colors/)
+  * [Superstate - Typesafe statecharts library](https://superstate.io/)
 
   ## Techniques
 
-  * [How JSR was built](https://buff.ly/3W1lTTd)
+  * [How JSR was built](https://deno.com/blog/how-we-built-jsr)
 
   ## Editors
 
-  * [deco - Open-Source web editor based on Preact, Tailwind and TypeScript](https://buff.ly/3TYIqgX)
+  * [deco - Open-Source web editor based on Preact, Tailwind and TypeScript](https://github.com/deco-cx/deco)
 
   ## TypeScript
 
-  * [woltsu/tsynamo: Type-friendly TypeScript DynamoDB query builder!](https://buff.ly/3TLkA84)
+  * [woltsu/tsynamo: Type-friendly TypeScript DynamoDB query builder!](https://github.com/woltsu/tsynamo)
   * [ArkType - TypeScript's 1:1 validator, optimized from editor to runtime](https://arktype.io/)
 
   ## Demos
 
-  * [cloudflare/orange - Build your own Zoom with CloudFlare Calls and WebRTC](https://buff.ly/3VTzagx)
+  * [cloudflare/orange - Build your own Zoom with CloudFlare Calls and WebRTC](https://github.com/cloudflare/meet)
 
   ## Frameworks
 
-  * [ElysiaJS - Ergonomic Framework for Humans](https://buff.ly/48rqmmb)
+  * [ElysiaJS - Ergonomic Framework for Humans](https://elysiajs.com/)
 
   ## React
 
-  * [MistCSS - Write React components using CSS only](https://buff.ly/3TK888D)
+  * [MistCSS - Write React components using CSS only](https://typicode.github.io/mistcss/)
 
   ## Components
 
-  * [Cally: small, feature-rich calendar components](https://buff.ly/3vF6IEv)
+  * [Cally: small, feature-rich calendar components](https://wicky.nillia.ms/cally/)

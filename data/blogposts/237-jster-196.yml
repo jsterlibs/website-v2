@@ -10,30 +10,30 @@ body: |
 
   ## Libraries
 
-  * [retejs/rete: JavaScript framework for visual programming and creating node editor](https://buff.ly/2m4a7oM)
-  * [fibo/flow-view: is a visual editor for Dataflow programming](https://buff.ly/3OJvGK0)
-  * [Precedent - Building blocks for your Next.js project](https://buff.ly/3GEA5s3)
-  * [graphql/graphql-http: Simple, pluggable, zero-dependency, GraphQL over HTTP Protocol compliant server and client.](https://buff.ly/3vZ5DEc)
-  * [Crawlee - Build reliable crawlers](https://buff.ly/3S3X8AN)
-  * [mercurius-js/mercurius: Implement GraphQL servers and gateways with Fastify](https://buff.ly/3QoKuws)
+  * [retejs/rete: JavaScript framework for visual programming and creating node editor](/library/rete)
+  * [fibo/flow-view: is a visual editor for Dataflow programming](/library/flow-view)
+  * [Precedent - Building blocks for your Next.js project](https://precedent.dev/)
+  * [graphql/graphql-http: Simple, pluggable, zero-dependency, GraphQL over HTTP Protocol compliant server and client.](/library/graphql-http)
+  * [Crawlee - Build reliable crawlers](https://crawlee.dev/)
+  * [mercurius-js/mercurius: Implement GraphQL servers and gateways with Fastify](/library/mercurius)
 
   ## Frameworks
 
-  * [sandulat/routes-gen: Framework agnostic routes typings generator. Remix ☑️ SolidStart ☑️](https://buff.ly/3iJhpPS)
+  * [sandulat/routes-gen: Framework agnostic routes typings generator. Remix ☑️ SolidStart ☑️](/library/routes-gen)
 
   ## Articles
 
-  * [Isomorphic Development](https://buff.ly/3OO3u94)
-  * [Three attributes for better web forms](https://buff.ly/3WosMuu)
-  * [The Challenges of Lazy Loading in JavaScript](https://buff.ly/3irOkbP)
-  * [Build your own resumability](https://buff.ly/3OAshwU)
-  * [A Cure for useState Hell](https://buff.ly/3izNnOo)
-  * [The gotcha of unhandled promise rejections](https://buff.ly/3Zs4QZT)
+  * [Isomorphic Development](https://meijer.works/articles/isomorphic-development/)
+  * [Three attributes for better web forms](https://adactio.com/journal/19842)
+  * [The Challenges of Lazy Loading in JavaScript](https://www.builder.io/blog/the-challenges-of-lazy-loading-in-javascript)
+  * [Build your own resumability](https://www.builder.io/blog/build-your-own-resumability)
+  * [A Cure for useState Hell](https://www.builder.io/blog/use-reducer)
+  * [The gotcha of unhandled promise rejections](https://jakearchibald.com/2023/unhandled-rejections/)
 
   ## Tools
 
-  * [NoFlo - Flow-Based Programming for JavaScript](https://buff.ly/2kNb8kF)
-  * [Gradient Designer](https://buff.ly/3iI5Mc2)
-  * [SQLite Wasm in the browser backed by the Origin Private File System](https://buff.ly/3H1PMep)
-  * [why-is-node-running](https://buff.ly/3IJm7rk)
-  * [The Bun Bundler](https://buff.ly/41Xv72p)
+  * [NoFlo - Flow-Based Programming for JavaScript](https://noflojs.org/)
+  * [Gradient Designer](https://akx.github.io/gradient/)
+  * [SQLite Wasm in the browser backed by the Origin Private File System](https://developer.chrome.com/blog/sqlite-wasm-in-the-browser-backed-by-the-origin-private-file-system/)
+  * [why-is-node-running](/library/why-is-node-running)
+  * [The Bun Bundler](/library/the-bun-bundler)

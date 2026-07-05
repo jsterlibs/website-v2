@@ -12,13 +12,13 @@ body: |
 
   ## Libraries
 
-  * [nikersify/pico](https://github.com/nikersify/pico) - Take browser screenshots in Javascript
-  * [dfahlander/Dexie.js](https://github.com/dfahlander/Dexie.js) - A Minimalistic Wrapper for IndexedDB
-  * [jncraton/box-line-text](https://github.com/jncraton/box-line-text) - Simple virtual whiteboarding
-  * [imazen/imageflow](https://github.com/imazen/imageflow) - High-performance image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow
-  * [better-logging](https://www.npmjs.com/package/better-logging) - An alternative logger for JavaScript
+  * [nikersify/pico](/library/pico) - Take browser screenshots in Javascript
+  * [dfahlander/Dexie.js](/library/dexie-js) - A Minimalistic Wrapper for IndexedDB
+  * [jncraton/box-line-text](/library/box-line-text) - Simple virtual whiteboarding
+  * [imazen/imageflow](/library/imageflow) - High-performance image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow
+  * [better-logging](/library/better-logging) - An alternative logger for JavaScript
   * [Recoil](https://recoiljs.org/) - A state management library for React
-  * [manassarpatwar/Self-driving-AI](https://github.com/manassarpatwar/Self-driving-AI) - Self driving cars using NEAT
+  * [manassarpatwar/Self-driving-AI](/library/self-driving-ai) - Self driving cars using NEAT
 
   ## Frameworks
 
@@ -27,15 +27,15 @@ body: |
 
   ## Tools
 
-  * [aholachek/bundle-wizard](https://github.com/aholachek/bundle-wizard) - Magically easy insight into the JavaScript loaded by a web app
-  * [Lerna Update Wizard](https://www.npmjs.com/package/lerna-update-wizard) - Command line interface for simplifying the process of bulk updating dependencies across multiple Lerna or Yarn Workspace packages.
+  * [aholachek/bundle-wizard](/library/bundle-wizard) - Magically easy insight into the JavaScript loaded by a web app
+  * [Lerna Update Wizard](/library/lerna-update-wizard) - Command line interface for simplifying the process of bulk updating dependencies across multiple Lerna or Yarn Workspace packages.
   * [Preconstruct](https://preconstruct.tools/) - Dev and build your code painlessly in monorepos
   * [Excalidraw](https://excalidraw.com/) - Simple collaborative drawing on the web
   * [@yarnpkg/plugin-typescript](https://yarnpkg.com/api/modules/plugin_typescript.html) - This plugin automatically adds @types/ packages into your dependencies when you add a package that doesn't include its own types.
-  * [atlassian/changesets](https://github.com/atlassian/changesets) - Changesets automate changelog generation
-  * [@manypkg/get-packages](https://github.com/Thinkmill/manypkg/tree/master/packages/get-packages) - A simple utility to get the packages from a monorepo, whether they're using Yarn, Bolt or pnpm
+  * [atlassian/changesets](/library/changesets) - Changesets automate changelog generation
+  * [@manypkg/get-packages](/library/manypkg) - A simple utility to get the packages from a monorepo, whether they're using Yarn, Bolt or pnpm
   * [ESLint v7.0.0 released](https://eslint.org/blog/2020/05/eslint-v7.0.0-released)
-  * [stefanjudis/netlify-menubar](https://github.com/stefanjudis/netlify-menubar) - Netlify menubar app to receive build information or trigger new builds
+  * [stefanjudis/netlify-menubar](/library/netlify-menubar) - Netlify menubar app to receive build information or trigger new builds
 
   ## CSS
 
@@ -68,7 +68,7 @@ body: |
 
   ## Testing
 
-  * [testonjs/teston](https://github.com/testonjs/teston) - Test runner similar to tape, but with ES6 module support, simpler subtest syntax and nice indentation
+  * [testonjs/teston](/library/teston) - Test runner similar to tape, but with ES6 module support, simpler subtest syntax and nice indentation
 
   ## GraphQL
 

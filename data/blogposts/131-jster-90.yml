@@ -43,13 +43,13 @@ body: |
 
   ## Games
 
-  * [nhusher/asteroids](https://github.com/nhusher/asteroids) - 10k asteroids.
-  * [webrender/10ktower](https://github.com/webrender/10ktower) - Another 10k demo. Towers this time.
+  * [nhusher/asteroids](/library/asteroids) - 10k asteroids.
+  * [webrender/10ktower](/library/10ktower) - Another 10k demo. Towers this time.
 
   ## Tools
 
   * [SpeedTracker](https://speedtracker.org/) - Monitor the performance of your site. What you don't measure you can't fix.
-  * [cs01/gdbgui/](https://github.com/cs01/gdbgui/) - A browser-based user interface for gdb.
+  * [cs01/gdbgui/](/library/gdbgui) - A browser-based user interface for gdb.
 
   ## Demos
 

@@ -10,18 +10,18 @@ body: |
 
   ## Libraries
 
-  - [WebReflection/d1-tags: Tagged-template helpers for Cloudflare D1](https://buff.ly/7ASDuJY)
-  - [Vue Data UI](https://buff.ly/loMlnnk)
-  - [alibaba/page-agent: JavaScript in-page GUI agent. Control web interfaces with natural language](https://buff.ly/JJUuIfl)
+  - [WebReflection/d1-tags: Tagged-template helpers for Cloudflare D1](/library/d1-tags)
+  - [Vue Data UI](https://vue-data-ui.graphieros.com/)
+  - [alibaba/page-agent: JavaScript in-page GUI agent. Control web interfaces with natural language](/library/page-agent)
 
   ## Runtimes
 
-  - [JSSE: A JavaScript Engine Built by an Agent](https://buff.ly/AAFcbet)
+  - [JSSE: A JavaScript Engine Built by an Agent](https://p.ocmatos.com/blog/jsse-a-javascript-engine-built-by-an-agent.html)
 
   ## Techniques
 
-  - [ChatGPT, Claude, and Gemini Render Markdown in the Browser. I Don't](https://buff.ly/cYzkWVi)
-  - [Uses for nested promises](https://buff.ly/W0RdYEg)
+  - [ChatGPT, Claude, and Gemini Render Markdown in the Browser. I Don't](https://www.lorenstew.art/blog/i-do-the-opposite/)
+  - [Uses for nested promises](https://blog.jcoglan.com/2026/03/23/uses-for-nested-promises/)
 
   ## Icons
 
@@ -29,46 +29,46 @@ body: |
 
   ## Articles
 
-  - [Async, Sync, in Between](https://buff.ly/Dt5kBd7)
-  - [Signals, the push-pull based algorithm](https://buff.ly/tiFhdRK)
-  - [Test IDs are an a11y smell](https://buff.ly/kCFTSd1)
-  - [Under the hood of MDN's new frontend](https://ilo.im/16c0es)
-  - [The Three Pillars of JavaScript Bloat](https://buff.ly/7DnG2XG)
-  - [The 49MB Web Page](https://ilo.im/16bcfg)
+  - [Async, Sync, in Between](https://antfu.me/posts/async-sync-in-between)
+  - [Signals, the push-pull based algorithm](https://willybrauner.com/journal/signal-the-push-pull-based-algorithm)
+  - [Test IDs are an a11y smell](https://tkdodo.eu/blog/test-ids-are-an-a11y-smell)
+  - [Under the hood of MDN's new frontend](https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/)
+  - [The Three Pillars of JavaScript Bloat](https://43081j.com/2026/03/three-pillars-of-javascript-bloat)
+  - [The 49MB Web Page](https://thatshubham.com/blog/news-audit)
 
   ## Frameworks
 
-  - [Fresh 2.3: Zero JS by default, View Transitions, and Temporal support](https://buff.ly/0Apk8Zw)
+  - [Fresh 2.3: Zero JS by default, View Transitions, and Temporal support](https://deno.com/blog/fresh-2.3)
   - [Gea — Lightweight Reactive UI Framework](https://geajs.com/)
-  - [Datastar v1.0.0 - Hypermedia + SSE for profit and fun](https://buff.ly/AMXH6hU)
-  - [Spiceflow - The Type Safe TypeScript API Framework for React](https://buff.ly/wuYe94a)
-  - [StreamUI/hyperstar: Server-driven UI for real-time web apps. No client code, no state sync, just TypeScript & JSX on the server, and every client sees the same thing](https://buff.ly/17mjLpt)
+  - [Datastar v1.0.0 - Hypermedia + SSE for profit and fun](/library/datastar)
+  - [Spiceflow - The Type Safe TypeScript API Framework for React](https://getspiceflow.com/)
+  - [StreamUI/hyperstar: Server-driven UI for real-time web apps. No client code, no state sync, just TypeScript & JSX on the server, and every client sees the same thing](/library/hyperstar)
 
   ## Services
 
-  - [Vite Plugin Registry](https://buff.ly/iSoxFAL) - Discover plugins for your build tools
+  - [Vite Plugin Registry](https://registry.vite.dev/) - Discover plugins for your build tools
 
   ## Tools
 
-  - [jokull/agent-cms: Agent-first headless CMS on Cloudflare Workers. MCP-driven schema + content management, GraphQL delivery, FTS5 + Vectorize search.](https://buff.ly/Vj1YzFb)
-  - [cloudflare/vinext](https://buff.ly/SSObm1A) - Vite plugin that reimplements the Next.js API surface — deploy anywhere
+  - [jokull/agent-cms: Agent-first headless CMS on Cloudflare Workers. MCP-driven schema + content management, GraphQL delivery, FTS5 + Vectorize search.](/library/agent-cms)
+  - [cloudflare/vinext](/library/vinext) - Vite plugin that reimplements the Next.js API surface — deploy anywhere
   - [tsdown - The Elegant Bundler for Libraries](https://tsdown.dev/)
-  - [npmgraph - NPM Dependency Diagrams](https://buff.ly/Mfayx89)
-  - [paulmillr/jsbt: JS Build Tools: helpers for building, benchmarking & testing secure JS apps.](https://buff.ly/0yZxGlt)
+  - [npmgraph - NPM Dependency Diagrams](https://npmgraph.js.org/)
+  - [paulmillr/jsbt: JS Build Tools: helpers for building, benchmarking & testing secure JS apps.](/library/jsbt)
 
   ## Typescript
 
   - [TSRX](https://tsrx.dev/) - TypeScript Language Extension for Declarative UI
-  - [TypeScript 7.0 Beta](https://ilo.im/16ccl3)
+  - [TypeScript 7.0 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/)
 
   ## Standards
 
-  - [Standard HTML Video & Audio Lazy-loading is Coming!](https://buff.ly/fNNqbuR)
+  - [Standard HTML Video & Audio Lazy-loading is Coming!](https://scottjehl.com/posts/lazy-media/)
 
   ## Demos
 
-  - [Pascal - a 3D building editor built with React Three Fiber and WebGPU](https://buff.ly/lCsBSrP)
+  - [Pascal - a 3D building editor built with React Three Fiber and WebGPU](https://github.com/pascalorg/editor)
 
   ## Security
 
-  - [Attackers Are Hunting High-Impact Node.js Maintainers in a Campaign](https://buff.ly/WutAbXZ)
+  - [Attackers Are Hunting High-Impact Node.js Maintainers in a Campaign](https://socket.dev/blog/attackers-hunting-high-impact-nodejs-maintainers)

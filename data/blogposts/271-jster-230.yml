@@ -11,34 +11,34 @@ body: |
   ## Libraries
 
   * [TinyBase - The reactive data store for local-first apps](https://tinybase.org/)
-  * [rhettlunn/is-odd-ai: Why check if something is odd simply, when you can do it with ✨AI✨](https://buff.ly/4eTWvFz)
+  * [rhettlunn/is-odd-ai: Why check if something is odd simply, when you can do it with ✨AI✨](/library/is-odd-ai)
 
   ## Frameworks
 
-  * [Next.js 15](https://buff.ly/3YmCTDc)
-  * [Medusa 2.0 - a composable e-commerce framework](https://buff.ly/4hgEBOZ)
-  * [Svelte 5 is alive](https://buff.ly/4eYP5kr)
-  * [Catalyst - a highly composable framework](https://buff.ly/3Yu3Beb)
-  * [Introducing Express v5: A New Era for Node.js Framework](https://buff.ly/408uiqc)
-  * [The story of web framework Hono, from the creator of Hono](https://buff.ly/3U9LUOz)
-  * [Introducing Brisa: Full-stack Web Platform Framework 🔥](https://buff.ly/4exo4nV)
-  * [openwebf/webf: Build flutter apps with HTML/CSS and JavaScript.](https://buff.ly/4dM2z1u)
+  * [Next.js 15](https://nextjs.org/blog/next-15)
+  * [Medusa 2.0 - a composable e-commerce framework](/library/medusa)
+  * [Svelte 5 is alive](https://svelte.dev/blog/svelte-5-is-alive)
+  * [Catalyst - a highly composable framework](https://catalyst.1mg.com/public_docs/)
+  * [Introducing Express v5: A New Era for Node.js Framework](https://expressjs.com/2024/10/15/v5-release.html/)
+  * [The story of web framework Hono, from the creator of Hono](https://blog.cloudflare.com/the-story-of-web-framework-hono-from-the-creator-of-hono/)
+  * [Introducing Brisa: Full-stack Web Platform Framework 🔥](https://brisa.build/blog/introducing-brisa)
+  * [openwebf/webf: Build flutter apps with HTML/CSS and JavaScript.](/library/webf)
 
   ## Tools
 
-  * [yamadashy/repopack: 📦 Repopack is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, and Gemini.](https://buff.ly/3CbgqkT)
-  * [nolanlawson/fuite: A tool for finding memory leaks in web apps](https://buff.ly/32env2a)
-  * [EvoMaster - AI driven open source fuzzer for common web APIs (REST, GraphQL, RPC)](https://buff.ly/3ND7kjr)
-  * [Gitlip - Git hosted on Cloudflare](https://buff.ly/4eanoUM)
-  * [Announcing Nx 20](https://buff.ly/3NrHFKe)
+  * [yamadashy/repopack: 📦 Repopack is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, and Gemini.](/library/repomix)
+  * [nolanlawson/fuite: A tool for finding memory leaks in web apps](/library/fuite)
+  * [EvoMaster - AI driven open source fuzzer for common web APIs (REST, GraphQL, RPC)](/library/evomaster)
+  * [Gitlip - Git hosted on Cloudflare](https://gitlip.com/blog/infinite-git-repos-on-cloudflare-workers)
+  * [Announcing Nx 20](https://nx.dev/blog/announcing-nx-20)
 
   ## Techniques
 
-  * [Streaming HTML out of order without JavaScript](https://buff.ly/3SjmBcn)
+  * [Streaming HTML out of order without JavaScript](https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/)
 
   ## Theses
 
-  * [BSc thesis - Survey of the current state of 3D production pipelines for the web](https://buff.ly/4gSPUN8)
+  * [BSc thesis - Survey of the current state of 3D production pipelines for the web](https://www.researchgate.net/publication/384687761_Survey_of_the_current_state_of_3D_production_pipelines_for_the_web)
 
   ## Boilerplates
 
@@ -46,5 +46,5 @@ body: |
 
   ## Articles
 
-  * [State of Frontend 2024](https://buff.ly/3fLI1bH)
-  * [A future for Web Components without the Shadow DOM](https://buff.ly/4h5Lv9I)
+  * [State of Frontend 2024](https://tsh.io/state-of-frontend)
+  * [A future for Web Components without the Shadow DOM](https://jjenzz.com/future-for-web-components-without-shadow-dom/)

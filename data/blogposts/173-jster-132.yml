@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [Mermaid](https://mermaidjs.github.io/) - Generation of diagrams and flowcharts from text in a similar manner as markdown
-  * [satya164/web-worker-proxy](https://github.com/satya164/web-worker-proxy) - A better way of working with web workers
+  * [satya164/web-worker-proxy](/library/web-worker-proxy) - A better way of working with web workers
   * [Nearley](https://nearley.js.org/) - Modern parser toolkit for JavaScript
 
   ## Frameworks
@@ -44,13 +44,13 @@ body: |
   ## Testing
 
   * [Cypress](https://www.cypress.io/) - JavaScript End to End Testing Framework
-  * [rickhanlonii/jest-watch-master](https://github.com/rickhanlonii/jest-watch-master) - Jest watch plugin for checking changes since master
-  * [bvaughn/jest-react-profiler](https://github.com/bvaughn/jest-react-profiler) - Jest helpers for working with the React Profiler API
+  * [rickhanlonii/jest-watch-master](/library/jest-watch-master) - Jest watch plugin for checking changes since master
+  * [bvaughn/jest-react-profiler](/library/jest-react-profiler) - Jest helpers for working with the React Profiler API
 
   ## Tools
 
-  * [cdonohue/polychrome](https://github.com/cdonohue/polychrome) - Easy color manipulation in ~2kb (gzipped)
-  * [npm-scripts-info](https://www.npmjs.com/package/npm-scripts-info) - Display the description of your npm scripts
+  * [cdonohue/polychrome](/library/polychrome) - Easy color manipulation in ~2kb (gzipped)
+  * [npm-scripts-info](/library/npm-scripts-info) - Display the description of your npm scripts
 
   ## Legacy
 

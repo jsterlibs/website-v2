@@ -10,25 +10,25 @@ body: |
 
   ## Libraries
 
-  * [joshmarinacci/node-pureimage - Pure JS implementation of the HTML Canvas 2D drawing API](https://buff.ly/2pVZOow)
-  * [kolodny/immutability-helper - Mutate a copy of data without changing the original source](https://buff.ly/3G6rgrW)
-  * [TanStack/bling - Framework agnostic transpilation utilities for client/server RPCs, env isolation, islands, module splitting, and more.](https://buff.ly/3J5dDuE)
-  * [Effect-TS/schema - Modeling the schema of data structures as first-class values](https://buff.ly/3LitqaM)
+  * [joshmarinacci/node-pureimage - Pure JS implementation of the HTML Canvas 2D drawing API](/library/node-pureimage)
+  * [kolodny/immutability-helper - Mutate a copy of data without changing the original source](/library/immutability-helper)
+  * [TanStack/bling - Framework agnostic transpilation utilities for client/server RPCs, env isolation, islands, module splitting, and more.](/library/bling)
+  * [Effect-TS/schema - Modeling the schema of data structures as first-class values](/library/schema)
 
   ## Frameworks
 
-  * [ascorbic/impala - A very simple static React framework](https://buff.ly/3KcWyzk)
+  * [ascorbic/impala - A very simple static React framework](/library/impala)
 
   ## Articles
 
-  * [Oklab - A perceptual color space for image processing](https://buff.ly/3hwN7ej)
-  * [Why OKLCH is the future of colors in CSS](https://buff.ly/3YC2l6Z)
-  * [Best practices for creating a modern npm package](https://buff.ly/3RTdPP9)
-  * [5 best practices for React with TypeScript security](https://buff.ly/3FwxwHU)
-  * [Modularizing React Applications with Established UI Patterns](https://buff.ly/3JOnUMs)
-  * [Migrating from ts-node to Bun](https://buff.ly/3T91R5M)
+  * [Oklab - A perceptual color space for image processing](https://bottosson.github.io/posts/oklab/)
+  * [Why OKLCH is the future of colors in CSS](https://evilmartians.com/events/why-oklch)
+  * [Best practices for creating a modern npm package](https://snyk.io/blog/best-practices-create-modern-npm-package/)
+  * [5 best practices for React with TypeScript security](https://snyk.io/blog/best-practices-react-typescript-security/)
+  * [Modularizing React Applications with Established UI Patterns](https://martinfowler.com/articles/modularizing-react-apps.html)
+  * [Migrating from ts-node to Bun](https://blog.logrocket.com/migrating-typescript-app-node-js-bun/)
 
   ## Opinions
 
-  * [Thoughts on Svelte](https://buff.ly/40go8RX)
-  * [The problem with React](https://buff.ly/3ZrFU3A)
+  * [Thoughts on Svelte](https://tyhopp.com/notes/thoughts-on-svelte)
+  * [The problem with React](https://dev.to/steveblue/the-problem-with-react-46mg)

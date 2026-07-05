@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [florianschepp/bsky-comments: A zero-dependency Web Component to embed Bluesky discussion threads on any website.](https://buff.ly/7qRHxMy)
-  * [gitbrent/PptxGenJS: Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.](https://buff.ly/G5PMAmc)
-  * [shuding/better-all - Better Promise.all with automatic dependency optimization](https://buff.ly/kN0kpkr)
+  * [florianschepp/bsky-comments: A zero-dependency Web Component to embed Bluesky discussion threads on any website.](/library/bsky-comments)
+  * [gitbrent/PptxGenJS: Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.](/library/pptxgenjs)
+  * [shuding/better-all - Better Promise.all with automatic dependency optimization](/library/better-all)
   * [nuqs - Type-safe search params state management for React](https://nuqs.dev/)
 
 
@@ -20,41 +20,41 @@ body: |
 
   * [varlock - Manage your .env](https://varlock.dev/)
   * [Knip - Declutter your JavaScript & TypeScript projects](https://knip.dev/)
-  * [vercel-labs/agent-browser: Browser automation CLI for AI agents](https://buff.ly/pK0aUdl)
+  * [vercel-labs/agent-browser: Browser automation CLI for AI agents](/library/agent-browser)
   * [fpapado/svg-use: Tools and bundler plugins, to ergonomically load SVG files via use[href]](https://buff.ly/WHGvolC)
-  * [Introducing Hono CLI](https://buff.ly/Y1AeMod)
+  * [Introducing Hono CLI](https://blog.yusu.ke/hono-cli/)
   * [npmx - Package Browser for the npm Registry](https://npmx.dev/)
-  * [React2AWS - Infrastructure as React Components](https://buff.ly/l9hN9Aq)
+  * [React2AWS - Infrastructure as React Components](https://www.react2aws.xyz/)
 
   ## Articles
 
-  * [Why is WebAssembly a second-class language on the web?](https://buff.ly/JO0GXC4)
-  * [We deserve a better streams API for JavaScript](https://bit.ly/46xsUQh)
-  * [How Cloudflare rebuilt Next.js with AI in one week](https://buff.ly/R7MszG9)
-  * [Fastest Frontend Tooling for Humans & AI](https://buff.ly/Vse96uZ)
-  * [WebMCP – a much needed way to make agents play with rather than against the web](https://buff.ly/H8lVvWW)
-  * [JS-heavy approaches are not compatible with long-term performance goals](https://buff.ly/7qqBd9V)
-  * [Solid.js Best Practices](https://buff.ly/38C2S1Y)
-  * [Death to Scroll Fade!](https://buff.ly/2aKV7qG)
+  * [Why is WebAssembly a second-class language on the web?](https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/)
+  * [We deserve a better streams API for JavaScript](https://blog.cloudflare.com/a-better-web-streams-api/)
+  * [How Cloudflare rebuilt Next.js with AI in one week](https://blog.cloudflare.com/vinext/)
+  * [Fastest Frontend Tooling for Humans & AI](https://cpojer.net/posts/fastest-frontend-tooling)
+  * [WebMCP – a much needed way to make agents play with rather than against the web](https://christianheilmann.com/2026/02/16/webmcp-a-much-needed-way-to-make-agents-play-with-rather-than-against-the-web/)
+  * [JS-heavy approaches are not compatible with long-term performance goals](https://sgom.es/posts/2026-02-13-js-heavy-approaches-are-not-compatible-with-long-term-performance-goals/)
+  * [Solid.js Best Practices](https://www.brenelz.com/posts/solid-js-best-practices/)
+  * [Death to Scroll Fade!](https://dbushell.com/2026/01/09/death-to-scroll-fade/)
 
   ## Runtimes
 
-  * [Node.js 24.14.0 (LTS)](https://buff.ly/WoberlV)
+  * [Node.js 24.14.0 (LTS)](https://nodejs.org/en/blog/release/v24.14.0)
 
   ## Games
 
   * [VoxJong - CSS Mahjong Solitaire](https://voxjong.com/)
-  * [Descent in three.js](https://buff.ly/4Xa4qVj)
-  * [mrdoob/three-quake: A WIP port of Quake (1996) to Three.js.](https://buff.ly/0WdVo3V)
+  * [Descent in three.js](https://mrdoob.github.io/three-descent/)
+  * [mrdoob/three-quake: A WIP port of Quake (1996) to Three.js.](/library/three-quake)
 
   ## Demos
 
-  * [RYBitten SVG Color Sphere](https://buff.ly/1qbOnHo)
+  * [RYBitten SVG Color Sphere](https://codepen.io/meodai/full/PwZpjMW)
 
   ## Frameworks
 
-  * [Ember 6.10 Released](https://buff.ly/FzyFxLZ)
+  * [Ember 6.10 Released](https://blog.emberjs.com/ember-released-6-10/)
 
   ## Guides
 
-  * [Guide to testing React apps with Morph LLM](https://buff.ly/bnWs3ZW)
+  * [Guide to testing React apps with Morph LLM](https://www.morphllm.com/blog/browser-verification)

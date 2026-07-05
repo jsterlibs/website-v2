@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  * [sinclairzx81/zero](https://github.com/sinclairzx81/zero) - 3D graphics rendering pipeline. Implemented in JavaScript. Run in a terminal.
+  * [sinclairzx81/zero](/library/zero) - 3D graphics rendering pipeline. Implemented in JavaScript. Run in a terminal.
   * [Cytoscape.js](https://js.cytoscape.org/) - Graph theory (network) library for visualisation and analysis
-  * [leeoniya/uPlot](https://github.com/leeoniya/uPlot) - An exceptionally fast, tiny time series chart
+  * [leeoniya/uPlot](/library/uplot) - An exceptionally fast, tiny time series chart
   * [Introducing MikroORM, TypeScript data-mapper ORM with Identity Map](https://medium.com/dailyjs/introducing-mikro-orm-typescript-data-mapper-orm-with-identity-map-9ba58d049e02)
-  * [lukeed/throttles](https://github.com/lukeed/throttles) - A tiny (139B to 204B) utility to regulate the execution rate of your functions
+  * [lukeed/throttles](/library/throttles) - A tiny (139B to 204B) utility to regulate the execution rate of your functions
   * [Chakra UI](https://chakra-ui.com/) - Build accessible React apps & websites with speed
-  * [ai/nanoid](https://github.com/ai/nanoid) - Simple and reliable id generator
+  * [ai/nanoid](/library/nanoid) - Simple and reliable id generator
 
   ## Articles
 
@@ -39,7 +39,7 @@ body: |
 
   * [Falco](https://getfal.co/) - An Open Source WebPageTest runner
   * [TinaCMS](https://tinacms.org/) - Modern CMS that integrates with Gatsby and Next.js
-  * [getify/TypL](https://github.com/getify/TypL) - The JavaScript Type Linter
+  * [getify/TypL](/library/typl) - The JavaScript Type Linter
 
   ## TypeScript
 
@@ -51,7 +51,7 @@ body: |
 
   ## Testing
 
-  * [testing-library/cypress-testing-library](https://github.com/testing-library/cypress-testing-library) - Testing library bindings for Cypress
+  * [testing-library/cypress-testing-library](/library/cypress-testing-library) - Testing library bindings for Cypress
 
   ## Slides
 

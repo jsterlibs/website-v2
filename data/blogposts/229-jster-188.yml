@@ -19,23 +19,23 @@ body: |
   * [Beyond Docs](https://beyondjs.com/) - The Full Stack Modular + Universal Typescript Framework
   * [Next 13.1](https://nextjs.org/blog/next-13-1)
   * [GrapesJS](https://grapesjs.com/) - Free and Open Source Web Builder Framework
-  * [yisar/asta](https://github.com/yisar/asta) - Resumable SSR framework
+  * [yisar/asta](/library/asta) - Resumable SSR framework
   * [OpenNext](https://open-next.js.org/) - Open source Next.js serverless adapter
-  * [gbj/leptos](https://github.com/gbj/leptos) - Build fast web applications with Rust
+  * [gbj/leptos](/library/leptos) - Build fast web applications with Rust
 
   ## Tools
 
   * [Tamagui 1.0 🎉](https://tamagui.dev/blog/version-one) - Ship cross-platform React apps in ½ the time with 2x performance
   * [What’s new in Nx 15?. Nx v15 is finally here! Let’s go…](https://blog.nrwl.io/whats-new-in-nx-15-7e14e1ff282d)
-  * [unjs/unplugin](https://github.com/unjs/unplugin) - Unified plugin system for Vite, Rollup, Webpack, and more
-  * [github/catalyst](https://github.com/github/catalyst) - Catalyst is a set of patterns and techniques for developing components within a complex application.
-  * [marcj/TypeRunner](https://github.com/marcj/TypeRunner) - High-performance TypeScript compiler
-  * [danielroe/fontaine](https://github.com/danielroe/fontaine) - Automatic font fallback based on font metrics
-  * [vituum](https://github.com/vituum/vituum) - Fast prototyping with template engines and integrated frontend tools. Vituum is a small wrapper around Vite
+  * [unjs/unplugin](/library/unplugin) - Unified plugin system for Vite, Rollup, Webpack, and more
+  * [github/catalyst](/library/catalyst) - Catalyst is a set of patterns and techniques for developing components within a complex application.
+  * [marcj/TypeRunner](/library/typerunner) - High-performance TypeScript compiler
+  * [danielroe/fontaine](/library/fontaine) - Automatic font fallback based on font metrics
+  * [vituum](/library/vituum) - Fast prototyping with template engines and integrated frontend tools. Vituum is a small wrapper around Vite
   * [Vite 4.0 is out!](https://vitejs.dev/blog/announcing-vite4.html)
   * [Ladle](https://ladle.dev/) - Develop and test your React stories faster
-  * [g-plane/typed-query-selector](https://github.com/g-plane/typed-query-selector) - Better typed `querySelector` and `querySelectorAll`
-  * [google/wireit](https://github.com/google/wireit) - Wireit upgrades your npm/pnpm/yarn scripts to make them smarter and more efficient
+  * [g-plane/typed-query-selector](/library/typed-query-selector) - Better typed `querySelector` and `querySelectorAll`
+  * [google/wireit](/library/wireit) - Wireit upgrades your npm/pnpm/yarn scripts to make them smarter and more efficient
 
   ## Articles
 

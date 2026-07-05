@@ -12,14 +12,14 @@ body: |
 
   ## Libraries
 
-  * [json2html](https://github.com/moappi/json2html) - Json2html is a lightning fast client side javascript HTML templating library with wrappers for both jQuery and Node.js
+  * [json2html](/library/json2html) - Json2html is a lightning fast client side javascript HTML templating library with wrappers for both jQuery and Node.js
   * [Papanasi](https://papanasi.js.org/) - UI library to use cross frameworks
-  * [duetds/date-picker](https://github.com/duetds/date-picker) - Open source version of Duet Design System accessible date picker
+  * [duetds/date-picker](/library/date-picker-2) - Open source version of Duet Design System accessible date picker
   * [QuaggaJS, an advanced barcode-reader written in JavaScript](https://serratus.github.io/quaggaJS/)
-  * [oslabs-beta/dangoDB](https://github.com/oslabs-beta/dangoDB) - A MongoDB ODM for Deno
-  * [thoughtbot/fishery](https://github.com/thoughtbot/fishery) - A library for setting up JavaScript objects as test data
+  * [oslabs-beta/dangoDB](/library/dangodb) - A MongoDB ODM for Deno
+  * [thoughtbot/fishery](/library/fishery) - A library for setting up JavaScript objects as test data
   * [CASL.js](https://casl.js.org/v5/en/) - Isomorphic Authorization JavaScript library
-  * [esamattis/react-zorm](https://github.com/esamattis/react-zorm) - Type-safe form for React using Zod
+  * [esamattis/react-zorm](/library/react-zorm) - Type-safe form for React using Zod
 
   ## Frameworks
 
@@ -57,7 +57,7 @@ body: |
 
   ## Tools
 
-  * [postcss/postcss-media-minmax](https://github.com/postcss/postcss-media-minmax) - Writing simple and graceful Media Queries
+  * [postcss/postcss-media-minmax](/library/postcss-media-minmax) - Writing simple and graceful Media Queries
   * [Storybook 6.5](https://storybook.js.org/blog/storybook-6-5/)
   * [Capri](https://capri.build/) - Build static sites with interactive islands
   * [Announcing Cypress 10 with Component Testing Beta!](https://www.cypress.io/blog/2022/06/01/cypress-10-release/)

@@ -15,25 +15,25 @@ body: |
   ## Tools
 
   * [GraphQL Modules](https://www.graphql-modules.com/) - Tooling for GraphQL servers
-  * [micromark](https://github.com/micromark/micromark) - The smallest commonmark compliant markdown parser that exists; new basis for @unifiedjs (hundreds of projects w/ billions of downloads for dealing w/ content)
+  * [micromark](/library/micromark) - The smallest commonmark compliant markdown parser that exists; new basis for @unifiedjs (hundreds of projects w/ billions of downloads for dealing w/ content)
   * [Packup](https://packup.deno.dev/) - Packup is web application bundler for Deno, inspired by parcel
   * [Nextra](https://nextra.vercel.app/) - Nextra is a Next.js based static site generator. 0 lines of code needed.
-  * [ToolJet](https://github.com/ToolJet/ToolJet) - An open-source no-code platform for building and deploying internal tools.
+  * [ToolJet](/library/tooljet) - An open-source no-code platform for building and deploying internal tools.
   * [Modern Web](https://modern-web.dev/) - Guides, tools and libraries for modern web development.
 
   ## Libraries
 
-  * [flopflip](https://github.com/tdeekens/flopflip) - Flip or flop features in your React application in real-time backed by flag provider of your choice
-  * [fwouts/react-screenshot-test](https://github.com/fwouts/react-screenshot-test) - A dead simple library to screenshot test React components
-  * [kevglass/gute](https://github.com/kevglass/gute) - Gute is a simple web games library
-  * [enquirer](https://github.com/enquirer/enquirer) - Stylish, intuitive and user-friendly prompts, for Node.js. Used by eslint, webpack, Generate, lint-staged, pm2, gluegun, hygen, GitHub Actions Toolkit, @airbnb/nimbus, and many others!
+  * [flopflip](/library/flopflip) - Flip or flop features in your React application in real-time backed by flag provider of your choice
+  * [fwouts/react-screenshot-test](/library/react-screenshot-test) - A dead simple library to screenshot test React components
+  * [kevglass/gute](/library/gute) - Gute is a simple web games library
+  * [enquirer](/library/enquirer) - Stylish, intuitive and user-friendly prompts, for Node.js. Used by eslint, webpack, Generate, lint-staged, pm2, gluegun, hygen, GitHub Actions Toolkit, @airbnb/nimbus, and many others!
   * [Konva](https://konvajs.org/index.html) - HTML5 2d canvas js library for desktop and mobile applications
-  * [TuSimple/naive-ui](https://github.com/TuSimple/naive-ui) - A Vue 3 Component Library. Fairly Complete. Customizable Themes. Uses TypeScript. Not too Slow.
-  * [sindresorhus/ow](https://github.com/sindresorhus/ow) - Function argument validation for humans
+  * [TuSimple/naive-ui](/library/naive-ui) - A Vue 3 Component Library. Fairly Complete. Customizable Themes. Uses TypeScript. Not too Slow.
+  * [sindresorhus/ow](/library/ow) - Function argument validation for humans
   * [Swiper](https://swiperjs.com) - The Most Modern Mobile Touch Slider
-  * [tajo/react-range](https://github.com/tajo/react-range) - Range input with a slider. Accessible. Bring your own styles and markup.
-  * [country-code-emoji](https://www.npmjs.com/package/country-code-emoji) - Convert country codes to corresponding emojis
-  * [open-draft/until](https://github.com/open-draft/until) - Better async/await
+  * [tajo/react-range](/library/react-range) - Range input with a slider. Accessible. Bring your own styles and markup.
+  * [country-code-emoji](/library/country-code-emoji) - Convert country codes to corresponding emojis
+  * [open-draft/until](/library/until) - Better async/await
 
   ## Typescript
 

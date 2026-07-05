@@ -10,63 +10,63 @@ body: |
 
   ## Libraries
 
-  * [chenglou/pretext - Pure JavaScript/TypeScript library for multiline text measurement & layout](https://buff.ly/FuurpYA)
-  * [SuperSonic - SuperCollider's Synthesis Engine in the Browser](https://buff.ly/rLsloCD)
-  * [tinylibs/tinyclip: A tiny, cross-platform clipboard utility.](https://buff.ly/OMqtpfX)
+  * [chenglou/pretext - Pure JavaScript/TypeScript library for multiline text measurement & layout](/library/pretext)
+  * [SuperSonic - SuperCollider's Synthesis Engine in the Browser](https://sonic-pi.net/supersonic/demo.html)
+  * [tinylibs/tinyclip: A tiny, cross-platform clipboard utility.](/library/tinyclip)
 
   ## Frameworks
 
-  * [Introducing EmDash — the spiritual successor to WordPress that solves plugin security](https://bit.ly/4c0Aa99)
+  * [Introducing EmDash — the spiritual successor to WordPress that solves plugin security](https://blog.cloudflare.com/emdash-wordpress/)
   * [ArrowJS - Web framework designed for building with agents](https://arrow-js.com/)
-  * [Nitro v3 Beta is here](https://buff.ly/gNiuGoW)
-  * [Astro 6.0](https://buff.ly/MSyf23i)
-  * [StateSurface - Hypermedia inspired state-layout mapping runtime](https://buff.ly/iqqgEr1)
-  * [Solid.js v2.0.0 Beta - The <Suspense> is Over](https://buff.ly/n7pbS3C)
+  * [Nitro v3 Beta is here](https://nitro.build/blog/v3-beta)
+  * [Astro 6.0](https://astro.build/blog/astro-6/)
+  * [StateSurface - Hypermedia inspired state-layout mapping runtime](/library/state-surface)
+  * [Solid.js v2.0.0 Beta - The <Suspense> is Over](/library/solid)
 
   ## Security
 
-  * [Securing Local Development Environment Against Dependency Supply Chain Attacks](https://buff.ly/abKc9Xc)
-  * [LavaMoat - Proactive supply-chain security at runtime](https://buff.ly/SQVQEJf)
+  * [Securing Local Development Environment Against Dependency Supply Chain Attacks](https://simone-sanfratello.netlify.app/articles/securing-local-development-environment-against-dependency-supply-chain-attacks/)
+  * [LavaMoat - Proactive supply-chain security at runtime](https://lavamoat.github.io/)
 
   ## Articles
 
-  * [Guided Meditation for Developers](https://buff.ly/gRWtEZV)
-  * [Two React Design Choices Developers Don’t Like—But Can’t Avoid](https://buff.ly/h1PSho3)
-  * [Making React ProseMirror really, really fast](https://buff.ly/ddK3HtC)
-  * [Lies I was Told About Collaborative Editing, Part 2: Why we don't use Yjs](https://buff.ly/keCFcgP)
-  * [Evolving the Node.js Release Schedule](https://buff.ly/G7VF4Lp)
-  * [How Strawberry Rewrote 130K Lines from React to Svelte in Two Weeks](https://buff.ly/Wu46ySp)
+  * [Guided Meditation for Developers](https://nesbitt.io/2026/03/15/guided-meditation-for-developers.html)
+  * [Two React Design Choices Developers Don’t Like—But Can’t Avoid](https://dev.to/playfulprogramming/two-react-design-choices-developers-dont-like-but-cant-avoid-d6g)
+  * [Making React ProseMirror really, really fast](https://handlewithcare.dev/blog/making_react_prosemirror_really_really_fast/)
+  * [Lies I was Told About Collaborative Editing, Part 2: Why we don't use Yjs](https://www.moment.dev/blog/lies-i-was-told-pt-2)
+  * [Evolving the Node.js Release Schedule](https://nodejs.org/en/blog/announcements/evolving-the-nodejs-release-schedule)
+  * [How Strawberry Rewrote 130K Lines from React to Svelte in Two Weeks](https://strawberrybrowser.com/blog/react-to-svelte)
 
   ## Tools
 
-  * [Vitest 4.1 is out!](https://buff.ly/Uzah5JU)
+  * [Vitest 4.1 is out!](https://vitest.dev/blog/vitest-4-1.html)
   * [npmx - Package Browser for the npm Registry](https://npmx.dev/)
-  * [Vite 8.0 is out!](https://ilo.im/16bd5y)
-  * [Penpot - Like Figma but open source](https://buff.ly/VpiJVsw)
+  * [Vite 8.0 is out!](https://vite.dev/blog/announcing-vite8)
+  * [Penpot - Like Figma but open source](/library/penpot)
 
   ## Runtimes
 
-  * [Announcing TypeScript 6.0](https://buff.ly/2eJPRue)
-  * [capricorn86/happy-dom: A JavaScript implementation of a web browser without its graphical user interface](https://buff.ly/7FHwQYP)
+  * [Announcing TypeScript 6.0](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/)
+  * [capricorn86/happy-dom: A JavaScript implementation of a web browser without its graphical user interface](/library/happy-dom)
 
   ## Components
 
-  * [Cally: small, feature-rich calendar components](https://buff.ly/eJZsiAd)
+  * [Cally: small, feature-rich calendar components](https://wicky.nillia.ms/cally/)
 
   ## Demos
 
-  * [Audio Trails — Real-Time Microphone Visualizer](https://buff.ly/FyGIlDe)
+  * [Audio Trails — Real-Time Microphone Visualizer](https://devoted-miracle-production-4281.up.railway.app/)
 
   ## Standards
 
-  * [Temporal: The 9-Year Journey to Fix Time in JavaScript](https://buff.ly/F7gxAhM)
-  * [Source Maps: Shipping Features Through Standards](https://buff.ly/p3KMXl6)
+  * [Temporal: The 9-Year Journey to Fix Time in JavaScript](https://bloomberg.github.io/js-blog/post/temporal/)
+  * [Source Maps: Shipping Features Through Standards](https://bloomberg.github.io/js-blog/post/standardizing-source-maps/)
 
   ## Techniques
 
-  * [Building a Procedural Hex Map with Wave Function Collapse](https://buff.ly/Y95NMNe)
-  * [Making keyboard navigation effortless](https://buff.ly/20rwsGu)
+  * [Building a Procedural Hex Map with Wave Function Collapse](https://felixturner.github.io/hex-map-wfc/article/)
+  * [Making keyboard navigation effortless](https://blogs.windows.com/msedgedev/2026/03/05/making-keyboard-navigation-effortless/)
 
   ## Benchmarks
 
-  * [SPA vs. Hypermedia: Real-World Performance Under Load](https://buff.ly/RIxHiKk)
+  * [SPA vs. Hypermedia: Real-World Performance Under Load](https://zweiundeins.gmbh/en/blog/spa-vs-hypermedia-real-world-performance-under-load)

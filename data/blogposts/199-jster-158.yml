@@ -10,19 +10,19 @@ body: |
 
   ## Libraries
 
-  * [dai-shi/redux-in-worker](https://github.com/dai-shi/redux-in-worker) - Entire Redux in Web Worker
+  * [dai-shi/redux-in-worker](/library/redux-in-worker) - Entire Redux in Web Worker
   * [zipson](https://jgranstrom.github.io/zipson/) - A drop-in alternative to JSON.parse/stringify with added compression and streaming support
-  * [WebReflection/JSONH](https://github.com/WebReflection/JSONH) - A way to pack/unpack generic homogenous collections
-  * [jcubic/sysend.js](https://github.com/jcubic/sysend.js) - Send messages between pages that are open in the same browser
-  * [beatgammit/gzip-js](https://github.com/beatgammit/gzip-js) - A pure JavaScript implementation of the GZIP file format
-  * [jcubic/jquery.terminal](https://github.com/jcubic/jquery.terminal) - Terminal emulator as a jQuery plugin
-  * [retarsis/routeshub](https://github.com/retarsis/routeshub) - A route manager and pattern for Angular
-  * [miketalbot/js-coroutines](https://github.com/miketalbot/js-coroutines) - coroutines for JavaScript
+  * [WebReflection/JSONH](/library/jsonh) - A way to pack/unpack generic homogenous collections
+  * [jcubic/sysend.js](/library/sysend-js) - Send messages between pages that are open in the same browser
+  * [beatgammit/gzip-js](/library/gzip-js) - A pure JavaScript implementation of the GZIP file format
+  * [jcubic/jquery.terminal](/library/jquery-terminal) - Terminal emulator as a jQuery plugin
+  * [retarsis/routeshub](/library/routeshub) - A route manager and pattern for Angular
+  * [miketalbot/js-coroutines](/library/js-coroutines) - coroutines for JavaScript
   * [Splitting.js](https://splitting.js.org/) - CSS variables for split words and characters
-  * [gajus/mutual-exclusion](https://github.com/gajus/mutual-exclusion) - Mutual Exclusion (mutex) object for JavaScript
-  * [lukeed/escalade](https://github.com/lukeed/escalade) - A tiny (183B to 210B) and fast utility to ascend parent directories
+  * [gajus/mutual-exclusion](/library/mutual-exclusion) - Mutual Exclusion (mutex) object for JavaScript
+  * [lukeed/escalade](/library/escalade) - A tiny (183B to 210B) and fast utility to ascend parent directories
   * [Muuri](https://muuri.dev/) - Infinite layouts with batteries included
-  * [vvo/tzdb](https://github.com/vvo/tzdb) - Time zone helpers
+  * [vvo/tzdb](/library/tzdb) - Time zone helpers
   * [graphics-ts](https://dev.to/imax153/graphics-ts-functional-bindings-for-the-html-5-canvas-api-1832) - Functional Bindings for the HTML 5 Canvas API
 
   ## GraphQL
@@ -32,8 +32,8 @@ body: |
 
   ## Tools
 
-  * [postcss/postcss-100vh-fix](https://github.com/postcss/postcss-100vh-fix) - PostCSS plugin to fix iOS’s bug with 100vh.
-  * [crewdevio/Trex](https://github.com/crewdevio/Trex) - A package manager for Deno
+  * [postcss/postcss-100vh-fix](/library/postcss-100vh-fix) - PostCSS plugin to fix iOS’s bug with 100vh.
+  * [crewdevio/Trex](/library/trex) - A package manager for Deno
   * [Foam](https://foambubble.github.io/foam/) - A personal knowledge management and sharing system
   * [WebGLStudio](https://webglstudio.org/demo/) - 3D studio on the web
 

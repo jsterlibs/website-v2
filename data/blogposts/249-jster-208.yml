@@ -10,31 +10,31 @@ body: |
 
   ## Libraries
 
-  * [CSS Hooks - A new take on inline styles](https://buff.ly/3R8jClk)
-  * [google/schema-dts: JSON-LD TypeScript types for Schema.org vocabulary](https://github.com/google/schema-dts)
-  * [varsace - Design tokens as TypeScript variables](https://buff.ly/47Wllku)
-  * [Effect - TS library to support creation of complex applications](https://buff.ly/47UWUDX)
-  * [Plyr - A simple, customizable HTML5 Video, Audio, YouTube and Vimeo player](https://buff.ly/2WNqF7r)
-  * [DavidWells/analytics: Lightweight analytics abstraction layer for tracking page views, custom events, & identifying visitors](https://buff.ly/46qtjRB)
-  * [WebReflection/coincident: An Atomics based Proxy to simplify, and synchronize, Worker related tasks.](https://buff.ly/3WSfb0a)
-  * [Nuka Carousel 7 for React](https://buff.ly/3ujrOY0)
-  * [jagenjo/litegraph.js: A graph node engine and editor written in Javascript similar to PD or UDK Blueprints, comes with its own editor in HTML5 Canvas2D](https://buff.ly/43b8BV6)
+  * [CSS Hooks - A new take on inline styles](https://css-hooks.com/)
+  * [google/schema-dts: JSON-LD TypeScript types for Schema.org vocabulary](/library/schema-dts)
+  * [varsace - Design tokens as TypeScript variables](/library/varsace)
+  * [Effect - TS library to support creation of complex applications](https://effect.website/)
+  * [Plyr - A simple, customizable HTML5 Video, Audio, YouTube and Vimeo player](https://plyr.io/)
+  * [DavidWells/analytics: Lightweight analytics abstraction layer for tracking page views, custom events, & identifying visitors](/library/analytics)
+  * [WebReflection/coincident: An Atomics based Proxy to simplify, and synchronize, Worker related tasks.](/library/coincident)
+  * [Nuka Carousel 7 for React](https://nearform.com/open-source/nuka-carousel/)
+  * [jagenjo/litegraph.js: A graph node engine and editor written in Javascript similar to PD or UDK Blueprints, comes with its own editor in HTML5 Canvas2D](/library/litegraph-js)
 
   ## Articles
 
-  * [A simple WebSocket benchmark in JavaScript: Node.js versus Bun](https://buff.ly/47wQ87B)
-  * [How Qwik’s Astro Integration Beats Both React and Vanilla JS](https://buff.ly/47sEY3z)
-  * [JS Proxy Shenanigans](https://buff.ly/3G7UPZj)
+  * [A simple WebSocket benchmark in JavaScript: Node.js versus Bun](https://lemire.me/blog/2023/11/25/a-simple-websocket-benchmark-in-javascript-node-js-versus-bun/)
+  * [How Qwik’s Astro Integration Beats Both React and Vanilla JS](https://thenewstack.io/how-quiks-astro-integration-beats-both-react-and-vanilla-js/)
+  * [JS Proxy Shenanigans](https://webreflection.medium.com/js-proxy-shenanigans-3c1c9452da60)
 
   ## Frameworks
 
-  * [Analog - metaframework for Angular](https://buff.ly/3JMLOrO)
+  * [Analog - metaframework for Angular](https://analogjs.org/)
 
   ## TypeScript
 
-  * [Announcing TypeScript 5.3](https://buff.ly/47J4fWS)
+  * [Announcing TypeScript 5.3](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3/)
 
   ## Tools
 
-  * [bytecodealliance/javy: JS to WebAssembly toolchain](https://buff.ly/46pOumY)
-  * [Vite 5.0 is out!](https://buff.ly/3MNQaiV)
+  * [bytecodealliance/javy: JS to WebAssembly toolchain](/library/javy)
+  * [Vite 5.0 is out!](https://vite.dev/blog/announcing-vite5)

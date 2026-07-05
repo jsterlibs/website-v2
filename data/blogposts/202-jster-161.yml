@@ -13,13 +13,13 @@ body: |
   ## Libraries
 
   * [Sass: LibSass is Deprecated](https://sass-lang.com/blog/libsass-is-deprecated)
-  * [matthiasott/a11y-accordion-tabs](https://github.com/matthiasott/a11y-accordion-tabs) - A script for an accessible accordion tabs component
-  * [p-limit](https://www.npmjs.com/package/p-limit) - Run multiple promise-returning & async functions with limited concurrency
+  * [matthiasott/a11y-accordion-tabs](/library/a11y-accordion-tabs) - A script for an accessible accordion tabs component
+  * [p-limit](/library/p-limit) - Run multiple promise-returning & async functions with limited concurrency
   * [fullPage.js](https://alvarotrigo.com/fullPage/) - Create beautiful fullscreen scrolling websites
-  * [pubkey/broadcast-channel](https://github.com/pubkey/broadcast-channel) - BroadcastChannel to send data between different browser-tabs or nodejs-processes
-  * [ben-rogerson/twin.macro](https://github.com/ben-rogerson/twin.macro) - Twin blends the magic of Tailwind with the flexibility of css-in-js
-  * [daybrush/selecto](https://github.com/daybrush/selecto) - Selecto.js is a component that allows you to select elements in the drag area using the mouse or touch
-  * [komarovalexander/ka-table](https://github.com/komarovalexander/ka-table) - React Table component with Sorting, Filtering, Grouping, Virtualization, Editing and many more
+  * [pubkey/broadcast-channel](/library/broadcast-channel) - BroadcastChannel to send data between different browser-tabs or nodejs-processes
+  * [ben-rogerson/twin.macro](/library/twin-macro) - Twin blends the magic of Tailwind with the flexibility of css-in-js
+  * [daybrush/selecto](/library/selecto) - Selecto.js is a component that allows you to select elements in the drag area using the mouse or touch
+  * [komarovalexander/ka-table](/library/ka-table) - React Table component with Sorting, Filtering, Grouping, Virtualization, Editing and many more
 
   ## TypeScript
 
@@ -31,7 +31,7 @@ body: |
 
   ## Animation
 
-  * [bendc/animateplus](https://github.com/bendc/animateplus) - A+ animation module for the modern web
+  * [bendc/animateplus](/library/animateplus) - A+ animation module for the modern web
 
   ## React
 
@@ -45,8 +45,8 @@ body: |
   * [Rome Toolchain](https://rome.tools/) - Everything in one toolchain for JavaScript
   * [Electron Forge](https://www.electronforge.io/) - A complete tool for creating, publishing, and installing modern Electron applications
   * [Storybook for React Native](https://medium.com/@vasikarla.raj/storybook-for-native-d772654c7133)
-  * [Rockpack](https://github.com/AlexSergey/rockpack) - All-in-one solution for developing React applications with webpack
-  * [kitten/runruntypes](https://github.com/kitten/runruntypes) - A poor man's runtime-only type checker
+  * [Rockpack](/library/rockpack) - All-in-one solution for developing React applications with webpack
+  * [kitten/runruntypes](/library/runruntypes) - A poor man's runtime-only type checker
   * [Webpack 5](https://webpack.js.org/blog/2020-10-10-webpack-5-release/)
 
   ## Articles

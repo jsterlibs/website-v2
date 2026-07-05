@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/developit/unfetch }}
+  {{ screenshot: /library/unfetch }}
 
-  * [developit/unfetch](https://github.com/developit/unfetch) - 0.5k polyfill for `fetch`.
+  * [developit/unfetch](/library/unfetch) - 0.5k polyfill for `fetch`.
   * [Animo](https://animo.js.org/) - Manage transitions and animations through JavaScript.
 
   ## Articles
@@ -33,7 +33,7 @@ body: |
 
   * [IRHydra](http://mrale.ph/irhydra/2/) - Understand what V8 and Dart are doing.
   * [Jest 19](https://facebook.github.io/jest/blog/2017/02/21/jest-19-immersive-watch-mode-test-platform-improvements.html) - Immersive Watch Mode & Test Platform Improvements
-  * [Danger.js](https://github.com/danger/danger-js) - Infrastructure level automation for projects.
+  * [Danger.js](/library/danger-js) - Infrastructure level automation for projects.
 
   ## Demos
 

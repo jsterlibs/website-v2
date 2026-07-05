@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [Z](https://z-pattern-matching.github.io/) - Native pattern matching for JavaScript
-  * [Flet/github-slugger](https://github.com/Flet/github-slugger) - Generate a slug just like GitHub does for markdown headings
+  * [Flet/github-slugger](/library/github-slugger) - Generate a slug just like GitHub does for markdown headings
 
   ## Interviews
 
@@ -42,4 +42,4 @@ body: |
 
   ## Frameworks
 
-  * [sendanor/norjs](https://github.com/sendanor/norjs) - WIP full stack framework
+  * [sendanor/norjs](/library/norjs) - WIP full stack framework

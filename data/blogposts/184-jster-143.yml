@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [lukeed/polka](https://github.com/lukeed/polka) - A micro web server so fast, it'll make you dance!
+  * [lukeed/polka](/library/polka) - A micro web server so fast, it'll make you dance!
   * [Overmind](https://overmindjs.org/) - Frictionless state management
-  * [gunn/pure-store](https://github.com/gunn/pure-store) - A tiny immutable store with type safety
+  * [gunn/pure-store](/library/pure-store) - A tiny immutable store with type safety
 
   ## Toolkit
 
@@ -28,10 +28,10 @@ body: |
 
   ## Tools
 
-  * [lukeed/pwa](https://github.com/lukeed/pwa) - Universal PWA Builder
-  * [transitive-bullshit/awesome-mdx](https://github.com/transitive-bullshit/awesome-mdx) - List of awesome mdx resources
+  * [lukeed/pwa](/library/pwa) - Universal PWA Builder
+  * [transitive-bullshit/awesome-mdx](/library/awesome-mdx) - List of awesome mdx resources
   * [Pika CDN](https://www.pika.dev/cdn) - A CDN for modern JavaScript
-  * [palmerhq/tsdx](https://github.com/palmerhq/tsdx) - Zero-config CLI for TypeScript package development
+  * [palmerhq/tsdx](/library/tsdx) - Zero-config CLI for TypeScript package development
 
   ## npm
 

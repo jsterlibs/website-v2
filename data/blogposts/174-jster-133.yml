@@ -11,20 +11,20 @@ body: |
   ## Libraries
 
   * [Elevator.js](http://tholman.com/elevator.js/) - It's what you think it is
-  * [superfly/cdn](https://github.com/superfly/cdn)
-  * [remy/memfetch](https://github.com/remy/memfetch) - Memoizing version of fetch for development
-  * [facebookincubator/fbt](https://github.com/facebookincubator/fbt) - I18n library by Facebook
-  * [ts-option](https://www.npmjs.com/package/ts-option) - Scala like Option type for TypeScript/JavaScript
+  * [superfly/cdn](/library/cdn)
+  * [remy/memfetch](/library/memfetch) - Memoizing version of fetch for development
+  * [facebookincubator/fbt](/library/fbt) - I18n library by Facebook
+  * [ts-option](/library/ts-option) - Scala like Option type for TypeScript/JavaScript
 
   ## Frameworks
 
-  * [script-8](https://github.com/script-8/script-8.github.io) - A fantasy computer for making, sharing, and playing tiny retro-looking games
+  * [script-8](/library/script-8-github-io) - A fantasy computer for making, sharing, and playing tiny retro-looking games
   * [What's New in Angular 7](https://www.telerik.com/blogs/whats-new-in-angular-7)
 
   ## Tools
 
-  * [tsc-watch](https://www.npmjs.com/package/tsc-watch) - Like tsc but with better hooks
-  * [atlassian/yarn-deduplicate](https://github.com/atlassian/yarn-deduplicate) - Deduplication tool for yarn.lock files
+  * [tsc-watch](/library/tsc-watch) - Like tsc but with better hooks
+  * [atlassian/yarn-deduplicate](/library/yarn-deduplicate) - Deduplication tool for yarn.lock files
   * [Eleventy](https://www.11ty.io/) - A light static site generator
 
   ## Articles

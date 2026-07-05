@@ -10,12 +10,12 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/harc/ohm }}
+  {{ screenshot: /library/ohm }}
 
-  * [harc/ohm](https://github.com/harc/ohm) - A library and language for building parsers, interpreters, compilers, etc.
+  * [harc/ohm](/library/ohm) - A library and language for building parsers, interpreters, compilers, etc.
   * [Feathers](https://feathersjs.com/) - An open source REST and realtime API layer for modern applications.
-  * [PolymerLabs/lit-html](https://github.com/PolymerLabs/lit-html) - HTML template literals in JavaScript.
-  * [wooorm/refractor](https://github.com/wooorm/refractor) - Lightweight, robust, elegant virtual syntax highlighting using Prism.
+  * [PolymerLabs/lit-html](/library/lit-html) - HTML template literals in JavaScript.
+  * [wooorm/refractor](/library/refractor) - Lightweight, robust, elegant virtual syntax highlighting using Prism.
 
   ## Articles
 
@@ -41,5 +41,5 @@ body: |
   ## Tools
 
   * [Up by TJ Holowaychuk](https://medium.com/@tjholowaychuk/up-b3db1ca930ee) - Easier Serverless.
-  * [Babel v7.0.0-alpha.19](https://github.com/babel/babel/releases/tag/v7.0.0-alpha.19)
+  * [Babel v7.0.0-alpha.19](/library/babel)
   * [RunKit is Node prototyping](https://runkit.com) - Prototype and explore your ideas.

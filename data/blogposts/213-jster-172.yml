@@ -11,11 +11,11 @@ body: |
   ## Libraries
 
   * [Mirage JS](https://miragejs.com/) - An API mocking library for frontend
-  * [perceived-dev/optimistic-state](https://github.com/perceived-dev/optimistic-state) - Optimistic state with rollbacks and race condition handling
+  * [perceived-dev/optimistic-state](/library/optimistic-state) - Optimistic state with rollbacks and race condition handling
   * [What’s Coming in React 18](https://www.telerik.com/blogs/whats-coming-react-18)
   * [React Navigation 6.0](https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/)
-  * [sindresorhus/p-queue](https://github.com/sindresorhus/p-queue) - Promise queue with concurrency control
-  * [polygonplanet/chillout](https://github.com/polygonplanet/chillout) - Reduce CPU usage by non-blocking async loop and psychologically speed up in JavaScript
+  * [sindresorhus/p-queue](/library/p-queue) - Promise queue with concurrency control
+  * [polygonplanet/chillout](/library/chillout) - Reduce CPU usage by non-blocking async loop and psychologically speed up in JavaScript
   * [daisyUI](https://daisyui.com/) - Tailwind CSS Components
 
   ## Frameworks
@@ -31,9 +31,9 @@ body: |
 
   ## Tools
 
-  * [lahmatiy/react-render-tracker](https://github.com/lahmatiy/react-render-tracker) - React render tracker – a tool to discover performance issues related to unintentional re-renders and unmounts
-  * [unjs/unplugin](https://github.com/unjs/unplugin) - Unified plugin system for Vite, Rollup, and Webpack
-  * [LingDong-/fishdraw](https://github.com/LingDong-/fishdraw) - Procedurally generated fish drawings
+  * [lahmatiy/react-render-tracker](/library/react-render-tracker) - React render tracker – a tool to discover performance issues related to unintentional re-renders and unmounts
+  * [unjs/unplugin](/library/unplugin) - Unified plugin system for Vite, Rollup, and Webpack
+  * [LingDong-/fishdraw](/library/fishdraw) - Procedurally generated fish drawings
   * [Astro](https://astro.build/) - Build faster websites with less client-side JavaScript
 
   ## Articles

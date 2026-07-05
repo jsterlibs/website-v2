@@ -12,18 +12,18 @@ body: |
 
   ## Libraries
 
-  * [alexandprivate/react-blurify](https://github.com/alexandprivate/react-blurify) - Apply blur effect to children components
-  * [nicojs/typed-inject](https://github.com/nicojs/typed-inject) - Type-safe dependency injection for TypeScript
-  * [davidkpiano/xactor](https://github.com/davidkpiano/xactor) - Actors for the modern web
-  * [hyperhtml](https://www.npmjs.com/package/hyperhtml) - A Fast & Light Virtual DOM Alternative
-  * [artalar/reatom](https://github.com/artalar/reatom) - State manager with a focus of all needs
-  * [kripod/glaze](https://github.com/kripod/glaze) - CSS-in-JS microlibrary for making design systems approachable with React
-  * [Popmotion](https://github.com/Popmotion/popmotion) - The animator's toolbox
-  * [pubkey/rxdb](https://github.com/pubkey/rxdb) - A realtime Database for JavaScript Applications
+  * [alexandprivate/react-blurify](/library/react-blurify) - Apply blur effect to children components
+  * [nicojs/typed-inject](/library/typed-inject) - Type-safe dependency injection for TypeScript
+  * [davidkpiano/xactor](/library/xactor) - Actors for the modern web
+  * [hyperhtml](/library/hyperhtml) - A Fast & Light Virtual DOM Alternative
+  * [artalar/reatom](/library/reatom) - State manager with a focus of all needs
+  * [kripod/glaze](/library/glaze) - CSS-in-JS microlibrary for making design systems approachable with React
+  * [Popmotion](/library/popmotion) - The animator's toolbox
+  * [pubkey/rxdb](/library/rxdb) - A realtime Database for JavaScript Applications
 
   ## Frameworks
 
-  * [Tauri](https://github.com/tauri-apps/tauri) - Build smaller, faster, and more secure desktop applications with a web frontend
+  * [Tauri](/library/tauri) - Build smaller, faster, and more secure desktop applications with a web frontend
   * [Alibaba Midway Serverless v1.0](https://medium.com/@uplifted_latte_kangaroo_248/alibaba-midway-serverless-v1-0-lets-building-serverless-cloud-ecosystem-with-node-js-8bfa943c4fb7)
 
   ## Articles
@@ -51,12 +51,12 @@ body: |
   ## Tools
 
   * [The polite way of building a javascript util library for any project](https://gitlab.com/codebryo/pleasejs)
-  * [StackTracey](https://www.npmjs.com/package/stacktracey) - Parses call stacks. Reads sources. Clean & filtered output. Sourcemaps. Node & browsers.
-  * [elderjs](https://github.com/Elderjs/elderjs) - Elder.js is an opinionated static site generator and web framework for Svelte built with SEO in mind
+  * [StackTracey](/library/stacktracey) - Parses call stacks. Reads sources. Clean & filtered output. Sourcemaps. Node & browsers.
+  * [elderjs](/library/elderjs) - Elder.js is an opinionated static site generator and web framework for Svelte built with SEO in mind
   * [Snowpack 2.7](https://www.snowpack.dev/posts/2020-07-30-snowpack-2-7-release/) - The faster frontend build tool
   * [Announcing TypeScript 4.0](https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/)
-  * [vite](https://github.com/vitejs/vite) - Native-ESM powered web dev build tool. It's fast.
-  * [sucrase](https://github.com/alangpierce/sucrase) - Super-fast alternative to Babel for when you can target modern JS runtimes
+  * [vite](/library/vite) - Native-ESM powered web dev build tool. It's fast.
+  * [sucrase](/library/sucrase) - Super-fast alternative to Babel for when you can target modern JS runtimes
 
   ## Interviews
 
@@ -73,7 +73,7 @@ body: |
 
   ## Games
 
-  * [dabreegster/abstreet](https://github.com/dabreegster/abstreet) - A traffic simulation game exploring how small changes to roads affect cyclists, transit users, pedestrians, and drivers
+  * [dabreegster/abstreet](/library/abstreet) - A traffic simulation game exploring how small changes to roads affect cyclists, transit users, pedestrians, and drivers
 
   ## Songs
 

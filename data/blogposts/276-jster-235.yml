@@ -10,24 +10,24 @@ body: |
 
   ## Frameworks
 
-  * [hypermodeinc/modus: Modus: an open source, serverless framework for building intelligent functions and APIs, powered by WebAssembly](https://buff.ly/3YRyKIO)
-  * [JavaScript Frameworks - Heading into 2025](https://buff.ly/421fLxc)
+  * [hypermodeinc/modus: Modus: an open source, serverless framework for building intelligent functions and APIs, powered by WebAssembly](/library/modus)
+  * [JavaScript Frameworks - Heading into 2025](https://dev.to/playfulprogramming/javascript-frameworks-heading-into-2025-hkb)
 
   ## Libraries
 
-  * [potree - WebGL point cloud viewer for large datasets](https://buff.ly/4f84DTd)
-  * [Radashi - TypeScript utility library](https://buff.ly/4704TA9)
-  * [Vega - Visualization grammars](https://buff.ly/2LlLLF3)
+  * [potree - WebGL point cloud viewer for large datasets](/library/potree)
+  * [Radashi - TypeScript utility library](https://radashi.js.org/)
+  * [Vega - Visualization grammars](https://vega.github.io/)
 
   ## Tools
 
-  * [drawdb-io/drawdb: Free, simple, and intuitive online database diagram editor and SQL generator.](https://buff.ly/3YQjaNB)
-  * [sonda - Universal visualizer and analyzer for JavaScript and CSS bundles](https://buff.ly/3CcTCBr)
-  * [Grasp - Search, replace, and refactor your JavaScript code based on its structure rather than its text](https://buff.ly/3Uwl0Ax)
+  * [drawdb-io/drawdb: Free, simple, and intuitive online database diagram editor and SQL generator.](/library/drawdb)
+  * [sonda - Universal visualizer and analyzer for JavaScript and CSS bundles](/library/sonda)
+  * [Grasp - Search, replace, and refactor your JavaScript code based on its structure rather than its text](https://www.graspjs.com/)
 
   ## Articles
 
-  * [The Performance Inequality Gap, 2024](https://buff.ly/4ar3lzB)
+  * [The Performance Inequality Gap, 2024](https://infrequently.org/2024/01/performance-inequality-gap-2024/)
 
   ## Papers
 

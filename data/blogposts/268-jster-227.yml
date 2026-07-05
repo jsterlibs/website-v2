@@ -11,36 +11,36 @@ body: |
   ## Libraries
 
   * [dnd kit – a modern drag and drop toolkit for React](https://dndkit.com/)
-  * [@pekkis/finnish-name-randomizer - Generate random Finnish names](https://buff.ly/3ZeXF9M)
-  * [toad-scheduler - In-memory TypeScript scheduler](https://buff.ly/494zahy)
-  * [TypeSpec - Describe APIs](https://buff.ly/3vNg6pm)
-  * [tinybench - A simple, tiny and lightweight benchmarking library!](https://buff.ly/3w25sLm)
-  * [electric-sql/pglite: Lightweight Postgres packaged as WASM into a TypeScript library for the browser, Node.js, Bun and Deno](https://buff.ly/3uWk5Qk)
+  * [@pekkis/finnish-name-randomizer - Generate random Finnish names](/library/pekkis-finnish-name-randomizer)
+  * [toad-scheduler - In-memory TypeScript scheduler](/library/toad-scheduler)
+  * [TypeSpec - Describe APIs](https://typespec.io/)
+  * [tinybench - A simple, tiny and lightweight benchmarking library!](/library/tinybench)
+  * [electric-sql/pglite: Lightweight Postgres packaged as WASM into a TypeScript library for the browser, Node.js, Bun and Deno](/library/pglite)
 
   ## Articles
 
-  * [A different way to think about TypeScript](https://buff.ly/3AnZ5Va)
-  * [The State of ES5 on the Web](https://buff.ly/4cYD1hn)
+  * [A different way to think about TypeScript](https://www.rob.directory/blog/a-different-way-to-think-about-typescript)
+  * [The State of ES5 on the Web](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)
   * [The Great npm Garbage Patch](https://buff.ly/46LjEH8)
 
   ## Science
 
-  * [MSc thesis - Impact of React component libraries on developer experience - An empirical study on component libraries' styling approaches](https://buff.ly/4eltHF9)
+  * [MSc thesis - Impact of React component libraries on developer experience - An empirical study on component libraries' styling approaches](https://www.researchgate.net/publication/383941317_Impact_of_React_component_libraries_on_developer_experience_-_An_empirical_study_on_component_libraries'_styling_approaches)
 
   ## Techniques
 
-  * [JavaScript RORO pattern](https://buff.ly/3XEyrAk)
-  * [What is atomic state management?](https://buff.ly/4d1NGYM)
-  * [The Monospace Web](https://buff.ly/3YXpJOM)
+  * [JavaScript RORO pattern](https://www.tinyblog.dev/blog/2020-07-13-javascript-roro-pattern/)
+  * [What is atomic state management?](https://www.frontendundefined.com/posts/monthly/jotai-atomic-state-management/)
+  * [The Monospace Web](https://owickstrom.github.io/the-monospace-web/)
 
   ## Frameworks
 
-  * [KaibanJS - AI agent framework for JavaScript](https://buff.ly/3XEvoYM)
+  * [KaibanJS - AI agent framework for JavaScript](https://www.kaibanjs.com/)
 
   ## Tools
 
-  * [Announcing Rsbuild 1.0](https://buff.ly/3Xci0cY)
+  * [Announcing Rsbuild 1.0](https://rsbuild.rs/community/releases/v1-0)
 
   ## Languages
 
-  * [Announcing TypeScript 5.6 RC](https://buff.ly/4fYe4oT)
+  * [Announcing TypeScript 5.6 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6-rc/)

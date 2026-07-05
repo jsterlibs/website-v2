@@ -38,8 +38,8 @@ body: |
 
   ## Tools
 
-  * [fastpack](https://github.com/fastpack/fastpack) - Faster than blazing fast bundler
-  * [lorenzofox3/zora](https://github.com/lorenzofox3/zora) - Lightest, yet Fastest Javascript test runner for nodejs and browsers
+  * [fastpack](/library/fastpack) - Faster than blazing fast bundler
+  * [lorenzofox3/zora](/library/zora) - Lightest, yet Fastest Javascript test runner for nodejs and browsers
   * [Percy](https://percy.io/) - Solving visual testing across design, development, and deployment
 
   ## Demos

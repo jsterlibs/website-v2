@@ -14,9 +14,9 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/Drulac/template-literal }}
+  {{ screenshot: /library/template-literal }}
 
-  * [Drulac/template-literal](https://github.com/Drulac/template-literal) - Simple template engine built on top of the new syntax.
+  * [Drulac/template-literal](/library/template-literal) - Simple template engine built on top of the new syntax.
   * [Nuxt.js 1.0 is out 🎉](https://medium.com/@nuxt_js/nuxt-js-1-0-is-out-bab1af459972) - Nuxt.js is like Next.js but for Vue.
   * [anime.js](http://animejs.com/) - Animations made easy.
   * [Why Ramda?](http://fr.umio.us/why-ramda/) - Why would you use Ramda over Lodash and such?
@@ -47,7 +47,7 @@ body: |
 
   ## Tools
 
-  * [fhinkel/type-profile](https://github.com/fhinkel/type-profile) - Collect runtime type information of your JavaScript code.
+  * [fhinkel/type-profile](/library/type-profile) - Collect runtime type information of your JavaScript code.
   * [Iroh](https://maierfelix.github.io/Iroh/) - Dynamic code analysis for JavaScript.
-  * [wix/detox](https://github.com/wix/detox) - Gray Box E2E Tests and Automation Library for Mobile Apps.
-  * [GoogleChrome/rendertron](https://github.com/GoogleChrome/rendertron) - A dockerized, headless Chrome rendering solution.
+  * [wix/detox](/library/detox) - Gray Box E2E Tests and Automation Library for Mobile Apps.
+  * [GoogleChrome/rendertron](/library/rendertron) - A dockerized, headless Chrome rendering solution.

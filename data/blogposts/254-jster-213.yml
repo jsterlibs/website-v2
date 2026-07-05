@@ -10,28 +10,28 @@ body: |
 
   ## Libraries
 
-  * [WebReflection/fetch: A fetch with Response abilities.](https://buff.ly/3wkpNvJ)
-  * [formkit/tempo: 📆 Parse, format, manipulate, and internationalize dates and times in JavaScript and TypeScript.](https://buff.ly/4bz5BX9)
-  * [awslabs/llrt: LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.](https://buff.ly/3SSeLGX)
-  * [jQuery 4.0.0 is available in beta](https://buff.ly/42xFg7x)
+  * [WebReflection/fetch: A fetch with Response abilities.](/library/fetch-2)
+  * [formkit/tempo: 📆 Parse, format, manipulate, and internationalize dates and times in JavaScript and TypeScript.](/library/tempo)
+  * [awslabs/llrt: LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.](/library/llrt)
+  * [jQuery 4.0.0 is available in beta](https://blog.jquery.com/2024/02/06/jquery-4-0-0-beta/)
 
   ## React
 
-  * [What is coming for React](https://buff.ly/49G7xLP)
+  * [What is coming for React](https://react.dev/blog/2024/02/15/react-labs-what-we-have-been-working-on-february-2024)
 
   ## Tools
 
-  * [nelipuu/zbind: Zig-TypeScript binding generator](https://buff.ly/48hdWvR)
-  * [dax - Cross-platform shell tools for Node.js](https://buff.ly/49sM6xn)
-  * [Storybook 8 Beta](https://buff.ly/42s1OH1)
-  * [Simple stack 🌱 - Stack of tools to simplify Astro workflow](https://buff.ly/482Qq5p)
+  * [nelipuu/zbind: Zig-TypeScript binding generator](/library/zbind)
+  * [dax - Cross-platform shell tools for Node.js](https://dsherret.dev/posts/dax-node-js/)
+  * [Storybook 8 Beta](https://storybook.js.org/blog/storybook-8-beta/)
+  * [Simple stack 🌱 - Stack of tools to simplify Astro workflow](https://simple-stack.dev/)
 
   ## Frameworks
 
-  * [Hono - ultrafast framework for the edge has reached 4.0](https://buff.ly/3HVOWPL)
-  * [Towards Qwik 2.0: Lighter, Faster, Better](https://buff.ly/3SCMLpp)
-  * [Vocs – React Documentation Framework](https://buff.ly/3Ovi3gw)
+  * [Hono - ultrafast framework for the edge has reached 4.0](/library/hono)
+  * [Towards Qwik 2.0: Lighter, Faster, Better](https://www.builder.io/blog/qwik-2-coming-soon)
+  * [Vocs – React Documentation Framework](https://vocs.dev/)
 
   ## Techniques
 
-  * [Hot Module Replacement is Easy](https://buff.ly/3SMq4jO)
+  * [Hot Module Replacement is Easy](https://bjornlu.com/blog/hot-module-replacement-is-easy)

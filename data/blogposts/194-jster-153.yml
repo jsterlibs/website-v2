@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [AppRun](https://apprun.js.org/) - A JavaScript library for building reliable, high-performance web applications using the Elm inspired Architecture, events, and components
-  * [nicojs/typed-html](https://github.com/nicojs/typed-html) - TypeSafe HTML templates using TypeScript. No need to learn a template library.
+  * [nicojs/typed-html](/library/typed-html) - TypeSafe HTML templates using TypeScript. No need to learn a template library.
   * [Pancake](https://pancake-charts.surge.sh/) - Charts for Svelte apps
   * [Hex Engine](https://hex-engine.dev/) - A Modern 2D Game Engine for the Browser
   * [Mavo](https://mavo.io/) - A new, approachable way to create Web applications
@@ -37,13 +37,13 @@ body: |
   ## Tools
 
   * [🏆 The Top 50 Developer Tools of 2019](https://stackshare.io/posts/top-developer-tools-2019)
-  * [bradlc/babel-plugin-tailwind-components](https://github.com/bradlc/babel-plugin-tailwind-components) - Use Tailwind with any CSS-in-JS library
-  * [ericclemmons/codelift](https://github.com/ericclemmons/codelift) - A No Code GUI for your existing React code
+  * [bradlc/babel-plugin-tailwind-components](/library/babel-plugin-tailwind-components) - Use Tailwind with any CSS-in-JS library
+  * [ericclemmons/codelift](/library/codelift) - A No Code GUI for your existing React code
   * [lirantal/is-website-vulnerable](https://twitter.com/i/web/status/1231870133351669760) - Find publicly known security vulnerabilities in a website's frontend JavaScript libraries
-  * [livegrep](https://github.com/livegrep/livegrep) - Interactively grep source code
+  * [livegrep](/library/livegrep) - Interactively grep source code
   * [Tiny Helpers](https://tiny-helpers.dev/) - A collection of free single-purpose online tools for web developers
   * [NeutralinoJs](https://neutralino.js.org/) - Portable and lightweight cross platform application development framework
-  * [depcheck](https://www.npmjs.com/package/depcheck) - Understand your dependencies, understand your project
+  * [depcheck](/library/depcheck) - Understand your dependencies, understand your project
 
   ## Bots
 

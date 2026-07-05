@@ -10,53 +10,53 @@ body: |
 
   ## Libraries
 
-  * [aidenybai/million - An extremely fast virtual DOM that makes React up to 70% faster!](https://buff.ly/3iBuVkC)
-  * [nanostores/router: A tiny (792 bytes) router for Nano Stores state manager](https://buff.ly/3yqhz2P)
-  * [fabiospampinato/pioppo: A tiny isomorphic batched logger. ~3x faster than regular logging in Node.](https://buff.ly/3y9soWW)
+  * [aidenybai/million - An extremely fast virtual DOM that makes React up to 70% faster!](/library/million)
+  * [nanostores/router: A tiny (792 bytes) router for Nano Stores state manager](/library/router)
+  * [fabiospampinato/pioppo: A tiny isomorphic batched logger. ~3x faster than regular logging in Node.](/library/pioppo)
 
   ## Frameworks
 
   * [Bridge is a strongly typed framework that auto-generates the OpenAPI specification and fully-typed Typescript client code](https://buff.ly/3PhxKc3)
-  * [Astro 3.0](https://buff.ly/45tiuhP)
-  * [Fresh 1.4 – Faster Page Loads, Layouts and More](https://buff.ly/3sleEIT)
-  * [dai-shi/wakuwork - Minimalistic React framework](https://buff.ly/3ZF3YjI)
+  * [Astro 3.0](https://astro.build/blog/astro-3/)
+  * [Fresh 1.4 – Faster Page Loads, Layouts and More](https://deno.com/blog/fresh-1.4)
+  * [dai-shi/wakuwork - Minimalistic React framework](/library/waku)
 
   ## Articles
 
-  * [Educational Sensational Inspirational Foundational](https://buff.ly/47P96Xr) - Collection of blog posts
-  * [Things you forgot (or never knew) because of React](https://buff.ly/3Otli7v)
-  * [The Next Generation of Web Layouts by Zeldman](https://buff.ly/3Qw5zqO)
-  * [Making the Case for Signals in JavaScript](https://buff.ly/3mifq6t)
-  * [The Evolution of Signals in JavaScript](https://buff.ly/3EJoSX6)
+  * [Educational Sensational Inspirational Foundational](https://esif.dev/) - Collection of blog posts
+  * [Things you forgot (or never knew) because of React](https://joshcollinsworth.com/blog/antiquated-react)
+  * [The Next Generation of Web Layouts by Zeldman](https://zeldman.com/2023/08/04/the-next-generation-of-web-layouts/)
+  * [Making the Case for Signals in JavaScript](https://dev.to/playfulprogramming/making-the-case-for-signals-in-javascript-4c7i)
+  * [The Evolution of Signals in JavaScript](https://dev.to/playfulprogramming/the-evolution-of-signals-in-javascript-8ob)
 
   ## Techniques
 
-  * [Debugging Like A Pro-xy](https://buff.ly/45wqf6T)
-  * [More Elegant Destructuring with JavaScript Generators](https://buff.ly/3ypXRnZ)
-  * [The .meta Directory: Let's Tidy Things Up 🧹🧹🧹](https://buff.ly/3YDo7rl)
+  * [Debugging Like A Pro-xy](https://redd.one/blog/debugging-like-a-pro-xy)
+  * [More Elegant Destructuring with JavaScript Generators](https://macarthur.me/posts/destructuring-with-generators/)
+  * [The .meta Directory: Let's Tidy Things Up 🧹🧹🧹](https://dotmeta.org/)
 
   ## Tools
 
-  * [Announcing Biome, a fork of Rome](https://buff.ly/45KMQfC)
-  * [Volta - The Hassle-Free JavaScript Tool Manager](https://buff.ly/2O3lfA0)
+  * [Announcing Biome, a fork of Rome](https://biomejs.dev/blog/announcing-biome/)
+  * [Volta - The Hassle-Free JavaScript Tool Manager](https://volta.sh/)
 
   ## Languages
 
-  * [Announcing TypeScript 5.2](https://buff.ly/45ocM0S)
+  * [Announcing TypeScript 5.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)
 
   ## Books
 
-  * [gibbok/typescript-book - A free and concise TypeScript Book: A Concise Guide to Effective Development in TypeScript](https://buff.ly/3pEoyVg)
+  * [gibbok/typescript-book - A free and concise TypeScript Book: A Concise Guide to Effective Development in TypeScript](https://github.com/gibbok/typescript-book)
 
   ## Demos
 
-  * [pakastin/flanets: Flanets 2D space flight simulator](https://buff.ly/3qAaOLz)
-  * [iPod.js](https://buff.ly/3xOkIaw)
+  * [pakastin/flanets: Flanets 2D space flight simulator](https://github.com/pakastin/flanets)
+  * [iPod.js](https://tannerv.com/ipod/)
 
   ## Runtimes
 
-  * [Deno 1.36: More flexible security and expanded testing APIs](https://buff.ly/45xF6xA)
+  * [Deno 1.36: More flexible security and expanded testing APIs](https://deno.com/blog/v1.36)
 
   ## Platforms
 
-  * [moonrepo - a developer productivity platform for scaling codebases](https://buff.ly/3ZaFgrC)
+  * [moonrepo - a developer productivity platform for scaling codebases](https://moonrepo.dev/)

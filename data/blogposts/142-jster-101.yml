@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/evilsoft/crocks }}
+  {{ screenshot: /library/crocks }}
 
-  * [evilsoft/crocks](https://github.com/evilsoft/crocks) - A collection of well known Monadic Containers for your utter enjoyment.
+  * [evilsoft/crocks](/library/crocks) - A collection of well known Monadic Containers for your utter enjoyment.
   * [explodal](https://jessekorzan.github.io/expodal/) - The Most Explosive Modal on the Web.
   * [NoobScroll](https://noobscroll.js.org/) - A lightweight jQuery Plugin that adds some cool function to make scrolling more fun.
   * [zuck.js](https://ramon.codes/projects/zuck.js/) - Facebook Stories. Kind of.
@@ -44,5 +44,5 @@ body: |
 
   ## Tools
 
-  * [puppeteer](https://www.npmjs.com/package/puppeteer) - A high-level API for headless Chrome.
+  * [puppeteer](/library/puppeteer) - A high-level API for headless Chrome.
   * [Reactide](http://reactide.io/) - A dedicated IDE for React application development.

@@ -10,36 +10,36 @@ body: |
 
   ## Articles
 
-  * [If Not React, Then What?](https://buff.ly/4fR2vzz)
+  * [If Not React, Then What?](https://infrequently.org/2024/11/if-not-react-then-what/)
 
   ## Guides
 
-  * [Welcome to the world of Statecharts](https://buff.ly/3JJTIAU)
+  * [Welcome to the world of Statecharts](https://statecharts.dev/)
 
   ## Techniques
 
-  * [Anchor Positioning Is Disruptive](https://buff.ly/4fXFXgb)
-  * [Building data-centric apps with a reactive relational database](https://buff.ly/3MA9ApD)
-  * [Rendering performant Sanity.io images](https://buff.ly/3zPk5Bw)
+  * [Anchor Positioning Is Disruptive](https://www.oddbird.net/2024/11/18/anchor-position-yearbook/)
+  * [Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
+  * [Rendering performant Sanity.io images](https://hdoro.dev/performant-sanity-io-images)
 
   ## Frameworks
 
   * [Mastra - The TypeScript AI framework](https://mastra.ai/)
-  * [better-auth: The most comprehensive authentication framework for TypeScript](https://buff.ly/49bRXs5)
+  * [better-auth: The most comprehensive authentication framework for TypeScript](/library/better-auth)
 
   ## Libraries
 
-  * [JonasKruckenberg/imagetools: Load and transform images using a toolbox of custom import directives!](https://buff.ly/3ZcS4is)
-  * [humanwhocodes/crosspost: A JavaScript utility for posting across multiple social networks at once](https://buff.ly/3V9uCl1)
-  * [React Router v7](https://buff.ly/49253bk)
-  * [nanostores - A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores](https://buff.ly/3Z1yHsM)
+  * [JonasKruckenberg/imagetools: Load and transform images using a toolbox of custom import directives!](/library/imagetools)
+  * [humanwhocodes/crosspost: A JavaScript utility for posting across multiple social networks at once](/library/crosspost)
+  * [React Router v7](https://remix.run/blog/react-router-v7)
+  * [nanostores - A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores](/library/nanostores)
 
   ## Books
 
-  * [Adactio: Journal—Going Offline is online for free](https://buff.ly/3CMh8W6)
+  * [Adactio: Journal—Going Offline is online for free](https://adactio.com/journal/21578)
 
   ## Tools
 
-  * [Vite 6.0 is out!](https://buff.ly/4i7QQ0x)
-  * [Deno 2.1: Wasm Imports and other enhancements](https://buff.ly/3ZhGm7t)
-  * [Announcing TypeScript 5.7](https://buff.ly/3Z3iGCp)
+  * [Vite 6.0 is out!](https://vite.dev/blog/announcing-vite6.html)
+  * [Deno 2.1: Wasm Imports and other enhancements](https://deno.com/blog/v2.1)
+  * [Announcing TypeScript 5.7](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7/)

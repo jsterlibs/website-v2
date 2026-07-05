@@ -10,7 +10,7 @@ body: |
 
   ## Frameworks
 
-  * [akash-joshi/rocketrpc](https://github.com/akash-joshi/rocketrpc) - A typesafe framework to destroy client-server barriers
+  * [akash-joshi/rocketrpc](/library/rocketrpc) - A typesafe framework to destroy client-server barriers
   * [Qwik Reaches RC Milestone](https://www.builder.io/blog/qwik-rc-milestone)
 
   ## Articles
@@ -31,8 +31,8 @@ body: |
   ## Tools
 
   * [Announcing Rome v12](https://rome.tools/blog/2023/03/28/rome12/)
-  * [evilmartians/lefthook](https://github.com/evilmartians/lefthook) - Fast and powerful Git hooks manager for any type of projects
-  * [samchon/typia](https://github.com/samchon/typia) - Super-fast Runtime validator (type checker) with only one line
+  * [evilmartians/lefthook](/library/lefthook) - Fast and powerful Git hooks manager for any type of projects
+  * [samchon/typia](/library/typia) - Super-fast Runtime validator (type checker) with only one line
   * [Announcing TypeScript 5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/)
   * [Ladle](https://ladle.dev/) - Develop and test your React stories faster
 

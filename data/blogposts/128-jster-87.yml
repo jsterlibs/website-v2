@@ -10,22 +10,22 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/nolanlawson/marky }}
+  {{ screenshot: /library/marky }}
 
-  * [nolanlawson/marky](https://github.com/nolanlawson/marky) - High-resolution JavaScript timer based on performance.mark() and measure().
+  * [nolanlawson/marky](/library/marky) - High-resolution JavaScript timer based on performance.mark() and measure().
   * [skatejs](https://skatejs.gitbooks.io/skatejs/content/) - Write functional and performance web components.
   * [iType.js](https://ityped.surge.sh/) - Simple typing animation.
 
   ## Data Manipulation
 
-  * [sanctuary](https://github.com/sanctuary-js/sanctuary) - Refuge from unsafe JavaScript.
-  * [selfrefactor/rambda](https://github.com/selfrefactor/rambda) - Faster alternative to Ramda in just 7kB.
-  * [skaterdav85/validatorjs](https://github.com/skaterdav85/validatorjs) - A data validation library in JavaScript for the browser and Node.js, inspired by Laravel's Validator.
+  * [sanctuary](/library/sanctuary) - Refuge from unsafe JavaScript.
+  * [selfrefactor/rambda](/library/rambda) - Faster alternative to Ramda in just 7kB.
+  * [skaterdav85/validatorjs](/library/validatorjs) - A data validation library in JavaScript for the browser and Node.js, inspired by Laravel's Validator.
 
   ## Data Structures
 
-  * [ide/mux](https://github.com/ide/mux) - A simple and convenient function that resolves promises in data structures like arrays, objects, Maps, and Sets.
-  * [pcbje/ggraph](https://github.com/pcbje/ggraph) - Graph visualization of big messy data.
+  * [ide/mux](/library/mux) - A simple and convenient function that resolves promises in data structures like arrays, objects, Maps, and Sets.
+  * [pcbje/ggraph](/library/ggraph) - Graph visualization of big messy data.
   * [Mnemonist](https://yomguithereal.github.io/mnemonist/) - Curated collection of data structures for the JavaScript language,
 
   ## Routing
@@ -74,7 +74,7 @@ body: |
 
   ## Tools
 
-  * [Ava 0.18.0](https://github.com/avajs/ava/releases/tag/v0.18.0) - More testing goodies.
+  * [Ava 0.18.0](/library/ava) - More testing goodies.
   * [ColorMe](https://colorme.io/) - Visualize the CSS color function.
   * [Flow Runtime](https://codemix.github.io/flow-runtime/)
 

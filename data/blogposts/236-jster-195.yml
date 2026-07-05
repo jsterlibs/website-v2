@@ -10,31 +10,31 @@ body: |
 
   ## Libraries
 
-  * [tkrotoff/fetch: A Fetch API wrapper](https://buff.ly/3QlJaKE)
-  * [elbywan/wretch: A tiny wrapper built around fetch with an intuitive syntax.](https://buff.ly/2AFWG8O)
-  * [saarw/async-sequential-runner: TypeScript class for sequentially running async tasks to completion.](https://buff.ly/3WSsqNP)
+  * [tkrotoff/fetch: A Fetch API wrapper](/library/fetch)
+  * [elbywan/wretch: A tiny wrapper built around fetch with an intuitive syntax.](/library/wretch)
+  * [saarw/async-sequential-runner: TypeScript class for sequentially running async tasks to completion.](/library/async-sequential-runner)
 
   ## Frameworks
 
-  * [Angular v16 is here!](https://buff.ly/3p7nYi9)
-  * [Qwik Reaches v1.0](https://buff.ly/44prioP)
+  * [Angular v16 is here!](https://blog.angular.dev/angular-v16-is-here-4d7a28ec680d)
+  * [Qwik Reaches v1.0](https://www.builder.io/blog/qwik-v1)
 
   ## Opinions
 
-  * [JS private fields considered harmful](https://buff.ly/41zCGMs)
-  * [Artem's struggle with Remix](https://buff.ly/3MinYF4)
+  * [JS private fields considered harmful](https://lea.verou.me/blog/2023/04/private-fields-considered-harmful/)
+  * [Artem's struggle with Remix](https://redd.one/blog/my-struggle-with-remix)
 
   ## Tools
 
-  * [Introducing Deopt Explorer for TypeScript](https://buff.ly/3W1wZWb)
-  * [Introducing Baseline: a unified view of stable web features](https://buff.ly/3nU3d9u)
-  * [lxsmnsyc/forgetti: Solve your hook spaghetti (with more spaghetti). Inspired by React Forget.](https://buff.ly/3HJeCQa)
+  * [Introducing Deopt Explorer for TypeScript](https://devblogs.microsoft.com/typescript/introducing-deopt-explorer/)
+  * [Introducing Baseline: a unified view of stable web features](https://developer.mozilla.org/en-US/blog/baseline-unified-view-stable-web-features/)
+  * [lxsmnsyc/forgetti: Solve your hook spaghetti (with more spaghetti). Inspired by React Forget.](/library/forgetti)
 
   ## Services
 
-  * [https annotated live](https://buff.ly/3nPIxzi)
+  * [https annotated live](https://bytebybyte.dev/)
 
   ## Articles
 
-  * [New CSS Relative Units](https://buff.ly/3WTEr5z)
-  * [The Cost of Convenience](https://buff.ly/3p6cCec)
+  * [New CSS Relative Units](https://nerdy.dev/new-relative-units-ric-rex-rlh-and-rch)
+  * [The Cost of Convenience](https://dev.to/thepassle/the-cost-of-convenience-kco)

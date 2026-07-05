@@ -12,24 +12,24 @@ body: |
 
   * [xstyled](https://xstyled.dev/) - Build your entire website using JSX and Props
   * [System Props](https://system-props.com/) - Theme-driven style props
-  * [fgnass/typed-rpc](https://github.com/fgnass/typed-rpc) - Lightweight JSON-RPC solution for TypeScript projects
-  * [KittyGiraudel/a11y-dialog](https://github.com/KittyGiraudel/a11y-dialog) - A very lightweight and flexible accessible modal dialog script
+  * [fgnass/typed-rpc](/library/typed-rpc) - Lightweight JSON-RPC solution for TypeScript projects
+  * [KittyGiraudel/a11y-dialog](/library/a11y-dialog) - A very lightweight and flexible accessible modal dialog script
   * [react-hot-toast](https://react-hot-toast.com/) - Smoking hot React toasts
-  * [nextapps-de/flexsearch](https://github.com/nextapps-de/flexsearch) - Next-Generation full text search library for Browser and Node.js
+  * [nextapps-de/flexsearch](/library/flexsearch) - Next-Generation full text search library for Browser and Node.js
   * [tiptap](https://www.tiptap.dev/) - Headless WYSIWYG Text Editor
-  * [pubkey/rxdb](https://github.com/pubkey/rxdb) - A realtime Database for JavaScript Applications
+  * [pubkey/rxdb](/library/rxdb) - A realtime Database for JavaScript Applications
 
   ## Tools
 
-  * [hfour/wsrun](https://github.com/hfour/wsrun) - Command runner for Yarn workspaces. Dependency aware
-  * [egoist/esmon](https://github.com/egoist/esmon) - Like nodemon but very esbuild
+  * [hfour/wsrun](/library/wsrun) - Command runner for Yarn workspaces. Dependency aware
+  * [egoist/esmon](/library/esmon) - Like nodemon but very esbuild
 
   ## Frameworks
 
   * [RedwoodJS](https://redwoodjs.com/) - Bringing full-stack to the Jamstack
-  * [sprinkles](https://github.com/seek-oss/vanilla-extract/tree/master/packages/sprinkles) - Zero-runtime atomic CSS framework for vanilla-extract.
-  * [asos-craigmorten/opine](https://github.com/asos-craigmorten/opine) - Fast, minimalist web framework for Deno ported from ExpressJS
-  * [dubzzz/fast-check](https://github.com/dubzzz/fast-check) - Property based testing framework for JavaScript (like QuickCheck) written in TypeScript
+  * [sprinkles](/library/vanilla-extract) - Zero-runtime atomic CSS framework for vanilla-extract.
+  * [asos-craigmorten/opine](/library/opine) - Fast, minimalist web framework for Deno ported from ExpressJS
+  * [dubzzz/fast-check](/library/fast-check) - Property based testing framework for JavaScript (like QuickCheck) written in TypeScript
   * [Inertia.JS](https://www.infoq.com/news/2020/12/inertia-modern-monolith/) - Lets developers write API-Free monolithic React/Vue/Svelte applications in PHP or Ruby
   * [Foal](https://foalts.org/) - Node.JS framework for building web applications
 

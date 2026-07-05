@@ -10,18 +10,18 @@ body: |
 
   ## Libraries
 
-  * [promise-worker.ts](https://gist.github.com/RedstoneWizard22/d07b326a438dd0449758c263cebd0e82) - Make web workers fun
+  * [promise-worker.ts](/library/d07b326a438dd0449758c263cebd0e82) - Make web workers fun
   * [Strapi v4 stable is live](https://strapi.io/v4) - Headless CMS for all
   * [Fuse.js](https://fusejs.io/) - a powerful, lightweight fuzzy-search library, with zero dependencies
-  * [molefrog/wouter](https://github.com/molefrog/wouter) - A minimalist-friendly ~1.5KB routing for React and Preact. Nothing else but HOOKS
+  * [molefrog/wouter](/library/wouter) - A minimalist-friendly ~1.5KB routing for React and Preact. Nothing else but HOOKS
   * [Undici](https://undici.nodejs.org/#/) - A HTTP/1.1 client, written from scratch for Node.js.
-  * [jarle](https://www.npmjs.com/package/jarle/v/2.0.0-beta.0) - Just Another React Live Editor
-  * [coston/react-super-responsive-table](https://github.com/coston/react-super-responsive-table) - Turn the tables on unresponsive data
-  * [g-plane/typed-query-selector](https://github.com/g-plane/typed-query-selector) - Better typed `querySelector` and `querySelectorAll`.
+  * [jarle](/library/jarle) - Just Another React Live Editor
+  * [coston/react-super-responsive-table](/library/react-super-responsive-table) - Turn the tables on unresponsive data
+  * [g-plane/typed-query-selector](/library/typed-query-selector) - Better typed `querySelector` and `querySelectorAll`.
   * [Pollen](https://www.pollen.style/) - Utility-first CSS for the future
-  * [davidkpiano/flipping](https://github.com/davidkpiano/flipping) - Flipping awesome animations
-  * [aholachek/animate-css-grid](https://github.com/aholachek/animate-css-grid) - Painless transitions for CSS Grid
-  * [Yomguithereal/obliterator](https://github.com/Yomguithereal/obliterator) - Higher order iterator library for JavaScript and TypeScript
+  * [davidkpiano/flipping](/library/flipping) - Flipping awesome animations
+  * [aholachek/animate-css-grid](/library/animate-css-grid) - Painless transitions for CSS Grid
+  * [Yomguithereal/obliterator](/library/obliterator) - Higher order iterator library for JavaScript and TypeScript
   * [Mantine](https://mantine.dev/) - A fully featured React components library
 
   ## TypeScript
@@ -30,9 +30,9 @@ body: |
 
   ## Tools
 
-  * [vercel/ncc](https://github.com/vercel/ncc) - Compile a Node.js project into a single file. Supports TypeScript, binary addons, dynamic requires
+  * [vercel/ncc](/library/ncc) - Compile a Node.js project into a single file. Supports TypeScript, binary addons, dynamic requires
   * [Tamagui](https://tamagui.dev/) - Universal React design systems that optimize for native & web
-  * [open-source-labs/reactime](https://github.com/open-source-labs/reactime) - Chrome developer tool and time-travel debugger for React applications (Gatsby and Next.js compatible)
+  * [open-source-labs/reactime](/library/reactime) - Chrome developer tool and time-travel debugger for React applications (Gatsby and Next.js compatible)
   * [TestCafe](https://testcafe.io/) - End-to-end testing, simplified
   * [fast-check](https://dubzzz.github.io/fast-check.github.com/) - Property based testing
 

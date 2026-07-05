@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/bvaughn/js-worker-search }}
+  {{ screenshot: /library/js-worker-search }}
 
-  * [bvaughn/js-worker-search](https://github.com/bvaughn/js-worker-search) - JavaScript client-side search API with web-worker support.
-  * [alvarcarto/url-to-pdf-api](https://github.com/alvarcarto/url-to-pdf-api) - Self-hosted service for rendering HTML to PDF.
+  * [bvaughn/js-worker-search](/library/js-worker-search) - JavaScript client-side search API with web-worker support.
+  * [alvarcarto/url-to-pdf-api](/library/url-to-pdf-api) - Self-hosted service for rendering HTML to PDF.
   * [DIO](https://dio.js.org/) - Develop light, declarative UIs using JavaScript.
   * [Micromodal.js](https://micromodal.now.sh/) - Micromodal.js is a lightweight, configurable and a11y-enabled modal library written in pure JavaScript.
-  * [unfetch](https://www.npmjs.com/package/unfetch) - Tiny 500b fetch "barely-polyfill".
+  * [unfetch](/library/unfetch-2) - Tiny 500b fetch "barely-polyfill".
 
   ## Articles
 
@@ -32,11 +32,11 @@ body: |
 
   ## Games
 
-  * [Snakesilk game engine](https://github.com/snakesilk/snakesilk-engine)
+  * [Snakesilk game engine](/library/snakesilk-engine)
 
   ## Tools
 
   * [Project Glimpse](http://node.getglimpse.com/) - Full-stack Node.js web diagnostics.
   * [Workbox](https://workboxjs.org/) - JavaScript Libraries for Progressive Web Apps.
-  * [webpack v3.7.0](https://github.com/webpack/webpack/releases/tag/v3.7.0)
+  * [webpack v3.7.0](/library/webpack)
   * [How codesandbox makes packages work in the browser; announcing the new packager](https://hackernoon.com/how-we-make-npm-packages-work-in-the-browser-announcing-the-new-packager-6ce16aa4cee6)

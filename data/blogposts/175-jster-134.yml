@@ -11,9 +11,9 @@ body: |
   ## Libraries
 
   * [H5P](https://h5p.org/) - Create and Share Rich HTML5 Content and Applications
-  * [znck/lazy-hydration](https://github.com/znck/lazy-hydration) - Lazy Hydration for Vue SSR
-  * [spoonx/wetland](https://github.com/spoonx/wetland) - A Node.js ORM, mapping-based. Works with MySQL, PostgreSQL, SQLite and more
-  * [lukeed/formee](https://github.com/lukeed/formee) - A tiny (532B) library for handling `<form>` elements
+  * [znck/lazy-hydration](/library/lazy-hydration) - Lazy Hydration for Vue SSR
+  * [spoonx/wetland](/library/wetland) - A Node.js ORM, mapping-based. Works with MySQL, PostgreSQL, SQLite and more
+  * [lukeed/formee](/library/formee) - A tiny (532B) library for handling `<form>` elements
 
   ## Frameworks
 
@@ -26,7 +26,7 @@ body: |
   ## Tools
 
   * [ts-earch](https://gillchristian.xyz/ts-earch) - Search engine for TypeScript
-  * [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer
+  * [antonmedv/fx](/library/fx) - Command-line tool and terminal JSON viewer
   * [State Machines: The XState Visualizer](https://kyleshevlin.com/xstate-visualizer/)
   * [Static Site Boilerplate](http://staticsiteboilerplate.com/)
 

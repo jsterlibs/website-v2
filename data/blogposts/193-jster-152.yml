@@ -12,12 +12,12 @@ body: |
 
   ## Libraries
 
-  * [lukeed/calendarize](https://github.com/lukeed/calendarize) - A tiny (202B) utility to generate calendar views
+  * [lukeed/calendarize](/library/calendarize) - A tiny (202B) utility to generate calendar views
   * [Mavo](https://mavo.io/) - A new, approachable way to create web applications
-  * [tagtag](https://www.npmjs.com/package/tagtag) - Easy HTML templating with JS
-  * [hyperscript-html](https://www.npmjs.com/package/hyperscript-html) - Fast and light hyperscript function to generate HTML
-  * [mattboldt/typed.js/](https://github.com/mattboldt/typed.js/) - A JavaScript typing animation library
-  * [lukeed/klona](https://github.com/lukeed/klona) - A tiny (366B) and fast utility to deep clone Objects, Arrays, Dates, RegExps, and more!
+  * [tagtag](/library/tagtag) - Easy HTML templating with JS
+  * [hyperscript-html](/library/hyperscript-html) - Fast and light hyperscript function to generate HTML
+  * [mattboldt/typed.js/](/library/typed-js) - A JavaScript typing animation library
+  * [lukeed/klona](/library/klona) - A tiny (366B) and fast utility to deep clone Objects, Arrays, Dates, RegExps, and more!
   * [Passjoin Index](https://yomguithereal.github.io/mnemonist/passjoin-index) - Efficient Levenshtein distance queries
   * [cuid](http://usecuid.org/) - Collision-resistant ids optimized for horizontal scaling and performance
   * [Perfume.js](https://zizzamia.github.io/perfume/) - Perfume is a tiny, web performance monitoring library
@@ -38,7 +38,7 @@ body: |
 
   ## Data Structures
 
-  * [anvaka/ngraph](https://github.com/anvaka/ngraph) - A set of graph algorithms
+  * [anvaka/ngraph](/library/ngraph) - A set of graph algorithms
 
   ## Language
 
@@ -46,12 +46,12 @@ body: |
 
   ## Tools
 
-  * [react-figma](https://github.com/react-figma/react-figma) - Render React components to Figma
+  * [react-figma](/library/react-figma) - Render React components to Figma
   * [Introducing Yarn 2](https://dev.to/arcanis/introducing-yarn-2-4eh1) - The popular package manager has reached a new major version
-  * [pretty-quick](https://www.npmjs.com/package/pretty-quick) - Run Prettier on your changed files
-  * [microsoft/playwright](https://github.com/microsoft/playwright) - Puppeteer but for multiple browsers
-  * [why-npm-i-so-long](https://www.npmjs.com/package/why-npm-i-so-long) - Figure out why installing from npm takes so long
-  * [atlassian/yarn-deduplicate](https://github.com/atlassian/yarn-deduplicate) - Deduplication tool for yarn.lock files
+  * [pretty-quick](/library/pretty-quick) - Run Prettier on your changed files
+  * [microsoft/playwright](/library/playwright) - Puppeteer but for multiple browsers
+  * [why-npm-i-so-long](/library/why-npm-i-so-long) - Figure out why installing from npm takes so long
+  * [atlassian/yarn-deduplicate](/library/yarn-deduplicate) - Deduplication tool for yarn.lock files
 
   ## Polyfills
 

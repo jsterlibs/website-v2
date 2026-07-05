@@ -12,7 +12,7 @@ body: |
 
   * [Vento - a new templating engine for Deno](https://vento.js.org/)
   * [Modern.js - Inspire Creativity in Modern Web Development](https://modernjs.dev/en/)
-  * [cloudflare/workers-graphql-server: 🔥Lightning-fast, globally distributed Apollo GraphQL server, deployed at the edge using Cloudflare Workers](https://github.com/cloudflare/workers-graphql-server)
+  * [cloudflare/workers-graphql-server: 🔥Lightning-fast, globally distributed Apollo GraphQL server, deployed at the edge using Cloudflare Workers](/library/workers-graphql-server)
   * [OpenAuth - Universal, standards-based auth provider](https://openauth.js.org/)
   * [Style-observer: JS to observe CSS property changes, for reals](https://lea.verou.me/blog/2025/style-observer/)
 
@@ -23,7 +23,7 @@ body: |
   ## Tools
 
   * [Sonda - Universal visualizer and analyzer for JavaScript and CSS](https://sonda.dev/)
-  * [sitespeedio/browsertime: Measure and Optimize Web Performance](https://github.com/sitespeedio/browsertime)
+  * [sitespeedio/browsertime: Measure and Optimize Web Performance](/library/browsertime)
 
   ## Articles
 

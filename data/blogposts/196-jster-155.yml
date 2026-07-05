@@ -10,17 +10,17 @@ body: |
 
   ## Libraries
 
-  * [garmeeh/next-seo](https://github.com/garmeeh/next-seo) - Next SEO is a plug in that makes managing your SEO easier in Next.js projects
+  * [garmeeh/next-seo](/library/next-seo) - Next SEO is a plug in that makes managing your SEO easier in Next.js projects
   * [React Icons](https://react-icons.github.io/react-icons/) - Popular icons for React projects
-  * [lukeed/uid](https://github.com/lukeed/uid) - A tiny (134B) and fast utility to generate random IDs of fixed length
+  * [lukeed/uid](/library/uid) - A tiny (134B) and fast utility to generate random IDs of fixed length
   * [Snap.svg](http://snapsvg.io/) - The JavaScript SVG library for the modern web
-  * [ts-polyfill](https://www.npmjs.com/package/ts-polyfill) - Runtime polyfills for TypeScript libs, powered by core-js!
-  * [iwanthue](https://www.npmjs.com/package/iwanthue) - Colors for data scientists
-  * [KFlash/seafox](https://github.com/KFlash/seafox) - A blazing fast 100% spec compliant, self-hosted JavaScript parser written in TypeScript
-  * [open-draft/until](https://github.com/open-draft/until) - Gracefully handle Promises using async/await
-  * [safety-match](https://www.npmjs.com/package/safety-match) - Rust-style tagged union matching for JavaScript, with TypeScript types
-  * [Yomguithereal/pandemonium](https://github.com/Yomguithereal/pandemonium) - Typical random-related functions for JavaScript
-  * [erikmueller/cond-flow/](https://github.com/erikmueller/cond-flow/) - Elixir style cond for easy javascript control flow
+  * [ts-polyfill](/library/ts-polyfill) - Runtime polyfills for TypeScript libs, powered by core-js!
+  * [iwanthue](/library/iwanthue) - Colors for data scientists
+  * [KFlash/seafox](/library/seafox) - A blazing fast 100% spec compliant, self-hosted JavaScript parser written in TypeScript
+  * [open-draft/until](/library/until) - Gracefully handle Promises using async/await
+  * [safety-match](/library/safety-match) - Rust-style tagged union matching for JavaScript, with TypeScript types
+  * [Yomguithereal/pandemonium](/library/pandemonium) - Typical random-related functions for JavaScript
+  * [erikmueller/cond-flow/](/library/cond-flow) - Elixir style cond for easy javascript control flow
   * [dna.js ~~ An uncomplicated user interface library for building data-driven semantic templates](https://dnajs.org/)
 
   ## Frameworks
@@ -33,8 +33,8 @@ body: |
 
   * [Snowpack](https://www.snowpack.dev/) - The fast, bundle-free build tool for modern web apps.
   * [Jest 26: Tick Tock](https://jestjs.io/blog/2020/05/05/jest-26) - A new release of the major testing tool has arrived
-  * [ai/size-limit](https://github.com/ai/size-limit) - Calculate the real cost to run your JS app or lib to keep good performance. Show error in pull request if the cost exceeds the limit
-  * [servor](https://www.npmjs.com/package/servor) - A dependency free dev server for modern web application development
+  * [ai/size-limit](/library/size-limit) - Calculate the real cost to run your JS app or lib to keep good performance. Show error in pull request if the cost exceeds the limit
+  * [servor](/library/servor) - A dependency free dev server for modern web application development
   * [Babel 7.9.0 Released: Smaller preset-env output, Typescript 3.8 support and a new JSX transform](https://babeljs.io/blog/2020/03/16/7.9.0)
   * [What's coming in ESLint v7.0.0](https://eslint.org/blog/2020/02/whats-coming-in-eslint-7.0.0)
 

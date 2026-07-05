@@ -10,34 +10,34 @@ body: |
 
   ## Libraries
 
-  * [WebReflection/gist-fs: A daily rate-limited way to have free storage in the wild.](https://buff.ly/3M21eII)
-  * [Cheerio 1.0 Released, Batteries Included](https://buff.ly/3AfZQzw)
+  * [WebReflection/gist-fs: A daily rate-limited way to have free storage in the wild.](/library/gist-fs)
+  * [Cheerio 1.0 Released, Batteries Included](https://cheerio.js.org/blog/cheerio-1.0/)
 
   ## Tools
 
-  * [unjs/nitro: Create, build and deploy universal web servers. The open engine powering Nuxt and open to everyone.](https://buff.ly/3ueVHZL)
-  * [callstack/reassure: Performance testing companion for React and React Native](https://buff.ly/493svUl)
-  * [pakastin/nomoji: Replace emojis in text with SVG images](https://buff.ly/46FigWn)
-  * [MDTS - Exceptional Content & Docs with Next.js](https://buff.ly/3tyvJ3d)
+  * [unjs/nitro: Create, build and deploy universal web servers. The open engine powering Nuxt and open to everyone.](/library/nitro)
+  * [callstack/reassure: Performance testing companion for React and React Native](/library/reassure)
+  * [pakastin/nomoji: Replace emojis in text with SVG images](/library/nomoji)
+  * [MDTS - Exceptional Content & Docs with Next.js](https://www.renoun.dev/)
 
   ## Techniques
 
-  * [Memory Management in V8, garbage collection and improvements](https://buff.ly/3BR3NWr)
-  * [Streaming HTML out of order without JavaScript](https://buff.ly/3SjmBcn)
-  * [From Cypress to Playwright - cost, migration steps, timeline and AI tools](https://buff.ly/4dzz1oi)
-  * [Async Derivations in Reactivity](https://buff.ly/3LTBrlK)
-  * [Lexical state updates](https://buff.ly/47O5Xqh)
+  * [Memory Management in V8, garbage collection and improvements](https://dev.to/jennieji/memory-management-in-v8-garbage-collection-and-improvements-18e6)
+  * [Streaming HTML out of order without JavaScript](https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/)
+  * [From Cypress to Playwright - cost, migration steps, timeline and AI tools](https://currents.dev/posts/cypress-to-playwright-migration)
+  * [Async Derivations in Reactivity](https://dev.to/playfulprogramming/async-derivations-in-reactivity-ec5)
+  * [Lexical state updates](https://dio.la/article/lexical-state-updates)
 
   ## Articles
 
-  * [The Sneaky Costs of Scaling Serverless](https://buff.ly/46FgNiG)
-  * [A Wild Next.js Bug Chase](https://buff.ly/3WRWFH6)
-  * [Concurrent React, External Stores, and Tearing](https://buff.ly/47dW4Bb)
+  * [The Sneaky Costs of Scaling Serverless](https://www.zachleat.com/web/serverless-cost/)
+  * [A Wild Next.js Bug Chase](https://georgemauer.net/2024/08/01/a-heck-of-a-wild-bug-chase.html)
+  * [Concurrent React, External Stores, and Tearing](https://interbolt.org/blog/react-ui-tearing/)
 
   ## SDKs
 
-  * [web-infra-dev/midscene: An AI-powered automation SDK can control the page, perform assertions, and extract data in JSON format using natural language.](https://buff.ly/4dxk328)
+  * [web-infra-dev/midscene: An AI-powered automation SDK can control the page, perform assertions, and extract data in JSON format using natural language.](https://github.com/web-infra-dev/midscene)
 
   ## UI
 
-  * [daisyUI — Tailwind CSS Components](https://buff.ly/3cW66hi)
+  * [daisyUI — Tailwind CSS Components](https://daisyui.com/)

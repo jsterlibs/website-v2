@@ -10,27 +10,27 @@ body: |
 
   ## Libraries
 
-  * [Frappe Charts: Simple and Modern SVG Charts](https://buff.ly/2Ev9HE1)
-  * [Melt UI - Open source UI components for Svelte](https://buff.ly/49xEta6)
-  * [facebook/stylex: StyleX is the styling system for ambitious user interfaces.](https://buff.ly/47Kfoap)
-  * [WebReflection/proxy-pants: Secured and reliable Proxy based utilities for more or less common tasks.](https://buff.ly/42viAU5)
+  * [Frappe Charts: Simple and Modern SVG Charts](https://frappe.io/products)
+  * [Melt UI - Open source UI components for Svelte](https://www.melt-ui.com/)
+  * [facebook/stylex: StyleX is the styling system for ambitious user interfaces.](/library/stylex)
+  * [WebReflection/proxy-pants: Secured and reliable Proxy based utilities for more or less common tasks.](/library/proxy-pants)
 
   ## Frameworks
 
-  * [Fuse.js: The opinionated framework for creating typesafe data layers](https://buff.ly/41egfhm)
-  * [Fresh 1.6: Tailwind CSS plugin, simplified typings and more](https://buff.ly/4127g2m)
+  * [Fuse.js: The opinionated framework for creating typesafe data layers](/library/fuse)
+  * [Fresh 1.6: Tailwind CSS plugin, simplified typings and more](https://deno.com/blog/fresh-1.6)
 
   ## Tools
 
-  * [Astro 4.0](https://buff.ly/3NeSM9E)
+  * [Astro 4.0](https://astro.build/blog/astro-4/)
 
   ## Techniques
 
-  * [You might not need Jest — the Node.js native test runner is great](https://buff.ly/3KhiTvx)
-  * [Fast Buffer-to-String conversion in JavaScript with a Lookup Table](https://buff.ly/3GFUg9p)
-  * [Event Based State Management](https://buff.ly/480CxoW)
+  * [You might not need Jest — the Node.js native test runner is great](https://pawelgrzybek.com/you-might-not-need-jest-the-node-js-native-test-runner-is-great/)
+  * [Fast Buffer-to-String conversion in JavaScript with a Lookup Table](https://lemire.me/blog/2023/12/08/fast-buffer-to-string-conversion-in-javascript-with-a-lookup-table/)
+  * [Event Based State Management](https://matsu.fi/blog/event-based-state/)
 
   ## Articles
 
-  * [QuickJS: An Overview and Guide to Adding a New Feature](https://buff.ly/43XGJ6z)
-  * [Comparison of npm, pnpm, and yarn](https://buff.ly/3sLRITO)
+  * [QuickJS: An Overview and Guide to Adding a New Feature](https://blogs.igalia.com/compilers/2023/06/12/quickjs-an-overview-and-guide-to-adding-a-new-feature/)
+  * [Comparison of npm, pnpm, and yarn](https://romanglushach.medium.com/comparing-npm-yarn-and-pnpm-package-managers-which-one-is-right-for-your-distributed-project-to-4d7de2f0db8e)

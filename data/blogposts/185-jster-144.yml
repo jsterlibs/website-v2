@@ -10,20 +10,20 @@ body: |
 
   ## Libraries
 
-  * [find-my-way](https://www.npmjs.com/package/find-my-way) - A fast HTTP router
-  * [lmatteis/behavioral](https://github.com/lmatteis/behavioral) - Behavioral Programming for JavaScript
-  * [lukejacksonn/domz](https://github.com/lukejacksonn/domz) - A proxy function to help build virtual DOM trees from functions
-  * [graphql-tag](https://www.npmjs.com/package/graphql-tag) - Helpful utilities for parsing GraphQL queries
-  * [mourner/flatbush](https://github.com/mourner/flatbush) - A very fast static spatial index for 2D points and rectangles in JavaScript
+  * [find-my-way](/library/find-my-way) - A fast HTTP router
+  * [lmatteis/behavioral](/library/behavioral) - Behavioral Programming for JavaScript
+  * [lukejacksonn/domz](/library/domz) - A proxy function to help build virtual DOM trees from functions
+  * [graphql-tag](/library/graphql-tag) - Helpful utilities for parsing GraphQL queries
+  * [mourner/flatbush](/library/flatbush) - A very fast static spatial index for 2D points and rectangles in JavaScript
   * [Graphology](https://graphology.github.io/) - Multipurpose Graph object for JavaScript
-  * [mafintosh/csv-parser](https://github.com/mafintosh/csv-parser) - Streaming csv parser inspired by binary-csv that aims to be faster than everyone else
-  * [GoogleChromeLabs/comlink](https://github.com/GoogleChromeLabs/comlink) - Comlink makes WebWorkers enjoyable
+  * [mafintosh/csv-parser](/library/csv-parser) - Streaming csv parser inspired by binary-csv that aims to be faster than everyone else
+  * [GoogleChromeLabs/comlink](/library/comlink) - Comlink makes WebWorkers enjoyable
 
   ## Tools
 
   * [Clinic.js](https://clinicjs.org/) - Tools to help diagnose and pinpoint Node.js performance issues
-  * [planetlabs/viewpoints](https://github.com/planetlabs/viewpoints) - Viewpoints is a tool for visualizing high dimensionality data using linked scatter plots
-  * [ts2swagger](https://www.npmjs.com/package/ts2swagger) - TypeScript classes to Swagger documentation and Express endpoints
+  * [planetlabs/viewpoints](/library/viewpoints) - Viewpoints is a tool for visualizing high dimensionality data using linked scatter plots
+  * [ts2swagger](/library/ts2swagger) - TypeScript classes to Swagger documentation and Express endpoints
 
 
   ## Articles

@@ -10,16 +10,16 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/WebReflection/ecma }}
+  {{ screenshot: /library/ecma }}
 
-  * [WebReflection/ecma](https://github.com/WebReflection/ecma) - The simplest way to load ES modules or bundled fallbacks.
-  * [upup](https://www.npmjs.com/package/upup) - Kickstarting the Offline First Revolution.
+  * [WebReflection/ecma](/library/ecma) - The simplest way to load ES modules or bundled fallbacks.
+  * [upup](/library/upup) - Kickstarting the Offline First Revolution.
   * [Font Awesome 5.0](https://fontawesome.com/) - A new major release of the popular font library.
 
   ## Testing
 
-  * [mrijk/speculaas](https://github.com/mrijk/speculaas) - Node implementation of clojure.spec.
-  * [eddyerburgh/avoriaz](https://github.com/eddyerburgh/avoriaz) - A Vue.js testing utility library.
+  * [mrijk/speculaas](/library/speculaas) - Node implementation of clojure.spec.
+  * [eddyerburgh/avoriaz](/library/avoriaz) - A Vue.js testing utility library.
 
   ## Techniques
 
@@ -36,6 +36,6 @@ body: |
   ## Tools
 
   * [Poi](https://poi.js.org/) - Delightful web development.
-  * [developit/microbundle](https://github.com/developit/microbundle) - Zero-configuration bundler for tiny modules.
+  * [developit/microbundle](/library/microbundle) - Zero-configuration bundler for tiny modules.
   * [Stencil](https://stenciljs.com/) - The magical, reusable web component generator.
-  * [webpack v4.0.0-alpha.1](https://github.com/webpack/webpack/releases/tag/v4.0.0-alpha.1)
+  * [webpack v4.0.0-alpha.1](/library/webpack)

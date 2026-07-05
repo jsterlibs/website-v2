@@ -10,23 +10,23 @@ body: |
 
   ## Libraries
 
-  * [TypeSchema - Universal adapter for TypeScript schema validation](https://buff.ly/45lUIV4)
-  * [Faire/mjml-react: React component library to generate the HTML emails on the fly](https://buff.ly/3YNh4MF)
-  * [Wedges — Open-source UI components for React](https://buff.ly/48tL7wY)
-  * [isographlabs/isograph: Build React apps powered by GraphQL data](https://buff.ly/47t0IM6)
-  * [43081j/hanbi: A small javascript library for stubbing and spying on methods/functions](https://buff.ly/3vv4szk)
+  * [TypeSchema - Universal adapter for TypeScript schema validation](https://typeschema.com/)
+  * [Faire/mjml-react: React component library to generate the HTML emails on the fly](/library/mjml-react)
+  * [Wedges — Open-source UI components for React](https://www.lemonsqueezy.com/wedges)
+  * [isographlabs/isograph: Build React apps powered by GraphQL data](/library/isograph)
+  * [43081j/hanbi: A small javascript library for stubbing and spying on methods/functions](/library/hanbi)
 
   ## Techniques
 
-  * [Passle overengineered his blog](https://buff.ly/4206Ieb)
-  * [Shadow Themes with Web Components](https://buff.ly/47uVX5K)
-  * [Sidenotes In Web Design](https://buff.ly/41Le7Oi)
+  * [Passle overengineered his blog](https://thepassle.netlify.app/blog/i-overengineered-my-blog)
+  * [Shadow Themes with Web Components](https://dutchcelt.nl/posts/shadow-themes/)
+  * [Sidenotes In Web Design](https://gwern.net/sidenote)
 
   ## Articles
 
-  * [Advancing Interaction to Next Paint](https://buff.ly/4aRE96E)
+  * [Advancing Interaction to Next Paint](https://web.dev/blog/inp-cwv)
   * [When "Everything" Becomes Too Much: The npm Package Chaos of 2024](https://t.co/kDbimDqqTE)
 
   ## Tools
 
-  * [Codemod Studio](https://buff.ly/3OxyAjn)
+  * [Codemod Studio](https://codemod.studio/)

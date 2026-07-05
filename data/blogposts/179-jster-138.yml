@@ -11,8 +11,8 @@ body: |
   ## Libraries
 
   * [Editor.js](https://editorjs.io/) - Next generation block styled editor
-  * [mikeal/r2](https://github.com/mikeal/r2) - HTTP client. Spiritual successor to reques
-  * [yelouafi/avenir](https://github.com/yelouafi/avenir) - Lightweight async library based on lazy futures
+  * [mikeal/r2](/library/r2) - HTTP client. Spiritual successor to reques
+  * [yelouafi/avenir](/library/avenir) - Lightweight async library based on lazy futures
   * [Parsley](http://parsleyjs.org/) - The ultimate JavaScript form validation library
   * [Guess.js](https://guess-js.github.io/) - Libraries & tools for enabling Machine Learning driven user-experiences on the web
 
@@ -27,8 +27,8 @@ body: |
 
   ## Tools
 
-  * [terser](https://www.npmjs.com/package/terser) - A JavaScript parser and mangler/compressor toolkit for ES6+
-  * [satya164/babel-test](https://github.com/satya164/babel-test) - An opinionated library to make testing babel plugins easier
+  * [terser](/library/terser-2) - A JavaScript parser and mangler/compressor toolkit for ES6+
+  * [satya164/babel-test](/library/babel-test) - An opinionated library to make testing babel plugins easier
   * [Pika](https://www.pikapkg.com/blog/pika-web-a-future-without-webpack) - A future without webpack
 
   ## GraphQL

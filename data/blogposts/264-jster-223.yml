@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  * [edgejs - Simple templating engine for the edge](https://buff.ly/4646Fy1)
-  * [WebReflection/linkedom: A triple-linked lists based DOM implementation.](https://buff.ly/40lyyk0)
-  * [LittleJS - The Tiny Fast JavaScript Game Engine](https://buff.ly/3S3jyUU)
-  * [neotraverse - a light alternative to traverse](https://buff.ly/4bNF73a)
-  * [Typesense - Fast, typo-tolerant open source search engine](https://buff.ly/2GCJX9D)
-  * [lucia-auth/lucia: Authentication, simple and clean](https://buff.ly/3tXnmht)
-  * [AutoAnimate - Add motion to your apps with a single line of code](https://buff.ly/3wJmHxP)
-  * [WebReflection/sabayon: SharedArrayBuffer always on.](https://buff.ly/3XGVpHz)
+  * [edgejs - Simple templating engine for the edge](https://edgejs.dev/docs/introduction)
+  * [WebReflection/linkedom: A triple-linked lists based DOM implementation.](/library/linkedom)
+  * [LittleJS - The Tiny Fast JavaScript Game Engine](https://killedbyapixel.github.io/LittleJS/)
+  * [neotraverse - a light alternative to traverse](/library/neotraverse)
+  * [Typesense - Fast, typo-tolerant open source search engine](https://typesense.org/)
+  * [lucia-auth/lucia: Authentication, simple and clean](/library/lucia)
+  * [AutoAnimate - Add motion to your apps with a single line of code](https://auto-animate.formkit.com/)
+  * [WebReflection/sabayon: SharedArrayBuffer always on.](/library/sabayon)
 
   ## Demos
 
@@ -25,20 +25,20 @@ body: |
 
   ## Opinions
 
-  * [A Rant about Front-end Development](https://buff.ly/3zgdwtJ)
+  * [A Rant about Front-end Development](https://blog.frankmtaylor.com/2024/06/20/a-rant-about-front-end-development/)
 
   ## Techniques
 
-  * [Speeding up the JavaScript ecosystem - Isolated Declarations](https://buff.ly/45WAbrg)
+  * [Speeding up the JavaScript ecosystem - Isolated Declarations](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-10/)
 
   ## Articles
 
-  * [5 Misconceptions about React Server Components](https://buff.ly/3W1zsSd)
-  * [Great animations](https://buff.ly/3XNDbEu)
+  * [5 Misconceptions about React Server Components](https://www.builder.io/blog/nextjs-react-server-components)
+  * [Great animations](https://emilkowal.ski/ui/great-animations)
 
   ## Frameworks
 
-  * [javaScriptKampala/z-js: The literally low overhead js framework](https://buff.ly/3L4wpCF)
+  * [javaScriptKampala/z-js: The literally low overhead js framework](/library/z-js-2)
 
   ## Tools
 

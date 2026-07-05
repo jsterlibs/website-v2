@@ -10,63 +10,63 @@ body: |
 
   ## Manifestos
 
-  * [A Progressive Complexity Manifesto](https://buff.ly/7Ws6oZG)
+  * [A Progressive Complexity Manifesto](https://www.lorenstew.art/blog/progressive-complexity-manifesto/)
 
   ## Articles
 
-  * [How to migrate your website from Next.js to Astro](https://buff.ly/jqlVG3Q)
-  * [Web Sustainability Guidelines (WSG) becomes a first public Draft Note](https://buff.ly/CavxPbz)
-  * [Web Standards and the Fall of the House of Iamus](https://buff.ly/02Eymfb)
-  * [The bloat of edge-case first libraries](https://buff.ly/ze7Byvs)
-  * [Why do browsers throttle JavaScript timers?](https://ilo.im/166jbx)
-  * [You no longer need JavaScript](https://ilo.im/166h9e)
-  * [state-ref - Building the State Management Library by Jinwoo Kim](https://buff.ly/No5phY6)
+  * [How to migrate your website from Next.js to Astro](https://www.luckymedia.dev/blog/how-to-migrate-your-website-from-nextjs-to-astro)
+  * [Web Sustainability Guidelines (WSG) becomes a first public Draft Note](https://www.w3.org/news/2025/web-sustainability-guidelines-wsg-becomes-a-first-public-draft-note/)
+  * [Web Standards and the Fall of the House of Iamus](https://infrequently.org/2025/09/standards-and-the-fall-of-iamus/)
+  * [The bloat of edge-case first libraries](https://43081j.com/2025/09/bloat-of-edge-case-libraries)
+  * [Why do browsers throttle JavaScript timers?](https://nolanlawson.com/2025/08/31/why-do-browsers-throttle-javascript-timers/)
+  * [You no longer need JavaScript](https://lyra.horse/blog/2025/08/you-dont-need-js/)
+  * [state-ref - Building the State Management Library by Jinwoo Kim](https://medium.com/@superlucky84/building-the-state-management-library-ef955dcac95c)
 
   ## Libraries
 
   * [Quiet UI - a UI library for the web](https://quietui.org/)
-  * [React 19.2](https://buff.ly/Acc7liO)
-  * [mini-lit - Lightweight Lit components with shadcn-inspired theming, Tailwind CSS v4 styling, and Lucide icons](https://buff.ly/oEc3kcY)
-  * [Cap'n Web: a new RPC system for browsers and web servers](https://buff.ly/1QOkJIL)
-  * [Isograph v0.4.0 — the one with the VSCode extension](https://buff.ly/w5vtlDK)
+  * [React 19.2](https://react.dev/blog/2025/10/01/react-19-2)
+  * [mini-lit - Lightweight Lit components with shadcn-inspired theming, Tailwind CSS v4 styling, and Lucide icons](https://minilit.mariozechner.at/)
+  * [Cap'n Web: a new RPC system for browsers and web servers](https://blog.cloudflare.com/capnweb-javascript-rpc-library/)
+  * [Isograph v0.4.0 — the one with the VSCode extension](https://isograph.dev/blog/2025/09/17/isograph-0.4.0/)
   * [varlock - Magic env files built for sharing](https://varlock.dev/)
-  * [nolimits4web/swiper: Most modern mobile touch slider with hardware accelerated transitions](https://buff.ly/NV3vhvm)
-  * [Introducing hx-optimistic: Make Your HTMX Apps Feel Instant](https://buff.ly/kjsQLcg)
-  * [PrimeReact - React UI Component Library](https://buff.ly/cR6qLqA)
-  * [WebReflection/file-tree: A file tree component for the web](https://buff.ly/65cHutw)
+  * [nolimits4web/swiper: Most modern mobile touch slider with hardware accelerated transitions](/library/swiper)
+  * [Introducing hx-optimistic: Make Your HTMX Apps Feel Instant](https://www.lorenstew.art/blog/hx-optimistic/)
+  * [PrimeReact - React UI Component Library](https://primereact.dev/)
+  * [WebReflection/file-tree: A file tree component for the web](/library/file-tree)
 
   ## Techniques
 
-  * [Progressive Complexity: When Islands Should be a Continent](https://buff.ly/NTkwrSh)
-  * [Simple, Accessible Multi-Select UI](https://buff.ly/PvYoroY)
-  * [Liquid Glass in the Browser: Refraction with CSS and SVG](https://buff.ly/gGL5nIF)
-  * [Don't Inherit the Box Model](https://buff.ly/SLsX8W3)
-  * [The Basics of Anchor Positioning](https://ilo.im/166gee)
-  * [Unit Formatting with Intl in JavaScript](https://buff.ly/g2R3cv4)
+  * [Progressive Complexity: When Islands Should be a Continent](https://www.lorenstew.art/blog/when-islands-should-be-a-continent)
+  * [Simple, Accessible Multi-Select UI](https://blog.codepen.io/2025/09/08/chris-corner-simple-accessible-multi-select-ui/)
+  * [Liquid Glass in the Browser: Refraction with CSS and SVG](https://kube.io/blog/liquid-glass-css-svg/)
+  * [Don't Inherit the Box Model](https://www.oddbird.net/2025/09/04/box-model/)
+  * [The Basics of Anchor Positioning](https://ishadeed.com/article/anchor-positioning/)
+  * [Unit Formatting with Intl in JavaScript](https://www.raymondcamden.com/2025/08/22/unit-formatting-with-intl-in-javascript)
 
   ## Security
 
   * [Popular Tinycolor npm Package Compromised in Supply Chain Attack](https://t.co/u5Mb20g6qw)
-  * [npm Author Qix Compromised via Phishing Email in Major Supply Chain Attack](https://buff.ly/rYRH4fQ)
+  * [npm Author Qix Compromised via Phishing Email in Major Supply Chain Attack](https://socket.dev/blog/npm-author-qix-compromised-in-major-supply-chain-attack)
 
   ## Opinions
 
-  * [React Won by Default – And It's Killing Frontend Innovation](https://buff.ly/Q5kWzIt)
+  * [React Won by Default – And It's Killing Frontend Innovation](https://www.lorenstew.art/blog/react-won-by-default/)
 
   ## Guides
 
-  * [A complete guide to HTTP caching](https://buff.ly/RkSSEM0)
+  * [A complete guide to HTTP caching](https://www.jonoalderson.com/performance/http-caching/)
 
   ## Performance
 
-  * [Obs.js: context-aware web performance for everyone](https://buff.ly/f51yeDa)
-  * [Making Sense of the Performance Extensibility API](https://buff.ly/hPL0wwb)
+  * [Obs.js: context-aware web performance for everyone](https://csswizardry.com/Obs.js/demo/)
+  * [Making Sense of the Performance Extensibility API](https://csswizardry.com/2025/07/the-extensibility-api/)
 
   ## Tools
 
-  * [Mastro: the simplest website generator you’ve ever seen.](https://buff.ly/Y1fV9wT)
-  * [Introducing CEM Language Server](https://buff.ly/R0c9pRg) - The missing LSP for Web Components
+  * [Mastro: the simplest website generator you’ve ever seen.](https://mastrojs.github.io/)
+  * [Introducing CEM Language Server](https://bennypowers.dev/posts/introducing-cem-language-server/) - The missing LSP for Web Components
 
   ## AI
 
-  * [web-infra-dev/midscene: Your AI Operator for Web, Android, Automation & Testing.](https://buff.ly/m00XplF)
+  * [web-infra-dev/midscene: Your AI Operator for Web, Android, Automation & Testing.](https://github.com/web-infra-dev/midscene)

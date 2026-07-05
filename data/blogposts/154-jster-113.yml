@@ -12,9 +12,9 @@ body: |
 
   ## Libraries
 
-  * [hugmanrique/turbo-ws](https://github.com/hugmanrique/turbo-ws) - Blazing fast low-level WebSocket server.
+  * [hugmanrique/turbo-ws](/library/turbo-ws) - Blazing fast low-level WebSocket server.
   * [PropelML](http://propelml.org/) - What the creator of Node has been up to?
-  * [terkelg/prompts](https://github.com/terkelg/prompts) - Lightweight, beautiful and user-friendly interactive prompts.
+  * [terkelg/prompts](/library/prompts) - Lightweight, beautiful and user-friendly interactive prompts.
 
   ## Articles
 

@@ -12,6 +12,10 @@ const LIBRARIES_DIR = join(ROOT, "data/libraries");
 const DEFAULT_CATEGORY = "toolkits";
 const DRY_RUN = process.argv.includes("--dry-run");
 const SAMPLE = process.argv.includes("--sample");
+const EXPAND_SHORT_LINKS = process.argv.includes("--expand-short-links");
+const LATEST_ONLY = process.argv.includes("--latest-only");
+const REWRITE_EXPANDED_LINKS = process.argv.includes("--rewrite-expanded-links");
+const REWRITE_CATALOG_LINKS = process.argv.includes("--rewrite-catalog-links");
 const JS_KEYWORDS_RE =
   /\b(?:javascript|typescript|node(?:\.js)?|react|vue|angular|svelte|web|css|html|dom|browser|npm|package|library|framework|component|plugin|tool|cli|bundler|compiler|runtime|testing|test|ui|api|sdk)\b/i;
 const CATALOG_SECTION_TO_CATEGORY = new Map([
@@ -33,13 +37,22 @@ const ARTICLE_HOST_RE =
   /(^|\.)((?:blog|docs|developer|dev|engineering|learn)\.|medium\.com$|dev\.to$|hashnode\.dev$|substack\.com$|css-tricks\.com$|smashingmagazine\.com$|web\.dev$|2ality\.com$|frontendmasters\.com$)/i;
 const PACKAGE_HOST_RE =
   /(^|\.)(github\.com|npmjs\.com|jsr\.io|deno\.land|bun\.sh)$/i;
+const SHORT_URL_HOST_RE = /(^|\.)buff\.ly$|(^|\.)bit\.ly$|(^|\.)ilo\.im$/i;
+const EXPAND_CONCURRENCY = 24;
+const EXPAND_TIMEOUT_MS = 5000;
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   await main();
 }
 
 async function main() {
-  const additions = await syncBlogCatalog({ dryRun: DRY_RUN });
+  const additions = await syncBlogCatalog({
+    dryRun: DRY_RUN,
+    expandShortLinks: EXPAND_SHORT_LINKS,
+    latestOnly: LATEST_ONLY,
+    rewriteExpandedLinks: REWRITE_EXPANDED_LINKS,
+    rewriteCatalogLinks: REWRITE_CATALOG_LINKS,
+  });
 
   if (DRY_RUN) {
     printSummary(additions);
@@ -47,9 +60,20 @@ async function main() {
   }
 }
 
-async function syncBlogCatalog({ dryRun = false } = {}) {
+async function syncBlogCatalog({
+  dryRun = false,
+  expandShortLinks = false,
+  latestOnly = false,
+  rewriteExpandedLinks = false,
+  rewriteCatalogLinks = false,
+} = {}) {
   const existingLibraries = loadExistingLibraries();
-  const candidates = collectCandidates(existingLibraries);
+  const { candidates, replacements } = await collectCandidates(existingLibraries, {
+    expandShortLinks,
+    latestOnly,
+    rewriteExpandedLinks,
+    rewriteCatalogLinks,
+  });
   const additions = selectAdditions(candidates, existingLibraries);
 
   if (dryRun) {
@@ -65,6 +89,7 @@ async function syncBlogCatalog({ dryRun = false } = {}) {
       ),
     ),
   );
+  await writeExpandedLinks(replacements);
   await writeCategoryEntries(additions);
 
   printSummary(additions);
@@ -72,66 +97,112 @@ async function syncBlogCatalog({ dryRun = false } = {}) {
   return additions;
 }
 
-function collectCandidates(existingLibraries) {
+async function collectCandidates(
+  existingLibraries,
+  {
+    expandShortLinks = false,
+    latestOnly = false,
+    rewriteExpandedLinks = false,
+    rewriteCatalogLinks = false,
+  } = {},
+) {
   const candidates = new Map();
-  const candidateUrls = new Set();
+  const candidateUrls = new Map();
+  const expandCache = new Map();
+  const replacements = new Map();
+  const files = getBlogPostFiles({ latestOnly });
+  const extractedEntries = [];
 
-  for (const file of readdirSync(BLOGPOSTS_DIR).sort(numericSort)) {
+  for (const file of files) {
     const filePath = join(BLOGPOSTS_DIR, file);
-    const post = parseBlogPost(readFileSync(filePath, "utf8"));
+    const content = readFileSync(filePath, "utf8");
+    const post = parseBlogPost(content);
 
     if (!/^jster-\d+$/.test(post.slug || "")) {
       continue;
     }
 
-    for (const entry of extractEntries(post.body)) {
-      if (!isCatalogCandidate(entry)) {
-        continue;
+    extractedEntries.push(
+      ...extractEntries(post.body).map((entry) => ({ entry, file })),
+    );
+  }
+
+  const entries = expandShortLinks
+    ? await mapLimit(extractedEntries, EXPAND_CONCURRENCY, async ({ entry, file }) => ({
+        entry: await expandEntryUrl(entry, expandCache, {
+          file,
+          replacements,
+          rewriteExpandedLinks,
+        }),
+        file,
+      }))
+    : extractedEntries;
+
+  for (const { entry, file } of entries) {
+    if (!isCatalogCandidate(entry)) {
+      continue;
+    }
+
+    const normalizedUrl = normalizeUrl(entry.url);
+    const normalizedPackageUrl = normalizePackageUrl(entry.url);
+    const existingLibraryId = resolveExistingLibraryId(
+      entry,
+      existingLibraries,
+      normalizedUrl,
+      normalizedPackageUrl,
+    );
+    const candidateLibraryId =
+      candidateUrls.get(normalizedUrl) ||
+      candidateUrls.get(normalizedPackageUrl) ||
+      "";
+
+    if (
+      !normalizedUrl ||
+      existingLibraryId ||
+      candidateLibraryId
+    ) {
+      const libraryId = existingLibraryId || candidateLibraryId;
+
+      if (rewriteCatalogLinks && libraryId) {
+        addReplacement(replacements, file, entry.url, `/library/${libraryId}`);
       }
 
-      const normalizedUrl = normalizeUrl(entry.url);
-      const normalizedPackageUrl = normalizePackageUrl(entry.url);
+      continue;
+    }
 
-      if (
-        !normalizedUrl ||
-        existingLibraries.urls.has(normalizedUrl) ||
-        existingLibraries.urls.has(normalizedPackageUrl) ||
-        candidateUrls.has(normalizedUrl) ||
-        candidateUrls.has(normalizedPackageUrl)
-      ) {
-        continue;
-      }
+    const id = uniqueId(slugify(resolveName(entry)), existingLibraries.ids, candidates);
 
-      const id = uniqueId(slugify(resolveName(entry)), existingLibraries.ids, candidates);
+    if (!id) {
+      continue;
+    }
 
-      if (!id) {
-        continue;
-      }
+    if (rewriteCatalogLinks) {
+      addReplacement(replacements, file, entry.url, `/library/${id}`);
+    }
 
-      candidates.set(id, {
-        category: resolveCategory(entry.section),
-        library: {
-          id,
-          description: resolveDescription(entry),
-          logo: "/images/repo.png",
-          name: resolveName(entry),
-          links: resolveLinks(entry.url),
-          tags: resolveTags(entry),
-        },
-        source: {
-          post: file,
-          section: entry.section,
-        },
-      });
-      candidateUrls.add(normalizedUrl);
+    candidates.set(id, {
+      category: resolveCategory(entry.section),
+      library: {
+        id,
+        description: resolveDescription(entry),
+        logo: "/images/repo.png",
+        name: resolveName(entry),
+        links: resolveLinks(entry.url),
+        tags: resolveTags(entry),
+      },
+      source: {
+        post: file,
+        section: entry.section,
+      },
+    });
+    candidateUrls.set(normalizedUrl, id);
 
-      if (normalizedPackageUrl) {
-        candidateUrls.add(normalizedPackageUrl);
-      }
+    if (normalizedPackageUrl) {
+      candidateUrls.set(normalizedPackageUrl, id);
     }
   }
 
-  return candidates;
+  return { candidates, replacements };
 }
 
 function selectAdditions(candidates, existingLibraries) {
@@ -140,6 +211,128 @@ function selectAdditions(candidates, existingLibraries) {
       library.id &&
       !existingLibraries.ids.has(library.id) &&
       !existingLibraries.names.has(normalizeName(library.name)),
+  );
+}
+
+function getBlogPostFiles({ latestOnly = false } = {}) {
+  const files = readdirSync(BLOGPOSTS_DIR).sort(numericSort);
+
+  if (!latestOnly) {
+    return files;
+  }
+
+  const latest = files
+    .map((file) => {
+      const match = file.match(/^(\d+)-jster-\d+\.(?:md|yml)$/);
+
+      return match ? { file, number: Number.parseInt(match[1], 10) } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.number - a.number)[0];
+
+  return latest ? [latest.file] : [];
+}
+
+async function expandEntryUrl(
+  entry,
+  cache,
+  { file = "", replacements, rewriteExpandedLinks = false } = {},
+) {
+  if (!shouldExpandUrl(entry.url)) {
+    return entry;
+  }
+
+  if (!cache.has(entry.url)) {
+    cache.set(entry.url, expandUrl(entry.url));
+  }
+
+  const expandedUrl = await cache.get(entry.url);
+
+  if (rewriteExpandedLinks && file && expandedUrl !== entry.url) {
+    addReplacement(replacements, file, entry.url, expandedUrl);
+  }
+
+  return expandedUrl === entry.url ? entry : { ...entry, url: expandedUrl };
+}
+
+function shouldExpandUrl(url) {
+  const parsed = parseUrl(url);
+
+  return parsed ? SHORT_URL_HOST_RE.test(parsed.hostname) : false;
+}
+
+async function expandUrl(url) {
+  const headUrl = await fetchRedirectUrl(url, "HEAD");
+
+  if (headUrl !== url) {
+    return headUrl;
+  }
+
+  return fetchRedirectUrl(url, "GET");
+}
+
+async function fetchRedirectUrl(url, method) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), EXPAND_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(url, {
+      method,
+      redirect: "follow",
+      signal: controller.signal,
+    });
+
+    return response.url || url;
+  } catch (_error) {
+    return url;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function mapLimit(items, limit, mapper) {
+  const results = new Array(items.length);
+  let index = 0;
+
+  await Promise.all(
+    Array.from({ length: Math.min(limit, items.length) }, async () => {
+      while (index < items.length) {
+        const currentIndex = index;
+        index += 1;
+        results[currentIndex] = await mapper(items[currentIndex], currentIndex);
+      }
+    }),
+  );
+
+  return results;
+}
+
+function addReplacement(replacements, file, from, to) {
+  if (!file || !from || !to || from === to) {
+    return;
+  }
+
+  if (!replacements.has(file)) {
+    replacements.set(file, []);
+  }
+
+  replacements.get(file).push({ from, to });
+}
+
+async function writeExpandedLinks(replacements) {
+  await Promise.all(
+    [...replacements.entries()].map(async ([file, fileReplacements]) => {
+      const filePath = join(BLOGPOSTS_DIR, file);
+      const content = readFileSync(filePath, "utf8");
+      const nextContent = fileReplacements.reduce(
+        (ret, { from, to }) => ret.split(from).join(to),
+        content,
+      );
+
+      if (nextContent !== content) {
+        await writeFile(filePath, nextContent);
+      }
+    }),
   );
 }
 
@@ -282,10 +475,26 @@ function resolveName(entry) {
   return entry.title;
 }
 
+function resolveExistingLibraryId(
+  entry,
+  existingLibraries,
+  normalizedUrl,
+  normalizedPackageUrl,
+) {
+  return (
+    existingLibraries.urlToId.get(normalizedUrl) ||
+    existingLibraries.urlToId.get(normalizedPackageUrl) ||
+    existingLibraries.nameToId.get(normalizeName(resolveName(entry))) ||
+    ""
+  );
+}
+
 function loadExistingLibraries() {
   const ids = new Set();
   const names = new Set();
   const urls = new Set();
+  const nameToId = new Map();
+  const urlToId = new Map();
 
   for (const file of readdirSync(LIBRARIES_DIR)) {
     if (!file.endsWith(".json")) {
@@ -297,23 +506,26 @@ function loadExistingLibraries() {
     ids.add(file.replace(/\.json$/, ""));
     ids.add(library.id);
     names.add(normalizeName(library.name));
+    nameToId.set(normalizeName(library.name), library.id);
 
     for (const value of Object.values(library.links || {})) {
       const normalizedUrl = normalizeUrl(value);
 
       if (normalizedUrl) {
         urls.add(normalizedUrl);
+        urlToId.set(normalizedUrl, library.id);
       }
 
       const normalizedPackageUrl = normalizePackageUrl(value);
 
       if (normalizedPackageUrl) {
         urls.add(normalizedPackageUrl);
+        urlToId.set(normalizedPackageUrl, library.id);
       }
     }
   }
 
-  return { ids, names, urls };
+  return { ids, names, urls, nameToId, urlToId };
 }
 
 async function writeCategoryEntries(additions) {

@@ -11,13 +11,13 @@ body: |
   ## Libraries
 
   * [Jeongho made 1,000x faster TypeScript Validator Library](https://dev.to/samchon/typescript-json-is-10-1000x-times-faster-than-zod-and-io-ts-8n6)
-  * [arackaf/micro-graphql-svelte](https://github.com/arackaf/micro-graphql-svelte) - Light and simple GraphQL Svelte client with extensible, composable cache invalidation
+  * [arackaf/micro-graphql-svelte](/library/micro-graphql-svelte) - Light and simple GraphQL Svelte client with extensible, composable cache invalidation
   * [Tremor](https://www.tremor.so/) - The React library to build dashboards fast
   * [Legend](https://legendapp.com/open-source/state/) - A super fast and powerful state library for JavaScript apps
-  * [hazae41/xswr](https://github.com/hazae41/xswr) - Yet another React data (re)fetching library
+  * [hazae41/xswr](/library/xswr) - Yet another React data (re)fetching library
   * [Telefunc](https://telefunc.com/) - Remote Functions. Instead of API.
-  * [bigskysoftware/idiomorph](https://github.com/bigskysoftware/idiomorph) - A DOM-merging algorithm
-  * [WebReflection/uhtml](https://github.com/WebReflection/uhtml) - A micro HTML/SVG render
+  * [bigskysoftware/idiomorph](/library/idiomorph) - A DOM-merging algorithm
+  * [WebReflection/uhtml](/library/uhtml) - A micro HTML/SVG render
   * [Modular Forms](https://modularforms.dev/) - The modular form library for SolidJS
 
   ## Frameworks
@@ -26,7 +26,7 @@ body: |
   * [TezJS](https://tezjs.io/) - A Revolutionary Jamstack Framework for Modern Websites
   * [Unpoly](https://unpoly.com/) - Unobtrusive JavaScript framework
   * [Introducing Shoelace, a Framework-Independent Component-Based UX Library](https://css-tricks.com/shoelace-component-frameowrk-introduction/)
-  * [TahaSh/qwikql](https://github.com/TahaSh/qwikql) - A GraphQL client for Qwik framework
+  * [TahaSh/qwikql](/library/qwikql) - A GraphQL client for Qwik framework
 
   ## Techniques
 
@@ -53,7 +53,7 @@ body: |
 
   ## Languages
 
-  * [Deno 1.28: Featuring 1.3 Million New Modules](https://buff.ly/3fYi2nz)
+  * [Deno 1.28: Featuring 1.3 Million New Modules](https://deno.com/blog/v1.28)
 
   ## Tools
 

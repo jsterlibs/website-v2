@@ -11,55 +11,55 @@ body: |
   ## Security
 
   * [Critical Security Vulnerability in React Server Components – Update your React now](https://m.cje.io/444mM0y)
-  * [Why XSS Persists in This Frameworks Era?](https://buff.ly/kcwubY5)
+  * [Why XSS Persists in This Frameworks Era?](https://flatt.tech/research/posts/why-xss-persists-in-this-frameworks-era/)
 
   ## Tools
 
-  * [Tusk Drift - Automated API Testing From Live Traffic](https://buff.ly/d8gmhLK)
-  * [HTML Size Analyzer by DebugBear](https://buff.ly/8q8l96G)
+  * [Tusk Drift - Automated API Testing From Live Traffic](https://www.usetusk.ai/tusk-drift)
+  * [HTML Size Analyzer by DebugBear](https://www.debugbear.com/html-size-analyzer)
   * [JSX Tool - React Dev Tools for Styling](https://jsxtool.com/)
-  * [Count Cachula - Local-first performance without the complexity](https://buff.ly/ve5K0TG)
-  * [aidenybai/react-scan: Scan for React performance issues and eliminate slow renders in your app](https://buff.ly/Dr7Y0C7)
-  * [Mediabunny - Complete media toolkit](https://buff.ly/3RsFfxi)
-  * [pakastin/nomoji: Replace emojis in text with SVG images](https://buff.ly/BXM6zxv)
-  * [Storybook 10](https://buff.ly/eSuJ9uS)
+  * [Count Cachula - Local-first performance without the complexity](https://countcachula.spooky.click/)
+  * [aidenybai/react-scan: Scan for React performance issues and eliminate slow renders in your app](/library/react-scan)
+  * [Mediabunny - Complete media toolkit](https://mediabunny.dev/)
+  * [pakastin/nomoji: Replace emojis in text with SVG images](/library/nomoji)
+  * [Storybook 10](https://storybook.js.org/blog/storybook-10/)
 
   ## Libraries
 
-  * [buttondown/sniper-link - Confirm emails easily](https://buff.ly/05zkI6N)
-  * [Valibot v1.2](https://buff.ly/rNq6Jah)
-  * [Prisma 7 Release: Rust-Free, Faster, and More Compatible](https://buff.ly/R7Zw62f)
-  * [hackfixme/miu: A small JavaScript data binding library](https://buff.ly/rtaxoJ5)
-  * [bigskysoftware/fixi - Experimental hypermedia controls](https://buff.ly/nReDfhL)
-  * [Transformers.js - State of art machine learning for the web](https://buff.ly/AGukSml)
-  * [gavoja/twcss - A tiny Tailwind alternative](https://buff.ly/u5lJAKI)
-  * [Interpol: A Low-Level Take on Tweening and Motion](https://buff.ly/6lKkaay)
+  * [buttondown/sniper-link - Confirm emails easily](/library/sniper-link)
+  * [Valibot v1.2](https://valibot.dev/blog/valibot-v1.2-release-notes/)
+  * [Prisma 7 Release: Rust-Free, Faster, and More Compatible](https://www.prisma.io/blog/announcing-prisma-orm-7-0-0)
+  * [hackfixme/miu: A small JavaScript data binding library](/library/miu)
+  * [bigskysoftware/fixi - Experimental hypermedia controls](/library/fixi)
+  * [Transformers.js - State of art machine learning for the web](https://huggingface.co/docs/transformers.js/en/index)
+  * [gavoja/twcss - A tiny Tailwind alternative](/library/twcss)
+  * [Interpol: A Low-Level Take on Tweening and Motion](https://tympanus.net/codrops/2025/10/27/interpol-a-low-level-take-on-tweening-and-motion/)
 
   ## Articles
 
-  * [The Performance Inequality Gap 2026](https://ilo.im/168o3w)
-  * [</> htmx ~ The fetch()ening](https://buff.ly/cXpQN3g)
-  * [Musings on Isomorphic First Frameworks](https://buff.ly/ip2YC4Z)
-  * [What's an interactive element?](https://buff.ly/cJOoh6a)
-  * [ChatGPT sez Build with semantics first – HTML Accessibility](https://buff.ly/ZlxKeCC)
-  * [An Introduction to the World Wide Web for Very Senior Programmers](https://buff.ly/rfcY9Cn)
-  * [Loren Built the Same App 10 Times: Evaluating Frameworks for Mobile Performance](https://buff.ly/hFxAA9q)
+  * [The Performance Inequality Gap 2026](https://infrequently.org/2025/11/performance-inequality-gap-2026/)
+  * [</> htmx ~ The fetch()ening](https://htmx.org/essays/the-fetchening/)
+  * [Musings on Isomorphic First Frameworks](https://hackmd.io/@0u1u3zEAQAO0iYWVAStEvw/SkM6lc_Cge)
+  * [What's an interactive element?](https://matuzo.at/blog/2025/whats-an-interactive-element)
+  * [ChatGPT sez Build with semantics first – HTML Accessibility](https://html5accessibility.com/stuff/2025/10/28/chatgpt-sez-build-with-semantics-first/)
+  * [An Introduction to the World Wide Web for Very Senior Programmers](https://whitep4nth3r.com/talks/an-introduction-to-the-world-wide-web-for-very-senior-programmers/)
+  * [Loren Built the Same App 10 Times: Evaluating Frameworks for Mobile Performance](https://www.lorenstew.art/blog/10-kanban-boards)
 
   ## Techniques
 
-  * [How to "officially" deprecate methods with Node.js utilities](https://buff.ly/MQsiKu6)
-  * [Your URL Is Your State](https://buff.ly/cd9xcGA)
-  * [Simplify Your Code: Functional Core, Imperative Shell](https://buff.ly/E9IzTMY)
+  * [How to "officially" deprecate methods with Node.js utilities](https://www.stefanjudis.com/today-i-learned/deprecate-method-in-node-js/)
+  * [Your URL Is Your State](https://alfy.blog/2025/10/31/your-url-is-your-state.html)
+  * [Simplify Your Code: Functional Core, Imperative Shell](https://testing.googleblog.com/2025/10/simplify-your-code-functional-core.html)
 
   ## Opinions
 
-  * [Tooltip Components Should Not Exist](https://buff.ly/tXAoQDO)
-  * [The fate of small open source libraries in the era of AI](https://buff.ly/Yl9Dtqq)
+  * [Tooltip Components Should Not Exist](https://tkdodo.eu/blog/tooltip-components-should-not-exist)
+  * [The fate of small open source libraries in the era of AI](https://nolanlawson.com/2025/11/16/the-fate-of-small-open-source/)
 
   ## Frameworks
 
-  * [VoltAgent - TypeScript AI Agent Framework](https://buff.ly/sGDvlQh)
+  * [VoltAgent - TypeScript AI Agent Framework](https://voltagent.dev/)
 
   ## Demos
 
-  * [The Perfect Date Picker](https://buff.ly/lXW2VQh)
+  * [The Perfect Date Picker](https://perfectdate.relevant.space/)

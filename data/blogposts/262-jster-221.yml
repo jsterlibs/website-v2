@@ -10,36 +10,36 @@ body: |
 
   ## Libraries
 
-  * [Editor.js - Free block-style editor with a universal JSON output](https://buff.ly/2I5wVkw)
-  * [WebReflection/buffer-to-base64: A base64 encoder/decoder with gzip or deflate abilities.](https://buff.ly/4ednhJb)
-  * [jakebailey/every-ts: A utility to build and bisect any version of TypeScript](https://buff.ly/4cbte7G)
-  * [ascorbic/cdn-cache-control - Easy cache header handling](https://buff.ly/45ceJy9)
+  * [Editor.js - Free block-style editor with a universal JSON output](https://editorjs.io/)
+  * [WebReflection/buffer-to-base64: A base64 encoder/decoder with gzip or deflate abilities.](/library/buffer-to-base64)
+  * [jakebailey/every-ts: A utility to build and bisect any version of TypeScript](/library/every-ts)
+  * [ascorbic/cdn-cache-control - Easy cache header handling](/library/cache-primitives)
 
   ## Frameworks
 
-  * [Trigger - The open source background jobs framework](https://buff.ly/3wR0deN)
+  * [Trigger - The open source background jobs framework](https://trigger.dev/)
 
   ## Tools
 
-  * [TanStack/config: Configuration and tools for publishing and maintaining high-quality JavaScript packages](https://buff.ly/3S3MrRz)
-  * [ortoni-report - Better Playwright reports](https://buff.ly/4epTNHX)
-  * [lukeautry/tsoa: Build OpenAPI-compliant REST APIs using TypeScript and Node](https://buff.ly/32PkPns)
-  * [RecipeUI - Open source alternative to Postman](https://buff.ly/46arsAK)
-  * [Turborepo 2.0 - Monorepos go brr](https://buff.ly/4aTZ1ZE)
+  * [TanStack/config: Configuration and tools for publishing and maintaining high-quality JavaScript packages](/library/config)
+  * [ortoni-report - Better Playwright reports](/library/ortoni-report)
+  * [lukeautry/tsoa: Build OpenAPI-compliant REST APIs using TypeScript and Node](/library/tsoa)
+  * [RecipeUI - Open source alternative to Postman](https://recipeui.com/)
+  * [Turborepo 2.0 - Monorepos go brr](https://turborepo.dev/blog/turbo-2-0)
 
   ## Runtimes
 
-  * [Redfire75369/spiderfire: JavaScript Runtime built with Mozilla's SpiderMonkey Engine](https://buff.ly/3th9r5s)
+  * [Redfire75369/spiderfire: JavaScript Runtime built with Mozilla's SpiderMonkey Engine](/library/spiderfire)
 
   ## Languages
 
-  * [Announcing TypeScript 5.5 RC](https://buff.ly/4aM7Qoo)
+  * [Announcing TypeScript 5.5 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/)
 
   ## Demos
 
-  * [Demonstration of a simple Lorenz attractor that emits SVG](https://buff.ly/4aMkQKG)
+  * [Demonstration of a simple Lorenz attractor that emits SVG](https://jsfiddle.net/guf9dkw6/)
 
   ## Articles
 
-  * [Why @mjhbessey is over with GraphQL after six years of using it](https://buff.ly/4elkFsX)
-  * [Simplify sharing with built-in APIs and progressive enhancement](https://buff.ly/3Q2c5VR)
+  * [Why @mjhbessey is over with GraphQL after six years of using it](https://bessey.dev/blog/2024/05/24/why-im-over-graphql/)
+  * [Simplify sharing with built-in APIs and progressive enhancement](https://piccalil.li/blog/simplify-sharing-with-built-in-apis-and-progressive-enhancement/)

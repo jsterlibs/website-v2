@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [wayfair/data-snapshot](https://github.com/wayfair/data-snapshot) - A generic mock data manager for JavaScript tests, that helps you use data from real endpoints in tests.
-  * [KostyaTretyak/marked-ts](https://github.com/KostyaTretyak/marked-ts) - A full-featured markdown parser and compiler, written in TypeScript.
-  * [e-oj/Magic-Grid](https://github.com/e-oj/Magic-Grid) - A simple, lightweight Javascript library for dynamic grid layouts
+  * [wayfair/data-snapshot](/library/data-snapshot) - A generic mock data manager for JavaScript tests, that helps you use data from real endpoints in tests.
+  * [KostyaTretyak/marked-ts](/library/marked-ts) - A full-featured markdown parser and compiler, written in TypeScript.
+  * [e-oj/Magic-Grid](/library/magic-grid) - A simple, lightweight Javascript library for dynamic grid layouts
 
   ## Tutorials
 
@@ -33,8 +33,8 @@ body: |
 
   ## Tools
 
-  * [cristianoc/genType](https://github.com/cristianoc/genType) - Auto generation of idiomatic bindings between Reason and JavaScript: either vanilla or typed with TypeScript/FlowType.
-  * [GoogleChromeLabs/ndb](https://github.com/GoogleChromeLabs/ndb) - An improved debugging experience for Node.js, enabled by Chrome DevTools
+  * [cristianoc/genType](/library/gentype) - Auto generation of idiomatic bindings between Reason and JavaScript: either vanilla or typed with TypeScript/FlowType.
+  * [GoogleChromeLabs/ndb](/library/ndb) - An improved debugging experience for Node.js, enabled by Chrome DevTools
   * [Announcing TypeScript 3.0](https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/)
   * [webhint](https://webhint.io/) - The hinting engine for web best practices
 

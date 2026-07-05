@@ -160,7 +160,10 @@ async function main() {
 
   await writeFile(nextPostPath, markdown);
   await writeFile(BLOG_INDEX_PATH, JSON.stringify(nextIndex, null, 2) + "\n");
-  const catalogAdditions = await syncBlogCatalog();
+  const catalogAdditions = await syncBlogCatalog({
+    latestOnly: true,
+    rewriteCatalogLinks: true,
+  });
 
   console.log(`Previous JSter: #${announcement.number}`);
   console.log(`Fetched posts: ${fetchedEntries.length}`);

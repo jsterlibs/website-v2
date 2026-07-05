@@ -12,12 +12,12 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/xtuc/async-reactor }}
+  {{ screenshot: /library/async-reactor }}
 
   * [React v16.0](https://reactjs.org/blog/2017/09/26/react-v16.0.html) - Major version of the popular user interface library.
   * [Draggable](https://shopify.github.io/draggable/) - A lightweight, responsive, modern drag and drop library.
-  * [xtuc/async-reactor](https://github.com/xtuc/async-reactor) - Render async Stateless Functional Components in React.
-  * [jeromeetienne/AR.js](https://github.com/jeromeetienne/AR.js) - Efficient Augmented Reality for the Web. 60 fps on mobile!
+  * [xtuc/async-reactor](/library/async-reactor) - Render async Stateless Functional Components in React.
+  * [jeromeetienne/AR.js](/library/ar-js) - Efficient Augmented Reality for the Web. 60 fps on mobile!
   * [Liike](https://liike.js.org/) - Tiny tweening library.
 
   ## Articles

@@ -10,31 +10,31 @@ body: |
 
   ## Libraries
 
-  * [latitude-dev/latitude: Developer-first embedded analytics](https://buff.ly/4bCXrvT)
-  * [srcl - Open source monospace component library for React](https://buff.ly/3ZwmdcR)
+  * [latitude-dev/latitude: Developer-first embedded analytics](/library/latitude)
+  * [srcl - Open source monospace component library for React](https://www.sacred.computer/)
   * [UAParser.js - Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent & Client Hints data using JavaScript. Supports browser & node.js environment. Also available as jQuery plugin & TypeScript-ready development.](https://uaparser.dev/)
-  * [React v19 is now stable](https://buff.ly/4ikcSxn)
+  * [React v19 is now stable](https://react.dev/blog/2024/12/05/react-19)
 
   ## Guides
 
-  * [An intro to TSConfig for JavaScript Developers](https://buff.ly/4bzPWG1)
+  * [An intro to TSConfig for JavaScript Developers](https://deno.com/blog/intro-to-tsconfig)
 
   ## Techniques
 
-  * [Plain Vanilla - Simple components minimally](https://buff.ly/41ww1Gm)
-  * [Spot Non-Composited Animations in Chrome DevTools](https://buff.ly/3ZKufAb)
-  * [Avoiding unnecessary cleanup work in disconnectedCallback](https://buff.ly/3ViYQC2)
-  * [Understanding the Hoisting Behavior of let and const](https://buff.ly/3ZAWpxy)
+  * [Plain Vanilla - Simple components minimally](https://plainvanillaweb.com/)
+  * [Spot Non-Composited Animations in Chrome DevTools](https://www.bram.us/2024/12/10/spot-non-composited-animations-in-chrome-devtools/)
+  * [Avoiding unnecessary cleanup work in disconnectedCallback](https://nolanlawson.com/2024/12/01/avoiding-unnecessary-cleanup-work-in-disconnectedcallback/)
+  * [Understanding the Hoisting Behavior of let and const](https://brightinventions.pl/blog/let-const-hoisting/)
 
   ## Papers
 
-  * [Overview of Web Application Performance Optimization Techniques](https://buff.ly/4ggbudF)
+  * [Overview of Web Application Performance Optimization Techniques](https://arxiv.org/abs/2412.07892)
 
   ## Tools
 
-  * [Impala - Very simple React and Preact static site generator](https://buff.ly/3KcWyzk)
-  * [Astro 5.0](https://buff.ly/3Vkjq5f)
+  * [Impala - Very simple React and Preact static site generator](/library/impala)
+  * [Astro 5.0](https://astro.build/blog/astro-5/)
 
   ## Components
 
-  * [snow-fall Web Component](https://buff.ly/3HiI7Yh)
+  * [snow-fall Web Component](https://www.zachleat.com/web/snow-fall/)

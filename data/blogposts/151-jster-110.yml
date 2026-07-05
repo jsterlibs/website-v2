@@ -14,13 +14,13 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/angus-c/just }}
+  {{ screenshot: /library/just }}
 
-  * [angus-c/just](https://github.com/angus-c/just) - A library of dependency-free utilities that do just do one thing.
-  * [jxnblk/system-components](https://github.com/jxnblk/system-components) - Create consistent design-system-driven React UI components.
-  * [Bacon.js 2.0](https://github.com/baconjs/bacon.js) - Reactive programming.
+  * [angus-c/just](/library/just) - A library of dependency-free utilities that do just do one thing.
+  * [jxnblk/system-components](/library/system-components) - Create consistent design-system-driven React UI components.
+  * [Bacon.js 2.0](/library/bacon-js) - Reactive programming.
   * [TOAST UI Editor](https://nhnent.github.io/tui.editor/) - GFM Markdown WYSIWYG Editor.
-  * [page.js](https://github.com/visionmedia/page.js) - Micro client-side router inspired by the Express router.
+  * [page.js](/library/page-js) - Micro client-side router inspired by the Express router.
 
   ## Styling
 
@@ -31,7 +31,7 @@ body: |
 
   * [Quasar Framework](http://quasar-framework.org/) - Build responsive websites, PWAs, hybrid mobile Apps (that look native!) and Electron apps, all simultaneously using same codebase, powered with Vue.
   * [Nest](https://nestjs.com/) - A progressive Node.js framework for building efficient and scalable server-side applications.
-  * [GitHub](https://github.com/lukeed/polka) - A micro web server so fast, it'll make you dance!
+  * [GitHub](/library/polka) - A micro web server so fast, it'll make you dance!
 
   ## Articles
 
@@ -55,6 +55,6 @@ body: |
   ## Tools
 
   * [Parcel v1.5.0 released](https://medium.com/@devongovett/parcel-v1-5-0-released-source-maps-webassembly-rust-and-more-3a6385e43b95) - Source Maps, WebAssembly, Rust, and more!
-  * [nearform/node-clinic](https://github.com/nearform/node-clinic) - Diagnose your Node.js performance issues.
+  * [nearform/node-clinic](/library/node-clinic) - Diagnose your Node.js performance issues.
   * [aXe](https://axe-core.org/) - Easy accessibility testing.
   * [Cuttlebelle](https://cuttlebelle.com/) - The react static site generator that separates editing and code concerns.

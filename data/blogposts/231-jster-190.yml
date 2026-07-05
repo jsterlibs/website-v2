@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  * [ungap/esx](https://github.com/ungap/esx) - A template literal based ESX proposal
+  * [ungap/esx](/library/esx) - A template literal based ESX proposal
   * [a11y-dialog](https://a11y-dialog.netlify.app/) - a lightweight yet flexible script to create accessible dialog windows.
 
   ## Frameworks
 
-  * [tjkandala/baahu](https://github.com/tjkandala/baahu) - State machine-based UI framework
-  * [hydroxide-js/hydroxide](https://github.com/hydroxide-js/hydroxide) - Next Generation Reactive JavaScript Framework
+  * [tjkandala/baahu](/library/baahu) - State machine-based UI framework
+  * [hydroxide-js/hydroxide](/library/hydroxide) - Next Generation Reactive JavaScript Framework
 
   ## TypeScript
 

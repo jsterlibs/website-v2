@@ -10,28 +10,28 @@ body: |
 
   ## Libraries
 
-  * [jantimon/next-yak: a streamlined CSS-in-JS solution tailor-made for Next.js, seamlessly combining the expressive power of styled-components syntax with efficient build-time extraction and minimal runtime footprint](https://buff.ly/4ab7ZC2)
-  * [path-unified: Isomorphic path utilities](https://www.npmjs.com/package/path-unified)
+  * [jantimon/next-yak: a streamlined CSS-in-JS solution tailor-made for Next.js, seamlessly combining the expressive power of styled-components syntax with efficient build-time extraction and minimal runtime footprint](/library/next-yak)
+  * [path-unified: Isomorphic path utilities](/library/path-unified)
 
   ## Tools
 
-  * [react-geiger - Geiger meter but for React performance](https://buff.ly/3TCyMSg)
-  * [thepassle/module-graph - Visualize the module graph of your application easily through JavaScript](https://buff.ly/4c88VZG)
-  * [Cypress Vs SafeTest](https://buff.ly/3wCEjz4)
+  * [react-geiger - Geiger meter but for React performance](/library/react-geiger)
+  * [thepassle/module-graph - Visualize the module graph of your application easily through JavaScript](/library/module-graph)
+  * [Cypress Vs SafeTest](https://glebbahmutov.com/blog/cypress-vs-safetest/)
 
   ## Articles
 
-  * [Comparison of JavaScript runtime performance in server usage](https://buff.ly/3IAqT9o)
-  * [Case Study: 2023 refresh of lynnandtonic.com](https://buff.ly/3ImYhjR)
-  * [Why React Server Components Are Breaking Builds to Win Tomorrow](https://buff.ly/42Zlz95)
+  * [Comparison of JavaScript runtime performance in server usage](https://kitsonkelly.com/posts/http-speed)
+  * [Case Study: 2023 refresh of lynnandtonic.com](https://lynnandtonic.com/thoughts/entries/case-study-2023-refresh/)
+  * [Why React Server Components Are Breaking Builds to Win Tomorrow](https://www.builder.io/blog/why-react-server-components)
 
   ## Techniques
 
-  * [How to read files quickly in JavaScript?](https://buff.ly/3IBKIx4)
-  * [Simple RSC With Vinxi](https://buff.ly/49CekGE)
-  * [Challenges in developing for multiple runtimes - case Oak](https://buff.ly/3wKig9Q)
-  * [No Outer margin](https://buff.ly/49IqWfq)
+  * [How to read files quickly in JavaScript?](https://lemire.me/blog/2024/03/12/how-to-read-files-quickly-in-javascript/)
+  * [Simple RSC With Vinxi](https://www.brenelz.com/posts/simple-rsc-with-vinxi/)
+  * [Challenges in developing for multiple runtimes - case Oak](https://kitsonkelly.com/posts/the-usual-suspects)
+  * [No Outer margin](https://kyleshevlin.com/no-outer-margin/)
 
   ## Languages
 
-  * [Announcing TypeScript 5.4 RC](https://buff.ly/3TnOFfa)
+  * [Announcing TypeScript 5.4 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4-rc/)

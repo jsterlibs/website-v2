@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/samknows/transform-when }}
+  {{ screenshot: /library/transform-when }}
 
-  * [transform-when](https://github.com/samknows/transform-when) - Animate combining page position and time.
-  * [marksy](https://github.com/cerebral/marksy) - Render Markdown in React.
+  * [transform-when](/library/transform-when) - Animate combining page position and time.
+  * [marksy](/library/marksy) - Render Markdown in React.
   * [nanogallery2](http://nanogallery2.nanostudio.org/) - A light gallery.
   * [fullPage.js](https://alvarotrigo.com/fullPage/) - One page scroll sections.
-  * [pegjs is looking for a new maintainer](https://github.com/pegjs/pegjs/issues/503)
+  * [pegjs is looking for a new maintainer](/library/pegjs)
 
   ## Articles
 
@@ -39,8 +39,8 @@ body: |
 
   ## Tools
 
-  * [uglify-es](https://www.npmjs.com/package/uglify-es) - ES6 support for UglifyJS 3.
-  * [pkg](https://github.com/zeit/pkg) - Package your Node.js project into an executable.
+  * [uglify-es](/library/uglify-es) - ES6 support for UglifyJS 3.
+  * [pkg](/library/zeit-pkg) - Package your Node.js project into an executable.
 
   ## Benchmarks
 

@@ -10,12 +10,12 @@ body: |
 
   ## Libraries
 
-  * [avantcredit/gql2ts](https://github.com/avantcredit/gql2ts) - Convert a GraphQL schema to a TypeScript definition
-  * [threepointone/css-suspense](https://github.com/threepointone/css-suspense) - CSS loading for React the suspense way
-  * [diegohaz/styled-tools](https://github.com/diegohaz/styled-tools) - Useful interpolated functions for CSS-in-JS
-  * [sapegin/q-i](https://github.com/sapegin/q-i) - Node.js objects inspector with color highlighting
+  * [avantcredit/gql2ts](/library/gql2ts) - Convert a GraphQL schema to a TypeScript definition
+  * [threepointone/css-suspense](/library/css-suspense) - CSS loading for React the suspense way
+  * [diegohaz/styled-tools](/library/styled-tools) - Useful interpolated functions for CSS-in-JS
+  * [sapegin/q-i](/library/q-i) - Node.js objects inspector with color highlighting
   * [turtle.audio](http://turtle.audio/) - Turtle graphics but for audio
-  * [sapegin/richtypo.js](https://github.com/sapegin/richtypo.js) - HTML typography enhancer for Node
+  * [sapegin/richtypo.js](/library/richtypo-js) - HTML typography enhancer for Node
 
   ## Techniques
 

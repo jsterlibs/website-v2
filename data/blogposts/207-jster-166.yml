@@ -11,11 +11,11 @@ body: |
   ## Libraries
 
   * [LinkeDOM: A JSDOM Alternative. JSDOM is awesome, but it’s slow at…](https://webreflection.medium.com/linkedom-a-jsdom-alternative-53dd8f699311)
-  * [google/incremental-dom](https://github.com/google/incremental-dom) - An in-place DOM diffing library
+  * [google/incremental-dom](/library/incremental-dom) - An in-place DOM diffing library
 
   ## Frameworks
 
-  * [ealush/vest](https://github.com/ealush/vest) - Declarative validations framework
+  * [ealush/vest](/library/vest) - Declarative validations framework
 
   ## Services
 
@@ -29,8 +29,8 @@ body: |
 
   ## Tools
 
-  * [dabbott/javascript-playgrounds](https://github.com/dabbott/javascript-playgrounds) - An interactive JavaScript sandbox
-  * [tachometer](https://www.npmjs.com/package/tachometer) - Run benchmarks
+  * [dabbott/javascript-playgrounds](/library/javascript-playgrounds) - An interactive JavaScript sandbox
+  * [tachometer](/library/tachometer) - Run benchmarks
   * [Volta](https://volta.sh/) - The Hassle-Free JavaScript Tool Manager
 
   ## Tutorials

@@ -10,17 +10,17 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/origamitower/folktale }}
+  {{ screenshot: /library/folktale }}
 
-  * [origamitower/folktale](https://github.com/origamitower/folktale) - A standard library for functional programming in JavaScript
+  * [origamitower/folktale](/library/folktale) - A standard library for functional programming in JavaScript
   * [lychee.js](https://lychee.js.org/) - Next-Gen Isomorphic Application Engine
-  * [dropbox/zxcvbn](https://github.com/dropbox/zxcvbn) - Low-Budget Password Strength Estimation
+  * [dropbox/zxcvbn](/library/zxcvbn) - Low-Budget Password Strength Estimation
   * [Sazerac](https://hackernoon.com/sazerac-data-driven-testing-for-javascript-e3408ac29d8c) - Data-driven Testing for JavaScript
 
   ## UI Libraries
 
   * [Moon](http://moonjs.ga/) - A minimal, blazing fast user interface library
-  * [WebReflection/viperHTML](https://github.com/WebReflection/viperHTML) - Isomorphic hyperHTML. Another light option.
+  * [WebReflection/viperHTML](/library/viperhtml) - Isomorphic hyperHTML. Another light option.
   * [Ant Design](https://ant.design/) - A UI design language and components for React
 
   ## Frameworks
@@ -55,5 +55,5 @@ body: |
 
   ## Tools
 
-  * [lahmatiy/component-inspector](https://github.com/lahmatiy/component-inspector) - Component DOM inspector
-  * [tunz/js-vuln-db](https://github.com/tunz/js-vuln-db) - A collection of JavaScript engine CVEs with PoCs
+  * [lahmatiy/component-inspector](/library/component-inspector) - Component DOM inspector
+  * [tunz/js-vuln-db](/library/js-vuln-db) - A collection of JavaScript engine CVEs with PoCs

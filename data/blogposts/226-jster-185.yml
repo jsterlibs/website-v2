@@ -12,16 +12,16 @@ body: |
 
   * [Cmdk](https://cmdk.paco.me/) - Fast, composable, unstyled command menu for React
   * [Plaiceholder](https://plaiceholder.co/) - Beautiful image placeholders, without the hassle
-  * [unocss](https://github.com/unocss/unocss) - The instant on-demand atomic CSS engine
+  * [unocss](/library/unocss) - The instant on-demand atomic CSS engine
   * [Tamagui](https://tamagui.dev/) - Universal UI for React Native
-  * [fast-fuzzy](https://www.npmjs.com/package/fast-fuzzy) - Fast fuzzy search utility
-  * [WiseLibs/better-sqlite3](https://github.com/WiseLibs/better-sqlite3) - The fastest and simplest library for SQLite3 in Node.js
-  * [bebraw/dragjs](https://github.com/bebraw/dragjs) - Simple utility to make it easier to implement drag based things (ie. sliders and such)
-  * [bokuweb/react-rnd](https://github.com/bokuweb/react-rnd) - A resizable and draggable component for React
-  * [fjmhzyh/Dragjs](https://github.com/fjmhzyh/Dragjs) - A light js library that makes your element draggable
+  * [fast-fuzzy](/library/fast-fuzzy) - Fast fuzzy search utility
+  * [WiseLibs/better-sqlite3](/library/better-sqlite3) - The fastest and simplest library for SQLite3 in Node.js
+  * [bebraw/dragjs](/library/dragjs) - Simple utility to make it easier to implement drag based things (ie. sliders and such)
+  * [bokuweb/react-rnd](/library/react-rnd) - A resizable and draggable component for React
+  * [fjmhzyh/Dragjs](/library/dragjs-2) - A light js library that makes your element draggable
   * [interact.js](https://interactjs.io/) - JavaScript drag and drop, resizing, and multi-touch gestures for modern browsers (and also IE9+)
-  * [flimsy](https://github.com/fabiospampinato/flimsy) - A single-file <1kb min+gzip simplified implementation of the reactive core of Solid, optimized for clean code
-  * [t3-oss/create-t3-app](https://github.com/t3-oss/create-t3-app) - Quickest way to start a new web app with full stack typesafety
+  * [flimsy](/library/flimsy) - A single-file <1kb min+gzip simplified implementation of the reactive core of Solid, optimized for clean code
+  * [t3-oss/create-t3-app](/library/create-t3-app) - Quickest way to start a new web app with full stack typesafety
 
   ## Articles
 
@@ -63,7 +63,7 @@ body: |
 
   ## Testing
 
-  * [CodeIntelligenceTesting/jazzer.js](https://github.com/CodeIntelligenceTesting/jazzer.js) - Coverage-guided, in-process fuzzing for the Node.js
+  * [CodeIntelligenceTesting/jazzer.js](/library/jazzer-js) - Coverage-guided, in-process fuzzing for the Node.js
 
   ## Services
 

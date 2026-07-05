@@ -12,22 +12,22 @@ body: |
 
   ## Libraries
 
-  * [eldh/credt](https://github.com/eldh/credt) - CRDT-like data structures for building distributed, offline-first applications
-  * [Functional](https://github.com/sebastienfilion/functional) - Common Functional Programming Algebraic data types for JavaScript that is compatible with most modern browsers and Deno.
-  * [scurker/currency.js](https://github.com/scurker/currency.js) - JavaScript library for handling currencies
-  * [techfort/LokiJS](https://github.com/techfort/LokiJS) - JavaScript embeddable / in-memory database
+  * [eldh/credt](/library/credt) - CRDT-like data structures for building distributed, offline-first applications
+  * [Functional](/library/functional) - Common Functional Programming Algebraic data types for JavaScript that is compatible with most modern browsers and Deno.
+  * [scurker/currency.js](/library/currency-js) - JavaScript library for handling currencies
+  * [techfort/LokiJS](/library/lokijs) - JavaScript embeddable / in-memory database
   * [Magenta](https://magenta.tensorflow.org/) - Make music and art using machine learning
-  * [duetds/date-picker](https://github.com/duetds/date-picker) - Accessible date picker
-  * [hazae41/mutevents](https://github.com/hazae41/mutevents) - Typed, async, and promiseable events for Deno
+  * [duetds/date-picker](/library/date-picker-2) - Accessible date picker
+  * [hazae41/mutevents](/library/mutevents) - Typed, async, and promiseable events for Deno
   * [Moment.js](https://momentjs.com/docs/#/-project-status/) - Moment is considered legacy, please move on
   * [Eta](https://eta.js.org/) - Lightweight, powerful, pluggable embedded JS template engine.
-  * [lukeed/watchlist](https://github.com/lukeed/watchlist) - Recursively watch a list of directories & run a command on any file system changes
-  * [Screensaver.js](https://github.com/giuseppeg/screensaver) - Starts a screensaver after timeout milliseconds of inactivity on your site
+  * [lukeed/watchlist](/library/watchlist) - Recursively watch a list of directories & run a command on any file system changes
+  * [Screensaver.js](/library/screensaver) - Starts a screensaver after timeout milliseconds of inactivity on your site
 
   ## Frameworks
 
   * [Oruga](https://oruga.io/) - Oruga UI is like a caterpillar, minimal and yet functional. It's in your hands turning it into a butterfly
-  * [chriskalmar/shyft](https://github.com/chriskalmar/shyft) - Shyft is a server-side framework for building powerful GraphQL APIs
+  * [chriskalmar/shyft](/library/shyft) - Shyft is a server-side framework for building powerful GraphQL APIs
 
   ## React
 
@@ -40,14 +40,14 @@ body: |
   ## Tools
 
   * [Benchmark.js](https://benchmarkjs.com/) - A benchmarking library that supports high-resolution timers & returns statistically significant results.
-  * [malinajs](https://github.com/malinajs/malinajs) - Frontend compiler, inspired by Svelte
+  * [malinajs](/library/malinajs) - Frontend compiler, inspired by Svelte
   * [Svelte <3 TypeScript](https://svelte.dev/blog/svelte-and-typescript) - Svelte has a first-class support for TypeScript now
   * [Rush](https://rushjs.io/) - A scalable monorepo manager for the web
-  * [mfrachet/cypress-audit](https://github.com/mfrachet/cypress-audit) - Run Lighthouse and Pa11y audits directly in your E2E test suites
-  * [postcss/releases/tag/8.0.0](https://github.com/postcss/postcss/releases/tag/8.0.0) - PostCSS has reached 8.0.0
-  * [Deno 1.4](https://deno.land/posts/v1.4) - Alternative to Node by Ryan Dahl
+  * [mfrachet/cypress-audit](/library/cypress-audit) - Run Lighthouse and Pa11y audits directly in your E2E test suites
+  * [postcss/releases/tag/8.0.0](/library/postcss) - PostCSS has reached 8.0.0
+  * [Deno 1.4](/library/deno-1-4) - Alternative to Node by Ryan Dahl
   * [Nx: Extensible Dev Tools for Monorepos](https://nx.dev/react/)
-  * [Component Story Format](https://github.com/ComponentDriven/csf) - An open standard for UI component examples based on JavaScript ES6 modules.
+  * [Component Story Format](/library/csf) - An open standard for UI component examples based on JavaScript ES6 modules.
 
   ## Articles
 
@@ -81,4 +81,4 @@ body: |
 
   ## Games
 
-  * [s-macke/FSHistory](https://github.com/s-macke/FSHistory) - Play and Enjoy the History of Microsoft Flight Simulator
+  * [s-macke/FSHistory](/library/fshistory) - Play and Enjoy the History of Microsoft Flight Simulator

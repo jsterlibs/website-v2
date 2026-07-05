@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [lukeed/semiver](https://github.com/lukeed/semiver) - A tiny (153B) utility to compare semver strings.
-  * [enquirer](https://github.com/enquirer/enquirer) - Stylish, intuitive and user-friendly prompts.
-  * [automerge](https://github.com/automerge/automerge) - A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically.
-  * [sveltejs/gl](https://github.com/sveltejs/gl) - WebGL bindings for Svelte
-  * [staltz/use-profunctor-state](https://github.com/staltz/use-profunctor-state) - React Hook for state management with profunctor lenses
+  * [lukeed/semiver](/library/semiver) - A tiny (153B) utility to compare semver strings.
+  * [enquirer](/library/enquirer) - Stylish, intuitive and user-friendly prompts.
+  * [automerge](/library/automerge) - A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically.
+  * [sveltejs/gl](/library/gl) - WebGL bindings for Svelte
+  * [staltz/use-profunctor-state](/library/use-profunctor-state) - React Hook for state management with profunctor lenses
 
   ## Frameworks
 
@@ -22,8 +22,8 @@ body: |
 
   ## Tools
 
-  * [eslint-plugin-async-protect](https://www.npmjs.com/package/eslint-plugin-async-protect) - ESLint rules to help with async functions
-  * [dependency-cruiser](https://www.npmjs.com/package/dependency-cruiser) - Validate and visualize dependencies. With your rules.
+  * [eslint-plugin-async-protect](/library/eslint-plugin-async-protect) - ESLint rules to help with async functions
+  * [dependency-cruiser](/library/dependency-cruiser) - Validate and visualize dependencies. With your rules.
 
   ## Opinions
 

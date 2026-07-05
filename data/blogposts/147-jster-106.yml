@@ -12,9 +12,9 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/PolymerLabs/lit-html }}
+  {{ screenshot: /library/lit-html }}
 
-  * [PolymerLabs/lit-html](https://github.com/PolymerLabs/lit-html) - HTML template literals in JavaScript.
+  * [PolymerLabs/lit-html](/library/lit-html) - HTML template literals in JavaScript.
   * [deck.gl](https://uber.github.io/deck.gl/#/) - Large-scale WebGL-powered data visualization.
   * [TickTock JS](https://yuschick.github.io/TickTock/) - Making digital time mechanical.
   * [Frappe Charts](https://frappe.github.io/charts/) - GitHub-inspired simple and modern charts for the web with zero dependencies.
@@ -56,7 +56,7 @@ body: |
   ## Tools
 
   * [Cheerp 2.0RC1](http://blog.leaningtech.com/2017/11/cheerp-c-to-webassembly-20rc1-released.html) - C/C++ to WebAssembly, mixed JavaScript/Wasm output, 30-90% smaller than Emscripten.
-  * [subfont](https://www.npmjs.com/package/subfont) - A command line tool to statically analyse your page in order to generate the most optimal web font subsets, then inject them into your page.
+  * [subfont](/library/subfont) - A command line tool to statically analyse your page in order to generate the most optimal web font subsets, then inject them into your page.
 
   ## Demos
 

@@ -12,15 +12,15 @@ body: |
 
   ## Libraries
 
-  * [pioardi/poolifier](https://github.com/pioardi/poolifier) - Fast and small Node.js thread pools implemented
+  * [pioardi/poolifier](/library/poolifier) - Fast and small Node.js thread pools implemented
   * [DataTables](https://datatables.net/) - Add advanced interaction controls to your HTML tables the free & easy way
-  * [vedantroy/typecheck.macro](https://github.com/vedantroy/typecheck.macro) - A easy (and fast) TypeScript validation library/macro. Automatically generate validation functions for TypeScript types.
-  * [getify/monio](https://github.com/getify/monio) - Async-capable IO Monad for JS, with several companion monads thrown in
-  * [pmndrs/zustand](https://github.com/pmndrs/zustand) - Bear necessities for state management in React
+  * [vedantroy/typecheck.macro](/library/typecheck-macro) - A easy (and fast) TypeScript validation library/macro. Automatically generate validation functions for TypeScript types.
+  * [getify/monio](/library/monio) - Async-capable IO Monad for JS, with several companion monads thrown in
+  * [pmndrs/zustand](/library/zustand) - Bear necessities for state management in React
   * [👷‍♀ Compiled](https://compiledcssinjs.com/) - The CSS in JS authoring experience we love without the runtime cost
   * [Rest Hooks](https://resthooks.io/) - Delightful data fetching
-  * [saarw/flushout](https://github.com/saarw/flushout) - Flushout is a distributed data model based on event sourcing written in TypeScript.
-  * [josdejong/workerpool](https://github.com/josdejong/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
+  * [saarw/flushout](/library/flushout) - Flushout is a distributed data model based on event sourcing written in TypeScript.
+  * [josdejong/workerpool](/library/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
 
   ## Articles
 
@@ -33,17 +33,17 @@ body: |
 
   ## Animation
 
-  * [dixonandmoe/rellax](https://github.com/dixonandmoe/rellax) - Lightweight, vanilla javascript parallax library
+  * [dixonandmoe/rellax](/library/rellax) - Lightweight, vanilla javascript parallax library
   * [AOS](https://michalsnik.github.io/aos/) - Animate On Scroll Library
-  * [janpaepke/ScrollMagic](https://github.com/janpaepke/ScrollMagic) - A library for magical scroll interactions
-  * [Rich-Harris/ramjet](https://github.com/Rich-Harris/ramjet) - Morph DOM elements from one state to another with smooth animations and transitions
+  * [janpaepke/ScrollMagic](/library/scrollmagic) - A library for magical scroll interactions
+  * [Rich-Harris/ramjet](/library/ramjet) - Morph DOM elements from one state to another with smooth animations and transitions
 
   ## Frameworks
 
   * [Frontity](https://frontity.org/) - The React framework for WordPress
   * [UmiJS](https://umijs.org/) - Extensible enterprise-level front-end application framework
   * [Arwes](https://arwes.dev/) - Futuristic Sci-Fi and Cyberpunk Graphical User Interface Framework for Web Apps
-  * [blitz](https://github.com/blitz-js/blitz) - The Fullstack React Framework — built on Next.js
+  * [blitz](/library/blitz) - The Fullstack React Framework — built on Next.js
 
   ## Styling
 
@@ -65,4 +65,4 @@ body: |
 
   ## Tools
 
-  * [lastmjs/zwitterion](https://github.com/lastmjs/zwitterion) - A web dev server that lets you import anything*
+  * [lastmjs/zwitterion](/library/zwitterion) - A web dev server that lets you import anything*

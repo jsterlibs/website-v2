@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/sindresorhus/promise-fun }}
+  {{ screenshot: /library/promise-fun }}
 
   * [Hedron](https://jsbros.github.io/hedron/) - A no-frills grid system for minimalists.
-  * [sindresorhus/promise-fun](https://github.com/sindresorhus/promise-fun) - Promise packages, patterns, chat, and tutorials.
-  * [MatteoGabriele/vue-analytics](https://github.com/MatteoGabriele/vue-analytics) - Vue plugin for Google Analytics
+  * [sindresorhus/promise-fun](/library/promise-fun) - Promise packages, patterns, chat, and tutorials.
+  * [MatteoGabriele/vue-analytics](/library/vue-analytics) - Vue plugin for Google Analytics
 
   ## Articles
 
@@ -42,7 +42,7 @@ body: |
   ## Tools
 
   * [Sizzy](https://medium.com/@kitze/introducing-sizzy-a-tool-for-developing-responsive-websites-crazy-fast-39a8c0061992) - A tool for developing responsive websites crazy-fast.
-  * [MRokas/SmartDebug.JS](https://github.com/MRokas/SmartDebug.JS) - Next-generation debugging through Stack Overflow.
+  * [MRokas/SmartDebug.JS](/library/smartdebug-js) - Next-generation debugging through Stack Overflow.
   * [pnpm](https://pnpm.js.org/) - Fast, disk space efficient package manager.
   * [Tools for Radicals](https://hackernoon.com/tools-for-radicals-73b7cbbfc276)
   * [d3.express - A better way to code](https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0)

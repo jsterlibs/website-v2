@@ -11,14 +11,14 @@ body: |
   ## Libraries
 
   * [TOAST UI](http://ui.toast.com) - Make your site delicious.
-  * [funfix](https://github.com/funfix/funfix) - Functional Programming Library for JavaScript, TypeScript and Flow.
+  * [funfix](/library/funfix) - Functional Programming Library for JavaScript, TypeScript and Flow.
   * [runtime.js](http://runtimejs.org/) - JavaScript library operating system for the cloud. Yes, it's crazy.
 
   ## Data Structures
 
   * [rangle/typed-immutable-record(https://github.com/rangle/typed-immutable-record) - Typed Immutable.js Record using Typescript interfaces.
-  * [ubilabs/kd-tree-javascript](https://github.com/ubilabs/kd-tree-javascript) - JavaScript k-d Tree Implementation.
-  * [anvaka/ngraph.path](https://github.com/anvaka/ngraph.path) - Path finding in a graph.
+  * [ubilabs/kd-tree-javascript](/library/k-d-tree-javascript-library) - JavaScript k-d Tree Implementation.
+  * [anvaka/ngraph.path](/library/ngraph-path) - Path finding in a graph.
 
   ## Articles
 

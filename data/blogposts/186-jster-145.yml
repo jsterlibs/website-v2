@@ -14,16 +14,16 @@ body: |
   * [Fastify v2 is coming to town](https://medium.com/@fastifyjs/fastify-v2-is-coming-to-town-ce279738bed6)
   * [interact.js](https://interactjs.io) - JavaScript drag and drop, resizing, and multi-touch gestures for modern browsers (and also IE9+)
   * [Newton Graph Library](https://julie-ng.github.io/newtonjs-graph/) - High-level dashboard visualization for architects and stakeholders
-  * [lukeed/classico](https://github.com/lukeed/classico) - A tiny (255B) shim when Element.classList cannot be used~!
+  * [lukeed/classico](/library/classico) - A tiny (255B) shim when Element.classList cannot be used~!
   * [TypeScript + Machine Learning + simplicity = Kalimdor.js](https://itnext.io/typescript-machine-learning-simplicity-kalimdor-js-bb1ccadf0ad3)
   * [Splitting.js](https://splitting.js.org/) - CSS Vars for split words & chars! (items, grids, images, too!)
   * [ScrollOut](https://scroll-out.github.io/) - ScrollOut detects changes in scroll for reveal, parallax, and CSS Variable effects!
-  * [sadick254/scoped-style](https://github.com/sadick254/scoped-style) - A tiny css-in-js library
+  * [sadick254/scoped-style](/library/scoped-style) - A tiny css-in-js library
 
   ## Frameworks
 
-  * [jaredpalmer/after.js](https://github.com/jaredpalmer/after.js) - Next.js-like framework for server-rendered React apps built with React Router 4
-  * [GoogleChromeLabs/carlo](https://github.com/GoogleChromeLabs/carlo) - Web rendering surface for Node applications
+  * [jaredpalmer/after.js](/library/after-js) - Next.js-like framework for server-rendered React apps built with React Router 4
+  * [GoogleChromeLabs/carlo](/library/carlo) - Web rendering surface for Node applications
 
   ## Techniques
 
@@ -46,11 +46,11 @@ body: |
 
   ## Tools
 
-  * [BrunnerLivio/try](https://github.com/BrunnerLivio/try) - Quickly try out NPM packages inside a container
-  * [xaviervia/which-ramda-function-should-i-use](https://github.com/xaviervia/which-ramda-function-should-i-use)
-  * [release-it](https://github.com/release-it/release-it) - Automate versioning and package publishing
+  * [BrunnerLivio/try](/library/try) - Quickly try out NPM packages inside a container
+  * [xaviervia/which-ramda-function-should-i-use](/library/which-ramda-function-should-i-use)
+  * [release-it](/library/release-it) - Automate versioning and package publishing
   * [HTTP Toolkit](https://httptoolkit.tech/view/javascript/) - Capture, view and debug your Node.js and web JS's HTTP traffic
-  * [webpack-nano](https://www.npmjs.com/package/webpack-nano) - A teensy, squeaky 🐤 clean Webpack CLI
+  * [webpack-nano](/library/webpack-nano) - A teensy, squeaky 🐤 clean Webpack CLI
 
   ## Courses
 

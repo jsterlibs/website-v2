@@ -11,11 +11,11 @@ body: |
   ## Libraries
 
   * [Pristine](https://pristine.js.org/) - Vanilla javascript form validation micro-library
-  * [parcel-bundler/watcher](https://github.com/parcel-bundler/watcher) - A native C++ Node module for querying and subscribing to filesystem events
-  * [shoumma/organigram](https://github.com/shoumma/organigram) - A JSON based tree structure with drag and drop functionally to re-arrange the tree
-  * [ryansolid/solid](https://github.com/ryansolid/solid) - A declarative, efficient, and flexible JavaScript library for building user interfaces
-  * [React95/React95](https://github.com/React95/React95) - React like it's 1995
-  * [bent](https://www.npmjs.com/package/bent) - Functional HTTP client for Node.js w/ async/await
+  * [parcel-bundler/watcher](/library/watcher) - A native C++ Node module for querying and subscribing to filesystem events
+  * [shoumma/organigram](/library/organigram) - A JSON based tree structure with drag and drop functionally to re-arrange the tree
+  * [ryansolid/solid](/library/solid) - A declarative, efficient, and flexible JavaScript library for building user interfaces
+  * [React95/React95](/library/react95) - React like it's 1995
+  * [bent](/library/bent) - Functional HTTP client for Node.js w/ async/await
 
   ## GraphQL
 
@@ -27,7 +27,7 @@ body: |
 
   ## Tools
 
-  * [swc-project/swc](https://github.com/swc-project/swc) - Super-fast JavaScript to JavaScript compiler written in Rust
+  * [swc-project/swc](/library/swc) - Super-fast JavaScript to JavaScript compiler written in Rust
 
   ## Guides
 

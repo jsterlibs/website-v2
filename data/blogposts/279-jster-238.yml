@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  * [NextGlobeGen - Localize your Next.js App Router routes and content to serve your application for all users around the world](https://buff.ly/40oML1m)
+  * [NextGlobeGen - Localize your Next.js App Router routes and content to serve your application for all users around the world](https://next-globe-gen.dev/)
   * [effector - Write business logic with ease](https://effector.dev/)
 
   ## Articles
 
-  * [LLM bots + Next.js image optimization = recipe for bankruptcy (post-mortem)](https://buff.ly/QxkbU6a)
-  * [JavaScript hashing speed comparison: MD5 versus SHA-256](https://buff.ly/40tTG9t)
-  * [A list of reasons why you should be using Cloudflare Workers for building your AI agent infrastructure/product/personal assistant](https://buff.ly/3VDdqEE)
+  * [LLM bots + Next.js image optimization = recipe for bankruptcy (post-mortem)](https://metacast.app/blog/engineering/postmortem-llm-bots-image-optimization)
+  * [JavaScript hashing speed comparison: MD5 versus SHA-256](https://lemire.me/blog/2025/01/11/javascript-hashing-speed-comparison-md5-versus-sha-256/)
+  * [A list of reasons why you should be using Cloudflare Workers for building your AI agent infrastructure/product/personal assistant](https://sunilpai.dev/posts/cloudflare-workers-for-ai-agents/)
 
   ## Mailing lists
 
@@ -25,15 +25,15 @@ body: |
 
   ## Tools
 
-  * [Announcing TypeScript 5.8](https://buff.ly/4ke8S2t)
-  * [Lightpanda - the future of browser automation (scraping, AI agents, etc.)](https://buff.ly/4hHwZVq)
+  * [Announcing TypeScript 5.8](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/)
+  * [Lightpanda - the future of browser automation (scraping, AI agents, etc.)](https://lightpanda.io/)
 
   ## Techniques
 
-  * [Refactoring with codemods](https://buff.ly/4jbvcsM)
-  * [Debug your view transitions with Inspection Chamber](https://buff.ly/4acT9fd)
-  * [1-billion row challenge with Node.js](https://buff.ly/3Pri8Cc)
-  * [Speeding up the JavaScript ecosystem - Rust and JavaScript Plugins](https://buff.ly/4k8utcv)
-  * [Getting Real (small) With Compression Dictionaries](https://buff.ly/4gYAxlD)
-  * [Downsize your JavaScript: Mastering Bundler Optimizations](https://buff.ly/3ZJ9cg2)
-  * [Snapshot testing styled-components with Vitest](https://buff.ly/4hFXvP6)
+  * [Refactoring with codemods](https://martinfowler.com/articles/codemods-api-refactoring.html)
+  * [Debug your view transitions with Inspection Chamber](https://vtbag.dev/tools/inspection-chamber/)
+  * [1-billion row challenge with Node.js](https://jackyef.com/posts/1brc-nodejs-learnings)
+  * [Speeding up the JavaScript ecosystem - Rust and JavaScript Plugins](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/)
+  * [Getting Real (small) With Compression Dictionaries](https://calendar.perfplanet.com/2024/getting-real-small-with-compression-dictionaries/)
+  * [Downsize your JavaScript: Mastering Bundler Optimizations](https://dev.to/filipsobol/downsize-your-javascript-mastering-bundler-optimizations-2485)
+  * [Snapshot testing styled-components with Vitest](https://brightinventions.pl/blog/snapshot-testing-styled-components-with-vitest/)

@@ -11,20 +11,20 @@ body: |
   ## Libraries
 
   * [Braid](https://braid.org/) - Synchronization for HTTP
-  * [cosinekitty/astronomy](https://github.com/cosinekitty/astronomy) - Astronomy Engine: multi-language calculation of Sun, Moon, and planet positions. Predicts lunar phases, eclipses, transits, oppositions, conjunctions, equinoxes, solstices, rise/set times, and other events. Provides vector and angular coordinate transforms among equatorial, ecliptic, and horizontal orientations.
-  * [fdaciuk/conduit-api](https://github.com/fdaciuk/conduit-api) - API for Real World App project (Conduit) using Node.js + TS with Functional Programming
-  * [matthewp/haunted](https://github.com/matthewp/haunted) - React's Hooks API implemented for web components
-  * [classname-variants](https://www.npmjs.com/package/classname-variants) - Stitches-like variant API for plain class names
-  * [googlemaps-react-primitives](https://www.npmjs.com/package/googlemaps-react-primitives) - Google Maps primitives for React
-  * [react-api-query](https://www.npmjs.com/package/react-api-query) - Hooks to use react-query with a typed API client
+  * [cosinekitty/astronomy](/library/astronomy) - Astronomy Engine: multi-language calculation of Sun, Moon, and planet positions. Predicts lunar phases, eclipses, transits, oppositions, conjunctions, equinoxes, solstices, rise/set times, and other events. Provides vector and angular coordinate transforms among equatorial, ecliptic, and horizontal orientations.
+  * [fdaciuk/conduit-api](/library/conduit-api) - API for Real World App project (Conduit) using Node.js + TS with Functional Programming
+  * [matthewp/haunted](/library/haunted) - React's Hooks API implemented for web components
+  * [classname-variants](/library/classname-variants) - Stitches-like variant API for plain class names
+  * [googlemaps-react-primitives](/library/googlemaps-react-primitives) - Google Maps primitives for React
+  * [react-api-query](/library/react-api-query) - Hooks to use react-query with a typed API client
   * [Rythm.js](https://okazari.github.io/Rythm.js/) - A JavaScript library that makes your page dance
-  * [terotests/numbot](https://github.com/terotests/numbot) - A configurable parser for text based logs
+  * [terotests/numbot](/library/numbot) - A configurable parser for text based logs
 
   ## Frameworks
 
-  * [raimohanska/harmaja](https://github.com/raimohanska/harmaja) - Experimental frontend framework
-  * [BuilderIO/qwik](https://github.com/BuilderIO/qwik) - The HTML-first framework. Initialize apps of any size with < 1kb JS
-  * [pankod/refine](https://github.com/pankod/refine) - refine is a React-based headless framework for building data-intensive applications in no time ✨ It ships with Ant Design System, an enterprise-level UI toolkit.
+  * [raimohanska/harmaja](/library/harmaja) - Experimental frontend framework
+  * [BuilderIO/qwik](/library/qwik) - The HTML-first framework. Initialize apps of any size with < 1kb JS
+  * [pankod/refine](/library/refine) - refine is a React-based headless framework for building data-intensive applications in no time ✨ It ships with Ant Design System, an enterprise-level UI toolkit.
 
   ## TypeScript
 

@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [SnackUI](https://github.com/snackui/snackui) - SnackUI is a UI Kit for React Native + react-native-web that's much faster with an optimizing compiler
-  * [safety-match](https://www.npmjs.com/package/safety-match) - safety-match provides pattern matching for JavaScript, TypeScript, and Flow
-  * [gvergnaud/ts-pattern](https://github.com/gvergnaud/ts-pattern) - An exhaustive Pattern Matching library for TypeScript, with smart type inference
+  * [SnackUI](/library/snackui) - SnackUI is a UI Kit for React Native + react-native-web that's much faster with an optimizing compiler
+  * [safety-match](/library/safety-match) - safety-match provides pattern matching for JavaScript, TypeScript, and Flow
+  * [gvergnaud/ts-pattern](/library/ts-pattern) - An exhaustive Pattern Matching library for TypeScript, with smart type inference
 
   ## Frameworks
 
@@ -21,12 +21,12 @@ body: |
 
   ## Tools
 
-  * [devongovett/dprint-node](https://github.com/devongovett/dprint-node) - Like Prettier but 20x faster
+  * [devongovett/dprint-node](/library/dprint-node) - Like Prettier but 20x faster
   * [orval](https://orval.dev/) - Generate client with appropriate type-signatures
   * [Why husky has dropped conventional JS config](https://blog.typicode.com/husky-git-hooks-javascript-config/)
-  * [toplenboren/simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) - Like husky but in package.json
-  * [remorses/vitro](https://github.com/remorses/vitro) - Build and showcase your react components in isolation
-  * [typehole](https://github.com/rikukissa/typehole) - TypeScript development tool for Visual Studio Code that helps you automate creating the initial static typing for runtime values
+  * [toplenboren/simple-git-hooks](/library/simple-git-hooks) - Like husky but in package.json
+  * [remorses/vitro](/library/vitro) - Build and showcase your react components in isolation
+  * [typehole](/library/typehole) - TypeScript development tool for Visual Studio Code that helps you automate creating the initial static typing for runtime values
 
   ## CSS
 

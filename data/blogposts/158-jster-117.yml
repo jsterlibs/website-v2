@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  * [lukeed/trouter](https://github.com/lukeed/trouter) - A fast, small-but-mighty, familiar fish router
+  * [lukeed/trouter](/library/trouter) - A fast, small-but-mighty, familiar fish router
   * [Nerv](https://nerv.aotu.io/) - A blazing fast React alternative, compatible with IE8 and React 16.
-  * [ow](https://github.com/sindresorhus/ow) - Function argument validation for humans.
+  * [ow](/library/ow) - Function argument validation for humans.
 
   ## Frameworks
 
   * [Version 6 of Angular Now Available](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
-  * [stimulus](https://github.com/stimulusjs/stimulus) - A modest JavaScript framework for the HTML you already have.
+  * [stimulus](/library/stimulus) - A modest JavaScript framework for the HTML you already have.
 
   ## CSS
 

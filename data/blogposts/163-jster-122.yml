@@ -11,9 +11,9 @@ body: |
   ## Libraries
 
   * [monet.js](https://monet.github.io/monet.js/) - Monadic types library for JavaScript
-  * [tehnokv/picojs](https://github.com/tehnokv/picojs) - A face detection library in 200 lines of JavaScript
-  * [iamkun/dayjs](https://github.com/iamkun/dayjs) - A light alternative to moment.js
-  * [mdx](https://github.com/mdx-js/mdx) - JSX in Markdown for ambitious projects
+  * [tehnokv/picojs](/library/picojs) - A face detection library in 200 lines of JavaScript
+  * [iamkun/dayjs](/library/dayjs) - A light alternative to moment.js
+  * [mdx](/library/mdx) - JSX in Markdown for ambitious projects
 
   ## Articles
 

@@ -10,31 +10,31 @@ body: |
 
   ## Tools
 
-  * [egoist/dum: An npm scripts runner written in Rust.](https://buff.ly/3IAwOc8)
-  * [denoland/deno_lint: Blazing fast linter for JavaScript and TypeScript written in Rust](https://buff.ly/3RzxTXG)
-  * [PactumJS - Test whole pyramid](https://buff.ly/3wRKxI7)
-  * [Module Federation: streamline your microfrontends](https://buff.ly/3CVr1h8)
-  * [Announcing TypeScript 5.2 Beta](https://buff.ly/44qOxOx)
+  * [egoist/dum: An npm scripts runner written in Rust.](/library/dum)
+  * [denoland/deno_lint: Blazing fast linter for JavaScript and TypeScript written in Rust](/library/deno-lint)
+  * [PactumJS - Test whole pyramid](https://pactumjs.github.io/)
+  * [Module Federation: streamline your microfrontends](https://module-federation.io/)
+  * [Announcing TypeScript 5.2 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2-beta/)
 
   ## Articles
 
-  * [Form Field Usability: Avoid Multi-Column Layouts (13% Make This Form Usability Mistake)](https://buff.ly/2KBxctW)
-  * [CommonJS is hurting JavaScript](https://buff.ly/3CVb8Y0)
-  * [A Deep Dive Into SVG Path Commands](https://buff.ly/3pBFs6Y)
+  * [Form Field Usability: Avoid Multi-Column Layouts (13% Make This Form Usability Mistake)](https://baymard.com/blog/avoid-multi-column-forms)
+  * [CommonJS is hurting JavaScript](https://deno.com/blog/commonjs-is-hurting-javascript)
+  * [A Deep Dive Into SVG Path Commands](https://www.nan.fyi/svg-paths)
 
   ## Services
 
-  * [Convert JSON to Swift, C#, TypeScript, Objective-C, Go, Java, C++ and more with quicktype](https://buff.ly/2toQ2Od)
+  * [Convert JSON to Swift, C#, TypeScript, Objective-C, Go, Java, C++ and more with quicktype](https://quicktype.io/)
   * [RelativeCI - In-depth bundle stats analysis and monitoring - Interview with Viorel Cojocaru](https://survivejs.com/blog/relativeci-interview/)
 
   ## CSS
 
-  * [The Power of CSS Blend Modes](https://buff.ly/3LRdevC)
+  * [The Power of CSS Blend Modes](https://cloudfour.com/thinks/the-power-of-css-blend-modes/)
 
   ## APIs
 
-  * [structuredClone() - Web APIs](https://buff.ly/3IrEr6r)
+  * [structuredClone() - Web APIs](https://developer.mozilla.org/en-US/docs/Web/API/Window/structuredClone)
 
   ## Libraries
 
-  * [TinyBase - The reactive data store for local-first apps](https://buff.ly/3Pzo0KV)
+  * [TinyBase - The reactive data store for local-first apps](https://tinybase.org/)

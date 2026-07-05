@@ -12,12 +12,12 @@ body: |
 
   * [dna.js](https://dnajs.org/) - An uncomplicated user interface library for building data-driven semantic templates
   * [React v16.13.0](https://reactjs.org/blog/2020/02/26/react-v16.13.0.html)
-  * [jaredpalmer/mutik](https://github.com/jaredpalmer/mutik) - A tiny (495B) immutable state management library based on Immer
+  * [jaredpalmer/mutik](/library/mutik) - A tiny (495B) immutable state management library based on Immer
   * [Joda](https://js-joda.github.io/js-joda/) - Immutable date and time library for javascript
   * [Moon](https://moonjs.org/) - The minimal & fast library for functional user interfaces
-  * [detect-browser](https://www.npmjs.com/package/detect-browser) - This is a package that attempts to detect a browser vendor and version (in a semver compatible format) using a navigator useragent in a browser or process.version in Node.
-  * [brahmosjs/brahmos](https://github.com/brahmosjs/brahmos) - Super charged JavaScript library with modern React API and native templates
-  * [rsmbl/Resemble.js](https://github.com/rsmbl/Resemble.js) - Image analysis and comparison
+  * [detect-browser](/library/detect-browser) - This is a package that attempts to detect a browser vendor and version (in a semver compatible format) using a navigator useragent in a browser or process.version in Node.
+  * [brahmosjs/brahmos](/library/brahmos) - Super charged JavaScript library with modern React API and native templates
+  * [rsmbl/Resemble.js](/library/resemble-js) - Image analysis and comparison
 
   ## Toolkits
 
@@ -45,17 +45,17 @@ body: |
 
   ## Tools
 
-  * [mini-html-webpack-plugin](https://www.npmjs.com/package/mini-html-webpack-plugin) - A new major version with support for TypeScript out of the box has been released
+  * [mini-html-webpack-plugin](/library/mini-html-webpack-plugin) - A new major version with support for TypeScript out of the box has been released
   * [html-webpack-plugin 4 has been released!](https://dev.to/jantimon/html-webpack-plugin-4-has-been-released-125d) - Faster, better
-  * [ryanelian/instapack](https://github.com/ryanelian/instapack) - All-in-one TypeScript and Sass compiler for web applications! 📦 🚀 
-  * [wilddeer/stickyfill](https://github.com/wilddeer/stickyfill) - Polyfill for CSS `position: sticky`
-  * [evanw/esbuild/](https://github.com/evanw/esbuild/) - An extremely fast JavaScript bundler and minifier
+  * [ryanelian/instapack](/library/instapack) - All-in-one TypeScript and Sass compiler for web applications! 📦 🚀 
+  * [wilddeer/stickyfill](/library/stickyfill) - Polyfill for CSS `position: sticky`
+  * [evanw/esbuild/](/library/esbuild) - An extremely fast JavaScript bundler and minifier
   * [Eve](http://witheve.com/) - Eve is a programming language and IDE based on years of research into building a human-first programming platform
   * [Supercharge your command line experience: GitHub CLI is now in beta](https://github.blog/2020-02-12-supercharge-your-command-line-experience-github-cli-is-now-in-beta/)
 
   ## Testing
 
-  * [suchipi/test-it](https://github.com/suchipi/test-it) - Test-It is a test framework that gives you the best of node AND the browser
+  * [suchipi/test-it](/library/test-it) - Test-It is a test framework that gives you the best of node AND the browser
 
   ## Tutorials
 

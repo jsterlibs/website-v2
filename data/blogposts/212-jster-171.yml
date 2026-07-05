@@ -10,17 +10,17 @@ body: |
 
   ## Libraries
 
-  * [remorses/smart-glob](https://github.com/remorses/smart-glob) - Glob search in constant time thanks to git cache
-  * [adamrisberg/react-image-magnifiers](https://github.com/adamrisberg/react-image-magnifiers) - A collection of responsive, image magnifying React components for mouse and touch.
-  * [salvoravida/recoil-toolkit](https://github.com/salvoravida/recoil-toolkit) - Helpers for Recoil, the next generation state management library
+  * [remorses/smart-glob](/library/smart-glob) - Glob search in constant time thanks to git cache
+  * [adamrisberg/react-image-magnifiers](/library/react-image-magnifiers) - A collection of responsive, image magnifying React components for mouse and touch.
+  * [salvoravida/recoil-toolkit](/library/recoil-toolkit) - Helpers for Recoil, the next generation state management library
   * [vanilla-extract](https://vanilla-extract.style/) - Zero-runtime Stylesheets in TypeScript
   * [Dinero.js](https://dinerojs.com/) - Dinero.js is a library for working with monetary values in JavaScript
-  * [vuejs/petite-vue](https://github.com/vuejs/petite-vue) - 5kb subset of Vue optimized for progressive enhancement
-  * [Shakeskeyboarde/tsstyled](https://github.com/Shakeskeyboarde/tsstyled) - React visual primitives with first-class TypeScript support and a tiny footprint
+  * [vuejs/petite-vue](/library/petite-vue) - 5kb subset of Vue optimized for progressive enhancement
+  * [Shakeskeyboarde/tsstyled](/library/tsstyled) - React visual primitives with first-class TypeScript support and a tiny footprint
 
   ## Frameworks
 
-  * [Rabios/Pancake](https://github.com/Rabios/Pancake) - Lightweight, Fast, Easy-to-use HTML5 2D game framework!
+  * [Rabios/Pancake](/library/pancake) - Lightweight, Fast, Easy-to-use HTML5 2D game framework!
   * [React CMS: The missing link](https://dev.to/matfrana/react-cms-the-missing-link-3iok)
 
   ## TypeScript
@@ -54,7 +54,7 @@ body: |
   * [Vitro](https://vitro.vercel.app/) - Best way to build React components
   * [Five years of PostCSS: State of the Union](https://evilmartians.com/chronicles/five-years-of-postcss-state-of-the-union)
   * [Type doc](https://typedoc.org/) - A documentation generator for TypeScript projects
-  * [hediet/vscode-delorean-js-debug](https://github.com/hediet/vscode-delorean-js-debug) - Step Back In (Pure) Functions
+  * [hediet/vscode-delorean-js-debug](/library/vscode-delorean-js-debug) - Step Back In (Pure) Functions
   * [Vite](https://vitejs.dev/) - Lightning fast bundler
 
   ## Cheatsheets

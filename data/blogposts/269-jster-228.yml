@@ -10,30 +10,30 @@ body: |
 
   ## Libraries
 
-  * [webpro/reveal-md: reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file](https://buff.ly/3BpBVOC)
+  * [webpro/reveal-md: reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file](/library/reveal-md)
   * [Slidev - Presentation slides for developers](https://sli.dev/)
-  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](https://buff.ly/443uN3r)
-  * [decs/typeschema: 🛵 Universal adapter for TypeScript schema validation.](https://buff.ly/3HWxevO)
+  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](https://panda-css.com/)
+  * [decs/typeschema: 🛵 Universal adapter for TypeScript schema validation.](/library/typeschema)
   * [Fulldev UI - Astro component and block library, open-source](https://ui.full.dev/)
-  * [Fastify v5 is Here!](https://buff.ly/4dcWFq3)
+  * [Fastify v5 is Here!](https://blog.platformatic.dev/fastify-v5-is-here)
 
   ## Frameworks
 
-  * [i18next - i18n framework for JavaScript](https://buff.ly/3I9qRoO)
+  * [i18next - i18n framework for JavaScript](https://www.i18next.com/)
   * [WXT - Next-gen Web Extension Framework](https://wxt.dev/)
 
   ## Tools
 
-  * [Deno 2.0 Release Candidate](https://buff.ly/3TCw5Qg)
+  * [Deno 2.0 Release Candidate](https://deno.com/blog/v2.0-release-candidate)
   * [SafeQL - Write safe SQL queries with confidence](https://safeql.dev/)
-  * [ts-blank-space - Fast TS type eraser](https://buff.ly/3TzQzsW)
+  * [ts-blank-space - Fast TS type eraser](https://bloomberg.github.io/ts-blank-space/)
 
   ## Articles
 
-  * [Why Varun switched from Cypress to Playwright](https://buff.ly/4ehsLSG)
-  * [Detailed React. Reconciliation, Renderers, Fiber, Virtual Tree](https://buff.ly/3OwgNJZ)
+  * [Why Varun switched from Cypress to Playwright](https://www.bigbinary.com/blog/why-we-switched-from-cypress-to-playwright)
+  * [Detailed React. Reconciliation, Renderers, Fiber, Virtual Tree](https://blog.frontend-almanac.com/JqtGelofzm1)
 
   ## Techniques
 
-  * [Partial Prerendering for Everyone with Cloudflare Workers • Solving the decision problem](https://buff.ly/3Y52RMB)
-  * [Custom Elements Everywhere](https://buff.ly/3SDcyxs)
+  * [Partial Prerendering for Everyone with Cloudflare Workers • Solving the decision problem](https://sunilpai.dev/posts/ppr-for-everyone/)
+  * [Custom Elements Everywhere](https://custom-elements-everywhere.com/)

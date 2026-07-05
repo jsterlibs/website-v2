@@ -10,27 +10,27 @@ body: |
 
   ## Libraries
 
-  * [aidenybai/hundred - Toy block virtual DOM](https://buff.ly/3LbgBO4)
-  * [Pagefind - Add search to your static site easily](https://buff.ly/3RrThNU)
-  * [pmndrs/react-three-offscreen - Offscreen worker canvas for react-three-fiber](https://buff.ly/3Locj7g)
-  * [React Wrap Balancer](https://buff.ly/3GiCsSm)
-  * [Open Props: sub-atomic styles](https://buff.ly/3d9mHxA)
-  * [immer v10 has been released](https://buff.ly/3okw32v)
+  * [aidenybai/hundred - Toy block virtual DOM](/library/hundred)
+  * [Pagefind - Add search to your static site easily](https://pagefind.app/)
+  * [pmndrs/react-three-offscreen - Offscreen worker canvas for react-three-fiber](/library/react-three-offscreen)
+  * [React Wrap Balancer](https://react-wrap-balancer.vercel.app/)
+  * [Open Props: sub-atomic styles](https://open-props.style/)
+  * [immer v10 has been released](/library/immer)
 
   ## Guides
 
-  * [Micro-frontend development explained](https://buff.ly/3WSR6FF)
-  * [A Web Components Primer](https://buff.ly/354PQd2)
+  * [Micro-frontend development explained](https://microfrontend.dev/)
+  * [A Web Components Primer](https://www.abeautifulsite.net/posts/a-web-components-primer/)
 
   ## Tools
 
-  * [publint - Lint if a package is published right](https://buff.ly/3XcOvXb)
-  * [fwoosh - A lightning fast MDX based site generator](https://buff.ly/3XbxFIb)
-  * [yoavbls/pretty-ts-errors - Make TypeScript errors prettier and human-readable in VSCode](https://buff.ly/3MKKKGl)
-  * [Node.js 20 Now Available](https://buff.ly/41B96qi)
+  * [publint - Lint if a package is published right](https://publint.dev/)
+  * [fwoosh - A lightning fast MDX based site generator](https://fwoo.sh/)
+  * [yoavbls/pretty-ts-errors - Make TypeScript errors prettier and human-readable in VSCode](/library/pretty-ts-errors)
+  * [Node.js 20 Now Available](https://openjsf.org/blog/node-js-20-now-available)
 
   ## Articles
 
-  * [A React Developer's First Take on Solid](https://buff.ly/3Q1op78)
-  * [A deep dive into Rematch - State Management for React](https://buff.ly/3Vn9zJ4)
-  * [Speeding up the JavaScript ecosystem - draft-js emoji plugin](https://buff.ly/3A2A7Hf)
+  * [A React Developer's First Take on Solid](https://jakelazaroff.com/words/a-react-developers-first-take-on-solid/)
+  * [A deep dive into Rematch - State Management for React](https://blog.openreplay.com/a-deep-dive-into-rematch--state-management-for-react/)
+  * [Speeding up the JavaScript ecosystem - draft-js emoji plugin](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-5/)

@@ -10,31 +10,31 @@ body: |
 
   ## Libraries
 
-  * [tokenami: CSS-in-JS reinvented for scalable, typesafe design systems. A modern approach to just-in-time atomic CSS using CSS variables — no bundler required.](https://buff.ly/4bKnFNY)
-  * [nuqs - Type-safe search params state manager for React frameworks](https://buff.ly/4fzdH3L)
-  * [Starbase - SQLite on the edge](https://buff.ly/3YEdHId)
-  * [unjs/capnp-es: 🔥 TypeScript implementation of the Cap'n Proto serialization.](https://buff.ly/4jyMMY6)
-  * [Announcing ArkType 2.0](https://buff.ly/4jnGYjQ)
-  * [Unpic 1.0 – Image components for every framework](https://buff.ly/3E3JhbM)
-  * [tinylibs/picospinner: A lightweight, no dependency, pluggable CLI spinner library.](https://buff.ly/48IwXsB)
+  * [tokenami: CSS-in-JS reinvented for scalable, typesafe design systems. A modern approach to just-in-time atomic CSS using CSS variables — no bundler required.](/library/tokenami)
+  * [nuqs - Type-safe search params state manager for React frameworks](/library/nuqs)
+  * [Starbase - SQLite on the edge](https://starbasedb.com/)
+  * [unjs/capnp-es: 🔥 TypeScript implementation of the Cap'n Proto serialization.](/library/capnp-es)
+  * [Announcing ArkType 2.0](https://arktype.io/docs/blog/2.0)
+  * [Unpic 1.0 – Image components for every framework](https://unpic.pics/blog/unpic-1/?a)
+  * [tinylibs/picospinner: A lightweight, no dependency, pluggable CLI spinner library.](/library/picospinner)
 
   ## Articles
 
-  * [Managing Timezones in JavaScript Apps](https://buff.ly/4hLzAy5)
-  * [Google begins requiring JavaScript for Google Search](https://buff.ly/4jhG3Sb)
-  * [create-react-app is a zombie application](https://buff.ly/40NLf9l)
-  * [How to achieve instant navigations on the web](https://buff.ly/4hyWV61)
+  * [Managing Timezones in JavaScript Apps](https://www.nikgraf.com/blog/managing-timezones-in-javascript-apps)
+  * [Google begins requiring JavaScript for Google Search](https://techcrunch.com/2025/01/17/google-begins-requiring-javascript-for-google-search/)
+  * [create-react-app is a zombie application](https://www.clientserver.dev/p/create-react-app-is-a-zombie-application)
+  * [How to achieve instant navigations on the web](https://www.debugbear.com/blog/instant-navigations)
 
   ## Frameworks
 
-  * [Angular 2025 Strategy](https://buff.ly/4jc490C)
-  * [Frontend frameworks, a 2024 year in review](https://buff.ly/4jilHbt)
-  * [Ember 6.0 Released](https://buff.ly/4hcAR0g)
-  * [Nue - A standards first web framework](https://buff.ly/40D4ouy)
+  * [Angular 2025 Strategy](https://blog.angular.dev/angular-2025-strategy-9ca333dfc334)
+  * [Frontend frameworks, a 2024 year in review](https://www.netlify.com/blog/2024-frameworks-year-in-review/)
+  * [Ember 6.0 Released](https://blog.emberjs.com/ember-6-0-released/)
+  * [Nue - A standards first web framework](https://nuejs.org/blog/standards-first-web-framework/)
 
   ## Tools
 
-  * [Boa v0.20 - an ECMAScript engine written in Rust](https://buff.ly/4htyGFr)
-  * [Node.js — Upcoming CVE for End-of-Life Node.js Versions](https://buff.ly/4hp6weE)
-  * [Tailwind CSS v4.0](https://buff.ly/3Cg51kh)
-  * [Vitest 3.0 is out!](https://buff.ly/3WqXJkt)
+  * [Boa v0.20 - an ECMAScript engine written in Rust](https://boajs.dev/blog/2024/12/05/boa-release-020)
+  * [Node.js — Upcoming CVE for End-of-Life Node.js Versions](https://nodejs.org/en/blog/vulnerability/upcoming-cve-for-eol-versions)
+  * [Tailwind CSS v4.0](https://tailwindcss.com/blog/tailwindcss-v4)
+  * [Vitest 3.0 is out!](https://vitest.dev/blog/vitest-3)

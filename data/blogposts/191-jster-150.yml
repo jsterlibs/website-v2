@@ -12,9 +12,9 @@ body: |
 
   * [tiptap](https://tiptap.scrumpy.io/) - A renderless rich-text editor for Vue.js
   * [CASL](https://stalniy.github.io/casl/) - An isomorphic authorization JavaScript library
-  * [lukeed/totalist](https://github.com/lukeed/totalist) - A tiny (181B to 224B) utility to recursively list all (total) files in a directory
+  * [lukeed/totalist](/library/totalist) - A tiny (181B to 224B) utility to recursively list all (total) files in a directory
   * [Gun.js](http://gun.js.org/) - Decentralized Database
-  * [valu-digital/focus-trap](https://github.com/valu-digital/focus-trap) - Multi-Container Focus Trap
+  * [valu-digital/focus-trap](/library/focus-trap) - Multi-Container Focus Trap
 
   ## CSS
 
@@ -48,9 +48,9 @@ body: |
 
   ## Tools
 
-  * [eslint-plugin-formatjs](https://www.npmjs.com/package/eslint-plugin-formatjs) - Force messages to be translatable
-  * [freeCodeCamp/chapter](https://github.com/freeCodeCamp/chapter) - Open source alternative to meetup
-  * [gajus/format-graphql](https://github.com/gajus/format-graphql) - Sort GraphQL schema definition language (SDL) document
+  * [eslint-plugin-formatjs](/library/eslint-plugin-formatjs) - Force messages to be translatable
+  * [freeCodeCamp/chapter](/library/chapter) - Open source alternative to meetup
+  * [gajus/format-graphql](/library/format-graphql) - Sort GraphQL schema definition language (SDL) document
 
   ## Services
 

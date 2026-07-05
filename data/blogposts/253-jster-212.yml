@@ -10,58 +10,58 @@ body: |
 
   ## Libraries
 
-  * [edmundhung/conform: A type-safe form validation library utilizing web fundamentals to progressively enhance HTML Forms with full support for server frameworks like Remix and Next.js.](https://buff.ly/49bOGIJ)
-  * [tinypool - A minimal and tiny Node.js Worker Thread Pool implementation (38KB)](https://buff.ly/3HFMf4I)
-  * [WebReflection/loop-once: A safer loop for sync or async unique use cases.](https://buff.ly/3Sz0Khf)
-  * [Faire/mjml-react: React component library to generate the HTML emails on the fly](https://buff.ly/3YNh4MF)
-  * [isographlabs/isograph: Build React apps powered by GraphQL data](https://buff.ly/47t0IM6)
-  * [43081j/hanbi: A small javascript library for stubbing and spying on methods/functions](https://buff.ly/3vv4szk)
+  * [edmundhung/conform: A type-safe form validation library utilizing web fundamentals to progressively enhance HTML Forms with full support for server frameworks like Remix and Next.js.](/library/conform)
+  * [tinypool - A minimal and tiny Node.js Worker Thread Pool implementation (38KB)](/library/tinypool)
+  * [WebReflection/loop-once: A safer loop for sync or async unique use cases.](/library/loop-once)
+  * [Faire/mjml-react: React component library to generate the HTML emails on the fly](/library/mjml-react)
+  * [isographlabs/isograph: Build React apps powered by GraphQL data](/library/isograph)
+  * [43081j/hanbi: A small javascript library for stubbing and spying on methods/functions](/library/hanbi)
 
   ## Frameworks
 
-  * [ExpressoTS - Node.js Framework](https://buff.ly/3YV4bAe)
+  * [ExpressoTS - Node.js Framework](https://expresso-ts.com/)
 
   ## Components
 
-  * [Wedges — Open-source UI components for React](https://buff.ly/48tL7wY)
+  * [Wedges — Open-source UI components for React](https://www.lemonsqueezy.com/wedges)
 
   ## Security
 
-  * [Investigating a major security vulnerability with Clerk's Next.js integration](https://buff.ly/48YcM9n)
+  * [Investigating a major security vulnerability with Clerk's Next.js integration](https://pilcrow.vercel.app/blog/clerk-nextjs-vulnerability)
 
   ## Articles
 
-  * [Next.js App Router migration: the good, bad, and ugly](https://buff.ly/48RVjj5)
-  * [TypeScript Might Not Be Your God: Case Study of Migration from TS to JSDoc](https://buff.ly/4b9hgMb)
-  * [Passle overengineered his blog](https://buff.ly/4206Ieb)
-  * [Advancing Interaction to Next Paint](https://buff.ly/4aRE96E)
+  * [Next.js App Router migration: the good, bad, and ugly](https://www.flightcontrol.dev/blog/nextjs-app-router-migration-the-good-bad-and-ugly)
+  * [TypeScript Might Not Be Your God: Case Study of Migration from TS to JSDoc](https://binary-studio.com/blog/typescript-might-not-be-your-god/)
+  * [Passle overengineered his blog](https://thepassle.netlify.app/blog/i-overengineered-my-blog)
+  * [Advancing Interaction to Next Paint](https://web.dev/blog/inp-cwv)
 
   ## Tools
 
-  * [Ladle - Storybook-like tool for Vite](https://buff.ly/3RURNLy)
-  * [SukkaW/nolyfill: Speed up your package installation process, reduce your disk usage, and extend the lifespan of your precious SSD.](https://buff.ly/3Sj776K)
-  * [Vinxi - JavaScript Server SDK to build full stack apps and frameworks with your own opinions](https://buff.ly/494Ujrz)
-  * [Counterscale: Web Analytics you can host yourself](https://buff.ly/47GIzu7)
-  * [gql.tada teaches TypeScript to GraphQL](https://buff.ly/48BLFAP)
-  * [TypeSchema - Universal adapter for TypeScript schema validation](https://buff.ly/45lUIV4)
-  * [Codemod Studio](https://buff.ly/3OxyAjn)
+  * [Ladle - Storybook-like tool for Vite](https://ladle.dev/)
+  * [SukkaW/nolyfill: Speed up your package installation process, reduce your disk usage, and extend the lifespan of your precious SSD.](/library/nolyfill)
+  * [Vinxi - JavaScript Server SDK to build full stack apps and frameworks with your own opinions](https://vinxi.vercel.app/)
+  * [Counterscale: Web Analytics you can host yourself](https://counterscale.dev/)
+  * [gql.tada teaches TypeScript to GraphQL](https://gql-tada.0no.co/)
+  * [TypeSchema - Universal adapter for TypeScript schema validation](https://typeschema.com/)
+  * [Codemod Studio](https://codemod.studio/)
 
   ## Resources
 
-  * [43081j/ecosystem-cleanup: A place to keep track of ongoing efforts to clean up the JS ecosystem](https://buff.ly/3u6X3WD)
+  * [43081j/ecosystem-cleanup: A place to keep track of ongoing efforts to clean up the JS ecosystem](https://github.com/e18e/ecosystem-issues)
 
   ## Techniques
 
-  * [Fix Next.js routing to have full type-safety](https://buff.ly/4be36Ju)
-  * [Going Build-less With Import Maps](https://buff.ly/45Or4aU)
-  * [The future of React.use and React.useMemo - a powerful alternative to context selectors](https://buff.ly/48WEHWR)
-  * [useMemo overdose](https://buff.ly/3EbwIrR)
-  * [Shadow Themes with Web Components](https://buff.ly/47uVX5K)
-  * [Sidenotes In Web Design](https://buff.ly/41Le7Oi)
+  * [Fix Next.js routing to have full type-safety](https://www.flightcontrol.dev/blog/fix-nextjs-routing-to-have-full-type-safety)
+  * [Going Build-less With Import Maps](https://medium.com/@dannymoerkerke/going-build-less-with-import-maps-f71842aa20cb)
+  * [The future of React.use and React.useMemo - a powerful alternative to context selectors](https://interbolt.org/blog/react-use-selector-optimization/)
+  * [useMemo overdose](https://edvins.io/usememo-overdose)
+  * [Shadow Themes with Web Components](https://dutchcelt.nl/posts/shadow-themes/)
+  * [Sidenotes In Web Design](https://gwern.net/sidenote)
 
   ## Languages
 
-  * [hyperscript - An easy & approachable language for modern web front-ends](https://buff.ly/3ydmFhD)
+  * [hyperscript - An easy & approachable language for modern web front-ends](https://hyperscript.org/)
 
   ## Fonts
 

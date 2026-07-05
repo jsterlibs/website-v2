@@ -12,35 +12,35 @@ body: |
 
   ## Libraries
 
-  * [bholmesdev/simple-rsc: A simple React Server Components implementation that you can build yourself 🙌](https://buff.ly/8g5dSIx)
+  * [bholmesdev/simple-rsc: A simple React Server Components implementation that you can build yourself 🙌](/library/simple-rsc)
   * [React Virtuoso - Virtualization with React](https://virtuoso.dev/)
-  * [luwes/little-vdom: 🍼 650B Virtual DOM - Use reactive JSX with minimal overhead](https://buff.ly/qxzAVxs)
+  * [luwes/little-vdom: 🍼 650B Virtual DOM - Use reactive JSX with minimal overhead](/library/little-vdom)
   * [Next-Yak - Zero-runtime CSS-in-JS for Next.js powered by Rust](https://yak.js.org/)
-  * [ValueMelody/melody-auth: A turnkey OAuth & authentication system, designed for both Cloudflare Workers and Node.js](https://buff.ly/3tSYYsU)
+  * [ValueMelody/melody-auth: A turnkey OAuth & authentication system, designed for both Cloudflare Workers and Node.js](/library/melody-auth)
   * [Slidev - Presentation slides for developers](https://sli.dev/)
-  * [tscircuit - Code Electronics with React](https://buff.ly/vUSSVMr)
+  * [tscircuit - Code Electronics with React](https://tscircuit.com/)
 
   ## Techniques
 
-  * [Handling routes in JavaScript projects](https://buff.ly/nynYmjh)
-  * [Progressive JSON](https://buff.ly/XbkWdEF)
-  * [Types as axioms, or: playing god with static types](https://buff.ly/dIkUW5t)
-  * [Collaborative Text Editing without CRDTs or OT](https://buff.ly/fj7Q7du)
-  * [Polishing your typography with line height units](https://ilo.im/163hyx)
-  * [Untangling the LLM spaghetti with ElectricSQL](https://buff.ly/wgfgFFB)
+  * [Handling routes in JavaScript projects](https://www.seancdavis.com/posts/handling-routes-in-javascript-projects/)
+  * [Progressive JSON](https://overreacted.io/progressive-json/)
+  * [Types as axioms, or: playing god with static types](https://lexi-lambda.github.io/blog/2020/08/13/types-as-axioms-or-playing-god-with-static-types/)
+  * [Collaborative Text Editing without CRDTs or OT](https://mattweidner.com/2025/05/21/text-without-crdts.html)
+  * [Polishing your typography with line height units](https://webkit.org/blog/16831/line-height-units/)
+  * [Untangling the LLM spaghetti with ElectricSQL](https://electric.ax/blog/2025/04/22/untangling-llm-spaghetti)
 
   ## Tools
 
-  * [ESLint can now lint HTML using the html-eslint language plugin](https://buff.ly/HMJn3B1)
-  * [formalsec/explode-js: Automated Exploit Generation for Node.js Packages](https://buff.ly/14oDdza)
+  * [ESLint can now lint HTML using the html-eslint language plugin](https://eslint.org/blog/2025/05/eslint-html-plugin/)
+  * [formalsec/explode-js: Automated Exploit Generation for Node.js Packages](/library/explode-js)
 
   ## Articles
 
   * [Why Northflank ditched Next.js and never looked back](https://northflank.com/blog/why-we-ditched-next-js-and-never-looked-back)
-  * [RSC for Astro Developers](https://buff.ly/TDUu738)
-  * [How Hardcover Fell Out of Love with Next.js and Back in Love with Ruby on Rails & Inertia.js](https://buff.ly/WHQTNvl)
-  * [JavaScript, when is this?](https://buff.ly/Tuiss4T)
+  * [RSC for Astro Developers](https://overreacted.io/rsc-for-astro-developers/)
+  * [How Hardcover Fell Out of Love with Next.js and Back in Love with Ruby on Rails & Inertia.js](https://hardcover.app/blog/part-1-how-we-fell-out-of-love-with-next-js-and-back-in-love-with-ruby-on-rails-inertia-js)
+  * [JavaScript, when is this?](https://piccalil.li/blog/javascript-when-is-this/)
 
   ## Boilerplates
 
-  * [CSS boilerplate - Sensible CSS defaults for a new project](https://buff.ly/MLu7XO6)
+  * [CSS boilerplate - Sensible CSS defaults for a new project](https://fokus.dev/tools/css-boilerplate/)

@@ -10,16 +10,16 @@ body: |
 
   ## Libraries
 
-  * [mnater/Hyphenopoly](https://github.com/mnater/Hyphenopoly) - Hyphenation for node and Polyfill for client-side hyphenation
+  * [mnater/Hyphenopoly](/library/hyphenopoly) - Hyphenation for node and Polyfill for client-side hyphenation
   * [Malina.js](https://malinajs.github.io/docs/) - Performant Svelte-style evaluator
   * [Svelte Intl Precompile](https://svelte-intl-precompile.com/) - The i18n library for Svelte that analyzes and compiles your translations at build time
-  * [devongovett/tree-sitter-highlight](https://github.com/devongovett/tree-sitter-highlight) - A syntax highlighter for Node powered by Tree Sitter. Written in Rust.
+  * [devongovett/tree-sitter-highlight](/library/tree-sitter-highlight) - A syntax highlighter for Node powered by Tree Sitter. Written in Rust.
   * [Theatre.js](https://www.theatrejs.com/) - Theatre.js is a JavaScript animation library with a GUI. It animates the DOM, WebGL, and any other JavaScript variable.
-  * [Matsuuu/vanilla-rough-notation](https://github.com/Matsuuu/vanilla-rough-notation) - A Vanilla JS Web Component implementation of the Rough Notation library
+  * [Matsuuu/vanilla-rough-notation](/library/vanilla-rough-notation) - A Vanilla JS Web Component implementation of the Rough Notation library
   * [Rough.js](https://roughjs.com/) - Create graphics with a hand-drawn, sketchy, appearance
   * [Open UI](https://open-ui.org/) - The missing industry standard definition of UI
-  * [anttiviljami/human-filetypes](https://github.com/anttiviljami/human-filetypes) - Human-friendly categorisation of file types based on extension or MIME type
-  * [exhibitionist-digital/ultra](https://github.com/exhibitionist-digital/ultra) - Deno + React: No build, no bundle, all streaming
+  * [anttiviljami/human-filetypes](/library/human-filetypes) - Human-friendly categorisation of file types based on extension or MIME type
+  * [exhibitionist-digital/ultra](/library/ultra) - Deno + React: No build, no bundle, all streaming
   * [MapLibre](https://maplibre.org/) - Open-source mapping libraries for developers of web and mobile applications.
   * [Introducing Sandpack](https://codesandbox.io/post/sandpack-announcement) - The core of CodeSandbox is open source now
   * [Floating UI](https://floating-ui.com/) - Powerful positioning primitives
@@ -35,4 +35,4 @@ body: |
   ## Tools
 
   * [Vitest](https://vitest.dev/) - A blazing fast unit-test framework powered by Vite
-  * [facebook/create-react-app/releases/tag/v5.0.0](https://github.com/facebook/create-react-app/releases/tag/v5.0.0) - CRA v5.0
+  * [facebook/create-react-app/releases/tag/v5.0.0](/library/create-react-app) - CRA v5.0

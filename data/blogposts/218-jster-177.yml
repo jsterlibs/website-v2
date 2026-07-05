@@ -11,9 +11,9 @@ body: |
   ## Libraries
 
   * [MessageFormat](http://messageformat.github.io/messageformat/) - i18n Plural and Gender Capable Messages
-  * [esamattis/react-zorm](https://github.com/esamattis/react-zorm) - Type-safe <form> for React using Zod
+  * [esamattis/react-zorm](/library/react-zorm) - Type-safe <form> for React using Zod
   * [An update from the Faker team](https://fakerjs.dev/update.html#what-is-faker)
-  * [adelsz/pgtyped](https://github.com/adelsz/pgtyped) - Typesafe SQL in TypeScript
+  * [adelsz/pgtyped](/library/pgtyped) - Typesafe SQL in TypeScript
   * [tRPC](https://trpc.io/) - End-to-end typesafe APIs made easy
   * [PeerJS](https://peerjs.com/) - PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls
   * [Rehype Pretty Code](https://rehype-pretty-code.netlify.app/) - Beautiful code blocks for your MD/MDX docs
@@ -22,7 +22,7 @@ body: |
 
   ## Frameworks
 
-  * [yusukebe/hono](https://github.com/yusukebe/hono) - Ultrafast web framework for Cloudflare Workers
+  * [yusukebe/hono](/library/hono) - Ultrafast web framework for Cloudflare Workers
 
   ## Articles
 
@@ -39,12 +39,12 @@ body: |
 
   ## Tools
 
-  * [wader/fq](https://github.com/wader/fq) - jq for binary formats
-  * [weiran-zsd/dts-cli](https://github.com/weiran-zsd/dts-cli) - Zero-config CLI for TypeScript package development
+  * [wader/fq](/library/fq) - jq for binary formats
+  * [weiran-zsd/dts-cli](/library/dts-cli) - Zero-config CLI for TypeScript package development
   * [Turborepo](https://turborepo.org/) - Monorepos supercharged
   * [Denoflare](https://denoflare.dev/) - Fast and easy way to develop and deploy Cloudflare workers
-  * [Rockpack](https://github.com/AlexSergey/rockpack) - A simple solution for creating React Application with Server Side Rendering, bundling, linting, testing within 5 minutes
-  * [suchipi/suchibot](https://github.com/suchipi/suchibot) - A cross-platform AutoHotKey-like thing with TypeScript as its scripting language
+  * [Rockpack](/library/rockpack) - A simple solution for creating React Application with Server Side Rendering, bundling, linting, testing within 5 minutes
+  * [suchipi/suchibot](/library/suchibot) - A cross-platform AutoHotKey-like thing with TypeScript as its scripting language
   * [(t,i,x,y) => "creative code golfing"](https://tixy.land/)
   * [Import Map Generator](https://generator.jspm.io/)
 

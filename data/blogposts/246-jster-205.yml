@@ -10,43 +10,43 @@ body: |
 
   ## Libraries
 
-  * [Lit Launch Day: Lit 3.0, Labs graduations, a compiler and more!](https://buff.ly/3Fdfrig)
-  * [Bau UI - Reactive library and components for building web user interface](https://buff.ly/46MbTPP)
-  * [Kysely - The type-safe SQL query builder for TypeScript](https://buff.ly/3po6zCi)
+  * [Lit Launch Day: Lit 3.0, Labs graduations, a compiler and more!](https://lit.dev/blog/2023-10-10-lit-3.0/)
+  * [Bau UI - Reactive library and components for building web user interface](https://grucloud.github.io/bau/bau-ui/)
+  * [Kysely - The type-safe SQL query builder for TypeScript](https://kysely.dev/)
 
   ## Articles
 
-  * [Why Fetch Promise Doesn't Reject on Error Responses](https://buff.ly/3RX4f0X)
+  * [Why Fetch Promise Doesn't Reject on Error Responses](https://kettanaito.com/blog/why-fetch-promise-doesnt-reject-on-error-responses)
 
   ## Frameworks
 
-  * [Fresh 1.5: Partials, client side navigation and more](https://buff.ly/3FcVBDQ)
-  * [Hono - Ultrafast web framework for the Edges](https://buff.ly/3PwRrNg)
+  * [Fresh 1.5: Partials, client side navigation and more](https://deno.com/blog/fresh-1.5)
+  * [Hono - Ultrafast web framework for the Edges](https://hono.dev/)
 
   ## Tools
 
-  * [bruno - Fast, git friendly API client](https://buff.ly/3Fb69mR)
+  * [bruno - Fast, git friendly API client](https://www.usebruno.com/)
 
   ## Benchmarks
 
-  * [Web server ‘hello world’ benchmark : Go vs Node.js vs Nim vs Bun](https://buff.ly/3RQgITW)
+  * [Web server ‘hello world’ benchmark : Go vs Node.js vs Nim vs Bun](https://lemire.me/blog/2023/10/07/web-server-hello-world-benchmark-go-vs-node-js-vs-nim-vs-bun/)
 
   ## Components
 
-  * [FastBootstrap: Bootstrap UI Components with Atlassian Design](https://buff.ly/3tmXZFG)
+  * [FastBootstrap: Bootstrap UI Components with Atlassian Design](https://fastbootstrap.com/)
 
   ## Demos
 
-  * [Wind Waker JS - game demo](https://buff.ly/3rIaESV)
+  * [Wind Waker JS - game demo](https://wind-waker-js.vercel.app/)
 
   ## Languages
 
-  * [Announcing TypeScript 5.3 Beta](https://buff.ly/3ZHK2y3)
+  * [Announcing TypeScript 5.3 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3-beta/)
 
   ## Boilerplates
 
-  * [Blazity/next-enterprise: 💼 An enterprise-grade Next.js boilerplate for high-performance, maintainable apps. Packed with features like Tailwind CSS, TypeScript, ESLint, Prettier, testing tools, and more to accelerate your development.](https://buff.ly/45fHb1I)
+  * [Blazity/next-enterprise: 💼 An enterprise-grade Next.js boilerplate for high-performance, maintainable apps. Packed with features like Tailwind CSS, TypeScript, ESLint, Prettier, testing tools, and more to accelerate your development.](https://github.com/Blazity/next-enterprise)
 
   ## CSS
 
-  * [Scoped CSS is back](https://buff.ly/3Aug70v)
+  * [Scoped CSS is back](https://keithjgrant.com/posts/2023/04/scoped-css-is-back/)

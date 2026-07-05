@@ -10,29 +10,29 @@ body: |
 
   ## Libraries
 
-  * [kripod/react-layout-components](https://github.com/kripod/react-layout-components) - Layout components for React, primarily inspired by Every Layout
-  * [dumbmatter/fakeIndexedDB](https://github.com/dumbmatter/fakeIndexedDB) - A pure JS in-memory implementation of the IndexedDB API
-  * [humaans/react-machine](https://github.com/humaans/react-machine) - A state machine hook for React applications
-  * [pmndrs/react-three-flex](https://github.com/pmndrs/react-three-flex) - Flexbox for react-three-fiber
-  * [diegohaz/constate](https://github.com/diegohaz/constate) - React Context + State
-  * [kripod/otion](https://github.com/kripod/otion) - Atomic CSS-in-JS with a featherweight runtime
-  * [DanWahlin/Observable-Store](https://github.com/DanWahlin/Observable-Store) - Observable Store provides a simple way to manage state in Angular, React, Vue.js and other frontend applications
-  * [neo](https://github.com/neomjs/neo) - Create blazing fast multithreaded Web Apps
+  * [kripod/react-layout-components](/library/react-layout-components) - Layout components for React, primarily inspired by Every Layout
+  * [dumbmatter/fakeIndexedDB](/library/fakeindexeddb) - A pure JS in-memory implementation of the IndexedDB API
+  * [humaans/react-machine](/library/react-machine) - A state machine hook for React applications
+  * [pmndrs/react-three-flex](/library/react-three-flex) - Flexbox for react-three-fiber
+  * [diegohaz/constate](/library/constate) - React Context + State
+  * [kripod/otion](/library/otion) - Atomic CSS-in-JS with a featherweight runtime
+  * [DanWahlin/Observable-Store](/library/observable-store) - Observable Store provides a simple way to manage state in Angular, React, Vue.js and other frontend applications
+  * [neo](/library/neo) - Create blazing fast multithreaded Web Apps
 
   ## Frameworks
 
   * [Base Web React UI Framework](https://baseweb.design/)
-  * [boxine/pentf](https://github.com/boxine/pentf) - Parallel end-to-end test framework
-  * [grommet](https://github.com/grommet/grommet) - React-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package
+  * [boxine/pentf](/library/pentf) - Parallel end-to-end test framework
+  * [grommet](/library/grommet) - React-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package
   * [Fluid Framework](https://fluidframework.com/) - Data Sync Reimagined
   * [Bootstrap 5 - Beta 1](https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1/)
 
   ## Tools
 
   * [Saruni](https://saruni.dev/) - The simplest way to write and deploy fast, scalable full-stack web applications in JavaScript
-  * [imcuttle/simple-hot-reload-server](https://github.com/imcuttle/simple-hot-reload-server) - Simple hot reload server by Node
-  * [json-server](https://www.npmjs.com/package/json-server) - Get a full fake REST API with zero coding in less than 30 seconds
-  * [ben-rogerson/twin.macro](https://github.com/ben-rogerson/twin.macro) - Twin blends the magic of Tailwind with the flexibility of css-in-js (emotion, styled-components and goober) at build time
+  * [imcuttle/simple-hot-reload-server](/library/simple-hot-reload-server) - Simple hot reload server by Node
+  * [json-server](/library/json-server) - Get a full fake REST API with zero coding in less than 30 seconds
+  * [ben-rogerson/twin.macro](/library/twin-macro) - Twin blends the magic of Tailwind with the flexibility of css-in-js (emotion, styled-components and goober) at build time
   * [Webpack - Roadmap 2021 (2020-12-08)](https://webpack.js.org/blog/2020-12-08-roadmap-2021/)
   * [Hazel, a live functional programming environment featuring typed holes.](https://hazel.org/)
 

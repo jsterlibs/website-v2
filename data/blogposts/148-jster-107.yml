@@ -10,15 +10,15 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://github.com/cezarlz/pozition.js }}
+  {{ screenshot: /library/pozition-js }}
 
-  * [cezarlz/pozition.js](https://github.com/cezarlz/pozition.js) - Geolocation Position. Plus Promise.
+  * [cezarlz/pozition.js](/library/pozition-js) - Geolocation Position. Plus Promise.
   * [Popmotion](https://popmotion.io/) - The JavaScript motion engine.
   * [anime.js](http://animejs.com/) - Another JavaScript animation engine.
   * [Citation.js](https://citation.js.org/) - Convert citations from a format to another.
-  * [react-cosmos](https://github.com/react-cosmos/react-cosmos) -  Dev tool for creating reusable React components.
-  * [JedWatson/react-select](https://github.com/JedWatson/react-select) - A Select control built with and for React.
-  * [sunesimonsen/ukkonen](https://github.com/sunesimonsen/ukkonen) - Ukkonen's Approximate String Matching algorithm.
+  * [react-cosmos](/library/react-cosmos) -  Dev tool for creating reusable React components.
+  * [JedWatson/react-select](/library/react-select) - A Select control built with and for React.
+  * [sunesimonsen/ukkonen](/library/ukkonen) - Ukkonen's Approximate String Matching algorithm.
 
   ## Articles
 
