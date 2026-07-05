@@ -1,0 +1,1 @@
+{"id":"automerge","description":"A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically.","logo":"/images/repo.png","name":"automerge","links":{"site":"https://github.com/automerge/automerge","github":"https://github.com/automerge/automerge"},"tags":[]}

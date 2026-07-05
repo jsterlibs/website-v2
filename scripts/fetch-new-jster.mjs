@@ -4,6 +4,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import YAML from "yaml";
+import { syncBlogCatalog } from "./sync-blog-catalog.mjs";
 
 const ROOT = process.cwd();
 const BLOGPOSTS_DIR = join(ROOT, "data/blogposts");
@@ -159,12 +160,14 @@ async function main() {
 
   await writeFile(nextPostPath, markdown);
   await writeFile(BLOG_INDEX_PATH, JSON.stringify(nextIndex, null, 2) + "\n");
+  const catalogAdditions = await syncBlogCatalog();
 
   console.log(`Previous JSter: #${announcement.number}`);
   console.log(`Fetched posts: ${fetchedEntries.length}`);
   console.log(`Expanded links: ${countExpanded(fetchedEntries, expandedEntries)}`);
   console.log(`Wrote ${relative(nextPostPath)}`);
   console.log(`Updated ${relative(BLOG_INDEX_PATH)}`);
+  console.log(`Catalog additions: ${catalogAdditions.length}`);
 }
 
 function parseArgs(argv) {

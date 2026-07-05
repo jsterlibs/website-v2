@@ -1,0 +1,1 @@
+{"id":"assign-macro","description":"A babel-macro to transpile `Object.assign`-style expressions to direct assignments for maximum performance.","logo":"/images/repo.png","name":"assign.macro","links":{"site":"https://github.com/vincentriemer/assign.macro","github":"https://github.com/vincentriemer/assign.macro"},"tags":[]}

@@ -1,0 +1,1 @@
+{"id":"corepack","description":"Zero-runtime-dependency package acting as bridge between Node projects and their package managers","logo":"/images/repo.png","name":"corepack","links":{"site":"https://github.com/nodejs/corepack","github":"https://github.com/nodejs/corepack"},"tags":["tools"]}

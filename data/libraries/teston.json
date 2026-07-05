@@ -1,0 +1,1 @@
+{"id":"teston","description":"Test runner similar to tape, but with ES6 module support, simpler subtest syntax and nice indentation","logo":"/images/repo.png","name":"teston","links":{"site":"https://github.com/testonjs/teston","github":"https://github.com/testonjs/teston"},"tags":["testing"]}

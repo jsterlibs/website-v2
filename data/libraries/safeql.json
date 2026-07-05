@@ -1,0 +1,1 @@
+{"id":"safeql","description":"Validate and auto-generate TypeScript types from raw SQL queries in PostgreSQL","logo":"/images/repo.png","name":"safeql","links":{"site":"https://github.com/ts-safeql/safeql","github":"https://github.com/ts-safeql/safeql"},"tags":["typescript"]}

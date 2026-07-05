@@ -1,0 +1,1 @@
+{"id":"gentype","description":"Auto generation of idiomatic bindings between Reason and JavaScript: either vanilla or typed with TypeScript/FlowType.","logo":"/images/repo.png","name":"genType","links":{"site":"https://github.com/cristianoc/genType","github":"https://github.com/cristianoc/genType"},"tags":["tools","typescript"]}

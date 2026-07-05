@@ -1,0 +1,1 @@
+{"id":"lerna-update-wizard","description":"Command line interface for simplifying the process of bulk updating dependencies across multiple Lerna or Yarn Workspace packages.","logo":"/images/repo.png","name":"lerna-update-wizard","links":{"site":"https://www.npmjs.com/package/lerna-update-wizard"},"tags":["tools"]}

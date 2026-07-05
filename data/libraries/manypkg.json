@@ -1,0 +1,1 @@
+{"id":"manypkg","description":"A simple utility to get the packages from a monorepo, whether they're using Yarn, Bolt or pnpm","logo":"/images/repo.png","name":"manypkg","links":{"site":"https://github.com/Thinkmill/manypkg/tree/master/packages/get-packages","github":"https://github.com/Thinkmill/manypkg"},"tags":["tools"]}
