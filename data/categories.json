@@ -32,6 +32,7 @@
   {
     "id": "testing-frameworks",
     "title": "Testing Frameworks",
+    "description": "JavaScript testing tools for unit tests, browser automation, assertions, mocks, and code coverage.",
     "url": "/category/testing-frameworks"
   },
   {
