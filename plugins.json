@@ -48,6 +48,12 @@
       }
     },
     {
+      "path": "./node_modules/gustwind/plugins/og/mod.js",
+      "options": {
+        "layout": "./site/layouts/og.html"
+      }
+    },
+    {
       "path": "./node_modules/gustwind/plugins/sitemap/mod.js"
     },
     {

@@ -42,14 +42,16 @@
         }
       },
       "layout": "categoryPage",
-      "meta": {
-        "title": {
-          "utility": "get",
-          "parameters": ["context", "name"]
-        },
-        "description": {
-          "utility": "get",
-          "parameters": ["context", "description"]
+      "context": {
+        "meta": {
+          "title": {
+            "utility": "get",
+            "parameters": ["context", "category.title"]
+          },
+          "description": {
+            "utility": "get",
+            "parameters": ["context", "category.description"]
+          }
         }
       }
     }
@@ -71,14 +73,16 @@
         }
       },
       "layout": "categoryPage",
-      "meta": {
-        "title": {
-          "utility": "get",
-          "parameters": ["context", "name"]
-        },
-        "description": {
-          "utility": "get",
-          "parameters": ["context", "description"]
+      "context": {
+        "meta": {
+          "title": {
+            "utility": "get",
+            "parameters": ["context", "category.title"]
+          },
+          "description": {
+            "utility": "get",
+            "parameters": ["context", "category.description"]
+          }
         }
       }
     }
@@ -118,14 +122,16 @@
         }
       },
       "layout": "blogPage",
-      "meta": {
-        "title": {
-          "utility": "get",
-          "parameters": ["context", "document.title"]
-        },
-        "description": {
-          "utility": "get",
-          "parameters": ["context", "document.description"]
+      "context": {
+        "meta": {
+          "title": {
+            "utility": "get",
+            "parameters": ["context", "document.title"]
+          },
+          "description": {
+            "utility": "get",
+            "parameters": ["context", "document.description"]
+          }
         }
       }
     }

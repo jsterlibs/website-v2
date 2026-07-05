@@ -5,7 +5,14 @@ function init() {
     return s.trim().toLowerCase();
   }
 
-  return { cleanUrl, urlJoin };
+  function escapeXml(input = "") {
+    return String(input)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  return { cleanUrl, escapeXml, urlJoin };
 }
 
 export { init };
