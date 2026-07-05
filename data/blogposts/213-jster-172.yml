@@ -10,17 +10,17 @@ body: |
 
   ## Libraries
 
-  * [Mirage JS](https://miragejs.com/) - An API mocking library for frontend
+  * [Mirage JS](/library/mirage-js) - An API mocking library for frontend
   * [perceived-dev/optimistic-state](/library/optimistic-state) - Optimistic state with rollbacks and race condition handling
-  * [What’s Coming in React 18](https://www.telerik.com/blogs/whats-coming-react-18)
-  * [React Navigation 6.0](https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/)
+  * [What’s Coming in React 18](/library/whats-coming-in-react-18)
+  * [React Navigation 6.0](/library/react-navigation)
   * [sindresorhus/p-queue](/library/p-queue) - Promise queue with concurrency control
   * [polygonplanet/chillout](/library/chillout) - Reduce CPU usage by non-blocking async loop and psychologically speed up in JavaScript
-  * [daisyUI](https://daisyui.com/) - Tailwind CSS Components
+  * [daisyUI](/library/daisyui) - Tailwind CSS Components
 
   ## Frameworks
 
-  * [Milkdown](https://milkdown.dev/) - Plugin Based WYSIWYG Markdown Editor Framework
+  * [Milkdown](/library/milkdown) - Plugin Based WYSIWYG Markdown Editor Framework
 
   ## TypeScript
 

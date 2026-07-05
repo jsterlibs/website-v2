@@ -10,7 +10,7 @@ body: |
 
   ## Libraries
 
-  * [gpu.js](http://gpu.rocks/) - GPU Accelerated JavaScript
+  * [gpu.js](/library/gpu-js) - GPU Accelerated JavaScript
   * [cristianbote/goober](/library/goober) - A less than 1KB 🎉css-in-js alternative with a familiar API
   * [gajus/slonik](/library/slonik) - A PostgreSQL client with strict types, detail logging and assertions
   * [KaTeX](/library/katex) - Fast math typesetting for the web
@@ -31,8 +31,8 @@ body: |
 
   ## Frameworks
 
-  * [UmiJS](https://umijs.org/) - Pluggable enterprise-level React application framework
-  * [Zero Server](https://zeroserver.io/) - Zero configuration web framework
+  * [UmiJS](/library/umijs) - Pluggable enterprise-level React application framework
+  * [Zero Server](/library/zero-server) - Zero configuration web framework
 
   ## Slides
 

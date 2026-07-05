@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [lukeed/polka](/library/polka) - A micro web server so fast, it'll make you dance!
-  * [Overmind](https://overmindjs.org/) - Frictionless state management
+  * [Overmind](/library/overmind) - Frictionless state management
   * [gunn/pure-store](/library/pure-store) - A tiny immutable store with type safety
 
   ## Toolkit

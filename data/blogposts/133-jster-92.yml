@@ -13,19 +13,19 @@ body: |
   {{ screenshot: /library/folktale }}
 
   * [origamitower/folktale](/library/folktale) - A standard library for functional programming in JavaScript
-  * [lychee.js](https://lychee.js.org/) - Next-Gen Isomorphic Application Engine
+  * [lychee.js](/library/lychee-js) - Next-Gen Isomorphic Application Engine
   * [dropbox/zxcvbn](/library/zxcvbn) - Low-Budget Password Strength Estimation
-  * [Sazerac](https://hackernoon.com/sazerac-data-driven-testing-for-javascript-e3408ac29d8c) - Data-driven Testing for JavaScript
+  * [Sazerac](/library/sazerac) - Data-driven Testing for JavaScript
 
   ## UI Libraries
 
-  * [Moon](http://moonjs.ga/) - A minimal, blazing fast user interface library
+  * [Moon](/library/moon) - A minimal, blazing fast user interface library
   * [WebReflection/viperHTML](/library/viperhtml) - Isomorphic hyperHTML. Another light option.
-  * [Ant Design](https://ant.design/) - A UI design language and components for React
+  * [Ant Design](/library/ant-design) - A UI design language and components for React
 
   ## Frameworks
 
-  * [MJML](https://mjml.io/) - Easy responsive emails
+  * [MJML](/library/mjml) - Easy responsive emails
 
   ## Articles
 

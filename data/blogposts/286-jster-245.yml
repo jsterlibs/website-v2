@@ -10,20 +10,20 @@ body: |
 
   ## Libraries
 
-  * [Kelp - UI library for people who love HTML, powered by modern CSS and Web Components](https://kelpui.com/)
+  * [Kelp - UI library for people who love HTML, powered by modern CSS and Web Components](/library/kelp)
   * [Jesterhearts/ratatui-wgpu: A wgpu based rendering backend for ratatui.](/library/ratatui-wgpu)
   * [wzhudev/reverse-linear-sync-engine: A reverse engineering of Linear's sync engine. Endorsed by its co-founder & CTO.](/library/reverse-linear-sync-engine)
   * [unnoq/orpc: Typesafe APIs Made Simple 🪄 h](/library/orpc)
   * [cloudflare/workers-oauth-provider: OAuth provider library for Cloudflare Workers](/library/workers-oauth-provider)
-  * [Unpic - The best images for every framework](https://unpic.pics/)
+  * [Unpic - The best images for every framework](/library/unpic)
   * [molefrog/wouter: 🥢 A minimalist-friendly ~2.1KB routing for React and Preact h](/library/wouter)
-  * [Shopify Storefront Web Components - Add Shopify to Any Site](https://shopify.dev/docs/api/storefront-web-components)
-  * [Introducing Zod 4 - runtime typechecker](https://zod.dev/v4)
+  * [Shopify Storefront Web Components - Add Shopify to Any Site](/library/shopify-storefront-web-components)
+  * [Introducing Zod 4 - runtime typechecker](/library/zod-4)
 
   ## Frameworks
 
   * [LiveStore is a next-generation state management framework based on reactive SQLite and built-in sync engine.](/library/livestore)
-  * [H3 v2 beta](https://h3.dev/blog/v2-beta)
+  * [H3 v2 beta](/library/h3)
 
   ## Articles
 

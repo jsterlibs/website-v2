@@ -11,14 +11,14 @@ body: |
   ## Libraries
 
   * [BuilderIO/partytown](/library/partytown) - Relocate resource intensive third-party scripts off of the main thread and into a web worker.
-  * [Motion One: The Web Animations API for everyone](https://motion.dev/)
-  * [ChowJS: an AOT JavaScript engine for game consoles](https://mp2.dk/techblog/chowjs/)
+  * [Motion One: The Web Animations API for everyone](/library/motion-one)
+  * [ChowJS: an AOT JavaScript engine for game consoles](/library/chowjs)
   * [jamiemccrindle/axax](/library/axax) - Async Iterator Extensions for JavaScript e.g. map, reduce, filter, flatMap, etc.
   * [simdjson/simdjson/releases/tag/v1.0.0](/library/simdjson) - Parsing gigabytes of JSON per second
   * [modern-async](/library/modern-async) - A modern JavaScript tooling library for asynchronous operations using async/await and promises
   * [shiki](/library/shiki) - A beautiful Syntax Highlighter
   * [plausible/analytics](/library/analytics) - Simple, open-source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics.
-  * [Stitches v1.0](https://stitches.dev/) - Style your components with confidence
+  * [Stitches v1.0](/library/stitches) - Style your components with confidence
 
   ## CSS
 

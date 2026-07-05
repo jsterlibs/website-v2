@@ -15,7 +15,7 @@ body: |
   * [umpox/TinyEditor](/library/tinyeditor) - A functional HTML/CSS/JS editor in less than 400 bytes
   * [WebReflection/domdiff](/library/domdiff) - Diffing the DOM without virtual DOM
   * [redux-concise](/library/redux-concise) - Redux but concise
-  * [Announcing Pino V5.0.0](https://www.nearform.com/blog/announcing-pino-v5-0-0/) - Low-overhead, newline-delimited-JSON logger
+  * [Announcing Pino V5.0.0](/library/pino) - Low-overhead, newline-delimited-JSON logger
   * [typeorm](/library/typeorm) - ORM for TypeScript and JavaScript
 
   ## Tutorials

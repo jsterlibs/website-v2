@@ -11,9 +11,9 @@ body: |
   ## Libraries
 
   * [garmeeh/next-seo](/library/next-seo) - Next SEO is a plug in that makes managing your SEO easier in Next.js projects
-  * [React Icons](https://react-icons.github.io/react-icons/) - Popular icons for React projects
+  * [React Icons](/library/react-icons) - Popular icons for React projects
   * [lukeed/uid](/library/uid) - A tiny (134B) and fast utility to generate random IDs of fixed length
-  * [Snap.svg](http://snapsvg.io/) - The JavaScript SVG library for the modern web
+  * [Snap.svg](/library/snap-svg) - The JavaScript SVG library for the modern web
   * [ts-polyfill](/library/ts-polyfill) - Runtime polyfills for TypeScript libs, powered by core-js!
   * [iwanthue](/library/iwanthue) - Colors for data scientists
   * [KFlash/seafox](/library/seafox) - A blazing fast 100% spec compliant, self-hosted JavaScript parser written in TypeScript
@@ -21,13 +21,13 @@ body: |
   * [safety-match](/library/safety-match) - Rust-style tagged union matching for JavaScript, with TypeScript types
   * [Yomguithereal/pandemonium](/library/pandemonium) - Typical random-related functions for JavaScript
   * [erikmueller/cond-flow/](/library/cond-flow) - Elixir style cond for easy javascript control flow
-  * [dna.js ~~ An uncomplicated user interface library for building data-driven semantic templates](https://dnajs.org/)
+  * [dna.js ~~ An uncomplicated user interface library for building data-driven semantic templates](/library/dna-js)
 
   ## Frameworks
 
-  * [RedwoodJS](https://redwoodjs.com/) - Bringing full-stack to the Jamstack
-  * [Crank.js](https://crank.js.org/blog/introducing-crank) - A Reactish UI framework with generators
-  * [Announcing Vendure v0.10.0](https://www.vendure.io/blog/2020/03/announcing-vendure-v0.10.0/) - A framework for developing e-commerce
+  * [RedwoodJS](/library/redwoodjs) - Bringing full-stack to the Jamstack
+  * [Crank.js](/library/crank-js) - A Reactish UI framework with generators
+  * [Announcing Vendure v0.10.0](/library/vendure) - A framework for developing e-commerce
 
   ## Tools
 

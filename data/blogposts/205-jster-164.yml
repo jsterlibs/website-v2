@@ -73,8 +73,8 @@ body: |
 
   ## Frameworks
 
-  * [Nullstack](https://nullstack.app/) - Full-stack JavaScript components
-  * [Inertia.js](https://inertiajs.com/) - Build single-page apps, without building an API
+  * [Nullstack](/library/nullstack) - Full-stack JavaScript components
+  * [Inertia.js](/library/inertia-js) - Build single-page apps, without building an API
 
   ## Apps
 

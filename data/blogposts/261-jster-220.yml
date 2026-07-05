@@ -31,8 +31,8 @@ body: |
 
   * [aidenybai/pattycake: Zero-runtime pattern matching](/library/pattycake)
   * [ofcoerce - Lightweight type coercion library](/library/ofcoerce)
-  * [Swiper - The Most Modern Mobile Touch Slider](https://swiperjs.com/)
-  * [Introducing PigmentCSS: the next generation of CSS-in-JS](https://mui.com/blog/introducing-pigment-css/)
+  * [Swiper - The Most Modern Mobile Touch Slider](/library/swiper)
+  * [Introducing PigmentCSS: the next generation of CSS-in-JS](/library/pigmentcss)
 
   ## Services
 
@@ -46,5 +46,5 @@ body: |
 
   ## Frameworks
 
-  * [SolidStart 1.0: The Shape of Frameworks to Come](https://www.solidjs.com/blog/solid-start-the-shape-frameworks-to-come)
-  * [Byte - Simplify your API development with a minimal, performant JavaScript framework](https://bytejs.pages.dev/)
+  * [SolidStart 1.0: The Shape of Frameworks to Come](/library/solidstart)
+  * [Byte - Simplify your API development with a minimal, performant JavaScript framework](/library/byte)

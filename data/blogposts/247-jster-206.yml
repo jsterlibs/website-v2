@@ -12,13 +12,13 @@ body: |
 
   * [jessquery - A modern, light (3k) alternative to jQuery](/library/jessquery)
   * [data-guardian - a collection of security related utilities for TypeScript](/library/data-guardian)
-  * [Color.js - let's get serious about color.](https://colorjs.io/)
+  * [Color.js - let's get serious about color.](/library/color-js)
   * [blitz-js/superjson: Safely serialize JavaScript expressions to a superset of JSON, which includes Dates, BigInts, and more.](/library/superjson)
-  * [React Knob Headless](https://react-knob-headless.pages.dev/)
+  * [React Knob Headless](/library/react-knob-headless)
 
   ## Frameworks
 
-  * [Next.js 14](https://nextjs.org/blog/next-14)
+  * [Next.js 14](/library/next-js-14)
 
   ## Tools
 

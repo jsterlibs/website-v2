@@ -10,7 +10,7 @@ body: |
 
   ## Libraries
 
-  * [LinkeDOM: A JSDOM Alternative. JSDOM is awesome, but it’s slow at…](https://webreflection.medium.com/linkedom-a-jsdom-alternative-53dd8f699311)
+  * [LinkeDOM: A JSDOM Alternative. JSDOM is awesome, but it’s slow at…](/library/linkedom)
   * [google/incremental-dom](/library/incremental-dom) - An in-place DOM diffing library
 
   ## Frameworks

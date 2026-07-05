@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [Announcing TanStack Query v5](https://tanstack.com/blog/announcing-tanstack-query-v5)
-  * [stan-js - Fast and elegant state management solution with minimal configuration for your React, React Native and even vanilla-js apps](https://codemask-labs.github.io/stan-js/)
-  * [Shoelace: A forward-thinking library of web components.](https://shoelace.style/)
+  * [Announcing TanStack Query v5](/library/tanstack-query)
+  * [stan-js - Fast and elegant state management solution with minimal configuration for your React, React Native and even vanilla-js apps](/library/stan-js)
+  * [Shoelace: A forward-thinking library of web components.](/library/shoelace)
 
 
   ## Tools

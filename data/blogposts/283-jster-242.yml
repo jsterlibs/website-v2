@@ -11,12 +11,12 @@ body: |
   ## Libraries
 
   * [danielroe/beasties: A library to inline your app's critical CSS and lazy-load the rest.](/library/beasties)
-  * [Anime.js 4.0 - JavaScript Animation Engine](https://animejs.com/)
+  * [Anime.js 4.0 - JavaScript Animation Engine](/library/anime-js)
 
   ## Frameworks
 
-  * [GSAP web animation framework is now free](https://gsap.com/blog/3-13/)
-  * [Next.js 15.3 with Turbopack for builds](https://nextjs.org/blog/next-15-3)
+  * [GSAP web animation framework is now free](/library/gsap-web-animation-framework-is-now-free)
+  * [Next.js 15.3 with Turbopack for builds](/library/next-js-15-3-with-turbopack-for-builds)
   * [nordcraft - the open-source visual frontend framework](/library/nordcraft)
   * [mastra: The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.](/library/mastra)
 

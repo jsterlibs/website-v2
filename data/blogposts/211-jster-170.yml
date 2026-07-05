@@ -27,10 +27,10 @@ body: |
   * [fwouts/react-screenshot-test](/library/react-screenshot-test) - A dead simple library to screenshot test React components
   * [kevglass/gute](/library/gute) - Gute is a simple web games library
   * [enquirer](/library/enquirer) - Stylish, intuitive and user-friendly prompts, for Node.js. Used by eslint, webpack, Generate, lint-staged, pm2, gluegun, hygen, GitHub Actions Toolkit, @airbnb/nimbus, and many others!
-  * [Konva](https://konvajs.org/index.html) - HTML5 2d canvas js library for desktop and mobile applications
+  * [Konva](/library/konva) - HTML5 2d canvas js library for desktop and mobile applications
   * [TuSimple/naive-ui](/library/naive-ui) - A Vue 3 Component Library. Fairly Complete. Customizable Themes. Uses TypeScript. Not too Slow.
   * [sindresorhus/ow](/library/ow) - Function argument validation for humans
-  * [Swiper](https://swiperjs.com) - The Most Modern Mobile Touch Slider
+  * [Swiper](/library/swiper) - The Most Modern Mobile Touch Slider
   * [tajo/react-range](/library/react-range) - Range input with a slider. Accessible. Bring your own styles and markup.
   * [country-code-emoji](/library/country-code-emoji) - Convert country codes to corresponding emojis
   * [open-draft/until](/library/until) - Better async/await
@@ -61,5 +61,5 @@ body: |
 
   ## Frameworks
 
-  * [Remastered: a full-stack React framework](https://remastered.hagever.com/)
+  * [Remastered: a full-stack React framework](/library/remastered)
 

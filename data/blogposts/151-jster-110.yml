@@ -19,7 +19,7 @@ body: |
   * [angus-c/just](/library/just) - A library of dependency-free utilities that do just do one thing.
   * [jxnblk/system-components](/library/system-components) - Create consistent design-system-driven React UI components.
   * [Bacon.js 2.0](/library/bacon-js) - Reactive programming.
-  * [TOAST UI Editor](https://nhnent.github.io/tui.editor/) - GFM Markdown WYSIWYG Editor.
+  * [TOAST UI Editor](/library/toast-ui-editor) - GFM Markdown WYSIWYG Editor.
   * [page.js](/library/page-js) - Micro client-side router inspired by the Express router.
 
   ## Styling
@@ -29,8 +29,8 @@ body: |
 
   ## Frameworks
 
-  * [Quasar Framework](http://quasar-framework.org/) - Build responsive websites, PWAs, hybrid mobile Apps (that look native!) and Electron apps, all simultaneously using same codebase, powered with Vue.
-  * [Nest](https://nestjs.com/) - A progressive Node.js framework for building efficient and scalable server-side applications.
+  * [Quasar Framework](/library/quasar-framework) - Build responsive websites, PWAs, hybrid mobile Apps (that look native!) and Electron apps, all simultaneously using same codebase, powered with Vue.
+  * [Nest](/library/nest) - A progressive Node.js framework for building efficient and scalable server-side applications.
   * [GitHub](/library/polka) - A micro web server so fast, it'll make you dance!
 
   ## Articles

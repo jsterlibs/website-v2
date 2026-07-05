@@ -13,12 +13,12 @@ body: |
   ## Libraries
 
   * [pioardi/poolifier](/library/poolifier) - Fast and small Node.js thread pools implemented
-  * [DataTables](https://datatables.net/) - Add advanced interaction controls to your HTML tables the free & easy way
+  * [DataTables](/library/datatables) - Add advanced interaction controls to your HTML tables the free & easy way
   * [vedantroy/typecheck.macro](/library/typecheck-macro) - A easy (and fast) TypeScript validation library/macro. Automatically generate validation functions for TypeScript types.
   * [getify/monio](/library/monio) - Async-capable IO Monad for JS, with several companion monads thrown in
   * [pmndrs/zustand](/library/zustand) - Bear necessities for state management in React
-  * [👷‍♀ Compiled](https://compiledcssinjs.com/) - The CSS in JS authoring experience we love without the runtime cost
-  * [Rest Hooks](https://resthooks.io/) - Delightful data fetching
+  * [👷‍♀ Compiled](/library/compiled) - The CSS in JS authoring experience we love without the runtime cost
+  * [Rest Hooks](/library/rest-hooks) - Delightful data fetching
   * [saarw/flushout](/library/flushout) - Flushout is a distributed data model based on event sourcing written in TypeScript.
   * [josdejong/workerpool](/library/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
 
@@ -40,9 +40,9 @@ body: |
 
   ## Frameworks
 
-  * [Frontity](https://frontity.org/) - The React framework for WordPress
-  * [UmiJS](https://umijs.org/) - Extensible enterprise-level front-end application framework
-  * [Arwes](https://arwes.dev/) - Futuristic Sci-Fi and Cyberpunk Graphical User Interface Framework for Web Apps
+  * [Frontity](/library/frontity) - The React framework for WordPress
+  * [UmiJS](/library/umijs) - Extensible enterprise-level front-end application framework
+  * [Arwes](/library/arwes) - Futuristic Sci-Fi and Cyberpunk Graphical User Interface Framework for Web Apps
   * [blitz](/library/blitz) - The Fullstack React Framework — built on Next.js
 
   ## Styling

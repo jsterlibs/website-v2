@@ -10,7 +10,7 @@ body: |
 
   ## Libraries
 
-  * [Elevator.js](http://tholman.com/elevator.js/) - It's what you think it is
+  * [Elevator.js](/library/elevator-js) - It's what you think it is
   * [superfly/cdn](/library/cdn)
   * [remy/memfetch](/library/memfetch) - Memoizing version of fetch for development
   * [facebookincubator/fbt](/library/fbt) - I18n library by Facebook
@@ -19,7 +19,7 @@ body: |
   ## Frameworks
 
   * [script-8](/library/script-8-github-io) - A fantasy computer for making, sharing, and playing tiny retro-looking games
-  * [What's New in Angular 7](https://www.telerik.com/blogs/whats-new-in-angular-7)
+  * [What's New in Angular 7](/library/whats-new-in-angular-7)
 
   ## Tools
 

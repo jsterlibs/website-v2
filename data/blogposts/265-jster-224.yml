@@ -16,9 +16,9 @@ body: |
 
   ## Libraries
 
-  * [MapLibre - performant open source mapping library](https://maplibre.org/)
+  * [MapLibre - performant open source mapping library](/library/maplibre)
   * [lxsmnsyc/seroval: Stringify JS values](/library/seroval)
-  * [@lazarv/react-server - The easiest way to build React apps with server-side rendering](https://react-server.dev/)
+  * [@lazarv/react-server - The easiest way to build React apps with server-side rendering](/library/lazarv-react-server)
   * [mjackson/fetch-super-headers: A drop-in replacement for JavaScript `Headers` with type-safe access](/library/remix-the-web)
   * [neg4n/d3-no-dom: 📊 Fully use D3.js (Data Driven Documents) in environments without DOM. Perfect for serverless e.g. Vercel Functions](/library/d3-no-dom)
 
@@ -40,4 +40,4 @@ body: |
 
   ## Frameworks
 
-  * [Hono - Ultrafast web framework](https://hono.dev/)
+  * [Hono - Ultrafast web framework](/library/hono)

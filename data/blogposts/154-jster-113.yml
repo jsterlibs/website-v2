@@ -13,7 +13,7 @@ body: |
   ## Libraries
 
   * [hugmanrique/turbo-ws](/library/turbo-ws) - Blazing fast low-level WebSocket server.
-  * [PropelML](http://propelml.org/) - What the creator of Node has been up to?
+  * [PropelML](/library/propelml) - What the creator of Node has been up to?
   * [terkelg/prompts](/library/prompts) - Lightweight, beautiful and user-friendly interactive prompts.
 
   ## Articles

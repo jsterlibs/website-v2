@@ -17,12 +17,12 @@ body: |
   ## Libraries
 
   * [wooorm/starry-night](/library/starry-night) - Syntax highlighting, like GitHub
-  * [Preview.js](https://previewjs.com/) - Preview UI components in your IDE instantly
-  * [Panolens.js](https://pchen66.github.io/Panolens/) - A JavaScript panorama viewer
+  * [Preview.js](/library/preview-js) - Preview UI components in your IDE instantly
+  * [Panolens.js](/library/panolens-js) - A JavaScript panorama viewer
   * [yjs](/library/yjs) - Shared data types for building collaborative software
   * [coder/code-server](/library/code-server) - VS Code in the browser
   * [terotests/robowatch](/library/robowatch) - Directory event watch with configuration
-  * [Zag](https://zagjs.com/) - UI components powered by Finite State Machines
+  * [Zag](/library/zag) - UI components powered by Finite State Machines
 
   ## Tools
 

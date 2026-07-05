@@ -20,7 +20,7 @@ body: |
 
   * [luwes/super-template](/library/super-template) - Build-less template inheritance in the browser. Handy for example or demo pages.
   * [drizzle-team/drizzle-orm](/library/drizzle-orm) - TypeScript ORM for SQL
-  * [openapi-stack](https://openapistack.co/) - Full stack typesafe API-first development for REST
+  * [openapi-stack](/library/openapi-stack) - Full stack typesafe API-first development for REST
   * [WebReflection/promise](/library/promise) - Abortable and Resolvable Promises
   * [tldraw/signia](/library/signia) - Reactive signals that scale, by tldraw
 

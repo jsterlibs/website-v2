@@ -16,8 +16,8 @@ body: |
 
   ## Frameworks
 
-  * [Astro 3.0](https://astro.build/blog/astro-3/)
-  * [Fresh 1.4 – Faster Page Loads, Layouts and More](https://deno.com/blog/fresh-1.4)
+  * [Astro 3.0](/library/astro)
+  * [Fresh 1.4 – Faster Page Loads, Layouts and More](/library/fresh)
   * [dai-shi/wakuwork - Minimalistic React framework](/library/waku)
 
   ## Articles

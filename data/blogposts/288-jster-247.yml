@@ -10,18 +10,18 @@ body: |
 
   ## Frameworks
 
-  * [Pico CSS - Minimal CSS Framework for semantic HTML](https://picocss.com/)
+  * [Pico CSS - Minimal CSS Framework for semantic HTML](/library/pico-css)
   * [trueadm/ripple: Ripple is a TypeScript UI framework for the web.](/library/ripple)
 
   ## Libraries
 
-  * [React Flow - Node-Based UIs in React](https://reactflow.dev/)
-  * [Transformers.js - State-of-the-art Machine Learning for the Web](https://huggingface.co/docs/transformers.js/en/index)
-  * [Apache ECharts v6](https://echarts.apache.org/handbook/en/basics/release-note/v6-feature/)
+  * [React Flow - Node-Based UIs in React](/library/react-flow)
+  * [Transformers.js - State-of-the-art Machine Learning for the Web](/library/transformers-js)
+  * [Apache ECharts v6](/library/apache-echarts)
   * [jqjs - Pure-JavaScript implementation of the jq JSON query language](/library/jqjs)
   * [uhtml V5](/library/uhtml)
-  * [MingCute Icon - Carefully Designed Icon Library](https://www.mingcute.com/)
-  * [UnsuckJS - Enhance HTML with lightweight JavaScript libraries](https://unsuckjs.com/)
+  * [MingCute Icon - Carefully Designed Icon Library](/library/mingcute-icon)
+  * [UnsuckJS - Enhance HTML with lightweight JavaScript libraries](/library/unsuckjs)
 
   ## Techniques
 

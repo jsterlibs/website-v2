@@ -13,7 +13,7 @@ body: |
   * [WebReflection/fetch: A fetch with Response abilities.](/library/fetch-2)
   * [formkit/tempo: 📆 Parse, format, manipulate, and internationalize dates and times in JavaScript and TypeScript.](/library/tempo)
   * [awslabs/llrt: LLRT (Low Latency Runtime) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.](/library/llrt)
-  * [jQuery 4.0.0 is available in beta](https://blog.jquery.com/2024/02/06/jquery-4-0-0-beta/)
+  * [jQuery 4.0.0 is available in beta](/library/jquery)
 
   ## React
 
@@ -29,8 +29,8 @@ body: |
   ## Frameworks
 
   * [Hono - ultrafast framework for the edge has reached 4.0](/library/hono)
-  * [Towards Qwik 2.0: Lighter, Faster, Better](https://www.builder.io/blog/qwik-2-coming-soon)
-  * [Vocs – React Documentation Framework](https://vocs.dev/)
+  * [Towards Qwik 2.0: Lighter, Faster, Better](/library/towards-qwik)
+  * [Vocs – React Documentation Framework](/library/vocs)
 
   ## Techniques
 

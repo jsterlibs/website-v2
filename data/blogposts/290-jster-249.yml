@@ -13,15 +13,15 @@ body: |
   * [alien-signals - The lightest signal library](/library/alien-signals)
   * [idiomorph - a DOM-merging algorithm](/library/idiomorph)
   * [WebReflection/usignal: A blend of and solid-js basic reactivity API](/library/usignal)
-  * [Lift HTML - a tiny Web Components helper library](https://lift-html.js.org/)
-  * [OpenFreeMap - Easy to integrate maps](https://openfreemap.org/)
+  * [Lift HTML - a tiny Web Components helper library](/library/lift-html)
+  * [OpenFreeMap - Easy to integrate maps](/library/openfreemap)
   * [uptake - Run a Bun cluster with a shared "worker" module](/library/uptake)
 
   ## Frameworks
 
-  * [Ember 6.8 Released](https://blog.emberjs.com/ember-released-6-8/)
-  * [Mastra - The TypeScript AI framework](https://mastra.ai/)
-  * [Datastar - The hypermedia framework](https://data-star.dev/)
+  * [Ember 6.8 Released](/library/ember)
+  * [Mastra - The TypeScript AI framework](/library/mastra)
+  * [Datastar - The hypermedia framework](/library/datastar)
 
   ## Tools
 

@@ -13,7 +13,7 @@ body: |
   {{ screenshot: /library/ohm }}
 
   * [harc/ohm](/library/ohm) - A library and language for building parsers, interpreters, compilers, etc.
-  * [Feathers](https://feathersjs.com/) - An open source REST and realtime API layer for modern applications.
+  * [Feathers](/library/feathers) - An open source REST and realtime API layer for modern applications.
   * [PolymerLabs/lit-html](/library/lit-html) - HTML template literals in JavaScript.
   * [wooorm/refractor](/library/refractor) - Lightweight, robust, elegant virtual syntax highlighting using Prism.
 

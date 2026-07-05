@@ -17,9 +17,9 @@ body: |
   {{ screenshot: /library/template-literal }}
 
   * [Drulac/template-literal](/library/template-literal) - Simple template engine built on top of the new syntax.
-  * [Nuxt.js 1.0 is out 🎉](https://medium.com/@nuxt_js/nuxt-js-1-0-is-out-bab1af459972) - Nuxt.js is like Next.js but for Vue.
-  * [anime.js](http://animejs.com/) - Animations made easy.
-  * [Why Ramda?](http://fr.umio.us/why-ramda/) - Why would you use Ramda over Lodash and such?
+  * [Nuxt.js 1.0 is out 🎉](/library/nuxt-js) - Nuxt.js is like Next.js but for Vue.
+  * [anime.js](/library/anime-js) - Animations made easy.
+  * [Why Ramda?](/library/why-ramda) - Why would you use Ramda over Lodash and such?
 
   ## Articles
 

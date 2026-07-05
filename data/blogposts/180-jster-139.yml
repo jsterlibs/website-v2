@@ -10,7 +10,7 @@ body: |
 
   ## Libraries
 
-  * [Pristine](https://pristine.js.org/) - Vanilla javascript form validation micro-library
+  * [Pristine](/library/pristine) - Vanilla javascript form validation micro-library
   * [parcel-bundler/watcher](/library/watcher) - A native C++ Node module for querying and subscribing to filesystem events
   * [shoumma/organigram](/library/organigram) - A JSON based tree structure with drag and drop functionally to re-arrange the tree
   * [ryansolid/solid](/library/solid) - A declarative, efficient, and flexible JavaScript library for building user interfaces

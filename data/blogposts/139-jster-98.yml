@@ -12,14 +12,14 @@ body: |
 
   {{ screenshot: /library/ladda }}
 
-  * [pell](https://jaredreich.com/pell) - The simplest and smallest WYSIWYG text editor for web, with no dependencies.
-  * [tracking.js](https://trackingjs.com/) - A modern approach for Computer Vision on the web.
-  * [AC-D3](http://ac-d3.com/) - A JavaScript Library for Building Audiovisual Charts in D3.
+  * [pell](/library/pell) - The simplest and smallest WYSIWYG text editor for web, with no dependencies.
+  * [tracking.js](/library/tracking-js) - A modern approach for Computer Vision on the web.
+  * [AC-D3](/library/ac-d3) - A JavaScript Library for Building Audiovisual Charts in D3.
   * [GitHub](/library/ladda) - JavaScript data fetching layer with caching.
 
   ## Frameworks
 
-  * [Form JS Framework](https://form.js.org/) - A Classic Form Styling With Ease
+  * [Form JS Framework](/library/form-js-framework) - A Classic Form Styling With Ease
 
   ## Articles
 

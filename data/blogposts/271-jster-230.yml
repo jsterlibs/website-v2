@@ -10,18 +10,18 @@ body: |
 
   ## Libraries
 
-  * [TinyBase - The reactive data store for local-first apps](https://tinybase.org/)
+  * [TinyBase - The reactive data store for local-first apps](/library/tinybase)
   * [rhettlunn/is-odd-ai: Why check if something is odd simply, when you can do it with ✨AI✨](/library/is-odd-ai)
 
   ## Frameworks
 
-  * [Next.js 15](https://nextjs.org/blog/next-15)
+  * [Next.js 15](/library/next-js-15)
   * [Medusa 2.0 - a composable e-commerce framework](/library/medusa)
-  * [Svelte 5 is alive](https://svelte.dev/blog/svelte-5-is-alive)
-  * [Catalyst - a highly composable framework](https://catalyst.1mg.com/public_docs/)
-  * [Introducing Express v5: A New Era for Node.js Framework](https://expressjs.com/2024/10/15/v5-release.html/)
-  * [The story of web framework Hono, from the creator of Hono](https://blog.cloudflare.com/the-story-of-web-framework-hono-from-the-creator-of-hono/)
-  * [Introducing Brisa: Full-stack Web Platform Framework 🔥](https://brisa.build/blog/introducing-brisa)
+  * [Svelte 5 is alive](/library/svelte-5-is-alive)
+  * [Catalyst - a highly composable framework](/library/catalyst)
+  * [Introducing Express v5: A New Era for Node.js Framework](/library/express)
+  * [The story of web framework Hono, from the creator of Hono](/library/the-story-of-web-framework-hono-from-the-creator-of-hono)
+  * [Introducing Brisa: Full-stack Web Platform Framework 🔥](/library/brisa)
   * [openwebf/webf: Build flutter apps with HTML/CSS and JavaScript.](/library/webf)
 
   ## Tools

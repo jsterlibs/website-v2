@@ -10,17 +10,17 @@ body: |
 
   ## Frameworks
 
-  * [Elysia - Ergonomic Framework for Humans](https://elysiajs.com/)
+  * [Elysia - Ergonomic Framework for Humans](/library/elysiajs)
   * [CopilotKit: React UI + elegant infrastructure for AI Copilots, AI chatbots, and in-app AI agents. The Agentic last-mile 🪁](/library/copilotkit)
 
   ## Libraries
 
-  * [fp-pack - A practical functional toolkit for JavaScript and TypeScript. If you know functions, pipes, and currying, you can use it immediately](https://superlucky84.github.io/fp-pack/)
-  * [Announcing jax-js: an ML library for the web](https://ss.ekzhang.com/p/jax-js-an-ml-library-for-the-web)
-  * [2Dphysics - Tiny physics engine written in JavaScript](https://xem.github.io/2Dphysics/)
-  * [Introducing Fate - tRPC with better ergonomics for React](https://fate.technology/posts/introducing-fate)
-  * [Base UI is available now](https://base-ui.com/)
-  * [Automerge - Version control for your data](https://automerge.org/)
+  * [fp-pack - A practical functional toolkit for JavaScript and TypeScript. If you know functions, pipes, and currying, you can use it immediately](/library/fp-pack)
+  * [Announcing jax-js: an ML library for the web](/library/jax-js)
+  * [2Dphysics - Tiny physics engine written in JavaScript](/library/2dphysics)
+  * [Introducing Fate - tRPC with better ergonomics for React](/library/fate)
+  * [Base UI is available now](/library/base-ui)
+  * [Automerge - Version control for your data](/library/automerge)
   * [dlemstra/magick-wasm: The WASM library for ImageMagick](/library/magick-wasm)
 
   ## Articles

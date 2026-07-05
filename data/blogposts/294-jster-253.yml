@@ -13,7 +13,7 @@ body: |
   * [florianschepp/bsky-comments: A zero-dependency Web Component to embed Bluesky discussion threads on any website.](/library/bsky-comments)
   * [gitbrent/PptxGenJS: Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.](/library/pptxgenjs)
   * [shuding/better-all - Better Promise.all with automatic dependency optimization](/library/better-all)
-  * [nuqs - Type-safe search params state management for React](https://nuqs.dev/)
+  * [nuqs - Type-safe search params state management for React](/library/nuqs)
 
 
   ## Tools
@@ -53,7 +53,7 @@ body: |
 
   ## Frameworks
 
-  * [Ember 6.10 Released](https://blog.emberjs.com/ember-released-6-10/)
+  * [Ember 6.10 Released](/library/ember)
 
   ## Guides
 

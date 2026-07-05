@@ -12,10 +12,10 @@ body: |
 
   * [callbag](/library/callbag) - A standard for JS callbacks that enables lightweight observables and iterables.
   * [fastpriorityqueue](/library/fastpriorityqueue) - A fast, heap-based priority queue in JavaScript.
-  * [Uppy File Uploader](https://uppy.io/)
-  * [Chevrotain](https://sap.github.io/chevrotain/docs/) - Parser Building Toolkit for JavaScript.
+  * [Uppy File Uploader](/library/uppy-file-uploader)
+  * [Chevrotain](/library/chevrotain) - Parser Building Toolkit for JavaScript.
   * [vincentriemer/assign.macro](/library/assign-macro) - A babel-macro to transpile `Object.assign`-style expressions to direct assignments for maximum performance.
-  * [ml5js](https://ml5js.org/) - Friendly Machine Learning for the Web.
+  * [ml5js](/library/ml5js) - Friendly Machine Learning for the Web.
 
   ## Articles
 

@@ -11,9 +11,9 @@ body: |
   ## Libraries
 
   * [latitude-dev/latitude: Developer-first embedded analytics](/library/latitude)
-  * [srcl - Open source monospace component library for React](https://www.sacred.computer/)
-  * [UAParser.js - Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent & Client Hints data using JavaScript. Supports browser & node.js environment. Also available as jQuery plugin & TypeScript-ready development.](https://uaparser.dev/)
-  * [React v19 is now stable](https://react.dev/blog/2024/12/05/react-19)
+  * [srcl - Open source monospace component library for React](/library/srcl)
+  * [UAParser.js - Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent & Client Hints data using JavaScript. Supports browser & node.js environment. Also available as jQuery plugin & TypeScript-ready development.](/library/uaparser-js)
+  * [React v19 is now stable](/library/react)
 
   ## Guides
 

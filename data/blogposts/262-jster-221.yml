@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  * [Editor.js - Free block-style editor with a universal JSON output](https://editorjs.io/)
+  * [Editor.js - Free block-style editor with a universal JSON output](/library/editor-js)
   * [WebReflection/buffer-to-base64: A base64 encoder/decoder with gzip or deflate abilities.](/library/buffer-to-base64)
   * [jakebailey/every-ts: A utility to build and bisect any version of TypeScript](/library/every-ts)
   * [ascorbic/cdn-cache-control - Easy cache header handling](/library/cache-primitives)
 
   ## Frameworks
 
-  * [Trigger - The open source background jobs framework](https://trigger.dev/)
+  * [Trigger - The open source background jobs framework](/library/trigger)
 
   ## Tools
 

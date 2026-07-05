@@ -24,14 +24,14 @@ body: |
 
   ## Frameworks
 
-  * [Mastra - The TypeScript AI framework](https://mastra.ai/)
+  * [Mastra - The TypeScript AI framework](/library/mastra)
   * [better-auth: The most comprehensive authentication framework for TypeScript](/library/better-auth)
 
   ## Libraries
 
   * [JonasKruckenberg/imagetools: Load and transform images using a toolbox of custom import directives!](/library/imagetools)
   * [humanwhocodes/crosspost: A JavaScript utility for posting across multiple social networks at once](/library/crosspost)
-  * [React Router v7](https://remix.run/blog/react-router-v7)
+  * [React Router v7](/library/react-router)
   * [nanostores - A tiny (286 bytes) state manager for React/RN/Preact/Vue/Svelte with many atomic tree-shakable stores](/library/nanostores)
 
   ## Books

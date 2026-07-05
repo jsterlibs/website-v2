@@ -16,8 +16,8 @@ body: |
 
   ## Frameworks
 
-  * [Announcing Vendure v1.0](https://www.vendure.io/blog/2021/05/announcing-vendure-v1.0/) - TS-friendly open source e-commerce framework
-  * [Bootstrap 5](https://blog.getbootstrap.com/2021/05/05/bootstrap-5/) - The popular CSS framework has reached a new milestone
+  * [Announcing Vendure v1.0](/library/vendure) - TS-friendly open source e-commerce framework
+  * [Bootstrap 5](/library/bootstrap-5) - The popular CSS framework has reached a new milestone
 
   ## Tools
 

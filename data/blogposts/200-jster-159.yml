@@ -24,7 +24,7 @@ body: |
   ## Frameworks
 
   * [Tauri](/library/tauri) - Build smaller, faster, and more secure desktop applications with a web frontend
-  * [Alibaba Midway Serverless v1.0](https://medium.com/@uplifted_latte_kangaroo_248/alibaba-midway-serverless-v1-0-lets-building-serverless-cloud-ecosystem-with-node-js-8bfa943c4fb7)
+  * [Alibaba Midway Serverless v1.0](/library/alibaba-midway-serverless)
 
   ## Articles
 

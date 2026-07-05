@@ -12,9 +12,9 @@ body: |
 
   * [retejs/rete: JavaScript framework for visual programming and creating node editor](/library/rete)
   * [fibo/flow-view: is a visual editor for Dataflow programming](/library/flow-view)
-  * [Precedent - Building blocks for your Next.js project](https://precedent.dev/)
+  * [Precedent - Building blocks for your Next.js project](/library/precedent)
   * [graphql/graphql-http: Simple, pluggable, zero-dependency, GraphQL over HTTP Protocol compliant server and client.](/library/graphql-http)
-  * [Crawlee - Build reliable crawlers](https://crawlee.dev/)
+  * [Crawlee - Build reliable crawlers](/library/crawlee)
   * [mercurius-js/mercurius: Implement GraphQL servers and gateways with Fastify](/library/mercurius)
 
   ## Frameworks

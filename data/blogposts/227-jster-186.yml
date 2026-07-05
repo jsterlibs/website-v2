@@ -11,11 +11,11 @@ body: |
   ## Libraries
 
   * [11ty/is-land](/library/is-land) - A new performance-focused way to add interactive client-side components to your web site
-  * [Corset](https://corset.dev/) - Cascading binding sheets
+  * [Corset](/library/corset) - Cascading binding sheets
   * [WebReflection/weak-value](/library/weak-value) - A Map with weakly referenced values, instead of keys
-  * [React Calendar](https://www.react-calendar.com/)
+  * [React Calendar](/library/react-calendar)
   * [11ty/webc](/library/webc) - Single File Web Components
-  * [Pyodide](https://pyodide.org/en/stable/index.html) - Python distribution for the browser and Node.js based on WebAssembly
+  * [Pyodide](/library/pyodide) - Python distribution for the browser and Node.js based on WebAssembly
 
   ## Articles
 
@@ -37,8 +37,8 @@ body: |
 
   ## Frameworks
 
-  * [Next.js 13](https://nextjs.org/blog/next-13)
-  * [Voby: Simplifications Over Solid - No Babel, No Compiler](https://dev.to/fabiospampinato/voby-simplifications-over-solid-no-babel-no-compiler-5epg)
+  * [Next.js 13](/library/next-js-13)
+  * [Voby: Simplifications Over Solid - No Babel, No Compiler](/library/voby)
 
   ## TypeScript
 

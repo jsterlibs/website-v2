@@ -14,7 +14,7 @@ body: |
 
   * [sindresorhus/modern-normalize](/library/modern-normalize)
   * [neo-async](/library/neo-async) - A faster drop-in replacement for async.
-  * [nact](https://nact.io/) - Nact is Redux but for the server.
+  * [nact](/library/nact) - Nact is Redux but for the server.
   * [react-functional](/library/react-functional) - Add lifecycle methods to stateless functional components, without the class noise.
   * [giuseppeg/dss](/library/dss) - Deterministic Style Sheets.
   * [DmitrySoshnikov/regexp-tree](/library/regexp-tree) - Regular expressions processor in JavaScript.

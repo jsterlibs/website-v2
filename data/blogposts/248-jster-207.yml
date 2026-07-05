@@ -11,8 +11,8 @@ body: |
   ## Libraries
 
   * [pilcrowOnPaper/monaco: A simple OAuth library made for fun](/library/monaco)
-  * [Melt UI - Open source UI library for Svelte](https://www.melt-ui.com/)
-  * [LocatorJS - click on any component to go to code.](https://www.locatorjs.com/)
+  * [Melt UI - Open source UI library for Svelte](/library/melt-ui)
+  * [LocatorJS - click on any component to go to code.](/library/locatorjs)
   * [jsep - JavaScript expression parser](/library/jsep)
   * [bufferhead-code/nextjs-use-php - Use PHP code right within your React / Next.js App. With "use php";](/library/nextjs-use-php)
 
@@ -33,7 +33,7 @@ body: |
 
   ## Frameworks
 
-  * [Hono - Ultrafast web framework for the Edges](https://hono.dev/)
+  * [Hono - Ultrafast web framework for the Edges](/library/hono)
 
   ## Content Management
 

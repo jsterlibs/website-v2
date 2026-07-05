@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [Vento - a new templating engine for Deno](https://vento.js.org/)
-  * [Modern.js - Inspire Creativity in Modern Web Development](https://modernjs.dev/en/)
+  * [Vento - a new templating engine for Deno](/library/vento)
+  * [Modern.js - Inspire Creativity in Modern Web Development](/library/modern-js)
   * [cloudflare/workers-graphql-server: 🔥Lightning-fast, globally distributed Apollo GraphQL server, deployed at the edge using Cloudflare Workers](/library/workers-graphql-server)
-  * [OpenAuth - Universal, standards-based auth provider](https://openauth.js.org/)
-  * [Style-observer: JS to observe CSS property changes, for reals](https://lea.verou.me/blog/2025/style-observer/)
+  * [OpenAuth - Universal, standards-based auth provider](/library/openauth)
+  * [Style-observer: JS to observe CSS property changes, for reals](/library/style-observer)
 
   ## Toolkits
 

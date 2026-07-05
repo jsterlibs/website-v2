@@ -11,18 +11,18 @@ body: |
   ## Libraries
 
   * [promise-worker.ts](/library/d07b326a438dd0449758c263cebd0e82) - Make web workers fun
-  * [Strapi v4 stable is live](https://strapi.io/v4) - Headless CMS for all
-  * [Fuse.js](https://fusejs.io/) - a powerful, lightweight fuzzy-search library, with zero dependencies
+  * [Strapi v4 stable is live](/library/strapi) - Headless CMS for all
+  * [Fuse.js](/library/fuse-js) - a powerful, lightweight fuzzy-search library, with zero dependencies
   * [molefrog/wouter](/library/wouter) - A minimalist-friendly ~1.5KB routing for React and Preact. Nothing else but HOOKS
-  * [Undici](https://undici.nodejs.org/#/) - A HTTP/1.1 client, written from scratch for Node.js.
+  * [Undici](/library/undici) - A HTTP/1.1 client, written from scratch for Node.js.
   * [jarle](/library/jarle) - Just Another React Live Editor
   * [coston/react-super-responsive-table](/library/react-super-responsive-table) - Turn the tables on unresponsive data
   * [g-plane/typed-query-selector](/library/typed-query-selector) - Better typed `querySelector` and `querySelectorAll`.
-  * [Pollen](https://www.pollen.style/) - Utility-first CSS for the future
+  * [Pollen](/library/pollen) - Utility-first CSS for the future
   * [davidkpiano/flipping](/library/flipping) - Flipping awesome animations
   * [aholachek/animate-css-grid](/library/animate-css-grid) - Painless transitions for CSS Grid
   * [Yomguithereal/obliterator](/library/obliterator) - Higher order iterator library for JavaScript and TypeScript
-  * [Mantine](https://mantine.dev/) - A fully featured React components library
+  * [Mantine](/library/mantine) - A fully featured React components library
 
   ## TypeScript
 
@@ -57,4 +57,4 @@ body: |
 
   ## Frameworks
 
-  * [Hydrogen](https://hydrogen.shopify.dev/) - Shopify's opinionated framework for building headless ecommerce
+  * [Hydrogen](/library/hydrogen) - Shopify's opinionated framework for building headless ecommerce

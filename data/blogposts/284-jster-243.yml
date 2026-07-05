@@ -12,8 +12,8 @@ body: |
 
   * [LegendApp/legend-list: A high-performance list component for React Native](/library/legend-list)
   * [unnoq/orpc: Typesafe APIs Made Simple 🪄](/library/orpc)
-  * [TinyBase - A reactive data store & sync engine](https://tinybase.org/)
-  * [Node.js Authentication from Lucia to Better Auth](https://www.nodejs-security.com/blog/nodejs-authentication-migration-from-lucia-to-better-auth)
+  * [TinyBase - A reactive data store & sync engine](/library/tinybase)
+  * [Node.js Authentication from Lucia to Better Auth](/library/node-js-authentication-from-lucia-to-better-auth)
 
   ## Techniques
 
@@ -28,8 +28,8 @@ body: |
 
   ## Frameworks
 
-  * [RedwoodSDK - The React Framework for Cloudflare](https://rwsdk.com/)
-  * [LLM-first Web Framework](https://blog.mgechev.com/2025/04/19/llm-first-web-framework/)
+  * [RedwoodSDK - The React Framework for Cloudflare](/library/redwoodsdk)
+  * [LLM-first Web Framework](/library/llm-first-web-framework)
 
   ## Guides
 

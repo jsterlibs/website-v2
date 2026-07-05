@@ -10,15 +10,15 @@ body: |
 
   ## Libraries
 
-  * [Plaiceholder - Beautiful image placeholders without the hassle](https://plaiceholder.co/docs)
+  * [Plaiceholder - Beautiful image placeholders without the hassle](/library/plaiceholder)
   * [brimdata/react-arborist: The complete tree view component for React](/library/react-arborist)
   * [ChrisShank/perfect-arrow: A custom element to declaratively define perfect arrows.](/library/quiver)
-  * [mastodon-post Web Component](https://darn.es/mastodon-post-web-component/)
-  * [Legend State - Performant state manager for React](https://legendapp.com/open-source/state/intro/introduction/)
+  * [mastodon-post Web Component](/library/mastodon-post-web-component)
+  * [Legend State - Performant state manager for React](/library/legend-state)
 
   ## Frameworks
 
-  * [Tailus UI - an alternative to shadcn](https://tailus.io/)
+  * [Tailus UI - an alternative to shadcn](/library/tailus-ui)
 
   ## Platforms
 

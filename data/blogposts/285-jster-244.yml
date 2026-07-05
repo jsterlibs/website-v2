@@ -13,12 +13,12 @@ body: |
   ## Libraries
 
   * [bholmesdev/simple-rsc: A simple React Server Components implementation that you can build yourself 🙌](/library/simple-rsc)
-  * [React Virtuoso - Virtualization with React](https://virtuoso.dev/)
+  * [React Virtuoso - Virtualization with React](/library/react-virtuoso)
   * [luwes/little-vdom: 🍼 650B Virtual DOM - Use reactive JSX with minimal overhead](/library/little-vdom)
-  * [Next-Yak - Zero-runtime CSS-in-JS for Next.js powered by Rust](https://yak.js.org/)
+  * [Next-Yak - Zero-runtime CSS-in-JS for Next.js powered by Rust](/library/next-yak)
   * [ValueMelody/melody-auth: A turnkey OAuth & authentication system, designed for both Cloudflare Workers and Node.js](/library/melody-auth)
-  * [Slidev - Presentation slides for developers](https://sli.dev/)
-  * [tscircuit - Code Electronics with React](https://tscircuit.com/)
+  * [Slidev - Presentation slides for developers](/library/slidev)
+  * [tscircuit - Code Electronics with React](/library/tscircuit)
 
   ## Techniques
 

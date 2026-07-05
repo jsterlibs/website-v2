@@ -18,7 +18,7 @@ body: |
 
   ## Frameworks
 
-  * [Tiptap](https://laravel-news.com/tiptap-rich-text-editor-framework-for-vue-js) - A Rich Text Editor Framework for Vue.js
+  * [Tiptap](/library/tiptap) - A Rich Text Editor Framework for Vue.js
 
   ## Techniques
 

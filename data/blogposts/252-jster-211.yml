@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [TypeSchema - Universal adapter for TypeScript schema validation](https://typeschema.com/)
+  * [TypeSchema - Universal adapter for TypeScript schema validation](/library/typeschema)
   * [Faire/mjml-react: React component library to generate the HTML emails on the fly](/library/mjml-react)
-  * [Wedges — Open-source UI components for React](https://www.lemonsqueezy.com/wedges)
+  * [Wedges — Open-source UI components for React](/library/wedges)
   * [isographlabs/isograph: Build React apps powered by GraphQL data](/library/isograph)
   * [43081j/hanbi: A small javascript library for stubbing and spying on methods/functions](/library/hanbi)
 

@@ -11,19 +11,19 @@ body: |
   ## Libraries
 
   * [dai-shi/redux-in-worker](/library/redux-in-worker) - Entire Redux in Web Worker
-  * [zipson](https://jgranstrom.github.io/zipson/) - A drop-in alternative to JSON.parse/stringify with added compression and streaming support
+  * [zipson](/library/zipson) - A drop-in alternative to JSON.parse/stringify with added compression and streaming support
   * [WebReflection/JSONH](/library/jsonh) - A way to pack/unpack generic homogenous collections
   * [jcubic/sysend.js](/library/sysend-js) - Send messages between pages that are open in the same browser
   * [beatgammit/gzip-js](/library/gzip-js) - A pure JavaScript implementation of the GZIP file format
   * [jcubic/jquery.terminal](/library/jquery-terminal) - Terminal emulator as a jQuery plugin
   * [retarsis/routeshub](/library/routeshub) - A route manager and pattern for Angular
   * [miketalbot/js-coroutines](/library/js-coroutines) - coroutines for JavaScript
-  * [Splitting.js](https://splitting.js.org/) - CSS variables for split words and characters
+  * [Splitting.js](/library/splitting-js) - CSS variables for split words and characters
   * [gajus/mutual-exclusion](/library/mutual-exclusion) - Mutual Exclusion (mutex) object for JavaScript
   * [lukeed/escalade](/library/escalade) - A tiny (183B to 210B) and fast utility to ascend parent directories
-  * [Muuri](https://muuri.dev/) - Infinite layouts with batteries included
+  * [Muuri](/library/muuri) - Infinite layouts with batteries included
   * [vvo/tzdb](/library/tzdb) - Time zone helpers
-  * [graphics-ts](https://dev.to/imax153/graphics-ts-functional-bindings-for-the-html-5-canvas-api-1832) - Functional Bindings for the HTML 5 Canvas API
+  * [graphics-ts](/library/graphics-ts) - Functional Bindings for the HTML 5 Canvas API
 
   ## GraphQL
 

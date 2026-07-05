@@ -11,10 +11,10 @@ body: |
   ## Libraries
 
   * [aidenybai/hundred - Toy block virtual DOM](/library/hundred)
-  * [Pagefind - Add search to your static site easily](https://pagefind.app/)
+  * [Pagefind - Add search to your static site easily](/library/pagefind)
   * [pmndrs/react-three-offscreen - Offscreen worker canvas for react-three-fiber](/library/react-three-offscreen)
-  * [React Wrap Balancer](https://react-wrap-balancer.vercel.app/)
-  * [Open Props: sub-atomic styles](https://open-props.style/)
+  * [React Wrap Balancer](/library/react-wrap-balancer)
+  * [Open Props: sub-atomic styles](/library/open-props)
   * [immer v10 has been released](/library/immer)
 
   ## Guides

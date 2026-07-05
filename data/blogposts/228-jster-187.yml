@@ -10,22 +10,22 @@ body: |
 
   ## Libraries
 
-  * [Jeongho made 1,000x faster TypeScript Validator Library](https://dev.to/samchon/typescript-json-is-10-1000x-times-faster-than-zod-and-io-ts-8n6)
+  * [Jeongho made 1,000x faster TypeScript Validator Library](/library/jeongho-made-1-000x-faster-typescript-validator-library)
   * [arackaf/micro-graphql-svelte](/library/micro-graphql-svelte) - Light and simple GraphQL Svelte client with extensible, composable cache invalidation
-  * [Tremor](https://www.tremor.so/) - The React library to build dashboards fast
-  * [Legend](https://legendapp.com/open-source/state/) - A super fast and powerful state library for JavaScript apps
+  * [Tremor](/library/tremor) - The React library to build dashboards fast
+  * [Legend](/library/legend) - A super fast and powerful state library for JavaScript apps
   * [hazae41/xswr](/library/xswr) - Yet another React data (re)fetching library
-  * [Telefunc](https://telefunc.com/) - Remote Functions. Instead of API.
+  * [Telefunc](/library/telefunc) - Remote Functions. Instead of API.
   * [bigskysoftware/idiomorph](/library/idiomorph) - A DOM-merging algorithm
   * [WebReflection/uhtml](/library/uhtml) - A micro HTML/SVG render
-  * [Modular Forms](https://modularforms.dev/) - The modular form library for SolidJS
+  * [Modular Forms](/library/modular-forms) - The modular form library for SolidJS
 
   ## Frameworks
 
-  * [LiveViewJS](https://www.liveviewjs.com/) - Simple yet powerful framework for LiveViews in NodeJS and Deno
-  * [TezJS](https://tezjs.io/) - A Revolutionary Jamstack Framework for Modern Websites
-  * [Unpoly](https://unpoly.com/) - Unobtrusive JavaScript framework
-  * [Introducing Shoelace, a Framework-Independent Component-Based UX Library](https://css-tricks.com/shoelace-component-frameowrk-introduction/)
+  * [LiveViewJS](/library/liveviewjs) - Simple yet powerful framework for LiveViews in NodeJS and Deno
+  * [TezJS](/library/tezjs) - A Revolutionary Jamstack Framework for Modern Websites
+  * [Unpoly](/library/unpoly) - Unobtrusive JavaScript framework
+  * [Introducing Shoelace, a Framework-Independent Component-Based UX Library](/library/shoelace-a-framework-independent-component-based-ux-library)
   * [TahaSh/qwikql](/library/qwikql) - A GraphQL client for Qwik framework
 
   ## Techniques

@@ -13,11 +13,11 @@ body: |
   * [yelouafi/focused](/library/focused) - Yet another Optics library in JavaScript. Based on the famous lens library from Haskell. Wrapped in a convenient Proxy interface
   * [lukeed/arr](/library/arr) - A collection of tiny, highly performant Array.prototype alternatives
   * [tabatkins/railroad-diagrams](/library/railroad-diagrams) - A small JS+SVG library for drawing railroad syntax diagrams, like on JSON.org.
-  * [mermaid](https://mermaidjs.github.io/) - Diagrams in JavaScript
-  * [Intro.js](https://introjs.com/) - Step-by-step guide and feature introduction
+  * [mermaid](/library/mermaid) - Diagrams in JavaScript
+  * [Intro.js](/library/intro-js) - Step-by-step guide and feature introduction
   * [wisercoder/uibuilder](/library/uibuilder) - Typed HTML templates using TypeScript's TSX files
   * [nodegui](/library/nodegui) - A library for building cross-platform native desktop applications with JavaScript and CSS like styling
-  * [ZzFX – Zuper Zmall Zeeded Zound Zynth](http://frankforce.com/?p=6918)
+  * [ZzFX – Zuper Zmall Zeeded Zound Zynth](/library/zzfx)
 
   ## Frameworks
 

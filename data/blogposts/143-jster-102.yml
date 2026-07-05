@@ -13,10 +13,10 @@ body: |
   {{ screenshot: /library/controlkit-js }}
 
   * [automat/controlkit.js](/library/controlkit-js) - A lightweight controller and GUI library.
-  * [AOS](https://michalsnik.github.io/aos/) - Animate on scroll library.
-  * [ScrollMagic](http://scrollmagic.io/) - Magical scroll interactions.
-  * [unified](https://unifiedjs.github.io/) - An interface for processing text with syntax trees and transforming between them.
-  * [Pressure.js](https://pressurejs.com/) - Handle different touch interfaces through a single interface.
+  * [AOS](/library/aos) - Animate on scroll library.
+  * [ScrollMagic](/library/scrollmagic) - Magical scroll interactions.
+  * [unified](/library/unified) - An interface for processing text with syntax trees and transforming between them.
+  * [Pressure.js](/library/pressure-js) - Handle different touch interfaces through a single interface.
   * [Freactal](/library/freactal) - State management for React and React-like libraries.
 
   ## Tutorials

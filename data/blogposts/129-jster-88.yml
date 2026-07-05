@@ -13,16 +13,16 @@ body: |
   {{ screenshot: /library/localforage }}
 
   * [localForage](/library/localforage) - Easy web storage.
-  * [mo](http://mojs.io/) - Motion graphics for the web.
-  * [Tone.js](https://tonejs.github.io/) - Interactive music in the browser.
-  * [A-Frame](https://aframe.io/) - WebVR made easy.
+  * [mo](/library/mo) - Motion graphics for the web.
+  * [Tone.js](/library/tone-js) - Interactive music in the browser.
+  * [A-Frame](/library/a-frame) - WebVR made easy.
   * [hyperapp](/library/hyperapp) - 1k library for building JavaScript applications.
   * [sudodoki/copy-to-clipboard](/library/copy-to-clipboard) - Copy to clipboard using JavaScript.
   * [bvaughn/js-search](/library/js-search) - Efficient client-side search.
 
   ## Frameworks
 
-  * [Stem.js](https://stemjs.org/) - The framework that tries not to be a framework.
+  * [Stem.js](/library/stem-js) - The framework that tries not to be a framework.
 
   ## Tutorials
 

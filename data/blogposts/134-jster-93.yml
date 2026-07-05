@@ -12,7 +12,7 @@ body: |
 
   {{ screenshot: /library/promise-fun }}
 
-  * [Hedron](https://jsbros.github.io/hedron/) - A no-frills grid system for minimalists.
+  * [Hedron](/library/hedron) - A no-frills grid system for minimalists.
   * [sindresorhus/promise-fun](/library/promise-fun) - Promise packages, patterns, chat, and tutorials.
   * [MatteoGabriele/vue-analytics](/library/vue-analytics) - Vue plugin for Google Analytics
 

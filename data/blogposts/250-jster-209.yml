@@ -10,15 +10,15 @@ body: |
 
   ## Libraries
 
-  * [Frappe Charts: Simple and Modern SVG Charts](https://frappe.io/products)
-  * [Melt UI - Open source UI components for Svelte](https://www.melt-ui.com/)
+  * [Frappe Charts: Simple and Modern SVG Charts](/library/frappe-charts)
+  * [Melt UI - Open source UI components for Svelte](/library/melt-ui)
   * [facebook/stylex: StyleX is the styling system for ambitious user interfaces.](/library/stylex)
   * [WebReflection/proxy-pants: Secured and reliable Proxy based utilities for more or less common tasks.](/library/proxy-pants)
 
   ## Frameworks
 
   * [Fuse.js: The opinionated framework for creating typesafe data layers](/library/fuse)
-  * [Fresh 1.6: Tailwind CSS plugin, simplified typings and more](https://deno.com/blog/fresh-1.6)
+  * [Fresh 1.6: Tailwind CSS plugin, simplified typings and more](/library/fresh)
 
   ## Tools
 

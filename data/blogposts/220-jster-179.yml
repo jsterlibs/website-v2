@@ -16,7 +16,7 @@ body: |
 
   ## Frameworks
 
-  * [Vanilla](https://vanillaframework.io/) - A simple, extensible CSS framework
+  * [Vanilla](/library/vanilla) - A simple, extensible CSS framework
   * [robtweed/golgi](/library/golgi) - Dynamically-loading WebComponent Assembly UI Framework
 
   ## Tools

@@ -11,11 +11,11 @@ body: |
   ## Libraries
 
   * [sinclairzx81/zero](/library/zero) - 3D graphics rendering pipeline. Implemented in JavaScript. Run in a terminal.
-  * [Cytoscape.js](https://js.cytoscape.org/) - Graph theory (network) library for visualisation and analysis
+  * [Cytoscape.js](/library/cytoscape-js) - Graph theory (network) library for visualisation and analysis
   * [leeoniya/uPlot](/library/uplot) - An exceptionally fast, tiny time series chart
-  * [Introducing MikroORM, TypeScript data-mapper ORM with Identity Map](https://medium.com/dailyjs/introducing-mikro-orm-typescript-data-mapper-orm-with-identity-map-9ba58d049e02)
+  * [Introducing MikroORM, TypeScript data-mapper ORM with Identity Map](/library/mikroorm-typescript-data-mapper-orm-with-identity-map)
   * [lukeed/throttles](/library/throttles) - A tiny (139B to 204B) utility to regulate the execution rate of your functions
-  * [Chakra UI](https://chakra-ui.com/) - Build accessible React apps & websites with speed
+  * [Chakra UI](/library/chakra-ui) - Build accessible React apps & websites with speed
   * [ai/nanoid](/library/nanoid) - Simple and reliable id generator
 
   ## Articles

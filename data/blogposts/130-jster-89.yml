@@ -13,7 +13,7 @@ body: |
   {{ screenshot: /library/unfetch }}
 
   * [developit/unfetch](/library/unfetch) - 0.5k polyfill for `fetch`.
-  * [Animo](https://animo.js.org/) - Manage transitions and animations through JavaScript.
+  * [Animo](/library/animo) - Manage transitions and animations through JavaScript.
 
   ## Articles
 

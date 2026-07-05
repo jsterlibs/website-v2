@@ -13,9 +13,9 @@ body: |
   * [pshihn/rough](/library/rough) - Create graphics with a hand-drawn, sketchy, appearance.
   * [Quiq/check-some](/library/check-some) - Component to help with form validation in React.
   * [getify/CAF](/library/caf) - Cancelable Async Functions.
-  * [TensorFlow.js](https://js.tensorflow.org/) - A WebGL accelerated, browser based JavaScript library for training and deploying ML models.
+  * [TensorFlow.js](/library/tensorflow-js) - A WebGL accelerated, browser based JavaScript library for training and deploying ML models.
   * [ballercat/walt](/library/walt) - JavaScript-like syntax for WebAssembly text format.
-  * [Docusaurus](https://docusaurus.io/) - Easy to Maintain Open Source Documentation Websites.
+  * [Docusaurus](/library/docusaurus) - Easy to Maintain Open Source Documentation Websites.
 
   ## GraphQL
 

@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [Announcing TanStack Form v1](https://tanstack.com/blog/announcing-tanstack-form-v1)
-  * [Tempo - The easiest way to work with Dates in JavaScript](https://tempo.formkit.com/)
-  * [React Bits - Animated UI Components For React](https://www.reactbits.dev/)
+  * [Announcing TanStack Form v1](/library/tanstack-form)
+  * [Tempo - The easiest way to work with Dates in JavaScript](/library/tempo)
+  * [React Bits - Animated UI Components For React](/library/react-bits)
   * [quansync-dev/quansync: "Superposition" between sync and async](/library/quansync)
   * [unjs/unstorage: 💾 Unstorage provides an async Key-Value storage API with conventional features like multi driver mounting, watching and working with metadata, dozens of built-in drivers and a tiny core.](/library/unstorage)
 
@@ -26,8 +26,8 @@ body: |
 
   ## Frameworks
 
-  * [Solito = React Native + Next.js](https://solito.dev/)
-  * [Lynx - Native apps the web way](https://lynxjs.org/)
+  * [Solito = React Native + Next.js](/library/solito-react-native-next-js)
+  * [Lynx - Native apps the web way](/library/lynx)
   * [JimSchofield/minne: An ultra-light web component framework](/library/minne)
 
   ## Tools

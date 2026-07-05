@@ -12,10 +12,10 @@ body: |
 
   * [tokenami: CSS-in-JS reinvented for scalable, typesafe design systems. A modern approach to just-in-time atomic CSS using CSS variables — no bundler required.](/library/tokenami)
   * [nuqs - Type-safe search params state manager for React frameworks](/library/nuqs)
-  * [Starbase - SQLite on the edge](https://starbasedb.com/)
+  * [Starbase - SQLite on the edge](/library/starbase)
   * [unjs/capnp-es: 🔥 TypeScript implementation of the Cap'n Proto serialization.](/library/capnp-es)
-  * [Announcing ArkType 2.0](https://arktype.io/docs/blog/2.0)
-  * [Unpic 1.0 – Image components for every framework](https://unpic.pics/blog/unpic-1/?a)
+  * [Announcing ArkType 2.0](/library/arktype)
+  * [Unpic 1.0 – Image components for every framework](/library/unpic)
   * [tinylibs/picospinner: A lightweight, no dependency, pluggable CLI spinner library.](/library/picospinner)
 
   ## Articles
@@ -27,10 +27,10 @@ body: |
 
   ## Frameworks
 
-  * [Angular 2025 Strategy](https://blog.angular.dev/angular-2025-strategy-9ca333dfc334)
-  * [Frontend frameworks, a 2024 year in review](https://www.netlify.com/blog/2024-frameworks-year-in-review/)
-  * [Ember 6.0 Released](https://blog.emberjs.com/ember-6-0-released/)
-  * [Nue - A standards first web framework](https://nuejs.org/blog/standards-first-web-framework/)
+  * [Angular 2025 Strategy](/library/angular-2025-strategy)
+  * [Frontend frameworks, a 2024 year in review](/library/frontend-frameworks-a-2024-year-in-review)
+  * [Ember 6.0 Released](/library/ember)
+  * [Nue - A standards first web framework](/library/nue)
 
   ## Tools
 

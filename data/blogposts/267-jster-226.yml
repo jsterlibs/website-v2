@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  * [Announcing TypedSQL: Make your raw SQL queries type-safe with Prisma ORM](https://www.prisma.io/blog/announcing-typedsql-make-your-raw-sql-queries-type-safe-with-prisma-orm)
+  * [Announcing TypedSQL: Make your raw SQL queries type-safe with Prisma ORM](/library/typedsql)
   * [bramus/style-observer: MutationObserver for CSS. Get notified when the computed value of a CSS property changes.](/library/style-observer)
-  * [WebSID - Commodore 64 synthesizer](https://www.igorski.nl/apps/websid)
-  * [PgTyped - Typesafe SQL in Typescript](https://pgtyped.dev/)
-  * [Radashi - A collection of TypeScript utilities](https://radashi.js.org/)
+  * [WebSID - Commodore 64 synthesizer](/library/websid)
+  * [PgTyped - Typesafe SQL in Typescript](/library/pgtyped)
+  * [Radashi - A collection of TypeScript utilities](/library/radashi)
   * [Instant - the realtime client-side database](/library/instant)
-  * [Paraglide - Simple i18n for applications](https://paraglidejs.com/)
-  * [Elementary Audio - A JavaScript library for digital audio signal processing](https://www.elementary.audio/)
+  * [Paraglide - Simple i18n for applications](/library/paraglide)
+  * [Elementary Audio - A JavaScript library for digital audio signal processing](/library/elementary-audio)
   * [kucherenko/jscpd: Copy/paste detector for programming source code.](/library/jscpd)
 
   ## Tools

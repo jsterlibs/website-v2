@@ -23,7 +23,7 @@ body: |
 
   ## Libraries
 
-  * [monet.js](https://monet.github.io/monet.js/) - Powerful abstractions for JavaScript
+  * [monet.js](/library/monet-js) - Powerful abstractions for JavaScript
   * [gcanti/retry-ts](/library/retry-ts) - Retry combinators for monadic actions that may fail
   * [lukeed/kleur](/library/kleur) - The fastest Node.js library for formatting terminal text with ANSI colors~!
 

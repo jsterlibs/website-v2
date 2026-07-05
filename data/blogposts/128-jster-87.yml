@@ -13,8 +13,8 @@ body: |
   {{ screenshot: /library/marky }}
 
   * [nolanlawson/marky](/library/marky) - High-resolution JavaScript timer based on performance.mark() and measure().
-  * [skatejs](https://skatejs.gitbooks.io/skatejs/content/) - Write functional and performance web components.
-  * [iType.js](https://ityped.surge.sh/) - Simple typing animation.
+  * [skatejs](/library/skatejs) - Write functional and performance web components.
+  * [iType.js](/library/itype-js) - Simple typing animation.
 
   ## Data Manipulation
 
@@ -38,7 +38,7 @@ body: |
 
   ## Frameworks
 
-  * [Mithril 1.0](http://mithril.js.org/)
+  * [Mithril 1.0](/library/mithril)
 
   ## Articles
 

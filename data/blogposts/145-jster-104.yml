@@ -14,8 +14,8 @@ body: |
 
   * [bvaughn/js-worker-search](/library/js-worker-search) - JavaScript client-side search API with web-worker support.
   * [alvarcarto/url-to-pdf-api](/library/url-to-pdf-api) - Self-hosted service for rendering HTML to PDF.
-  * [DIO](https://dio.js.org/) - Develop light, declarative UIs using JavaScript.
-  * [Micromodal.js](https://micromodal.now.sh/) - Micromodal.js is a lightweight, configurable and a11y-enabled modal library written in pure JavaScript.
+  * [DIO](/library/dio) - Develop light, declarative UIs using JavaScript.
+  * [Micromodal.js](/library/micromodal-js) - Micromodal.js is a lightweight, configurable and a11y-enabled modal library written in pure JavaScript.
   * [unfetch](/library/unfetch-2) - Tiny 500b fetch "barely-polyfill".
 
   ## Articles

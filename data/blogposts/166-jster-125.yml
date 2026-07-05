@@ -10,7 +10,7 @@ body: |
 
   ## Libraries
 
-  * [Z](https://z-pattern-matching.github.io/) - Native pattern matching for JavaScript
+  * [Z](/library/z) - Native pattern matching for JavaScript
   * [Flet/github-slugger](/library/github-slugger) - Generate a slug just like GitHub does for markdown headings
 
   ## Interviews

@@ -10,17 +10,17 @@ body: |
 
   ## Libraries
 
-  * [Stylable](https://stylable.io/) - CSS for components
-  * [Shoelace](https://shoelace.style/) - A forward-thinking library of web components
-  * [jQuery 3.6.2 Released!](https://blog.jquery.com/2022/12/13/jquery-3-6-2-released/)
+  * [Stylable](/library/stylable) - CSS for components
+  * [Shoelace](/library/shoelace) - A forward-thinking library of web components
+  * [jQuery 3.6.2 Released!](/library/jquery)
 
   ## Frameworks
 
-  * [Beyond Docs](https://beyondjs.com/) - The Full Stack Modular + Universal Typescript Framework
-  * [Next 13.1](https://nextjs.org/blog/next-13-1)
-  * [GrapesJS](https://grapesjs.com/) - Free and Open Source Web Builder Framework
+  * [Beyond Docs](/library/beyond-docs) - The Full Stack Modular + Universal Typescript Framework
+  * [Next 13.1](/library/next)
+  * [GrapesJS](/library/grapesjs) - Free and Open Source Web Builder Framework
   * [yisar/asta](/library/asta) - Resumable SSR framework
-  * [OpenNext](https://open-next.js.org/) - Open source Next.js serverless adapter
+  * [OpenNext](/library/opennext) - Open source Next.js serverless adapter
   * [gbj/leptos](/library/leptos) - Build fast web applications with Rust
 
   ## Tools

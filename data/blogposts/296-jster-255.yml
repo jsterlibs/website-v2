@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   - [WebReflection/d1-tags: Tagged-template helpers for Cloudflare D1](/library/d1-tags)
-  - [Vue Data UI](https://vue-data-ui.graphieros.com/)
+  - [Vue Data UI](/library/vue-data-ui)
   - [alibaba/page-agent: JavaScript in-page GUI agent. Control web interfaces with natural language](/library/page-agent)
 
   ## Runtimes
@@ -38,10 +38,10 @@ body: |
 
   ## Frameworks
 
-  - [Fresh 2.3: Zero JS by default, View Transitions, and Temporal support](https://deno.com/blog/fresh-2.3)
-  - [Gea — Lightweight Reactive UI Framework](https://geajs.com/)
+  - [Fresh 2.3: Zero JS by default, View Transitions, and Temporal support](/library/fresh)
+  - [Gea — Lightweight Reactive UI Framework](/library/gea)
   - [Datastar v1.0.0 - Hypermedia + SSE for profit and fun](/library/datastar)
-  - [Spiceflow - The Type Safe TypeScript API Framework for React](https://getspiceflow.com/)
+  - [Spiceflow - The Type Safe TypeScript API Framework for React](/library/spiceflow)
   - [StreamUI/hyperstar: Server-driven UI for real-time web apps. No client code, no state sync, just TypeScript & JSX on the server, and every client sees the same thing](/library/hyperstar)
 
   ## Services

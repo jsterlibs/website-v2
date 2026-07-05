@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [gvergnaud/ts-pattern](/library/ts-pattern) - The exhaustive Pattern Matching library for TypeScript, with smart type inference
-  * [SQLite On The Web: Absurd-sql](https://hackaday.com/2021/08/24/sqlite-on-the-web-absurd-sql/)
+  * [SQLite On The Web: Absurd-sql](/library/sqlite-on-the-web)
 
   ## Tools
 
@@ -37,8 +37,8 @@ body: |
 
   ## Frameworks
 
-  * [Ultra: Un-bundle the Web](https://ultrajs.dev/)
-  * [Lexical](https://lexical.dev/) - An extensible text editor framework that does things differently
+  * [Ultra: Un-bundle the Web](/library/ultra)
+  * [Lexical](/library/lexical) - An extensible text editor framework that does things differently
 
   ## Guides
 

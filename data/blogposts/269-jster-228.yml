@@ -11,16 +11,16 @@ body: |
   ## Libraries
 
   * [webpro/reveal-md: reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file](/library/reveal-md)
-  * [Slidev - Presentation slides for developers](https://sli.dev/)
-  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](https://panda-css.com/)
+  * [Slidev - Presentation slides for developers](/library/slidev)
+  * [Panda CSS - Build modern websites using build time and type-safe CSS-in-JS](/library/panda-css)
   * [decs/typeschema: 🛵 Universal adapter for TypeScript schema validation.](/library/typeschema)
-  * [Fulldev UI - Astro component and block library, open-source](https://ui.full.dev/)
-  * [Fastify v5 is Here!](https://blog.platformatic.dev/fastify-v5-is-here)
+  * [Fulldev UI - Astro component and block library, open-source](/library/fulldev-ui)
+  * [Fastify v5 is Here!](/library/fastify)
 
   ## Frameworks
 
-  * [i18next - i18n framework for JavaScript](https://www.i18next.com/)
-  * [WXT - Next-gen Web Extension Framework](https://wxt.dev/)
+  * [i18next - i18n framework for JavaScript](/library/i18next)
+  * [WXT - Next-gen Web Extension Framework](/library/wxt)
 
   ## Tools
 

@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  * [xstyled](https://xstyled.dev/) - Build your entire website using JSX and Props
-  * [System Props](https://system-props.com/) - Theme-driven style props
+  * [xstyled](/library/xstyled) - Build your entire website using JSX and Props
+  * [System Props](/library/system-props) - Theme-driven style props
   * [fgnass/typed-rpc](/library/typed-rpc) - Lightweight JSON-RPC solution for TypeScript projects
   * [KittyGiraudel/a11y-dialog](/library/a11y-dialog) - A very lightweight and flexible accessible modal dialog script
-  * [react-hot-toast](https://react-hot-toast.com/) - Smoking hot React toasts
+  * [react-hot-toast](/library/react-hot-toast) - Smoking hot React toasts
   * [nextapps-de/flexsearch](/library/flexsearch) - Next-Generation full text search library for Browser and Node.js
-  * [tiptap](https://www.tiptap.dev/) - Headless WYSIWYG Text Editor
+  * [tiptap](/library/tiptap) - Headless WYSIWYG Text Editor
   * [pubkey/rxdb](/library/rxdb) - A realtime Database for JavaScript Applications
 
   ## Tools
@@ -26,12 +26,12 @@ body: |
 
   ## Frameworks
 
-  * [RedwoodJS](https://redwoodjs.com/) - Bringing full-stack to the Jamstack
+  * [RedwoodJS](/library/redwoodjs) - Bringing full-stack to the Jamstack
   * [sprinkles](/library/vanilla-extract) - Zero-runtime atomic CSS framework for vanilla-extract.
   * [asos-craigmorten/opine](/library/opine) - Fast, minimalist web framework for Deno ported from ExpressJS
   * [dubzzz/fast-check](/library/fast-check) - Property based testing framework for JavaScript (like QuickCheck) written in TypeScript
-  * [Inertia.JS](https://www.infoq.com/news/2020/12/inertia-modern-monolith/) - Lets developers write API-Free monolithic React/Vue/Svelte applications in PHP or Ruby
-  * [Foal](https://foalts.org/) - Node.JS framework for building web applications
+  * [Inertia.JS](/library/inertia-js) - Lets developers write API-Free monolithic React/Vue/Svelte applications in PHP or Ruby
+  * [Foal](/library/foal) - Node.JS framework for building web applications
 
   ## Articles
 

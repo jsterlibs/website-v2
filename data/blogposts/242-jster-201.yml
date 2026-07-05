@@ -11,8 +11,8 @@ body: |
   ## Libraries
 
   * [WebReflection/nonchalance: The easiest way to augment DOM builtin elements.](/library/nonchalance)
-  * [ts-rest - Incrementally adoptable type-safety for your new and existing APIs](https://ts-rest.com/)
-  * [macaron — CSS-in-JS with zero-runtime](https://macaron.js.org/)
+  * [ts-rest - Incrementally adoptable type-safety for your new and existing APIs](/library/ts-rest)
+  * [macaron — CSS-in-JS with zero-runtime](/library/macaron)
   * [fgnass/type-assurance - Lightweight type guards and assertions](/library/type-assurance)
 
   ## Frameworks

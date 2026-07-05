@@ -11,14 +11,14 @@ body: |
   ## Libraries
 
   * [hwchase17/langchainjs - Building applications with LLMs through composability](/library/langchainjs)
-  * [Introducing Valibot, a < 1kb Zod Alternative](https://www.builder.io/blog/introducing-valibot)
+  * [Introducing Valibot, a < 1kb Zod Alternative](/library/valibot-a-1kb-zod-alternative)
   * [natemoo-re/clack: Effortlessly build beautiful command-line apps](/library/clack)
-  * [Code Hike - Not just a syntax highlighter](https://codehike.org/)
+  * [Code Hike - Not just a syntax highlighter](/library/code-hike)
 
   ## Frameworks
 
-  * [Analog - Full stack metaframework for Angular](https://analogjs.org/)
-  * [Fresh 1.3 - Simplified Route Components and More](https://deno.com/blog/fresh-1.3)
+  * [Analog - Full stack metaframework for Angular](/library/analog)
+  * [Fresh 1.3 - Simplified Route Components and More](/library/fresh)
 
   ## Articles
 

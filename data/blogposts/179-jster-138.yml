@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [Editor.js](https://editorjs.io/) - Next generation block styled editor
+  * [Editor.js](/library/editor-js) - Next generation block styled editor
   * [mikeal/r2](/library/r2) - HTTP client. Spiritual successor to reques
   * [yelouafi/avenir](/library/avenir) - Lightweight async library based on lazy futures
-  * [Parsley](http://parsleyjs.org/) - The ultimate JavaScript form validation library
-  * [Guess.js](https://guess-js.github.io/) - Libraries & tools for enabling Machine Learning driven user-experiences on the web
+  * [Parsley](/library/parsley-js) - The ultimate JavaScript form validation library
+  * [Guess.js](/library/guess-js) - Libraries & tools for enabling Machine Learning driven user-experiences on the web
 
   ## Styling
 

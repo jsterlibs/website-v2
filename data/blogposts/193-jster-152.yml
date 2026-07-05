@@ -13,19 +13,19 @@ body: |
   ## Libraries
 
   * [lukeed/calendarize](/library/calendarize) - A tiny (202B) utility to generate calendar views
-  * [Mavo](https://mavo.io/) - A new, approachable way to create web applications
+  * [Mavo](/library/mavo) - A new, approachable way to create web applications
   * [tagtag](/library/tagtag) - Easy HTML templating with JS
   * [hyperscript-html](/library/hyperscript-html) - Fast and light hyperscript function to generate HTML
   * [mattboldt/typed.js/](/library/typed-js) - A JavaScript typing animation library
   * [lukeed/klona](/library/klona) - A tiny (366B) and fast utility to deep clone Objects, Arrays, Dates, RegExps, and more!
-  * [Passjoin Index](https://yomguithereal.github.io/mnemonist/passjoin-index) - Efficient Levenshtein distance queries
-  * [cuid](http://usecuid.org/) - Collision-resistant ids optimized for horizontal scaling and performance
-  * [Perfume.js](https://zizzamia.github.io/perfume/) - Perfume is a tiny, web performance monitoring library
+  * [Passjoin Index](/library/passjoin-index) - Efficient Levenshtein distance queries
+  * [cuid](/library/cuid) - Collision-resistant ids optimized for horizontal scaling and performance
+  * [Perfume.js](/library/perfume-js) - Perfume is a tiny, web performance monitoring library
 
   ## Frameworks
 
-  * [Feathers](https://feathersjs.com/) - A framework for real-time applications and REST APIs
-  * [VulcanJS](http://vulcanjs.org/) - The full-stack React+GraphQL framework
+  * [Feathers](/library/feathers) - A framework for real-time applications and REST APIs
+  * [VulcanJS](/library/vulcanjs) - The full-stack React+GraphQL framework
 
   ## Components
 

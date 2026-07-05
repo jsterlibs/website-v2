@@ -16,17 +16,17 @@ body: |
   * [Functional](/library/functional) - Common Functional Programming Algebraic data types for JavaScript that is compatible with most modern browsers and Deno.
   * [scurker/currency.js](/library/currency-js) - JavaScript library for handling currencies
   * [techfort/LokiJS](/library/lokijs) - JavaScript embeddable / in-memory database
-  * [Magenta](https://magenta.tensorflow.org/) - Make music and art using machine learning
+  * [Magenta](/library/magenta) - Make music and art using machine learning
   * [duetds/date-picker](/library/date-picker-2) - Accessible date picker
   * [hazae41/mutevents](/library/mutevents) - Typed, async, and promiseable events for Deno
-  * [Moment.js](https://momentjs.com/docs/#/-project-status/) - Moment is considered legacy, please move on
-  * [Eta](https://eta.js.org/) - Lightweight, powerful, pluggable embedded JS template engine.
+  * [Moment.js](/library/moment-js) - Moment is considered legacy, please move on
+  * [Eta](/library/eta) - Lightweight, powerful, pluggable embedded JS template engine.
   * [lukeed/watchlist](/library/watchlist) - Recursively watch a list of directories & run a command on any file system changes
   * [Screensaver.js](/library/screensaver) - Starts a screensaver after timeout milliseconds of inactivity on your site
 
   ## Frameworks
 
-  * [Oruga](https://oruga.io/) - Oruga UI is like a caterpillar, minimal and yet functional. It's in your hands turning it into a butterfly
+  * [Oruga](/library/oruga) - Oruga UI is like a caterpillar, minimal and yet functional. It's in your hands turning it into a butterfly
   * [chriskalmar/shyft](/library/shyft) - Shyft is a server-side framework for building powerful GraphQL APIs
 
   ## React
@@ -45,7 +45,7 @@ body: |
   * [Rush](https://rushjs.io/) - A scalable monorepo manager for the web
   * [mfrachet/cypress-audit](/library/cypress-audit) - Run Lighthouse and Pa11y audits directly in your E2E test suites
   * [postcss/releases/tag/8.0.0](/library/postcss) - PostCSS has reached 8.0.0
-  * [Deno 1.4](/library/deno-1-4) - Alternative to Node by Ryan Dahl
+  * [Deno 1.4](/library/deno) - Alternative to Node by Ryan Dahl
   * [Nx: Extensible Dev Tools for Monorepos](https://nx.dev/react/)
   * [Component Story Format](/library/csf) - An open standard for UI component examples based on JavaScript ES6 modules.
 

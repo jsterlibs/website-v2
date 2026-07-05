@@ -10,10 +10,10 @@ body: |
 
   ## Libraries
 
-  * [tiptap](https://tiptap.scrumpy.io/) - A renderless rich-text editor for Vue.js
-  * [CASL](https://stalniy.github.io/casl/) - An isomorphic authorization JavaScript library
+  * [tiptap](/library/tiptap) - A renderless rich-text editor for Vue.js
+  * [CASL](/library/casl) - An isomorphic authorization JavaScript library
   * [lukeed/totalist](/library/totalist) - A tiny (181B to 224B) utility to recursively list all (total) files in a directory
-  * [Gun.js](http://gun.js.org/) - Decentralized Database
+  * [Gun.js](/library/gun-js) - Decentralized Database
   * [valu-digital/focus-trap](/library/focus-trap) - Multi-Container Focus Trap
 
   ## CSS
@@ -22,8 +22,8 @@ body: |
 
   ## Frameworks
 
-  * [Strapi](https://strapi.io/) - Headless open source CMS
-  * [Ghost 3.0](https://ghost.org/blog/3-0/) - The popular blogging platform has reached a new major version
+  * [Strapi](/library/strapi) - Headless open source CMS
+  * [Ghost 3.0](/library/ghost) - The popular blogging platform has reached a new major version
 
   ## Articles
 

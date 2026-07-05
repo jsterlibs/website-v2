@@ -27,13 +27,13 @@ body: |
   ## Libraries
 
   * [buttondown/sniper-link - Confirm emails easily](/library/sniper-link)
-  * [Valibot v1.2](https://valibot.dev/blog/valibot-v1.2-release-notes/)
-  * [Prisma 7 Release: Rust-Free, Faster, and More Compatible](https://www.prisma.io/blog/announcing-prisma-orm-7-0-0)
+  * [Valibot v1.2](/library/valibot)
+  * [Prisma 7 Release: Rust-Free, Faster, and More Compatible](/library/prisma)
   * [hackfixme/miu: A small JavaScript data binding library](/library/miu)
   * [bigskysoftware/fixi - Experimental hypermedia controls](/library/fixi)
-  * [Transformers.js - State of art machine learning for the web](https://huggingface.co/docs/transformers.js/en/index)
+  * [Transformers.js - State of art machine learning for the web](/library/transformers-js)
   * [gavoja/twcss - A tiny Tailwind alternative](/library/twcss)
-  * [Interpol: A Low-Level Take on Tweening and Motion](https://tympanus.net/codrops/2025/10/27/interpol-a-low-level-take-on-tweening-and-motion/)
+  * [Interpol: A Low-Level Take on Tweening and Motion](/library/interpol)
 
   ## Articles
 
@@ -58,7 +58,7 @@ body: |
 
   ## Frameworks
 
-  * [VoltAgent - TypeScript AI Agent Framework](https://voltagent.dev/)
+  * [VoltAgent - TypeScript AI Agent Framework](/library/voltagent)
 
   ## Demos
 

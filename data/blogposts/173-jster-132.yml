@@ -10,15 +10,15 @@ body: |
 
   ## Libraries
 
-  * [Mermaid](https://mermaidjs.github.io/) - Generation of diagrams and flowcharts from text in a similar manner as markdown
+  * [Mermaid](/library/mermaid) - Generation of diagrams and flowcharts from text in a similar manner as markdown
   * [satya164/web-worker-proxy](/library/web-worker-proxy) - A better way of working with web workers
-  * [Nearley](https://nearley.js.org/) - Modern parser toolkit for JavaScript
+  * [Nearley](/library/nearley) - Modern parser toolkit for JavaScript
 
   ## Frameworks
 
-  * [Tech Trends Showdown🏆: React vs Angular vs Vue](https://medium.com/zerotomastery/tech-trends-showdown-react-vs-angular-vs-vue-61ffaf1d8706)
-  * [Quasar Framework](https://quasar-framework.org/) - High Performance Full Frontend Stack
-  * [10 Best Node.js Frameworks in 2018](https://da-14.com/blog/10-best-nodejs-frameworks)
+  * [Tech Trends Showdown🏆: React vs Angular vs Vue](/library/tech-trends-showdown)
+  * [Quasar Framework](/library/quasar-framework) - High Performance Full Frontend Stack
+  * [10 Best Node.js Frameworks in 2018](/library/10-best-node-js-frameworks-in-2018)
 
   ## Articles
 

@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  * [input-otp - Simple OTP entry component for React](https://input-otp.rodz.dev/)
-  * [capo.js: get your ﹤𝚑𝚎𝚊𝚍﹥ in order](https://rviscomi.github.io/capo.js/)
-  * [Fuse.js - Powerful, lightweight fuzzy-search library, with zero dependencies](https://www.fusejs.io/)
+  * [input-otp - Simple OTP entry component for React](/library/input-otp)
+  * [capo.js: get your ﹤𝚑𝚎𝚊𝚍﹥ in order](/library/capo-js)
+  * [Fuse.js - Powerful, lightweight fuzzy-search library, with zero dependencies](/library/fuse-js)
   * [pragmatic-drag-and-drop - Tiny library for dnd](/library/atlaskit)
   * [WebReflection/literal-map - A Map that acts like an object literal to better reflect Python dictionaries in JS](/library/literal-map)
   * [facebook/react-strict-dom: React Strict DOM (RSD) is a subset of React DOM, imperative DOM, and CSS that supports web and native targets](/library/react-strict-dom)
-  * [htmz - a low power tool for html](https://leanrada.com/htmz/)
+  * [htmz - a low power tool for html](/library/htmz)
   * [QwikDev/pwa: Turn your Qwik Application into an offline compatible PWA](/library/pwa)
   * [WebReflection/partial: Partial function / Class application.](/library/partial)
 

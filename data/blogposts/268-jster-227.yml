@@ -10,10 +10,10 @@ body: |
 
   ## Libraries
 
-  * [dnd kit – a modern drag and drop toolkit for React](https://dndkit.com/)
+  * [dnd kit – a modern drag and drop toolkit for React](/library/dnd-kit)
   * [@pekkis/finnish-name-randomizer - Generate random Finnish names](/library/pekkis-finnish-name-randomizer)
   * [toad-scheduler - In-memory TypeScript scheduler](/library/toad-scheduler)
-  * [TypeSpec - Describe APIs](https://typespec.io/)
+  * [TypeSpec - Describe APIs](/library/typespec)
   * [tinybench - A simple, tiny and lightweight benchmarking library!](/library/tinybench)
   * [electric-sql/pglite: Lightweight Postgres packaged as WASM into a TypeScript library for the browser, Node.js, Bun and Deno](/library/pglite)
 
@@ -34,7 +34,7 @@ body: |
 
   ## Frameworks
 
-  * [KaibanJS - AI agent framework for JavaScript](https://www.kaibanjs.com/)
+  * [KaibanJS - AI agent framework for JavaScript](/library/kaibanjs)
 
   ## Tools
 

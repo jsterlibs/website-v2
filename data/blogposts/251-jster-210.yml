@@ -13,13 +13,13 @@ body: |
   * [trekhleb/micrograd-ts: 🤖 A TypeScript version of karpathy/micrograd — a tiny scalar-valued autograd engine and a neural net on top of it](/library/micrograd-ts)
   * [gregberge/twc: Create reusable React + Tailwind components in one line](/library/twc)
   * [tr1ckydev/webview-bun: Bun bindings for webview, a tiny library for creating web-based desktop GUIs.](/library/webview-bun)
-  * [date-fns v3 is available now](https://blog.date-fns.org/v3-is-out/)
-  * [WebGPU — All of the cores, none of the canvas](https://surma.dev/things/webgpu/)
+  * [date-fns v3 is available now](/library/date-fns)
+  * [WebGPU — All of the cores, none of the canvas](/library/webgpu)
 
   ## Frameworks
 
-  * [CableReady - Create complex apps driven by a server](https://cableready.stimulusreflex.com/)
-  * [Announcing SvelteKit 2](https://svelte.dev/blog/sveltekit-2)
+  * [CableReady - Create complex apps driven by a server](/library/cableready)
+  * [Announcing SvelteKit 2](/library/sveltekit-2)
 
   ## Articles
 

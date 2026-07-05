@@ -21,11 +21,11 @@ body: |
 
   ## Frameworks
 
-  * [Base Web React UI Framework](https://baseweb.design/)
+  * [Base Web React UI Framework](/library/base-web-react-ui-framework)
   * [boxine/pentf](/library/pentf) - Parallel end-to-end test framework
   * [grommet](/library/grommet) - React-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package
-  * [Fluid Framework](https://fluidframework.com/) - Data Sync Reimagined
-  * [Bootstrap 5 - Beta 1](https://blog.getbootstrap.com/2020/12/07/bootstrap-5-beta-1/)
+  * [Fluid Framework](/library/fluid-framework) - Data Sync Reimagined
+  * [Bootstrap 5 - Beta 1](/library/bootstrap-5)
 
   ## Tools
 

@@ -19,7 +19,7 @@ body: |
   * [gmattie/Data-Pixels](/library/data-pixels) - Create pixel art programmatically.
   * [adamhaile/S](/library/adamhaile-s) - Simple, clean, fast reactive programming in JavaScript.
   * [xaviergonz/makfy](/library/makfy) - npm scripts on steroids.
-  * [InversifyJS](http://inversify.io/) - A powerful IoC container for JavaScript apps powered by TypeScript.
+  * [InversifyJS](/library/inversifyjs) - A powerful IoC container for JavaScript apps powered by TypeScript.
 
   ## Articles
 

@@ -14,8 +14,8 @@ body: |
 
   * [transform-when](/library/transform-when) - Animate combining page position and time.
   * [marksy](/library/marksy) - Render Markdown in React.
-  * [nanogallery2](http://nanogallery2.nanostudio.org/) - A light gallery.
-  * [fullPage.js](https://alvarotrigo.com/fullPage/) - One page scroll sections.
+  * [nanogallery2](/library/nanogallery2) - A light gallery.
+  * [fullPage.js](/library/fullpage-js) - One page scroll sections.
   * [pegjs is looking for a new maintainer](/library/pegjs)
 
   ## Articles

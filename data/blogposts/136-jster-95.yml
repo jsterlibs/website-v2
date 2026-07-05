@@ -13,7 +13,7 @@ body: |
   {{ screenshot: /library/copy-text-to-clipboard }}
 
   * [sindresorhus/copy-text-to-clipboard](/library/copy-text-to-clipboard) - Copy text easily to clipboard through JavaScript.
-  * [polished](https://polished.js.org/) - A lightweight toolset for writing styles in JavaScript.
+  * [polished](/library/polished) - A lightweight toolset for writing styles in JavaScript.
   * [calmm-js/partial.lenses](/library/partial-lenses) - Partial lenses is a comprehensive, high-performance optics library for JavaScript.
 
   ## Articles

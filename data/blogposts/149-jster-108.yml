@@ -14,7 +14,7 @@ body: |
 
   * [WebReflection/ecma](/library/ecma) - The simplest way to load ES modules or bundled fallbacks.
   * [upup](/library/upup) - Kickstarting the Offline First Revolution.
-  * [Font Awesome 5.0](https://fontawesome.com/) - A new major release of the popular font library.
+  * [Font Awesome 5.0](/library/font-awesome) - A new major release of the popular font library.
 
   ## Testing
 

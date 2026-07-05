@@ -10,8 +10,8 @@ body: |
 
   ## Libraries
 
-  * [Xterm.js - Build terminals in browser](http://xtermjs.org/)
-  * [Introducing Mentoss: The fetch mocker](https://humanwhocodes.com/blog/2025/01/introducing-mentoss-fetch-mocker/)
+  * [Xterm.js - Build terminals in browser](/library/xterm-js)
+  * [Introducing Mentoss: The fetch mocker](/library/mentoss)
   * [WebReflection/buffered-clone - A structured clone equivalent able to encode and decode as a buffer](/library/buffered-clone)
   * [uhop/stream-json - The micro-library of Node.js stream components for creating custom JSON processing pipelines with a minimal memory footprint](/library/stream-json)
   * [standard-schema: A standard interface for TypeScript schema validation libraries](/library/standard-schema)

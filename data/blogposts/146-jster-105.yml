@@ -13,7 +13,7 @@ body: |
   {{ screenshot: /library/a-plus-forms }}
 
   * [MadRabbit/a-plus-forms](/library/a-plus-forms) - A fresh approach for React forms.
-  * [Konva](https://konvajs.github.io/) - Canvas library for desktop and mobile applications.
+  * [Konva](/library/konva) - Canvas library for desktop and mobile applications.
   * [delvedor/workq](/library/workq) - A super tiny work queue.
   * [mattbierner/akh](/library/akh) - Javascript Monad and Monad Transformer Collection
 

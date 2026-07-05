@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  * [ungap](https://ungap.github.io/) - Pragmatic polyfills
-  * [Fastify v2 is coming to town](https://medium.com/@fastifyjs/fastify-v2-is-coming-to-town-ce279738bed6)
-  * [interact.js](https://interactjs.io) - JavaScript drag and drop, resizing, and multi-touch gestures for modern browsers (and also IE9+)
-  * [Newton Graph Library](https://julie-ng.github.io/newtonjs-graph/) - High-level dashboard visualization for architects and stakeholders
+  * [ungap](/library/ungap) - Pragmatic polyfills
+  * [Fastify v2 is coming to town](/library/fastify-v2-is-coming-to-town)
+  * [interact.js](/library/interact-js) - JavaScript drag and drop, resizing, and multi-touch gestures for modern browsers (and also IE9+)
+  * [Newton Graph Library](/library/newton-graph-library) - High-level dashboard visualization for architects and stakeholders
   * [lukeed/classico](/library/classico) - A tiny (255B) shim when Element.classList cannot be used~!
-  * [TypeScript + Machine Learning + simplicity = Kalimdor.js](https://itnext.io/typescript-machine-learning-simplicity-kalimdor-js-bb1ccadf0ad3)
-  * [Splitting.js](https://splitting.js.org/) - CSS Vars for split words & chars! (items, grids, images, too!)
-  * [ScrollOut](https://scroll-out.github.io/) - ScrollOut detects changes in scroll for reveal, parallax, and CSS Variable effects!
+  * [TypeScript + Machine Learning + simplicity = Kalimdor.js](/library/typescript-machine-learning-simplicity-kalimdor-js)
+  * [Splitting.js](/library/splitting-js) - CSS Vars for split words & chars! (items, grids, images, too!)
+  * [ScrollOut](/library/scrollout) - ScrollOut detects changes in scroll for reveal, parallax, and CSS Variable effects!
   * [sadick254/scoped-style](/library/scoped-style) - A tiny css-in-js library
 
   ## Frameworks

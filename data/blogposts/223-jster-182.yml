@@ -13,18 +13,18 @@ body: |
   ## Libraries
 
   * [json2html](/library/json2html) - Json2html is a lightning fast client side javascript HTML templating library with wrappers for both jQuery and Node.js
-  * [Papanasi](https://papanasi.js.org/) - UI library to use cross frameworks
+  * [Papanasi](/library/papanasi) - UI library to use cross frameworks
   * [duetds/date-picker](/library/date-picker-2) - Open source version of Duet Design System accessible date picker
-  * [QuaggaJS, an advanced barcode-reader written in JavaScript](https://serratus.github.io/quaggaJS/)
+  * [QuaggaJS, an advanced barcode-reader written in JavaScript](/library/quaggajs-an-advanced-barcode-reader-written-in-javascript)
   * [oslabs-beta/dangoDB](/library/dangodb) - A MongoDB ODM for Deno
   * [thoughtbot/fishery](/library/fishery) - A library for setting up JavaScript objects as test data
-  * [CASL.js](https://casl.js.org/v5/en/) - Isomorphic Authorization JavaScript library
+  * [CASL.js](/library/casl-js) - Isomorphic Authorization JavaScript library
   * [esamattis/react-zorm](/library/react-zorm) - Type-safe form for React using Zod
 
   ## Frameworks
 
-  * [Angular v14 is now available](https://blog.angular.io/angular-v14-is-now-available-391a6db736af)
-  * [Markdoc](https://markdoc.io/) - A powerful, flexible, Markdown-based authoring framework
+  * [Angular v14 is now available](/library/angular)
+  * [Markdoc](/library/markdoc) - A powerful, flexible, Markdown-based authoring framework
 
   ## TypeScript
 

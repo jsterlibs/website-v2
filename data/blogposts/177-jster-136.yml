@@ -13,7 +13,7 @@ body: |
   * [JSVerbalExpressions](/library/jsverbalexpressions) - If regular expressions are too much for you, try verbal expressions
   * [RauliL/pakertaja](/library/pakertaja) - JavaScript library for building HTML
   * [ruiaraujo/graphql-jit](/library/graphql-jit) - GraphQL execution using a JIT compiler
-  * [NSFW.js](https://shift.infinite.red/avoid-nightmares-nsfw-js-ab7b176978b1) - Avoid nightmares
+  * [NSFW.js](/library/nsfw-js) - Avoid nightmares
   * [optimalbits/bull](/library/bull) - Premium Queue package for handling distributed jobs and messages in NodeJS
 
   ## Articles

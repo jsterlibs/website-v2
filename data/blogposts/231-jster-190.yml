@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [ungap/esx](/library/esx) - A template literal based ESX proposal
-  * [a11y-dialog](https://a11y-dialog.netlify.app/) - a lightweight yet flexible script to create accessible dialog windows.
+  * [a11y-dialog](/library/a11y-dialog) - a lightweight yet flexible script to create accessible dialog windows.
 
   ## Frameworks
 

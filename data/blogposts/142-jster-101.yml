@@ -13,16 +13,16 @@ body: |
   {{ screenshot: /library/crocks }}
 
   * [evilsoft/crocks](/library/crocks) - A collection of well known Monadic Containers for your utter enjoyment.
-  * [explodal](https://jessekorzan.github.io/expodal/) - The Most Explosive Modal on the Web.
-  * [NoobScroll](https://noobscroll.js.org/) - A lightweight jQuery Plugin that adds some cool function to make scrolling more fun.
-  * [zuck.js](https://ramon.codes/projects/zuck.js/) - Facebook Stories. Kind of.
-  * [across-tabs](http://engineering.wingify.com/across-tabs/introduction.html) - Easily communicate among browser tabs (supports cross-origin).
-  * [Snap.svg](http://snapsvg.io/) - The JavaScript SVG library for the modern web.
-  * [Apollo Client 1.0](https://dev-blog.apollodata.com/apollo-client-1-0-a-flexible-community-focused-javascript-graphql-client-2253b90e6c84) - A flexible, community-focused JavaScript GraphQL client.
+  * [explodal](/library/explodal) - The Most Explosive Modal on the Web.
+  * [NoobScroll](/library/noobscroll) - A lightweight jQuery Plugin that adds some cool function to make scrolling more fun.
+  * [zuck.js](/library/zuck-js) - Facebook Stories. Kind of.
+  * [across-tabs](/library/across-tabs) - Easily communicate among browser tabs (supports cross-origin).
+  * [Snap.svg](/library/snap-svg) - The JavaScript SVG library for the modern web.
+  * [Apollo Client 1.0](/library/apollo-client) - A flexible, community-focused JavaScript GraphQL client.
 
   ## Frameworks
 
-  * [Fathom](https://hacks.mozilla.org/2017/04/fathom-a-framework-for-understanding-web-pages/) - A framework for understanding web pages.
+  * [Fathom](/library/fathom) - A framework for understanding web pages.
 
   ## Articles
 

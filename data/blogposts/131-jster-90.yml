@@ -10,15 +10,15 @@ body: |
 
   ## Libraries
 
-  {{ screenshot: https://cs.stanford.edu/people/karpathy/convnetjs/ }}
+  {{ screenshot: /library/convnetjs }}
 
-  * [Marko 4.0](https://medium.com/@mlrawlings/marko-4-0-is-here-837884c5f60d) - Marko by eBay is a fast UI library designed server side rendering in mind. It's up to 5-50 times faster than other alternatives. It's not a direct replacement to React and such but still worth a look.
-  * [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) - Train Deep Learning models in your browser.
-  * [hyperHTML](https://medium.com/@WebReflection/hyperhtml-a-virtual-dom-alternative-279db455ee0e) - What happens when you build a UI library on top of ES6 templates? hyperHTML happens.
+  * [Marko 4.0](/library/marko) - Marko by eBay is a fast UI library designed server side rendering in mind. It's up to 5-50 times faster than other alternatives. It's not a direct replacement to React and such but still worth a look.
+  * [ConvNetJS](/library/convnetjs) - Train Deep Learning models in your browser.
+  * [hyperHTML](/library/hyperhtml) - What happens when you build a UI library on top of ES6 templates? hyperHTML happens.
 
   ## Frameworks
 
-  * [All JavaScript frameworks are terrible](https://medium.com/@mattburgess/all-javascript-frameworks-are-terrible-e68d8865183e) - Or are they?
+  * [All JavaScript frameworks are terrible](/library/all-javascript-frameworks-are-terrible) - Or are they?
 
   ## Articles
 

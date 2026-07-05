@@ -15,7 +15,7 @@ body: |
   * [developit/histore](/library/histore) - 200b key-value store backed by navigation state
   * [terkelg/prompts](/library/prompts) - Lightweight, beautiful and user-friendly interactive prompts
   * [Rich-Harris/shimport](/library/shimport) - Use JavaScript modules in all browsers, including dynamic imports
-  * [kepler.gl](http://kepler.gl/) - Make an impact with your location data
+  * [kepler.gl](/library/kepler-gl) - Make an impact with your location data
 
   ## Components
 

@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [TensorFlow.js](https://js.tensorflow.org/) - A JavaScript library for training and deploying ML models in the browser and on Node.js.
+  * [TensorFlow.js](/library/tensorflow-js) - A JavaScript library for training and deploying ML models in the browser and on Node.js.
   * [Fluture](/library/fluture) - FantasyLand compliant (monadic) alternative to Promises.
-  * [Luxon](https://moment.github.io/luxon/) - A powerful, modern, and friendly wrapper for Javascript dates and times.
+  * [Luxon](/library/luxon) - A powerful, modern, and friendly wrapper for Javascript dates and times.
 
   ## Articles
 

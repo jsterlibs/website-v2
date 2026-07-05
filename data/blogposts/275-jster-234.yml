@@ -10,22 +10,22 @@ body: |
 
   ## Libraries
 
-  * [Recharts - A composable charting library built on React components](https://recharts.org/en-US/)
-  * [Victory - React.js components for modular charting and data visualization](https://nearform.com/open-source/victory/)
+  * [Recharts - A composable charting library built on React components](/library/recharts)
+  * [Victory - React.js components for modular charting and data visualization](/library/victory)
   * [capricorn86/happy-dom: A JavaScript implementation of a web browser without its graphical user interface](/library/happy-dom)
   * [react-R/reactR: React for R](/library/reactr)
   * [pg-nano: Type-safe calls to Postgres UDFs, rapid SQL-first schema development, libpq-based client library](/library/pg-nano)
   * [nodejs/amaro: Node.js TypeScript wrapper](/library/amaro)
   * [WebReflection/promise: Abortable and Resolvable Promises.](/library/promise)
   * [errsole/errsole.js: Node.js logger with a built-in dashboard](/library/errsole-js)
-  * [ReactRx - Hooks for combining React with Rx observables](https://react-rx.dev/)
-  * [matcha.css - Drop-in semantic styling library in pure CSS](https://matcha.mizu.sh/)
-  * [Base UI - Unstyled UI components for building accessible web apps and design systems](https://base-ui.com/)
+  * [ReactRx - Hooks for combining React with Rx observables](/library/reactrx)
+  * [matcha.css - Drop-in semantic styling library in pure CSS](/library/matcha-css)
+  * [Base UI - Unstyled UI components for building accessible web apps and design systems](/library/base-ui)
 
   ## Frameworks
 
   * [ruvnet/drupaljs - Drupal ported to JavaScript](/library/drupaljs)
-  * [AdonisJS - A fully featured web framework for Node.js](https://adonisjs.com/)
+  * [AdonisJS - A fully featured web framework for Node.js](/library/adonisjs)
 
   ## Articles
 

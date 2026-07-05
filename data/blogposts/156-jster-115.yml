@@ -12,7 +12,7 @@ body: |
 
   * [Niryo/controllerim](/library/controllerim) - MobX-inspired state management for React.
   * [s-macke/VoxelSpace](/library/voxelspace) - Terrain rendering algorithm in less than 20 lines of code.
-  * [Savvior](http://savvior.org/) - A multi-column layout alternative to Salvattore or Masonry, without CSS driven configuration or absolute positioning.
+  * [Savvior](/library/savvior) - A multi-column layout alternative to Salvattore or Masonry, without CSS driven configuration or absolute positioning.
   * [rangle/redux-beacon](/library/redux-beacon) - Analytics integration for Redux and ngrx/store.
 
   ## Tutorials

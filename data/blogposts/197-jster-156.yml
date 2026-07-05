@@ -17,13 +17,13 @@ body: |
   * [jncraton/box-line-text](/library/box-line-text) - Simple virtual whiteboarding
   * [imazen/imageflow](/library/imageflow) - High-performance image manipulation for web servers. Includes imageflow_server, imageflow_tool, and libimageflow
   * [better-logging](/library/better-logging) - An alternative logger for JavaScript
-  * [Recoil](https://recoiljs.org/) - A state management library for React
+  * [Recoil](/library/recoil) - A state management library for React
   * [manassarpatwar/Self-driving-AI](/library/self-driving-ai) - Self driving cars using NEAT
 
   ## Frameworks
 
-  * [Blitz.js](https://blitzjs.com/) - Rails-like framework for monolithic, full-stack React apps — built on Next.js
-  * [Pixelbox.js](https://pixwlk.itch.io/pixelbox) - Create 2D games in JavaScript
+  * [Blitz.js](/library/blitz-js) - Rails-like framework for monolithic, full-stack React apps — built on Next.js
+  * [Pixelbox.js](/library/pixelbox-js) - Create 2D games in JavaScript
 
   ## Tools
 

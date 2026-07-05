@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [MessagePack](https://msgpack.org/) - It's like JSON. but fast and small
-  * [Reakit](https://reakit.io/) - Build accessible rich web apps with React
-  * [Tachyons](http://tachyons.io/) - Create fast loading, highly readable, and 100% responsive interfaces with as little css as possible
+  * [MessagePack](/library/messagepack) - It's like JSON. but fast and small
+  * [Reakit](/library/reakit) - Build accessible rich web apps with React
+  * [Tachyons](/library/tachyons) - Create fast loading, highly readable, and 100% responsive interfaces with as little css as possible
 
   ## Tutorials
 

@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  * [edgejs - Simple templating engine for the edge](https://edgejs.dev/docs/introduction)
+  * [edgejs - Simple templating engine for the edge](/library/edgejs)
   * [WebReflection/linkedom: A triple-linked lists based DOM implementation.](/library/linkedom)
-  * [LittleJS - The Tiny Fast JavaScript Game Engine](https://killedbyapixel.github.io/LittleJS/)
+  * [LittleJS - The Tiny Fast JavaScript Game Engine](/library/littlejs)
   * [neotraverse - a light alternative to traverse](/library/neotraverse)
-  * [Typesense - Fast, typo-tolerant open source search engine](https://typesense.org/)
+  * [Typesense - Fast, typo-tolerant open source search engine](/library/typesense)
   * [lucia-auth/lucia: Authentication, simple and clean](/library/lucia)
-  * [AutoAnimate - Add motion to your apps with a single line of code](https://auto-animate.formkit.com/)
+  * [AutoAnimate - Add motion to your apps with a single line of code](/library/autoanimate)
   * [WebReflection/sabayon: SharedArrayBuffer always on.](/library/sabayon)
 
   ## Demos

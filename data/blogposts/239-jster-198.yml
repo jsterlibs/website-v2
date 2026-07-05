@@ -10,19 +10,19 @@ body: |
 
   ## Libraries
 
-  * [DrizzleORM - next gen TypeScript ORM](https://orm.drizzle.team/)
-  * [Splide is a lightweight, flexible and accessible slider/carousel written in TypeScript. No dependencies, no Lighthouse errors](https://splidejs.com/)
+  * [DrizzleORM - next gen TypeScript ORM](/library/drizzleorm)
+  * [Splide is a lightweight, flexible and accessible slider/carousel written in TypeScript. No dependencies, no Lighthouse errors](/library/splide-is-a-lightweight-flexible-and-accessible-slider-carousel-written-in-typescript-no-dependencies-no-lighthouse-errors)
   * [GoogleChromeLabs/quicklink: Faster subsequent page-loads by prefetching in-viewport links during idle time](/library/quicklink)
   * [superlucky84/lithent - A lightweight Virtual DOM UI library](/library/lithent)
 
   ## Frameworks
 
-  * [Qwik 1.2: Performance in Autopilot](https://www.builder.io/blog/qwik-1-2-performance-autopilot)
-  * [Enhance - Full stack HTML first framework](https://enhance.dev/)
-  * [Medusa - Building blocks for digital commerce](https://medusajs.com/)
-  * [NestJS v10 is now available](https://trilon.io/blog/nestjs-10-is-now-available)
+  * [Qwik 1.2: Performance in Autopilot](/library/qwik)
+  * [Enhance - Full stack HTML first framework](/library/enhance)
+  * [Medusa - Building blocks for digital commerce](/library/medusa)
+  * [NestJS v10 is now available](/library/nestjs)
   * [waiter-and-autratac/WaiterAndAUTRATAC: A pair of frameworks that allow delaying JavaScript code execution.](/library/waiterandautratac)
-  * [Fresh 1.2 - sharing state between islands, limited npm support, and more](https://deno.com/blog/fresh-1.2)
+  * [Fresh 1.2 - sharing state between islands, limited npm support, and more](/library/fresh)
 
   ## Services
 

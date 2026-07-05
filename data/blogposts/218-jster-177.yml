@@ -10,15 +10,15 @@ body: |
 
   ## Libraries
 
-  * [MessageFormat](http://messageformat.github.io/messageformat/) - i18n Plural and Gender Capable Messages
+  * [MessageFormat](/library/messageformat) - i18n Plural and Gender Capable Messages
   * [esamattis/react-zorm](/library/react-zorm) - Type-safe <form> for React using Zod
-  * [An update from the Faker team](https://fakerjs.dev/update.html#what-is-faker)
+  * [An update from the Faker team](/library/faker)
   * [adelsz/pgtyped](/library/pgtyped) - Typesafe SQL in TypeScript
-  * [tRPC](https://trpc.io/) - End-to-end typesafe APIs made easy
-  * [PeerJS](https://peerjs.com/) - PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls
-  * [Rehype Pretty Code](https://rehype-pretty-code.netlify.app/) - Beautiful code blocks for your MD/MDX docs
-  * [Typesense](https://typesense.org/) - Lightning-fast, Open Source Search
-  * [react-async-states](https://incepter.github.io/react-async-states/docs/intro/) - A multi-paradigm React state management library
+  * [tRPC](/library/trpc) - End-to-end typesafe APIs made easy
+  * [PeerJS](/library/peerjs) - PeerJS simplifies WebRTC peer-to-peer data, video, and audio calls
+  * [Rehype Pretty Code](/library/rehype-pretty-code) - Beautiful code blocks for your MD/MDX docs
+  * [Typesense](/library/typesense) - Lightning-fast, Open Source Search
+  * [react-async-states](/library/react-async-states) - A multi-paradigm React state management library
 
   ## Frameworks
 

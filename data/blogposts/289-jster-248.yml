@@ -24,15 +24,15 @@ body: |
 
   ## Libraries
 
-  * [Quiet UI - a UI library for the web](https://quietui.org/)
-  * [React 19.2](https://react.dev/blog/2025/10/01/react-19-2)
-  * [mini-lit - Lightweight Lit components with shadcn-inspired theming, Tailwind CSS v4 styling, and Lucide icons](https://minilit.mariozechner.at/)
-  * [Cap'n Web: a new RPC system for browsers and web servers](https://blog.cloudflare.com/capnweb-javascript-rpc-library/)
-  * [Isograph v0.4.0 — the one with the VSCode extension](https://isograph.dev/blog/2025/09/17/isograph-0.4.0/)
-  * [varlock - Magic env files built for sharing](https://varlock.dev/)
+  * [Quiet UI - a UI library for the web](/library/quiet-ui)
+  * [React 19.2](/library/react)
+  * [mini-lit - Lightweight Lit components with shadcn-inspired theming, Tailwind CSS v4 styling, and Lucide icons](/library/mini-lit)
+  * [Cap'n Web: a new RPC system for browsers and web servers](/library/capn-web)
+  * [Isograph v0.4.0 — the one with the VSCode extension](/library/isograph)
+  * [varlock - Magic env files built for sharing](/library/varlock)
   * [nolimits4web/swiper: Most modern mobile touch slider with hardware accelerated transitions](/library/swiper)
-  * [Introducing hx-optimistic: Make Your HTMX Apps Feel Instant](https://www.lorenstew.art/blog/hx-optimistic/)
-  * [PrimeReact - React UI Component Library](https://primereact.dev/)
+  * [Introducing hx-optimistic: Make Your HTMX Apps Feel Instant](/library/hx-optimistic)
+  * [PrimeReact - React UI Component Library](/library/primereact)
   * [WebReflection/file-tree: A file tree component for the web](/library/file-tree)
 
   ## Techniques

@@ -11,20 +11,20 @@ body: |
   ## Libraries
 
   * [pakastin/maze](/library/maze) - Maze generation visualization
-  * [Ficus](https://www.ficusjs.org/) - Lightweight libraries and tools for building modern web applications
+  * [Ficus](/library/ficus) - Lightweight libraries and tools for building modern web applications
   * [srmagura/real-cancellable-promise](/library/real-cancellable-promise) - Cancellable promise library for JavaScript and TypeScript
   * [react-hookz/web](/library/react-hookz-web) - React hooks done right, for browser and SSR
-  * [ahooks](https://ahooks.js.org/) - A high-quality & reliable React Hooks library
+  * [ahooks](/library/ahooks) - A high-quality & reliable React Hooks library
   * [maraisr/piecemeal](/library/piecemeal) - Send your data piecemeal
-  * [CSS Variable](https://css-variable.js.org/) - CSS Variables for your CSS-in-JS solution
-  * [React Native Zephyr](https://formidable.com/open-source/react-native-zephyr/) - TailwindCSS-inspired styling library for React Native
-  * [Starbeam](https://starbeamjs.com/) - Reactivity Made Simple and Fun
+  * [CSS Variable](/library/css-variable) - CSS Variables for your CSS-in-JS solution
+  * [React Native Zephyr](/library/react-native-zephyr) - TailwindCSS-inspired styling library for React Native
+  * [Starbeam](/library/starbeam) - Reactivity Made Simple and Fun
   * [kwhitley/itty-router](/library/itty-router) - A little router
-  * [Nano JSX](https://nanojsx.io/) - Lightweight 1kB JSX library
+  * [Nano JSX](/library/nano-jsx) - Lightweight 1kB JSX library
 
   ## Frameworks
 
-  * [Vest Validations Framework](https://vestjs.dev/)
+  * [Vest Validations Framework](/library/vest-validations-framework)
 
   ## Tools
 

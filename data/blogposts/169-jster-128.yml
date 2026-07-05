@@ -14,7 +14,7 @@ body: |
   * [threepointone/css-suspense](/library/css-suspense) - CSS loading for React the suspense way
   * [diegohaz/styled-tools](/library/styled-tools) - Useful interpolated functions for CSS-in-JS
   * [sapegin/q-i](/library/q-i) - Node.js objects inspector with color highlighting
-  * [turtle.audio](http://turtle.audio/) - Turtle graphics but for audio
+  * [turtle.audio](/library/turtle-audio) - Turtle graphics but for audio
   * [sapegin/richtypo.js](/library/richtypo-js) - HTML typography enhancer for Node
 
   ## Techniques

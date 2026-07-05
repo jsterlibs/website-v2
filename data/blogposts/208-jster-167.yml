@@ -18,7 +18,7 @@ body: |
   ## Frameworks
 
   * [github/catalyst](/library/catalyst) - Catalyst is a set of patterns and techniques for developing components within a complex application
-  * [Aleph.js](https://alephjs.org/) - The React Framework in Deno
+  * [Aleph.js](/library/aleph-js) - The React Framework in Deno
 
   ## Tools
 

@@ -13,8 +13,8 @@ body: |
   {{ screenshot: https://github.com/haltu/muuri }}
 
   * [idx](/library/idx) - A utility function for traversing properties on objects and arrays.
-  * [spacetime](https://smallwins.github.io/spacetime/) - Manage timezones.
-  * [Muuri](https://haltu.github.io/muuri/) - MIT-licensed alternative to Masonry.
+  * [spacetime](/library/spacetime) - Manage timezones.
+  * [Muuri](/library/muuri) - MIT-licensed alternative to Masonry.
   * [upring](/library/upring) - Application-level sharding for Node based on streams.
 
   ## Architectures

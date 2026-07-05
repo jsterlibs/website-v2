@@ -12,16 +12,16 @@ body: |
 
   {{ screenshot: /library/group-by }}
 
-  * [Glimmer](https://glimmerjs.com/) - Fast and light-weight UI components for the web. Extracted from Ember.
-  * [RE:DOM](https://redom.js.org/) - Tiny (2 KB) turbo-boosted JavaScript library for creating user interfaces.
-  * [Sinon.JS 2](http://sinonjs.org/) - The popular mocking library has reached a new major version.
-  * [Lepton](http://hackjutsu.com/Lepton/) - A Lean GitHub Gist Client
+  * [Glimmer](/library/glimmer) - Fast and light-weight UI components for the web. Extracted from Ember.
+  * [RE:DOM](/library/re-dom) - Tiny (2 KB) turbo-boosted JavaScript library for creating user interfaces.
+  * [Sinon.JS 2](/library/sinon-js-2) - The popular mocking library has reached a new major version.
+  * [Lepton](/library/lepton) - A Lean GitHub Gist Client
   * [rafaelrinaldi/group-by](/library/group-by) - Group a list of objects by a given field name.
 
   ## Frameworks
 
-  * [Angular 4.0](https://angularjs.blogspot.fi/2017/03/angular-400-now-available.html)
-  * [Frint](https://frint.js.org/) - The Modular JavaScript Framework.
+  * [Angular 4.0](/library/angular)
+  * [Frint](/library/frint) - The Modular JavaScript Framework.
 
   ## Articles
 

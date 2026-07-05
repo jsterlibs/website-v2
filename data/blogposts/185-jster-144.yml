@@ -15,7 +15,7 @@ body: |
   * [lukejacksonn/domz](/library/domz) - A proxy function to help build virtual DOM trees from functions
   * [graphql-tag](/library/graphql-tag) - Helpful utilities for parsing GraphQL queries
   * [mourner/flatbush](/library/flatbush) - A very fast static spatial index for 2D points and rectangles in JavaScript
-  * [Graphology](https://graphology.github.io/) - Multipurpose Graph object for JavaScript
+  * [Graphology](/library/graphology) - Multipurpose Graph object for JavaScript
   * [mafintosh/csv-parser](/library/csv-parser) - Streaming csv parser inspired by binary-csv that aims to be faster than everyone else
   * [GoogleChromeLabs/comlink](/library/comlink) - Comlink makes WebWorkers enjoyable
 

@@ -12,9 +12,9 @@ body: |
 
   * [prismake/typegql](/library/typegql) - Create GraphQL schema with TypeScript classes
   * [graphql-compose](/library/graphql-compose) - A library for generating GraphQL schemas
-  * [Muuri](https://haltu.github.io/muuri/) - Responsive, sortable, filterable and draggable grid layouts
+  * [Muuri](/library/muuri) - Responsive, sortable, filterable and draggable grid layouts
   * [jaydenseric/next-graphql-react](/library/next-graphql-react) - Next.js config and App decorators for graphql-react, enabling server side rendered GraphQL queries
-  * [harp.gl](https://www.harp.gl/) - 3d web map rendering engine
+  * [harp.gl](/library/harp-gl) - 3d web map rendering engine
   * [pqina/filepond](/library/filepond) - A flexible and fun JavaScript file upload library
   * [Vincit/objection.js](/library/objection-js) - An SQL-friendly ORM for Node.js 
   * [mauriciosantos/Buckets-JS](/library/buckets-js) - A complete, fully tested and documented data structure library written in pure JavaScript

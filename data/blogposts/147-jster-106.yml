@@ -15,16 +15,16 @@ body: |
   {{ screenshot: /library/lit-html }}
 
   * [PolymerLabs/lit-html](/library/lit-html) - HTML template literals in JavaScript.
-  * [deck.gl](https://uber.github.io/deck.gl/#/) - Large-scale WebGL-powered data visualization.
-  * [TickTock JS](https://yuschick.github.io/TickTock/) - Making digital time mechanical.
-  * [Frappe Charts](https://frappe.github.io/charts/) - GitHub-inspired simple and modern charts for the web with zero dependencies.
-  * [Server.js](https://serverjs.io/) - Express alternative for Node.js.
-  * [Luxon](https://moment.github.io/luxon/) - A powerful, modern, and friendly wrapper for Javascript dates and times.
-  * [Solidarity](https://shift.infinite.red/solidarity-the-cli-for-developer-sanity-672fa81b98e9) - Add Solidarity to your project for multi-machine peace of mind.
+  * [deck.gl](/library/deck-gl) - Large-scale WebGL-powered data visualization.
+  * [TickTock JS](/library/ticktock-js) - Making digital time mechanical.
+  * [Frappe Charts](/library/frappe-charts) - GitHub-inspired simple and modern charts for the web with zero dependencies.
+  * [Server.js](/library/server-js) - Express alternative for Node.js.
+  * [Luxon](/library/luxon) - A powerful, modern, and friendly wrapper for Javascript dates and times.
+  * [Solidarity](/library/solidarity) - Add Solidarity to your project for multi-machine peace of mind.
 
   ## Frameworks
 
-  * [AngularJS 5.0](https://blog.angular.io/version-5-0-0-of-angular-now-available-37e414935ced)
+  * [AngularJS 5.0](/library/angularjs)
 
   ## CSS
 

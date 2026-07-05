@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [TOAST UI](http://ui.toast.com) - Make your site delicious.
+  * [TOAST UI](/library/toast-ui) - Make your site delicious.
   * [funfix](/library/funfix) - Functional Programming Library for JavaScript, TypeScript and Flow.
-  * [runtime.js](http://runtimejs.org/) - JavaScript library operating system for the cloud. Yes, it's crazy.
+  * [runtime.js](/library/runtime-js) - JavaScript library operating system for the cloud. Yes, it's crazy.
 
   ## Data Structures
 

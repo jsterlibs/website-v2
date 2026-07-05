@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [dna.js](https://dnajs.org/) - An uncomplicated user interface library for building data-driven semantic templates
-  * [React v16.13.0](https://reactjs.org/blog/2020/02/26/react-v16.13.0.html)
+  * [dna.js](/library/dna-js) - An uncomplicated user interface library for building data-driven semantic templates
+  * [React v16.13.0](/library/react)
   * [jaredpalmer/mutik](/library/mutik) - A tiny (495B) immutable state management library based on Immer
-  * [Joda](https://js-joda.github.io/js-joda/) - Immutable date and time library for javascript
-  * [Moon](https://moonjs.org/) - The minimal & fast library for functional user interfaces
+  * [Joda](/library/joda) - Immutable date and time library for javascript
+  * [Moon](/library/moon) - The minimal & fast library for functional user interfaces
   * [detect-browser](/library/detect-browser) - This is a package that attempts to detect a browser vendor and version (in a semver compatible format) using a navigator useragent in a browser or process.version in Node.
   * [brahmosjs/brahmos](/library/brahmos) - Super charged JavaScript library with modern React API and native templates
   * [rsmbl/Resemble.js](/library/resemble-js) - Image analysis and comparison

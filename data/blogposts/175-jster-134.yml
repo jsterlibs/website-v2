@@ -10,14 +10,14 @@ body: |
 
   ## Libraries
 
-  * [H5P](https://h5p.org/) - Create and Share Rich HTML5 Content and Applications
+  * [H5P](/library/h5p) - Create and Share Rich HTML5 Content and Applications
   * [znck/lazy-hydration](/library/lazy-hydration) - Lazy Hydration for Vue SSR
   * [spoonx/wetland](/library/wetland) - A Node.js ORM, mapping-based. Works with MySQL, PostgreSQL, SQLite and more
   * [lukeed/formee](/library/formee) - A tiny (532B) library for handling `<form>` elements
 
   ## Frameworks
 
-  * [DoneJS](https://donejs.com/) - An open source JavaScript framework that makes it easy to build high performance, real-time web and mobile applications.
+  * [DoneJS](/library/donejs) - An open source JavaScript framework that makes it easy to build high performance, real-time web and mobile applications.
 
   ## Generators
 

@@ -21,7 +21,7 @@ body: |
   * [mapbox/polylabel](/library/polylabel) - A fast algorithm for finding the pole of inaccessibility of a polygon
   * [steffest/bassoontracker](/library/bassoontracker) - Web based old-school Amiga music tracker in plain old JavaScript
   * [renovate](/library/renovate) - Keep npm dependencies up-to-date
-  * [emotion](https://emotion.now.sh/) - High performance JavaScript for your CSS
+  * [emotion](/library/emotion) - High performance JavaScript for your CSS
   * [faceyspacey/redux-first-router](/library/redux-first-router) - Seamless Redux-first routing
 
   ## Animation

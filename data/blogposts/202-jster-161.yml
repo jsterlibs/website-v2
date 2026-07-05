@@ -12,10 +12,10 @@ body: |
 
   ## Libraries
 
-  * [Sass: LibSass is Deprecated](https://sass-lang.com/blog/libsass-is-deprecated)
+  * [Sass: LibSass is Deprecated](/library/sass)
   * [matthiasott/a11y-accordion-tabs](/library/a11y-accordion-tabs) - A script for an accessible accordion tabs component
   * [p-limit](/library/p-limit) - Run multiple promise-returning & async functions with limited concurrency
-  * [fullPage.js](https://alvarotrigo.com/fullPage/) - Create beautiful fullscreen scrolling websites
+  * [fullPage.js](/library/fullpage-js) - Create beautiful fullscreen scrolling websites
   * [pubkey/broadcast-channel](/library/broadcast-channel) - BroadcastChannel to send data between different browser-tabs or nodejs-processes
   * [ben-rogerson/twin.macro](/library/twin-macro) - Twin blends the magic of Tailwind with the flexibility of css-in-js
   * [daybrush/selecto](/library/selecto) - Selecto.js is a component that allows you to select elements in the drag area using the mouse or touch

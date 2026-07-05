@@ -11,20 +11,20 @@ body: |
   ## Libraries
 
   * [valtio makes proxy-state simple](/library/valtio)
-  * [nivo](https://nivo.rocks/) - nivo provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries
-  * [Local-first database: Hypermerge](https://jaredforsyth.com/posts/local-first-database-hypermerge/)
+  * [nivo](/library/nivo) - nivo provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries
+  * [Local-first database: Hypermerge](/library/local-first-database)
   * [taufik-nurrohman/color-picker](/library/color-picker) - A simple color picker application written in pure JavaScript, for modern browsers
-  * [Handsfree.js](https://handsfree.js.org/) - Build handsfree User Experiences and add face, hand, and pose tracking to your projects in a snap
-  * [raam](https://raam.joebell.co.uk/) - Beautifully boring cosmetic-free React.js components for structure and layout
+  * [Handsfree.js](/library/handsfree-js) - Build handsfree User Experiences and add face, hand, and pose tracking to your projects in a snap
+  * [raam](/library/raam) - Beautifully boring cosmetic-free React.js components for structure and layout
   * [andrasq/node-qrpc](/library/node-qrpc) - Quicker Node.js remote procedure call
-  * [ztext.js](https://bennettfeely.com/ztext/) - Easy to implement, 3D typography for the web. Works with every font
+  * [ztext.js](/library/ztext-js) - Easy to implement, 3D typography for the web. Works with every font
   * [node-notifier](/library/node-notifier) - A Node.js module for sending notifications on native Mac, Windows and Linux (or Growl as fallback)
   * [iamkun/dayjs](/library/dayjs) - 2KB immutable date-time library alternative to Moment.js with the same modern API
   * [a-synchronous/rubico](/library/rubico) - [a]synchronous functional programming
 
   ## Frameworks
 
-  * [Tone.js](https://tonejs.github.io/) - Web Audio framework for creating interactive music in the browser
+  * [Tone.js](/library/tone-js) - Web Audio framework for creating interactive music in the browser
 
   ## Tools
 

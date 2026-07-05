@@ -11,14 +11,14 @@ body: |
   ## Libraries
 
   * [daltonwebdev/console.chat](/library/console-chat) - Chat in your console
-  * [Overmind](https://overmindjs.org/) - Frictionless state management. [See also the interview](https://survivejs.com/blog/overmind-interview/).
+  * [Overmind](/library/overmind) - Frictionless state management. [See also the interview](https://survivejs.com/blog/overmind-interview/).
   * [modernserf/zebu](/library/zebu) - A compiler for little languages in tagged template strings
   * [lukeed/httpie](/library/httpie) - A Node.js HTTP client as easy as pie!
 
   ## Frameworks
 
-  * [Kube CSS & JS Framework](https://imperavi.com/kube)
-  * [Stimulus](https://stimulusjs.org/) - A modest JavaScript framework for the HTML you already have
+  * [Kube CSS & JS Framework](/library/kube-css-js-framework)
+  * [Stimulus](/library/stimulus) - A modest JavaScript framework for the HTML you already have
 
   ## TypeScript
 

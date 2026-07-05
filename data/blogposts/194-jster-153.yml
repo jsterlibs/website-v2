@@ -10,16 +10,16 @@ body: |
 
   ## Libraries
 
-  * [AppRun](https://apprun.js.org/) - A JavaScript library for building reliable, high-performance web applications using the Elm inspired Architecture, events, and components
+  * [AppRun](/library/apprun) - A JavaScript library for building reliable, high-performance web applications using the Elm inspired Architecture, events, and components
   * [nicojs/typed-html](/library/typed-html) - TypeSafe HTML templates using TypeScript. No need to learn a template library.
-  * [Pancake](https://pancake-charts.surge.sh/) - Charts for Svelte apps
-  * [Hex Engine](https://hex-engine.dev/) - A Modern 2D Game Engine for the Browser
-  * [Mavo](https://mavo.io/) - A new, approachable way to create Web applications
+  * [Pancake](/library/pancake) - Charts for Svelte apps
+  * [Hex Engine](/library/hex-engine) - A Modern 2D Game Engine for the Browser
+  * [Mavo](/library/mavo) - A new, approachable way to create Web applications
 
   ## Frameworks
 
-  * [Next.js 9.2](https://nextjs.org/blog/next-9-2)
-  * [Angular 9](https://blog.angular.io/version-9-of-angular-now-available-project-ivy-has-arrived-23c97b63cfa3)
+  * [Next.js 9.2](/library/next-js)
+  * [Angular 9](/library/angular-9)
 
   ## Articles
 

@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  * [TypeSpec - Describe your APIs concisely and more](https://typespec.io/)
-  * [React 19 Beta](https://react.dev/blog/2024/12/05/react-19)
+  * [TypeSpec - Describe your APIs concisely and more](/library/typespec)
+  * [React 19 Beta](/library/react-19)
   * [json-editor - JSON Schema Based Editor](/library/json-editor)
   * [rjsf-team/react-jsonschema-form: A React component for building Web forms from JSON Schema.](/library/react-jsonschema-form)
-  * [Introducing Declarative Routing for NextJS and React-Router](https://javascript.plainenglish.io/introducing-declarative-routing-for-nextjs-and-react-router-dbf34edc7542)
+  * [Introducing Declarative Routing for NextJS and React-Router](/library/declarative-routing-for-nextjs-and-react-router)
   * [tatethurston/nextjs-routes: Type safe routing for Next.js](/library/nextjs-routes)
-  * [Loro – Reimagine state management with CRDTs](https://www.loro.dev/)
+  * [Loro – Reimagine state management with CRDTs](/library/loro)
 
   ## Techniques
 

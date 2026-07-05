@@ -10,18 +10,18 @@ body: |
 
   ## Libraries
 
-  * [Blobity](https://blobity.dev/) - The cursor rethought
-  * [Sigma.js](https://www.sigmajs.org/) - JavaScript library aimed at visualizing graphs of thousands of nodes and edges
+  * [Blobity](/library/blobity) - The cursor rethought
+  * [Sigma.js](/library/sigma-js) - JavaScript library aimed at visualizing graphs of thousands of nodes and edges
   * [@monaco-editor/react](/library/monaco-editor) - Monaco editor for React
-  * [dnd kit](https://dndkit.com/) - Modern drag and drop toolkit for React
+  * [dnd kit](/library/dnd-kit) - Modern drag and drop toolkit for React
   * [matubu/speed_highlight_js](/library/speed-highlight-js) - Light, fast, and easy to use, dependencies free javascript syntax highlighter
   * [josdejong/jsoneditor](/library/jsoneditor) - A web-based tool to view, edit, format, and validate JSON
   * [lucacasonato/fresh](/library/fresh) - Preact, but super edgy
   * [automerge](/library/automerge) - A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically
   * [josdejong/workerpool](/library/workerpool) - Offload tasks to a pool of workers on node.js and in the browser
-  * [Vizzu](https://vizzuhq.com/) - JavaScript library for animated data stories and visualizations
-  * [Rematch](https://rematchjs.org/) - Rematch is Redux best practices without the boilerplate
-  * [Introducing MUI Core v5.0](https://mui.com/blog/mui-core-v5/) - The UI library for React has reached a new major version
+  * [Vizzu](/library/vizzu) - JavaScript library for animated data stories and visualizations
+  * [Rematch](/library/rematch) - Rematch is Redux best practices without the boilerplate
+  * [Introducing MUI Core v5.0](/library/mui-core) - The UI library for React has reached a new major version
 
   ## TypeScript
 

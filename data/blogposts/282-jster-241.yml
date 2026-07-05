@@ -10,11 +10,11 @@ body: |
 
   ## Libraries
 
-  * [How to Get Started with LynxJS. “Write Once, Render Anywhere”](https://medium.com/@hakoniemi/how-to-get-started-with-lynxjs-c1053f0ad9cc)
-  * [Introducing Zod 4 beta](https://v4.zod.dev/v4)
+  * [How to Get Started with LynxJS. “Write Once, Render Anywhere”](/library/how-to-get-started-with-lynxjs-write-once-render-anywhere)
+  * [Introducing Zod 4 beta](/library/zod-4)
   * [ygwyg/diverce: vercel nextjs -> cloudflare workers](/library/diverce)
   * [lukeautry/tsoa: Build OpenAPI-compliant REST APIs using TypeScript and Node](/library/tsoa)
-  * [Valibot v1 - The 1 kB schema library](https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/)
+  * [Valibot v1 - The 1 kB schema library](/library/valibot)
 
   ## Articles
 
@@ -25,7 +25,7 @@ body: |
 
   ## Frameworks
 
-  * [Nue - Apps lighter than a React button](https://nuejs.org/blog/large-scale-apps/)
+  * [Nue - Apps lighter than a React button](/library/nue)
 
   ## Tools
 

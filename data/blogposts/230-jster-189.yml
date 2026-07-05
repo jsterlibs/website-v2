@@ -10,13 +10,13 @@ body: |
 
   ## Libraries
 
-  * [Vessel.js](https://shiplab.github.io/vesseljs/) - Design ships in JavaScript
+  * [Vessel.js](/library/vessel-js) - Design ships in JavaScript
   * [11ty/eleventy-activity-feed](/library/eleventy-activity-feed) - One feed to rule them all
-  * [visx](https://airbnb.io/visx/) - A collection of expressive, low-level visualization primitives for React
-  * [React Virtuoso](https://virtuoso.dev/) - Powerful yet easy-to-use React components that can render enormous data sets
+  * [visx](/library/visx) - A collection of expressive, low-level visualization primitives for React
+  * [React Virtuoso](/library/react-virtuoso) - Powerful yet easy-to-use React components that can render enormous data sets
   * [vanilla-jsoneditor](/library/vanilla-jsoneditor) - A web-based tool to view, edit, format, transform, and validate JSON
   * [ts-safeql/safeql](/library/safeql) - Validate and auto-generate TypeScript types from raw SQL queries in PostgreSQL
-  * [hyperfetch](https://hyperfetch.bettertyped.com/) - Data Fetching, Offline First, Caching, Queueing
+  * [hyperfetch](/library/hyperfetch) - Data Fetching, Offline First, Caching, Queueing
 
   ## Articles
 

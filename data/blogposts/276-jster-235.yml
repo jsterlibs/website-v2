@@ -11,13 +11,13 @@ body: |
   ## Frameworks
 
   * [hypermodeinc/modus: Modus: an open source, serverless framework for building intelligent functions and APIs, powered by WebAssembly](/library/modus)
-  * [JavaScript Frameworks - Heading into 2025](https://dev.to/playfulprogramming/javascript-frameworks-heading-into-2025-hkb)
+  * [JavaScript Frameworks - Heading into 2025](/library/javascript-frameworks)
 
   ## Libraries
 
   * [potree - WebGL point cloud viewer for large datasets](/library/potree)
-  * [Radashi - TypeScript utility library](https://radashi.js.org/)
-  * [Vega - Visualization grammars](https://vega.github.io/)
+  * [Radashi - TypeScript utility library](/library/radashi)
+  * [Vega - Visualization grammars](/library/vega)
 
   ## Tools
 

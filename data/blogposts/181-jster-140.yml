@@ -10,10 +10,10 @@ body: |
 
   ## Libraries
 
-  * [VideoContext](https://bbc.github.io/VideoContext/) - An experimental video composition and rendering library for the browser.
-  * [Finance.js](http://financejs.org/) - JavaScript library for financial calculations
-  * [LinguiJS](https://lingui.js.org/) - Seamless internationalization in JavaScript
-  * [Turf.js](http://turfjs.org/) - Advanced geospatial analysis for browsers and Node.js
+  * [VideoContext](/library/videocontext) - An experimental video composition and rendering library for the browser.
+  * [Finance.js](/library/finance-js) - JavaScript library for financial calculations
+  * [LinguiJS](/library/linguijs) - Seamless internationalization in JavaScript
+  * [Turf.js](/library/turf-js) - Advanced geospatial analysis for browsers and Node.js
   * [infusion/Complex.js/](/library/complex-js) - A complex number library
   * [infusion/Quaternion.js](/library/quaternion-js) - A JavaScript Quaternion library
 

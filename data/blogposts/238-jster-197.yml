@@ -12,11 +12,11 @@ body: |
 
   * [natemoo-re/ultramatter: <1KB frontmatter parser that supports a reasonable subset of YAML](/library/ultramatter)
   * [WebReflection/not-so-weak: Iterable WeakMap and WeakSet](/library/not-so-weak)
-  * [Tiptap - Headless WYSIWYG Text Editor](https://tiptap.dev/)
+  * [Tiptap - Headless WYSIWYG Text Editor](/library/tiptap)
 
   ## Frameworks
 
-  * [Astro 2.6: Middleware](https://astro.build/blog/astro-260/)
+  * [Astro 2.6: Middleware](/library/astro)
 
   ## Articles
 

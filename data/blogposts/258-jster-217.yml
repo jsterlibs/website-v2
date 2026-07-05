@@ -13,8 +13,8 @@ body: |
   * [xstate/store Simple event-based state management](/library/xstate-2)
   * [aralroca/diff-dom-streaming - HTML Streaming Over the Wire! 🥳 Diff DOM algorithm with streaming to make only the necessary modifications, insertions and deletions between a DOM node and an HTML stream reader](/library/diff-dom-streaming)
   * [openapi-zod-client - From openapi to Zod types](/library/openapi-zod-client)
-  * [Reasonable Colors](https://www.reasonable.work/colors/)
-  * [Superstate - Typesafe statecharts library](https://superstate.io/)
+  * [Reasonable Colors](/library/reasonable-colors)
+  * [Superstate - Typesafe statecharts library](/library/superstate)
 
   ## Techniques
 
@@ -35,7 +35,7 @@ body: |
 
   ## Frameworks
 
-  * [ElysiaJS - Ergonomic Framework for Humans](https://elysiajs.com/)
+  * [ElysiaJS - Ergonomic Framework for Humans](/library/elysiajs)
 
   ## React
 

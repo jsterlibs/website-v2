@@ -10,7 +10,7 @@ body: |
 
   ## Libraries
 
-  * [Rough.js](http://roughjs.com/) - Create graphics with a hand-drawn, sketchy, appearanc
+  * [Rough.js](/library/rough-js) - Create graphics with a hand-drawn, sketchy, appearanc
   * [terotests/TaskRoll](/library/taskroll) - Asynchronous computation builder
 
   ## GraphQL

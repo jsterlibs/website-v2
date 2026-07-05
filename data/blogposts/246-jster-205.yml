@@ -10,9 +10,9 @@ body: |
 
   ## Libraries
 
-  * [Lit Launch Day: Lit 3.0, Labs graduations, a compiler and more!](https://lit.dev/blog/2023-10-10-lit-3.0/)
-  * [Bau UI - Reactive library and components for building web user interface](https://grucloud.github.io/bau/bau-ui/)
-  * [Kysely - The type-safe SQL query builder for TypeScript](https://kysely.dev/)
+  * [Lit Launch Day: Lit 3.0, Labs graduations, a compiler and more!](/library/lit-launch-day)
+  * [Bau UI - Reactive library and components for building web user interface](/library/bau-ui)
+  * [Kysely - The type-safe SQL query builder for TypeScript](/library/kysely)
 
   ## Articles
 
@@ -20,8 +20,8 @@ body: |
 
   ## Frameworks
 
-  * [Fresh 1.5: Partials, client side navigation and more](https://deno.com/blog/fresh-1.5)
-  * [Hono - Ultrafast web framework for the Edges](https://hono.dev/)
+  * [Fresh 1.5: Partials, client side navigation and more](/library/fresh)
+  * [Hono - Ultrafast web framework for the Edges](/library/hono)
 
   ## Tools
 

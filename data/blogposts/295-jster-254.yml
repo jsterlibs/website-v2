@@ -11,15 +11,15 @@ body: |
   ## Libraries
 
   * [chenglou/pretext - Pure JavaScript/TypeScript library for multiline text measurement & layout](/library/pretext)
-  * [SuperSonic - SuperCollider's Synthesis Engine in the Browser](https://sonic-pi.net/supersonic/demo.html)
+  * [SuperSonic - SuperCollider's Synthesis Engine in the Browser](/library/supersonic)
   * [tinylibs/tinyclip: A tiny, cross-platform clipboard utility.](/library/tinyclip)
 
   ## Frameworks
 
-  * [Introducing EmDash — the spiritual successor to WordPress that solves plugin security](https://blog.cloudflare.com/emdash-wordpress/)
-  * [ArrowJS - Web framework designed for building with agents](https://arrow-js.com/)
-  * [Nitro v3 Beta is here](https://nitro.build/blog/v3-beta)
-  * [Astro 6.0](https://astro.build/blog/astro-6/)
+  * [Introducing EmDash — the spiritual successor to WordPress that solves plugin security](/library/emdash)
+  * [ArrowJS - Web framework designed for building with agents](/library/arrowjs)
+  * [Nitro v3 Beta is here](/library/nitro)
+  * [Astro 6.0](/library/astro)
   * [StateSurface - Hypermedia inspired state-layout mapping runtime](/library/state-surface)
   * [Solid.js v2.0.0 Beta - The <Suspense> is Over](/library/solid)
 

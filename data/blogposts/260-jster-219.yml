@@ -10,11 +10,11 @@ body: |
 
   ## Frameworks
 
-  * [Gracile - A thin, full-stack, web framework](https://gracile.js.org/)
+  * [Gracile - A thin, full-stack, web framework](/library/gracile)
   * [hex2f/marz: 🚀 A Fast and Lightweight React Server Components Framework for Bun](/library/marz)
-  * [VanJS: A 1.0kB Grab 'n Go Reactive UI Framework without React/JSX](https://vanjs.org/)
+  * [VanJS: A 1.0kB Grab 'n Go Reactive UI Framework without React/JSX](/library/vanjs)
   * [DML - Object oriented web programming framework](/library/dml)
-  * [Supercharge — an open-source Node.js framework, not just a web framework](https://superchargejs.com/)
+  * [Supercharge — an open-source Node.js framework, not just a web framework](/library/supercharge)
 
   ## Libraries
 

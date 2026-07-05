@@ -13,15 +13,15 @@ body: |
   * [remorses/smart-glob](/library/smart-glob) - Glob search in constant time thanks to git cache
   * [adamrisberg/react-image-magnifiers](/library/react-image-magnifiers) - A collection of responsive, image magnifying React components for mouse and touch.
   * [salvoravida/recoil-toolkit](/library/recoil-toolkit) - Helpers for Recoil, the next generation state management library
-  * [vanilla-extract](https://vanilla-extract.style/) - Zero-runtime Stylesheets in TypeScript
-  * [Dinero.js](https://dinerojs.com/) - Dinero.js is a library for working with monetary values in JavaScript
+  * [vanilla-extract](/library/vanilla-extract) - Zero-runtime Stylesheets in TypeScript
+  * [Dinero.js](/library/dinero-js) - Dinero.js is a library for working with monetary values in JavaScript
   * [vuejs/petite-vue](/library/petite-vue) - 5kb subset of Vue optimized for progressive enhancement
   * [Shakeskeyboarde/tsstyled](/library/tsstyled) - React visual primitives with first-class TypeScript support and a tiny footprint
 
   ## Frameworks
 
   * [Rabios/Pancake](/library/pancake) - Lightweight, Fast, Easy-to-use HTML5 2D game framework!
-  * [React CMS: The missing link](https://dev.to/matfrana/react-cms-the-missing-link-3iok)
+  * [React CMS: The missing link](/library/react-cms)
 
   ## TypeScript
 

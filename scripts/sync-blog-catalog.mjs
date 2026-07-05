@@ -31,10 +31,13 @@ const CATALOG_SECTION_TO_CATEGORY = new Map([
   ["tools", "build-utilities"],
   ["ui libraries", "ui-components"],
 ]);
+const ANY_URL_CATALOG_SECTIONS = new Set([
+  "frameworks",
+  "libraries",
+  "ui libraries",
+]);
 const SKIP_SECTION_RE =
   /^(?:articles?|techniques?|tutorials?|guides?|news|reads?|benchmarks?|boilerplates?|demos?)$/i;
-const ARTICLE_HOST_RE =
-  /(^|\.)((?:blog|docs|developer|dev|engineering|learn)\.|medium\.com$|dev\.to$|hashnode\.dev$|substack\.com$|css-tricks\.com$|smashingmagazine\.com$|web\.dev$|2ality\.com$|frontendmasters\.com$)/i;
 const PACKAGE_HOST_RE =
   /(^|\.)(github\.com|npmjs\.com|jsr\.io|deno\.land|bun\.sh)$/i;
 const SHORT_URL_HOST_RE = /(^|\.)buff\.ly$|(^|\.)bit\.ly$|(^|\.)ilo\.im$/i;
@@ -108,6 +111,7 @@ async function collectCandidates(
 ) {
   const candidates = new Map();
   const candidateUrls = new Map();
+  const candidateNames = new Map();
   const expandCache = new Map();
   const replacements = new Map();
   const files = getBlogPostFiles({ latestOnly });
@@ -154,6 +158,7 @@ async function collectCandidates(
     const candidateLibraryId =
       candidateUrls.get(normalizedUrl) ||
       candidateUrls.get(normalizedPackageUrl) ||
+      candidateNames.get(normalizeName(resolveName(entry))) ||
       "";
 
     if (
@@ -196,6 +201,7 @@ async function collectCandidates(
       },
     });
     candidateUrls.set(normalizedUrl, id);
+    candidateNames.set(normalizeName(resolveName(entry)), id);
 
     if (normalizedPackageUrl) {
       candidateUrls.set(normalizedPackageUrl, id);
@@ -401,15 +407,13 @@ function isCatalogCandidate(entry) {
 
   const parsed = parseUrl(entry.url);
 
-  if (!parsed) {
+  if (!parsed || !isExternalHttpUrl(parsed)) {
     return false;
   }
 
-  if (!isPackageUrl(parsed)) {
-    return false;
-  }
+  const section = normalizeSection(entry.section);
 
-  if (!CATALOG_SECTION_TO_CATEGORY.has(normalizeSection(entry.section))) {
+  if (!CATALOG_SECTION_TO_CATEGORY.has(section)) {
     return false;
   }
 
@@ -417,7 +421,7 @@ function isCatalogCandidate(entry) {
     return false;
   }
 
-  return true;
+  return isPackageUrl(parsed) || ANY_URL_CATALOG_SECTIONS.has(section);
 }
 
 function resolveCategory(section) {
@@ -472,7 +476,28 @@ function resolveName(entry) {
     return packageName;
   }
 
-  return entry.title;
+  return cleanLibraryName(entry.title);
+}
+
+function cleanLibraryName(value) {
+  let ret = cleanTitle(value);
+
+  ret = ret.replace(
+    /^version\s+[\dv.]+(?:\s+of)?\s+(.+?)\s+(?:is\s+)?(?:now\s+)?(?:available|released|out|here).*$/i,
+    "$1",
+  );
+  ret = ret.replace(/^an update from the (.+?) team$/i, "$1");
+  ret = ret.replace(/^(?:announcing|introducing)\s+/i, "");
+  ret = ret.replace(/\s*(?::|\s[-–—])\s*(?:beta|alpha|rc|release candidate)\b.*$/i, "");
+  ret = ret.replace(/(?::|\s[-–—])\s+.+$/i, "");
+  ret = ret.replace(/\s+v?\d+(?:\.\d+)*\s+for\b.*$/i, "");
+  ret = ret.replace(/\s+v?\d+(?:\.\d+)*\s+release$/i, "");
+  ret = ret.replace(/\s+(?:is\s+)?(?:now\s+)?(?:available|released|out|here|stable|live)\b.*$/i, "");
+  ret = ret.replace(/\s+v?\d+\.\d+(?:\.\d+)?(?:[-\s]?(?:alpha|beta|rc)\.?\d*)?[!.]?$/i, "");
+  ret = ret.replace(/\s+v\d+(?:[-\s]?(?:alpha|beta|rc)\.?\d*)?$/i, "");
+  ret = ret.replace(/\s+(?:alpha|beta|rc)\.?\d*$/i, "");
+
+  return ret.trim() || cleanTitle(value);
 }
 
 function resolveExistingLibraryId(
@@ -752,6 +777,10 @@ function printSummary(additions) {
 
 function isPackageUrl(parsed) {
   return PACKAGE_HOST_RE.test(parsed.hostname);
+}
+
+function isExternalHttpUrl(parsed) {
+  return parsed.protocol === "http:" || parsed.protocol === "https:";
 }
 
 function isLikelyArticle(entry) {
