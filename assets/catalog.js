@@ -124,12 +124,12 @@ function renderLibraryLinks(library) {
 
 function renderTags(tags) {
   const list = document.createElement("ul");
-  list.className = "catalog-tags";
+  list.className = "tag-list";
 
   for (const tag of tags) {
     const item = document.createElement("li");
     const link = renderLink(tag, `/tag/${tag}/`);
-    link.className = "catalog-tag";
+    link.className = "tag-chip";
 
     item.append(link);
     list.append(item);

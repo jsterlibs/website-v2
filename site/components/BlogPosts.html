@@ -1,8 +1,14 @@
-<ul class="flex flex-col gap-4" &foreach="(get props blogPosts)">
-  <li>
-    <SiteLink
+<ol class="blog-index-list" &foreach="(get props blogPosts)">
+  <li class="blog-index-item">
+    <time
+      class="blog-index-date"
+      &datetime="(get props date)"
+      &children="(formatDate (get props date))"
+    ></time>
+    <a
+      class="blog-index-title"
       &children="(get props titleHtml)"
       &href="(get props url)"
-    ></SiteLink>
+    ></a>
   </li>
-</ul>
+</ol>

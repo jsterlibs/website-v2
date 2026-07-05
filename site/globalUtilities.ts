@@ -163,6 +163,22 @@ function init() {
     };
   }
 
+  function formatDate(input = "") {
+    const [datePart] = String(input).split(" ");
+    const date = new Date(`${datePart}T00:00:00Z`);
+
+    if (Number.isNaN(date.getTime())) {
+      return input;
+    }
+
+    return new Intl.DateTimeFormat("en", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      timeZone: "UTC",
+    }).format(date);
+  }
+
   return {
     blogIndexJsonLd,
     blogPostJsonLd,
@@ -171,6 +187,7 @@ function init() {
     cleanUrl,
     collectionPageJsonLd,
     escapeXml,
+    formatDate,
     libraryJsonLd,
     urlJoin,
     websiteJsonLd,

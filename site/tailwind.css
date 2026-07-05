@@ -1,6 +1,63 @@
 @import "tailwindcss";
 
 @layer components {
+  .blog-surface {
+    background:
+      linear-gradient(90deg, rgba(58, 47, 166, 0.06) 1px, transparent 1px),
+      linear-gradient(rgba(58, 47, 166, 0.045) 1px, transparent 1px);
+    background-size: 32px 32px;
+    border-block: 1px solid var(--color-gray-200);
+  }
+
+  .blog-heading {
+    color: var(--color-gray-800);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .blog-kicker {
+    color: var(--color-gray-700);
+    font-size: 0.875rem;
+    max-width: 42rem;
+  }
+
+  .blog-index-list {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--color-gray-200);
+    display: grid;
+  }
+
+  .blog-index-item {
+    border-bottom: 1px solid var(--color-gray-200);
+    display: grid;
+    gap: 0.35rem;
+    padding: 1rem;
+  }
+
+  .blog-index-item:last-child {
+    border-bottom: 0;
+  }
+
+  .blog-index-date {
+    color: var(--color-gray-700);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .blog-index-title {
+    color: var(--color-gray-800);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration-line: none;
+  }
+
+  .blog-index-title:hover {
+    color: #3a2fa6;
+    text-decoration-line: underline;
+  }
+
   .catalog-surface {
     background:
       linear-gradient(90deg, rgba(58, 47, 166, 0.07) 1px, transparent 1px),
@@ -148,13 +205,14 @@
     padding: 0.25rem 0.5rem;
   }
 
-  .catalog-tags {
+  .tag-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 0.25rem;
   }
 
-  .catalog-tag {
+  .tag-chip {
     background: rgba(132, 235, 236, 0.24);
     border: 1px solid rgba(58, 47, 166, 0.18);
     color: var(--color-gray-800);
@@ -164,7 +222,7 @@
     text-decoration-line: none;
   }
 
-  .catalog-tag:hover {
+  .tag-chip:hover {
     background: rgba(132, 235, 236, 0.42);
     border-color: #3a2fa6;
   }
@@ -182,6 +240,17 @@
   }
 
   @media (width >= 48rem) {
+    .blog-heading {
+      font-size: 3.75rem;
+    }
+
+    .blog-index-item {
+      align-items: baseline;
+      gap: 1.5rem;
+      grid-template-columns: 8rem 1fr;
+      padding: 1rem 1.25rem;
+    }
+
     .catalog-heading {
       font-size: 3.75rem;
     }

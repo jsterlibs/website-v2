@@ -3,9 +3,17 @@
     <JsonLd
       &data="(blogIndexJsonLd (get context meta.url) (get context url) (get context pageMeta.title (get context meta.title)) (get context pageMeta.description (get context meta.description)) (get context blogPosts))"
     />
-    <div class="p-4 mx-auto max-w-5xl rich-text">
-      <h1>Blog</h1>
-      <BlogPosts &blogPosts="(get context blogPosts)" />
+    <div class="blog-surface">
+      <div class="p-4 py-8 mx-auto max-w-5xl flex flex-col gap-6">
+        <header class="flex flex-col gap-2">
+          <h1 class="blog-heading">Blog</h1>
+          <p class="blog-kicker">
+            JSter dispatches from the JavaScript ecosystem: libraries, frameworks,
+            tools, and long-running catalog notes.
+          </p>
+        </header>
+        <BlogPosts &blogPosts="(get context blogPosts)" />
+      </div>
     </div>
   </slot>
 </BaseLayout>

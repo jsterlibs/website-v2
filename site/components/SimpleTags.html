@@ -1,7 +1,7 @@
-<ul class="catalog-tags" &foreach="(get props tags)">
+<ul class="tag-list" &foreach="(get props tags)">
   <li>
     <a
-      class="catalog-tag"
+      class="tag-chip"
       &children="(get props value)"
       &href="(concat '/tag/' (get props value) '/')"
     />
