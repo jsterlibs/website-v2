@@ -38,12 +38,7 @@
     {
       "path": "./node_modules/gustwind/plugins/script/mod.js",
       "options": {
-        "scripts": [
-          {
-            "type": "text/javascript",
-            "src": "https://unpkg.com/sidewind@7.6.0/dist/sidewind.umd.production.min.js"
-          }
-        ],
+        "scripts": [],
         "scriptsPath": []
       }
     },
