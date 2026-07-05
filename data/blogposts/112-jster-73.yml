@@ -6,7 +6,7 @@ slug: monthly-jster-june-2016-part-2
 body: |
   > JavaScript a day keeps the doctor away.
 
-  I've been working on [Reactabular](reactabular.js.org), a data grid component for React. There's more information at the [beta thread](https://github.com/bebraw/reactabular/issues/148).
+  I've been working on [Reactabular](https://reactabular.js.org), a data grid component for React. There's more information at the [beta thread](https://github.com/bebraw/reactabular/issues/148).
 
   In other news [webpack has received an official blog](https://medium.com/webpack/webpack-its-getting-real-92c60fca1db1). I'll be coordinating the documentation efforts. It's quite a challenge given there's a lot to cover.
 

@@ -11,7 +11,7 @@ body: |
   ## Libraries
 
   * [CSS Hooks - A new take on inline styles](https://buff.ly/3R8jClk)
-  * [google/schema-dts: JSON-LD TypeScript types for  vocabulary](Schema.orghttps://buff.ly/3N6iHjR)
+  * [google/schema-dts: JSON-LD TypeScript types for Schema.org vocabulary](https://github.com/google/schema-dts)
   * [varsace - Design tokens as TypeScript variables](https://buff.ly/47Wllku)
   * [Effect - TS library to support creation of complex applications](https://buff.ly/47UWUDX)
   * [Plyr - A simple, customizable HTML5 Video, Audio, YouTube and Vimeo player](https://buff.ly/2WNqF7r)

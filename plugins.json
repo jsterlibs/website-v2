@@ -29,6 +29,13 @@
       }
     },
     {
+      "path": "./node_modules/gustwind/plugins/copy/mod.js",
+      "options": {
+        "inputPath": "./assets/img",
+        "outputPath": "./img"
+      }
+    },
+    {
       "path": "./node_modules/gustwind/plugins/script/mod.js",
       "options": {
         "scripts": [

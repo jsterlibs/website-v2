@@ -24,7 +24,7 @@ body: |
 
   To solve this issue, [several groups of developers](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS) have worked to cross-compile their favorite language into JavaScript. Cross-compiling allows a developer to work in a compiled language, such as Java, Scala, and C#, where you can rely on type safety. When the code is ready for testing or debugging, a cross-compiler takes the source and produces the equivalent JavaScript for execution in a JavaScript engine.
 
-  [Clojure](clojure.org) is a Lisp-based language that compiles and executes on the JVM.  With [ClojureScript](https://github.com/clojure/clojurescript), Clojure can be cross-compiled to JavaScript. Developing a SPA in a language like ClojureScript allows developers to utilize Clojure’s features like static type safety and immutability when working with large or complex applications. The Om project allows a developer using ClojureScript to interface with React in a client-side application. Let’s get started using React and Om to build a SPA.
+  [Clojure](https://clojure.org) is a Lisp-based language that compiles and executes on the JVM.  With [ClojureScript](https://github.com/clojure/clojurescript), Clojure can be cross-compiled to JavaScript. Developing a SPA in a language like ClojureScript allows developers to utilize Clojure’s features like static type safety and immutability when working with large or complex applications. The Om project allows a developer using ClojureScript to interface with React in a client-side application. Let’s get started using React and Om to build a SPA.
 
   ## Getting Started
 
