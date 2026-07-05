@@ -5,7 +5,20 @@
     />
     <div class="p-4 mx-auto max-w-5xl flex flex-col gap-4">
       <h1 class="text-xl" &children="(get context category.title)"></h1>
-      <AllLibraries &libraries="(get context category.libraries)" />
+      <div
+        data-catalog
+        &data-source="(get context category.sourceType category)"
+        &data-id="(get context category.id)"
+        &data-page-size="(get context category.pageSize 100)"
+      >
+        <p class="text-gray-700">Loading libraries...</p>
+      </div>
+      <noscript>
+        <p class="text-gray-700">
+          Enable JavaScript to browse this catalog list.
+        </p>
+      </noscript>
     </div>
+    <script type="module" src="/assets/catalog.js"></script>
   </slot>
 </BaseLayout>

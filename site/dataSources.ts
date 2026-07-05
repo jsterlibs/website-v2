@@ -16,6 +16,7 @@ type IndexedBlogPost = BlogPost & {
   hasCodeBlocks: boolean;
 };
 
+const CATEGORY_PAGE_SIZE = 100;
 const categories = getJsonSync<Category[]>("data/categories.json");
 const blogIndex = getJsonSync<IndexEntry[]>("data/blogposts.json");
 const parentCategories = getJsonSync("data/parent-categories.json");
@@ -179,17 +180,12 @@ function init({ load }: { load: LoadApi }) {
     return categories;
   }
 
-  async function processCategory(category: Category) {
-    const librariesById = await getLibrariesById();
-
+  function processCategory(category: Category) {
     return {
       ...category,
-      libraries: (
-        await getJson<Library[]>(`data/categories/${category.id}.json`)
-      )
-        .map((l) => librariesById.get(l.id))
-        .filter(Boolean)
-        .sort(compareLibrariesForIndex),
+      libraries: [],
+      pageSize: CATEGORY_PAGE_SIZE,
+      sourceType: "category",
     };
   }
 
@@ -214,7 +210,7 @@ function init({ load }: { load: LoadApi }) {
               return foundLibrary;
             }
           })
-          .filter(Boolean)
+          .filter(isLibrary)
           .sort(compareLibrariesForIndex),
       })),
     );
@@ -249,6 +245,10 @@ function compareLibrariesForIndex(a: Library, b: Library) {
     statusSortValue(a.status) - statusSortValue(b.status) ||
     a.name.localeCompare(b.name)
   );
+}
+
+function isLibrary(library: Library | undefined): library is Library {
+  return Boolean(library);
 }
 
 function statusSortValue(status?: Library["status"]) {
