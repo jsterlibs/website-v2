@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "gustwind --build --output ./build --progress",
+    "build:cloudflare": "gustwind --build --output ./build --cache-from https://jster.net/ --progress",
     "build:validate": "gustwind --build --output ./build --validate --progress",
     "start": "gustwind --develop --port 3000",
     "serve": "gustwind --serve --input ./build --port 3000",

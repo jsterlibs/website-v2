@@ -6,15 +6,16 @@ This repository contains the source for jster.net.
 
 See `npm run` for available build targets.
 
-### Decompressing cache
+### Cloudflare build cache
 
-Run the following:
+Cloudflare uses the previously deployed site as Gustwind's cache source:
 
 ```
-CACHE_LOCATION=https://jster.pages.dev/cache.tar.gz npm run decompress:cache
+npm run build:cloudflare
 ```
 
-After this you'll have `.gustwind` if the cache was found at the url.
+That reads `https://jster.net/.gustwind/build-cache.json` and reuses route
+outputs from the deployed site when their fingerprints still match.
 
 ### Testing CF
 
