@@ -21,7 +21,7 @@ body: |
   * [varlock - Manage your .env](https://varlock.dev/)
   * [Knip - Declutter your JavaScript & TypeScript projects](https://knip.dev/)
   * [vercel-labs/agent-browser: Browser automation CLI for AI agents](/library/agent-browser)
-  * [fpapado/svg-use: Tools and bundler plugins, to ergonomically load SVG files via use[href]](https://buff.ly/WHGvolC)
+  * [fpapado/svg-use: Tools and bundler plugins, to ergonomically load SVG files via use[href]](/library/svg-use)
   * [Introducing Hono CLI](https://blog.yusu.ke/hono-cli/)
   * [npmx - Package Browser for the npm Registry](https://npmx.dev/)
   * [React2AWS - Infrastructure as React Components](https://www.react2aws.xyz/)

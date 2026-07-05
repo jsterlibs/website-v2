@@ -33,7 +33,6 @@ body: |
   ## Techniques
 
   * [Natural sorting of strings containing numbers](https://robinmalfait.com/blog/natural-sorting-of-strings-containing-numbers)
-  * [New alternatives to innerHTML](https://buff.ly/3Wrk7eq)
   * [How Omri saved 16% of their bundle size using a Babel plugin](https://engineering.monday.com/the-superpower-of-babel-how-we-saved-16-on-our-bundle-size/)
   * [Islands & Server Components & Resumability, Oh My!](https://dev.to/playfulprogramming/islands-server-components-resumability-oh-my-319d)
   * [Printing music with CSS Grid](https://cruncher.ch/blog/printing-music-with-css-grid/)
