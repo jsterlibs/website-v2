@@ -53,9 +53,7 @@
         "layout": "./site/layouts/og.html"
       }
     },
-    {
-      "path": "./node_modules/gustwind/plugins/sitemap/mod.js"
-    },
+    { "path": "./site/plugins/seo.ts" },
     {
       "path": "./node_modules/gustwind/plugins/stats/mod.js"
     }

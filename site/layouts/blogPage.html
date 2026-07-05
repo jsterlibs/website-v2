@@ -1,5 +1,8 @@
 <BaseLayout>
   <slot name="content">
+    <JsonLd
+      &data="(blogPostJsonLd (get context meta.url) (get context url) (get context pageMeta.title (get context meta.title)) (get context pageMeta.description (get context meta.description)) (get context document) (get context meta.siteName))"
+    />
     <div class="p-4 mx-auto max-w-5xl prose lg:prose-xl">
       <h1 &children="(get context document.title)"></h1>
       <div &children="(get context document.bodyHtml)"></div>

@@ -4,12 +4,18 @@
   name="description"
   &content="(get context pageMeta.description (get context meta.description 'JSter catalogues JavaScript libraries per purpose'))"
 />
+<meta
+  name="robots"
+  &visibleIf="(get context pageMeta.robots)"
+  &content="(get context pageMeta.robots)"
+/>
 <meta property="built" &content="(get context meta.built)" />
 <meta property="url" &content="(get context url)" />
+<link rel="canonical" &href="(canonicalUrl (get context meta.url) (get context url))" />
 
 <meta
   property="og:url"
-  &content="(urlJoin (get context meta.url) (trim (get context url) /))"
+  &content="(canonicalUrl (get context meta.url) (get context url))"
 />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" &content="(get context meta.siteName)" />

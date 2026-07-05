@@ -1,5 +1,8 @@
 <BaseLayout>
   <slot name="content">
+    <JsonLd
+      &data="(websiteJsonLd (get context meta.url) (get context meta.siteName) (get context meta.description))"
+    />
     <div class="p-4 mx-auto max-w-5xl">
       <AllCategories &categories="(get context parentCategories)" />
     </div>

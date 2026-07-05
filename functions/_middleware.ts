@@ -48,7 +48,9 @@ const abTest = async (context: EventContext<Env, "", {}>) => {
 
     if (id) {
       return renderWithIsr(context, () =>
-        renderCategoryResponse(pathname, getTag(id))
+        renderCategoryResponse(pathname, getTag(id), {
+          robots: "noindex,follow",
+        })
       );
     }
   }
@@ -73,6 +75,7 @@ export const onRequest = [abTest];
 async function renderCategoryResponse(
   pathname: string,
   categoryPromise: ReturnType<typeof getCategory> | ReturnType<typeof getTag>,
+  meta: { robots?: string } = {},
 ) {
   try {
     const category = await categoryPromise;
@@ -82,6 +85,7 @@ async function renderCategoryResponse(
       pageMeta: {
         title: `${category.title} – JSter`,
         description: `${category.title} JavaScript libraries`,
+        ...meta,
       },
     });
   } catch (error) {

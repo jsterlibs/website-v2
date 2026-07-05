@@ -40,7 +40,13 @@ export async function onRequest(
       library.security = security;
     }
 
-    const { markup } = await render("library", { library });
+    const { markup } = await render(`/library/${name}/`, {
+      library,
+      pageMeta: {
+        title: `${library.name} – JSter`,
+        description: library.description,
+      },
+    });
 
     return new Response(markup, {
       headers: {

@@ -1,5 +1,8 @@
 <BaseLayout>
   <slot name="content">
+    <JsonLd
+      &data="(libraryJsonLd (get context meta.url) (get context url) (get context library))"
+    />
     <div class="p-4 mx-auto max-w-3xl flex flex-col gap-4">
       <div class="flex flex-row gap-2">
         <div class="prose lg:prose-xl">
