@@ -1,4 +1,3 @@
-import { join } from "node:path";
 import { raw } from "gustwind/htmlisp";
 import YAML from "yaml";
 import getMarkdown from "./transforms/markdown.ts";
@@ -16,7 +15,6 @@ type IndexedBlogPost = BlogPost & {
   bodyHtml: ReturnType<typeof raw>;
 };
 
-const cacheDirectory = ".gustwind_cache";
 const categories = getJsonSync<Category[]>("data/categories.json");
 const blogIndex = getJsonSync<IndexEntry[]>("data/blogposts.json");
 const parentCategories = getJsonSync("data/parent-categories.json");
@@ -129,9 +127,6 @@ function init({ load }: { load: LoadApi }) {
     return library;
   }
 
-  // TODO: Extract the cache logic as it's useful beyond this use case.
-  // That feels like a good spot for supporting middlewares or webpack style
-  // loaders.
   async function getLibraries(): Promise<Library[]> {
     if (librariesPromise) {
       return librariesPromise;
@@ -163,28 +158,6 @@ function init({ load }: { load: LoadApi }) {
     const enhancedLibraries = await Promise.all(
       await libraries.map(async ({ path }) => {
         const library = await getJson<Library>(path);
-
-        if (library.links.github) {
-          const parts = library.links.github?.split("github.com/")[1];
-          const [org, repository] = parts.split("/");
-
-          if (!org || !repository) {
-            return library;
-          }
-
-          // Check cache before requesting
-          const cachePath = join(cacheDirectory, library.name + ".json");
-
-          try {
-            const cachedLibrary = JSON.parse(await load.textFile(cachePath));
-
-            return { stargazers: undefined, ...cachedLibrary };
-          } catch (_error) {
-            // no-op: Error here is ok as then it means the cache file doesn't exist yet
-          }
-
-          return { ...library, stargazers: undefined };
-        }
 
         return { ...library, stargazers: undefined };
       }),
