@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  &content="(get context meta.description 'JSter catalogues JavaScript libraries per purpose')"
+  &content="(get context pageMeta.description (get context meta.description 'JSter catalogues JavaScript libraries per purpose'))"
 />
 <meta property="built" &content="(get context meta.built)" />
 <meta property="url" &content="(get context url)" />
@@ -13,10 +13,13 @@
 />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" &content="(get context meta.siteName)" />
-<meta property="og:title" &content="(get context meta.title JSter)" />
+<meta
+  property="og:title"
+  &content="(get context pageMeta.title (get context meta.title JSter))"
+/>
 <meta
   property="og:description"
-  &content="(get context meta.description 'JSter catalogues JavaScript libraries per purpose')"
+  &content="(get context pageMeta.description (get context meta.description 'JSter catalogues JavaScript libraries per purpose'))"
 />
 <meta
   property="og:image"
@@ -25,14 +28,17 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:site" content="@jsterlibs" />
-<meta property="twitter:title" &content="(get context meta.title JSter)" />
+<meta
+  property="twitter:title"
+  &content="(get context pageMeta.title (get context meta.title JSter))"
+/>
 <meta
   property="twitter:description"
-  &content="(get context meta.description 'JSter catalogues JavaScript libraries per purpose')"
+  &content="(get context pageMeta.description (get context meta.description 'JSter catalogues JavaScript libraries per purpose'))"
 />
 <meta
   property="twitter:image"
   &content="(urlJoin (get context meta.url) (trim (get context url) /) og.png)"
 />
 
-<title &children="(get context meta.title JSter)"></title>
+<title &children="(get context pageMeta.title (get context meta.title JSter))"></title>

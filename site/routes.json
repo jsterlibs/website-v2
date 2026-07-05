@@ -56,37 +56,6 @@
       }
     }
   },
-  "tag": {
-    "expand": {
-      "matchBy": {
-        "name": "tags",
-        "indexer": {
-          "operation": "indexTags",
-          "parameters": []
-        },
-        "slug": "id"
-      },
-      "dataSources": {
-        "category": {
-          "operation": "processTag",
-          "parameters": []
-        }
-      },
-      "layout": "categoryPage",
-      "context": {
-        "meta": {
-          "title": {
-            "utility": "get",
-            "parameters": ["context", "category.title"]
-          },
-          "description": {
-            "utility": "get",
-            "parameters": ["context", "category.description"]
-          }
-        }
-      }
-    }
-  },
   "about": {
     "meta": {
       "title": "JSter – About",

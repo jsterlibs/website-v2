@@ -43,7 +43,7 @@
     fill="#111827"
     font-size="44"
     letter-spacing="0"
-    &children="(escapeXml (get context meta.title JSter))"
+    &children="(escapeXml (get context pageMeta.title (get context meta.title JSter)))"
   />
   <text
     x="126"
@@ -52,7 +52,7 @@
     fill="#475569"
     font-size="34"
     letter-spacing="0"
-    &children="(escapeXml (get context meta.description 'JSter catalogues JavaScript libraries per purpose'))"
+    &children="(escapeXml (get context pageMeta.description (get context meta.description 'JSter catalogues JavaScript libraries per purpose')))"
   />
   <text x="126" y="492" class="body" fill="#64748b" font-size="28">
     jster.net
