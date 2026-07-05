@@ -184,6 +184,7 @@ function init({ load }: { load: LoadApi }) {
     return {
       ...category,
       libraries: [],
+      hasLibraries: false,
       pageSize: CATEGORY_PAGE_SIZE,
       sourceType: "category",
     };

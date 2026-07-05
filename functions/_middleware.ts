@@ -38,7 +38,10 @@ const abTest = async (context: EventContext<Env, "", {}>) => {
 
     if (id) {
       return renderWithIsr(context, () =>
-        renderCategoryResponse(pathname, getCategory(id))
+        renderCategoryResponse(
+          pathname,
+          getCategory(id, getCatalogOptions(url)),
+        )
       );
     }
   }
@@ -48,9 +51,13 @@ const abTest = async (context: EventContext<Env, "", {}>) => {
 
     if (id) {
       return renderWithIsr(context, () =>
-        renderCategoryResponse(pathname, getTag(id), {
-          robots: "noindex,follow",
-        })
+        renderCategoryResponse(
+          pathname,
+          getTag(id, getCatalogOptions(url)),
+          {
+            robots: "noindex,follow",
+          },
+        )
       );
     }
   }
@@ -143,6 +150,23 @@ function getPathSegment(pathname: string, base: string) {
     .split("/");
 
   return segment ? decodeURIComponent(segment) : "";
+}
+
+function getCatalogOptions(url: URL) {
+  return {
+    page: parsePositiveInteger(url.searchParams.get("page"), 1),
+    pathname: url.pathname,
+  };
+}
+
+function parsePositiveInteger(value: string | null, fallback: number) {
+  if (!value) {
+    return fallback;
+  }
+
+  const parsed = Number.parseInt(value, 10);
+
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
 }
 
 function isMissingSourceError(error: unknown) {

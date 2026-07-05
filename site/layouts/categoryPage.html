@@ -7,13 +7,58 @@
       <h1 class="text-xl" &children="(get context category.title)"></h1>
       <div
         data-catalog
+        &data-rendered="(get context category.hasLibraries)"
         &data-source="(get context category.sourceType category)"
         &data-id="(get context category.id)"
         &data-page-size="(get context category.pageSize 100)"
       >
-        <p class="text-gray-700">Loading libraries...</p>
+        <div
+          &visibleIf="(get context category.hasLibraries)"
+          class="flex flex-col gap-4"
+        >
+          <p class="text-sm text-gray-700">
+            Showing page
+            <span &children="(get context category.page)"></span>
+            of
+            <span &children="(get context category.pageCount)"></span>
+            (<span &children="(get context category.totalLibraries)"></span>
+            libraries)
+          </p>
+          <AllLibraries &libraries="(get context category.libraries)" />
+          <nav
+            &visibleIf="(get context category.hasPagination)"
+            class="flex items-center justify-between gap-4 border-t border-gray-200 pt-4"
+          >
+            <SiteLink
+              &visibleIf="(get context category.previousPageUrl)"
+              &href="(get context category.previousPageUrl)"
+              class="rounded border border-gray-300 px-3 py-2 no-underline hover:bg-gray-100"
+            >
+              Previous
+            </SiteLink>
+            <span class="text-sm text-gray-700">
+              Page
+              <span &children="(get context category.page)"></span>
+              of
+              <span &children="(get context category.pageCount)"></span>
+            </span>
+            <SiteLink
+              &visibleIf="(get context category.nextPageUrl)"
+              &href="(get context category.nextPageUrl)"
+              class="rounded border border-gray-300 px-3 py-2 no-underline hover:bg-gray-100"
+            >
+              Next
+            </SiteLink>
+          </nav>
+        </div>
+        <p
+          &visibleIf="(not (get context category.hasLibraries))"
+          class="text-gray-700"
+        >
+          Loading libraries...
+        </p>
       </div>
-      <noscript>
+      <noscript &visibleIf="(not (get context category.hasLibraries))">
         <p class="text-gray-700">
           Enable JavaScript to browse this catalog list.
         </p>

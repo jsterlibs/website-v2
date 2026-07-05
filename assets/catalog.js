@@ -1,7 +1,9 @@
 const containers = document.querySelectorAll("[data-catalog]");
 
 for (const container of containers) {
-  loadCatalog(container);
+  if (container.dataset.rendered !== "true") {
+    loadCatalog(container);
+  }
 }
 
 async function loadCatalog(container) {

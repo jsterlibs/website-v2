@@ -34,9 +34,22 @@ function fetchJson<T>(path: string): Promise<T> {
   return promise as Promise<T>;
 }
 
-async function getCategory(id: string) {
+async function getCategory(
+  id: string,
+  {
+    page = 1,
+    pageSize = DEFAULT_PAGE_SIZE,
+    pathname = `/category/${id}/`,
+  } = {},
+) {
   const categories = await fetchJson<CategoryIndexEntry[]>(
     "data/categories.json",
+  );
+  const catalogPage = await getCategoryLibraries(
+    "category",
+    id,
+    page,
+    pageSize,
   );
   const category = categories.find((entry) => entry.id === id);
 
@@ -46,19 +59,26 @@ async function getCategory(id: string) {
 
   return {
     ...category,
-    libraries: [],
-    pageSize: DEFAULT_PAGE_SIZE,
+    ...catalogPage,
+    hasLibraries: catalogPage.libraries.length > 0,
     sourceType: "category",
+    ...getPaginationUrls(pathname, catalogPage.page, catalogPage.pageCount),
   };
 }
 
-async function getTag(id: string) {
+async function getTag(
+  id: string,
+  { page = 1, pageSize = DEFAULT_PAGE_SIZE, pathname = `/tag/${id}/` } = {},
+) {
+  const catalogPage = await getCategoryLibraries("tag", id, page, pageSize);
+
   return {
     id,
     title: id,
-    libraries: [],
-    pageSize: DEFAULT_PAGE_SIZE,
+    ...catalogPage,
+    hasLibraries: catalogPage.libraries.length > 0,
     sourceType: "tag",
+    ...getPaginationUrls(pathname, catalogPage.page, catalogPage.pageCount),
   };
 }
 
@@ -110,6 +130,22 @@ function compareLibrariesForIndex(a: Library, b: Library) {
 
 function statusSortValue(status?: Library["status"]) {
   return status ? 1 : 0;
+}
+
+function getPaginationUrls(pathname: string, page: number, pageCount: number) {
+  return {
+    hasPagination: pageCount > 1,
+    previousPageUrl: page > 1 ? pageUrl(pathname, page - 1) : "",
+    nextPageUrl: page < pageCount ? pageUrl(pathname, page + 1) : "",
+  };
+}
+
+function pageUrl(pathname: string, page: number) {
+  if (page <= 1) {
+    return pathname;
+  }
+
+  return `${pathname}?page=${page}`;
 }
 
 export { getBlogPosts, getCategory, getCategoryLibraries, getTag };
