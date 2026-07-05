@@ -34,7 +34,7 @@ function getTransformMarkdown(load?: Pick<LoadApi, "textFileSync">) {
 
     const tableOfContents: TableOfContentsEntry[] = [];
     const headingAnchors = tableOfContents;
-    const data = { tableOfContents };
+    const data = { hasCodeBlocks: false, tableOfContents };
     const result = markdownToHtml(input, {
       data,
       features: {
@@ -45,7 +45,7 @@ function getTransformMarkdown(load?: Pick<LoadApi, "textFileSync">) {
       hastPlugins: [createJsterHastPlugin({ headingAnchors })],
     }) as MarkdownToHtmlResult;
 
-    return { content: result.html, tableOfContents };
+    return { content: result.html, hasCodeBlocks: data.hasCodeBlocks, tableOfContents };
   };
 }
 
@@ -58,6 +58,7 @@ function createJsterMdastPlugin(
   return defineMdastPlugin({
     name: "jster-markdown-mdast",
     code(node: Readonly<Code>, ctx) {
+      ctx.data.hasCodeBlocks = true;
       ctx.replaceNode(node, {
         rawHtml: renderCodeBlock({
           code: node.value,
@@ -85,6 +86,7 @@ function createJsterMdastPlugin(
         return;
       }
 
+      ctx.data.hasCodeBlocks = true;
       ctx.replaceNode(node, {
         rawHtml: renderCodeBlock({
           code: load?.textFileSync(child.url) || "",

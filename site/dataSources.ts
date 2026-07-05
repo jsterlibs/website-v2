@@ -13,6 +13,7 @@ type BlogPostFile = {
 };
 type IndexedBlogPost = BlogPost & {
   bodyHtml: ReturnType<typeof raw>;
+  hasCodeBlocks: boolean;
 };
 
 const categories = getJsonSync<Category[]>("data/categories.json");
@@ -84,7 +85,8 @@ function init({ load }: { load: LoadApi }) {
         blogIndex.map(async ({ id, url, date }: IndexEntry) => {
           const matchingBlogPost = blogPosts.find(({ slug }) => slug === id);
           const bodySource = matchingBlogPost?.body || "";
-          const body = markdown(bodySource).content;
+          const renderedBody = markdown(bodySource);
+          const body = renderedBody.content;
 
           if (!matchingBlogPost) {
             console.warn("No matching blog post found for", id);
@@ -105,6 +107,7 @@ function init({ load }: { load: LoadApi }) {
             // This is needed for RSS
             body,
             bodyHtml: raw(body),
+            hasCodeBlocks: renderedBody.hasCodeBlocks,
           };
         }),
       )
@@ -116,7 +119,13 @@ function init({ load }: { load: LoadApi }) {
       return blogPost;
     }
 
-    return { ...blogPost, bodyHtml: raw(markdown(blogPost.body || "").content) };
+    const renderedBody = markdown(blogPost.body || "");
+
+    return {
+      ...blogPost,
+      bodyHtml: raw(renderedBody.content),
+      hasCodeBlocks: renderedBody.hasCodeBlocks,
+    };
   }
 
   function indexLibraries() {
