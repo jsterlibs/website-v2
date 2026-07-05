@@ -56,7 +56,7 @@ function renderSummary({ page, pageCount, totalLibraries }) {
 
 function renderLibraries(libraries) {
   const list = document.createElement("ul");
-  list.className = "grid md:grid-cols-2 lg:grid-cols-3 gap-4";
+  list.className = "catalog-list";
 
   for (const library of libraries) {
     list.append(renderLibrary(library));
@@ -67,19 +67,17 @@ function renderLibraries(libraries) {
 
 function renderLibrary(library) {
   const item = document.createElement("li");
-  item.className = "my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4";
+  item.className = "catalog-card";
 
   const title = document.createElement("a");
-  title.className =
-    "underline bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg";
+  title.className = "catalog-card-title";
   title.href = `/library/${library.id}`;
   title.textContent = library.name;
   item.append(title);
 
   if (library.status) {
     const status = document.createElement("div");
-    status.className =
-      "self-start border border-amber-300 bg-amber-50 px-2 py-1 text-xs text-amber-950";
+    status.className = "catalog-status";
     status.textContent = "Possibly inactive";
     item.append(status);
   }
@@ -95,14 +93,30 @@ function renderLibrary(library) {
 
 function renderLibraryLinks(library) {
   const links = document.createElement("div");
-  links.className = "flex justify-between";
+  links.className = "catalog-meta";
+
+  if (library.stargazers) {
+    const stars = document.createElement("div");
+    const label = document.createElement("span");
+    const count = document.createElement("span");
+    stars.className = "flex gap-1";
+    label.className = "catalog-meta-label";
+    label.textContent = "Stars";
+    count.textContent = library.stargazers;
+    stars.append(label, count);
+    links.append(stars);
+  }
 
   if (library.links?.site) {
-    links.append(renderLink("Homepage", library.links.site));
+    const link = renderLink("Homepage", library.links.site);
+    link.className = "catalog-meta-link";
+    links.append(link);
   }
 
   if (library.links?.github) {
-    links.append(renderLink("GitHub page", library.links.github));
+    const link = renderLink("GitHub", library.links.github);
+    link.className = "catalog-meta-link";
+    links.append(link);
   }
 
   return links;
@@ -110,13 +124,12 @@ function renderLibraryLinks(library) {
 
 function renderTags(tags) {
   const list = document.createElement("ul");
-  list.className = "flex flex-row flex-wrap gap-x-2 gap-y-4";
+  list.className = "catalog-tags";
 
   for (const tag of tags) {
     const item = document.createElement("li");
     const link = renderLink(tag, `/tag/${tag}/`);
-    link.className =
-      "p-1 rounded-full border bg-violet-200 hover:bg-violet-300 font-extralight text-sm";
+    link.className = "catalog-tag";
 
     item.append(link);
     list.append(item);
@@ -164,8 +177,7 @@ function renderPagination({ page, pageCount }) {
 
 function renderPageLink(label, page) {
   const link = renderLink(label, pageUrl(page));
-  link.className =
-    "rounded border border-gray-300 px-3 py-2 no-underline hover:bg-gray-100";
+  link.className = "catalog-pagination-link";
 
   return link;
 }

@@ -19,8 +19,6 @@
     "build": "gustwind --build --output ./build --progress",
     "build:cloudflare": "gustwind --build --output ./build --cache-from https://jster.net/ --progress",
     "build:validate": "gustwind --build --output ./build --validate --progress",
-    "start": "gustwind --develop --port 3000",
-    "serve": "gustwind --serve --input ./build --port 3000",
     "pages:dev": "wrangler pages dev build --compatibility-flags=\"nodejs_compat\" --compatibility-date=2024-03-05",
     "check:links": "node ./scripts/check-links.mjs",
     "check:links:external": "node ./scripts/check-links.mjs --external",

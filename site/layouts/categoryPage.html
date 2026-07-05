@@ -3,8 +3,15 @@
     <JsonLd
       &data="(collectionPageJsonLd (get context meta.url) (get context url) (get context pageMeta.title (get context meta.title)) (get context pageMeta.description (get context meta.description)) (get context category.libraries))"
     />
-    <div class="p-4 mx-auto max-w-5xl flex flex-col gap-4">
-      <h1 class="text-xl" &children="(get context category.title)"></h1>
+    <div class="catalog-surface">
+    <div class="p-4 py-8 mx-auto max-w-5xl flex flex-col gap-6">
+      <header class="flex flex-col gap-2">
+        <h1 class="catalog-heading" &children="(get context category.title)"></h1>
+        <p class="catalog-kicker">
+          A focused slice of the JSter catalog. Use the library cards for
+          source links, tags, and maintenance signals.
+        </p>
+      </header>
       <div
         data-catalog
         &data-rendered="(get context category.hasLibraries)"
@@ -32,7 +39,7 @@
             <SiteLink
               &visibleIf="(get context category.previousPageUrl)"
               &href="(get context category.previousPageUrl)"
-              class="rounded border border-gray-300 px-3 py-2 no-underline hover:bg-gray-100"
+              class="catalog-pagination-link"
             >
               Previous
             </SiteLink>
@@ -45,7 +52,7 @@
             <SiteLink
               &visibleIf="(get context category.nextPageUrl)"
               &href="(get context category.nextPageUrl)"
-              class="rounded border border-gray-300 px-3 py-2 no-underline hover:bg-gray-100"
+              class="catalog-pagination-link"
             >
               Next
             </SiteLink>
@@ -63,6 +70,7 @@
           Enable JavaScript to browse this catalog list.
         </p>
       </noscript>
+    </div>
     </div>
     <script type="module" src="/assets/catalog.js"></script>
   </slot>

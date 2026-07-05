@@ -3,9 +3,17 @@
     <JsonLd
       &data="(catalogJsonLd (get context meta.url) (get context url) (get context meta.title) (get context meta.description) (get context parentCategories))"
     />
-    <div class="p-4 mx-auto max-w-5xl">
-      <h1>Catalog</h1>
+    <div class="catalog-surface">
+    <div class="p-4 py-8 mx-auto max-w-5xl flex flex-col gap-6">
+      <header class="flex flex-col gap-2">
+        <h1 class="catalog-heading">Catalog</h1>
+        <p class="catalog-kicker">
+          Browse the JSter library index by purpose. Categories are grouped for
+          fast scanning, with each section leading into focused library lists.
+        </p>
+      </header>
       <AllCategories &categories="(get context parentCategories)" />
+    </div>
     </div>
   </slot>
 </BaseLayout>

@@ -1,36 +1,38 @@
 <div>
   <ul
-    class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+    class="catalog-list"
     &foreach="(get props libraries)"
   >
-    <li class="my-4 flex flex-col gap-4 w-full bg-gray-200 rounded-lg p-4">
+    <li class="catalog-card">
       <SiteLink
-        class="bg-gray-100 hover:bg-gray-300 text-gray-800 p-4 border-fuchsia-600 rounded-lg"
+        class="catalog-card-title"
         &children="(get props name)"
         &href="(concat /library/ (get props id))"
       ></SiteLink>
       <div
         &visibleIf="(get props status)"
-        class="self-start border border-amber-300 bg-amber-50 px-2 py-1 text-xs text-amber-950"
+        class="catalog-status"
       >
         Possibly inactive
       </div>
-      <div class="flex justify-between">
+      <div class="catalog-meta">
         <div &visibleIf="(get props stargazers)" class="flex gap-1">
-          <span>Stars:</span>
+          <span class="catalog-meta-label">Stars</span>
           <span &children="(get props stargazers)"></span>
         </div>
         <SiteLink
           &visibleIf="(get props links.site)"
           &href="(get props links.site)"
+          class="catalog-meta-link"
         >
           Homepage
         </SiteLink>
         <SiteLink
           &visibleIf="(get props links.github)"
           &href="(get props links.github)"
+          class="catalog-meta-link"
         >
-          GitHub page
+          GitHub
         </SiteLink>
       </div>
       <Tags &tags="(get props tags)" />
