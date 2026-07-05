@@ -3,7 +3,7 @@
     <JsonLd
       &data="(blogIndexJsonLd (get context meta.url) (get context url) (get context pageMeta.title (get context meta.title)) (get context pageMeta.description (get context meta.description)) (get context blogPosts))"
     />
-    <div class="p-4 mx-auto max-w-5xl prose lg:prose-xl">
+    <div class="p-4 mx-auto max-w-5xl rich-text">
       <h1>Blog</h1>
       <BlogPosts &blogPosts="(get context blogPosts)" />
     </div>

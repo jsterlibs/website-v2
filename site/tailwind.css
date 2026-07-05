@@ -1,5 +1,138 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
+
+@layer components {
+  .rich-text {
+    color: var(--color-gray-700);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .rich-text :where(> :first-child) {
+    margin-top: 0;
+  }
+
+  .rich-text :where(> :last-child) {
+    margin-bottom: 0;
+  }
+
+  .rich-text :where(h1, h2, h3, h4) {
+    color: var(--color-gray-800);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .rich-text :where(h1) {
+    margin: 0 0 0.9em;
+    font-size: 2.25em;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  .rich-text :where(h2) {
+    margin: 2em 0 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .rich-text :where(h3) {
+    margin: 1.6em 0 0.6em;
+    font-size: 1.25em;
+  }
+
+  .rich-text :where(h4) {
+    margin: 1.5em 0 0.5em;
+  }
+
+  .rich-text :where(p, ul, ol, blockquote, pre, table, figure) {
+    margin-block: 1.25em;
+  }
+
+  .rich-text :where(a) {
+    font-weight: 500;
+  }
+
+  .rich-text :where(ul) {
+    list-style-type: disc;
+    padding-inline-start: 1.625em;
+  }
+
+  .rich-text :where(ol) {
+    list-style-type: decimal;
+    padding-inline-start: 1.625em;
+  }
+
+  .rich-text :where(li) {
+    margin-block: 0.5em;
+  }
+
+  .rich-text :where(blockquote) {
+    border-inline-start: 0.25rem solid var(--color-gray-200);
+    color: var(--color-gray-800);
+    font-style: italic;
+    font-weight: 500;
+    padding-inline-start: 1em;
+  }
+
+  .rich-text :where(pre) {
+    border-radius: 0.375rem;
+    font-size: 0.875em;
+    line-height: 1.7;
+    padding: 0.875em 1.125em;
+  }
+
+  .rich-text :where(:not(pre) > code) {
+    color: var(--color-gray-800);
+    font-size: 0.875em;
+    font-weight: 600;
+  }
+
+  .rich-text :where(img, video) {
+    height: auto;
+    margin-block: 2em;
+    max-width: 100%;
+  }
+
+  .rich-text :where(table) {
+    border-collapse: collapse;
+    font-size: 0.875em;
+    line-height: 1.7;
+    width: 100%;
+  }
+
+  .rich-text :where(th, td) {
+    border-bottom: 1px solid var(--color-gray-200);
+    padding: 0.55em;
+    text-align: start;
+    vertical-align: baseline;
+  }
+
+  .rich-text :where(th) {
+    color: var(--color-gray-800);
+    font-weight: 600;
+  }
+
+  @media (width >= 64rem) {
+    .rich-text {
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    .rich-text :where(h1) {
+      font-size: 2.8em;
+      line-height: 1;
+    }
+
+    .rich-text :where(h2) {
+      font-size: 1.8em;
+      line-height: 1.12;
+    }
+
+    .rich-text :where(h3) {
+      font-size: 1.5em;
+      line-height: 1.35;
+    }
+  }
+}
 
 @utility btn {
   @apply font-bold py-2 px-4 rounded;

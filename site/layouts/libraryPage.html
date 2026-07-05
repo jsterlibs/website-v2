@@ -5,11 +5,11 @@
     />
     <div class="p-4 mx-auto max-w-3xl flex flex-col gap-4">
       <div class="flex flex-row gap-2">
-        <div class="prose lg:prose-xl">
+        <div class="rich-text max-w-[65ch]">
           <h1 &children="(get context library.name)"></h1>
           <div
             &visibleIf="(get context library.status)"
-            class="not-prose border border-amber-300 bg-amber-50 text-amber-950 p-3 text-sm"
+            class="border border-amber-300 bg-amber-50 text-amber-950 p-3 text-sm"
           >
             This catalog entry has been flagged as old or possibly inactive.
             The page remains available for historical context.
