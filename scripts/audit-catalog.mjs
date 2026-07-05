@@ -231,7 +231,7 @@ function auditLibrary({ library, categories, references, metadata }) {
     id: library.id,
     name: library.name,
     currentStatus: library.status || "",
-    suggestedStatus: suggestedStatus(score, metadata),
+    suggestedStatus: suggestedStatus(library.status, score, metadata),
     score,
     recommendation: recommendation(score),
     categories,
@@ -265,7 +265,13 @@ function recommendation(score) {
   return "keep";
 }
 
-function suggestedStatus(score, metadata) {
+function suggestedStatus(currentStatus, score, metadata) {
+  const nextStatus = resolveSuggestedStatus(score, metadata);
+
+  return currentStatus === nextStatus ? "" : nextStatus;
+}
+
+function resolveSuggestedStatus(score, metadata) {
   if (metadata.archived) {
     return "archived";
   }
