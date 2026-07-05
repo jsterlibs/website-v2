@@ -206,7 +206,8 @@ function init({ load }: { load: LoadApi }) {
         await getJson<Library[]>(`data/categories/${category.id}.json`)
       )
         .map((l) => librariesById.get(l.id))
-        .filter(Boolean),
+        .filter(Boolean)
+        .sort(compareLibrariesForIndex),
     };
   }
 
@@ -231,7 +232,8 @@ function init({ load }: { load: LoadApi }) {
               return foundLibrary;
             }
           })
-          .filter(Boolean),
+          .filter(Boolean)
+          .sort(compareLibrariesForIndex),
       })),
     );
   }
@@ -258,6 +260,17 @@ function escapeHtml(input: string) {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
+}
+
+function compareLibrariesForIndex(a: Library, b: Library) {
+  return (
+    statusSortValue(a.status) - statusSortValue(b.status) ||
+    a.name.localeCompare(b.name)
+  );
+}
+
+function statusSortValue(status?: Library["status"]) {
+  return status ? 1 : 0;
 }
 
 export { init };

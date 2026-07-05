@@ -15,6 +15,7 @@ const ZLibrary = z.object({
     github: z.string().optional(),
   }),
   tags: z.array(z.string()),
+  status: z.enum(["stale", "archived", "deprecated"]).optional(),
   stargazers: z.number().optional(),
   // There is more data available but only a subset is used for now.
   security: z

@@ -364,7 +364,7 @@ function extractEntries(body) {
     }
 
     const markdown = line.match(
-      /^\s*[-*]\s+\[([^\]]+)\]\(([^)]+)\)(?:\s+-\s+(.*))?\s*$/,
+      /^\s*[-*]\s+\[(.+)\]\(([^)]+)\)(?:\s+-\s+(.*))?\s*$/,
     );
 
     if (markdown) {

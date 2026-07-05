@@ -28,6 +28,12 @@
         &children="(get props name)"
         &href="(concat /library/ (get props id))"
       ></SiteLink>
+      <div
+        &visibleIf="(get props status)"
+        class="self-start border border-amber-300 bg-amber-50 px-2 py-1 text-xs text-amber-950"
+      >
+        Possibly inactive
+      </div>
       <div class="flex justify-between">
         <div &visibleIf="(get props stargazers)" class="flex gap-1">
           <span>Stars:</span>

@@ -7,6 +7,13 @@
       <div class="flex flex-row gap-2">
         <div class="prose lg:prose-xl">
           <h1 &children="(get context library.name)"></h1>
+          <div
+            &visibleIf="(get context library.status)"
+            class="not-prose border border-amber-300 bg-amber-50 text-amber-950 p-3 text-sm"
+          >
+            This catalog entry has been flagged as old or possibly inactive.
+            The page remains available for historical context.
+          </div>
           <p &children="(get context library.description)"></p>
         </div>
         <div class="flex flex-col gap-4">

@@ -24,6 +24,7 @@
     "pages:dev": "wrangler pages dev build --compatibility-flags=\"nodejs_compat\" --compatibility-date=2024-03-05",
     "check:links": "node ./scripts/check-links.mjs",
     "check:links:external": "node ./scripts/check-links.mjs --external",
+    "audit:catalog": "node ./scripts/audit-catalog.mjs",
     "copy:css": "node ./scripts/copy-tailwind-css.mjs",
     "generate:manifest": "node ./scripts/generate-manifest.mjs",
     "fetch:new-jster": "node ./scripts/fetch-new-jster.mjs"

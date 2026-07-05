@@ -560,7 +560,7 @@ function parseMarkdownEntries(markdown) {
       continue;
     }
 
-    const item = line.match(/^\s*[-*]\s+\[([^\]]+)\]\(([^)]+)\)(?:\s+-\s+(.*))?\s*$/);
+    const item = line.match(/^\s*[-*]\s+\[(.+)\]\(([^)]+)\)(?:\s+-\s+(.*))?\s*$/);
 
     if (item) {
       entries.push({
