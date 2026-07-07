@@ -1,0 +1,8 @@
+; DNS for AI Discovery (DNS-AID) records for jster.net.
+; Publish these records in the public DNS zone and enable DNSSEC signing.
+;
+; The key65420 parameter is an experimental DNS-AID endpoint hint until the
+; custom SvcParamKey values are registered.
+
+_index._agents.jster.net. 3600 IN HTTPS 1 jster.net. alpn="h2,h3" port=443 mandatory=alpn,port key65420="/.well-known/agent-skills/index.json"
+_mcp._agents.jster.net. 3600 IN HTTPS 1 jster.net. alpn="h2,h3" port=443 mandatory=alpn,port key65420="/.well-known/mcp/server-card.json"

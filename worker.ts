@@ -21,6 +21,8 @@ const ONE_DAY = ONE_HOUR * 24;
 const ONE_WEEK = ONE_DAY * 7;
 const DEFAULT_PAGE_SIZE = 100;
 const SITE_URL = "https://jster.net";
+const OAUTH_ISSUER = SITE_URL;
+const AUTH_MD_URL = `${SITE_URL}/auth.md`;
 const CATALOG_SKILL_MD = [
   "# JSter Catalog Discovery",
   "",
@@ -39,6 +41,8 @@ const CATALOG_SKILL_MD = [
 const DISCOVERY_LINKS = [
   '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
   '</.well-known/openapi.json>; rel="service-desc"; type="application/openapi+json"',
+  '</.well-known/oauth-authorization-server>; rel="oauth-authorization-server"; type="application/json"',
+  '</.well-known/oauth-protected-resource>; rel="oauth-protected-resource"; type="application/json"',
   '</catalog/>; rel="service-doc"; type="text/html"',
   '</auth.md>; rel="service-doc"; type="text/markdown"',
   '</.well-known/agent-skills/index.json>; rel="service-desc"; type="application/json"',
@@ -78,6 +82,21 @@ async function handleRequest(request: Request, env: WorkerEnv) {
 
   if (pathname === "/.well-known/openapi.json") {
     return openApiResponse();
+  }
+
+  if (
+    pathname === "/.well-known/oauth-authorization-server" ||
+    pathname === "/.well-known/openid-configuration"
+  ) {
+    return oauthAuthorizationServerResponse();
+  }
+
+  if (pathname === "/.well-known/oauth-protected-resource") {
+    return oauthProtectedResourceResponse();
+  }
+
+  if (pathname === "/.well-known/jwks.json") {
+    return jwksResponse();
   }
 
   if (pathname === "/.well-known/agent-skills/index.json") {
@@ -415,6 +434,56 @@ function openApiResponse() {
   );
 }
 
+function oauthAuthorizationServerResponse() {
+  return jsonResponse(
+    {
+      issuer: OAUTH_ISSUER,
+      authorization_endpoint: `${SITE_URL}/auth.md#authorization`,
+      token_endpoint: `${SITE_URL}/auth.md#tokens`,
+      jwks_uri: `${SITE_URL}/.well-known/jwks.json`,
+      registration_endpoint: `${SITE_URL}/auth.md#agent-registration`,
+      scopes_supported: ["catalog:read"],
+      response_types_supported: ["none"],
+      grant_types_supported: ["none"],
+      token_endpoint_auth_methods_supported: ["none"],
+      service_documentation: AUTH_MD_URL,
+      agent_auth: {
+        skill:
+          "https://isitagentready.com/.well-known/agent-skills/auth-md/SKILL.md",
+        register_uri: `${SITE_URL}/auth.md#agent-registration`,
+        identity_types_supported: ["anonymous"],
+        anonymous: {
+          credential_types_supported: ["none"],
+          claim_uri: `${SITE_URL}/auth.md#anonymous-access`,
+        },
+      },
+    },
+    200,
+  );
+}
+
+function oauthProtectedResourceResponse() {
+  return jsonResponse(
+    {
+      resource: `${SITE_URL}/api/`,
+      authorization_servers: [OAUTH_ISSUER],
+      scopes_supported: ["catalog:read"],
+      bearer_methods_supported: ["header"],
+      resource_documentation: `${SITE_URL}/.well-known/api-catalog`,
+    },
+    200,
+  );
+}
+
+function jwksResponse() {
+  return jsonResponse(
+    {
+      keys: [],
+    },
+    200,
+  );
+}
+
 async function agentSkillsIndexResponse() {
   return jsonResponse(
     {
@@ -438,16 +507,36 @@ async function agentSkillsIndexResponse() {
 function authMdResponse() {
   return markdownTextResponse(
     [
-      "# JSter Agent Access",
+      "# JSter auth.md",
       "",
-      "JSter exposes public, read-only catalog pages and API endpoints.",
+      "JSter exposes public, read-only catalog pages and API endpoints for agents.",
       "",
-      "Agent registration is not required. OAuth/OIDC credentials are not issued for the public catalog API.",
+      "## Agent Registration",
+      "",
+      "Agent registration is not required for the public catalog API. Agents may access catalog resources anonymously.",
+      "",
+      "## Anonymous Access",
+      "",
+      "Supported identity type: anonymous.",
+      "",
+      "Supported credential type: none.",
+      "",
+      "Required scope: catalog:read.",
+      "",
+      "## Authorization",
+      "",
+      "OAuth/OIDC credentials are not issued because the catalog API does not require authentication.",
+      "",
+      "## Tokens",
+      "",
+      "Access tokens are not required for public catalog reads.",
       "",
       "Useful discovery resources:",
       "",
       "- `/.well-known/api-catalog`",
       "- `/.well-known/openapi.json`",
+      "- `/.well-known/oauth-authorization-server`",
+      "- `/.well-known/oauth-protected-resource`",
       "- `/catalog/`",
       "",
     ].join("\n"),
@@ -463,6 +552,10 @@ function mcpServerCardResponse() {
       },
       description:
         "JSter exposes JavaScript catalog navigation tools to browser agents through WebMCP.",
+      transport: {
+        type: "webmcp",
+        endpoint: SITE_URL,
+      },
       transports: [
         {
           type: "webmcp",
