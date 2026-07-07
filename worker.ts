@@ -67,6 +67,7 @@ const TAG_REDIRECTS: Record<string, string> = {
   opensource: "open-source",
   p2p: "peer-to-peer",
   param: "parameter",
+  perfomance: "performance",
   progressbar: "progress",
   "range.": "range",
   organization: "organizational",
