@@ -244,8 +244,27 @@ function escapeHtml(input: string) {
 function compareLibrariesForIndex(a: Library, b: Library) {
   return (
     statusSortValue(a.status) - statusSortValue(b.status) ||
+    qualitySortValue(a) - qualitySortValue(b) ||
     a.name.localeCompare(b.name)
   );
+}
+
+function qualitySortValue(library: Library) {
+  let score = 0;
+
+  if (/^JavaScript project mentioned in\b/.test(library.description || "")) {
+    score += 2;
+  }
+
+  if ((library.logo || "") === "/images/repo.png") {
+    score += 1;
+  }
+
+  if (!library.links?.site && !library.links?.github) {
+    score += 1;
+  }
+
+  return score;
 }
 
 function isLibrary(library: Library | undefined): library is Library {
