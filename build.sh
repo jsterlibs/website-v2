@@ -14,7 +14,6 @@ else
   npm run build:cloudflare
 fi
 
-npm run copy:css
 npm run generate:manifest
 
 mkdir -p "$cache_root"
