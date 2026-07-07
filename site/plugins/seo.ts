@@ -1,7 +1,13 @@
 import { readdir, readFile } from "node:fs/promises";
 import * as path from "node:path";
+import YAML from "yaml";
 
 type BlogIndexEntry = { id: string; date?: string; url?: string };
+type BlogSource = {
+  body?: string;
+  slug?: string;
+  title?: string;
+};
 type CategoryIndexEntry = { id: string };
 
 const STATIC_PATHS = ["/", "/about/", "/blog/", "/catalog/", "/atom.xml"];
@@ -25,6 +31,7 @@ const plugin = {
           outputDirectory: path.join(cwd, outputDirectory),
           siteUrl,
         });
+        const blogMarkdownFiles = await buildBlogMarkdownFiles(cwd, outputDirectory);
 
         return [
           {
@@ -43,6 +50,7 @@ const plugin = {
               data: sitemapXml,
             },
           },
+          ...blogMarkdownFiles,
         ];
       },
     };
@@ -116,9 +124,89 @@ function buildRobotsTxt(siteUrl: string) {
     "User-agent: *",
     "Allow: /",
     "",
+    "Content-Signal: ai-train=no, search=yes, ai-input=yes",
+    "",
     `Sitemap: ${urlJoin(siteUrl, "sitemap.xml")}`,
     "",
   ].join("\n");
+}
+
+async function buildBlogMarkdownFiles(cwd: string, outputDirectory: string) {
+  const blogPosts = await readJson<BlogIndexEntry[]>(
+    path.join(cwd, "data/blogposts.json"),
+  );
+  const sourcePosts = await loadBlogPostMarkdownSources(
+    path.join(cwd, "data/blogposts"),
+  );
+
+  return blogPosts
+    .map((blogPost) => {
+      const sourcePost = sourcePosts.get(blogPost.id);
+
+      if (!sourcePost?.body) {
+        return;
+      }
+
+      return {
+        type: "writeTextFile",
+        payload: {
+          outputDirectory,
+          file: path.posix.join(
+            normalizePath(blogPost.url || `/blog/${blogPost.id}/`).replace(
+              /^\/+|\/+$/g,
+              "",
+            ),
+            "index.md",
+          ),
+          data: [
+            `# ${sourcePost.title || blogPost.title}`,
+            "",
+            sourcePost.body.trim(),
+            "",
+          ].join("\n"),
+        },
+      };
+    })
+    .filter(Boolean);
+}
+
+async function loadBlogPostMarkdownSources(directoryPath: string) {
+  const entries = await readdir(directoryPath, { withFileTypes: true });
+  const posts = new Map<string, BlogSource>();
+
+  for (const entry of entries) {
+    if (!entry.isFile() || (!entry.name.endsWith(".md") && !entry.name.endsWith(".yml"))) {
+      continue;
+    }
+
+    const filePath = path.join(directoryPath, entry.name);
+    const post = parseBlogPostSource(await readFile(filePath, "utf8"), filePath);
+
+    if (post.slug) {
+      posts.set(post.slug, post);
+    }
+  }
+
+  return posts;
+}
+
+function parseBlogPostSource(content: string, filePath: string): BlogSource {
+  if (filePath.endsWith(".md")) {
+    const frontmatterMatch = content.match(
+      /^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/,
+    );
+
+    if (!frontmatterMatch) {
+      return { body: content.trim() };
+    }
+
+    return {
+      ...YAML.parse(frontmatterMatch[1]),
+      body: content.slice(frontmatterMatch[0].length),
+    };
+  }
+
+  return YAML.parse(content);
 }
 
 async function listPublicPaths(directoryPath: string, parentPath = ""): Promise<string[]> {

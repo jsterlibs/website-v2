@@ -20,11 +20,37 @@ const ONE_HOUR = 60 * 60;
 const ONE_DAY = ONE_HOUR * 24;
 const ONE_WEEK = ONE_DAY * 7;
 const DEFAULT_PAGE_SIZE = 100;
+const SITE_URL = "https://jster.net";
+const CATALOG_SKILL_MD = [
+  "# JSter Catalog Discovery",
+  "",
+  "Use JSter to discover JavaScript libraries by category, tag, and library slug.",
+  "",
+  "Useful endpoints:",
+  "",
+  "- `GET /api/category/{id}` returns a paginated category listing as JSON.",
+  "- `GET /api/tag/{id}` returns a paginated tag listing as JSON.",
+  "- `GET /library/{id}` returns the public library page.",
+  "- `GET /catalog/` returns the browseable catalog.",
+  "",
+  "Pagination parameters: `page` and `pageSize`.",
+  "",
+].join("\n");
+const DISCOVERY_LINKS = [
+  '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
+  '</.well-known/openapi.json>; rel="service-desc"; type="application/openapi+json"',
+  '</catalog/>; rel="service-doc"; type="text/html"',
+  '</auth.md>; rel="service-doc"; type="text/markdown"',
+  '</.well-known/agent-skills/index.json>; rel="service-desc"; type="application/json"',
+  '</.well-known/mcp/server-card.json>; rel="service-desc"; type="application/json"',
+];
 
 export default {
   async fetch(request, env): Promise<Response> {
     try {
-      return await handleRequest(request, env);
+      const response = await handleRequest(request, env);
+
+      return finalizeResponse(request, response);
     } catch (error) {
       logWorkerError("worker_unhandled_error", request, error);
 
@@ -36,6 +62,39 @@ export default {
 async function handleRequest(request: Request, env: WorkerEnv) {
   const url = new URL(request.url);
   const pathname = url.pathname;
+  const markdownAssetResponse = await maybeMarkdownAssetResponse(
+    request,
+    env,
+    pathname,
+  );
+
+  if (markdownAssetResponse) {
+    return markdownAssetResponse;
+  }
+
+  if (pathname === "/.well-known/api-catalog") {
+    return apiCatalogResponse();
+  }
+
+  if (pathname === "/.well-known/openapi.json") {
+    return openApiResponse();
+  }
+
+  if (pathname === "/.well-known/agent-skills/index.json") {
+    return agentSkillsIndexResponse();
+  }
+
+  if (pathname === "/.well-known/agent-skills/catalog-discovery/SKILL.md") {
+    return markdownTextResponse(CATALOG_SKILL_MD);
+  }
+
+  if (pathname === "/.well-known/mcp/server-card.json") {
+    return mcpServerCardResponse();
+  }
+
+  if (pathname === "/auth.md") {
+    return authMdResponse();
+  }
 
   if (pathname.startsWith("/tag/") && pathname.endsWith("/og.png")) {
     const ogUrl = new URL("/og.png", url);
@@ -217,13 +276,219 @@ async function renderPageResponse(
   });
 }
 
-function jsonResponse(body: unknown, status: number) {
+function jsonResponse(
+  body: unknown,
+  status: number,
+  contentType = "application/json;charset=UTF-8",
+) {
   return new Response(JSON.stringify(body), {
     status,
     headers:
       status >= 200 && status < 300
-        ? cacheHeaders("application/json;charset=UTF-8")
-        : noStoreHeaders("application/json;charset=UTF-8"),
+        ? cacheHeaders(contentType)
+        : noStoreHeaders(contentType),
+  });
+}
+
+function apiCatalogResponse() {
+  return jsonResponse(
+    {
+      linkset: [
+        {
+          anchor: `${SITE_URL}/api/`,
+          "service-desc": [
+            {
+              href: `${SITE_URL}/.well-known/openapi.json`,
+              type: "application/openapi+json",
+            },
+          ],
+          "service-doc": [
+            {
+              href: `${SITE_URL}/catalog/`,
+              type: "text/html",
+            },
+          ],
+          status: [
+            {
+              href: `${SITE_URL}/ping`,
+              type: "text/plain",
+            },
+          ],
+        },
+      ],
+    },
+    200,
+    "application/linkset+json;charset=UTF-8",
+  );
+}
+
+function openApiResponse() {
+  return jsonResponse(
+    {
+      openapi: "3.1.0",
+      info: {
+        title: "JSter Catalog API",
+        version: "1.0.0",
+        description:
+          "Read-only API for discovering JSter catalog entries by category or tag.",
+      },
+      servers: [{ url: SITE_URL }],
+      paths: {
+        "/api/{source}/{id}": {
+          get: {
+            operationId: "getCatalogEntries",
+            summary: "Get catalog entries by category or tag",
+            parameters: [
+              {
+                name: "source",
+                in: "path",
+                required: true,
+                schema: { type: "string", enum: ["category", "tag"] },
+              },
+              {
+                name: "id",
+                in: "path",
+                required: true,
+                schema: { type: "string" },
+              },
+              {
+                name: "page",
+                in: "query",
+                required: false,
+                schema: { type: "integer", minimum: 1, default: 1 },
+              },
+              {
+                name: "pageSize",
+                in: "query",
+                required: false,
+                schema: {
+                  type: "integer",
+                  minimum: 1,
+                  maximum: DEFAULT_PAGE_SIZE,
+                  default: DEFAULT_PAGE_SIZE,
+                },
+              },
+            ],
+            responses: {
+              "200": {
+                description: "A paginated catalog page.",
+                content: {
+                  "application/json": {
+                    schema: {
+                      type: "object",
+                      properties: {
+                        id: { type: "string" },
+                        page: { type: "integer" },
+                        pageSize: { type: "integer" },
+                        pageCount: { type: "integer" },
+                        totalLibraries: { type: "integer" },
+                        libraries: {
+                          type: "array",
+                          items: { type: "object" },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+              "404": {
+                description: "The category or tag was not found.",
+              },
+            },
+          },
+        },
+        "/ping": {
+          get: {
+            operationId: "getHealth",
+            summary: "Health check",
+            responses: {
+              "200": {
+                description: "The Worker is responding.",
+              },
+            },
+          },
+        },
+      },
+    },
+    200,
+    "application/openapi+json;charset=UTF-8",
+  );
+}
+
+async function agentSkillsIndexResponse() {
+  return jsonResponse(
+    {
+      $schema:
+        "https://raw.githubusercontent.com/cloudflare/agent-skills-discovery-rfc/main/schema.json",
+      skills: [
+        {
+          name: "jster-catalog-discovery",
+          type: "documentation",
+          description:
+            "Discover JavaScript libraries in the JSter catalog by category, tag, and library slug.",
+          url: `${SITE_URL}/.well-known/agent-skills/catalog-discovery/SKILL.md`,
+          sha256: await sha256Hex(CATALOG_SKILL_MD),
+        },
+      ],
+    },
+    200,
+  );
+}
+
+function authMdResponse() {
+  return markdownTextResponse(
+    [
+      "# JSter Agent Access",
+      "",
+      "JSter exposes public, read-only catalog pages and API endpoints.",
+      "",
+      "Agent registration is not required. OAuth/OIDC credentials are not issued for the public catalog API.",
+      "",
+      "Useful discovery resources:",
+      "",
+      "- `/.well-known/api-catalog`",
+      "- `/.well-known/openapi.json`",
+      "- `/catalog/`",
+      "",
+    ].join("\n"),
+  );
+}
+
+function mcpServerCardResponse() {
+  return jsonResponse(
+    {
+      serverInfo: {
+        name: "JSter Catalog",
+        version: "1.0.0",
+      },
+      description:
+        "JSter exposes JavaScript catalog navigation tools to browser agents through WebMCP.",
+      transports: [
+        {
+          type: "webmcp",
+          endpoint: SITE_URL,
+        },
+      ],
+      capabilities: {
+        tools: [
+          {
+            name: "open_jster_catalog",
+            description: "Open the JSter JavaScript library catalog.",
+          },
+          {
+            name: "open_jster_category",
+            description: "Open a JSter category page by category id.",
+          },
+        ],
+      },
+    },
+    200,
+  );
+}
+
+function markdownTextResponse(markdown: string) {
+  return new Response(markdown, {
+    headers: cacheHeaders("text/markdown;charset=UTF-8"),
   });
 }
 
@@ -254,6 +519,160 @@ function noStoreHeaders(contentType: string) {
     "Content-Type": contentType,
     "Cache-Control": "no-store",
   };
+}
+
+async function maybeMarkdownAssetResponse(
+  request: Request,
+  env: WorkerEnv,
+  pathname: string,
+) {
+  if (!acceptsMarkdown(request) || !pathname.startsWith("/blog/")) {
+    return;
+  }
+
+  const markdownUrl = new URL(request.url);
+  markdownUrl.pathname = `${pathname.replace(/\/+$/, "")}/index.md`;
+  const markdownResponse = await env.ASSETS.fetch(
+    new Request(markdownUrl, request),
+  );
+
+  if (!markdownResponse.ok) {
+    return;
+  }
+
+  const markdown = await markdownResponse.text();
+  const headers = new Headers(markdownResponse.headers);
+
+  headers.set("Content-Type", "text/markdown;charset=UTF-8");
+  headers.set("Vary", appendHeaderValue(headers.get("Vary"), "Accept"));
+  headers.set("X-Markdown-Tokens", String(countMarkdownTokens(markdown)));
+
+  return new Response(markdown, {
+    status: markdownResponse.status,
+    statusText: markdownResponse.statusText,
+    headers,
+  });
+}
+
+async function finalizeResponse(request: Request, response: Response) {
+  const responseWithLinks = addDiscoveryHeaders(response);
+
+  if (acceptsMarkdown(request) && isHtmlResponse(responseWithLinks)) {
+    const html = await responseWithLinks.text();
+    const markdown = htmlToMarkdown(html);
+    const headers = new Headers(responseWithLinks.headers);
+
+    headers.set("Content-Type", "text/markdown;charset=UTF-8");
+    headers.set("Vary", appendHeaderValue(headers.get("Vary"), "Accept"));
+    headers.set("X-Markdown-Tokens", String(countMarkdownTokens(markdown)));
+
+    return new Response(markdown, {
+      status: responseWithLinks.status,
+      statusText: responseWithLinks.statusText,
+      headers,
+    });
+  }
+
+  if (isHtmlResponse(responseWithLinks)) {
+    const headers = new Headers(responseWithLinks.headers);
+    headers.set("Vary", appendHeaderValue(headers.get("Vary"), "Accept"));
+
+    return new Response(responseWithLinks.body, {
+      status: responseWithLinks.status,
+      statusText: responseWithLinks.statusText,
+      headers,
+    });
+  }
+
+  return responseWithLinks;
+}
+
+function addDiscoveryHeaders(response: Response) {
+  const headers = new Headers(response.headers);
+  const existingLink = headers.get("Link");
+
+  headers.set(
+    "Link",
+    existingLink
+      ? `${existingLink}, ${DISCOVERY_LINKS.join(", ")}`
+      : DISCOVERY_LINKS.join(", "),
+  );
+
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
+function acceptsMarkdown(request: Request) {
+  const accept = request.headers.get("Accept") || "";
+
+  return request.method !== "HEAD" && /\btext\/markdown\b/.test(accept);
+}
+
+function isHtmlResponse(response: Response) {
+  return /text\/html/i.test(response.headers.get("Content-Type") || "");
+}
+
+function htmlToMarkdown(html: string) {
+  const mainMatch = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i);
+  const source = mainMatch ? mainMatch[1] : html;
+
+  return source
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/gi, "")
+    .replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/gi, "")
+    .replace(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi, "\n# $1\n\n")
+    .replace(/<h2\b[^>]*>([\s\S]*?)<\/h2>/gi, "\n## $1\n\n")
+    .replace(/<h3\b[^>]*>([\s\S]*?)<\/h3>/gi, "\n### $1\n\n")
+    .replace(
+      /<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi,
+      (_match, href, text) => `[${stripHtml(text).trim()}](${href})`,
+    )
+    .replace(/<li\b[^>]*>([\s\S]*?)<\/li>/gi, "\n- $1")
+    .replace(/<\/p>/gi, "\n\n")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/[ \t]+/g, " ")
+    .replace(/^\s*-\s*$/gm, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim()
+    .concat("\n");
+}
+
+function stripHtml(html: string) {
+  return html.replace(/<[^>]+>/g, " ");
+}
+
+function appendHeaderValue(existing: string | null, value: string) {
+  if (!existing) {
+    return value;
+  }
+
+  const values = existing.split(",").map((entry) => entry.trim());
+
+  return values.includes(value) ? existing : `${existing}, ${value}`;
+}
+
+function countMarkdownTokens(markdown: string) {
+  return markdown.trim() ? markdown.trim().split(/\s+/).length : 0;
+}
+
+async function sha256Hex(input: string) {
+  const bytes = new TextEncoder().encode(input);
+  const hash = await crypto.subtle.digest("SHA-256", bytes);
+
+  return [...new Uint8Array(hash)]
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
 }
 
 function getSource(source?: string): CatalogSource | undefined {

@@ -25,6 +25,57 @@
     <MainNavigation />
     <main &children="(get props content)"></main>
     <MainFooter />
+    <script>
+      (() => {
+        const contextProvider = navigator.modelContext;
+
+        if (!contextProvider || typeof contextProvider.provideContext !== "function") {
+          return;
+        }
+
+        contextProvider.provideContext({
+          tools: [
+            {
+              name: "open_jster_catalog",
+              description: "Open the JSter JavaScript library catalog.",
+              inputSchema: {
+                type: "object",
+                properties: {},
+                additionalProperties: false,
+              },
+              execute: async () => {
+                const url = new URL("/catalog/", location.origin).toString();
+                location.href = url;
+
+                return { url };
+              },
+            },
+            {
+              name: "open_jster_category",
+              description: "Open a JSter category page by category id.",
+              inputSchema: {
+                type: "object",
+                properties: {
+                  id: {
+                    type: "string",
+                    description: "Category id, for example application-frameworks.",
+                  },
+                },
+                required: ["id"],
+                additionalProperties: false,
+              },
+              execute: async ({ id }) => {
+                const slug = String(id || "").trim();
+                const url = new URL(`/category/${encodeURIComponent(slug)}/`, location.origin).toString();
+                location.href = url;
+
+                return { url };
+              },
+            },
+          ],
+        });
+      })();
+    </script>
     <Scripts />
   </body>
 </html>
