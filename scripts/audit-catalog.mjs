@@ -28,6 +28,7 @@ const libraries = loadLibraries().filter(
 const categoriesByLibrary = loadCategoriesByLibrary();
 const blogIndex = loadBlogIndex();
 const blogReferences = loadBlogReferences(libraries);
+const duplicateLinks = loadDuplicateLinks(libraries);
 const metadata = FETCH_METADATA ? await fetchMetadata(libraries) : new Map();
 const audit = libraries
   .map((library) =>
@@ -35,6 +36,7 @@ const audit = libraries
       library,
       categories: categoriesByLibrary.get(library.id) || [],
       references: blogReferences.get(library.id) || [],
+      duplicateLinks: duplicateLinks.get(library.id) || [],
       metadata: metadata.get(library.id) || {},
     }),
   )
@@ -132,7 +134,46 @@ function loadBlogReferences(libraries) {
   return references;
 }
 
-function auditLibrary({ library, categories, references, metadata }) {
+function loadDuplicateLinks(libraries) {
+  const urlToIds = new Map();
+  const ret = new Map(libraries.map((library) => [library.id, []]));
+
+  for (const library of libraries) {
+    for (const url of Object.values(library.links || {})) {
+      const normalizedUrl = normalizeUrl(url);
+      const normalizedPackageUrl = normalizePackageUrl(url);
+
+      for (const candidate of [normalizedUrl, normalizedPackageUrl]) {
+        if (!candidate) {
+          continue;
+        }
+
+        if (!urlToIds.has(candidate)) {
+          urlToIds.set(candidate, new Set());
+        }
+
+        urlToIds.get(candidate).add(library.id);
+      }
+    }
+  }
+
+  for (const [url, ids] of urlToIds) {
+    if (ids.size < 2) {
+      continue;
+    }
+
+    for (const id of ids) {
+      ret.get(id).push({
+        url,
+        ids: [...ids].filter((otherId) => otherId !== id).sort(),
+      });
+    }
+  }
+
+  return ret;
+}
+
+function auditLibrary({ library, categories, references, duplicateLinks, metadata }) {
   const reasons = [];
   const flags = [];
   let score = 0;
@@ -183,6 +224,11 @@ function auditLibrary({ library, categories, references, metadata }) {
   if (!library.tags?.length) {
     score += 5;
     flags.push("no tags");
+  }
+
+  if (duplicateLinks.length) {
+    score += 20;
+    reasons.push("shares upstream link with another catalog entry");
   }
 
   if (metadata.exists === false) {
@@ -237,6 +283,7 @@ function auditLibrary({ library, categories, references, metadata }) {
     categories,
     reasons,
     flags,
+    duplicateLinks,
     links: library.links || {},
     lastActivity: metadata.lastActivity || "",
     latestReference: latestReference?.date || "",
