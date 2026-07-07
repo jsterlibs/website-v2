@@ -27,7 +27,10 @@ export default {
     const pathname = url.pathname;
 
     if (pathname.startsWith("/tag/") && pathname.endsWith("/og.png")) {
-      return Response.redirect(new URL("/og.png", url).toString(), 302);
+      const ogUrl = new URL("/og.png", url);
+      ogUrl.protocol = "https:";
+
+      return Response.redirect(ogUrl.toString(), 302);
     }
 
     if (pathname.endsWith("/og.png")) {
