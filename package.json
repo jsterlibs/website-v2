@@ -16,15 +16,16 @@
     "wrangler": "4.97.0"
   },
   "scripts": {
-    "build": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --progress && npm run copy:css",
-    "build:cloudflare": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --cache-from https://jster.net/ --progress && npm run copy:css",
-    "build:validate": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --validate --progress && npm run copy:css",
+    "build": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --progress && npm run copy:css && npm run copy:catalog-data",
+    "build:cloudflare": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --cache-from https://jster.net/ --progress && npm run copy:css && npm run copy:catalog-data",
+    "build:validate": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --validate --progress && npm run copy:css && npm run copy:catalog-data",
     "workers:deploy": "wrangler deploy ./worker.ts --assets=./build --config=./wrangler.toml",
     "workers:dev": "wrangler dev",
     "check:links": "node ./scripts/check-links.mjs",
     "check:links:external": "node ./scripts/check-links.mjs --external",
     "audit:catalog": "node ./scripts/audit-catalog.mjs",
     "copy:css": "node ./scripts/copy-tailwind-css.mjs",
+    "copy:catalog-data": "node ./scripts/copy-catalog-data.mjs",
     "generate:manifest": "node ./scripts/generate-manifest.mjs",
     "fetch:new-jster": "node ./scripts/fetch-new-jster.mjs"
   },

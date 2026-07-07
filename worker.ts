@@ -124,9 +124,9 @@ const DISCOVERY_LINKS = [
 ];
 
 export default {
-  async fetch(request, env): Promise<Response> {
+  async fetch(request, env, ctx): Promise<Response> {
     try {
-      const response = await handleRequest(request, env);
+      const response = await handleRequest(request, env, ctx);
 
       return finalizeResponse(request, response);
     } catch (error) {
@@ -137,7 +137,11 @@ export default {
   },
 } satisfies ExportedHandler<WorkerEnv>;
 
-async function handleRequest(request: Request, env: WorkerEnv) {
+async function handleRequest(
+  request: Request,
+  env: WorkerEnv,
+  ctx: ExecutionContext,
+) {
   const url = new URL(request.url);
   const pathname = url.pathname;
   const markdownAssetResponse = await maybeMarkdownAssetResponse(
@@ -222,7 +226,7 @@ async function handleRequest(request: Request, env: WorkerEnv) {
       return Response.redirect(redirectUrl.toString(), 301);
     }
 
-    return renderLibraryResponse(libraryId);
+    return renderLibraryResponse(libraryId, env, ctx);
   }
 
   if (pathname.startsWith("/category/")) {
@@ -324,13 +328,17 @@ async function renderApiResponse(
   }
 }
 
-async function renderLibraryResponse(name: string | undefined) {
+async function renderLibraryResponse(
+  name: string | undefined,
+  env: WorkerEnv,
+  ctx: ExecutionContext,
+) {
   if (!name) {
     return notFoundResponse();
   }
 
   try {
-    const library = await fetchLibrary(decodeURIComponent(name));
+    const library = await fetchLibrary(decodeURIComponent(name), env, ctx);
 
     ZLibrary.parse(library);
 
@@ -885,7 +893,31 @@ function getSource(source?: string): CatalogSource | undefined {
   }
 }
 
-async function fetchLibrary(name: string): Promise<Library> {
+async function fetchLibrary(
+  name: string,
+  env: WorkerEnv,
+  ctx: ExecutionContext,
+): Promise<Library> {
+  const cacheRequest = new Request(
+    new URL(
+      `/data/libraries/${encodeURIComponent(name)}.json`,
+      SITE_URL,
+    ).toString(),
+  );
+  const cachedResponse = await getCachedLibraryResponse(cacheRequest, name);
+
+  if (cachedResponse) {
+    return cachedResponse.json();
+  }
+
+  const assetResponse = await env.ASSETS.fetch(cacheRequest);
+
+  if (assetResponse.ok) {
+    cacheLibraryResponse(cacheRequest, assetResponse.clone(), name, ctx);
+
+    return assetResponse.json();
+  }
+
   const url = `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
   const response = await fetch(url);
 
@@ -893,7 +925,52 @@ async function fetchLibrary(name: string): Promise<Library> {
     throw new Error(`Failed to fetch library ${name}: ${response.status}`);
   }
 
-  return response.json();
+  const library = await response.clone().json<Library>();
+
+  cacheLibraryResponse(cacheRequest, response, name, ctx);
+
+  return library;
+}
+
+async function getCachedLibraryResponse(
+  request: Request,
+  name: string,
+): Promise<Response | undefined> {
+  try {
+    const response = await caches.default.match(request);
+
+    if (response?.ok) {
+      return response;
+    }
+  } catch (error) {
+    console.warn({
+      event: "library_cache_read_failed",
+      name,
+      error: serializeError(error),
+    });
+  }
+}
+
+function cacheLibraryResponse(
+  request: Request,
+  response: Response,
+  name: string,
+  ctx: ExecutionContext,
+) {
+  const cacheableResponse = new Response(response.body, {
+    status: response.status,
+    headers: cacheHeaders("application/json;charset=UTF-8"),
+  });
+
+  ctx.waitUntil(
+    caches.default.put(request, cacheableResponse).catch((error) => {
+      console.warn({
+        event: "library_cache_write_failed",
+        name,
+        error: serializeError(error),
+      });
+    }),
+  );
 }
 
 async function fetchSecurity(name: string): Promise<Library["security"]> {
