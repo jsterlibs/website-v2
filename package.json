@@ -16,9 +16,9 @@
     "wrangler": "4.97.0"
   },
   "scripts": {
-    "build": "gustwind --build --output ./build --progress",
-    "build:cloudflare": "gustwind --build --output ./build --cache-from https://jster.net/ --progress",
-    "build:validate": "gustwind --build --output ./build --validate --progress",
+    "build": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --progress",
+    "build:cloudflare": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --cache-from https://jster.net/ --progress",
+    "build:validate": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --validate --progress",
     "workers:deploy": "wrangler deploy ./worker.ts --assets=./build --config=./wrangler.toml",
     "workers:dev": "wrangler dev",
     "pages:dev": "wrangler dev",
