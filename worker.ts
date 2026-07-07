@@ -28,11 +28,18 @@ const LIBRARY_REDIRECTS: Record<string, string> = {
   "angular-8": "angular",
   "angular-9": "angular",
   "astro-7-0-is-all-about-speed": "astro",
+  "babylon-js": "babylonjs",
+  "es6-harmony-collections": "es6-collections",
+  impromptu: "jquery-impromptu",
+  iioengine: "iio",
+  "jets-js": "jets",
+  lungojs: "lungo-js",
   "next-js-13": "next-js",
   "next-js-14": "next-js",
   "next-js-15": "next-js",
   "next-js-15-3-with-turbopack-for-builds": "next-js",
   "react-19": "react",
+  "rivets-js": "rivets",
   "svelte-5-is-alive": "svelte",
 };
 const CATALOG_SKILL_MD = [

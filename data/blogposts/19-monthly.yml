@@ -19,7 +19,7 @@ body: |
 
   * [jQuery 2.0](http://jster.net/library/jquery) - [News](http://blog.jquery.com/2013/04/18/jquery-2-0-released/). In short support for older IE has been dropped and the library trimmed. Now it's possible to assemble your own jQuery even.
   * [Ender 1.0](http://jster.net/library/ender) - Ender, a frontend package manager, reached version 1.0
-  * [Rivets.js](http://jster.net/library/rivets-js) - Declarative data binding. Works with Backbone for instance.
+  * [Rivets.js](http://jster.net/library/rivets) - Declarative data binding. Works with Backbone for instance.
   * [Rendr](http://jster.net/library/rendr) - [Blogpost](http://nerds.airbnb.com/weve-open-sourced-rendr-run-your-backbonejs-a/), basically allows you to render Backbone views on server (Node.js) too
   * [Browserify](https://github.com/substack/node-browserify) - Node.js style require in browser. It reached version 2.0 two months ago and has been stabilizing since.
 
