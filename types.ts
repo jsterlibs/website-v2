@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-type Env = { API_AUTH: string; PAGE_CACHE: KVNamespace };
+type Env = { API_AUTH: string };
 
 type Attributes = Record<string, any>;
 type Category = { id: string; title: string; url: string; library: Library };

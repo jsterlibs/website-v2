@@ -1,10 +1,17 @@
 name = "jster-website-v2"
-compatibility_date = "2024-03-04"
+main = "worker.ts"
+compatibility_date = "2026-06-08"
 compatibility_flags = ["nodejs_compat"]
-kv_namespaces = [
-  { binding = "PAGE_CACHE", id = "b264a863ed0942708142d84a238fde76", preview_id = "45cb524c2410437ea11592c1a3fdcbd0" },
-]
-pages_build_output_dir = "./build"
+
+[assets]
+directory = "./build"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "none"
+run_worker_first = true
+
+[cache]
+enabled = true
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
