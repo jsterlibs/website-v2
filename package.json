@@ -21,7 +21,6 @@
     "build:validate": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --validate --progress",
     "workers:deploy": "wrangler deploy ./worker.ts --assets=./build --config=./wrangler.toml",
     "workers:dev": "wrangler dev",
-    "pages:dev": "wrangler dev",
     "check:links": "node ./scripts/check-links.mjs",
     "check:links:external": "node ./scripts/check-links.mjs --external",
     "audit:catalog": "node ./scripts/audit-catalog.mjs",

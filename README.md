@@ -23,4 +23,5 @@ outputs from the deployed site when their fingerprints still match.
 2. `npm run workers:dev`
 3. Head to `http://localhost:8787/library/jquery`
 
-Note that the CF setup doesn't proxy static portion of the site automatically yet but that could likely be added (or the other way around).
+The Worker serves static assets from `./build` and dynamic catalog routes from
+`worker.ts`.
