@@ -1,1 +1,1 @@
-{"id":"svelte","description":"JavaScript project mentioned in Frameworks.","logo":"/images/repo.png","name":"Svelte","links":{"site":"https://svelte.dev/blog/runes"},"tags":["frameworks"]}
+{"id":"svelte","description":"Svelte is a UI framework and compiler for building web applications with components.","logo":"/images/repo.png","name":"Svelte","links":{"site":"https://svelte.dev/","github":"https://github.com/sveltejs/svelte"},"tags":["frameworks"]}

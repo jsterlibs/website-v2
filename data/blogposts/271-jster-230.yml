@@ -15,9 +15,9 @@ body: |
 
   ## Frameworks
 
-  * [Next.js 15](/library/next-js-15)
+  * [Next.js 15](/library/next-js)
   * [Medusa 2.0 - a composable e-commerce framework](/library/medusa)
-  * [Svelte 5 is alive](/library/svelte-5-is-alive)
+  * [Svelte 5 is alive](/library/svelte)
   * [Catalyst - a highly composable framework](/library/catalyst)
   * [Introducing Express v5: A New Era for Node.js Framework](/library/express)
   * [The story of web framework Hono, from the creator of Hono](/library/the-story-of-web-framework-hono-from-the-creator-of-hono)

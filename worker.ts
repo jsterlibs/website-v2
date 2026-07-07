@@ -23,6 +23,18 @@ const DEFAULT_PAGE_SIZE = 100;
 const SITE_URL = "https://jster.net";
 const OAUTH_ISSUER = SITE_URL;
 const AUTH_MD_URL = `${SITE_URL}/auth.md`;
+const LIBRARY_REDIRECTS: Record<string, string> = {
+  "angular-2025-strategy": "angular",
+  "angular-8": "angular",
+  "angular-9": "angular",
+  "astro-7-0-is-all-about-speed": "astro",
+  "next-js-13": "next-js",
+  "next-js-14": "next-js",
+  "next-js-15": "next-js",
+  "next-js-15-3-with-turbopack-for-builds": "next-js",
+  "react-19": "react",
+  "svelte-5-is-alive": "svelte",
+};
 const CATALOG_SKILL_MD = [
   "# JSter Catalog Discovery",
   "",
@@ -139,7 +151,16 @@ async function handleRequest(request: Request, env: WorkerEnv) {
   const libraryMatch = pathname.match(/^\/library\/([^/]+)\/?$/);
 
   if (libraryMatch) {
-    return renderLibraryResponse(libraryMatch[1]);
+    const libraryId = decodeURIComponent(libraryMatch[1]);
+    const redirectTarget = LIBRARY_REDIRECTS[libraryId];
+
+    if (redirectTarget) {
+      const redirectUrl = new URL(`/library/${redirectTarget}`, url);
+
+      return Response.redirect(redirectUrl.toString(), 301);
+    }
+
+    return renderLibraryResponse(libraryId);
   }
 
   if (pathname.startsWith("/category/")) {

@@ -1,1 +1,1 @@
-{"id":"astro","description":"JavaScript project mentioned in Frameworks.","logo":"/images/repo.png","name":"Astro","links":{"site":"https://astro.build/blog/astro-260/"},"tags":["frameworks"]}
+{"id":"astro","description":"Astro is a web framework for building content-driven sites with JavaScript, TypeScript, and UI framework components.","logo":"/images/repo.png","name":"Astro","links":{"site":"https://astro.build/","github":"https://github.com/withastro/astro"},"tags":["frameworks"]}

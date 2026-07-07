@@ -1,1 +1,1 @@
-{"id":"angular","description":"JavaScript project mentioned in Frameworks.","logo":"/images/repo.png","name":"Angular","links":{"site":"https://angularjs.blogspot.fi/2017/03/angular-400-now-available.html"},"tags":["frameworks"]}
+{"id":"angular","description":"Angular is a TypeScript-based web application framework for building client-side applications.","logo":"/images/repo.png","name":"Angular","links":{"site":"https://angular.dev/","github":"https://github.com/angular/angular"},"tags":["frameworks"]}

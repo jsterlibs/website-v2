@@ -1,1 +1,1 @@
-{"id":"next-js","description":"JavaScript project mentioned in Frameworks.","logo":"/images/repo.png","name":"Next.js","links":{"site":"https://nextjs.org/blog/next-9-2"},"tags":["frameworks"]}
+{"id":"next-js","description":"Next.js is a React framework for building full-stack web applications.","logo":"/images/repo.png","name":"Next.js","links":{"site":"https://nextjs.org/","github":"https://github.com/vercel/next.js"},"tags":["frameworks","react"]}
