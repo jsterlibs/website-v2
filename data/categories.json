@@ -2,32 +2,38 @@
   {
     "id": "application-frameworks",
     "title": "Application Frameworks",
-    "url": "/category/application-frameworks"
+    "url": "/category/application-frameworks",
+    "description": "JavaScript application frameworks for building client-side and full-stack web apps."
   },
   {
     "id": "mobile-frameworks",
     "title": "Mobile Frameworks",
-    "url": "/category/mobile-frameworks"
+    "url": "/category/mobile-frameworks",
+    "description": "JavaScript frameworks and tools for mobile and hybrid app development."
   },
   {
     "id": "mvc-frameworks",
     "title": "MVC Frameworks",
-    "url": "/category/mvc-frameworks"
+    "url": "/category/mvc-frameworks",
+    "description": "JavaScript MVC, MVVM, and structured application frameworks."
   },
   {
     "id": "realtime-frameworks",
     "title": "Realtime Frameworks",
-    "url": "/category/realtime-frameworks"
+    "url": "/category/realtime-frameworks",
+    "description": "JavaScript libraries and services for realtime messaging, synchronization, and collaboration."
   },
   {
     "id": "desktop-gui",
     "title": "Desktop GUI",
-    "url": "/category/desktop-gui"
+    "url": "/category/desktop-gui",
+    "description": "JavaScript desktop GUI frameworks, shells, and browser-based app runtimes."
   },
   {
     "id": "serverside-libraries",
     "title": "ServerSide Libraries",
-    "url": "/category/serverside-libraries"
+    "url": "/category/serverside-libraries",
+    "description": "Server-side JavaScript libraries, runtimes, and backend frameworks."
   },
   {
     "id": "testing-frameworks",
@@ -38,256 +44,307 @@
   {
     "id": "templating-engines",
     "title": "Templating Engines",
-    "url": "/category/templating-engines"
+    "url": "/category/templating-engines",
+    "description": "JavaScript templating engines for rendering HTML and text output."
   },
   {
     "id": "loaders",
     "title": "Loaders",
-    "url": "/category/loaders"
+    "url": "/category/loaders",
+    "description": "JavaScript module loaders, script loaders, and dependency loading tools."
   },
   {
     "id": "ui-frameworks",
     "title": "UI Frameworks",
-    "url": "/category/ui-frameworks"
+    "url": "/category/ui-frameworks",
+    "description": "JavaScript UI frameworks and component systems for web interfaces."
   },
   {
     "id": "windows-modals-popups",
     "title": "Windows, Modals, Popups",
-    "url": "/category/windows-modals-popups"
+    "url": "/category/windows-modals-popups",
+    "description": "JavaScript libraries for windows, dialogs, modals, popups, and overlays."
   },
   {
     "id": "keyboard-wrappers",
     "title": "Keyboard Wrappers",
-    "url": "/category/keyboard-wrappers"
+    "url": "/category/keyboard-wrappers",
+    "description": "JavaScript libraries for keyboard shortcuts, input handling, and key events."
   },
   {
     "id": "form-widgets",
     "title": "Form Widgets",
-    "url": "/category/form-widgets"
+    "url": "/category/form-widgets",
+    "description": "JavaScript widgets for forms, inputs, pickers, and field interactions."
   },
   {
     "id": "ui-components",
     "title": "UI Components",
-    "url": "/category/ui-components"
+    "url": "/category/ui-components",
+    "description": "Reusable JavaScript UI components and widgets for web applications."
   },
   {
     "id": "sliders",
     "title": "Sliders & Galleries",
-    "url": "/category/sliders"
+    "url": "/category/sliders",
+    "description": "JavaScript sliders, galleries, carousels, and media browsing widgets."
   },
   {
     "id": "notifications",
     "title": "Notifications",
-    "url": "/category/notifications"
+    "url": "/category/notifications",
+    "description": "JavaScript libraries for alerts, toast messages, and in-app notifications."
   },
   {
     "id": "wysiwyg-editors",
     "title": "WYSIWYG Editors",
-    "url": "/category/wysiwyg-editors"
+    "url": "/category/wysiwyg-editors",
+    "description": "JavaScript WYSIWYG editors and rich text editing components."
   },
   {
     "id": "touch",
     "title": "Touch",
-    "url": "/category/touch"
+    "url": "/category/touch",
+    "description": "JavaScript touch, gesture, and mobile interaction libraries."
   },
   {
     "id": "layout",
     "title": "Layout",
-    "url": "/category/layout"
+    "url": "/category/layout",
+    "description": "JavaScript layout engines, grid systems, and responsive layout utilities."
   },
   {
     "id": "tours-guides",
     "title": "Tours & Guides",
-    "url": "/category/tours-guides"
+    "url": "/category/tours-guides",
+    "description": "JavaScript libraries for product tours, walkthroughs, and guided UI help."
   },
   {
     "id": "game-engines",
     "title": "Game Engines",
-    "url": "/category/game-engines"
+    "url": "/category/game-engines",
+    "description": "JavaScript game engines and libraries for browser-based games."
   },
   {
     "id": "physics-libraries",
     "title": "Physics Libraries",
-    "url": "/category/physics-libraries"
+    "url": "/category/physics-libraries",
+    "description": "JavaScript physics engines and collision libraries for simulations and games."
   },
   {
     "id": "animation-libraries",
     "title": "Animation Libraries",
-    "url": "/category/animation-libraries"
+    "url": "/category/animation-libraries",
+    "description": "JavaScript animation libraries for motion, transitions, and visual effects."
   },
   {
     "id": "audio-libraries",
     "title": "Audio Libraries",
-    "url": "/category/audio-libraries"
+    "url": "/category/audio-libraries",
+    "description": "JavaScript audio libraries for playback, synthesis, codecs, and Web Audio work."
   },
   {
     "id": "presentation-libraries",
     "title": "Presentation Libraries",
-    "url": "/category/presentation-libraries"
+    "url": "/category/presentation-libraries",
+    "description": "JavaScript libraries and tools for presentations, slides, and decks."
   },
   {
     "id": "video-players",
     "title": "Video Players",
-    "url": "/category/video-players"
+    "url": "/category/video-players",
+    "description": "JavaScript video players and media playback components."
   },
   {
     "id": "canvas-wrappers",
     "title": "Canvas Wrappers",
-    "url": "/category/canvas-wrappers"
+    "url": "/category/canvas-wrappers",
+    "description": "JavaScript canvas libraries, wrappers, and drawing abstractions."
   },
   {
     "id": "webgl",
     "title": "WebGL",
-    "url": "/category/webgl"
+    "url": "/category/webgl",
+    "description": "JavaScript WebGL libraries, 3D engines, and GPU-backed rendering tools."
   },
   {
     "id": "image-manipulation",
     "title": "Image Manipulation",
-    "url": "/category/image-manipulation"
+    "url": "/category/image-manipulation",
+    "description": "JavaScript libraries for image processing, editing, and manipulation."
   },
   {
     "id": "visualization-libraries",
     "title": "Visualization Libraries",
-    "url": "/category/visualization-libraries"
+    "url": "/category/visualization-libraries",
+    "description": "JavaScript charting, graphing, and data visualization libraries."
   },
   {
     "id": "color-libraries",
     "title": "Color Libraries",
-    "url": "/category/color-libraries"
+    "url": "/category/color-libraries",
+    "description": "JavaScript color conversion, palette, and color manipulation libraries."
   },
   {
     "id": "mapping-libraries",
     "title": "Mapping Libraries",
-    "url": "/category/mapping-libraries"
+    "url": "/category/mapping-libraries",
+    "description": "JavaScript mapping, geospatial, and location visualization libraries."
   },
   {
     "id": "data-structures",
     "title": "Data Structures",
-    "url": "/category/data-structures"
+    "url": "/category/data-structures",
+    "description": "JavaScript data structure libraries and algorithm helpers."
   },
   {
     "id": "date-libraries",
     "title": "Date Libraries",
-    "url": "/category/date-libraries"
+    "url": "/category/date-libraries",
+    "description": "JavaScript date, time, calendar, and timezone libraries."
   },
   {
     "id": "storage-libraries",
     "title": "Storage Libraries",
-    "url": "/category/storage-libraries"
+    "url": "/category/storage-libraries",
+    "description": "JavaScript storage libraries for local, browser, and persistent data."
   },
   {
     "id": "validation",
     "title": "Validation",
-    "url": "/category/validation"
+    "url": "/category/validation",
+    "description": "JavaScript validation libraries for forms, schemas, and data contracts."
   },
   {
     "id": "strings",
     "title": "Strings",
-    "url": "/category/strings"
+    "url": "/category/strings",
+    "description": "JavaScript string manipulation, formatting, and text utility libraries."
   },
   {
     "id": "file-formats",
     "title": "File Formats",
-    "url": "/category/file-formats"
+    "url": "/category/file-formats",
+    "description": "JavaScript libraries for reading, writing, parsing, and converting file formats."
   },
   {
     "id": "package-managers",
     "title": "Package Managers",
-    "url": "/category/package-managers"
+    "url": "/category/package-managers",
+    "description": "JavaScript package managers and package workflow tools."
   },
   {
     "id": "timing",
     "title": "Timing",
-    "url": "/category/timing"
+    "url": "/category/timing",
+    "description": "JavaScript timing, scheduling, timers, and asynchronous control utilities."
   },
   {
     "id": "toolkits",
     "title": "Toolkits",
-    "url": "/category/toolkits"
+    "url": "/category/toolkits",
+    "description": "General-purpose JavaScript toolkits, utilities, and helper libraries."
   },
   {
     "id": "code-protection",
     "title": "Code Protection",
-    "url": "/category/code-protection"
+    "url": "/category/code-protection",
+    "description": "JavaScript code protection, minification, obfuscation, and hardening tools."
   },
   {
     "id": "compilers-and-parsers",
     "title": "Language Compilers",
-    "url": "/category/compilers-and-parsers"
+    "url": "/category/compilers-and-parsers",
+    "description": "JavaScript compilers, parsers, transpilers, and language tooling."
   },
   {
     "id": "debugging-tools",
     "title": "Debugging Tools",
-    "url": "/category/debugging-tools"
+    "url": "/category/debugging-tools",
+    "description": "JavaScript debugging, inspection, profiling, and developer tools."
   },
   {
     "id": "documentation-tools",
     "title": "Documentation Tools",
-    "url": "/category/documentation-tools"
+    "url": "/category/documentation-tools",
+    "description": "JavaScript documentation generators and documentation site tools."
   },
   {
     "id": "build-utilities",
     "title": "Build Utilities",
-    "url": "/category/build-utilities"
+    "url": "/category/build-utilities",
+    "description": "JavaScript build tools, task runners, bundlers, and asset pipeline utilities."
   },
   {
     "id": "async-control-flow-event",
     "title": "Async, Control Flow, Event",
-    "url": "/category/async-control-flow-event"
+    "url": "/category/async-control-flow-event",
+    "description": "JavaScript async control flow, events, promises, and callback utilities."
   },
   {
     "id": "class-system",
     "title": "Class System",
-    "url": "/category/class-system"
+    "url": "/category/class-system",
+    "description": "JavaScript class systems, inheritance helpers, and object modeling utilities."
   },
   {
     "id": "i18n-l10n",
     "title": "I18n And L10n",
-    "url": "/category/i18n-l10n"
+    "url": "/category/i18n-l10n",
+    "description": "JavaScript internationalization, localization, and translation libraries."
   },
   {
     "id": "dom",
     "title": "DOM",
-    "url": "/category/dom"
+    "url": "/category/dom",
+    "description": "JavaScript DOM manipulation, traversal, and browser API helper libraries."
   },
   {
     "id": "functional-programming",
     "title": "Functional Programming",
-    "url": "/category/functional-programming"
+    "url": "/category/functional-programming",
+    "description": "Functional programming libraries and utilities for JavaScript."
   },
   {
     "id": "math-libraries",
     "title": "Math Libraries",
-    "url": "/category/math-libraries"
+    "url": "/category/math-libraries",
+    "description": "JavaScript math, numeric computation, statistics, and algebra libraries."
   },
   {
     "id": "routing",
     "title": "Routing",
-    "url": "/category/routing"
+    "url": "/category/routing",
+    "description": "JavaScript routing libraries for browser, server, and single-page applications."
   },
   {
     "id": "selector-libraries",
     "title": "Selector Libraries",
-    "url": "/category/selector-libraries"
+    "url": "/category/selector-libraries",
+    "description": "JavaScript selector engines and DOM query libraries."
   },
   {
     "id": "html5-applications",
     "title": "Html5 Applications",
-    "url": "/category/html5-applications"
+    "url": "/category/html5-applications",
+    "description": "HTML5 and JavaScript application frameworks, demos, and app tooling."
   },
   {
     "id": "static-site-generators",
     "title": "Static Site Generators",
-    "url": "/category/static-site-generators"
+    "url": "/category/static-site-generators",
+    "description": "JavaScript static site generators and content build tools."
   },
   {
     "id": "code-editors",
     "title": "Code Editors",
-    "url": "/category/code-editors"
+    "url": "/category/code-editors",
+    "description": "JavaScript code editors, browser IDEs, and editing components."
   },
   {
     "id": "prototyping-design",
     "title": "Design And Prototyping",
-    "url": "/category/prototyping-design"
+    "url": "/category/prototyping-design",
+    "description": "JavaScript prototyping, design, and interface planning tools."
   }
 ]
