@@ -1257,7 +1257,7 @@
         "site": "http://whitestormjs.xyz/",
         "github": "https://github.com/WhitestormJS/whitestormjs"
       },
-      "tags": ["3d", "games", "html5", "physijs", "threejs", "whitestormjs"]
+      "tags": ["3d", "games", "html5", "physijs", "three.js", "whitestormjs"]
     }
   },
   {

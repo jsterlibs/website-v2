@@ -42,6 +42,25 @@ const LIBRARY_REDIRECTS: Record<string, string> = {
   "rivets-js": "rivets",
   "svelte-5-is-alive": "svelte",
 };
+const TAG_REDIRECTS: Record<string, string> = {
+  "d3.js": "d3",
+  d3js: "d3",
+  expressjs: "express",
+  "javascript.": "javascript",
+  jqueryui: "jquery-ui",
+  "knockout.js": "knockout",
+  nextjs: "next.js",
+  nodejs: "node.js",
+  opensource: "open-source",
+  "range.": "range",
+  reactjs: "react",
+  Realtime: "realtime",
+  "real-time": "realtime",
+  threejs: "three.js",
+  "underscore.js": "underscore",
+  Webcomponents: "web-components",
+  "widget.": "widget",
+};
 const CATALOG_SKILL_MD = [
   "# JSter Catalog Discovery",
   "",
@@ -185,6 +204,19 @@ async function handleRequest(request: Request, env: WorkerEnv) {
     const id = getPathSegment(pathname, "tag");
 
     if (id) {
+      const redirectTarget = TAG_REDIRECTS[id];
+
+      if (redirectTarget) {
+        const redirectUrl = new URL(
+          `/tag/${encodeURIComponent(redirectTarget)}/`,
+          url,
+        );
+
+        redirectUrl.search = url.search;
+
+        return Response.redirect(redirectUrl.toString(), 301);
+      }
+
       return renderCategoryResponse(
         pathname,
         getTag(id, getCatalogOptions(url)),
@@ -218,6 +250,21 @@ async function renderApiResponse(
 
   if (!source || !id) {
     return jsonResponse({ error: "Not found" }, 404);
+  }
+
+  if (source === "tag") {
+    const redirectTarget = TAG_REDIRECTS[id];
+
+    if (redirectTarget) {
+      const redirectUrl = new URL(
+        `/api/tag/${encodeURIComponent(redirectTarget)}`,
+        url,
+      );
+
+      redirectUrl.search = url.search;
+
+      return Response.redirect(redirectUrl.toString(), 301);
+    }
   }
 
   try {

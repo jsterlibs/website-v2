@@ -76,7 +76,7 @@
         "site": "https://epeli.github.com/underscore.string/",
         "github": "https://github.com/epeli/underscore.string"
       },
-      "tags": ["npm", "underscore.js"]
+      "tags": ["npm", "underscore"]
     }
   },
   {
@@ -254,7 +254,7 @@
         "site": "https://bower.io/",
         "github": "https://github.com/bower/bower"
       },
-      "tags": ["git", "nodejs", "npm"]
+      "tags": ["git", "node.js", "npm"]
     }
   },
   {
@@ -465,7 +465,7 @@
         "site": "http://volojs.org",
         "github": "https://github.com/volojs/volo"
       },
-      "tags": ["nodejs", "npm"]
+      "tags": ["node.js", "npm"]
     }
   },
   {
@@ -521,7 +521,7 @@
         "site": "https://twitter.github.com/recess",
         "github": "https://github.com/twitter/recess"
       },
-      "tags": ["Build", "nodejs", "npm"]
+      "tags": ["Build", "node.js", "npm"]
     }
   },
   {
