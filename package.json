@@ -19,6 +19,7 @@
     "build": "gustwind --build --output ./build --progress",
     "build:cloudflare": "gustwind --build --output ./build --cache-from https://jster.net/ --progress",
     "build:validate": "gustwind --build --output ./build --validate --progress",
+    "workers:deploy": "wrangler deploy ./worker.ts --assets=./build --config=./wrangler.toml",
     "workers:dev": "wrangler dev",
     "pages:dev": "wrangler dev",
     "check:links": "node ./scripts/check-links.mjs",
