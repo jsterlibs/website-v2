@@ -54,6 +54,10 @@ const TAG_REDIRECTS: Record<string, string> = {
   "javascript.": "javascript",
   jTag: "jTags",
   jqueryui: "jquery-ui",
+  key: "keyboard",
+  keypress: "keyboard",
+  keys: "keyboard",
+  keystroke: "keyboard",
   "knockout.js": "knockout",
   layoutengine: "layout",
   nextjs: "next.js",
@@ -78,6 +82,9 @@ const TAG_REDIRECTS: Record<string, string> = {
   validator: "validation",
   Webcomponents: "web-components",
   "widget.": "widget",
+  hotkey: "keyboard",
+  hotkeys: "keyboard",
+  shortcuts: "keyboard",
 };
 const CATALOG_SKILL_MD = [
   "# JSter Catalog Discovery",
