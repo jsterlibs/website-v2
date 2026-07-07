@@ -50,6 +50,8 @@ const TAG_REDIRECTS: Record<string, string> = {
   jqueryui: "jquery-ui",
   "knockout.js": "knockout",
   nextjs: "next.js",
+  notification: "notifications",
+  number: "numbers",
   nodejs: "node.js",
   opensource: "open-source",
   "range.": "range",
@@ -58,6 +60,8 @@ const TAG_REDIRECTS: Record<string, string> = {
   "real-time": "realtime",
   threejs: "three.js",
   "underscore.js": "underscore",
+  validations: "validation",
+  validator: "validation",
   Webcomponents: "web-components",
   "widget.": "widget",
 };
