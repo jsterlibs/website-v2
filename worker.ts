@@ -23,74 +23,84 @@ const DEFAULT_PAGE_SIZE = 100;
 
 export default {
   async fetch(request, env): Promise<Response> {
-    const url = new URL(request.url);
-    const pathname = url.pathname;
+    try {
+      return await handleRequest(request, env);
+    } catch (error) {
+      logWorkerError("worker_unhandled_error", request, error);
 
-    if (pathname.startsWith("/tag/") && pathname.endsWith("/og.png")) {
-      const ogUrl = new URL("/og.png", url);
-      ogUrl.protocol = "https:";
-
-      return Response.redirect(ogUrl.toString(), 302);
+      return internalServerErrorResponse();
     }
-
-    if (pathname.endsWith("/og.png")) {
-      return env.ASSETS.fetch(request);
-    }
-
-    if (pathname === "/ping") {
-      return new Response("Hello, world!");
-    }
-
-    const apiMatch = pathname.match(/^\/api\/([^/]+)\/([^/]+)\/?$/);
-
-    if (apiMatch) {
-      return renderApiResponse(url, apiMatch[1], apiMatch[2]);
-    }
-
-    const libraryMatch = pathname.match(/^\/library\/([^/]+)\/?$/);
-
-    if (libraryMatch) {
-      return renderLibraryResponse(libraryMatch[1]);
-    }
-
-    if (pathname.startsWith("/category/")) {
-      const id = getPathSegment(pathname, "category");
-
-      if (id) {
-        return renderCategoryResponse(
-          pathname,
-          getCategory(id, getCatalogOptions(url)),
-        );
-      }
-    }
-
-    if (pathname.startsWith("/tag/")) {
-      const id = getPathSegment(pathname, "tag");
-
-      if (id) {
-        return renderCategoryResponse(
-          pathname,
-          getTag(id, getCatalogOptions(url)),
-          {
-            robots: "noindex,follow",
-          },
-        );
-      }
-    }
-
-    if (pathname === "/blog/" || pathname === "/blog") {
-      return renderPageResponse("blog", {
-        blogPosts: getBlogPosts(),
-        pageMeta: {
-          title: "JSter – Blog",
-          description: "News relevant to JavaScript",
-        },
-      });
-    }
-
-    return env.ASSETS.fetch(request);
   },
 } satisfies ExportedHandler<WorkerEnv>;
+
+async function handleRequest(request: Request, env: WorkerEnv) {
+  const url = new URL(request.url);
+  const pathname = url.pathname;
+
+  if (pathname.startsWith("/tag/") && pathname.endsWith("/og.png")) {
+    const ogUrl = new URL("/og.png", url);
+    ogUrl.protocol = "https:";
+
+    return Response.redirect(ogUrl.toString(), 302);
+  }
+
+  if (pathname.endsWith("/og.png")) {
+    return env.ASSETS.fetch(request);
+  }
+
+  if (pathname === "/ping") {
+    return new Response("Hello, world!");
+  }
+
+  const apiMatch = pathname.match(/^\/api\/([^/]+)\/([^/]+)\/?$/);
+
+  if (apiMatch) {
+    return renderApiResponse(url, apiMatch[1], apiMatch[2]);
+  }
+
+  const libraryMatch = pathname.match(/^\/library\/([^/]+)\/?$/);
+
+  if (libraryMatch) {
+    return renderLibraryResponse(libraryMatch[1]);
+  }
+
+  if (pathname.startsWith("/category/")) {
+    const id = getPathSegment(pathname, "category");
+
+    if (id) {
+      return renderCategoryResponse(
+        pathname,
+        getCategory(id, getCatalogOptions(url)),
+      );
+    }
+  }
+
+  if (pathname.startsWith("/tag/")) {
+    const id = getPathSegment(pathname, "tag");
+
+    if (id) {
+      return renderCategoryResponse(
+        pathname,
+        getTag(id, getCatalogOptions(url)),
+        {
+          robots: "noindex,follow",
+        },
+      );
+    }
+  }
+
+  if (pathname === "/blog/" || pathname === "/blog") {
+    return renderPageResponse("blog", {
+      blogPosts: getBlogPosts(),
+      pageMeta: {
+        title: "JSter – Blog",
+        description: "News relevant to JavaScript",
+      },
+    });
+  }
+
+  return env.ASSETS.fetch(request);
+}
 
 async function renderApiResponse(
   url: URL,
@@ -114,7 +124,12 @@ async function renderApiResponse(
 
     return jsonResponse(catalogPage, 200);
   } catch (error) {
-    console.error(error);
+    console.warn({
+      event: "api_catalog_not_found",
+      source,
+      id,
+      error: serializeError(error),
+    });
 
     return jsonResponse({ error: "Not found" }, 404);
   }
@@ -150,10 +165,12 @@ async function renderLibraryResponse(name: string | undefined) {
       },
     });
   } catch (error) {
-    console.error(error);
-  }
+    if (isMissingLibraryError(error)) {
+      return notFoundResponse();
+    }
 
-  return notFoundResponse();
+    throw error;
+  }
 }
 
 async function renderCategoryResponse(
@@ -217,6 +234,13 @@ function notFoundResponse() {
   });
 }
 
+function internalServerErrorResponse() {
+  return new Response("Internal server error", {
+    status: 500,
+    headers: noStoreHeaders("text/plain;charset=UTF-8"),
+  });
+}
+
 function cacheHeaders(contentType: string) {
   return {
     "Content-Type": contentType,
@@ -238,10 +262,15 @@ function getSource(source?: string): CatalogSource | undefined {
   }
 }
 
-function fetchLibrary(name: string): Promise<Library> {
+async function fetchLibrary(name: string): Promise<Library> {
   const url = `https://raw.githubusercontent.com/jsterlibs/website-v2/main/data/libraries/${name}.json`;
+  const response = await fetch(url);
 
-  return fetch(url).then((res) => res.json());
+  if (!response.ok) {
+    throw new Error(`Failed to fetch library ${name}: ${response.status}`);
+  }
+
+  return response.json();
 }
 
 async function fetchSecurity(name: string): Promise<Library["security"]> {
@@ -273,7 +302,13 @@ async function fetchSecurity(name: string): Promise<Library["security"]> {
         license: score.license.score,
       },
     };
-  } catch (error) {}
+  } catch (error) {
+    console.warn({
+      event: "security_lookup_failed",
+      name,
+      error: serializeError(error),
+    });
+  }
 }
 
 function getPathSegment(pathname: string, base: string) {
@@ -308,4 +343,38 @@ function isMissingSourceError(error: unknown) {
     (error.message.includes(": 404") ||
       error.message.startsWith("Unknown category "))
   );
+}
+
+function isMissingLibraryError(error: unknown) {
+  return (
+    error instanceof Error &&
+    error.message.startsWith("Failed to fetch library ") &&
+    error.message.endsWith(": 404")
+  );
+}
+
+function logWorkerError(event: string, request: Request, error: unknown) {
+  const url = new URL(request.url);
+
+  console.error({
+    event,
+    method: request.method,
+    pathname: url.pathname,
+    search: url.search,
+    error: serializeError(error),
+  });
+}
+
+function serializeError(error: unknown) {
+  if (error instanceof Error) {
+    return {
+      name: error.name,
+      message: error.message,
+      stack: error.stack,
+    };
+  }
+
+  return {
+    message: String(error),
+  };
 }
