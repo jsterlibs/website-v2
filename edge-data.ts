@@ -3,6 +3,7 @@ import type { BlogPost, Category, Library, Tag } from "./types.ts";
 const RAW_BASE =
   "https://raw.githubusercontent.com/jsterlibs/website-v2/main/";
 const DEFAULT_PAGE_SIZE = 100;
+const SITE_URL = "https://jster.net";
 
 type CategoryIndexEntry = Pick<Category, "id" | "title" | "url">;
 type CategoryLibraryEntry = {
@@ -12,16 +13,22 @@ type CategoryLibraryEntry = {
   library: Library;
 };
 type BlogIndexEntry = Pick<BlogPost, "id" | "title" | "url" | "date">;
+type JsonAssetSource = { fetch: typeof fetch };
 
 const jsonCache = new Map<string, Promise<unknown>>();
 
-function fetchJson<T>(path: string): Promise<T> {
-  const cached = jsonCache.get(path);
+function fetchJson<T>(path: string, assets?: JsonAssetSource): Promise<T> {
+  const cacheKey = `${assets ? "asset" : "raw"}:${path}`;
+  const cached = jsonCache.get(cacheKey);
   if (cached) {
     return cached as Promise<T>;
   }
 
-  const promise = fetch(RAW_BASE + path).then(async (response) => {
+  const jsonRequest = assets
+    ? new Request(new URL(`/${path}`, SITE_URL).toString())
+    : RAW_BASE + path;
+  const jsonFetch = assets ? assets.fetch.bind(assets) : fetch;
+  const promise = jsonFetch(jsonRequest).then(async (response) => {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${path}: ${response.status}`);
     }
@@ -29,7 +36,7 @@ function fetchJson<T>(path: string): Promise<T> {
     return response.json();
   });
 
-  jsonCache.set(path, promise);
+  jsonCache.set(cacheKey, promise);
 
   return promise as Promise<T>;
 }
@@ -37,19 +44,27 @@ function fetchJson<T>(path: string): Promise<T> {
 async function getCategory(
   id: string,
   {
+    assets,
     page = 1,
     pageSize = DEFAULT_PAGE_SIZE,
     pathname = `/category/${id}/`,
+  }: {
+    assets?: JsonAssetSource;
+    page?: number;
+    pageSize?: number;
+    pathname?: string;
   } = {},
 ) {
   const categories = await fetchJson<CategoryIndexEntry[]>(
     "data/categories.json",
+    assets,
   );
   const catalogPage = await getCategoryLibraries(
     "category",
     id,
     page,
     pageSize,
+    assets,
   );
   const category = categories.find((entry) => entry.id === id);
 
@@ -68,14 +83,29 @@ async function getCategory(
 
 async function getTag(
   id: string,
-  { page = 1, pageSize = DEFAULT_PAGE_SIZE, pathname = `/tag/${id}/` } = {},
+  {
+    assets,
+    page = 1,
+    pageSize = DEFAULT_PAGE_SIZE,
+    pathname = `/tag/${id}/`,
+  }: {
+    assets?: JsonAssetSource;
+    page?: number;
+    pageSize?: number;
+    pathname?: string;
+  } = {},
 ) {
-  const catalogPage = await getCategoryLibraries("tag", id, page, pageSize);
+  const catalogPage = await getCategoryLibraries(
+    "tag",
+    id,
+    page,
+    pageSize,
+    assets,
+  );
 
   return {
-    id,
-    title: id,
     ...catalogPage,
+    title: id,
     hasLibraries: catalogPage.libraries.length > 0,
     sourceType: "tag",
     ...getPaginationUrls(pathname, catalogPage.page, catalogPage.pageCount),
@@ -87,10 +117,11 @@ async function getCategoryLibraries(
   id: string,
   page = 1,
   pageSize = DEFAULT_PAGE_SIZE,
+  assets?: JsonAssetSource,
 ) {
   const path =
     type === "tag" ? `data/tags/${id}.json` : `data/categories/${id}.json`;
-  const entries = await fetchJson<CategoryLibraryEntry[]>(path);
+  const entries = await fetchJson<CategoryLibraryEntry[]>(path, assets);
   const libraries = entries
     .map(({ library }) => library)
     .sort(compareLibrariesForIndex);
@@ -110,8 +141,11 @@ async function getCategoryLibraries(
   };
 }
 
-async function getBlogPosts() {
-  const blogPosts = await fetchJson<BlogIndexEntry[]>("data/blogposts.json");
+async function getBlogPosts(assets?: JsonAssetSource) {
+  const blogPosts = await fetchJson<BlogIndexEntry[]>(
+    "data/blogposts.json",
+    assets,
+  );
 
   return blogPosts
     .map((blogPost) => ({

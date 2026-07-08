@@ -211,7 +211,7 @@ async function handleRequest(
   const apiMatch = pathname.match(/^\/api\/([^/]+)\/([^/]+)\/?$/);
 
   if (apiMatch) {
-    return renderApiResponse(url, apiMatch[1], apiMatch[2]);
+    return renderApiResponse(url, apiMatch[1], apiMatch[2], env);
   }
 
   const libraryMatch = pathname.match(/^\/library\/([^/]+)\/?$/);
@@ -229,13 +229,23 @@ async function handleRequest(
     return renderLibraryResponse(libraryId, env, ctx);
   }
 
+  if (/^\/(?:category|tag)\/[^/]+$/.test(pathname)) {
+    const redirectUrl = new URL(`${pathname}/`, url);
+    redirectUrl.search = url.search;
+
+    return Response.redirect(redirectUrl.toString(), 301);
+  }
+
   if (pathname.startsWith("/category/")) {
     const id = getPathSegment(pathname, "category");
 
     if (id) {
       return renderCategoryResponse(
         pathname,
-        getCategory(id, getCatalogOptions(url)),
+        getCategory(id, {
+          ...getCatalogOptions(url),
+          assets: env.ASSETS,
+        }),
       );
     }
   }
@@ -259,7 +269,10 @@ async function handleRequest(
 
       return renderCategoryResponse(
         pathname,
-        getTag(id, getCatalogOptions(url)),
+        getTag(id, {
+          ...getCatalogOptions(url),
+          assets: env.ASSETS,
+        }),
         {
           robots: "noindex,follow",
         },
@@ -269,7 +282,7 @@ async function handleRequest(
 
   if (pathname === "/blog/" || pathname === "/blog") {
     return renderPageResponse("blog", {
-      blogPosts: getBlogPosts(),
+      blogPosts: getBlogPosts(env.ASSETS),
       pageMeta: {
         title: "JSter – Blog",
         description: "News relevant to JavaScript",
@@ -284,6 +297,7 @@ async function renderApiResponse(
   url: URL,
   sourceParam: string | undefined,
   idParam: string | undefined,
+  env: WorkerEnv,
 ) {
   const source = getSource(sourceParam);
   const id = idParam ? decodeURIComponent(idParam) : "";
@@ -313,7 +327,13 @@ async function renderApiResponse(
       url.searchParams.get("pageSize"),
       DEFAULT_PAGE_SIZE,
     );
-    const catalogPage = await getCategoryLibraries(source, id, page, pageSize);
+    const catalogPage = await getCategoryLibraries(
+      source,
+      id,
+      page,
+      pageSize,
+      env.ASSETS,
+    );
 
     return jsonResponse(catalogPage, 200);
   } catch (error) {
