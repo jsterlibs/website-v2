@@ -1,9 +1,4 @@
-import {
-  getBlogPosts,
-  getCategory,
-  getCategoryLibraries,
-  getTag,
-} from "./edge-data.ts";
+import { getBlogPosts, getCategoryLibraries, getTag } from "./edge-data.ts";
 import { render } from "./render.ts";
 import { ZLibrary, type Library } from "./types.ts";
 
@@ -240,13 +235,7 @@ async function handleRequest(
     const id = getPathSegment(pathname, "category");
 
     if (id) {
-      return renderCategoryResponse(
-        pathname,
-        getCategory(id, {
-          ...getCatalogOptions(url),
-          assets: env.ASSETS,
-        }),
-      );
+      return env.ASSETS.fetch(request);
     }
   }
 
@@ -392,7 +381,7 @@ async function renderLibraryResponse(
 
 async function renderCategoryResponse(
   pathname: string,
-  categoryPromise: ReturnType<typeof getCategory> | ReturnType<typeof getTag>,
+  categoryPromise: ReturnType<typeof getTag>,
   meta: { robots?: string } = {},
 ) {
   try {
