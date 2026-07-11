@@ -985,15 +985,28 @@ function cacheLibraryResponse(
 async function fetchSecurity(name: string): Promise<Library["security"]> {
   try {
     const npmName = name.trim().toLowerCase();
-    const { metrics, score, error } = await fetch(
-      `https://socket.dev/api/npm/package-info/score?name=${npmName}&low_priority=1`,
-    ).then((res) =>
-      res.json<{
-        metrics: Record<string, number>;
-        score: Record<string, { score: number }>;
-        error: string;
-      }>(),
+    const response = await fetch(
+      `https://socket.dev/api/npm/package-info/score?name=${encodeURIComponent(npmName)}&low_priority=1`,
     );
+    const contentType = response.headers.get("content-type") ?? "";
+
+    if (!response.ok || !contentType.toLowerCase().includes("application/json")) {
+      console.warn({
+        event: "security_lookup_upstream_error",
+        name,
+        status: response.status,
+        contentType,
+        cfMitigated: response.headers.get("cf-mitigated"),
+      });
+
+      return;
+    }
+
+    const { metrics, score, error } = await response.json<{
+      metrics: Record<string, number>;
+      score: Record<string, { score: number }>;
+      error: string;
+    }>();
 
     if (error) {
       return;
