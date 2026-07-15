@@ -15,30 +15,19 @@ type CategoryLibraryEntry = {
 type BlogIndexEntry = Pick<BlogPost, "id" | "title" | "url" | "date">;
 type JsonAssetSource = { fetch: typeof fetch };
 
-const jsonCache = new Map<string, Promise<unknown>>();
-
 function fetchJson<T>(path: string, assets?: JsonAssetSource): Promise<T> {
-  const cacheKey = `${assets ? "asset" : "raw"}:${path}`;
-  const cached = jsonCache.get(cacheKey);
-  if (cached) {
-    return cached as Promise<T>;
-  }
-
   const jsonRequest = assets
     ? new Request(new URL(`/${path}`, SITE_URL).toString())
     : RAW_BASE + path;
   const jsonFetch = assets ? assets.fetch.bind(assets) : fetch;
-  const promise = jsonFetch(jsonRequest).then(async (response) => {
+
+  return jsonFetch(jsonRequest).then(async (response) => {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${path}: ${response.status}`);
     }
 
-    return response.json();
+    return response.json<T>();
   });
-
-  jsonCache.set(cacheKey, promise);
-
-  return promise as Promise<T>;
 }
 
 async function getCategory(
