@@ -113,6 +113,18 @@ const DISCOVERY_LINKS = [
   '</.well-known/agent-skills/index.json>; rel="service-desc"; type="application/json"',
   '</.well-known/mcp/server-card.json>; rel="service-desc"; type="application/json"',
 ];
+const CONTENT_SECURITY_POLICY = [
+  "default-src 'self'",
+  "base-uri 'self'",
+  "connect-src 'self'",
+  "font-src 'self' data:",
+  "frame-ancestors 'none'",
+  "img-src 'self' data: https:",
+  "object-src 'none'",
+  "script-src 'self' 'unsafe-inline'",
+  "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net",
+  "upgrade-insecure-requests",
+].join("; ");
 
 export default {
   async fetch(request, env, ctx): Promise<Response> {
@@ -120,16 +132,16 @@ export default {
       const httpsRedirect = maybeHttpsRedirect(request);
 
       if (httpsRedirect) {
-        return httpsRedirect;
+        return addSecurityHeaders(httpsRedirect);
       }
 
       const response = await handleRequest(request, env, ctx);
 
-      return finalizeResponse(request, response);
+      return addSecurityHeaders(await finalizeResponse(request, response));
     } catch (error) {
       logWorkerError("worker_unhandled_error", request, error);
 
-      return internalServerErrorResponse();
+      return addSecurityHeaders(internalServerErrorResponse());
     }
   },
 } satisfies ExportedHandler<Env>;
@@ -151,10 +163,12 @@ function maybeHttpsRedirect(request: Request) {
     return;
   }
 
-  const url = new URL(request.url);
-  url.protocol = "https:";
-
-  return Response.redirect(url.toString(), 308);
+  return new Response(null, {
+    status: 308,
+    headers: {
+      Location: request.url.replace(/^http:/, "https:"),
+    },
+  });
 }
 
 async function handleRequest(
@@ -843,6 +857,23 @@ function addDiscoveryHeaders(response: Response) {
       ? `${existingLink}, ${DISCOVERY_LINKS.join(", ")}`
       : DISCOVERY_LINKS.join(", "),
   );
+
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
+function addSecurityHeaders(response: Response) {
+  const headers = new Headers(response.headers);
+
+  headers.set("Content-Security-Policy", CONTENT_SECURITY_POLICY);
+  headers.set("Permissions-Policy", "camera=(), geolocation=(), microphone=()");
+  headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  headers.set("Strict-Transport-Security", "max-age=31536000");
+  headers.set("X-Content-Type-Options", "nosniff");
+  headers.set("X-Frame-Options", "DENY");
 
   return new Response(response.body, {
     status: response.status,
