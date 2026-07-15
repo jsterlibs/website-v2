@@ -8,6 +8,9 @@ const ONE_HOUR = 60 * 60;
 const ONE_DAY = ONE_HOUR * 24;
 const ONE_WEEK = ONE_DAY * 7;
 const DEFAULT_PAGE_SIZE = 100;
+const UPSTREAM_TIMEOUT_MS = 5_000;
+const LIBRARY_CACHE_NAME = "jster-library-v1";
+const SECURITY_CACHE_NAME = "jster-security-v1";
 const SITE_URL = "https://jster.net";
 const OAUTH_ISSUER = SITE_URL;
 const AUTH_MD_URL = `${SITE_URL}/auth.md`;
@@ -350,7 +353,7 @@ async function renderLibraryResponse(
       library.stargazers = stargazers;
     }
 
-    const security = await fetchSecurity(library.name);
+    const security = await fetchSecurity(library.name, ctx);
 
     if (security) {
       library.security = security;
@@ -906,7 +909,12 @@ async function fetchLibrary(
       SITE_URL,
     ).toString(),
   );
-  const cachedResponse = await getCachedLibraryResponse(cacheRequest, name);
+  const cachedResponse = await getCachedResponse(
+    LIBRARY_CACHE_NAME,
+    cacheRequest,
+    "library_cache_read_failed",
+    name,
+  );
 
   if (cachedResponse) {
     return cachedResponse.json();
@@ -934,19 +942,22 @@ async function fetchLibrary(
   return library;
 }
 
-async function getCachedLibraryResponse(
+async function getCachedResponse(
+  cacheName: string,
   request: Request,
+  event: string,
   name: string,
 ): Promise<Response | undefined> {
   try {
-    const response = await caches.default.match(request);
+    const cache = await caches.open(cacheName);
+    const response = await cache.match(request);
 
     if (response?.ok) {
       return response;
     }
   } catch (error) {
     console.warn({
-      event: "library_cache_read_failed",
+      event,
       name,
       error: serializeError(error),
     });
@@ -965,21 +976,45 @@ function cacheLibraryResponse(
   });
 
   ctx.waitUntil(
-    caches.default.put(request, cacheableResponse).catch((error) => {
-      console.warn({
-        event: "library_cache_write_failed",
-        name,
-        error: serializeError(error),
-      });
-    }),
+    cacheResponse(
+      LIBRARY_CACHE_NAME,
+      request,
+      cacheableResponse,
+      "library_cache_write_failed",
+      name,
+    ),
   );
 }
 
-async function fetchSecurity(name: string): Promise<Library["security"]> {
+async function fetchSecurity(
+  name: string,
+  ctx: ExecutionContext,
+): Promise<Library["security"]> {
   try {
     const npmName = name.trim().toLowerCase();
+    const cacheRequest = new Request(
+      new URL(
+        `/__cache/security/${encodeURIComponent(npmName)}.json`,
+        SITE_URL,
+      ).toString(),
+    );
+    const cachedResponse = await getCachedResponse(
+      SECURITY_CACHE_NAME,
+      cacheRequest,
+      "security_cache_read_failed",
+      name,
+    );
+
+    if (cachedResponse) {
+      return cachedResponse.json<NonNullable<Library["security"]>>();
+    }
+
     const response = await fetch(
       `https://socket.dev/api/npm/package-info/score?name=${encodeURIComponent(npmName)}&low_priority=1`,
+      {
+        headers: { Accept: "application/json" },
+        signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
+      },
     );
     const contentType = response.headers.get("content-type") ?? "";
 
@@ -1005,10 +1040,11 @@ async function fetchSecurity(name: string): Promise<Library["security"]> {
       return;
     }
 
-    return {
-      npmName,
-      // @ts-expect-error TODO: Type and validate this accurately
-      metrics,
+    const security: NonNullable<Library["security"]> = {
+      metrics: {
+        dependencyCount: metrics.dependencyCount,
+        dependencyVulnerabilityCount: metrics.dependencyVulnerabilityCount,
+      },
       score: {
         supplyChain: score.supplyChainRisk.score,
         quality: score.quality.score,
@@ -1017,9 +1053,43 @@ async function fetchSecurity(name: string): Promise<Library["security"]> {
         license: score.license.score,
       },
     };
+
+    ctx.waitUntil(
+      cacheResponse(
+        SECURITY_CACHE_NAME,
+        cacheRequest,
+        new Response(JSON.stringify(security), {
+          headers: cacheHeaders("application/json;charset=UTF-8"),
+        }),
+        "security_cache_write_failed",
+        name,
+      ),
+    );
+
+    return security;
   } catch (error) {
     console.warn({
       event: "security_lookup_failed",
+      name,
+      error: serializeError(error),
+    });
+  }
+}
+
+async function cacheResponse(
+  cacheName: string,
+  request: Request,
+  response: Response,
+  event: string,
+  name: string,
+) {
+  try {
+    const cache = await caches.open(cacheName);
+
+    await cache.put(request, response);
+  } catch (error) {
+    console.warn({
+      event,
       name,
       error: serializeError(error),
     });
