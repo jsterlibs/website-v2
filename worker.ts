@@ -117,6 +117,12 @@ const DISCOVERY_LINKS = [
 export default {
   async fetch(request, env, ctx): Promise<Response> {
     try {
+      const httpsRedirect = maybeHttpsRedirect(request);
+
+      if (httpsRedirect) {
+        return httpsRedirect;
+      }
+
       const response = await handleRequest(request, env, ctx);
 
       return finalizeResponse(request, response);
@@ -127,6 +133,29 @@ export default {
     }
   },
 } satisfies ExportedHandler<Env>;
+
+function maybeHttpsRedirect(request: Request) {
+  const visitor = request.headers.get("CF-Visitor");
+
+  if (!visitor) {
+    return;
+  }
+
+  try {
+    const { scheme } = JSON.parse(visitor) as { scheme?: unknown };
+
+    if (scheme !== "http") {
+      return;
+    }
+  } catch {
+    return;
+  }
+
+  const url = new URL(request.url);
+  url.protocol = "https:";
+
+  return Response.redirect(url.toString(), 308);
+}
 
 async function handleRequest(
   request: Request,
