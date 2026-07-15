@@ -2,13 +2,6 @@ import { getBlogPosts, getCategoryLibraries, getTag } from "./edge-data.ts";
 import { render } from "./render.ts";
 import { ZLibrary, type Library } from "./types.ts";
 
-type WorkerEnv = {
-  API_AUTH?: string;
-  ASSETS: {
-    fetch: typeof fetch;
-  };
-};
-
 type CatalogSource = "category" | "tag";
 
 const ONE_HOUR = 60 * 60;
@@ -130,11 +123,11 @@ export default {
       return internalServerErrorResponse();
     }
   },
-} satisfies ExportedHandler<WorkerEnv>;
+} satisfies ExportedHandler<Env>;
 
 async function handleRequest(
   request: Request,
-  env: WorkerEnv,
+  env: Env,
   ctx: ExecutionContext,
 ) {
   const url = new URL(request.url);
@@ -286,7 +279,7 @@ async function renderApiResponse(
   url: URL,
   sourceParam: string | undefined,
   idParam: string | undefined,
-  env: WorkerEnv,
+  env: Env,
 ) {
   const source = getSource(sourceParam);
   const id = idParam ? decodeURIComponent(idParam) : "";
@@ -339,7 +332,7 @@ async function renderApiResponse(
 
 async function renderLibraryResponse(
   name: string | undefined,
-  env: WorkerEnv,
+  env: Env,
   ctx: ExecutionContext,
 ) {
   if (!name) {
@@ -744,7 +737,7 @@ function noStoreHeaders(contentType: string) {
 
 async function maybeMarkdownAssetResponse(
   request: Request,
-  env: WorkerEnv,
+  env: Env,
   pathname: string,
 ) {
   if (!acceptsMarkdown(request) || !pathname.startsWith("/blog/")) {
@@ -904,7 +897,7 @@ function getSource(source?: string): CatalogSource | undefined {
 
 async function fetchLibrary(
   name: string,
-  env: WorkerEnv,
+  env: Env,
   ctx: ExecutionContext,
 ): Promise<Library> {
   const cacheRequest = new Request(

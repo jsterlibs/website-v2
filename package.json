@@ -8,12 +8,12 @@
     "node": ">=26.4.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20260603.1",
+    "@cloudflare/workers-types": "5.20260715.1",
     "@types/node": "25.9.1",
     "gustwind": "0.160.0",
     "highlight.js": "11.11.1",
     "typescript": "6.0.3",
-    "wrangler": "4.97.0"
+    "wrangler": "4.111.0"
   },
   "scripts": {
     "build": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --progress && npm run copy:css && npm run copy:catalog-data",
@@ -21,6 +21,8 @@
     "build:validate": "node ./scripts/generate-manifest.mjs && gustwind --build --output ./build --validate --progress && npm run copy:css && npm run copy:catalog-data",
     "workers:deploy": "wrangler deploy ./worker.ts --assets=./build --config=./wrangler.toml",
     "workers:dev": "wrangler dev",
+    "workers:types": "wrangler types --config=./wrangler.toml --env-file=/dev/null --include-runtime=false",
+    "workers:types:check": "wrangler types --config=./wrangler.toml --env-file=/dev/null --include-runtime=false --check",
     "check:links": "node ./scripts/check-links.mjs",
     "check:links:external": "node ./scripts/check-links.mjs --external",
     "audit:catalog": "node ./scripts/audit-catalog.mjs",
