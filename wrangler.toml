@@ -10,9 +10,6 @@ html_handling = "auto-trailing-slash"
 not_found_handling = "none"
 run_worker_first = true
 
-[cache]
-enabled = true
-
 [observability]
 enabled = true
 
