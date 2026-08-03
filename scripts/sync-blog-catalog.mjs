@@ -22,6 +22,7 @@ const CATALOG_SECTION_TO_CATEGORY = new Map([
   ["animation", "animation-libraries"],
   ["data manipulation", "data-structures"],
   ["data structures", "data-structures"],
+  ["design systems", "ui-components"],
   ["frameworks", "application-frameworks"],
   ["game engines", "game-engines"],
   ["games", "game-engines"],
@@ -32,12 +33,13 @@ const CATALOG_SECTION_TO_CATEGORY = new Map([
   ["ui libraries", "ui-components"],
 ]);
 const ANY_URL_CATALOG_SECTIONS = new Set([
+  "design systems",
   "frameworks",
   "libraries",
   "ui libraries",
 ]);
 const SKIP_SECTION_RE =
-  /^(?:articles?|techniques?|tutorials?|guides?|news|reads?|benchmarks?|boilerplates?|demos?)$/i;
+  /^(?:articles?|papers?|techniques?|tutorials?|guides?|news|reads?|benchmarks?|boilerplates?|demos?|skills?)$/i;
 const PACKAGE_HOST_RE =
   /(^|\.)(github\.com|npmjs\.com|jsr\.io|deno\.land|bun\.sh)$/i;
 const SHORT_URL_HOST_RE = /(^|\.)buff\.ly$|(^|\.)bit\.ly$|(^|\.)ilo\.im$/i;
@@ -493,6 +495,7 @@ function cleanLibraryName(value) {
   ret = ret.replace(/\s+v?\d+(?:\.\d+)*\s+for\b.*$/i, "");
   ret = ret.replace(/\s+v?\d+(?:\.\d+)*\s+release$/i, "");
   ret = ret.replace(/\s+(?:is\s+)?(?:now\s+)?(?:available|released|out|here|stable|live)\b.*$/i, "");
+  ret = ret.replace(/\s+(?:is\s+)?ready\s+for\b.*$/i, "");
   ret = ret.replace(/\s+v?\d+\.\d+(?:\.\d+)?(?:[-\s]?(?:alpha|beta|rc)\.?\d*)?[!.]?$/i, "");
   ret = ret.replace(/\s+v\d+(?:[-\s]?(?:alpha|beta|rc)\.?\d*)?$/i, "");
   ret = ret.replace(/\s+(?:alpha|beta|rc)\.?\d*$/i, "");
@@ -723,6 +726,8 @@ function cleanDescription(value) {
 
 function slugify(value) {
   return cleanTitle(value)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/['’]/g, "")
     .replace(/[^a-z0-9]+/g, "-")

@@ -20,12 +20,45 @@ const DEFAULT_CATEGORY = "Uncategorized";
 const CATEGORY_ORDER = [
   "Libraries",
   "Frameworks",
+  "Design Systems",
   "Articles",
+  "Papers",
   "Techniques",
   "Tools",
+  "Skills",
   "Runtimes",
+  "Demos",
 ];
 const CATEGORY_RULES = [
+  {
+    category: "Papers",
+    weight: 9,
+    patterns: [
+      /\bresearchgate\.net\/publication\//i,
+      /\b(?:research|academic)\s+papers?\b/i,
+    ],
+  },
+  {
+    category: "Skills",
+    weight: 9,
+    patterns: [
+      /\b(?:anthropic|claude|codex|agent(?:ic)?|ai)\b.{0,80}\bskills?\b|\bskills?\b.{0,80}\b(?:anthropic|claude|codex|agents?|ai)\b/i,
+    ],
+  },
+  {
+    category: "Design Systems",
+    weight: 9,
+    patterns: [
+      /\bdesign\s+systems?\b/i,
+    ],
+  },
+  {
+    category: "Demos",
+    weight: 9,
+    patterns: [
+      /\b(?:demo|demonstration|experiment|playground|quine)\b/i,
+    ],
+  },
   {
     category: "Runtimes",
     weight: 8,
@@ -60,6 +93,10 @@ const CATEGORY_RULES = [
     weight: 4,
     patterns: [
       /\b(?:library|lib|component|hook|sdk|client|module|plugin|polyfill|widget|parser|renderer|chart|visuali[sz]ation|date|validation|schema|forms?|table|grid|audio|video|image|map|crypto|storage|search\s+params)\b/i,
+      /(?:^|\s)[\w-]+\.js(?=\s|$|[-:–—])/i,
+      /\bmarkdown\s+pipeline\b/i,
+      /\b(?:announcing|introducing)\s+[\w@.-]+\b/i,
+      /\bkubernetes\s+in\s+(?:the\s+)?browser\b/i,
     ],
   },
   {
@@ -67,6 +104,7 @@ const CATEGORY_RULES = [
     weight: 3,
     patterns: [
       /\b(?:article|blog|guide|tutorial|explainer|case\s+study|how\s+to|building|writing|why|what|lessons?|notes?|thoughts?|turn|best|custom|practical|approach)\b/i,
+      /\bbuilding\b.{0,80}\bapplications?\b/i,
     ],
   },
 ];
