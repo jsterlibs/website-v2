@@ -6,6 +6,30 @@ This repository contains the source for jster.net.
 
 See `npm run` for available build targets.
 
+### Publishing to Buttondown
+
+Create a Buttondown API key with write access to emails and add it to `.env`
+(or export it in your shell):
+
+```sh
+BUTTONDOWN_API_KEY=...
+```
+
+The latest JSter issue is selected automatically. The command creates a draft
+unless sending or scheduling is explicitly requested:
+
+```sh
+npm run publish:buttondown -- --dry-run
+npm run publish:buttondown
+npm run publish:buttondown -- --post 258
+npm run publish:buttondown -- --send
+npm run publish:buttondown -- --schedule 2026-08-04T09:00:00Z
+```
+
+For a platform account with multiple newsletters, also set
+`BUTTONDOWN_NEWSLETTER_ID` to the target newsletter UUID. Immediate or scheduled
+publishing requires sending permission on the API key.
+
 ### Cloudflare build cache
 
 Cloudflare uses the previously deployed site as Gustwind's cache source:
