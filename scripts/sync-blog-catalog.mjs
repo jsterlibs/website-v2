@@ -485,6 +485,10 @@ function cleanLibraryName(value) {
   let ret = cleanTitle(value);
 
   ret = ret.replace(
+    /\s+v?\d+(?:\.\d+)*(?:[-\s]?(?:alpha|beta|rc)\.?\d*)?\s+(?:has\s+been|is|was)\s+released\b.*$/i,
+    "",
+  );
+  ret = ret.replace(
     /^version\s+[\dv.]+(?:\s+of)?\s+(.+?)\s+(?:is\s+)?(?:now\s+)?(?:available|released|out|here).*$/i,
     "$1",
   );
@@ -800,4 +804,4 @@ function isGenericRepoName(name) {
   return /^(?:app|cli|core|demo|docs?|js|lib|pkg|utils?|web|s)$/i.test(name);
 }
 
-export { syncBlogCatalog };
+export { cleanLibraryName, syncBlogCatalog };

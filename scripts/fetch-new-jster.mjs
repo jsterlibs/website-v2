@@ -29,6 +29,16 @@ const CATEGORY_ORDER = [
   "Runtimes",
   "Demos",
 ];
+const DEFAULT_QUOTES = [
+  "JavaScript: because one runtime was never going to be enough.",
+  "The web has no final form, only another release candidate.",
+  "JavaScript: where today’s edge case is tomorrow’s framework.",
+  "Ship happens. So do breaking changes.",
+  "Somewhere, a dependency just became a framework.",
+  "The shortest path between two APIs is usually another dependency.",
+  "Write once, debug wherever the browser feels like it.",
+  "The future of the web is loading asynchronously.",
+];
 const CATEGORY_RULES = [
   {
     category: "Papers",
@@ -110,11 +120,22 @@ const CATEGORY_RULES = [
 ];
 const ARTICLE_HOST_RE = /(?:^|\.)((?:blog|docs|developer|dev|engineering|learn)\.|medium\.com$|dev\.to$|hashnode\.dev$|substack\.com$)/i;
 const GITHUB_HOST_RE = /(^|\.)github\.com$/i;
+const LAUNCH_TITLE_RE =
+  /^(?:announcing|introducing)\b|\b(?:release candidate|has been released|now available)\b|\bv?\d+(?:\.\d+)*(?:[-\s]?(?:alpha|beta|rc)\.?\d*)?(?:\s+(?:is here|released|release))?[!.]?$/i;
+const PRODUCT_CATEGORIES = [
+  "Design Systems",
+  "Runtimes",
+  "Frameworks",
+  "Tools",
+  "Libraries",
+];
 
-main().catch((error) => {
-  console.error(error.message || error);
-  process.exit(1);
-});
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main().catch((error) => {
+    console.error(error.message || error);
+    process.exit(1);
+  });
+}
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
@@ -729,10 +750,23 @@ function categorizeEntry(entry) {
   }, {});
 
   addUrlScore(scores, entry.url);
+  adjustLaunchScores(scores, entry.title);
 
   const best = Object.entries(scores).sort((a, b) => b[1] - a[1])[0];
 
   return best?.[0] || fallbackCategory(entry.url);
+}
+
+function adjustLaunchScores(scores, title) {
+  if (!LAUNCH_TITLE_RE.test(title)) {
+    return;
+  }
+
+  delete scores.Articles;
+
+  if (!PRODUCT_CATEGORIES.some((category) => scores[category])) {
+    scores.Libraries = 4;
+  }
 }
 
 function addUrlScore(scores, url) {
@@ -770,6 +804,7 @@ function parseUrl(url) {
 }
 
 function renderPost({ number, title, preamble, entries }) {
+  const intro = preamble || `> ${DEFAULT_QUOTES[(number - 1) % DEFAULT_QUOTES.length]}`;
   const groups = entries.reduce((ret, entry) => {
     const category = entry.category || DEFAULT_CATEGORY;
 
@@ -798,8 +833,8 @@ function renderPost({ number, title, preamble, entries }) {
     `slug: jster-${number}`,
     "---",
     "",
-    preamble,
-    preamble ? "" : undefined,
+    intro,
+    "",
     body,
     "",
   ]
@@ -831,3 +866,5 @@ function formatDate(date) {
 function relative(filePath) {
   return filePath.replace(`${ROOT}/`, "");
 }
+
+export { categorizeEntry };
