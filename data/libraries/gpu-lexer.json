@@ -1,0 +1,1 @@
+{"id":"gpu-lexer","description":"An experimental syntax highlighter that uses WebGPU to classify source code tokens across languages.","logo":"/images/repo.png","name":"gpu-lexer","links":{"site":"https://gpu-lexer.vercel.app/"},"tags":[]}
