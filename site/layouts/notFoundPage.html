@@ -1,0 +1,21 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="catalog-surface">
+      <section class="not-found p-4 mx-auto max-w-5xl" aria-labelledby="not-found-title">
+        <p class="not-found-code" aria-label="Error 404">404</p>
+        <div class="not-found-content">
+          <h1 id="not-found-title" class="catalog-heading">Page not found</h1>
+          <p class="not-found-message">
+            This page may have moved, or the link may be incorrect.
+            There’s still plenty of JavaScript to explore.
+          </p>
+          <div class="not-found-links">
+            <a class="not-found-primary" href="/catalog/">Browse the catalog</a>
+            <a href="/blog/">Read the latest posts</a>
+            <a href="/">Go to the homepage</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </slot>
+</BaseLayout>

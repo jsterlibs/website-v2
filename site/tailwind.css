@@ -1,6 +1,64 @@
 @import "tailwindcss";
 
 @layer components {
+  .not-found {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+    min-height: 55vh;
+    padding-block: clamp(3rem, 8vw, 7rem);
+  }
+
+  .not-found-code {
+    color: #3a2fa6;
+    font-size: clamp(5rem, 15vw, 10rem);
+    font-weight: 800;
+    letter-spacing: -0.08em;
+    line-height: 1;
+  }
+
+  .not-found-content {
+    flex: 1 1 20rem;
+    min-width: 0;
+  }
+
+  .not-found-message {
+    color: var(--color-gray-700);
+    line-height: 1.75;
+    margin-block: 1.5rem;
+    max-width: 32rem;
+  }
+
+  .not-found-links {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .not-found-links a {
+    color: #3a2fa6;
+    text-underline-offset: 0.25em;
+  }
+
+  .not-found-links .not-found-primary {
+    background: #3a2fa6;
+    color: white;
+    font-weight: 700;
+    padding: 0.875rem 1.25rem;
+    text-decoration: none;
+  }
+
+  .not-found-primary:hover {
+    background: #2c2380;
+  }
+
+  .not-found-links a:focus-visible {
+    outline: 3px solid #3a2fa6;
+    outline-offset: 4px;
+  }
+
   .blog-surface {
     background:
       linear-gradient(90deg, rgba(58, 47, 166, 0.06) 1px, transparent 1px),

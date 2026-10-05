@@ -135,7 +135,14 @@ export default {
         return addSecurityHeaders(httpsRedirect);
       }
 
-      const response = await handleRequest(request, env, ctx);
+      let response = await handleRequest(request, env, ctx);
+
+      if (
+        response.status === 404 &&
+        !/^application\/json\b/i.test(response.headers.get("Content-Type") || "")
+      ) {
+        response = await notFoundPageResponse(request, response, env);
+      }
 
       return addSecurityHeaders(await finalizeResponse(request, response));
     } catch (error) {
@@ -246,6 +253,14 @@ async function handleRequest(
 
   if (apiMatch) {
     return renderApiResponse(url, apiMatch[1], apiMatch[2], env);
+  }
+
+  if (pathname === "/api" || pathname.startsWith("/api/")) {
+    return jsonResponse({ error: "Not found" }, 404);
+  }
+
+  if (/^\/404(?:\.html|\/)?$/.test(pathname)) {
+    return notFoundResponse();
   }
 
   const libraryMatch = pathname.match(/^\/library\/([^/]+)\/?$/);
@@ -756,6 +771,25 @@ function notFoundResponse() {
   return new Response("Not found", {
     status: 404,
     headers: noStoreHeaders("text/plain;charset=UTF-8"),
+  });
+}
+
+async function notFoundPageResponse(request: Request, response: Response, env: Env) {
+  // Static assets already supply the built 404 page. Dynamic misses use it too.
+  const page = isHtmlResponse(response)
+    ? response
+    : await env.ASSETS.fetch(new Request(new URL("/404", request.url)));
+  const headers = new Headers(page.headers);
+
+  headers.set("Cache-Control", "no-store");
+  headers.set("Cloudflare-CDN-Cache-Control", "no-store");
+  headers.set("X-Robots-Tag", "noindex, follow");
+  headers.delete("ETag");
+  headers.delete("Content-Length");
+
+  return new Response(request.method === "HEAD" ? null : page.body, {
+    status: 404,
+    headers,
   });
 }
 

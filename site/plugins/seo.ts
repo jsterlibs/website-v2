@@ -217,7 +217,7 @@ async function listPublicPaths(directoryPath: string, parentPath = ""): Promise<
     const relativePath = parentPath ? path.join(parentPath, entry.name) : entry.name;
     const absolutePath = path.join(directoryPath, entry.name);
 
-    if (relativePath === "sitemap.xml") {
+    if (relativePath === "sitemap.xml" || relativePath === "404.html") {
       continue;
     }
 

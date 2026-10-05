@@ -49,3 +49,14 @@ outputs from the deployed site when their fingerprints still match.
 
 The Worker serves static assets from `./build` and dynamic catalog routes from
 `worker.ts`.
+
+### Checking the 404 page
+
+Run `npm run build:validate`, start `npm run workers:dev`, then run
+`npm run check:404` in another terminal. Set `JSTER_TEST_URL` to test a local
+Worker running on a different port. The checks cover static and dynamic missing
+pages, HEAD and Markdown responses, JSON API errors, and existing routes.
+
+The error page uses the shared Gustwind layout and is built as `build/404.html`.
+Cloudflare serves it for missing static assets; the Worker also uses it for
+missing libraries and tags. It returns HTTP 404 and stays out of the sitemap.

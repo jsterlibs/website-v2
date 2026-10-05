@@ -24,6 +24,7 @@
     "workers:types": "wrangler types --config=./wrangler.toml --env-file=/dev/null --include-runtime=false",
     "workers:types:check": "wrangler types --config=./wrangler.toml --env-file=/dev/null --include-runtime=false --check",
     "check:links": "node ./scripts/check-links.mjs",
+    "check:404": "node --test ./scripts/check-404.test.mjs",
     "check:links:external": "node ./scripts/check-links.mjs --external",
     "audit:catalog": "node ./scripts/audit-catalog.mjs",
     "copy:css": "node ./scripts/copy-tailwind-css.mjs",

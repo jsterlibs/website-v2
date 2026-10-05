@@ -56,6 +56,18 @@
       }
     }
   },
+  "404.html": {
+    "meta": {
+      "title": "Page not found – JSter",
+      "description": "Find your way back to the JSter JavaScript catalog and blog."
+    },
+    "context": {
+      "pageMeta": {
+        "robots": "noindex,follow"
+      }
+    },
+    "layout": "notFoundPage"
+  },
   "about": {
     "meta": {
       "title": "JSter – About",
